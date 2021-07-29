@@ -27,31 +27,56 @@
     //上段字樣
     .statusWindow {
         width: 100%;
-        height: auto;
-        background: #eeeeee;
+        height: 113px;
+        background: #242424;
+        position: relative;
         
         p {
-            background: #747474;
-            border-bottom: solid 1px #ababab;
-            color: #fff;
+            background: linear-gradient(to top,#323232 0%,#434343 100%);
+            color: #e5e5e5;
             padding: 7px 15px;
             font-size: 12px;
         }
 
         ul {
+            position: absolute;
+            width: 95%;
+            height: auto;
+            left: 50%;
+            bottom: 1%;
+            transform: translateX(-50%);
 
             li {
-                padding: 7px 15px;
+                padding: 5px 15px 3px;
                 font-size: 14px;
-                border-bottom: solid 1px #ababab;
+                border: solid 1px #494949;
+                position: relative;
+                background: #393939;
+                color: #cbcbcb;
+                margin-bottom: 3px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 2px);
+                    left: -1px;
+                    top: -1px;
+                    background: #30a009;
+                }
 
                 span {
                     float: right;
                     font-size: 12px;
                     padding-top: 2px;
+                    color: #37bb18;
 
                     &.onWait {
-                        color: #3c7424;
+                        color: #c7c7c7;
+                    }
+
+                    &.fail {
+                        color: #f42a2a;
                     }
                 }
 
@@ -60,7 +85,7 @@
                     width: 15px;
                     height: 15px;
                     background: transparent;
-                    border: solid 1px #000;
+                    border: solid 1px #a0a0a0;
                     border-radius: 15px;
                     margin-left: 15px;
                     position: relative;
@@ -71,7 +96,7 @@
                         position: absolute;
                         width: 1px;
                         height: 7px;
-                        background: #000;
+                        background: #a0a0a0;
                         transform: rotate(45deg);
                         top: 3px;
                         right: 6px;
@@ -82,7 +107,7 @@
                         position: absolute;
                         width: 1px;
                         height: 7px;
-                        background: #000;
+                        background: #a0a0a0;
                         transform: rotate(-45deg);
                         top: 3px;
                         left: 6px;

@@ -3,7 +3,7 @@ header {
     width: 100%;
     min-width: 1480px;
     height: 110px;
-    background: #505050;
+    background: #1f1f1f;
     position: relative;
     z-index: 10;
 
@@ -15,14 +15,14 @@ header {
     .top {
         width: 100%;
         height: 25px;
-        background: #2a2a2a;
+        background: #131313;
 
         //盤口對照表+設定
-        button {
+        .conversionBtn,.controlBtn {
             float: left;
             width: auto;
             height: 100%;
-            color: #b4bac8;
+            color: #969696;
             background: transparent;
             margin-left: 15px;
             font-size: 13px;
@@ -40,13 +40,13 @@ header {
                 position: absolute;
                 left: -23px;
                 top: 4px;
-                color: #fff;
+                color: #31be16;
             }
 
             marquee {
                 line-height: 25px;
                 font-size: 12px;
-                color: #b4bac8;
+                color: #37bd10;
                 overflow: visible;
             }
         }
@@ -55,9 +55,36 @@ header {
         span {
             float: right;
             font-size: 12px;
-            color: #b4bac8;
+            color: #7a7a7a;
             line-height: 25px;
             margin-right: 15px;
+        }
+
+        .threeCircle {
+            float: right;
+            width: auto;
+            height: 100%;
+            line-height: 25px;
+
+            button {
+                width: 15px;
+                height: 15px;
+                border-radius: 30px;
+                margin: 5px 5px 0px 0px;
+                border: solid 1px #46d616;
+                background: #131313;
+
+                &:nth-of-type(2) {
+                    background: #ebf1fb;
+                    border-color: #9b7c55;
+                }
+
+                &:nth-of-type(3) {
+                    background: #1856bd;
+                    border-color: #90c1f2;
+                    margin-right: 20px;
+                }
+            }
         }
     }
 
@@ -98,7 +125,8 @@ header {
                     font-size: 14px;
 
                     &:hover,&:active,&.active {
-                        border-color: #59a936;
+                        border-color: #33ba04;
+                        color: #7df81a;
                     }
 
                     .fa-user {
@@ -133,10 +161,12 @@ header {
                     font-size: 14px;
                     padding-left: 5px;
                     border-radius: 3px;
-                    border: none;
+                    border: solid 1px #39792d;
+                    background: #131313;
+                    color: #45b51f;
 
                     &::placeholder {
-                        color: #8f8f8f;
+                        color: #999999;
                     }
                 }
 
@@ -145,7 +175,7 @@ header {
                     left: 0px;
                     bottom: -28px;
                     font-size: 14px;
-                    color: #ababab;
+                    color: #45b51f;
                 }
 
                 .remember {
@@ -163,30 +193,33 @@ header {
             }
 
             .loginBtn {
-                background: #393939;
-                border: solid 1px #fff;
+                background: linear-gradient(to right,#45dc16 0%,#91e820 90%);
+                border: solid 1px #cdff7f;
                 padding: 5px 14px;
                 border-radius: 3px;
-                color: #fff;
+                color: #131313;
                 font-size: 14px;
                 font-weight: bold;
                 margin-right: 8px;
 
                 &:hover,&:active,&.active {
+                    border-color: #ffffff;
                     background: #fff;
                     color: #393939;
                 }
             }
 
             .signupBtn {
-                background: #59a936;
+                background: linear-gradient(to top,#131313 0%,#323232 100%);
                 border-radius: 3px;
                 color: #fff;
                 padding: 6px 14px;
                 font-size: 14px;
                 font-weight: bold;
+                border: solid 1px #2c8e0b;
 
                 &:hover,&:active,&.active {
+                    border-color: #ffffff;
                     background: #fff;
                     color: #59a936;
                 }
@@ -201,7 +234,7 @@ header {
                 .fa-globe {
                     float: left;
                     margin: 3px 6px 0px 0px;
-                    color: #fff;
+                    color: #ababab;
                 }
 
                 //下箭頭
@@ -213,25 +246,26 @@ header {
                     height: 0px;
                     border-style: solid;
                     border-width: 10px 8px 0px 8px;
-                    border-color: #fff transparent;
+                    border-color: #ababab transparent;
                     top: 7px;
-                    right:10px;
+                    right: 10px;
                 }
 
                 select {
                     width: 110px;
                     padding: 3px 0px 3px 5px;
                     background: transparent;
-                    border: solid 1px #fff;
+                    border: solid 1px #707070;
                     border-radius: 3px;
-                    color: #fff;
+                    color: #ababab;
                     font-size: 12px;
                     appearance:none;   
                     -moz-appearance:none;   
                     -webkit-appearance:none;
+                    background: #262626;
 
                     option {
-                        color: #000;
+                        color: #ababab;
                     }
                 }
             }
@@ -253,19 +287,19 @@ header {
             //字體
             p {
                 display: inline-block;
-                color: #fff;
+                color: #c6c6c6;
                 font-size: 13px;
                 margin: 10px 5px 0px 0px;
 
                 //信用額度
                 &.quota {
                     padding: 7px 7px 5px;
-                    border: solid 1px #fff;
+                    border: solid 1px #a3a3a3;
                     border-radius: 3px;
                 }
 
                 span {
-                    color: #59a936;
+                    color: #0080e1;
                     padding-left: 8px;
                 }
             }
@@ -274,10 +308,9 @@ header {
             button {
                 border-radius: 3px;
                 padding: 4px 15px;
-                background: #393939;
+                background: linear-gradient(to top,#484848 0%,#3a3a3a 50%,#484848 100%);
                 color: #fff;
                 font-size: 14px;
-                border: solid 1px #fff;
 
                 &:hover,&:active,&.active {
                     background: #fff;
@@ -294,7 +327,7 @@ header {
                 .fa-globe {
                     float: left;
                     margin: 3px 6px 0px 0px;
-                    color: #fff;
+                    color: #ababab;
                 }
 
                 //下箭頭
@@ -306,7 +339,7 @@ header {
                     height: 0px;
                     border-style: solid;
                     border-width: 10px 8px 0px 8px;
-                    border-color: #fff transparent;
+                    border-color: #ababab transparent;
                     top: 7px;
                     right:10px;
                 }
@@ -315,16 +348,17 @@ header {
                     width: 110px;
                     padding: 3px 0px 3px 5px;
                     background: transparent;
-                    border: solid 1px #fff;
+                    border: solid 1px #ababab;
                     border-radius: 3px;
-                    color: #fff;
+                    color: #ababab;
                     font-size: 12px;
+                    background: #262626;
                     appearance:none;   
                     -moz-appearance:none;   
                     -webkit-appearance:none;
 
                     option {
-                        color: #000;
+                        color: #ababab;
                     }
                 }
             }

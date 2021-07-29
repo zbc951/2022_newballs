@@ -5,27 +5,47 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #4d4d4d;
+	background: #303030;
 
 	//內容
     tr {
 		text-align: center;
-		border-bottom: solid 1px #ababab;
+		border-style: solid;
+		border-width: 1px;
+		border-color: transparent transparent #868282 transparent;
+
+		&:nth-of-type(1) {
+			border-top-color: #33bc19;
+			border-bottom: none;
+		}
+
+		&:nth-of-type(odd) {
+			background: #2c2c2c;
+		}
 
 		&:hover,&:active,&.active {
-			background: #949494;
+			border: solid 1px #43b71b;
+			background: #363636;
+			box-shadow: 0px 0px 5px 2px #3e6f14 inset;
+
+			td {
+				border-top: solid 1px #43b71b;
+			}
 		}
 
       	th {
-			color: #fff;
+			color: #cacaca;
 			font-size: 13px;
 			padding: 8px 0px 7px;
 			vertical-align: middle;
-			background: #3d3d3d;
-			border-bottom: solid 1px #ababab;
+			background: #1b1b1b;
 			position: sticky;
 			top: 70px;
 			z-index: 2;
+
+			&:nth-of-type(1) {
+				color: #44be1d;
+			}
 
 			//字靠左
 			&.tLeft {
@@ -44,7 +64,7 @@
 			padding: 8px 0px;
 			vertical-align: middle;
 			word-break: break-all;
-			color: #fff;
+			color: #e2e2e2;
 			line-height: 18px;
 
 			&:nth-of-type(1) {
@@ -69,22 +89,22 @@
 
 			//遊戲種類著名顏色
 			.gameStyle {
-				color: #ff9000;
+				color: #95f221;
 			}
 
 			//已進行時間
 			.gameTime {
-				color: #cacaca;
+				color: #a8a8a8;
 			}
 
 			//行內按鈕
 			button {
-				background: #767676;
-				color: #d9de06;
+				background: #212121;
+				color: #f2f2f2;
 				border-radius: 3px;
 				position: relative;
 				word-break: break-all;
-				border: none;
+				border: solid 1px #6a8e2a;
 				overflow: hidden;
 				font-size: 13px;
 				margin: 0px 1px;
@@ -108,7 +128,7 @@
 					top: 0px;
 					border-style: solid;
 					border-width: 0px 15px 15px 0px;
-					border-color: transparent #108c2e transparent transparent;
+					border-color: transparent #16e329 transparent transparent;
 					animation: btnFlashing 1s linear 0s infinite;
 				}
 
@@ -122,8 +142,13 @@
 					bottom: 0px;
 					border-style: solid;
 					border-width: 15px 15px 0px 0px;
-					border-color: transparent #ae4639 transparent transparent;
+					border-color: transparent #eb1414 transparent transparent;
 					animation: btnFlashing 1s linear 0s infinite;
+				}
+
+				span {
+					color: #cccccc;
+					font-size: 12px;
 				}
 
 				//比值上升/下降
@@ -141,10 +166,11 @@
 				}
 
 				&.disable {
-					background: #5e5e5e;
+					background: #282828;
 					pointer-events: none;
 					color: transparent;
 					user-select: none;
+					border-color: #5d5d5d;
 
 					span {
 						position: absolute;
@@ -152,21 +178,12 @@
 						top: 50%;
 						transform: translate(-50%,-50%);
 						font-size: 18px;
-					}
 
-					i {
-						display: block;
-						color: #3d3d3d;
-						font-size: 18px;
+						&.fa-lock {
+							color: #626262;
+							font-size: 12px;
+						}
 					}
-				}
-
-				i {
-					display: none;
-					position: absolute;
-					left: 50%;
-					top: 50%;
-					transform: translate(-50%,-50%);
 				}
 			}
 
@@ -193,11 +210,12 @@
 						background-position: (-20px 0px);
 					}
 				}
+
 				//+99
 				&.tbimg3 {
 					width: auto;
 					height: auto;
-					color: #fff;
+					color: #cacaca;
 				}
 			}
 			
@@ -205,13 +223,12 @@
 
 			//已完賽顏色
 			&.overGame {
-				color: #74ca4f;
+				color: #ff9000;
 			}
-
 			span {
 
 				&.overGame {
-					color: #74ca4f;
+					color: #ff9000;
 				}
 			}
 
@@ -234,7 +251,6 @@
 		tr {
 
 			td {
-
 				padding: 6px 0px;
 
 				&.tLeft {
@@ -246,25 +262,10 @@
 					width: 100px;
 					height: 50px;
 
-					&:hover,&:active,&.active {
-						background: #fff;
-						color: #000;
-	
-						span {
-							color: #000;
-						}
-					}
-
 					//註解
 					span {
 						display: block;
-						color: #d4d4d4;
-						font-size: 12px;
 						margin-bottom: 3px;
-
-						&.fa-lock {
-							color: #3d3d3d;
-						}
 					}
 				}
 			}
@@ -288,15 +289,6 @@
 						margin-bottom: 0px;
 					}
 
-					&:hover,&:active,&.active {
-						background: #fff;
-						color: #000;
-	
-						span {
-							color: #000;
-						}
-					}
-
 					//三按鈕
 					&.third {
 						height: 25px;
@@ -305,12 +297,6 @@
 					//註解
 					span {
 						margin-right: 10px;
-						color: #d4d4d4;
-						font-size: 12px;
-
-						&.fa-lock {
-							color: #3d3d3d;
-						}
 					}
 				}
 			}
@@ -3123,6 +3109,28 @@
 		margin-bottom: 20px;
 	}
 
+	&.fail {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: #00000096;
+		}
+
+		tr {
+
+			td {
+
+				&.failRemind {
+					display: block;
+				}
+			}
+		}
+	}
+
 	tr {
 
 		td {
@@ -3166,6 +3174,17 @@
 
 			&:last-child {
 				border-right-width: 0px;
+			}
+
+			&.failRemind {
+				display: none;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				border: solid 1px #8c8c8c;
+				text-align: center;
+				padding: 10px 0px;
 			}
 		}
 	}

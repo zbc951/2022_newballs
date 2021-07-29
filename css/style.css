@@ -82,7 +82,7 @@ header {
   width: 100%;
   min-width: 1480px;
   height: 110px;
-  background: #505050;
+  background: #1f1f1f;
   position: relative;
   z-index: 10;
 }
@@ -92,13 +92,13 @@ header.mine {
 header .top {
   width: 100%;
   height: 25px;
-  background: #2a2a2a;
+  background: #131313;
 }
-header .top button {
+header .top .conversionBtn, header .top .controlBtn {
   float: left;
   width: auto;
   height: 100%;
-  color: #b4bac8;
+  color: #969696;
   background: transparent;
   margin-left: 15px;
   font-size: 13px;
@@ -114,20 +114,43 @@ header .top .marqueeBox .fa-volume-up {
   position: absolute;
   left: -23px;
   top: 4px;
-  color: #fff;
+  color: #31be16;
 }
 header .top .marqueeBox marquee {
   line-height: 25px;
   font-size: 12px;
-  color: #b4bac8;
+  color: #37bd10;
   overflow: visible;
 }
 header .top span {
   float: right;
   font-size: 12px;
-  color: #b4bac8;
+  color: #7a7a7a;
   line-height: 25px;
   margin-right: 15px;
+}
+header .top .threeCircle {
+  float: right;
+  width: auto;
+  height: 100%;
+  line-height: 25px;
+}
+header .top .threeCircle button {
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  margin: 5px 5px 0px 0px;
+  border: solid 1px #46d616;
+  background: #131313;
+}
+header .top .threeCircle button:nth-of-type(2) {
+  background: #ebf1fb;
+  border-color: #9b7c55;
+}
+header .top .threeCircle button:nth-of-type(3) {
+  background: #1856bd;
+  border-color: #90c1f2;
+  margin-right: 20px;
 }
 header article {
   width: 100%;
@@ -162,7 +185,8 @@ header article ul li a {
   font-size: 14px;
 }
 header article ul li a:hover, header article ul li a:active, header article ul li a.active {
-  border-color: #59a936;
+  border-color: #33ba04;
+  color: #7df81a;
 }
 header article ul li a .fa-user {
   margin-right: 8px;
@@ -191,17 +215,19 @@ header article .logged .inputBox input {
   font-size: 14px;
   padding-left: 5px;
   border-radius: 3px;
-  border: none;
+  border: solid 1px #39792d;
+  background: #131313;
+  color: #45b51f;
 }
 header article .logged .inputBox input::placeholder {
-  color: #8f8f8f;
+  color: #999999;
 }
 header article .logged .inputBox .forget {
   position: absolute;
   left: 0px;
   bottom: -28px;
   font-size: 14px;
-  color: #ababab;
+  color: #45b51f;
 }
 header article .logged .inputBox .remember {
   position: absolute;
@@ -215,28 +241,31 @@ header article .logged .inputBox .remember .cube {
   top: -1px;
 }
 header article .logged .loginBtn {
-  background: #393939;
-  border: solid 1px #fff;
+  background: linear-gradient(to right, #45dc16 0%, #91e820 90%);
+  border: solid 1px #cdff7f;
   padding: 5px 14px;
   border-radius: 3px;
-  color: #fff;
+  color: #131313;
   font-size: 14px;
   font-weight: bold;
   margin-right: 8px;
 }
 header article .logged .loginBtn:hover, header article .logged .loginBtn:active, header article .logged .loginBtn.active {
+  border-color: #ffffff;
   background: #fff;
   color: #393939;
 }
 header article .logged .signupBtn {
-  background: #59a936;
+  background: linear-gradient(to top, #131313 0%, #323232 100%);
   border-radius: 3px;
   color: #fff;
   padding: 6px 14px;
   font-size: 14px;
   font-weight: bold;
+  border: solid 1px #2c8e0b;
 }
 header article .logged .signupBtn:hover, header article .logged .signupBtn:active, header article .logged .signupBtn.active {
+  border-color: #ffffff;
   background: #fff;
   color: #59a936;
 }
@@ -249,7 +278,7 @@ header article .logged .selectBox {
 header article .logged .selectBox .fa-globe {
   float: left;
   margin: 3px 6px 0px 0px;
-  color: #fff;
+  color: #ababab;
 }
 header article .logged .selectBox::after {
   content: "";
@@ -259,7 +288,7 @@ header article .logged .selectBox::after {
   height: 0px;
   border-style: solid;
   border-width: 10px 8px 0px 8px;
-  border-color: #fff transparent;
+  border-color: #ababab transparent;
   top: 7px;
   right: 10px;
 }
@@ -267,16 +296,17 @@ header article .logged .selectBox select {
   width: 110px;
   padding: 3px 0px 3px 5px;
   background: transparent;
-  border: solid 1px #fff;
+  border: solid 1px #707070;
   border-radius: 3px;
-  color: #fff;
+  color: #ababab;
   font-size: 12px;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  background: #262626;
 }
 header article .logged .selectBox select option {
-  color: #000;
+  color: #ababab;
 }
 header article .loggedIn {
   display: none;
@@ -291,26 +321,25 @@ header article .loggedIn.display {
 }
 header article .loggedIn p {
   display: inline-block;
-  color: #fff;
+  color: #c6c6c6;
   font-size: 13px;
   margin: 10px 5px 0px 0px;
 }
 header article .loggedIn p.quota {
   padding: 7px 7px 5px;
-  border: solid 1px #fff;
+  border: solid 1px #a3a3a3;
   border-radius: 3px;
 }
 header article .loggedIn p span {
-  color: #59a936;
+  color: #0080e1;
   padding-left: 8px;
 }
 header article .loggedIn button {
   border-radius: 3px;
   padding: 4px 15px;
-  background: #393939;
+  background: linear-gradient(to top, #484848 0%, #3a3a3a 50%, #484848 100%);
   color: #fff;
   font-size: 14px;
-  border: solid 1px #fff;
 }
 header article .loggedIn button:hover, header article .loggedIn button:active, header article .loggedIn button.active {
   background: #fff;
@@ -325,7 +354,7 @@ header article .loggedIn .selectBox {
 header article .loggedIn .selectBox .fa-globe {
   float: left;
   margin: 3px 6px 0px 0px;
-  color: #fff;
+  color: #ababab;
 }
 header article .loggedIn .selectBox::after {
   content: "";
@@ -335,7 +364,7 @@ header article .loggedIn .selectBox::after {
   height: 0px;
   border-style: solid;
   border-width: 10px 8px 0px 8px;
-  border-color: #fff transparent;
+  border-color: #ababab transparent;
   top: 7px;
   right: 10px;
 }
@@ -343,16 +372,17 @@ header article .loggedIn .selectBox select {
   width: 110px;
   padding: 3px 0px 3px 5px;
   background: transparent;
-  border: solid 1px #fff;
+  border: solid 1px #ababab;
   border-radius: 3px;
-  color: #fff;
+  color: #ababab;
   font-size: 12px;
+  background: #262626;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
 }
 header article .loggedIn .selectBox select option {
-  color: #000;
+  color: #ababab;
 }
 
 main {
@@ -379,31 +409,32 @@ main .bg {
   height: 1000px;
   position: absolute;
   top: 0px;
-  background: #2a2a2a;
+  background: #131313;
   z-index: -999;
 }
 
 .left {
   width: 270px;
   height: 850px;
-  background: #bcbcbc;
   float: left;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
+  border: solid 1px #6a6a6a;
+  border-width: 1px 0px;
 }
 .left::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .left::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #121212;
   border-radius: 10px;
 }
 .left::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #45dc16;
   border-radius: 10px;
 }
 .left.mine .minewindow {
@@ -509,48 +540,49 @@ main .bg {
   font-size: 20px;
 }
 .left ul li:hover a {
-  background: #8c8c8c;
-  color: #ffffff;
+  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+  color: #57ed22;
 }
-.left ul li:hover a svg, .left ul li:hover a .total {
-  fill: #fff;
+.left ul li:hover a svg {
+  fill: #3abc0d;
 }
 .left ul li:hover a i {
-  color: #fff;
+  color: #3abc0d;
 }
 .left ul li:active .smallList, .left ul li.active .smallList {
   display: block;
 }
 .left ul li:active a, .left ul li.active a {
-  background: #8c8c8c;
-  color: #ffffff;
+  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+  color: #57ed22;
 }
-.left ul li:active a svg, .left ul li:active a .total, .left ul li.active a svg, .left ul li.active a .total {
-  fill: #fff;
+.left ul li:active a svg, .left ul li.active a svg {
+  fill: #3abc0d;
 }
 .left ul li:active a i, .left ul li.active a i {
-  color: #fff;
+  color: #3abc0d;
 }
 .left ul li.onLive .live {
   display: block;
 }
 .left ul li a {
   display: block;
-  color: #000;
+  color: #e0e0e0;
   width: calc(100% - 50px);
+  background: linear-gradient(to top, #323232 0%, #434343 100%);
   height: 45px;
   line-height: 45px;
   font-size: 14px;
   padding-left: 50px;
   position: relative;
-  border-bottom: solid 1px #ababab;
+  border-bottom: solid 1px #6a6a6a;
 }
 .left ul li a i {
   position: absolute;
   top: 12px;
   left: 18px;
   font-size: 18px;
-  color: #505050;
+  color: #ababab;
 }
 .left ul li a i::before {
   margin: 0px auto;
@@ -570,14 +602,14 @@ main .bg {
   position: absolute;
   left: 18px;
   top: 12px;
-  fill: #505050;
+  fill: #ababab;
 }
 .left ul li a .total {
   position: absolute;
   right: 10px;
   top: 0px;
   font-size: 13px;
-  color: #4d4d4d;
+  color: #e0e0e0;
 }
 .left ul li a .live {
   display: none;
@@ -589,8 +621,8 @@ main .bg {
   transform: translateY(-50%);
   right: 42px;
   font-size: 12px;
-  background: #4d4d4d;
-  color: #ed880d;
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  color: #2b4517;
   padding: 0px 4px;
   border-radius: 3px;
 }
@@ -598,16 +630,17 @@ main .bg {
   display: none;
   width: calc(100% - 30px);
   height: 30px;
-  background: #676767;
-  border-bottom: solid 1px #8c8c8c;
+  background: #2d2d2d;
+  border-bottom: solid 1px #4c4c4c;
   line-height: 30px;
   padding-left: 30px;
   font-size: 12px;
-  color: #fff;
+  color: #46dd16;
   cursor: pointer;
 }
 .left ul li .smallList:hover, .left ul li .smallList:active, .left ul li .smallList.active {
-  background: #4d4d4d;
+  background: linear-gradient(to right, #45dc16 0%, #8fe720 100%);
+  color: #1d1d1d;
 }
 .left ul li .smallList span {
   float: right;
@@ -638,35 +671,60 @@ main .bg {
 }
 .right .statusWindow {
   width: 100%;
-  height: auto;
-  background: #eeeeee;
+  height: 113px;
+  background: #242424;
+  position: relative;
 }
 .right .statusWindow p {
-  background: #747474;
-  border-bottom: solid 1px #ababab;
-  color: #fff;
+  background: linear-gradient(to top, #323232 0%, #434343 100%);
+  color: #e5e5e5;
   padding: 7px 15px;
   font-size: 12px;
 }
+.right .statusWindow ul {
+  position: absolute;
+  width: 95%;
+  height: auto;
+  left: 50%;
+  bottom: 1%;
+  transform: translateX(-50%);
+}
 .right .statusWindow ul li {
-  padding: 7px 15px;
+  padding: 5px 15px 3px;
   font-size: 14px;
-  border-bottom: solid 1px #ababab;
+  border: solid 1px #494949;
+  position: relative;
+  background: #393939;
+  color: #cbcbcb;
+  margin-bottom: 3px;
+}
+.right .statusWindow ul li::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: calc(100% + 2px);
+  left: -1px;
+  top: -1px;
+  background: #30a009;
 }
 .right .statusWindow ul li span {
   float: right;
   font-size: 12px;
   padding-top: 2px;
+  color: #37bb18;
 }
 .right .statusWindow ul li span.onWait {
-  color: #3c7424;
+  color: #c7c7c7;
+}
+.right .statusWindow ul li span.fail {
+  color: #f42a2a;
 }
 .right .statusWindow ul li button {
   float: right;
   width: 15px;
   height: 15px;
   background: transparent;
-  border: solid 1px #000;
+  border: solid 1px #a0a0a0;
   border-radius: 15px;
   margin-left: 15px;
   position: relative;
@@ -677,7 +735,7 @@ main .bg {
   position: absolute;
   width: 1px;
   height: 7px;
-  background: #000;
+  background: #a0a0a0;
   transform: rotate(45deg);
   top: 3px;
   right: 6px;
@@ -687,7 +745,7 @@ main .bg {
   position: absolute;
   width: 1px;
   height: 7px;
-  background: #000;
+  background: #a0a0a0;
   transform: rotate(-45deg);
   top: 3px;
   left: 6px;
@@ -964,26 +1022,42 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #4d4d4d;
+  background: #303030;
 }
 .playBoard tr {
   text-align: center;
-  border-bottom: solid 1px #ababab;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent transparent #868282 transparent;
+}
+.playBoard tr:nth-of-type(1) {
+  border-top-color: #33bc19;
+  border-bottom: none;
+}
+.playBoard tr:nth-of-type(odd) {
+  background: #2c2c2c;
 }
 .playBoard tr:hover, .playBoard tr:active, .playBoard tr.active {
-  background: #949494;
+  border: solid 1px #43b71b;
+  background: #363636;
+  box-shadow: 0px 0px 5px 2px #3e6f14 inset;
+}
+.playBoard tr:hover td, .playBoard tr:active td, .playBoard tr.active td {
+  border-top: solid 1px #43b71b;
 }
 .playBoard tr th {
-  color: #fff;
+  color: #cacaca;
   font-size: 13px;
   padding: 8px 0px 7px;
   vertical-align: middle;
-  background: #3d3d3d;
-  border-bottom: solid 1px #ababab;
+  background: #1b1b1b;
   position: -webkit-sticky;
   position: sticky;
   top: 70px;
   z-index: 2;
+}
+.playBoard tr th:nth-of-type(1) {
+  color: #44be1d;
 }
 .playBoard tr th.tLeft {
   text-align: left;
@@ -998,7 +1072,7 @@ main .bg {
   padding: 8px 0px;
   vertical-align: middle;
   word-break: break-all;
-  color: #fff;
+  color: #e2e2e2;
   line-height: 18px;
 }
 .playBoard tr td:nth-of-type(1) p:nth-of-type(1) {
@@ -1012,18 +1086,18 @@ main .bg {
   color: #ffd400;
 }
 .playBoard tr td .gameStyle {
-  color: #ff9000;
+  color: #95f221;
 }
 .playBoard tr td .gameTime {
-  color: #cacaca;
+  color: #a8a8a8;
 }
 .playBoard tr td button {
-  background: #767676;
-  color: #d9de06;
+  background: #212121;
+  color: #f2f2f2;
   border-radius: 3px;
   position: relative;
   word-break: break-all;
-  border: none;
+  border: solid 1px #6a8e2a;
   overflow: hidden;
   font-size: 13px;
   margin: 0px 1px;
@@ -1045,7 +1119,7 @@ main .bg {
   top: 0px;
   border-style: solid;
   border-width: 0px 15px 15px 0px;
-  border-color: transparent #108c2e transparent transparent;
+  border-color: transparent #16e329 transparent transparent;
   animation: btnFlashing 1s linear 0s infinite;
 }
 .playBoard tr td button::after {
@@ -1058,8 +1132,12 @@ main .bg {
   bottom: 0px;
   border-style: solid;
   border-width: 15px 15px 0px 0px;
-  border-color: transparent #ae4639 transparent transparent;
+  border-color: transparent #eb1414 transparent transparent;
   animation: btnFlashing 1s linear 0s infinite;
+}
+.playBoard tr td button span {
+  color: #cccccc;
+  font-size: 12px;
 }
 .playBoard tr td button.up::before {
   display: block;
@@ -1068,11 +1146,12 @@ main .bg {
   display: block;
 }
 .playBoard tr td button.disable {
-  background: #5e5e5e;
+  background: #282828;
   pointer-events: none;
   color: transparent;
   -webkit-user-select: none;
           user-select: none;
+  border-color: #5d5d5d;
 }
 .playBoard tr td button.disable span {
   position: absolute;
@@ -1081,17 +1160,9 @@ main .bg {
   transform: translate(-50%, -50%);
   font-size: 18px;
 }
-.playBoard tr td button.disable i {
-  display: block;
-  color: #3d3d3d;
-  font-size: 18px;
-}
-.playBoard tr td button i {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.playBoard tr td button.disable span.fa-lock {
+  color: #626262;
+  font-size: 12px;
 }
 .playBoard tr td a {
   display: block;
@@ -1115,13 +1186,13 @@ main .bg {
 .playBoard tr td a.tbimg3 {
   width: auto;
   height: auto;
-  color: #fff;
+  color: #cacaca;
 }
 .playBoard tr td.overGame {
-  color: #74ca4f;
+  color: #ff9000;
 }
 .playBoard tr td span.overGame {
-  color: #74ca4f;
+  color: #ff9000;
 }
 .playBoard tr td p:nth-of-type(1) {
   padding-bottom: 8px;
@@ -1140,21 +1211,9 @@ main .bg {
   width: 100px;
   height: 50px;
 }
-.playBoard.newP tr td button:hover, .playBoard.newP tr td button:active, .playBoard.newP tr td button.active {
-  background: #fff;
-  color: #000;
-}
-.playBoard.newP tr td button:hover span, .playBoard.newP tr td button:active span, .playBoard.newP tr td button.active span {
-  color: #000;
-}
 .playBoard.newP tr td button span {
   display: block;
-  color: #d4d4d4;
-  font-size: 12px;
   margin-bottom: 3px;
-}
-.playBoard.newP tr td button span.fa-lock {
-  color: #3d3d3d;
 }
 .playBoard.oldP tr td button {
   display: block;
@@ -1165,23 +1224,11 @@ main .bg {
 .playBoard.oldP tr td button:last-child {
   margin-bottom: 0px;
 }
-.playBoard.oldP tr td button:hover, .playBoard.oldP tr td button:active, .playBoard.oldP tr td button.active {
-  background: #fff;
-  color: #000;
-}
-.playBoard.oldP tr td button:hover span, .playBoard.oldP tr td button:active span, .playBoard.oldP tr td button.active span {
-  color: #000;
-}
 .playBoard.oldP tr td button.third {
   height: 25px;
 }
 .playBoard.oldP tr td button span {
   margin-right: 10px;
-  color: #d4d4d4;
-  font-size: 12px;
-}
-.playBoard.oldP tr td button span.fa-lock {
-  color: #3d3d3d;
 }
 .playBoard.tType1.hide1 tr td:nth-of-type(1) {
   width: 55%;
@@ -2440,6 +2487,19 @@ main .bg {
 .bettingBoard:last-child {
   margin-bottom: 20px;
 }
+.bettingBoard.fail {
+  position: relative;
+}
+.bettingBoard.fail::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000096;
+}
+.bettingBoard.fail tr td.failRemind {
+  display: block;
+}
 .bettingBoard tr td {
   width: 50%;
   height: auto;
@@ -2475,6 +2535,16 @@ main .bg {
 }
 .bettingBoard tr td:last-child {
   border-right-width: 0px;
+}
+.bettingBoard tr td.failRemind {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px #8c8c8c;
+  text-align: center;
+  padding: 10px 0px;
 }
 
 .conversionBoard {
@@ -4741,7 +4811,7 @@ main .bg {
 .hideboard {
   width: 1260px;
   height: 70px;
-  background: #2a2a2a;
+  background: #131313;
   position: absolute;
   z-index: 5;
   left: 280px;
@@ -4752,7 +4822,7 @@ main .bg {
   width: calc(100% - 660px);
   height: 50px;
   border-radius: 3px;
-  background: #747474;
+  background: linear-gradient(to top, #323232 0%, #434343 100%);
   position: absolute;
   top: 10px;
   left: 280px;
@@ -4773,7 +4843,7 @@ main .bg {
   display: block;
 }
 .topfix .nor i {
-  color: #fff;
+  color: #dddddd;
   font-size: 18px;
   margin: 0px 6px 0px 12px;
   transform: translateY(2px);
@@ -4783,11 +4853,11 @@ main .bg {
   height: 18px;
   margin: 0px 6px 0px 12px;
   transform: translateY(4px);
-  fill: #fff;
+  fill: #dddddd;
 }
 .topfix .nor .gameName {
   display: inline-block;
-  color: #fff;
+  color: #fefefe;
   font-size: 13px;
 }
 .topfix .nor .reWeb {
@@ -4810,23 +4880,18 @@ main .bg {
   pointer-events: none;
 }
 .topfix .nor .reWeb select {
-  background: #505050;
-  color: #fff;
+  background: #2b2b2b;
+  color: #dddddd;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding: 5px 30px 4px 5px;
-  border: solid 1px #fff;
+  border: solid 1px #707070;
   font-size: 12px;
-}
-.topfix .nor .reWeb select option span {
-  color: #ffee00;
-  font-size: 14px;
-  font-weight: bold;
 }
 .topfix .nor .reWeb .clock {
   position: absolute;
-  background: #2a2a2a;
+  background: #2b2b2b;
   top: 50%;
   right: -36px;
   width: 30px;
@@ -4835,7 +4900,7 @@ main .bg {
   line-height: 24px;
   text-align: center;
   border-radius: 3px;
-  color: #ffee00;
+  color: #37bb18;
 }
 .topfix .nor .reWeb .reBtn {
   position: absolute;
@@ -4844,9 +4909,10 @@ main .bg {
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  border: solid 1px #fff;
+  border: solid 1px #848484;
   border-radius: 20px;
   cursor: pointer;
+  background: #313131;
 }
 .topfix .nor .reWeb .reBtn i {
   font-size: 14px;
@@ -4855,6 +4921,7 @@ main .bg {
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0px;
+  color: #c9c9c9;
 }
 .topfix .nor .reWeb .reBtn:hover, .topfix .nor .reWeb .reBtn:active, .topfix .nor .reWeb .reBtn.active {
   background: #fff;
@@ -4877,28 +4944,28 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 8px 6px 0px 6px;
-  border-color: #fff transparent;
+  border-color: #bfbfbf transparent;
   right: 10px;
-  top: 22px;
+  top: 20px;
   pointer-events: none;
 }
 .topfix .nor .kind select, .topfix .nor .sort select, .topfix .nor .chooseLeague select {
-  background: #505050;
-  color: #fff;
+  background: #2b2b2b;
+  color: #dddddd;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding: 5px 30px 3px 5px;
-  border: solid 1px #fff;
+  border: solid 1px #707070;
 }
 .topfix .nor .kind select span, .topfix .nor .sort select span, .topfix .nor .chooseLeague select span {
   display: none;
 }
 .topfix .nor .chooseLeague span {
-  background: #505050;
-  color: #fff;
+  background: #2b2b2b;
+  color: #dddddd;
   padding: 7px 30px 4px 5px;
-  border: solid 1px #fff;
+  border: solid 1px #707070;
   cursor: pointer;
 }
 .topfix .nor .timeSelect {
@@ -5584,10 +5651,9 @@ main .bg {
   display: block;
   width: 12px;
   height: 12px;
-  background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
-  background-color: #cbd0e9;
-  border: 1px solid #b2afcf;
-  border-radius: 5px;
+  background: #1f1f1f;
+  border: 1px solid #ababab;
+  border-radius: 3px;
   overflow: hidden;
   position: absolute;
   cursor: pointer;
@@ -8704,7 +8770,7 @@ main .bg {
 html {
   width: 100%;
   height: 100%;
-  background: #2a2a2a;
+  background: #131313;
 }
 html body {
   width: 100%;

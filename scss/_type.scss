@@ -151,7 +151,7 @@
 .hideboard {
     width: 1260px;
     height: 70px;
-    background: #2a2a2a;
+    background: #131313;
     position: absolute;
     z-index: 5;
     left: 280px;
@@ -163,7 +163,7 @@
     width: calc(100% - 660px);
     height: 50px;
     border-radius: 3px;
-    background: #747474;
+    background: linear-gradient(to top,#323232 0%,#434343 100%);
     position: absolute;
     top: 10px;
     left: 280px;
@@ -186,7 +186,7 @@
         }
 
         i {
-            color: #fff;
+            color: #dddddd;
             font-size: 18px;
             margin: 0px 6px 0px 12px;
             transform: translateY(2px);
@@ -197,13 +197,13 @@
             height: 18px;
             margin: 0px 6px 0px 12px;
             transform: translateY(4px);
-            fill: #fff;
+            fill: #dddddd;
         }
 
         //遊戲標題
         .gameName {
             display: inline-block;
-            color: #fff;
+            color: #fefefe;
             font-size: 13px;
         }
 
@@ -229,28 +229,19 @@
             }
 
             select {
-                background: #505050;
-                color: #fff;
+                background: #2b2b2b;
+                color: #dddddd;
                 appearance:none;   
                 -moz-appearance:none;   
                 -webkit-appearance:none;
                 padding: 5px 30px 4px 5px;
-                border: solid 1px #fff;
+                border: solid 1px #707070;
                 font-size: 12px;
-
-                option {
-
-                    span {
-                        color: #ffee00;
-                        font-size: 14px;
-                        font-weight: bold;
-                    }
-                }
             }
 
             .clock {
                 position: absolute;
-                background: #2a2a2a;
+                background: #2b2b2b;
                 top: 50%;
                 right: -36px;
                 width: 30px;
@@ -259,7 +250,7 @@
                 line-height: 24px;
                 text-align: center;
                 border-radius: 3px;
-                color: #ffee00;
+                color: #37bb18;
             }
 
             .reBtn {
@@ -269,9 +260,10 @@
                 transform: translateY(-50%);
                 width: 28px;
                 height: 28px;
-                border: solid 1px #fff;
+                border: solid 1px #848484;
                 border-radius: 20px;
                 cursor: pointer;
+                background: #313131;
 
                 i {
                     font-size: 14px;
@@ -280,6 +272,7 @@
                     top: 50%;
                     transform: translate(-50%,-50%);
                     margin: 0px;
+                    color: #c9c9c9;
                 }
 
                 &:hover,&:active,&.active {
@@ -308,20 +301,20 @@
                 height: 0px;
                 border-style: solid;
                 border-width: 8px 6px 0px 6px;
-                border-color: #fff transparent;
+                border-color: #bfbfbf transparent;
                 right: 10px;
-                top: 22px;
+                top: 20px;
                 pointer-events: none;
             }
             
             select {
-                background: #505050;
-                color: #fff;
+                background: #2b2b2b;
+                color: #dddddd;
                 appearance:none;   
                 -moz-appearance:none;   
                 -webkit-appearance:none;
                 padding: 5px 30px 3px 5px;
-                border: solid 1px #fff;
+                border: solid 1px #707070;
 
                 span {
                     display: none;
@@ -331,10 +324,10 @@
         .chooseLeague {
             
             span {
-                background: #505050;
-                color: #fff;
+                background: #2b2b2b;
+                color: #dddddd;
                 padding: 7px 30px 4px 5px;
-                border: solid 1px #fff;
+                border: solid 1px #707070;
                 cursor: pointer;
             }
         }
@@ -1147,10 +1140,9 @@
     display: block;
     width: 12px;
     height: 12px;
-    background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
-    background-color: #cbd0e9;
-    border: 1px solid #b2afcf;
-    border-radius: 5px;
+    background: #1f1f1f;
+    border: 1px solid #ababab;
+    border-radius: 3px;
     overflow: hidden;
     position: absolute;
     cursor: pointer;
