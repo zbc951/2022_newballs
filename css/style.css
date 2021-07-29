@@ -434,7 +434,7 @@ main .bg {
   border-radius: 10px;
 }
 .left::-webkit-scrollbar-thumb {
-  background: #45dc16;
+  background: #606360;
   border-radius: 10px;
 }
 .left.mine .minewindow {
@@ -656,6 +656,7 @@ main .bg {
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
+  background: #242424;
 }
 .right::-webkit-scrollbar {
   width: 8px;
@@ -753,12 +754,12 @@ main .bg {
 .right .liveWindow {
   width: 100%;
   height: auto;
-  background: #ababab;
+  background: #292929;
   text-align: center;
 }
 .right .liveWindow .title {
-  background: #747474;
-  border-bottom: solid 1px #ababab;
+  background: linear-gradient(to top, #323232 0%, #434343 100%);
+  box-shadow: 0px 2px 1px 0px #171717;
   color: #fff;
   padding: 7px 15px;
   font-size: 12px;
@@ -785,7 +786,7 @@ main .bg {
 }
 .right .liveWindow .teamWindow .leftTeam p, .right .liveWindow .teamWindow .rightTeam p {
   font-size: 12px;
-  color: #000;
+  color: #ababab;
   line-height: 20px;
 }
 .right .liveWindow .teamWindow .score {
@@ -799,9 +800,10 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #ababab;
 }
 .right .liveWindow .teamWindow .score p span {
-  color: #fff;
+  color: #37bb18;
   font-size: 12px;
 }
 .right .liveWindow .liveShow {
@@ -813,13 +815,14 @@ main .bg {
 .right .room {
   width: 100%;
   height: auto;
+  margin-top: 5px;
 }
 .right .room .twobut {
   width: 100%;
   height: 27px;
-  background: #747474;
 }
 .right .room .twobut .line {
+  display: none;
   float: left;
   width: 1%;
   height: 100%;
@@ -828,30 +831,39 @@ main .bg {
 .right .room .twobut button {
   width: 49.5%;
   height: 100%;
-  background: transparent;
-  color: #fff;
+  background: #3e3e3e;
+  color: #ababab;
   font-size: 14px;
   float: left;
+  margin-right: 1%;
+  border-radius: 3px 3px 0px 0px;
+  border: solid 1px #686868;
+  border-bottom: none;
+}
+.right .room .twobut button:last-child {
+  margin: 0px;
 }
 .right .room .twobut button:hover, .right .room .twobut button:active, .right .room .twobut button.active {
-  background: #a1a1a1;
-  color: #000;
+  background: linear-gradient(to top, #262626 0%, #3c3c3c 100%);
+  color: #49dd16;
 }
 .right .room .onebut {
   width: 100%;
   height: 27px;
-  background: #747474;
 }
 .right .room .onebut button {
   width: 100%;
   height: 100%;
-  background: transparent;
-  color: #fff;
+  background: #3e3e3e;
+  color: #ababab;
   font-size: 14px;
+  border-radius: 3px 3px 0px 0px;
+  border: solid 1px #686868;
+  border-bottom: none;
 }
 .right .room .onebut button:hover, .right .room .onebut button:active, .right .room .onebut button.active {
-  background: #a1a1a1;
-  color: #000;
+  background: linear-gradient(to top, #262626 0%, #3c3c3c 100%);
+  color: #49dd16;
 }
 .right .room .livelist {
   display: none;
@@ -998,18 +1010,18 @@ main .bg {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  background: #bcbcbc;
+  background: #505050;
 }
 .right .room .bettingStatus::-webkit-scrollbar {
-  width: 4px;
+  width: 5px;
   background-color: transparent;
 }
 .right .room .bettingStatus::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #121212;
   border-radius: 10px;
 }
 .right .room .bettingStatus::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #606360;
   border-radius: 10px;
 }
 .right .room .bettingStatus.open {
@@ -1200,44 +1212,48 @@ main .bg {
 .playBoard tr td p:last-child {
   padding: 0px;
 }
-.playBoard.newP tr td {
-  padding: 6px 0px;
-}
-.playBoard.newP tr td.tLeft {
-  text-align: left;
-  padding: 0px 10px;
-}
 .playBoard.newP tr td button {
-  width: 100px;
-  height: 50px;
-}
-.playBoard.newP tr td button span {
   display: block;
-  margin-bottom: 3px;
-}
-.playBoard.oldP tr td button {
-  display: block;
-  width: 135px;
+  width: 125px;
   height: 40px;
   margin: 0px auto 5px;
 }
-.playBoard.oldP tr td button:last-child {
+.playBoard.newP tr td button:last-child {
   margin-bottom: 0px;
 }
-.playBoard.oldP tr td button.third {
-  height: 25px;
-}
-.playBoard.oldP tr td button span {
+.playBoard.newP tr td button span {
   margin-right: 10px;
 }
-.playBoard.tType1.hide1 tr td:nth-of-type(1) {
-  width: 55%;
+.playBoard.oldP tr td {
+  padding: 6px 2px;
 }
-.playBoard.tType1.hide2 tr td:nth-of-type(1) {
-  width: 45%;
+.playBoard.oldP tr td.tLeft {
+  text-align: left;
+  padding: 0px 10px;
 }
-.playBoard.tType1.hide2 tr td:nth-of-type(7) {
-  width: 5%;
+.playBoard.oldP tr td button {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+.playBoard.oldP tr td button:last-child {
+  margin: 0px;
+}
+.playBoard.oldP tr td button.third {
+  height: 31px;
+}
+.playBoard.oldP tr td button.third span {
+  display: inline;
+  float: left;
+  margin-left: 15px;
+}
+.playBoard.oldP tr td button span {
+  display: block;
+  margin-bottom: 3px;
+}
+.playBoard.oldP tr td button span.fa-lock {
+  font-size: 14px;
+  margin: 0px;
 }
 .playBoard.tType1 tr td div:nth-of-type(1) {
   margin-bottom: 8px;
@@ -1249,37 +1265,22 @@ main .bg {
   padding-left: 8px;
 }
 .playBoard.tType1 tr td:nth-of-type(1) {
-  width: 58%;
+  width: 100%;
 }
 .playBoard.tType1 tr td:nth-of-type(2) {
-  width: 7%;
+  min-width: 60px;
 }
-.playBoard.tType1 tr td:nth-of-type(3), .playBoard.tType1 tr td:nth-of-type(9) {
-  width: 4%;
+.playBoard.tType1 tr td:nth-of-type(3) {
+  min-width: 40px;
 }
 .playBoard.tType1 tr td:nth-of-type(4), .playBoard.tType1 tr td:nth-of-type(5), .playBoard.tType1 tr td:nth-of-type(6) {
-  width: 9%;
+  min-width: 130px;
 }
-.playBoard.tType1_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(2) {
+.playBoard.tType1 tr td:nth-of-type(7) {
+  min-width: 50px;
+}
+.playBoard.tType1_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
-}
-.playBoard.tType1_2.hide1 tr td:nth-of-type(1) {
-  width: 30%;
-}
-.playBoard.tType1_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType1_2.hide2 tr td:nth-last-of-type(3) {
-  display: none;
-}
-.playBoard.tType1_2.hide2 tr td:nth-of-type(1) {
-  width: 34%;
-}
-.playBoard.tType1_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType1_2.hide3 tr td:nth-last-of-type(4) {
-  display: none;
-}
-.playBoard.tType1_2.hide3 tr td:nth-of-type(1) {
-  width: 46%;
-}
-.playBoard.tType1_2.hide3 tr td:nth-of-type(9) {
-  width: 5%;
 }
 .playBoard.tType1_2 tr td div p.redCard {
   padding: 0px;
@@ -1289,64 +1290,54 @@ main .bg {
 }
 .playBoard.tType1_2 tr td:nth-of-type(1) {
   line-height: 25px;
-  width: 25%;
+  width: 100%;
 }
 .playBoard.tType1_2 tr td:nth-of-type(2) {
   line-height: 25px;
-  width: 7%;
+  min-width: 60px;
 }
 .playBoard.tType1_2 tr td:nth-of-type(3) {
   line-height: 25px;
-  width: 4%;
+  min-width: 40px;
 }
 .playBoard.tType1_2 tr td:nth-of-type(3) p {
   padding: 0px;
 }
 .playBoard.tType1_2 tr td:nth-of-type(4), .playBoard.tType1_2 tr td:nth-of-type(5), .playBoard.tType1_2 tr td:nth-of-type(6), .playBoard.tType1_2 tr td:nth-of-type(7), .playBoard.tType1_2 tr td:nth-of-type(8) {
-  width: 12%;
+  width: 1%;
 }
 .playBoard.tType1_2 tr td:nth-of-type(9) {
-  width: 4%;
-}
-.playBoard.tType1_index.hide1 tr td:nth-of-type(1) {
-  width: 10%;
-}
-.playBoard.tType1_index.hide1 tr td:nth-of-type(4), .playBoard.tType1_index.hide1 tr td:nth-of-type(7) {
-  width: 21%;
-}
-.playBoard.tType1_index.hide1 tr td:nth-of-type(2), .playBoard.tType1_index.hide1 tr td:nth-of-type(10) {
-  width: 8%;
-}
-.playBoard.tType1_index tr td div:nth-of-type(1) {
-  margin-bottom: 8px;
+  min-width: 50px;
 }
 .playBoard.tType1_index tr td div p.redCard, .playBoard.tType1_index tr td div p.yellowCard {
   padding: 0px;
 }
-.playBoard.tType1_index tr td:nth-of-type(1) {
-  width: 7%;
-  padding: 0px 8px;
+.playBoard.tType1_index tr td div p.yellowCard {
+  padding-left: 6px;
 }
-.playBoard.tType1_index tr td:nth-of-type(2), .playBoard.tType1_index tr td:nth-of-type(3), .playBoard.tType1_index tr td:nth-of-type(6), .playBoard.tType1_index tr td:nth-of-type(9) {
-  width: 5%;
+.playBoard.tType1_index tr td:nth-of-type(1) {
+  min-width: 70px;
+}
+.playBoard.tType1_index tr td:nth-of-type(5), .playBoard.tType1_index tr td:nth-of-type(8) {
+  min-width: 60px;
+}
+.playBoard.tType1_index tr td:nth-of-type(2), .playBoard.tType1_index tr td:nth-of-type(3), .playBoard.tType1_index tr td:nth-of-type(10), .playBoard.tType1_index tr td:nth-of-type(6), .playBoard.tType1_index tr td:nth-of-type(9) {
+  min-width: 50px;
 }
 .playBoard.tType1_index tr td:nth-of-type(4), .playBoard.tType1_index tr td:nth-of-type(7) {
-  width: 26%;
-}
-.playBoard.tType1_index tr td:nth-of-type(5), .playBoard.tType1_index tr td:nth-of-type(8), .playBoard.tType1_index tr td:nth-of-type(10) {
-  width: 7%;
+  width: 50%;
 }
 .playBoard.tType1_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType1_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType1_result tr td:nth-of-type(3) {
-  width: 57%;
+  width: 100%;
 }
 .playBoard.tType1_result tr td:nth-of-type(4) {
-  width: 10%;
+  min-width: 60px;
 }
 .playBoard.tType1_result tr td:nth-of-type(4) div:nth-of-type(1) {
   margin-bottom: 8px;
@@ -1354,116 +1345,55 @@ main .bg {
 .playBoard.tType1_result tr td:nth-of-type(4) div p {
   padding: 0px;
 }
+.playBoard.tType1_result tr td:nth-of-type(4) div p.yellowCard {
+  padding-left: 6px;
+}
 .playBoard.tType1_result tr td:nth-of-type(5), .playBoard.tType1_result tr td:nth-of-type(6) {
-  width: 5%;
-}
-.playBoard.tType2.hide1 tr td:nth-of-type(1) {
-  width: 51.5%;
-}
-.playBoard.tType2.hide2 tr td:nth-of-type(1) {
-  width: 44.5%;
-}
-.playBoard.tType2.hide2 tr td:nth-of-type(3) {
-  width: 6%;
-}
-.playBoard.tType2.hide2 tr td:nth-of-type(7) {
-  width: 5%;
-}
-.playBoard.tType2.hide3 tr td:nth-of-type(1) {
-  width: 44.5%;
-}
-.playBoard.tType2.hide3 tr td:nth-of-type(3) {
-  width: 7%;
-}
-.playBoard.tType2.hide3 tr td:nth-of-type(7) {
-  width: 5%;
+  min-width: 30px;
 }
 .playBoard.tType2 tr td:nth-of-type(1) {
-  width: 62.5%;
+  width: 100%;
 }
-.playBoard.tType2 tr td:nth-of-type(2) {
-  width: 6%;
+.playBoard.tType2 tr td:nth-of-type(2), .playBoard.tType2 tr td:nth-of-type(3) {
+  min-width: 50px;
 }
-.playBoard.tType2 tr td:nth-of-type(2) p {
+.playBoard.tType2 tr td:nth-of-type(2) p, .playBoard.tType2 tr td:nth-of-type(3) p {
   padding: 0px;
 }
-.playBoard.tType2 tr td:nth-of-type(3) {
-  width: 5.5%;
-}
-.playBoard.tType2 tr td:nth-of-type(3) p {
-  padding: 0px;
-}
-.playBoard.tType2 tr td:nth-of-type(4), .playBoard.tType2 tr td:nth-of-type(7) {
-  width: 4%;
+.playBoard.tType2 tr td:nth-of-type(4) {
+  min-width: 40px;
 }
 .playBoard.tType2 tr td:nth-of-type(5), .playBoard.tType2 tr td:nth-of-type(6) {
-  width: 9%;
+  width: 1%;
 }
-.playBoard.tType2_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType2_2.hide1 tr td:nth-last-of-type(2) {
+.playBoard.tType2 tr td:nth-of-type(7) {
+  min-width: 50px;
+}
+.playBoard.tType2_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType2_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType2_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType2_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
-}
-.playBoard.tType2_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType2_2.hide2 tr td:nth-last-of-type(3) {
-  display: none;
-}
-.playBoard.tType2_2.hide2 tr td:nth-of-type(1) {
-  width: 29.5%;
-}
-.playBoard.tType2_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType2_2.hide3 tr td:nth-last-of-type(4) {
-  display: none;
-}
-.playBoard.tType2_2.hide3 tr td:nth-of-type(1) {
-  width: 38.5%;
-}
-.playBoard.tType2_2.hide3 tr td:nth-of-type(3) {
-  width: 7%;
-}
-.playBoard.tType2_2.hide3 tr td:nth-of-type(10) {
-  width: 5%;
 }
 .playBoard.tType2_2 tr td:nth-of-type(1) {
   line-height: 25px;
-  width: 20.5%;
+  width: 100%;
 }
-.playBoard.tType2_2 tr td:nth-of-type(2) {
-  width: 6%;
+.playBoard.tType2_2 tr td:nth-of-type(2), .playBoard.tType2_2 tr td:nth-of-type(3) {
+  min-width: 50px;
 }
-.playBoard.tType2_2 tr td:nth-of-type(2) p {
-  padding: 0px;
-}
-.playBoard.tType2_2 tr td:nth-of-type(3) {
-  width: 5.5%;
-}
-.playBoard.tType2_2 tr td:nth-of-type(3) p {
+.playBoard.tType2_2 tr td:nth-of-type(2) p, .playBoard.tType2_2 tr td:nth-of-type(3) p {
   padding: 0px;
 }
 .playBoard.tType2_2 tr td:nth-of-type(4) {
   line-height: 25px;
-  width: 4%;
+  min-width: 40px;
 }
 .playBoard.tType2_2 tr td:nth-of-type(4) p {
   padding: 0px;
 }
 .playBoard.tType2_2 tr td:nth-of-type(5), .playBoard.tType2_2 tr td:nth-of-type(6), .playBoard.tType2_2 tr td:nth-of-type(7), .playBoard.tType2_2 tr td:nth-of-type(8), .playBoard.tType2_2 tr td:nth-of-type(9) {
-  width: 12%;
+  width: 1%;
 }
 .playBoard.tType2_2 tr td:nth-of-type(10) {
-  width: 4%;
-}
-.playBoard.tType2_index.hide1 tr td:nth-of-type(4) {
-  width: 9%;
-  padding: 8px 26px;
-}
-.playBoard.tType2_index.hide1 tr td:nth-of-type(5), .playBoard.tType2_index.hide1 tr td:nth-of-type(6) {
-  width: 19%;
-}
-.playBoard.tType2_index.hide1 tr td:nth-of-type(20) {
-  width: 8%;
-}
-.playBoard.tType2_index.hide2 tr td:nth-of-type(4) {
-  padding: 8px 20px;
-}
-.playBoard.tType2_index.hide3 tr td:nth-of-type(4) {
-  padding: 8px 16px;
+  min-width: 50px;
 }
 .playBoard.tType2_index tr td p.baseBag {
   margin: 0px auto;
@@ -1471,183 +1401,116 @@ main .bg {
 .playBoard.tType2_index tr td p.totalPitch {
   padding: 0px;
 }
-.playBoard.tType2_index tr td:nth-of-type(1), .playBoard.tType2_index tr td:nth-of-type(2), .playBoard.tType2_index tr td:nth-of-type(20) {
-  width: 6%;
+.playBoard.tType2_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType2_index tr td:nth-of-type(3) {
-  width: 7%;
-}
-.playBoard.tType2_index tr td:nth-of-type(4) {
-  width: 7%;
-  padding: 8px 22px;
+.playBoard.tType2_index tr td:nth-of-type(2), .playBoard.tType2_index tr td:nth-of-type(3), .playBoard.tType2_index tr td:nth-of-type(4) {
+  min-width: 50px;
 }
 .playBoard.tType2_index tr td:nth-of-type(5), .playBoard.tType2_index tr td:nth-of-type(6) {
-  width: 21%;
-}
-.playBoard.tType2_index tr td:nth-of-type(7), .playBoard.tType2_index tr td:nth-of-type(8), .playBoard.tType2_index tr td:nth-of-type(9), .playBoard.tType2_index tr td:nth-of-type(10), .playBoard.tType2_index tr td:nth-of-type(11), .playBoard.tType2_index tr td:nth-of-type(12), .playBoard.tType2_index tr td:nth-of-type(13), .playBoard.tType2_index tr td:nth-of-type(14), .playBoard.tType2_index tr td:nth-of-type(15), .playBoard.tType2_index tr td:nth-of-type(16), .playBoard.tType2_index tr td:nth-of-type(17), .playBoard.tType2_index tr td:nth-of-type(18), .playBoard.tType2_index tr td:nth-of-type(19) {
-  width: 2%;
-}
-.playBoard.tType2_result tr td:nth-of-type(1) {
-  width: 8%;
-}
-.playBoard.tType2_result tr td:nth-of-type(2) {
-  width: 15%;
-}
-.playBoard.tType2_result tr td:nth-of-type(3) {
-  width: 43%;
-}
-.playBoard.tType2_result tr td:nth-of-type(4), .playBoard.tType2_result tr td:nth-of-type(5), .playBoard.tType2_result tr td:nth-of-type(6), .playBoard.tType2_result tr td:nth-of-type(7), .playBoard.tType2_result tr td:nth-of-type(8), .playBoard.tType2_result tr td:nth-of-type(9), .playBoard.tType2_result tr td:nth-of-type(10), .playBoard.tType2_result tr td:nth-of-type(11), .playBoard.tType2_result tr td:nth-of-type(12), .playBoard.tType2_result tr td:nth-of-type(13) {
-  width: 3%;
-}
-.playBoard.tType2_result tr td:nth-of-type(14) {
-  width: 4%;
-}
-.playBoard.tType3.hide1 tr td:nth-of-type(1) {
-  width: 60%;
-}
-.playBoard.tType3.hide1 tr td:nth-of-type(8), .playBoard.tType3.hide1 tr td:nth-of-type(9) {
-  width: 10%;
-}
-.playBoard.tType3.hide2 tr td:nth-of-type(1) {
-  width: 58%;
-}
-.playBoard.tType3.hide2 tr td:nth-of-type(8), .playBoard.tType3.hide2 tr td:nth-of-type(9) {
-  width: 11%;
-}
-.playBoard.tType3.hide3 tr td:nth-of-type(1) {
-  width: 54%;
-}
-.playBoard.tType3.hide3 tr td:nth-of-type(8), .playBoard.tType3.hide3 tr td:nth-of-type(9) {
-  width: 13%;
-}
-.playBoard.tType3 tr td:nth-of-type(1) {
-  width: 64%;
-}
-.playBoard.tType3 tr td:nth-of-type(2), .playBoard.tType3 tr td:nth-of-type(3), .playBoard.tType3 tr td:nth-of-type(4), .playBoard.tType3 tr td:nth-of-type(5), .playBoard.tType3 tr td:nth-of-type(6) {
-  width: 2%;
-}
-.playBoard.tType3 tr td:nth-of-type(7), .playBoard.tType3 tr td:nth-of-type(13) {
-  width: 4%;
-}
-.playBoard.tType3 tr td:nth-of-type(8), .playBoard.tType3 tr td:nth-of-type(9) {
-  width: 9%;
-}
-.playBoard.tType3_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(2) {
-  display: none;
-}
-.playBoard.tType3_2.hide1 tr td:nth-of-type(1) {
-  width: 30%;
-}
-.playBoard.tType3_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType3_2.hide2 tr td:nth-last-of-type(3) {
-  display: none;
-}
-.playBoard.tType3_2.hide2 tr td:nth-of-type(1) {
-  width: 34%;
-}
-.playBoard.tType3_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType3_2.hide3 tr td:nth-last-of-type(4) {
-  display: none;
-}
-.playBoard.tType3_2.hide3 tr td:nth-of-type(1) {
   width: 40%;
 }
-.playBoard.tType3_2.hide3 tr td:nth-of-type(13) {
-  width: 5%;
+.playBoard.tType2_index tr td:nth-of-type(7), .playBoard.tType2_index tr td:nth-of-type(8), .playBoard.tType2_index tr td:nth-of-type(9), .playBoard.tType2_index tr td:nth-of-type(10), .playBoard.tType2_index tr td:nth-of-type(11), .playBoard.tType2_index tr td:nth-of-type(12), .playBoard.tType2_index tr td:nth-of-type(13), .playBoard.tType2_index tr td:nth-of-type(14), .playBoard.tType2_index tr td:nth-of-type(15), .playBoard.tType2_index tr td:nth-of-type(16), .playBoard.tType2_index tr td:nth-of-type(17), .playBoard.tType2_index tr td:nth-of-type(18), .playBoard.tType2_index tr td:nth-of-type(19) {
+  min-width: 20px;
+}
+.playBoard.tType2_index tr td:nth-of-type(20) {
+  min-width: 50px;
+}
+.playBoard.tType2_result tr td:nth-of-type(1) {
+  min-width: 70px;
+}
+.playBoard.tType2_result tr td:nth-of-type(2) {
+  min-width: 150px;
+}
+.playBoard.tType2_result tr td:nth-of-type(3) {
+  width: 100%;
+}
+.playBoard.tType2_result tr td:nth-of-type(4), .playBoard.tType2_result tr td:nth-of-type(5), .playBoard.tType2_result tr td:nth-of-type(6), .playBoard.tType2_result tr td:nth-of-type(7), .playBoard.tType2_result tr td:nth-of-type(8), .playBoard.tType2_result tr td:nth-of-type(9), .playBoard.tType2_result tr td:nth-of-type(10), .playBoard.tType2_result tr td:nth-of-type(11), .playBoard.tType2_result tr td:nth-of-type(12), .playBoard.tType2_result tr td:nth-of-type(13) {
+  min-width: 20px;
+}
+.playBoard.tType2_result tr td:nth-of-type(14) {
+  min-width: 30px;
+}
+.playBoard.tType3 tr td:nth-of-type(1) {
+  width: 100%;
+}
+.playBoard.tType3 tr td:nth-of-type(2), .playBoard.tType3 tr td:nth-of-type(3), .playBoard.tType3 tr td:nth-of-type(4), .playBoard.tType3 tr td:nth-of-type(5), .playBoard.tType3 tr td:nth-of-type(6) {
+  min-width: 20px;
+}
+.playBoard.tType3 tr td:nth-of-type(7) {
+  min-width: 30px;
+}
+.playBoard.tType3 tr td:nth-of-type(8), .playBoard.tType3 tr td:nth-of-type(9) {
+  width: 1%;
+}
+.playBoard.tType3 tr td:nth-of-type(10) {
+  min-width: 50px;
+}
+.playBoard.tType3_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(3) {
+  display: none;
 }
 .playBoard.tType3_2 tr td:nth-of-type(1) {
   line-height: 25px;
-  width: 22%;
+  width: 100%;
 }
 .playBoard.tType3_2 tr td:nth-of-type(2), .playBoard.tType3_2 tr td:nth-of-type(3), .playBoard.tType3_2 tr td:nth-of-type(4), .playBoard.tType3_2 tr td:nth-of-type(5), .playBoard.tType3_2 tr td:nth-of-type(6) {
   line-height: 25px;
-  width: 2%;
+  min-width: 20px;
 }
 .playBoard.tType3_2 tr td:nth-of-type(2) p, .playBoard.tType3_2 tr td:nth-of-type(3) p, .playBoard.tType3_2 tr td:nth-of-type(4) p, .playBoard.tType3_2 tr td:nth-of-type(5) p, .playBoard.tType3_2 tr td:nth-of-type(6) p {
   padding: 0px;
 }
 .playBoard.tType3_2 tr td:nth-of-type(7) {
   line-height: 25px;
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType3_2 tr td:nth-of-type(7) p {
   padding: 0px;
 }
 .playBoard.tType3_2 tr td:nth-of-type(8), .playBoard.tType3_2 tr td:nth-of-type(9), .playBoard.tType3_2 tr td:nth-of-type(10), .playBoard.tType3_2 tr td:nth-of-type(11), .playBoard.tType3_2 tr td:nth-of-type(12) {
-  width: 12%;
+  width: 1%;
 }
 .playBoard.tType3_2 tr td:nth-of-type(13) {
-  width: 4%;
+  min-width: 50px;
 }
-.playBoard.tType3_index.hide2 tr td:nth-of-type(4) {
-  width: 47%;
+.playBoard.tType3_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType3_index.hide2 tr td:nth-of-type(11) {
-  width: 8%;
-}
-.playBoard.tType3_index tr td:nth-of-type(1), .playBoard.tType3_index tr td:nth-of-type(2), .playBoard.tType3_index tr td:nth-of-type(3) {
-  width: 7%;
+.playBoard.tType3_index tr td:nth-of-type(2), .playBoard.tType3_index tr td:nth-of-type(3), .playBoard.tType3_index tr td:nth-of-type(11) {
+  min-width: 50px;
 }
 .playBoard.tType3_index tr td:nth-of-type(4) {
-  width: 49%;
+  width: 100%;
 }
-.playBoard.tType3_index tr td:nth-of-type(5), .playBoard.tType3_index tr td:nth-of-type(6), .playBoard.tType3_index tr td:nth-of-type(7), .playBoard.tType3_index tr td:nth-of-type(8), .playBoard.tType3_index tr td:nth-of-type(9), .playBoard.tType3_index tr td:nth-of-type(10) {
-  width: 4%;
+.playBoard.tType3_index tr td:nth-of-type(5), .playBoard.tType3_index tr td:nth-of-type(6), .playBoard.tType3_index tr td:nth-of-type(7), .playBoard.tType3_index tr td:nth-of-type(8), .playBoard.tType3_index tr td:nth-of-type(9) {
+  min-width: 20px;
 }
-.playBoard.tType3_index tr td:nth-of-type(11) {
-  width: 6%;
+.playBoard.tType3_index tr td:nth-of-type(10) {
+  min-width: 30px;
 }
 .playBoard.tType3_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType3_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType3_result tr td:nth-of-type(3) {
-  width: 58%;
+  width: 100%;
 }
 .playBoard.tType3_result tr td:nth-of-type(4), .playBoard.tType3_result tr td:nth-of-type(5), .playBoard.tType3_result tr td:nth-of-type(6), .playBoard.tType3_result tr td:nth-of-type(7), .playBoard.tType3_result tr td:nth-of-type(8) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType3_result tr td:nth-of-type(9) {
-  width: 4%;
-}
-.playBoard.tType4.hide1 tr td:nth-of-type(1) {
-  width: 54%;
-}
-.playBoard.tType4.hide1 tr td:nth-of-type(2), .playBoard.tType4.hide1 tr td:nth-of-type(3) {
-  width: 20%;
-}
-.playBoard.tType4.hide1 tr td:nth-of-type(4) {
-  width: 5%;
-}
-.playBoard.tType4.hide2 tr td:nth-of-type(1) {
-  width: 45%;
-}
-.playBoard.tType4.hide2 tr td:nth-of-type(2), .playBoard.tType4.hide2 tr td:nth-of-type(3) {
-  width: 22%;
-}
-.playBoard.tType4.hide2 tr td:nth-of-type(4) {
-  width: 6%;
-}
-.playBoard.tType4.hide3 tr td:nth-of-type(1) {
-  width: 40%;
-}
-.playBoard.tType4.hide3 tr td:nth-of-type(2), .playBoard.tType4.hide3 tr td:nth-of-type(3) {
-  width: 23%;
+  min-width: 30px;
 }
 .playBoard.tType4 tr td:nth-of-type(1) {
-  width: 60%;
+  width: 100%;
 }
 .playBoard.tType4 tr td:nth-of-type(2), .playBoard.tType4 tr td:nth-of-type(3) {
-  width: 18%;
+  width: 1%;
 }
 .playBoard.tType4 tr td:nth-of-type(4) {
-  width: 4%;
-}
-.playBoard.tType4_index.hide2 tr td:nth-of-type(5) {
-  width: 29%;
-}
-.playBoard.tType4_index.hide2 tr td:nth-of-type(10) {
-  width: 8%;
+  min-width: 50px;
 }
 .playBoard.tType4_index tr td p {
   padding-bottom: 8px;
@@ -1655,23 +1518,20 @@ main .bg {
 .playBoard.tType4_index tr td p:last-child {
   padding: 0px;
 }
-.playBoard.tType4_index tr td:nth-of-type(1), .playBoard.tType4_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType4_index tr td:nth-of-type(1), .playBoard.tType4_index tr td:nth-of-type(6), .playBoard.tType4_index tr td:nth-of-type(7) {
+  min-width: 70px;
+}
+.playBoard.tType4_index tr td:nth-of-type(2), .playBoard.tType4_index tr td:nth-of-type(10) {
+  min-width: 50px;
 }
 .playBoard.tType4_index tr td:nth-of-type(3), .playBoard.tType4_index tr td:nth-of-type(4), .playBoard.tType4_index tr td:nth-of-type(8) {
-  width: 3%;
+  min-width: 30px;
 }
 .playBoard.tType4_index tr td:nth-of-type(5) {
-  width: 31%;
-}
-.playBoard.tType4_index tr td:nth-of-type(6), .playBoard.tType4_index tr td:nth-of-type(7) {
-  width: 16%;
+  width: 100%;
 }
 .playBoard.tType4_index tr td:nth-of-type(9) {
-  width: 8%;
-}
-.playBoard.tType4_index tr td:nth-of-type(10) {
-  width: 6%;
+  min-width: 60px;
 }
 .playBoard.tType4_result tr td p {
   padding-bottom: 8px;
@@ -1682,650 +1542,457 @@ main .bg {
 .playBoard.tType4_result tr td p:last-child {
   padding: 0px;
 }
-.playBoard.tType4_result tr td:nth-of-type(1) {
-  width: 8%;
+.playBoard.tType4_result tr td:nth-of-type(1), .playBoard.tType4_result tr td:nth-of-type(9) {
+  min-width: 70px;
 }
-.playBoard.tType4_result tr td:nth-of-type(2), .playBoard.tType4_result tr td:nth-of-type(7) {
-  width: 15%;
+.playBoard.tType4_result tr td:nth-of-type(2) {
+  min-width: 150px;
 }
-.playBoard.tType4_result tr td:nth-of-type(3), .playBoard.tType4_result tr td:nth-of-type(4), .playBoard.tType4_result tr td:nth-of-type(6) {
-  width: 3%;
+.playBoard.tType4_result tr td:nth-of-type(3), .playBoard.tType4_result tr td:nth-of-type(4), .playBoard.tType4_result tr td:nth-of-type(8) {
+  min-width: 30px;
 }
 .playBoard.tType4_result tr td:nth-of-type(5) {
-  width: 43%;
+  width: 100%;
 }
 .playBoard.tType4_result tr td:nth-of-type(6), .playBoard.tType4_result tr td:nth-of-type(7) {
-  width: 5%;
-}
-.playBoard.tType5.hide1 tr td:nth-of-type(1) {
-  width: 55%;
-}
-.playBoard.tType5.hide1 tr td:nth-of-type(12) {
-  width: 5%;
-}
-.playBoard.tType5.hide2 tr td:nth-of-type(1) {
-  width: 50%;
+  min-width: 50px;
 }
 .playBoard.tType5 tr td:nth-of-type(1) {
-  width: 60%;
+  width: 100%;
 }
 .playBoard.tType5 tr td:nth-of-type(2), .playBoard.tType5 tr td:nth-of-type(3), .playBoard.tType5 tr td:nth-of-type(4), .playBoard.tType5 tr td:nth-of-type(5), .playBoard.tType5 tr td:nth-of-type(6), .playBoard.tType5 tr td:nth-of-type(7), .playBoard.tType5 tr td:nth-of-type(8) {
-  width: 2%;
+  min-width: 20px;
 }
-.playBoard.tType5 tr td:nth-of-type(9), .playBoard.tType5 tr td:nth-of-type(12) {
-  width: 4%;
+.playBoard.tType5 tr td:nth-of-type(9) {
+  min-width: 30px;
 }
-.playBoard.tType5 tr td:nth-of-type(10) {
-  width: 9%;
+.playBoard.tType5 tr td:nth-of-type(10), .playBoard.tType5 tr td:nth-of-type(11) {
+  width: 11%;
 }
-.playBoard.tType5 tr td:nth-of-type(11) {
-  width: 9%;
+.playBoard.tType5 tr td:nth-of-type(12) {
+  min-width: 50px;
 }
-.playBoard.tType5_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(2) {
+.playBoard.tType5_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
-}
-.playBoard.tType5_2.hide1 tr td:nth-of-type(1) {
-  width: 24%;
-}
-.playBoard.tType5_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType5_2.hide2 tr td:nth-last-of-type(3) {
-  display: none;
-}
-.playBoard.tType5_2.hide2 tr td:nth-of-type(1) {
-  width: 30%;
-}
-.playBoard.tType5_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType5_2.hide3 tr td:nth-last-of-type(4) {
-  display: none;
-}
-.playBoard.tType5_2.hide3 tr td:nth-of-type(1) {
-  width: 40%;
-}
-.playBoard.tType5_2.hide3 tr td:nth-of-type(15) {
-  width: 5%;
 }
 .playBoard.tType5_2 tr td:nth-of-type(1) {
   line-height: 25px;
-  width: 18%;
+  width: 100%;
 }
 .playBoard.tType5_2 tr td:nth-of-type(2), .playBoard.tType5_2 tr td:nth-of-type(3), .playBoard.tType5_2 tr td:nth-of-type(4), .playBoard.tType5_2 tr td:nth-of-type(5), .playBoard.tType5_2 tr td:nth-of-type(6), .playBoard.tType5_2 tr td:nth-of-type(7), .playBoard.tType5_2 tr td:nth-of-type(8) {
   line-height: 25px;
-  width: 2%;
+  min-width: 20px;
 }
 .playBoard.tType5_2 tr td:nth-of-type(2) p, .playBoard.tType5_2 tr td:nth-of-type(3) p, .playBoard.tType5_2 tr td:nth-of-type(4) p, .playBoard.tType5_2 tr td:nth-of-type(5) p, .playBoard.tType5_2 tr td:nth-of-type(6) p, .playBoard.tType5_2 tr td:nth-of-type(7) p, .playBoard.tType5_2 tr td:nth-of-type(8) p {
   padding: 0px;
 }
-.playBoard.tType5_2 tr td:nth-of-type(9), .playBoard.tType5_2 tr td:nth-of-type(15) {
+.playBoard.tType5_2 tr td:nth-of-type(9) {
   line-height: 25px;
-  width: 4%;
+  min-width: 30px;
 }
-.playBoard.tType5_2 tr td:nth-of-type(9) p, .playBoard.tType5_2 tr td:nth-of-type(15) p {
+.playBoard.tType5_2 tr td:nth-of-type(9) p {
   padding: 0px;
 }
 .playBoard.tType5_2 tr td:nth-of-type(10), .playBoard.tType5_2 tr td:nth-of-type(11), .playBoard.tType5_2 tr td:nth-of-type(12), .playBoard.tType5_2 tr td:nth-of-type(13), .playBoard.tType5_2 tr td:nth-of-type(14) {
-  width: 12%;
+  width: 1%;
 }
 .playBoard.tType5_2 tr td:nth-of-type(15) {
-  width: 4%;
+  min-width: 50px;
 }
-.playBoard.tType5_lol_index.hide1 tr td:nth-of-type(3) {
-  width: 32%;
+.playBoard.tType5_lol_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType5_lol_index.hide1 tr td:nth-of-type(19) {
-  width: 8%;
-}
-.playBoard.tType5_lol_index tr td:nth-of-type(1), .playBoard.tType5_lol_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType5_lol_index tr td:nth-of-type(2), .playBoard.tType5_lol_index tr td:nth-of-type(19) {
+  min-width: 50px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(3) {
-  width: 34%;
+  width: 100%;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(4), .playBoard.tType5_lol_index tr td:nth-of-type(5), .playBoard.tType5_lol_index tr td:nth-of-type(6), .playBoard.tType5_lol_index tr td:nth-of-type(7), .playBoard.tType5_lol_index tr td:nth-of-type(8), .playBoard.tType5_lol_index tr td:nth-of-type(9), .playBoard.tType5_lol_index tr td:nth-of-type(10) {
-  width: 2%;
+  min-width: 20px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(11), .playBoard.tType5_lol_index tr td:nth-of-type(12), .playBoard.tType5_lol_index tr td:nth-of-type(13), .playBoard.tType5_lol_index tr td:nth-of-type(14), .playBoard.tType5_lol_index tr td:nth-of-type(15), .playBoard.tType5_lol_index tr td:nth-of-type(16), .playBoard.tType5_lol_index tr td:nth-of-type(17), .playBoard.tType5_lol_index tr td:nth-of-type(18) {
-  width: 4%;
+  min-width: 30px;
 }
-.playBoard.tType5_lol_index tr td:nth-of-type(19) {
-  width: 6%;
+.playBoard.tType5_dota_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType5_dota_index.hide1 tr td:nth-of-type(3) {
-  width: 36%;
-}
-.playBoard.tType5_dota_index.hide1 tr td:nth-of-type(18) {
-  width: 8%;
-}
-.playBoard.tType5_dota_index tr td:nth-of-type(1), .playBoard.tType5_dota_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType5_dota_index tr td:nth-of-type(2), .playBoard.tType5_dota_index tr td:nth-of-type(18) {
+  min-width: 50px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(3) {
-  width: 38%;
+  width: 100%;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(4), .playBoard.tType5_dota_index tr td:nth-of-type(5), .playBoard.tType5_dota_index tr td:nth-of-type(6), .playBoard.tType5_dota_index tr td:nth-of-type(7), .playBoard.tType5_dota_index tr td:nth-of-type(8), .playBoard.tType5_dota_index tr td:nth-of-type(9), .playBoard.tType5_dota_index tr td:nth-of-type(10) {
-  width: 2%;
+  min-width: 20px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(11), .playBoard.tType5_dota_index tr td:nth-of-type(12), .playBoard.tType5_dota_index tr td:nth-of-type(13), .playBoard.tType5_dota_index tr td:nth-of-type(14), .playBoard.tType5_dota_index tr td:nth-of-type(15), .playBoard.tType5_dota_index tr td:nth-of-type(16), .playBoard.tType5_dota_index tr td:nth-of-type(17) {
-  width: 4%;
+  min-width: 30px;
 }
-.playBoard.tType5_dota_index tr td:nth-of-type(18) {
-  width: 6%;
+.playBoard.tType5_cs_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType5_cs_index.hide1 tr td:nth-of-type(3) {
-  width: 44%;
-}
-.playBoard.tType5_cs_index.hide1 tr td:nth-of-type(15) {
-  width: 8%;
-}
-.playBoard.tType5_cs_index tr td:nth-of-type(1), .playBoard.tType5_cs_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType5_cs_index tr td:nth-of-type(2), .playBoard.tType5_cs_index tr td:nth-of-type(15) {
+  min-width: 50px;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(3) {
-  width: 46%;
+  width: 100%;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(4), .playBoard.tType5_cs_index tr td:nth-of-type(5), .playBoard.tType5_cs_index tr td:nth-of-type(6), .playBoard.tType5_cs_index tr td:nth-of-type(7), .playBoard.tType5_cs_index tr td:nth-of-type(8), .playBoard.tType5_cs_index tr td:nth-of-type(9), .playBoard.tType5_cs_index tr td:nth-of-type(10) {
-  width: 2%;
+  min-width: 20px;
 }
-.playBoard.tType5_cs_index tr td:nth-of-type(11), .playBoard.tType5_cs_index tr td:nth-of-type(12), .playBoard.tType5_cs_index tr td:nth-of-type(13), .playBoard.tType5_cs_index tr td:nth-of-type(14) {
-  width: 5%;
+.playBoard.tType5_cs_index tr td:nth-of-type(11), .playBoard.tType5_cs_index tr td:nth-of-type(12), .playBoard.tType5_cs_index tr td:nth-of-type(13) {
+  min-width: 30px;
 }
-.playBoard.tType5_cs_index tr td:nth-of-type(15) {
-  width: 6%;
+.playBoard.tType5_cs_index tr td:nth-of-type(14) {
+  min-width: 40px;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(3) {
-  width: 24%;
+  width: 100%;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(4), .playBoard.tType5_lol_result tr td:nth-of-type(5), .playBoard.tType5_lol_result tr td:nth-of-type(6), .playBoard.tType5_lol_result tr td:nth-of-type(7), .playBoard.tType5_lol_result tr td:nth-of-type(8), .playBoard.tType5_lol_result tr td:nth-of-type(9), .playBoard.tType5_lol_result tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(11), .playBoard.tType5_lol_result tr td:nth-of-type(12), .playBoard.tType5_lol_result tr td:nth-of-type(13), .playBoard.tType5_lol_result tr td:nth-of-type(14), .playBoard.tType5_lol_result tr td:nth-of-type(15), .playBoard.tType5_lol_result tr td:nth-of-type(16), .playBoard.tType5_lol_result tr td:nth-of-type(17), .playBoard.tType5_lol_result tr td:nth-of-type(18) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(3) {
-  width: 28%;
+  width: 100%;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(4), .playBoard.tType5_dota_result tr td:nth-of-type(5), .playBoard.tType5_dota_result tr td:nth-of-type(6), .playBoard.tType5_dota_result tr td:nth-of-type(7), .playBoard.tType5_dota_result tr td:nth-of-type(8), .playBoard.tType5_dota_result tr td:nth-of-type(9), .playBoard.tType5_dota_result tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(11), .playBoard.tType5_dota_result tr td:nth-of-type(12), .playBoard.tType5_dota_result tr td:nth-of-type(13), .playBoard.tType5_dota_result tr td:nth-of-type(14), .playBoard.tType5_dota_result tr td:nth-of-type(15), .playBoard.tType5_dota_result tr td:nth-of-type(16), .playBoard.tType5_dota_result tr td:nth-of-type(17) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType5_cs_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType5_cs_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType5_cs_result tr td:nth-of-type(3) {
-  width: 34%;
+  width: 100%;
 }
 .playBoard.tType5_cs_result tr td:nth-of-type(4), .playBoard.tType5_cs_result tr td:nth-of-type(5), .playBoard.tType5_cs_result tr td:nth-of-type(6), .playBoard.tType5_cs_result tr td:nth-of-type(7), .playBoard.tType5_cs_result tr td:nth-of-type(8), .playBoard.tType5_cs_result tr td:nth-of-type(9), .playBoard.tType5_cs_result tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 20px;
 }
-.playBoard.tType5_cs_result tr td:nth-of-type(11) {
-  width: 4%;
+.playBoard.tType5_cs_result tr td:nth-of-type(11), .playBoard.tType5_cs_result tr td:nth-of-type(12), .playBoard.tType5_cs_result tr td:nth-of-type(13) {
+  min-width: 30px;
 }
-.playBoard.tType5_cs_result tr td:nth-of-type(12), .playBoard.tType5_cs_result tr td:nth-of-type(13), .playBoard.tType5_cs_result tr td:nth-of-type(14) {
-  width: 6%;
-}
-.playBoard.tType6.hide1 tr td:nth-of-type(1) {
-  width: 54%;
-}
-.playBoard.tType6.hide1 tr td:nth-of-type(2), .playBoard.tType6.hide1 tr td:nth-of-type(3) {
-  width: 20%;
-}
-.playBoard.tType6.hide1 tr td:nth-of-type(4) {
-  width: 5%;
-}
-.playBoard.tType6.hide2 tr td:nth-of-type(1) {
-  width: 45%;
-}
-.playBoard.tType6.hide2 tr td:nth-of-type(2), .playBoard.tType6.hide2 tr td:nth-of-type(3) {
-  width: 22%;
-}
-.playBoard.tType6.hide2 tr td:nth-of-type(4) {
-  width: 6%;
-}
-.playBoard.tType6.hide3 tr td:nth-of-type(1) {
-  width: 40%;
-}
-.playBoard.tType6.hide3 tr td:nth-of-type(2), .playBoard.tType6.hide3 tr td:nth-of-type(3) {
-  width: 23%;
+.playBoard.tType5_cs_result tr td:nth-of-type(14) {
+  min-width: 40px;
 }
 .playBoard.tType6 tr td:nth-of-type(1) {
-  width: 60%;
+  width: 100%;
 }
 .playBoard.tType6 tr td:nth-of-type(2), .playBoard.tType6 tr td:nth-of-type(3) {
-  width: 18%;
+  width: 1%;
 }
 .playBoard.tType6 tr td:nth-of-type(4) {
-  width: 4%;
+  min-width: 50px;
 }
 .playBoard.tType6_index tr td:nth-of-type(1) {
-  width: 12%;
+  min-width: 120px;
 }
 .playBoard.tType6_index tr td:nth-of-type(2), .playBoard.tType6_index tr td:nth-of-type(3), .playBoard.tType6_index tr td:nth-of-type(4), .playBoard.tType6_index tr td:nth-of-type(5) {
-  width: 20%;
+  width: 25%;
 }
 .playBoard.tType6_index tr td:nth-of-type(6) {
-  width: 8%;
+  min-width: 50px;
 }
-.playBoard.tType6_result tr td:nth-of-type(1), .playBoard.tType6_result tr td:nth-of-type(2), .playBoard.tType6_result tr td:nth-of-type(5), .playBoard.tType6_result tr td:nth-of-type(6) {
-  width: 15%;
+.playBoard.tType6_result tr td:nth-of-type(1), .playBoard.tType6_result tr td:nth-of-type(2) {
+  min-width: 120px;
 }
-.playBoard.tType6_result tr td:nth-of-type(3), .playBoard.tType6_result tr td:nth-of-type(4) {
-  width: 20%;
-}
-.playBoard.tType7.hide1 tr td:nth-of-type(1) {
-  width: 54%;
-}
-.playBoard.tType7.hide1 tr td:nth-of-type(2), .playBoard.tType7.hide1 tr td:nth-of-type(3) {
-  width: 20%;
-}
-.playBoard.tType7.hide1 tr td:nth-of-type(4) {
-  width: 5%;
-}
-.playBoard.tType7.hide2 tr td:nth-of-type(1) {
-  width: 45%;
-}
-.playBoard.tType7.hide2 tr td:nth-of-type(2), .playBoard.tType7.hide2 tr td:nth-of-type(3) {
-  width: 22%;
-}
-.playBoard.tType7.hide2 tr td:nth-of-type(4) {
-  width: 6%;
-}
-.playBoard.tType7.hide3 tr td:nth-of-type(1) {
-  width: 40%;
-}
-.playBoard.tType7.hide3 tr td:nth-of-type(2), .playBoard.tType7.hide3 tr td:nth-of-type(3) {
-  width: 23%;
+.playBoard.tType6_result tr td:nth-of-type(3), .playBoard.tType6_result tr td:nth-of-type(4), .playBoard.tType6_result tr td:nth-of-type(5), .playBoard.tType6_result tr td:nth-of-type(6) {
+  width: 25%;
 }
 .playBoard.tType7 tr td:nth-of-type(1) {
-  width: 60%;
+  width: 100%;
 }
 .playBoard.tType7 tr td:nth-of-type(2), .playBoard.tType7 tr td:nth-of-type(3) {
-  width: 18%;
+  width: 1%;
 }
 .playBoard.tType7 tr td:nth-of-type(4) {
-  width: 4%;
+  min-width: 50px;
 }
-.playBoard.tType7_bingo_index.hide3 tr td:nth-of-type(13), .playBoard.tType7_bingo_index.hide3 tr td:nth-of-type(14), .playBoard.tType7_bingo_index.hide3 tr td:nth-of-type(15) {
-  width: 8%;
+.playBoard.tType7_bingo_index tr td:nth-of-type(1), .playBoard.tType7_bingo_index tr td:nth-of-type(2) {
+  min-width: 120px;
 }
-.playBoard.tType7_bingo_index tr td:nth-of-type(1), .playBoard.tType7_bingo_index tr td:nth-of-type(2), .playBoard.tType7_bingo_index tr td:nth-of-type(13), .playBoard.tType7_bingo_index tr td:nth-of-type(14), .playBoard.tType7_bingo_index tr td:nth-of-type(15) {
-  width: 12%;
+.playBoard.tType7_bingo_index tr td:nth-of-type(13), .playBoard.tType7_bingo_index tr td:nth-of-type(14), .playBoard.tType7_bingo_index tr td:nth-of-type(15) {
+  width: 33%;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(3), .playBoard.tType7_bingo_index tr td:nth-of-type(4), .playBoard.tType7_bingo_index tr td:nth-of-type(5), .playBoard.tType7_bingo_index tr td:nth-of-type(6), .playBoard.tType7_bingo_index tr td:nth-of-type(7), .playBoard.tType7_bingo_index tr td:nth-of-type(8), .playBoard.tType7_bingo_index tr td:nth-of-type(9), .playBoard.tType7_bingo_index tr td:nth-of-type(10), .playBoard.tType7_bingo_index tr td:nth-of-type(11), .playBoard.tType7_bingo_index tr td:nth-of-type(12) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(16) {
-  width: 10%;
+  min-width: 50px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(1), .playBoard.tType7_lottery_index tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 120px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(3) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(4), .playBoard.tType7_lottery_index tr td:nth-of-type(5), .playBoard.tType7_lottery_index tr td:nth-of-type(6), .playBoard.tType7_lottery_index tr td:nth-of-type(7), .playBoard.tType7_lottery_index tr td:nth-of-type(8) {
-  width: 9%;
+  min-width: 80px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(9) {
-  width: 7%;
+  width: 100%;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(10) {
-  width: 10%;
+  min-width: 50px;
 }
-.playBoard.tType7_bingo_result tr td:nth-of-type(1) {
-  width: 15%;
-}
-.playBoard.tType7_bingo_result tr td:nth-of-type(2) {
-  width: 20%;
+.playBoard.tType7_bingo_result tr td:nth-of-type(1), .playBoard.tType7_bingo_result tr td:nth-of-type(2) {
+  min-width: 120px;
 }
 .playBoard.tType7_bingo_result tr td:nth-of-type(3) {
-  width: 9%;
+  min-width: 60px;
 }
-.playBoard.tType7_bingo_result tr td:nth-of-type(4), .playBoard.tType7_bingo_result tr td:nth-of-type(5), .playBoard.tType7_bingo_result tr td:nth-of-type(6), .playBoard.tType7_bingo_result tr td:nth-of-type(7), .playBoard.tType7_bingo_result tr td:nth-of-type(8), .playBoard.tType7_bingo_result tr td:nth-of-type(9), .playBoard.tType7_bingo_result tr td:nth-of-type(10) {
-  width: 8%;
+.playBoard.tType7_bingo_result tr td:nth-of-type(4), .playBoard.tType7_bingo_result tr td:nth-of-type(5), .playBoard.tType7_bingo_result tr td:nth-of-type(6), .playBoard.tType7_bingo_result tr td:nth-of-type(7), .playBoard.tType7_bingo_result tr td:nth-of-type(8), .playBoard.tType7_bingo_result tr td:nth-of-type(9) {
+  min-width: 70px;
 }
-.playBoard.tType7_lottery_result tr td:nth-of-type(1) {
-  width: 15%;
+.playBoard.tType7_bingo_result tr td:nth-of-type(10) {
+  width: 100%;
 }
-.playBoard.tType7_lottery_result tr td:nth-of-type(2) {
-  width: 18%;
+.playBoard.tType7_lottery_result tr td:nth-of-type(1), .playBoard.tType7_lottery_result tr td:nth-of-type(2) {
+  min-width: 120px;
 }
 .playBoard.tType7_lottery_result tr td:nth-of-type(3), .playBoard.tType7_lottery_result tr td:nth-of-type(4), .playBoard.tType7_lottery_result tr td:nth-of-type(5), .playBoard.tType7_lottery_result tr td:nth-of-type(6), .playBoard.tType7_lottery_result tr td:nth-of-type(7), .playBoard.tType7_lottery_result tr td:nth-of-type(8), .playBoard.tType7_lottery_result tr td:nth-of-type(9), .playBoard.tType7_lottery_result tr td:nth-of-type(10), .playBoard.tType7_lottery_result tr td:nth-of-type(11), .playBoard.tType7_lottery_result tr td:nth-of-type(12) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType7_lottery_result tr td:nth-of-type(13), .playBoard.tType7_lottery_result tr td:nth-of-type(14), .playBoard.tType7_lottery_result tr td:nth-of-type(15) {
-  width: 9%;
-}
-.playBoard.tType8.hide1 tr td:nth-of-type(1) {
-  width: 45%;
-}
-.playBoard.tType8.hide1 tr td:nth-of-type(12) {
-  width: 5%;
+  width: 33%;
 }
 .playBoard.tType8 tr td:nth-of-type(1) {
-  width: 57%;
+  width: 100%;
 }
 .playBoard.tType8 tr td:nth-of-type(2) {
-  width: 3%;
+  min-width: 25px;
 }
 .playBoard.tType8 tr td:nth-of-type(3), .playBoard.tType8 tr td:nth-of-type(4), .playBoard.tType8 tr td:nth-of-type(5), .playBoard.tType8 tr td:nth-of-type(6), .playBoard.tType8 tr td:nth-of-type(7) {
-  width: 2%;
+  min-width: 20px;
 }
-.playBoard.tType8 tr td:nth-of-type(8), .playBoard.tType8 tr td:nth-of-type(9), .playBoard.tType8 tr td:nth-of-type(12) {
-  width: 4%;
+.playBoard.tType8 tr td:nth-of-type(8), .playBoard.tType8 tr td:nth-of-type(9) {
+  min-width: 30px;
 }
 .playBoard.tType8 tr td:nth-of-type(10), .playBoard.tType8 tr td:nth-of-type(11) {
-  width: 9%;
+  width: 1%;
 }
-.playBoard.tType8_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType8_2.hide1 tr td:nth-last-of-type(2) {
+.playBoard.tType8 tr td:nth-of-type(12) {
+  min-width: 50px;
+}
+.playBoard.tType8_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType8_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType8_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType8_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
-}
-.playBoard.tType8_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType8_2.hide2 tr td:nth-last-of-type(3) {
-  display: none;
-}
-.playBoard.tType8_2.hide2 tr td:nth-of-type(1) {
-  width: 26%;
-}
-.playBoard.tType8_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType8_2.hide3 tr td:nth-last-of-type(4) {
-  display: none;
-}
-.playBoard.tType8_2.hide3 tr td:nth-of-type(1) {
-  width: 36%;
-}
-.playBoard.tType8_2.hide3 tr td:nth-of-type(15) {
-  width: 5%;
 }
 .playBoard.tType8_2 tr td:nth-of-type(1) {
   line-height: 25px;
-  width: 15%;
+  width: 100%;
 }
 .playBoard.tType8_2 tr td:nth-of-type(2) {
-  line-height: 25px;
-  width: 3%;
-}
-.playBoard.tType8_2 tr td:nth-of-type(2) p {
-  padding: 0px;
+  min-width: 25px;
 }
 .playBoard.tType8_2 tr td:nth-of-type(3), .playBoard.tType8_2 tr td:nth-of-type(4), .playBoard.tType8_2 tr td:nth-of-type(5), .playBoard.tType8_2 tr td:nth-of-type(6), .playBoard.tType8_2 tr td:nth-of-type(7) {
   line-height: 25px;
-  width: 2%;
+  min-width: 20px;
 }
 .playBoard.tType8_2 tr td:nth-of-type(3) p, .playBoard.tType8_2 tr td:nth-of-type(4) p, .playBoard.tType8_2 tr td:nth-of-type(5) p, .playBoard.tType8_2 tr td:nth-of-type(6) p, .playBoard.tType8_2 tr td:nth-of-type(7) p {
   padding: 0px;
 }
 .playBoard.tType8_2 tr td:nth-of-type(8), .playBoard.tType8_2 tr td:nth-of-type(9) {
   line-height: 25px;
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType8_2 tr td:nth-of-type(8) p, .playBoard.tType8_2 tr td:nth-of-type(9) p {
   padding: 0px;
 }
 .playBoard.tType8_2 tr td:nth-of-type(10), .playBoard.tType8_2 tr td:nth-of-type(11), .playBoard.tType8_2 tr td:nth-of-type(12), .playBoard.tType8_2 tr td:nth-of-type(13), .playBoard.tType8_2 tr td:nth-of-type(14) {
-  width: 12%;
+  width: 1%;
 }
 .playBoard.tType8_2 tr td:nth-of-type(15) {
-  width: 4%;
+  min-width: 50px;
 }
-.playBoard.tType8_index.hide1 tr td:nth-of-type(4) {
-  width: 48%;
+.playBoard.tType8_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType8_index.hide1 tr td:nth-of-type(13) {
-  width: 9%;
-}
-.playBoard.tType8_index tr td:nth-of-type(1), .playBoard.tType8_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType8_index tr td:nth-of-type(2), .playBoard.tType8_index tr td:nth-of-type(13) {
+  min-width: 50px;
 }
 .playBoard.tType8_index tr td:nth-of-type(3), .playBoard.tType8_index tr td:nth-of-type(11), .playBoard.tType8_index tr td:nth-of-type(12) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType8_index tr td:nth-of-type(4) {
-  width: 50%;
+  width: 100%;
 }
 .playBoard.tType8_index tr td:nth-of-type(5), .playBoard.tType8_index tr td:nth-of-type(6), .playBoard.tType8_index tr td:nth-of-type(7), .playBoard.tType8_index tr td:nth-of-type(8), .playBoard.tType8_index tr td:nth-of-type(9), .playBoard.tType8_index tr td:nth-of-type(10) {
-  width: 3%;
-}
-.playBoard.tType8_index tr td:nth-of-type(13) {
-  width: 6%;
+  min-width: 20px;
 }
 .playBoard.tType8_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType8_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType8_result tr td:nth-of-type(3) {
-  width: 51%;
+  width: 100%;
 }
 .playBoard.tType8_result tr td:nth-of-type(4), .playBoard.tType8_result tr td:nth-of-type(5), .playBoard.tType8_result tr td:nth-of-type(6), .playBoard.tType8_result tr td:nth-of-type(7), .playBoard.tType8_result tr td:nth-of-type(8), .playBoard.tType8_result tr td:nth-of-type(9) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType8_result tr td:nth-of-type(10), .playBoard.tType8_result tr td:nth-of-type(11) {
-  width: 4%;
-}
-.playBoard.tType9.hide1 tr td:nth-of-type(1) {
-  width: 60%;
-}
-.playBoard.tType9.hide1 tr td:nth-of-type(6) {
-  width: 5%;
+  min-width: 30px;
 }
 .playBoard.tType9 tr td:nth-of-type(1) {
-  width: 70%;
+  width: 100%;
 }
-.playBoard.tType9 tr td:nth-of-type(2), .playBoard.tType9 tr td:nth-of-type(3), .playBoard.tType9 tr td:nth-of-type(6) {
-  width: 4%;
+.playBoard.tType9 tr td:nth-of-type(2), .playBoard.tType9 tr td:nth-of-type(3) {
+  min-width: 40px;
 }
 .playBoard.tType9 tr td:nth-of-type(4), .playBoard.tType9 tr td:nth-of-type(5) {
-  width: 9%;
+  width: 1%;
 }
-.playBoard.tType9_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(2) {
+.playBoard.tType9 tr td:nth-of-type(6) {
+  min-width: 50px;
+}
+.playBoard.tType9_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
-}
-.playBoard.tType9_2.hide1 tr td:nth-of-type(1) {
-  width: 34%;
-}
-.playBoard.tType9_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType9_2.hide2 tr td:nth-last-of-type(3) {
-  display: none;
-}
-.playBoard.tType9_2.hide2 tr td:nth-of-type(1) {
-  width: 38%;
-}
-.playBoard.tType9_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType9_2.hide3 tr td:nth-last-of-type(4) {
-  display: none;
-}
-.playBoard.tType9_2.hide3 tr td:nth-of-type(1) {
-  width: 48%;
-}
-.playBoard.tType9_2.hide3 tr td:nth-of-type(9) {
-  width: 5%;
 }
 .playBoard.tType9_2 tr td:nth-of-type(1) {
   line-height: 25px;
-  width: 28%;
+  width: 100%;
 }
-.playBoard.tType9_2 tr td:nth-of-type(2), .playBoard.tType9_2 tr td:nth-of-type(9) {
-  width: 4%;
-}
-.playBoard.tType9_2 tr td:nth-of-type(3) {
+.playBoard.tType9_2 tr td:nth-of-type(2), .playBoard.tType9_2 tr td:nth-of-type(3) {
   line-height: 25px;
-  width: 4%;
+  min-width: 40px;
 }
-.playBoard.tType9_2 tr td:nth-of-type(3) p {
+.playBoard.tType9_2 tr td:nth-of-type(2) p, .playBoard.tType9_2 tr td:nth-of-type(3) p {
   padding: 0px;
 }
 .playBoard.tType9_2 tr td:nth-of-type(4), .playBoard.tType9_2 tr td:nth-of-type(5), .playBoard.tType9_2 tr td:nth-of-type(6), .playBoard.tType9_2 tr td:nth-of-type(7), .playBoard.tType9_2 tr td:nth-of-type(8) {
-  width: 12%;
+  width: 1%;
 }
-.playBoard.tType9_index tr td:nth-of-type(1), .playBoard.tType9_index tr td:nth-of-type(2), .playBoard.tType9_index tr td:nth-of-type(3) {
-  width: 7%;
+.playBoard.tType9_2 tr td:nth-of-type(9) {
+  min-width: 50px;
+}
+.playBoard.tType9_index tr td:nth-of-type(1) {
+  min-width: 70px;
+}
+.playBoard.tType9_index tr td:nth-of-type(2), .playBoard.tType9_index tr td:nth-of-type(3), .playBoard.tType9_index tr td:nth-of-type(6) {
+  min-width: 50px;
 }
 .playBoard.tType9_index tr td:nth-of-type(4) {
-  width: 66%;
+  width: 100%;
 }
 .playBoard.tType9_index tr td:nth-of-type(5) {
-  width: 5%;
-}
-.playBoard.tType9_index tr td:nth-of-type(6) {
-  width: 8%;
+  min-width: 30px;
 }
 .playBoard.tType9_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType9_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType9_result tr td:nth-of-type(3) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType9_result tr td:nth-of-type(4) {
-  width: 58%;
+  width: 100%;
 }
 .playBoard.tType9_result tr td:nth-of-type(5) {
-  width: 15%;
-}
-.playBoard.tType10.hide1 tr td:nth-of-type(1) {
-  width: 45%;
-}
-.playBoard.tType10.hide1 tr td:nth-of-type(13) {
-  width: 5%;
+  min-width: 100px;
 }
 .playBoard.tType10 tr td:nth-of-type(1) {
-  width: 56%;
+  width: 100%;
 }
 .playBoard.tType10 tr td:nth-of-type(2), .playBoard.tType10 tr td:nth-of-type(3), .playBoard.tType10 tr td:nth-of-type(4), .playBoard.tType10 tr td:nth-of-type(5), .playBoard.tType10 tr td:nth-of-type(6), .playBoard.tType10 tr td:nth-of-type(7), .playBoard.tType10 tr td:nth-of-type(8) {
-  width: 2%;
+  min-width: 20px;
 }
-.playBoard.tType10 tr td:nth-of-type(9), .playBoard.tType10 tr td:nth-of-type(10), .playBoard.tType10 tr td:nth-of-type(13) {
-  width: 4%;
+.playBoard.tType10 tr td:nth-of-type(9), .playBoard.tType10 tr td:nth-of-type(10) {
+  min-width: 30px;
 }
 .playBoard.tType10 tr td:nth-of-type(11), .playBoard.tType10 tr td:nth-of-type(12) {
-  width: 9%;
+  width: 1%;
 }
-.playBoard.tType10_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(2) {
+.playBoard.tType10 tr td:nth-of-type(13) {
+  min-width: 50px;
+}
+.playBoard.tType10_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
-}
-.playBoard.tType10_2.hide1 td:nth-of-type(1) {
-  width: 20%;
-}
-.playBoard.tType10_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType10_2.hide2 tr td:nth-last-of-type(3) {
-  display: none;
-}
-.playBoard.tType10_2.hide2 tr td:nth-of-type(1) {
-  width: 24%;
-}
-.playBoard.tType10_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType10_2.hide3 tr td:nth-last-of-type(4) {
-  display: none;
-}
-.playBoard.tType10_2.hide3 tr td:nth-of-type(1) {
-  width: 35%;
-}
-.playBoard.tType10_2.hide3 tr td:nth-of-type(16) {
-  width: 5%;
 }
 .playBoard.tType10_2 tr td:nth-of-type(1) {
   line-height: 25px;
-  width: 14%;
+  width: 100%;
 }
 .playBoard.tType10_2 tr td:nth-of-type(2), .playBoard.tType10_2 tr td:nth-of-type(3), .playBoard.tType10_2 tr td:nth-of-type(4), .playBoard.tType10_2 tr td:nth-of-type(5), .playBoard.tType10_2 tr td:nth-of-type(6), .playBoard.tType10_2 tr td:nth-of-type(7), .playBoard.tType10_2 tr td:nth-of-type(8) {
   line-height: 25px;
-  width: 2%;
+  min-width: 20px;
 }
 .playBoard.tType10_2 tr td:nth-of-type(2) p, .playBoard.tType10_2 tr td:nth-of-type(3) p, .playBoard.tType10_2 tr td:nth-of-type(4) p, .playBoard.tType10_2 tr td:nth-of-type(5) p, .playBoard.tType10_2 tr td:nth-of-type(6) p, .playBoard.tType10_2 tr td:nth-of-type(7) p, .playBoard.tType10_2 tr td:nth-of-type(8) p {
   padding: 0px;
 }
 .playBoard.tType10_2 tr td:nth-of-type(9), .playBoard.tType10_2 tr td:nth-of-type(10) {
   line-height: 25px;
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType10_2 tr td:nth-of-type(9) p, .playBoard.tType10_2 tr td:nth-of-type(10) p {
   padding: 0px;
 }
 .playBoard.tType10_2 tr td:nth-of-type(11), .playBoard.tType10_2 tr td:nth-of-type(12), .playBoard.tType10_2 tr td:nth-of-type(13), .playBoard.tType10_2 tr td:nth-of-type(14), .playBoard.tType10_2 tr td:nth-of-type(15) {
-  width: 12%;
+  width: 1%;
 }
 .playBoard.tType10_2 tr td:nth-of-type(16) {
-  width: 4%;
+  min-width: 50px;
 }
-.playBoard.tType10_index.hide1 tr td:nth-of-type(4) {
-  width: 45%;
+.playBoard.tType10_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType10_index.hide1 tr td:nth-of-type(14) {
-  width: 8%;
-}
-.playBoard.tType10_index tr td:nth-of-type(1), .playBoard.tType10_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType10_index tr td:nth-of-type(2), .playBoard.tType10_index tr td:nth-of-type(14) {
+  min-width: 50px;
 }
 .playBoard.tType10_index tr td:nth-of-type(3), .playBoard.tType10_index tr td:nth-of-type(12), .playBoard.tType10_index tr td:nth-of-type(13) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType10_index tr td:nth-of-type(4) {
-  width: 47%;
+  width: 100%;
 }
 .playBoard.tType10_index tr td:nth-of-type(5), .playBoard.tType10_index tr td:nth-of-type(6), .playBoard.tType10_index tr td:nth-of-type(7), .playBoard.tType10_index tr td:nth-of-type(8), .playBoard.tType10_index tr td:nth-of-type(9), .playBoard.tType10_index tr td:nth-of-type(10), .playBoard.tType10_index tr td:nth-of-type(11) {
-  width: 3%;
-}
-.playBoard.tType10_index tr td:nth-of-type(14) {
-  width: 6%;
+  min-width: 20px;
 }
 .playBoard.tType10_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType10_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType10_result tr td:nth-of-type(3) {
-  width: 48%;
+  width: 100%;
 }
 .playBoard.tType10_result tr td:nth-of-type(4), .playBoard.tType10_result tr td:nth-of-type(5), .playBoard.tType10_result tr td:nth-of-type(6), .playBoard.tType10_result tr td:nth-of-type(7), .playBoard.tType10_result tr td:nth-of-type(8), .playBoard.tType10_result tr td:nth-of-type(9), .playBoard.tType10_result tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType10_result tr td:nth-of-type(11), .playBoard.tType10_result tr td:nth-of-type(12) {
-  width: 4%;
-}
-.playBoard.tType11.hide1 tr td:nth-of-type(1) {
-  width: 54%;
-}
-.playBoard.tType11.hide1 tr td:nth-of-type(2), .playBoard.tType11.hide1 tr td:nth-of-type(3) {
-  width: 20%;
-}
-.playBoard.tType11.hide1 tr td:nth-of-type(4) {
-  width: 5%;
-}
-.playBoard.tType11.hide2 tr td:nth-of-type(1) {
-  width: 45%;
-}
-.playBoard.tType11.hide2 tr td:nth-of-type(2), .playBoard.tType11.hide2 tr td:nth-of-type(3) {
-  width: 22%;
-}
-.playBoard.tType11.hide2 tr td:nth-of-type(4) {
-  width: 6%;
-}
-.playBoard.tType11.hide3 tr td:nth-of-type(1) {
-  width: 40%;
-}
-.playBoard.tType11.hide3 tr td:nth-of-type(2), .playBoard.tType11.hide3 tr td:nth-of-type(3) {
-  width: 23%;
+  min-width: 30px;
 }
 .playBoard.tType11 tr td:nth-of-type(1) {
-  width: 60%;
+  width: 100%;
 }
 .playBoard.tType11 tr td:nth-of-type(2), .playBoard.tType11 tr td:nth-of-type(3) {
-  width: 18%;
+  width: 1%;
 }
 .playBoard.tType11 tr td:nth-of-type(4) {
-  width: 4%;
+  min-width: 50px;
 }
 .playBoard.tType11_index tr td p {
   padding-bottom: 8px;
@@ -2333,23 +2000,17 @@ main .bg {
 .playBoard.tType11_index tr td p:last-child {
   padding: 0px;
 }
-.playBoard.tType11_index tr td:nth-of-type(1), .playBoard.tType11_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType11_index tr td:nth-of-type(1), .playBoard.tType11_index tr td:nth-of-type(9) {
+  min-width: 70px;
+}
+.playBoard.tType11_index tr td:nth-of-type(2), .playBoard.tType11_index tr td:nth-of-type(6), .playBoard.tType11_index tr td:nth-of-type(11) {
+  min-width: 50px;
 }
 .playBoard.tType11_index tr td:nth-of-type(3), .playBoard.tType11_index tr td:nth-of-type(4), .playBoard.tType11_index tr td:nth-of-type(7), .playBoard.tType11_index tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 30px;
 }
 .playBoard.tType11_index tr td:nth-of-type(5), .playBoard.tType11_index tr td:nth-of-type(8) {
-  width: 26%;
-}
-.playBoard.tType11_index tr td:nth-of-type(6) {
-  width: 5%;
-}
-.playBoard.tType11_index tr td:nth-of-type(9) {
-  width: 8%;
-}
-.playBoard.tType11_index tr td:nth-of-type(11) {
-  width: 6%;
+  width: 50%;
 }
 .playBoard.tType11_result tr td p {
   padding-bottom: 8px;
@@ -2357,86 +2018,62 @@ main .bg {
 .playBoard.tType11_result tr td p:last-child {
   padding: 0px;
 }
-.playBoard.tType11_result tr td:nth-of-type(1), .playBoard.tType11_result tr td:nth-of-type(6) {
-  width: 8%;
+.playBoard.tType11_result tr td:nth-of-type(1), .playBoard.tType11_result tr td:nth-of-type(9) {
+  min-width: 70px;
 }
 .playBoard.tType11_result tr td:nth-of-type(2) {
-  width: 15%;
-}
-.playBoard.tType11_result tr td:nth-of-type(5), .playBoard.tType11_result tr td:nth-of-type(8) {
-  width: 22%;
+  min-width: 150px;
 }
 .playBoard.tType11_result tr td:nth-of-type(3), .playBoard.tType11_result tr td:nth-of-type(4), .playBoard.tType11_result tr td:nth-of-type(7), .playBoard.tType11_result tr td:nth-of-type(10) {
-  width: 4%;
+  min-width: 30px;
 }
-.playBoard.tType11_result tr td:nth-of-type(9) {
-  width: 9%;
-}
-.playBoard.tType12.hide1 tr td:nth-of-type(1) {
+.playBoard.tType11_result tr td:nth-of-type(5), .playBoard.tType11_result tr td:nth-of-type(8) {
   width: 50%;
 }
-.playBoard.tType12.hide1 tr td:nth-of-type(12) {
-  width: 5%;
-}
-.playBoard.tType12.hide2 tr td:nth-of-type(1) {
-  width: 45%;
+.playBoard.tType11_result tr td:nth-of-type(6) {
+  min-width: 40px;
 }
 .playBoard.tType12 tr td:nth-of-type(1) {
-  width: 60%;
+  width: 100%;
 }
 .playBoard.tType12 tr td:nth-of-type(2), .playBoard.tType12 tr td:nth-of-type(3), .playBoard.tType12 tr td:nth-of-type(4), .playBoard.tType12 tr td:nth-of-type(5), .playBoard.tType12 tr td:nth-of-type(6) {
-  width: 2%;
+  min-width: 20px;
 }
-.playBoard.tType12 tr td:nth-of-type(7), .playBoard.tType12 tr td:nth-of-type(8), .playBoard.tType12 tr td:nth-of-type(11) {
-  width: 4%;
+.playBoard.tType12 tr td:nth-of-type(7), .playBoard.tType12 tr td:nth-of-type(8) {
+  min-width: 30px;
 }
 .playBoard.tType12 tr td:nth-of-type(9), .playBoard.tType12 tr td:nth-of-type(10) {
-  width: 9%;
+  width: 1%;
 }
-.playBoard.tType12_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(2) {
+.playBoard.tType12 tr td:nth-of-type(11) {
+  min-width: 50px;
+}
+.playBoard.tType12_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
-}
-.playBoard.tType12_2.hide1 tr td:nth-of-type(1) {
-  width: 24%;
-}
-.playBoard.tType12_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType12_2.hide2 tr td:nth-last-of-type(3) {
-  display: none;
-}
-.playBoard.tType12_2.hide2 tr td:nth-of-type(1) {
-  width: 30%;
-}
-.playBoard.tType12_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType12_2.hide3 tr td:nth-last-of-type(4) {
-  display: none;
-}
-.playBoard.tType12_2.hide3 tr td:nth-of-type(1) {
-  width: 39%;
-}
-.playBoard.tType12_2.hide3 tr td:nth-of-type(14) {
-  width: 5%;
 }
 .playBoard.tType12_2 tr td:nth-of-type(1) {
   line-height: 25px;
-  width: 18%;
+  width: 100%;
 }
 .playBoard.tType12_2 tr td:nth-of-type(2), .playBoard.tType12_2 tr td:nth-of-type(3), .playBoard.tType12_2 tr td:nth-of-type(4), .playBoard.tType12_2 tr td:nth-of-type(5), .playBoard.tType12_2 tr td:nth-of-type(6) {
   line-height: 25px;
-  width: 2%;
+  min-width: 20px;
 }
 .playBoard.tType12_2 tr td:nth-of-type(2) p, .playBoard.tType12_2 tr td:nth-of-type(3) p, .playBoard.tType12_2 tr td:nth-of-type(4) p, .playBoard.tType12_2 tr td:nth-of-type(5) p, .playBoard.tType12_2 tr td:nth-of-type(6) p {
   padding: 0px;
 }
 .playBoard.tType12_2 tr td:nth-of-type(7), .playBoard.tType12_2 tr td:nth-of-type(8) {
   line-height: 25px;
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType12_2 tr td:nth-of-type(7) p, .playBoard.tType12_2 tr td:nth-of-type(8) p {
   padding: 0px;
 }
 .playBoard.tType12_2 tr td:nth-of-type(9), .playBoard.tType12_2 tr td:nth-of-type(10), .playBoard.tType12_2 tr td:nth-of-type(11), .playBoard.tType12_2 tr td:nth-of-type(12), .playBoard.tType12_2 tr td:nth-of-type(13) {
-  width: 12%;
+  width: 1%;
 }
 .playBoard.tType12_2 tr td:nth-of-type(14) {
-  width: 4%;
+  min-width: 50px;
 }
 .playBoard.tType12_index.hide1 tr td:nth-of-type(4) {
   width: 51%;
@@ -2444,35 +2081,35 @@ main .bg {
 .playBoard.tType12_index.hide1 tr td:nth-of-type(12) {
   width: 8%;
 }
-.playBoard.tType12_index tr td:nth-of-type(1), .playBoard.tType12_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType12_index tr td:nth-of-type(1) {
+  min-width: 70px;
+}
+.playBoard.tType12_index tr td:nth-of-type(2), .playBoard.tType12_index tr td:nth-of-type(12) {
+  min-width: 50px;
 }
 .playBoard.tType12_index tr td:nth-of-type(3), .playBoard.tType12_index tr td:nth-of-type(10), .playBoard.tType12_index tr td:nth-of-type(11) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType12_index tr td:nth-of-type(4) {
-  width: 53%;
+  width: 100%;
 }
 .playBoard.tType12_index tr td:nth-of-type(5), .playBoard.tType12_index tr td:nth-of-type(6), .playBoard.tType12_index tr td:nth-of-type(7), .playBoard.tType12_index tr td:nth-of-type(8), .playBoard.tType12_index tr td:nth-of-type(9) {
-  width: 3%;
-}
-.playBoard.tType12_index tr td:nth-of-type(12) {
-  width: 6%;
+  min-width: 20px;
 }
 .playBoard.tType12_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType12_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType12_result tr td:nth-of-type(3) {
-  width: 58%;
+  width: 100%;
 }
 .playBoard.tType12_result tr td:nth-of-type(4), .playBoard.tType12_result tr td:nth-of-type(5), .playBoard.tType12_result tr td:nth-of-type(6), .playBoard.tType12_result tr td:nth-of-type(7), .playBoard.tType12_result tr td:nth-of-type(8) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType12_result tr td:nth-of-type(9), .playBoard.tType12_result tr td:nth-of-type(10) {
-  width: 4%;
+  min-width: 30px;
 }
 
 .bettingBoard {
@@ -2480,9 +2117,7 @@ main .bg {
   height: auto;
   overflow: hidden;
   margin: 8px auto 0px;
-  border: solid 1px #d5d5d5;
   border-collapse: inherit;
-  border-bottom: none;
 }
 .bettingBoard:last-child {
   margin-bottom: 20px;
@@ -2504,27 +2139,27 @@ main .bg {
   width: 50%;
   height: auto;
   padding: 7px;
-  color: #505050;
+  color: #ababab;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
-  border-color: transparent #d5d5d5 #bcbcbc #8c8c8c;
+  border-color: #505050;
   vertical-align: middle;
-  background: #ababab;
-  box-shadow: 0px -1px 0px 0px #8c8c8c inset;
+  background: #353535;
+  box-shadow: 0px -1px 0px 0px #505050 inset;
   font-size: 12px;
 }
 .bettingBoard tr td.waiting {
-  color: #3c7424;
+  color: #37bb18;
 }
 .bettingBoard tr td.listName {
   padding: 15px 7px;
 }
 .bettingBoard tr td.listName .vs {
-  color: #000;
+  color: #37bb18;
   margin: 0px 5px;
 }
 .bettingBoard tr td.listName .odds {
-  color: #a43e4a;
+  color: #e82f2f;
   margin-left: 5px;
 }
 .bettingBoard tr td:nth-of-type(odd) {
@@ -2552,26 +2187,26 @@ main .bg {
   height: auto;
   margin: 2% auto 0px;
   border-radius: 3px;
-  border: solid 1px #c4c4c4;
+  border: solid 1px #cacaca;
 }
 .conversionBoard tr {
   text-align: center;
 }
 .conversionBoard tr:nth-of-type(1) {
-  background: #464646;
+  background: #505050;
 }
 .conversionBoard tr:nth-of-type(1) td:nth-of-type(2) {
-  background: #325b3b;
+  background: #3c7424;
 }
 .conversionBoard tr:nth-of-type(2) {
-  background: #353535;
+  background: #3d3d3d;
 }
 .conversionBoard tr:nth-of-type(2) td:nth-of-type(1) {
-  background: #3b4b65;
+  background: #304880;
 }
 .conversionBoard tr td {
   vertical-align: middle;
-  border: solid 1px #898989;
+  border: solid 1px #8f8f8f;
   height: 45px;
   width: 7%;
   font-size: 13px;
@@ -2580,18 +2215,18 @@ main .bg {
 }
 .conversionBoard tr td.title {
   width: 9%;
-  background: #535353;
+  background: #505050;
 }
 
 .bettingRemind {
   width: 100%;
   height: auto;
   border-collapse: collapse;
-  background: #4d4d4d;
+  background: #505050;
 }
 .bettingRemind tr th {
   padding: 7px 15px;
-  color: #ffffff;
+  color: #fff;
   font-size: 13px;
   border-bottom: solid 1px #ababab;
   text-align: left;
@@ -2702,25 +2337,25 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 187px 0px 20px 10px;
-  background: #4d4d4d;
+  background: #505050;
 }
 .innerBoard tr:hover, .innerBoard tr:active, .innerBoard tr.active {
-  background: #949494;
+  background: #8f8f8f;
 }
 .innerBoard tr th {
   width: 100%;
   padding: 5px 8px;
   color: #fff;
-  border-bottom: solid 1px #808080;
+  border-bottom: solid 1px #8f8f8f;
   font-size: 14px;
   text-align: left;
-  background: #4d4d4d;
+  background: #505050;
 }
 .innerBoard tr td {
   display: flex;
   justify-content: space-around;
   padding: 8px 5px 0px;
-  border-bottom: solid 1px #808080;
+  border-bottom: solid 1px #8f8f8f;
   flex-wrap: wrap;
 }
 .innerBoard tr td.two button {
@@ -2743,17 +2378,17 @@ main .bg {
   border: none;
   height: auto;
   padding: 8px;
-  background: #767676;
+  background: #747474;
   font-size: 14px;
   color: #d9de06;
   margin-bottom: 8px;
 }
 .innerBoard tr td button:hover, .innerBoard tr td button:active, .innerBoard tr td button.active {
-  background: #dadada;
-  color: #333333;
+  background: #f1f1f1;
+  color: #3d3d3d;
 }
 .innerBoard tr td button:hover span, .innerBoard tr td button:active span, .innerBoard tr td button.active span {
-  color: #333;
+  color: #3d3d3d;
 }
 .innerBoard tr td button.title {
   background: transparent;
@@ -2761,7 +2396,7 @@ main .bg {
   color: #fff;
 }
 .innerBoard tr td button .name {
-  font-size: 12px;
+  font-size: 13px;
   padding-right: 20px;
   color: #fff;
 }
@@ -2772,7 +2407,7 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #4d4d4d;
+  background: #505050;
 }
 .teachBoard tr {
   text-align: center;
@@ -2783,8 +2418,8 @@ main .bg {
 }
 .teachBoard tr th {
   color: #fff;
-  font-size: 12px;
-  padding: 8px 0px 7px;
+  font-size: 13px;
+  padding: 8px 0px 6px;
   vertical-align: middle;
   background: #3d3d3d;
   border-bottom: solid 1px #ababab;
@@ -2866,14 +2501,14 @@ main .bg {
   bottom: -24px;
   border: solid 1px #828282;
   border-radius: 30px;
-  background: #4d4d4d;
+  background: #505050;
 }
 .teachBoard tr td .explain {
   width: 220px;
   height: auto;
   display: inline-block;
   padding: 20px 0px;
-  color: #cfcfcf;
+  color: #cacaca;
 }
 .teachBoard tr td .explain.lside {
   text-align: right;
@@ -2895,7 +2530,7 @@ main .bg {
 }
 .teachBoard tr td .box::before {
   content: "";
-  background: #383838;
+  background: #3d3d3d;
   width: 90%;
   height: 70px;
   border-radius: 80px;
@@ -2932,7 +2567,7 @@ main .bg {
 .teachBoard tr td .box .midBox {
   width: 80px;
   height: 80px;
-  background: #5f5f5f;
+  background: #5e5e5e;
   border-radius: 90px;
   position: absolute;
   left: 50%;
@@ -2961,7 +2596,7 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #4d4d4d;
+  background: #505050;
 }
 .minetable tr {
   text-align: center;
@@ -3024,7 +2659,7 @@ main .bg {
   box-sizing: border-box;
   margin: 25px 0px 15px;
   font-size: 0px;
-  background: #3e3e3e;
+  background: #3d3d3d;
 }
 .minetable.infor tr td .mainWindow div {
   display: inline-block;
@@ -3048,8 +2683,8 @@ main .bg {
 }
 .minetable.infor tr td .mainWindow div p span:nth-of-type(2) {
   width: 60%;
-  color: #ea9700;
-  font-size: 12px;
+  color: #ff8c00;
+  font-size: 13px;
 }
 .minetable.infor tr td .mainWindow div p button {
   border: solid 1px #ababab;
@@ -3068,10 +2703,10 @@ main .bg {
   text-align: right;
   padding-bottom: 15px;
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
 }
 .minetable.infor tr td .remind a {
-  color: #1bc100;
+  color: #4dff00;
   padding-left: 5px;
 }
 .minetable.bettingLimit {
@@ -3079,12 +2714,12 @@ main .bg {
   width: calc(50% - 12px);
 }
 .minetable.bettingLimit tr:nth-of-type(2n) {
-  background: #656565;
+  background: #3d3d3d;
 }
 .minetable.bettingLimit tr td {
   width: 33.3%;
   padding: 10px 0px;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
 }
 .minetable.totalMoney {
@@ -3122,7 +2757,7 @@ main .bg {
   border-radius: 3px;
   font-size: 0px;
   position: relative;
-  background: #3e3e3e;
+  background: #3d3d3d;
 }
 .minetable.totalMoney tr td .box .half {
   display: inline-block;
@@ -3141,12 +2776,12 @@ main .bg {
   position: relative;
 }
 .minetable.totalMoney tr td .box .half p.dollar span {
-  color: #ea9700;
+  color: #ff8c00;
   font-size: 18px;
   padding-left: 10px;
 }
 .minetable.totalMoney tr td .box .half p.locked span {
-  color: #f32727;
+  color: #ff0000;
   font-size: 18px;
   padding-left: 10px;
 }
@@ -3162,7 +2797,7 @@ main .bg {
 }
 .minetable.totalMoney tr td .box .half p button:hover, .minetable.totalMoney tr td .box .half p button:active, .minetable.totalMoney tr td .box .half p button.active {
   background: #fff;
-  color: #4d4d4d;
+  color: #505050;
 }
 .minetable.totalMoney tr td .box .half .wallet_ic {
   float: left;
@@ -3227,10 +2862,10 @@ main .bg {
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span {
   font-size: 18px;
   padding-left: 10px;
-  color: #ea9700;
+  color: #ff8c00;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span.locked {
-  color: #f32727;
+  color: #ff0000;
 }
 .minetable.totalMoney tr td .separateBox.big .half p button {
   background: transparent;
@@ -3243,7 +2878,7 @@ main .bg {
   margin: -4px 40px 0px 0px;
 }
 .minetable.totalMoney tr td .separateBox.big .half p button:hover, .minetable.totalMoney tr td .separateBox.big .half p button:active, .minetable.totalMoney tr td .separateBox.big .half p button.active {
-  color: #4d4d4d;
+  color: #505050;
   background: #fff;
 }
 .minetable.totalMoney tr td .separateBox.big .line {
@@ -3267,14 +2902,13 @@ main .bg {
   padding: 20px;
 }
 .minetable.totalMoney tr td .separateBox.small p {
-  color: #fff;
   font-size: 16px;
   text-align: left;
   font-weight: bold;
-  color: #dfb187;
+  color: #ff8c00;
 }
 .minetable.totalMoney tr td .separateBox.small p.remind {
-  font-size: 12px;
+  font-size: 13px;
   color: #ababab;
   padding-top: 20px;
 }
@@ -3291,7 +2925,7 @@ main .bg {
   cursor: pointer;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn.turn {
-  background: #6a6a6a;
+  background: #747474;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn.turn div {
   left: 50%;
@@ -3318,7 +2952,7 @@ main .bg {
   width: 25%;
   height: 145px;
   border-radius: 5px;
-  background: #7d7d7d;
+  background: #747474;
   color: #fff;
   font-size: 17px;
   margin: 20px 30px;
@@ -3326,7 +2960,7 @@ main .bg {
   position: relative;
 }
 .minetable.creditcard tr td .creditcardBtn:hover, .minetable.creditcard tr td .creditcardBtn:active, .minetable.creditcard tr td .creditcardBtn.active {
-  background: #dbdbdb;
+  background: #cacaca;
   box-shadow: 0px 0px 5px 0px #fff;
   color: #000;
 }
@@ -3421,13 +3055,13 @@ main .bg {
 }
 .minetable.creditcard tr td .creditcardBtn .box p.race {
   margin-bottom: 7%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .minetable.creditcard tr td .remind {
   float: right;
   color: #fff;
   margin: 0px 20px 20px 0px;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
 }
 .minetable.creditcard tr td .remind::before {
@@ -3436,11 +3070,11 @@ main .bg {
   height: 15px;
   position: absolute;
   background: url("../images/infor.png") no-repeat;
-  top: -1px;
+  top: -2px;
   left: -18px;
 }
 .minetable.creditcard tr td .remind a {
-  color: #ff9000;
+  color: #ff8c00;
 }
 .minetable.moneyDetail {
   width: 1150px;
@@ -3479,17 +3113,17 @@ main .bg {
   padding: 5px 8px;
   background: transparent;
   border-radius: 15px;
-  border: solid 1px #4d4d4d;
+  border: solid 1px #505050;
   position: absolute;
   right: 10px;
 }
 .minetable.moneyDetail tr td div p .charge:hover, .minetable.moneyDetail tr td div p .charge:active, .minetable.moneyDetail tr td div p .charge.active {
-  background: #4d4d4d;
+  background: #505050;
   color: #fff;
 }
 .minetable.dealRecord {
   width: 1150px;
-  background: #545454;
+  background: #505050;
   display: none;
 }
 .minetable.dealRecord.display {
@@ -3499,7 +3133,7 @@ main .bg {
   border-bottom: solid 1px #ababab;
 }
 .minetable.dealRecord tr.fail {
-  background: #3e3e3e;
+  background: #3d3d3d;
 }
 .minetable.dealRecord tr:last-child {
   border: none;
@@ -3536,7 +3170,7 @@ main .bg {
   color: #90b9ff;
 }
 .minetable.dealRecord tr td.depositMoney {
-  color: #ffa500;
+  color: #ff8c00;
 }
 .minetable.dealRecord tr td .time {
   padding-left: 8px;
@@ -3564,7 +3198,7 @@ main .bg {
   background: #404b87;
 }
 .minetable.bettingRecord tr th {
-  border-bottom: solid 1px #929292;
+  border-bottom: solid 1px #828282;
 }
 .minetable.bettingRecord tr th p {
   float: left;
@@ -3606,13 +3240,13 @@ main .bg {
   border: none;
 }
 .minetable.bettingRecord tr td.yellow {
-  color: #ff9000;
+  color: #ff8c00;
 }
 .minetable.bettingRecord tr td.highSeparate {
   line-height: 20px;
 }
 .minetable.bettingRecord tr td .teamName {
-  color: #ffffff;
+  color: #fff;
 }
 .minetable.bettingRecord tr td .separate {
   display: inline-block;
@@ -3620,10 +3254,10 @@ main .bg {
   transform: translateY(-1px);
 }
 .minetable.bettingRecord tr td .odd {
-  color: #ff9000;
+  color: #ff8c00;
 }
 .minetable.bettingRecord tr td .vs {
-  color: #b4cbec;
+  color: #90b9ff;
   font-size: 12px;
   padding: 0px 8px;
 }
@@ -3653,13 +3287,13 @@ main .bg {
   float: right;
   width: 1px;
   height: 16px;
-  background: #202020;
+  background: #000000;
 }
 .minetable.sportRule {
   display: none;
   margin-top: 122px;
   width: 1150px;
-  background: #565656;
+  background: #5e5e5e;
 }
 .minetable.sportRule.display {
   display: table;
@@ -3671,11 +3305,11 @@ main .bg {
   padding-bottom: 35px;
 }
 .minetable.sportRule tr:nth-of-type(2n) {
-  background: #585858;
+  background: #505050;
 }
 .minetable.sportRule tr th {
   background: #bcbcbc;
-  color: #333;
+  color: #3d3d3d;
 }
 .minetable.sportRule tr th.tLeft {
   padding: 8px 16px 7px;
@@ -3688,7 +3322,7 @@ main .bg {
   font-size: 14px;
 }
 .minetable.sportRule tr td span.remind {
-  color: #fc3838;
+  color: #ff0000;
   padding: 0px 3px;
 }
 .minetable.sportRule tr td button {
@@ -3702,7 +3336,7 @@ main .bg {
   color: #ababab;
 }
 .minetable.sportRule tr td button:hover, .minetable.sportRule tr td button:active, .minetable.sportRule tr td button.active {
-  background: #cecece;
+  background: #cacaca;
   color: #000;
 }
 .minetable.sportRule tr td p {
@@ -3716,7 +3350,7 @@ main .bg {
 }
 .minetable.sportRule tr td .conversionBoard tr td {
   vertical-align: middle;
-  border: solid 1px #898989;
+  border: solid 1px #8f8f8f;
   height: 45px;
   width: 7%;
   font-size: 13px;
@@ -3726,7 +3360,7 @@ main .bg {
 }
 .minetable.sportRule tr td .conversionBoard tr td.title {
   width: 9%;
-  background: #535353;
+  background: #505050;
 }
 .minetable.callus {
   width: 1150px;
@@ -3759,7 +3393,7 @@ main .bg {
   margin: 0px auto;
   font-size: 0px;
   padding: 15px 0px;
-  background: #3e3e3e;
+  background: #3d3d3d;
 }
 .minetable.callus tr td .box .line {
   width: 1px;
@@ -3864,12 +3498,12 @@ main .bg {
 }
 .minetable.callus tr td .box .half p button:hover, .minetable.callus tr td .box .half p button:active, .minetable.callus tr td .box .half p button.active {
   background: #fff;
-  color: #1a1a1a;
+  color: #000000;
 }
 .minetable.callus tr td .box .half .rowbut {
   display: inline-block;
   position: relative;
-  background: #b3b3b3;
+  background: #ababab;
   padding: 8px 12px;
   border-radius: 20px;
   position: relative;
@@ -3983,7 +3617,7 @@ main .bg {
   font-size: 0px;
   padding: 15px 0px;
   vertical-align: top;
-  background: #3e3e3e;
+  background: #3d3d3d;
 }
 .minetable.callus tr td .bigBox:last-child {
   margin: 0px;
@@ -4006,7 +3640,7 @@ main .bg {
   color: #fff;
 }
 .minetable.callus tr td .bigBox p.remind {
-  font-size: 12px;
+  font-size: 13px;
   color: #ababab;
   padding-top: 10px;
 }
@@ -4028,8 +3662,8 @@ main .bg {
 .minetable.problem tr td .inputBox select {
   border: solid 1px #ababab;
   border-radius: 3px;
-  background: #535353;
-  color: #cccccc;
+  background: #505050;
+  color: #cacaca;
   width: 156px;
   height: 36px;
   padding-left: 10px;
@@ -4042,7 +3676,7 @@ main .bg {
 }
 .minetable.problem tr td .sword {
   font-size: 12px;
-  color: #e2e2e2;
+  color: #cacaca;
 }
 .minetable.problem tr td textarea {
   width: 100%;
@@ -4107,7 +3741,6 @@ main .bg {
   font-size: 16px;
   float: right;
   background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-  background-color: #3247b8;
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -4122,7 +3755,7 @@ main .bg {
   border-bottom: solid 1px #ababab;
 }
 .minetable.innerActive tr:nth-of-type(2n) {
-  background: #636363;
+  background: #5e5e5e;
 }
 .minetable.innerActive tr td {
   padding: 10px;
@@ -4149,7 +3782,7 @@ main .bg {
   box-sizing: border-box;
   font-size: 0px;
   margin: 20px auto 10px;
-  background: #3e3e3e;
+  background: #3d3d3d;
 }
 .minetable.download tr td .codeBox.control {
   margin: 20px auto;
@@ -4163,7 +3796,7 @@ main .bg {
 }
 .minetable.download tr td .codeBox .versionWord span {
   display: block;
-  color: #1bc100;
+  color: #4dff00;
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 15px;
@@ -4202,7 +3835,7 @@ main .bg {
   color: #fff;
 }
 .minetable.download tr td .codeBox div button:hover, .minetable.download tr td .codeBox div button:active, .minetable.download tr td .codeBox div button.active {
-  color: #4d4d4d;
+  color: #505050;
   background: #fff;
 }
 .minetable.download tr td .bowserBox {
@@ -4212,7 +3845,7 @@ main .bg {
   margin: 19px auto;
   border: solid 1px #828282;
   border-radius: 3px;
-  background: #3e3e3e;
+  background: #3d3d3d;
 }
 .minetable.download tr td .bowserBox .bowser {
   display: inline-block;
@@ -4247,7 +3880,7 @@ main .bg {
   top: 19px;
 }
 .minetable.download tr td .bowserBox button:hover, .minetable.download tr td .bowserBox button:active, .minetable.download tr td .bowserBox button.active {
-  color: #4d4d4d;
+  color: #505050;
   background: #fff;
 }
 .minetable.withdrawl {
@@ -4262,7 +3895,7 @@ main .bg {
   text-align: left;
 }
 .minetable.withdrawl tr td .inputBox {
-  width: 50%;
+  width: 55%;
   height: auto;
   margin: 20px 0px;
   text-align: left;
@@ -4275,7 +3908,7 @@ main .bg {
   border-radius: 3px;
   color: #fff;
   padding-left: 10px;
-  background: #535353;
+  background: #505050;
 }
 .minetable.withdrawl tr td .inputBox input::placeholder {
   color: #ababab;
@@ -4283,7 +3916,7 @@ main .bg {
 .minetable.withdrawl tr td .inputBox .remind {
   color: #fff;
   margin-left: 30px;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
 }
 .minetable.withdrawl tr td .inputBox .remind::before {
@@ -4292,17 +3925,17 @@ main .bg {
   height: 15px;
   position: absolute;
   background: url(../images/infor.png) no-repeat;
-  top: 0px;
+  top: -2px;
   left: -18px;
 }
 .minetable.withdrawl tr td .inputBox button {
   width: 180px;
   height: 36px;
   font-weight: bold;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   color: #fff;
   border-radius: 3px;
-  border: solid 1px #325b3b;
+  border: solid 1px #3c7424;
   margin-top: 15px;
 }
 .minetable.withdrawl tr td .inputBox button:hover, .minetable.withdrawl tr td .inputBox button:active, .minetable.withdrawl tr td .inputBox button.active {
@@ -4322,7 +3955,7 @@ main .bg {
   margin: 0px;
 }
 .minetable.withdrawl tr td .box .title {
-  background: #7b7b7b;
+  background: #828282;
   padding: 10px 20px;
 }
 .minetable.withdrawl tr td .box .content p {
@@ -4354,10 +3987,10 @@ main .bg {
   height: 40px;
   box-sizing: border-box;
   border: solid 1px #828282;
-  background: #3e3e3e;
+  background: #3d3d3d;
   border-radius: 3px;
   padding-left: 10px;
-  color: #cfcfcf;
+  color: #cacaca;
 }
 .minetable.transpoint tr td .inputBox .arrow {
   display: inline-block;
@@ -4368,7 +4001,7 @@ main .bg {
 }
 .minetable.transpoint tr td p {
   margin: 20px 0px;
-  color: #cccccc;
+  color: #cacaca;
   font-size: 14px;
   font-weight: bold;
 }
@@ -4390,16 +4023,16 @@ main .bg {
   height: 40px;
   box-sizing: border-box;
   border: solid 1px #828282;
-  background: #3e3e3e;
+  background: #3d3d3d;
   border-radius: 3px;
   padding-left: 10px;
-  color: #cfcfcf;
+  color: #cacaca;
 }
 .minetable.transpoint tr td button {
   display: block;
   width: 240px;
   height: 40px;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   border-radius: 3px;
   font-size: 16px;
   color: #fff;
@@ -4438,16 +4071,16 @@ main .bg {
   width: 10%;
   height: 90px;
   border: solid 1px #828282;
-  background: #3e3e3e;
+  background: #3d3d3d;
   border-radius: 3px;
-  color: #cfcfcf;
+  color: #cacaca;
   margin: 0px 15px 20px;
   position: relative;
 }
 .minetable.payStyle tr td button:hover, .minetable.payStyle tr td button:active, .minetable.payStyle tr td button.active {
   border-color: #ababab;
   background: #fff;
-  color: #4d4d4d;
+  color: #505050;
   border-radius: 3px 3px 10px 3px;
 }
 .minetable.payStyle tr td button:hover::before, .minetable.payStyle tr td button:active::before, .minetable.payStyle tr td button.active::before {
@@ -4516,10 +4149,10 @@ main .bg {
 .minetable.tbank tr td select {
   width: 240px;
   height: 40px;
-  background: #3e3e3e;
+  background: #3d3d3d;
   border: solid 1px #828282;
   border-radius: 3px;
-  color: #cfcfcf;
+  color: #cacaca;
   padding-left: 10px;
 }
 .minetable.tnum {
@@ -4555,7 +4188,7 @@ main .bg {
 .minetable.tnum tr td .half .inputBox span {
   display: inline-block;
   width: 110px;
-  color: #cfcfcf;
+  color: #cacaca;
   font-size: 14px;
   padding-right: 15px;
 }
@@ -4564,13 +4197,13 @@ main .bg {
   height: 40px;
   padding-left: 10px;
   border: solid 1px #828282;
-  background: #3e3e3e;
-  color: #cfcfcf;
+  background: #3d3d3d;
+  color: #cacaca;
   border-radius: 3px;
   box-sizing: border-box;
 }
 .minetable.tnum tr td .half .inputBox button {
-  color: #cfcfcf;
+  color: #cacaca;
   padding: 5px 8px;
   border: solid 1px #ababab;
   border-radius: 3px;
@@ -4587,9 +4220,9 @@ main .bg {
   width: 150px;
   height: auto;
   border: solid 1px #828282;
-  background: #3e3e3e;
+  background: #3d3d3d;
   border-radius: 3px;
-  color: #cfcfcf;
+  color: #cacaca;
   line-height: 35px;
   font-size: 18px;
   margin-right: 15px;
@@ -4599,7 +4232,7 @@ main .bg {
 }
 .minetable.tnetcard tr td button:hover, .minetable.tnetcard tr td button:active, .minetable.tnetcard tr td button.active {
   background: #fff;
-  color: #4d4d4d;
+  color: #505050;
 }
 .minetable.tnetcard tr td button:hover span, .minetable.tnetcard tr td button:active span, .minetable.tnetcard tr td button.active span {
   background-position-y: 100%;
@@ -4628,9 +4261,9 @@ main .bg {
   width: 150px;
   height: auto;
   border: solid 1px #828282;
-  background: #3e3e3e;
+  background: #3d3d3d;
   border-radius: 3px;
-  color: #cfcfcf;
+  color: #cacaca;
   line-height: 35px;
   font-size: 18px;
   margin-right: 15px;
@@ -4640,7 +4273,7 @@ main .bg {
 }
 .minetable.depositMoney tr td .moneybut:hover, .minetable.depositMoney tr td .moneybut:active, .minetable.depositMoney tr td .moneybut.active {
   background: #fff;
-  color: #4d4d4d;
+  color: #505050;
 }
 .minetable.depositMoney tr td .inputBox {
   width: 100%;
@@ -4651,18 +4284,18 @@ main .bg {
   width: 240px;
   height: 40px;
   border: solid 1px #828282;
-  background: #3e3e3e;
+  background: #3d3d3d;
   border-radius: 3px;
   box-sizing: border-box;
   padding-left: 10px;
-  color: #cfcfcf;
+  color: #cacaca;
   font-size: 14px;
 }
 .minetable.depositMoney tr td .inputBox .remind {
   display: inline-block;
   color: #fff;
   margin-left: 30px;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
 }
 .minetable.depositMoney tr td .inputBox .remind::before {
@@ -4671,14 +4304,14 @@ main .bg {
   height: 15px;
   position: absolute;
   background: url(../images/infor.png) no-repeat;
-  top: -1px;
+  top: -2px;
   left: -18px;
 }
 .minetable.depositMoney tr td .depositBtn {
   display: block;
   width: 240px;
   height: 40px;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   border-radius: 3px;
   font-size: 16px;
   color: #fff;
@@ -4703,11 +4336,11 @@ main .bg {
   background-color: transparent;
 }
 .middle::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #121212;
   border-radius: 10px;
 }
 .middle::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #606360;
   border-radius: 10px;
 }
 .middle .mainBox {
@@ -7020,7 +6653,6 @@ main .bg {
 }
 .fixside .search .searchbut:hover, .fixside .search .searchbut:active, .fixside .search .searchbut.active {
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-  background-color: #1a2b84;
 }
 .fixside .search .searchbut:hover span, .fixside .search .searchbut:active span, .fixside .search .searchbut.active span {
   color: #fff;
@@ -7029,7 +6661,7 @@ main .bg {
   background-position-y: 100%;
 }
 .fixside .search .searchbut span {
-  font-size: 12px;
+  font-size: 13px;
 }
 .fixside .search .searchbut .fixsideimg {
   width: 30px;
@@ -7052,14 +6684,13 @@ main .bg {
 }
 .fixside .search input::placeholder {
   font-weight: bold;
-  color: #c7c7c7;
+  color: #cacaca;
   font-size: 14px;
 }
 .fixside .search button {
   width: 50px;
   height: 28px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
-  background-color: #2f45b7;
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   color: #fff;
   float: left;
   border-radius: 5px;
@@ -7067,7 +6698,7 @@ main .bg {
   margin: 16px 0px 16px 15px;
 }
 .fixside .search button:hover, .fixside .search button:active, .fixside .search button.active {
-  background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
+  background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
 }
 .fixside .search .searchbox {
   width: 240px;
@@ -7084,8 +6715,7 @@ main .bg {
   padding-left: 20px;
   position: relative;
   font-size: 14px;
-  background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
-  background-color: #e2e6f5;
+  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   cursor: pointer;
 }
 .fixside .search .searchbox li::before {
@@ -7118,7 +6748,7 @@ main .bg {
   height: 50px;
   line-height: 50px;
   color: #000;
-  border-bottom: solid 1px #c8cedf;
+  border-bottom: solid 1px #4d515d;
   font-size: 14px;
 }
 .fixside .search .searchbox div a:last-child {
@@ -7169,7 +6799,6 @@ main .bg {
 }
 .fixside .fun .hamBtn:hover, .fixside .fun .hamBtn:active, .fixside .fun .hamBtn.active {
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-  background-color: #1a2b84;
 }
 .fixside .fun .hamBtn:hover span, .fixside .fun .hamBtn:active span, .fixside .fun .hamBtn.active span {
   background: #fff;
@@ -7178,7 +6807,7 @@ main .bg {
   display: block;
   width: 55%;
   height: 4px;
-  background: #c0926b;
+  background: #f3b378;
   margin: 0px 0px 0px 7px;
   border-radius: 5px;
 }
@@ -7201,7 +6830,6 @@ main .bg {
 }
 .fixside .fun a:hover, .fixside .fun a:active, .fixside .fun a.active {
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-  background-color: #1a2b84;
 }
 .fixside .fun a:hover span, .fixside .fun a:active span, .fixside .fun a.active span {
   color: #fff;
@@ -7210,7 +6838,7 @@ main .bg {
   background-position-y: -30px;
 }
 .fixside .fun a span {
-  font-size: 12px;
+  font-size: 13px;
   color: #000;
 }
 .fixside .fun a .fixsideimg {
@@ -7271,11 +6899,10 @@ main .bg {
   width: 90%;
   height: 180px;
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
-  background-color: #fafbff;
   margin: 15px auto 0px;
   border-radius: 20px;
   border: 1px solid #8581b4;
-  box-shadow: 0 0 4px 2px #bac0db;
+  box-shadow: 0 0 4px 2px #8e9bdc;
   position: relative;
 }
 .discount .window .topbar {
@@ -7361,7 +6988,7 @@ main .bg {
   font-size: 20px;
 }
 .discount .window button {
-  background: linear-gradient(to bottom, #8e9bdc 0%, #3349b8 100%);
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   border: solid 1px #1e2f8e;
   width: 160px;
   height: 40px;
@@ -7374,13 +7001,12 @@ main .bg {
   font-size: 18px;
 }
 .discount .window button:hover, .discount .window button:active, .discount .window button.active {
-  background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%);
+  background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
 }
 .discount .activebox {
   width: 90%;
   height: 0px;
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
-  background-color: #fafbff;
   margin: 0px auto;
   border-radius: 0px 0px 20px 20px;
   transform: translateY(-20px);
@@ -7389,7 +7015,7 @@ main .bg {
   overflow: hidden;
 }
 .discount .activebox.open {
-  box-shadow: 0 0 4px 2px #bac0db;
+  box-shadow: 0 0 4px 2px #8e9bdc;
   height: auto;
 }
 .discount .activebox ul {
@@ -7441,7 +7067,7 @@ main .bg {
 .myself .recordbar {
   width: 1150px;
   height: 35px;
-  background: #c1c1c1;
+  background: #cacaca;
   border-radius: 3px;
   margin: 0px 0px 15px 10px;
   border: 1px solid #828282;
@@ -7451,7 +7077,6 @@ main .bg {
 }
 .myself .recordbar.open {
   background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
-  background-color: #d8a77b;
 }
 .myself .recordbar div {
   float: left;
@@ -7465,7 +7090,7 @@ main .bg {
 .myself .recordbar div .line {
   width: 1px;
   height: 15px;
-  background: #202020;
+  background: #000000;
   margin: 10px 0px 0px 0px;
   float: right;
 }
@@ -7505,7 +7130,7 @@ main .bg {
 .myself .helpbar {
   width: 1150px;
   height: 45px;
-  background: #e2e2e2;
+  background: #cacaca;
   border-radius: 3px;
   position: relative;
   z-index: 1;
@@ -7598,7 +7223,7 @@ main .bg {
   width: 92%;
   height: auto;
   border-radius: 12px;
-  border: 1px solid #777777;
+  border: 1px solid #747474;
   margin: 0px auto 20px;
   padding: 15px;
 }
@@ -7607,7 +7232,7 @@ main .bg {
   font-size: 16px;
 }
 .myself .helpbox .remind {
-  color: #4d4d4d;
+  color: #505050;
   font-size: 14px;
   margin: 0px 20px 20px 0px;
   float: right;
@@ -7652,7 +7277,7 @@ main .bg {
 .myself .onlineCilent .chatwindow {
   width: 100%;
   height: 75%;
-  background: #fafafa;
+  background: #f1f1f1;
   border-bottom: solid 1px #ababab;
   overflow-x: hidden;
   overflow-y: auto;
@@ -7674,7 +7299,7 @@ main .bg {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  color: #838ba0;
+  color: #4556b1;
   float: left;
 }
 .myself .onlineCilent .chatwindow .chat {
@@ -7702,8 +7327,8 @@ main .bg {
 }
 .myself .onlineCilent .chatwindow .chat .gmchat {
   float: left;
-  border: 1px solid #c2c5ff;
-  box-shadow: 0 0 8px 1px #dfe1ec;
+  border: 1px solid #304880;
+  box-shadow: 0 0 8px 1px #f1f1f1;
   border-radius: 0px 8px 8px 8px;
   font-size: 14px;
   padding: 12px;
@@ -7715,14 +7340,14 @@ main .bg {
   padding: 5px 10px 4px;
 }
 .myself .onlineCilent .chatwindow .chat .gmchat a:hover, .myself .onlineCilent .chatwindow .chat .gmchat a:active, .myself .onlineCilent .chatwindow .chat .gmchat a.active {
-  background: #2D43B6;
+  background: #4556b1;
   color: #fff;
 }
 .myself .onlineCilent .chatwindow .chat .userchat {
   float: right;
-  background: #273aa1;
+  background: #4556b1;
   color: #fff;
-  box-shadow: 0 0 8px 1px #dfe1ec;
+  box-shadow: 0 0 8px 1px #f1f1f1;
   border-radius: 8px 0px 8px 8px;
   font-size: 14px;
   padding: 12px;
@@ -7775,7 +7400,7 @@ main .bg {
   font-size: 15px;
 }
 .myself .onlineCilent .onlineroom textarea::placeholder {
-  color: #999999;
+  color: #8f8f8f;
   font-size: 14px;
   font-weight: bold;
 }
@@ -7783,14 +7408,13 @@ main .bg {
   width: 90px;
   height: 36px;
   margin: 0px 20px 20px 0px;
-  background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%);
-  background-color: #3046b7;
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   border-radius: 5px;
   color: #fff;
   font-size: 15px;
 }
 .myself .onlineCilent .onlineroom .send:hover, .myself .onlineCilent .onlineroom .send:active, .myself .onlineCilent .onlineroom .send.active {
-  background: linear-gradient(to top, #8996da 0%, #3046b7 100%);
+  background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
 }
 .myself .ruleBox {
   display: none;
@@ -7833,7 +7457,7 @@ main .bg {
   padding: 10px 35px;
   line-height: 24px;
   font-size: 14px;
-  color: #d4d4d4;
+  color: #cacaca;
 }
 .myself .ruleBox ol li.smallTitle {
   font-size: 16px;
@@ -7849,7 +7473,7 @@ main .bg {
 }
 .myself .ruleBox ol li .remind {
   font-size: 16px;
-  color: #ffa600;
+  color: #ff8c00;
   padding: 0px 5px;
 }
 .myself .ruleBox ol li .conversionBoard {
@@ -7888,7 +7512,7 @@ main .bg {
 }
 .myself .ruleBox ol li .tableBox table tr th {
   font-size: 14px;
-  background: #3a3a3a;
+  background: #3d3d3d;
   padding: 3px 0px;
   border-right: solid 1px #828282;
 }
@@ -7897,7 +7521,7 @@ main .bg {
 }
 .myself .ruleBox ol li .tableBox table tr th.title {
   background: #ababab;
-  color: #4d4d4d;
+  color: #505050;
   padding: 6px 0px;
   font-size: 16px;
   font-weight: bold;
@@ -7911,7 +7535,7 @@ main .bg {
   border: none;
 }
 .myself .ruleBox ol li .tableBox table tr td span {
-  color: #ffa600;
+  color: #ff8c00;
   font-size: 13px;
   padding: 0px 10px;
 }
@@ -7929,7 +7553,7 @@ main .bg {
 .myself .ruleTitle p {
   padding: 10px 16px;
   text-align: left;
-  color: #4d4d4d;
+  color: #505050;
   font-size: 14px;
   font-weight: bold;
 }
@@ -7940,7 +7564,7 @@ main .bg {
   display: block;
 }
 .myself .linkBox div {
-  width: 100%;
+  width: 1080px;
   height: auto;
   margin-left: 45px;
   display: flex;
@@ -8046,7 +7670,7 @@ main .bg {
   display: none;
   float: right;
   position: relative;
-  background: #b3b3b3;
+  background: #ababab;
   margin: 7px 20px 0px 0px;
   padding: 8px 12px;
   border-radius: 20px;
@@ -8073,7 +7697,7 @@ main .bg {
   margin-right: 20px;
   font-size: 14px;
   position: relative;
-  color: #4d4d4d;
+  color: #505050;
 }
 .minetopfix .fixbar .rowbutMes span:last-child {
   margin: 0px;
@@ -8136,7 +7760,7 @@ main .bg {
 .minetopfix .fixbar .timeSearch select {
   float: left;
   margin: 11px 0px 0px 10px;
-  border: 1px solid #3145b2;
+  border: 1px solid #4556b1;
   outline: none;
   border-radius: 5px;
   width: 95px;
@@ -8192,7 +7816,7 @@ main .bg {
   height: 42px;
   line-height: 47px;
   border-bottom: solid 3px transparent;
-  color: #1e2129;
+  color: #2a2a2a;
   cursor: pointer;
 }
 .minetopfix .fixbar ul li:first-child {
@@ -8212,7 +7836,7 @@ main .bg {
   padding-left: 20px;
 }
 .minetopfix .fixbar p span {
-  color: #ea9700;
+  color: #ff8c00;
 }
 .minetopfix .floatName {
   width: 100%;
@@ -8295,7 +7919,7 @@ main .bg {
   display: block;
   padding-top: 13px;
   font-size: 17px;
-  color: #59a942;
+  color: #2a2a36;
 }
 .minetopfix .midword .topline {
   display: inline-block;
@@ -8321,47 +7945,6 @@ main .bg {
   height: 250px;
 }
 
-.sportbar {
-  display: none;
-  width: 1120px;
-  height: auto;
-  background: #505050;
-  padding: 15px 15px 0px 15px;
-  position: absolute;
-  top: 140px;
-  left: 270px;
-  margin-left: 10px;
-  border-radius: 3px;
-  z-index: 6;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.sportbar.display {
-  display: flex;
-}
-.sportbar button {
-  float: left;
-  width: 10%;
-  height: 32px;
-  border: 1px solid #b78960;
-  background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
-  background-color: #b78960;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 14px;
-  padding: 0px;
-  line-height: 0px;
-  margin: 0px 10px 15px 0px;
-}
-.sportbar button:hover, .sportbar button:active, .sportbar button.active {
-  background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
-  border-color: #444f8b;
-  background-color: #434e8a;
-}
-.sportbar button.nmar {
-  margin-right: 0px;
-}
-
 .changePasswordWindow {
   display: none;
   position: absolute;
@@ -8381,10 +7964,11 @@ main .bg {
   background: #ababab;
   border-radius: 3px 3px 0px 0px;
   position: relative;
+  border: solid 1px #a2a2a2;
 }
 .changePasswordWindow .topbar span {
   font-size: 14px;
-  color: #434343;
+  color: #3d3d3d;
   line-height: 50px;
   padding-left: 20px;
   font-weight: bold;
@@ -8395,7 +7979,7 @@ main .bg {
   height: 40px;
   border-radius: 40px;
   background: #cacaca;
-  border: solid 3px #676767;
+  border: solid 3px #5e5e5e;
   right: -50px;
   top: -50px;
   box-shadow: 0px 0px 0px 5px #cacaca;
@@ -8407,7 +7991,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #676767;
+  background: #5e5e5e;
   transform: rotate(45deg);
 }
 .changePasswordWindow .topbar button::after {
@@ -8417,7 +8001,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #676767;
+  background: #5e5e5e;
   transform: rotate(-45deg);
 }
 .changePasswordWindow .box {
@@ -8426,6 +8010,8 @@ main .bg {
   background: #747474;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
+  border: solid 1px #a2a2a2;
+  border-top: none;
 }
 .changePasswordWindow .box div {
   width: 95%;
@@ -8446,7 +8032,7 @@ main .bg {
   font-size: 17px;
   padding: 3px 0px 3px 10px;
   float: right;
-  border: 1px solid #adadad;
+  border: 1px solid #ababab;
   border-radius: 4px;
 }
 .changePasswordWindow .box div span {
@@ -8459,8 +8045,7 @@ main .bg {
   height: 36px;
   margin-right: 10px;
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-  background-color: #d5d9ef;
-  border: 1px solid #495cc5;
+  border: 1px solid #4556b1;
   color: #4d515d;
   border-radius: 5px;
   font-size: 16px;
@@ -8472,8 +8057,7 @@ main .bg {
 }
 .changePasswordWindow .box div button:last-child {
   margin: 0px;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-  background-color: #3247b8;
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   color: #fff;
 }
 .changePasswordWindow .box div button:last-child:hover, .changePasswordWindow .box div button:last-child:active, .changePasswordWindow .box div button:last-child.active {
@@ -8499,10 +8083,11 @@ main .bg {
   background: #ababab;
   border-radius: 3px 3px 0px 0px;
   position: relative;
+  border: solid 1px #a2a2a2;
 }
 .cardremind .topbar span {
   font-size: 14px;
-  color: #434343;
+  color: #3d3d3d;
   line-height: 50px;
   padding-left: 20px;
   font-weight: bold;
@@ -8513,7 +8098,7 @@ main .bg {
   height: 40px;
   border-radius: 40px;
   background: #cacaca;
-  border: solid 3px #676767;
+  border: solid 3px #5e5e5e;
   right: -50px;
   top: -50px;
   box-shadow: 0px 0px 0px 5px #cacaca;
@@ -8525,7 +8110,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #676767;
+  background: #5e5e5e;
   transform: rotate(45deg);
 }
 .cardremind .topbar button::after {
@@ -8535,7 +8120,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #676767;
+  background: #5e5e5e;
   transform: rotate(-45deg);
 }
 .cardremind .box {
@@ -8545,6 +8130,8 @@ main .bg {
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
+  border: solid 1px #a2a2a2;
+  border-top: none;
 }
 .cardremind .box p {
   font-size: 14px;
@@ -8552,15 +8139,13 @@ main .bg {
   color: #fff;
 }
 .cardremind .box p.remind {
-  color: #ea9700;
+  color: #ff8c00;
 }
 .cardremind .box button {
   width: 160px;
   height: 36px;
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-  background-color: #3247b8;
-  border: 1px solid #495cc5;
-  color: #4d515d;
+  border: 1px solid #4556b1;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
@@ -8571,7 +8156,7 @@ main .bg {
 }
 .cardremind .box button:last-child {
   margin: 0px;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   color: #fff;
 }
 .cardremind .box button:last-child:hover, .cardremind .box button:last-child:active, .cardremind .box button:last-child.active {
@@ -8598,10 +8183,11 @@ main .bg {
   border-radius: 3px 3px 0px 0px;
   position: relative;
   text-align: center;
+  border: solid 1px #a2a2a2;
 }
 .cardAdd .topbar span {
   font-size: 14px;
-  color: #434343;
+  color: #3d3d3d;
   line-height: 42px;
   font-weight: bold;
 }
@@ -8611,7 +8197,7 @@ main .bg {
   height: 40px;
   border-radius: 40px;
   background: #cacaca;
-  border: solid 3px #676767;
+  border: solid 3px #5e5e5e;
   right: -50px;
   top: -50px;
   box-shadow: 0px 0px 0px 5px #cacaca;
@@ -8623,7 +8209,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #676767;
+  background: #5e5e5e;
   transform: rotate(45deg);
 }
 .cardAdd .topbar button::after {
@@ -8633,7 +8219,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #676767;
+  background: #5e5e5e;
   transform: rotate(-45deg);
 }
 .cardAdd .box {
@@ -8642,6 +8228,8 @@ main .bg {
   background: #747474;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
+  border: solid 1px #a2a2a2;
+  border-top: none;
 }
 .cardAdd .box .inputBox {
   width: 50%;
@@ -8654,7 +8242,7 @@ main .bg {
   padding-right: 30px;
 }
 .cardAdd .box .inputBox input, .cardAdd .box .inputBox select {
-  background: #535353;
+  background: #505050;
   color: #ababab;
   width: 245px;
   height: 36px;
@@ -8676,16 +8264,15 @@ main .bg {
 }
 .cardAdd .box .inputBox span {
   line-height: 50px;
-  color: #434343;
+  color: #3d3d3d;
   padding-left: 30px;
   font-weight: bold;
 }
 .cardAdd .box button {
   width: 220px;
   height: 36px;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-  background-color: #3247b8;
-  border: 1px solid #495cc5;
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+  border: 1px solid #4556b1;
   color: #fff;
   border-radius: 5px;
   font-size: 16px;
@@ -8699,11 +8286,6 @@ main .bg {
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 
-@media screen and (max-width: 1230px) {
-  .sportbar button {
-    width: 9%;
-  }
-}
 @keyframes reset {
   0% {
     transform: rotate(0deg);
@@ -8770,22 +8352,23 @@ main .bg {
 html {
   width: 100%;
   height: 100%;
-  background: #131313;
+  background: #2a2a2a;
 }
 html body {
   width: 100%;
   height: auto;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 html body::-webkit-scrollbar {
-  height: 10px;
+  width: 5px;
   background-color: transparent;
 }
 html body::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #121212;
   border-radius: 10px;
 }
 html body::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #606360;
   border-radius: 10px;
 }

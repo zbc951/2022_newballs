@@ -57,7 +57,7 @@
 				float: right;
 				margin-right: 10px;
 			}
-		  }
+		}
 		  
 		td {
 			font-size: 12px;
@@ -251,47 +251,15 @@
 		tr {
 
 			td {
-				padding: 6px 0px;
-
-				&.tLeft {
-					text-align: left;
-    				padding: 0px 10px;
-				}
-
-				button {
-					width: 100px;
-					height: 50px;
-
-					//註解
-					span {
-						display: block;
-						margin-bottom: 3px;
-					}
-				}
-			}
-		}
-	}
-
-	//老手版
-	&.oldP {
-
-		tr {
-
-			td {
 				
 				button {
 					display: block;
-					width: 135px;
+					width: 125px;
 					height: 40px;
 					margin: 0px auto 5px;
 
 					&:last-child {
 						margin-bottom: 0px;
-					}
-
-					//三按鈕
-					&.third {
-						height: 25px;
 					}
 
 					//註解
@@ -303,38 +271,55 @@
 		}
 	}
 
+	//專業版
+	&.oldP {
+
+		tr {
+
+			td {
+				padding: 6px 2px;
+
+				&.tLeft {
+					text-align: left;
+    				padding: 0px 10px;
+				}
+
+				button {
+					width: 100px;
+					height: 50px;
+					margin-bottom: 5px;
+
+					&:last-child {
+						margin: 0px;
+					}
+
+					&.third {
+						height: 31px;
+
+						span {
+							display: inline;
+							float: left;
+							margin-left: 15px;
+						}
+					}
+
+					//註解
+					span {
+						display: block;
+						margin-bottom: 3px;
+
+						&.fa-lock {
+							font-size: 14px;
+							margin: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	//足球+沙灘足球版型
 	&.tType1 {
-
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 55%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(7) {
-						width: 5%;
-					}
-				}
-			}
-		}
 
 		tr {
 
@@ -359,19 +344,22 @@
 				}
 
 				&:nth-of-type(1) {
-					width: 58%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2) {
-					width: 7%;
+					min-width: 60px;
 				}
 
-				&:nth-of-type(3),&:nth-of-type(9) {
-					width: 4%;
+				&:nth-of-type(3) {
+					min-width: 40px;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6) {
-					width: 9%;
+					min-width: 130px;
+				}
+				&:nth-of-type(7) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -383,58 +371,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 30%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 34%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 46%;
-					}
-
-					&:nth-of-type(9) {
-						width: 5%;
 					}
 				}
 			}
@@ -460,17 +398,17 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 25%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2) {
 					line-height: 25px;
-					width: 7%;
+					min-width: 60px;
 				}
 
 				&:nth-of-type(3) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 40px;
 
 					p {
 						padding: 0px;
@@ -479,72 +417,50 @@
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8) {
-					width: 12%;
+					width: 1%;
 				}
 
 				&:nth-of-type(9) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
 	}
 	&.tType1_index {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 10%;
-					}
-
-					&:nth-of-type(4),&:nth-of-type(7) {
-						width: 21%;
-					}
-	
-					&:nth-of-type(2),&:nth-of-type(10) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				div {
-					
-					&:nth-of-type(1) {
-						margin-bottom: 8px;
-					}
 
 					p {
 
 						&.redCard,&.yellowCard {
 							padding: 0px;
 						}
+
+						&.yellowCard {
+							padding-left: 6px;
+						}
 					}
 				}
 
 				&:nth-of-type(1) {
-					width: 7%;
-					padding: 0px 8px;
+					min-width: 70px;
 				}
 
-				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(6),
-				&:nth-of-type(9) {
-					width: 5%;
+				&:nth-of-type(5),&:nth-of-type(8) {
+					min-width: 60px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(10),
+				&:nth-of-type(6),&:nth-of-type(9) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(7) {
-					width: 26%;
-				}
-
-				&:nth-of-type(5),&:nth-of-type(8),&:nth-of-type(10) {
-					width: 7%;
+					width: 50%;
 				}
 			}
 		}
@@ -556,19 +472,19 @@
 			td {
 				
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3) {
-					width: 57%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4) {
-					width: 10%;
+					min-width: 60px;
 
 					div {
 						
@@ -578,12 +494,16 @@
 
 						p {
 							padding: 0px;
+
+							&.yellowCard {
+								padding-left: 6px;
+							}
 						}
 					}
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6) {
-					width: 5%;
+					min-width: 30px;
 				}
 			}
 		}
@@ -592,89 +512,32 @@
 	//棒球版型
 	&.tType2 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-					
-					&:nth-of-type(1) {
-						width: 51.5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 44.5%;
-					}
-	
-					&:nth-of-type(3) {
-						width: 6%;
-					}
-	
-					&:nth-of-type(7) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 44.5%;
-					}
-	
-					&:nth-of-type(3) {
-						width: 7%;
-					}
-	
-					&:nth-of-type(7) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 62.5%;
+					width: 100%;
 				}
-				&:nth-of-type(2) {
-					width: 6%;
 
-					p {
-						padding: 0px;
-					}
-				}
-				&:nth-of-type(3) {
-					width: 5.5%;
+				&:nth-of-type(2),&:nth-of-type(3) {
+					min-width: 50px;
 
 					p {
 						padding: 0px;
 					}
 				}
 
-				&:nth-of-type(4),&:nth-of-type(7) {
-					width: 4%;
+				&:nth-of-type(4) {
+					min-width: 40px;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6) {
-					width: 9%;
+					width: 1%;
+				}
+
+				&:nth-of-type(7) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -686,54 +549,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-				
-				td {
-
-					&:nth-of-type(1) {
-						width: 29.5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 38.5%;
-					}
-
-					&:nth-of-type(3) {
-						width: 7%;
-					}
-
-					&:nth-of-type(10) {
-						width: 5%;
 					}
 				}
 			}
@@ -745,19 +562,11 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 20.5%;
+					width: 100%;
 				}
 
-				&:nth-of-type(2) {
-					width: 6%;
-
-					p {
-						padding: 0px;
-					}
-				}
-
-				&:nth-of-type(3) {
-					width: 5.5%;
+				&:nth-of-type(2),&:nth-of-type(3) {
+					min-width: 50px;
 
 					p {
 						padding: 0px;
@@ -766,7 +575,7 @@
 
 				&:nth-of-type(4) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 40px;
 
 					p {
 						padding: 0px;
@@ -775,64 +584,16 @@
 
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8),&:nth-of-type(9) {
-					width: 12%;
+					width: 1%;
 				}
 
 				&:nth-of-type(10) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
 	}
 	&.tType2_index {
-
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						width: 9%;
-						padding: 8px 26px;
-					}
-
-					&:nth-of-type(5),&:nth-of-type(6) {
-						width: 19%;
-					}
-
-					&:nth-of-type(20) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						padding: 8px 20px;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						padding: 8px 16px;
-					}
-				}
-			}
-		}
 
 		tr {
 
@@ -849,29 +610,28 @@
 					}
 				}
 
-				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(20) {
-					width: 6%;
+				&:nth-of-type(1) {
+					min-width: 70px;
 				}
 
-				&:nth-of-type(3) {
-					width: 7%;
-				}
-
-				&:nth-of-type(4) {
-					width: 7%;
-					padding: 8px 22px;
+				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6) {
-					width: 21%;
+					width: 40%;
 				}
 
-				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
-				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
-				&:nth-of-type(13),&:nth-of-type(14),&:nth-of-type(15),
-				&:nth-of-type(16),&:nth-of-type(17),&:nth-of-type(18),
-				&:nth-of-type(19) {
-					width: 2%;
+				&:nth-of-type(7),&:nth-of-type(8),
+				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11),
+				&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(14),
+				&:nth-of-type(15),&:nth-of-type(16),&:nth-of-type(17),
+				&:nth-of-type(18),&:nth-of-type(19) {
+					min-width: 20px;
+				}
+
+				&:nth-of-type(20) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -883,26 +643,26 @@
 			td {
 				
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3) {
-					width: 43%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
 				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
 				&:nth-of-type(13) {
-					width: 3%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(14) {
-					width: 4%;
+					min-width: 30px;
 				}
 			}
 		}
@@ -911,76 +671,29 @@
 	//籃球+冰球+美式足球版型
 	&.tType3 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-					
-					&:nth-of-type(1) {
-						width: 60%;
-					}
-
-					&:nth-of-type(8),&:nth-of-type(9) {
-						width: 10%;
-					} 
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 58%;
-					}
-
-					&:nth-of-type(8),&:nth-of-type(9) {
-						width: 11%;
-					} 
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 54%;
-					}
-	
-					&:nth-of-type(8),&:nth-of-type(9) {
-						width: 13%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 64%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6) {
-					width: 2%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(7),&:nth-of-type(13) {
-					width: 4%;
+				&:nth-of-type(7) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(8),&:nth-of-type(9) {
-					width: 9%;
+					width: 1%;
+				}
+
+				&:nth-of-type(10) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -992,57 +705,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 30%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 34%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
-					}
-
-					&:nth-of-type(13) {
-						width: 5%;
 					}
 				}
 			}
@@ -1054,12 +718,12 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 22%;
+					width: 100%;
 				}
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 
 					p {
 						padding: 0px;
@@ -1068,7 +732,7 @@
 
 				&:nth-of-type(7) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 
 					p {
 						padding: 0px;
@@ -1077,53 +741,40 @@
 				
 				&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10),
 				&:nth-of-type(11),&:nth-of-type(12) {
-					width: 12%;
+					width: 1%;
 				}
 
 				&:nth-of-type(13) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
 	}
 	&.tType3_index {
 
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						width: 47%;
-					}
-
-					&:nth-of-type(11) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
-					width: 7%;
+				&:nth-of-type(1) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(11) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(4) {
-					width: 49%;
+					width: 100%;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
-				&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10) {
-					width: 4%;
+				&:nth-of-type(8),&:nth-of-type(9) {
+					min-width: 20px;
 				}
 
-				&:nth-of-type(11) {
-					width: 6%;
+				&:nth-of-type(10) {
+					min-width: 30px;
 				}
 			}
 		}
@@ -1135,24 +786,24 @@
 			td {
 				
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3) {
-					width: 58%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8) {
-					width: 3%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(9) {
-					width: 4%;
+					min-width: 30px;
 				}
 			}
 		}
@@ -1161,101 +812,25 @@
 	//賽馬賽狗版型
 	&.tType4 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 54%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 20%;
-					}
-
-					&:nth-of-type(4) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 22%;
-					}
-
-					&:nth-of-type(4) {
-						width: 6%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 23%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 60%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					width: 18%;
+					width: 1%;
 				}
 
 				&:nth-of-type(4) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
 	}
 	&.tType4_index {
-
-		&.hide2 {
-			
-			tr {
-
-				td {
-
-					&:nth-of-type(5) {
-						width: 29%;
-					}
-
-					&:nth-of-type(10) {
-						width: 8%;
-					}
-				}
-			}
-		}
 
 		tr {
 
@@ -1269,28 +844,24 @@
 					}
 				}
 
-				&:nth-of-type(1),&:nth-of-type(2) {
-					width: 7%;
+				&:nth-of-type(1),&:nth-of-type(6),&:nth-of-type(7) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(10) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(8) {
-					width: 3%;
+					min-width: 30px;
 				}
 
 				&:nth-of-type(5) {
-					width: 31%;
-				}
-
-				&:nth-of-type(6),&:nth-of-type(7) {
-					width: 16%;
+					width: 100%;
 				}
 
 				&:nth-of-type(9) {
-					width: 8%;
-				}
-
-				&:nth-of-type(10) {
-					width: 6%;
+					min-width: 60px;
 				}
 			}
 		}
@@ -1313,24 +884,24 @@
 					}
 				}
 				
-				&:nth-of-type(1) {
-					width: 8%;
+				&:nth-of-type(1),&:nth-of-type(9) {
+					min-width: 70px;
 				}
 
-				&:nth-of-type(2),&:nth-of-type(7) {
-					width: 15%;
+				&:nth-of-type(2){
+					min-width: 150px;
 				}
 
-				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(6) {
-					width: 3%;
+				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(8) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(5) {
-					width: 43%;
+					width: 100%;
 				}
 
 				&:nth-of-type(6),&:nth-of-type(7) {
-					width: 5%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -1338,59 +909,31 @@
 
 	//電競版型
 	&.tType5 {
-
-		&.hide1 {
-
-			tr {
-
-				td {
-					&:nth-of-type(1) {
-						width: 55%;
-					}
-
-					&:nth-of-type(12) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-			
-			tr {
-
-				td {
-					&:nth-of-type(1) {
-						width: 50%;
-					}
-				}
-			}
-		}
 		
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 60%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8) {
-					width: 2%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(9),&:nth-of-type(12) {
-					width: 4%;
+				&:nth-of-type(9) {
+					min-width: 30px;
 				}
 
-				&:nth-of-type(10) {
-					width: 9%;
+				&:nth-of-type(10),&:nth-of-type(11) {
+					width: 11%;
 				}
 
-				&:nth-of-type(11) {
-					width: 9%;
+				&:nth-of-type(12) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -1402,57 +945,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 24%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-			
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 30%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
-					}
-
-					&:nth-of-type(15) {
-						width: 5%;
 					}
 				}
 			}
@@ -1464,23 +958,23 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 18%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 					
 					p {
 						padding: 0px;
 					}
 				}
 
-				&:nth-of-type(9),&:nth-of-type(15) {
+				&:nth-of-type(9) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 					
 					p {
 						padding: 0px;
@@ -1489,157 +983,109 @@
 
 				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
 				&:nth-of-type(13),&:nth-of-type(14) {
-					width: 12%;
+					width: 1%;
 				}
 
 				&:nth-of-type(15) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
 	}
 	&.tType5_lol_index {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(3) {
-						width: 32%;
-					}
-
-					&:nth-of-type(19) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2) {
-					width: 7%;
+				&:nth-of-type(1) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(19) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(3) {
-					width: 34%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
 				&:nth-of-type(10) {
-					width: 2%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
 				&:nth-of-type(14),&:nth-of-type(15),&:nth-of-type(16),
 				&:nth-of-type(17),&:nth-of-type(18) {
-					width: 4%;
-				}
-
-				&:nth-of-type(19) {
-					width: 6%;
+					min-width: 30px;
 				}
 			}
 		}
 	}
 	&.tType5_dota_index {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(3) {
-						width: 36%;
-					}
-
-					&:nth-of-type(18) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2) {
-					width: 7%;
+				&:nth-of-type(1) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(18) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(3) {
-					width: 38%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
 				&:nth-of-type(10) {
-					width: 2%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
 				&:nth-of-type(14),&:nth-of-type(15),&:nth-of-type(16),
 				&:nth-of-type(17) {
-					width: 4%;
-				}
-
-				&:nth-of-type(18) {
-					width: 6%;
+					min-width: 30px;
 				}
 			}
 		}
 	}
 	&.tType5_cs_index {
-		
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(3) {
-						width: 44%;
-					}
-
-					&:nth-of-type(15) {
-						width: 8%;
-					}
-				}
-			}
-		}
 
 		tr {
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2) {
-					width: 7%;
+				&:nth-of-type(1) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(15) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(3) {
-					width: 46%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
 				&:nth-of-type(10) {
-					width: 2%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
+				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13) {
+					min-width: 30px;
+				}
+
 				&:nth-of-type(14) {
-					width: 5%;
-				}
-
-				&:nth-of-type(15) {
-					width: 6%;
+					min-width: 40px;
 				}
 			}
 		}
@@ -1651,27 +1097,27 @@
 			td {
 
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3) {
-					width: 24%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
 				&:nth-of-type(10) {
-					width: 3%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
 				&:nth-of-type(14),&:nth-of-type(15),&:nth-of-type(16),
 				&:nth-of-type(17),&:nth-of-type(18) {
-					width: 4%;
+					min-width: 30px;
 				}
 			}
 		}
@@ -1683,27 +1129,27 @@
 			td {
 
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3) {
-					width: 28%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
 				&:nth-of-type(10) {
-					width: 3%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
 				&:nth-of-type(14),&:nth-of-type(15),&:nth-of-type(16),
 				&:nth-of-type(17) {
-					width: 4%;
+					min-width: 30px;
 				}
 			}
 		}
@@ -1715,29 +1161,29 @@
 			td {
 
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3) {
-					width: 34%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
 				&:nth-of-type(10) {
-					width: 3%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(11) {
-					width: 4%;
+				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13) {
+					min-width: 30px;
 				}
 
-				&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(14) {
-					width: 6%;
+				&:nth-of-type(14) {
+					min-width: 40px;
 				}
 			}
 		}
@@ -1746,79 +1192,20 @@
 	//股票指數版型
 	&.tType6 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 54%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 20%;
-					}
-
-					&:nth-of-type(4) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 22%;
-					}
-
-					&:nth-of-type(4) {
-						width: 6%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 23%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 60%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					width: 18%;
+					width: 1%;
 				}
 
 				&:nth-of-type(4) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -1830,16 +1217,16 @@
 			td {
 
 				&:nth-of-type(1) {
-					width: 12%;
+					min-width: 120px;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5) {
-					width: 20%;
+					width: 25%;
 				}
 
 				&:nth-of-type(6) {
-					width: 8%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -1850,13 +1237,13 @@
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(5),
-				&:nth-of-type(6) {
-					width: 15%;
+				&:nth-of-type(1),&:nth-of-type(2) {
+					min-width: 120px;
 				}
 
-				&:nth-of-type(3),&:nth-of-type(4) {
-					width: 20%;
+				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),
+				&:nth-of-type(6) {
+					width: 25%;
 				}
 			}
 		}
@@ -1865,116 +1252,47 @@
 	//彩球版型
 	&.tType7 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 54%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 20%;
-					}
-
-					&:nth-of-type(4) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 22%;
-					}
-
-					&:nth-of-type(4) {
-						width: 6%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 23%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 60%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					width: 18%;
+					width: 1%;
 				}
 
 				&:nth-of-type(4) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
 	}
 	&.tType7_bingo_index {
 
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(13),&:nth-of-type(14),&:nth-of-type(15) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(13),
-				&:nth-of-type(14),&:nth-of-type(15) {
-					width: 12%;
+				&:nth-of-type(1),&:nth-of-type(2) {
+					min-width: 120px;
+				}
+
+				&:nth-of-type(13),&:nth-of-type(14),&:nth-of-type(15) {
+					width: 33%;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),
 				&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8),
 				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11),
 				&:nth-of-type(12) {
-					width: 3%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(16) {
-					width: 10%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -1986,24 +1304,24 @@
 			td {
 
 				&:nth-of-type(1),&:nth-of-type(2) {
-					width: 15%;
+					min-width: 120px;
 				}
 
 				&:nth-of-type(3) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8) {
-					width: 9%;
+					min-width: 80px;
 				}
 
 				&:nth-of-type(9) {
-					width: 7%;
+					width: 100%;
 				}
 
 				&:nth-of-type(10) {
-					width: 10%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -2014,22 +1332,21 @@
 
 			td {
 
-				&:nth-of-type(1) {
-					width: 15%;
-				}
-
-				&:nth-of-type(2) {
-					width: 20%;
+				&:nth-of-type(1),&:nth-of-type(2) {
+					min-width: 120px;
 				}
 
 				&:nth-of-type(3) {
-					width: 9%;
+					min-width: 60px;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
-				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
+				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9) {
+					min-width: 70px;
+				}
+
 				&:nth-of-type(10) {
-					width: 8%;
+					width: 100%;
 				}
 			}
 		}
@@ -2040,24 +1357,19 @@
 
 			td {
 
-				&:nth-of-type(1) {
-					width: 15%;
-				}
-
-				&:nth-of-type(2) {
-					width: 18%;
+				&:nth-of-type(1),&:nth-of-type(2) {
+					min-width: 120px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),
 				&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8),
 				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11),
 				&:nth-of-type(12) {
-					width: 4%;
+					min-width: 30px;
 				}
 
-				&:nth-of-type(13),&:nth-of-type(14),
-				&:nth-of-type(15) {
-					width: 9%;
+				&:nth-of-type(13),&:nth-of-type(14),&:nth-of-type(15) {
+					width: 33%;
 				}
 			}
 		}
@@ -2066,46 +1378,33 @@
 	//網球版型
 	&.tType8 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(12) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 57%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2) {
-					width: 3%;
+					min-width: 25px;
 				}
 
-				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),
-				&:nth-of-type(6),&:nth-of-type(7) {
-					width: 2%;
+				&:nth-of-type(3),&:nth-of-type(4),
+				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7) {
+					min-width: 20px;
 				}
 
-				&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(12) {
-					width: 4%;
+				&:nth-of-type(8),&:nth-of-type(9) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(10),&:nth-of-type(11) {
-					width: 9%;
+					width: 1%;
+				}
+
+				&:nth-of-type(12) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -2117,50 +1416,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 26%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-				
-				td {
-
-					&:nth-of-type(1) {
-						width: 36%;
-					}
-
-					&:nth-of-type(15) {
-						width: 5%;
 					}
 				}
 			}
@@ -2172,22 +1429,17 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 15%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2) {
-					line-height: 25px;
-					width: 3%;
-
-					p {
-						padding: 0px;
-					}
+					min-width: 25px;
 				}
 
-				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),
-				&:nth-of-type(6),&:nth-of-type(7) {
+				&:nth-of-type(3),&:nth-of-type(4),
+				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 					
 					p {
 						padding: 0px;
@@ -2196,7 +1448,7 @@
 
 				&:nth-of-type(8),&:nth-of-type(9) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 
 					p {
 						padding: 0px;
@@ -2205,57 +1457,40 @@
 
 				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
 				&:nth-of-type(13),&:nth-of-type(14) {
-					width: 12%;
+					width: 1%;
 				}
 
 				&:nth-of-type(15) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
 	}
 	&.tType8_index {
-
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						width: 48%;
-					}
-
-					&:nth-of-type(13) {
-						width: 9%;
-					}
-				}
-			}
-		}
 		
 		tr {
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2) {
-					width: 7%;
+				&:nth-of-type(1) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(13) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(11),&:nth-of-type(12) {
-					width: 4%;
+					min-width: 30px;
 				}
 
 				&:nth-of-type(4) {
-					width: 50%;
+					width: 100%;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10) {
-					width: 3%;
-				}
-
-				&:nth-of-type(13) {
-					width: 6%;
+					min-width: 20px;
 				}
 			}
 		}
@@ -2267,24 +1502,24 @@
 			td {
 
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px
 				}
 
 				&:nth-of-type(3) {
-					width: 51%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9) {
-					width: 3%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(10),&:nth-of-type(11) {
-					width: 4%;
+					min-width: 30px;
 				}
 			}
 		}
@@ -2293,37 +1528,24 @@
 	//斯諾克版型
 	&.tType9 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 60%;
-					}
-
-					&:nth-of-type(6) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 70%;
+					width: 100%;
 				}
 
-				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(6) {
-					width: 4%;
+				&:nth-of-type(2),&:nth-of-type(3) {
+					min-width: 40px;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5) {
-					width: 9%;
+					width: 1%;
+				}
+
+				&:nth-of-type(6) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -2335,57 +1557,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 34%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 38%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 48%;
-					}
-
-					&:nth-of-type(9) {
-						width: 5%;
 					}
 				}
 			}
@@ -2397,16 +1570,12 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 28%;
+					width: 100%;
 				}
 
-				&:nth-of-type(2),&:nth-of-type(9) {
-					width: 4%;
-				}
-
-				&:nth-of-type(3) {
+				&:nth-of-type(2),&:nth-of-type(3) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 40px;
 
 					p {
 						padding: 0px;
@@ -2415,7 +1584,11 @@
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8) {
-					width: 12%;
+					width: 1%;
+				}
+
+				&:nth-of-type(9) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -2426,20 +1599,20 @@
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
-					width: 7%;
+				&:nth-of-type(1) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(6) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(4) {
-					width: 66%;
+					width: 100%;
 				}
 
 				&:nth-of-type(5) {
-					width: 5%;
-				}
-
-				&:nth-of-type(6) {
-					width: 8%;
+					min-width: 30px;
 				}
 			}
 		}
@@ -2451,23 +1624,23 @@
 			td {
 
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3) {
-					width: 4%;
+					min-width: 30px;
 				}
 
 				&:nth-of-type(4) {
-					width: 58%;
+					width: 100%;
 				}
 
 				&:nth-of-type(5) {
-					width: 15%;
+					min-width: 100px;
 				}
 			}
 		}
@@ -2476,43 +1649,30 @@
 	//排球+乒乓球版型
 	&.tType10 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(13) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 56%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8) {
-					width: 2%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(13) {
-					width: 4%;
+				&:nth-of-type(9),&:nth-of-type(10) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(11),&:nth-of-type(12) {
-					width: 9%;
+					width: 1%;
+				}
+
+				&:nth-of-type(13) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -2524,57 +1684,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-
-			td {
-
-				&:nth-of-type(1) {
-					width: 20%;
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 24%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 35%;
-					}
-
-					&:nth-of-type(16) {
-						width: 5%;
 					}
 				}
 			}
@@ -2586,14 +1697,14 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 14%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 
 					p {
 						padding: 0px;
@@ -2602,7 +1713,7 @@
 
 				&:nth-of-type(9),&:nth-of-type(10) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 
 					p {
 						padding: 0px;
@@ -2611,58 +1722,41 @@
 
 				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
 				&:nth-of-type(14),&:nth-of-type(15) {
-					width: 12%;
+					width: 1%;
 				}
 
 				&:nth-of-type(16) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
 	}
 	&.tType10_index {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						width: 45%;
-					}
-
-					&:nth-of-type(14) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2) {
-					width: 7%;
+				&:nth-of-type(1) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(14) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(12),&:nth-of-type(13) {
-					width: 4%;
+					min-width: 30px;
 				}
 
 				&:nth-of-type(4) {
-					width: 47%;
+					width: 100%;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10),
 				&:nth-of-type(11) {
-					width: 3%;
-				}
-
-				&:nth-of-type(14) {
-					width: 6%;
+					min-width: 20px;
 				}
 			}
 		}
@@ -2674,25 +1768,25 @@
 			td {
 				
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3) {
-					width: 48%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
 				&:nth-of-type(10) {
-					width: 3%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(11),&:nth-of-type(12) {
-					width: 4%;
+					min-width: 30px;
 				}
 			}
 		}
@@ -2701,79 +1795,20 @@
 	//賽車
 	&.tType11 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 54%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 20%;
-					}
-
-					&:nth-of-type(4) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 22%;
-					}
-
-					&:nth-of-type(4) {
-						width: 6%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 23%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 60%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					width: 18%;
+					width: 1%;
 				}
 
 				&:nth-of-type(4) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -2792,29 +1827,21 @@
 					}
 				}
 
-				&:nth-of-type(1),&:nth-of-type(2) {
-					width: 7%;
+				&:nth-of-type(1),&:nth-of-type(9) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(6),&:nth-of-type(11) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(7),
 				&:nth-of-type(10) {
-					width: 3%;
+					min-width: 30px;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(8) {
-					width: 26%;
-				}
-
-				&:nth-of-type(6) {
-					width: 5%;
-				}
-
-				&:nth-of-type(9) {
-					width: 8%;
-				}
-
-				&:nth-of-type(11) {
-					width: 6%;
+					width: 50%;
 				}
 			}
 		}
@@ -2833,25 +1860,25 @@
 					}
 				}
 
-				&:nth-of-type(1),&:nth-of-type(6) {
-					width: 8%;
+				&:nth-of-type(1),&:nth-of-type(9) {
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
-				}
-
-				&:nth-of-type(5),&:nth-of-type(8) {
-					width: 22%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(7),
 				&:nth-of-type(10) {
-					width: 4%;
+					min-width: 30px;
 				}
 
-				&:nth-of-type(9) {
-					width: 9%;
+				&:nth-of-type(5),&:nth-of-type(8) {
+					width: 50%;
+				}
+
+				&:nth-of-type(6) {
+					min-width: 40px;
 				}
 			}
 		}
@@ -2860,55 +1887,29 @@
 	//羽毛球
 	&.tType12 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 50%;
-					}
-
-					&:nth-of-type(12) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 60%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6) {
-					width: 2%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(11) {
-					width: 4%;
+				&:nth-of-type(7),&:nth-of-type(8) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(9),&:nth-of-type(10) {
-					width: 9%;
+					width: 1%;
+				}
+
+				&:nth-of-type(11) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -2921,59 +1922,8 @@
 
 				th,td {
 
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 24%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 30%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 39%;
-					}
-
-					&:nth-of-type(14) {
-						width: 5%;
 					}
 				}
 			}
@@ -2985,13 +1935,13 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 18%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 
 					p {
 						padding: 0px;
@@ -3000,7 +1950,7 @@
 
 				&:nth-of-type(7),&:nth-of-type(8) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 
 					p {
 						padding: 0px;
@@ -3009,11 +1959,11 @@
 
 				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11),
 				&:nth-of-type(12),&:nth-of-type(13) {
-					width: 12%;
+					width: 1%;
 				}
 
 				&:nth-of-type(14) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -3041,25 +1991,25 @@
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2) {
-					width: 7%;
+				&:nth-of-type(1) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(12) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(10),&:nth-of-type(11) {
-					width: 4%;
+					min-width: 30px;
 				}
 
 				&:nth-of-type(4) {
-					width: 53%;
+					width: 100%;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8),&:nth-of-type(9) {
-					width: 3%;
-				}
-
-				&:nth-of-type(12) {
-					width: 6%;
+					min-width: 20px;
 				}
 			}
 		}
@@ -3071,24 +2021,24 @@
 			td {
 
 				&:nth-of-type(1) {
-					width: 8%;
+					min-width: 70px;
 				}
 
 				&:nth-of-type(2) {
-					width: 15%;
+					min-width: 150px;
 				}
 
 				&:nth-of-type(3) {
-					width: 58%;
+					width: 100%;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8) {
-					width: 3%;
+					min-width: 20px;
 				}
 
 				&:nth-of-type(9),&:nth-of-type(10) {
-					width: 4%;
+					min-width: 30px;
 				}
 			}
 		}
@@ -3101,9 +2051,7 @@
     height: auto;
     overflow: hidden;
 	margin: 8px auto 0px;
-	border: solid 1px #d5d5d5;
 	border-collapse: inherit;
-	border-bottom: none;
 
 	&:last-child {
 		margin-bottom: 20px;
@@ -3137,29 +2085,29 @@
 			width: 50%;
 			height: auto;
 			padding: 7px;
-			color: #505050;
+			color: #ababab;
 			border-style: solid;
 			border-width: 0px 0px 1px 0px;
-			border-color: transparent #d5d5d5 #bcbcbc #8c8c8c;
+			border-color: #505050;
 			vertical-align: middle;
-			background: #ababab;
-			box-shadow: 0px -1px 0px 0px #8c8c8c inset;
+			background: #353535;
+			box-shadow: 0px -1px 0px 0px #505050 inset;
 			font-size: 12px;
 
 			&.waiting {
-				color: #3c7424;
+				color: #37bb18;
 			}
 
 			&.listName {
 				padding: 15px 7px;
 
 				.vs {
-					color: #000;
+					color: #37bb18;
 					margin: 0px 5px;
 				}
 
 				.odds {
-					color: #a43e4a;
+					color: #e82f2f;
 					margin-left: 5px;
 				}
 			}
@@ -3196,36 +2144,36 @@
 	height: auto;
 	margin: 2% auto 0px;
 	border-radius: 3px;
-	border: solid 1px #c4c4c4;
+	border: solid 1px #cacaca;
 	
 	tr {
 		text-align: center;
 
 		&:nth-of-type(1) {
-			background: #464646;
+			background: #505050;
 
 			td {
 
 				&:nth-of-type(2) {
-					background: #325b3b;
+					background: #3c7424;
 				}
 			}
 		}
 
 		&:nth-of-type(2) {
-			background: #353535;
+			background: #3d3d3d;
 
 			td {
 
 				&:nth-of-type(1) {
-					background: #3b4b65;
+					background: #304880;
 				}
 			}
 		}
 
 		td {
 			vertical-align: middle;
-			border: solid 1px #898989;
+			border: solid 1px #8f8f8f;
 			height: 45px;
 			width: 7%;
 			font-size: 13px;
@@ -3234,7 +2182,7 @@
 
 			&.title {
 				width: 9%;
-				background: #535353;
+				background: #505050;
 			}
 		}
 	}
@@ -3245,13 +2193,13 @@
 	width: 100%;
 	height: auto;
 	border-collapse: collapse;
-	background: #4d4d4d;
+	background: #505050;
 
 	tr {
 
 		th {
 			padding: 7px 15px;
-			color: #ffffff;
+			color: #fff;
 			font-size: 13px;
 			border-bottom: solid 1px #ababab;
 			text-align: left;
@@ -3389,29 +2337,29 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 187px 0px 20px 10px;
-	background: #4d4d4d;
+	background: #505050;
 
 	tr {
 
 		&:hover,&:active,&.active {
-			background: #949494;
+			background: #8f8f8f;
 		}
 
 		th {
 			width: 100%;
 			padding: 5px 8px;
 			color: #fff;
-			border-bottom: solid 1px #808080;
+			border-bottom: solid 1px #8f8f8f;
 			font-size: 14px;
 			text-align: left;
-			background: #4d4d4d;
+			background: #505050;
 		}
 
 		td {
 			display: flex;
 			justify-content: space-around;
 			padding: 8px 5px 0px;
-			border-bottom: solid 1px #808080;
+			border-bottom: solid 1px #8f8f8f;
 			flex-wrap: wrap;
 
 			&.two {
@@ -3451,17 +2399,17 @@
 				border: none;
 				height: auto;
 				padding: 8px;
-				background: #767676;
+				background: #747474;
 				font-size: 14px;
 				color: #d9de06;
 				margin-bottom: 8px;
 
 				&:hover,&:active,&.active {
-					background: #dadada;
-					color: #333333;
+					background: #f1f1f1;
+					color: #3d3d3d;
 
 					span {
-						color: #333;
+						color: #3d3d3d;
 					}
 				}
 
@@ -3472,7 +2420,7 @@
 				}
 
 				.name {
-					font-size: 12px;
+					font-size: 13px;
 					padding-right: 20px;
 					color: #fff;
 				}
@@ -3488,7 +2436,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #4d4d4d;
+	background: #505050;
 
 	//內容
     tr {
@@ -3501,8 +2449,8 @@
 
       	th {
 			color: #fff;
-			font-size: 12px;
-			padding: 8px 0px 7px;
+			font-size: 13px;
+			padding: 8px 0px 6px;
 			vertical-align: middle;
 			background: #3d3d3d;
 			border-bottom: solid 1px #ababab;
@@ -3594,7 +2542,7 @@
 					bottom: -24px;
 					border: solid 1px #828282;
 					border-radius: 30px;
-					background: #4d4d4d;
+					background: #505050;
 				}
 			}
 
@@ -3604,7 +2552,7 @@
 				height: auto;
 				display: inline-block;
 				padding: 20px 0px;
-				color: #cfcfcf;
+				color: #cacaca;
 
 				&.lside {
 					text-align: right;
@@ -3631,7 +2579,7 @@
 
 				&::before {
 					content: "";
-					background: #383838;
+					background: #3d3d3d;
 					width: 90%;
 					height: 70px;
 					border-radius: 80px;
@@ -3677,7 +2625,7 @@
 				.midBox {
 					width: 80px;
 					height: 80px;
-					background: #5f5f5f;
+					background: #5e5e5e;
 					border-radius: 90px;
 					position: absolute;
 					left: 50%;
@@ -3714,7 +2662,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #4d4d4d;
+	background: #505050;
 
 	tr {
 		text-align: center;
@@ -3795,7 +2743,7 @@
 					box-sizing: border-box;
 					margin: 25px 0px 15px;
 					font-size: 0px;
-					background: #3e3e3e;
+					background: #3d3d3d;
 
 					div {
 						display: inline-block;
@@ -3820,8 +2768,8 @@
 
 								&:nth-of-type(2) {
 									width: 60%;
-									color: #ea9700;
-									font-size: 12px;
+									color: #ff8c00;
+									font-size: 13px;
 								}
 							}
 
@@ -3848,10 +2796,10 @@
 					text-align: right;
 					padding-bottom: 15px;
 					color: #fff;
-					font-size: 12px;
+					font-size: 13px;
 
 					a {
-						color: #1bc100;
+						color: #4dff00;
 						padding-left: 5px;
 					}
 				}
@@ -3866,13 +2814,13 @@
 		tr {
 			
 			&:nth-of-type(2n) {
-				background: #656565;
+				background: #3d3d3d;
 			}
 
 			td {
 				width: 33.3%;
 				padding: 10px 0px;
-				font-size: 12px;
+				font-size: 14px;
 				color: #fff;
 			}
 		}
@@ -3925,7 +2873,7 @@
 					border-radius: 3px;
 					font-size: 0px;
 					position: relative;
-					background: #3e3e3e;
+					background: #3d3d3d;
 
 					.half {
 						display: inline-block;
@@ -3946,7 +2894,7 @@
 							&.dollar {
 
 								span {
-									color: #ea9700;
+									color: #ff8c00;
 									font-size: 18px;
 									padding-left: 10px;
 								}
@@ -3955,7 +2903,7 @@
 							&.locked {
 
 								span {
-									color: #f32727;
+									color: #ff0000;
 									font-size: 18px;
 									padding-left: 10px;
 								}
@@ -3973,7 +2921,7 @@
 								
 								&:hover,&:active,&.active {
 									background: #fff;
-									color: #4d4d4d;
+									color: #505050;
 								}
 							}
 						}
@@ -4048,10 +2996,10 @@
 									span {
 										font-size: 18px;
 										padding-left: 10px;
-										color: #ea9700;
+										color: #ff8c00;
 
 										&.locked {
-											color: #f32727;
+											color: #ff0000;
 										}
 									}
 								}
@@ -4067,7 +3015,7 @@
 									margin: -4px 40px 0px 0px;
 
 									&:hover,&:active,&.active {
-										color: #4d4d4d;
+										color: #505050;
 										background: #fff;
 									}
 								}
@@ -4097,14 +3045,13 @@
 						padding: 20px;
 
 						p {
-							color: #fff;
 							font-size: 16px;
 							text-align: left;
 							font-weight: bold;
-							color: #dfb187;
+							color: #ff8c00;
 
 							&.remind {
-								font-size: 12px;
+								font-size: 13px;
 								color: #ababab;
 								padding-top: 20px;
 							}
@@ -4123,7 +3070,7 @@
 							cursor: pointer;
 
 							&.turn {
-								background: #6a6a6a;
+								background: #747474;
 
 								div {
 									left: 50%;
@@ -4167,7 +3114,7 @@
 					width: 25%;
 					height: 145px;
 					border-radius: 5px;
-					background: #7d7d7d;
+					background: #747474;
 					color: #fff;
 					font-size: 17px;
 					margin: 20px 30px;
@@ -4175,7 +3122,7 @@
 					position: relative;
 
 					&:hover,&:active,&.active {
-						background: #dbdbdb;
+						background: #cacaca;
 						box-shadow: 0px 0px 5px 0px #fff;
 						color: #000;
 
@@ -4304,7 +3251,7 @@
 
 							&.race {
 								margin-bottom: 7%;
-								font-size: 12px;
+								font-size: 14px;
 							}
 						}
 					}
@@ -4314,7 +3261,7 @@
 					float: right;
 					color: #fff;
 					margin: 0px 20px 20px 0px;
-					font-size: 12px;
+					font-size: 14px;
 					position: relative;
 
 					&::before {
@@ -4323,12 +3270,12 @@
 						height: 15px;
 						position: absolute;
 						background: url('../images/infor.png') no-repeat;
-						top: -1px;
+						top: -2px;
 						left: -18px;
 					}
 
 					a {
-						color: #ff9000;
+						color: #ff8c00;
 					}
 				}
 			}
@@ -4377,12 +3324,12 @@
 							padding: 5px 8px;
 							background: transparent;
 							border-radius: 15px;
-							border: solid 1px #4d4d4d;
+							border: solid 1px #505050;
 							position: absolute;
 							right: 10px;
 
 							&:hover,&:active,&.active {
-								background: #4d4d4d;
+								background: #505050;
 								color: #fff;
 							}
 						}
@@ -4395,7 +3342,7 @@
 	//交易紀錄
 	&.dealRecord {
 		width: 1150px;
-		background: #545454;
+		background: #505050;
 		display: none;
 
 		&.display {
@@ -4406,7 +3353,7 @@
 			border-bottom: solid 1px #ababab;
 
 			&.fail {
-				background: #3e3e3e;
+				background: #3d3d3d;
 			}
 
 			&:last-child {
@@ -4453,7 +3400,7 @@
 				}
 
 				&.depositMoney {
-					color: #ffa500;
+					color: #ff8c00;
 				}
 
 				.time {
@@ -4494,7 +3441,7 @@
 			}
 
 			th {
-				border-bottom: solid 1px #929292;
+				border-bottom: solid 1px #828282;
 
 				p {
 					float: left;
@@ -4544,7 +3491,7 @@
 				}
 
 				&.yellow {
-					color: #ff9000;
+					color: #ff8c00;
 				}
 
 				&.highSeparate {
@@ -4552,7 +3499,7 @@
 				}
 
 				.teamName {
-					color: #ffffff;
+					color: #fff
 				}
 
 				.separate {
@@ -4562,11 +3509,11 @@
 				}
 
 				.odd {
-					color: #ff9000;
+					color: #ff8c00;
 				}
 
 				.vs {
-					color: #b4cbec;
+					color: #90b9ff;
 					font-size: 12px;
 					padding: 0px 8px;
 				}
@@ -4606,7 +3553,7 @@
 					float: right;
 					width: 1px;
 					height: 16px;
-					background: #202020;
+					background: #000000;
 				}
 			}
 		}
@@ -4617,7 +3564,7 @@
 		display: none;
 		margin-top: 122px;
 		width: 1150px;
-		background: #565656;
+		background: #5e5e5e;
 
 		&.display {
 			display: table;
@@ -4640,12 +3587,12 @@
 			}
 
 			&:nth-of-type(2n) {
-				background: #585858;
+				background: #505050;
 			}
 
 			th {
 				background: #bcbcbc;
-				color: #333;
+				color: #3d3d3d;
 
 				&.tLeft {
 					padding: 8px 16px 7px;
@@ -4662,7 +3609,7 @@
 				span {
 
 					&.remind {
-						color: #fc3838;
+						color: #ff0000;
 						padding: 0px 3px;
 					}
 				}
@@ -4678,7 +3625,7 @@
 					color: #ababab;
 
 					&:hover,&:active,&.active {
-						background: #cecece;
+						background: #cacaca;
 						color: #000;
 					}
 				}
@@ -4701,7 +3648,7 @@
 				
 						td {
 							vertical-align: middle;
-							border: solid 1px #898989;
+							border: solid 1px #8f8f8f;
 							height: 45px;
 							width: 7%;
 							font-size: 13px;
@@ -4711,7 +3658,7 @@
 				
 							&.title {
 								width: 9%;
-								background: #535353;
+								background: #505050;
 							}
 						}
 					}
@@ -4759,7 +3706,7 @@
 					margin: 0px auto;
 					font-size: 0px;
 					padding: 15px 0px;
-					background: #3e3e3e;
+					background: #3d3d3d;
 
 					.line {
 						width: 1px;
@@ -4880,7 +3827,7 @@
 
 								&:hover,&:active,&.active {
 									background: #fff;
-									color: #1a1a1a;
+									color: #000000;
 								}
 							}
 						}
@@ -4888,7 +3835,7 @@
 						.rowbut {
 							display: inline-block;
 							position: relative;
-							background: #b3b3b3;
+							background: #ababab;
 							padding: 8px 12px;
 							border-radius: 20px;
 							position: relative;
@@ -5037,7 +3984,7 @@
 					font-size: 0px;
 					padding: 15px 0px;
 					vertical-align: top;
-					background: #3e3e3e;
+					background: #3d3d3d;
 
 					&:last-child {
 						margin: 0px;
@@ -5064,7 +4011,7 @@
 						color: #fff;
 
 						&.remind {
-							font-size: 12px;
+							font-size: 13px;
 							color: #ababab;
 							padding-top: 10px;
 						}
@@ -5094,8 +4041,8 @@
 					select {
 						border: solid 1px #ababab;
 						border-radius: 3px;
-						background: #535353;
-						color: #cccccc;
+						background: #505050;
+						color: #cacaca;
 						width: 156px;
 						height: 36px;
 						padding-left: 10px;
@@ -5111,7 +4058,7 @@
 
 				.sword {
 					font-size: 12px;
-					color: #e2e2e2;
+					color: #cacaca;
 				}
 				
 				textarea {
@@ -5185,7 +4132,6 @@
 					font-size: 16px;
 					float: right;
 					background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-					background-color: #3247b8;
 					border-radius: 5px;
 					margin-bottom: 15px;
 
@@ -5206,7 +4152,7 @@
 			border-bottom: solid 1px #ababab;
 
 			&:nth-of-type(2n) {
-				background: #636363;
+				background: #5e5e5e;
 			}
 
 			td {
@@ -5244,7 +4190,7 @@
 					box-sizing: border-box;
 					font-size: 0px;
 					margin: 20px auto 10px;
-					background: #3e3e3e;
+					background: #3d3d3d;
 
 					&.control {
 						margin: 20px auto;
@@ -5259,7 +4205,7 @@
 
 						span {
 							display: block;
-							color: #1bc100;
+							color: #4dff00;
 							font-size: 20px;
 							font-weight: bold;
 							padding-bottom: 15px;
@@ -5303,7 +4249,7 @@
 							color: #fff;
 
 							&:hover,&:active,&.active {
-								color: #4d4d4d;
+								color: #505050;
 								background: #fff;
 							}
 						}
@@ -5317,7 +4263,7 @@
 					margin: 19px auto;
 					border: solid 1px #828282;
 					border-radius: 3px;
-					background: #3e3e3e;
+					background: #3d3d3d;
 
 					.bowser {
 						display: inline-block;
@@ -5356,7 +4302,7 @@
 						top: 19px;
 
 						&:hover,&:active,&.active {
-							color: #4d4d4d;
+							color: #505050;
 							background: #fff;
 						}
 					}
@@ -5381,7 +4327,7 @@
 				}
 
 				.inputBox {
-					width: 50%;
+					width: 55%;
 					height: auto;
 					margin: 20px 0px;
 					text-align: left;
@@ -5394,7 +4340,7 @@
 						border-radius: 3px;
 						color: #fff;
 						padding-left: 10px;
-						background: #535353;
+						background: #505050;
 	
 						&::placeholder {
 							color: #ababab;
@@ -5404,7 +4350,7 @@
 					.remind {
 						color: #fff;
 						margin-left: 30px;
-						font-size: 12px;
+						font-size: 14px;
 						position: relative;
 
 						&::before {
@@ -5413,7 +4359,7 @@
 							height: 15px;
 							position: absolute;
 							background: url(../images/infor.png) no-repeat;
-							top: 0px;
+							top: -2px;
 							left: -18px;
 						}
 					}
@@ -5422,10 +4368,10 @@
 						width: 180px;
 						height: 36px;
 						font-weight: bold;
-						background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+						background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
 						color: #fff;
 						border-radius: 3px;
-						border: solid 1px #325b3b;
+						border: solid 1px #3c7424;
 						margin-top: 15px;
 	
 						&:hover,&:active,&.active {
@@ -5449,7 +4395,7 @@
 					}
 
 					.title {
-						background: #7b7b7b;
+						background: #828282;
 						padding: 10px 20px;
 					}
 
@@ -5494,10 +4440,10 @@
 						height: 40px;
 						box-sizing: border-box;
 						border: solid 1px #828282;
-						background: #3e3e3e;
+						background: #3d3d3d;
 						border-radius: 3px;
 						padding-left: 10px;
-						color: #cfcfcf;
+						color: #cacaca;
 					}
 
 					.arrow {
@@ -5511,7 +4457,7 @@
 
 				p {
 					margin: 20px 0px;
-					color: #cccccc;
+					color: #cacaca;
 					font-size: 14px;
 					font-weight: bold;
 
@@ -5536,17 +4482,17 @@
 					height: 40px;
 					box-sizing: border-box;
 					border: solid 1px #828282;
-					background: #3e3e3e;
+					background: #3d3d3d;
 					border-radius: 3px;
 					padding-left: 10px;
-					color: #cfcfcf;
+					color: #cacaca;
 				}
 
 				button {
 					display: block;
 					width: 240px;
 					height: 40px;
-					background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+					background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
 					border-radius: 3px;
 					font-size: 16px;
 					color: #fff;
@@ -5598,16 +4544,16 @@
 					width: 10%;
 					height: 90px;
 					border: solid 1px #828282;
-					background: #3e3e3e;
+					background: #3d3d3d;
 					border-radius: 3px;
-					color: #cfcfcf;
+					color: #cacaca;
 					margin: 0px 15px 20px;
 					position: relative;
 
 					&:hover,&:active,&.active {
 						border-color: #ababab;
 						background: #fff;
-						color: #4d4d4d;
+						color: #505050;
 						border-radius: 3px 3px 10px 3px;
 						
 						&::before {
@@ -5697,10 +4643,10 @@
 				select {
 					width: 240px;
 					height: 40px;
-					background: #3e3e3e;
+					background: #3d3d3d;
 					border: solid 1px #828282;
 					border-radius: 3px;
-					color: #cfcfcf;
+					color: #cacaca;
 					padding-left: 10px;
 				}
 			}
@@ -5743,7 +4689,7 @@
 						span {
 							display: inline-block;
 							width: 110px;
-							color: #cfcfcf;
+							color: #cacaca;
 							font-size: 14px;
 							padding-right: 15px;
 						}
@@ -5753,14 +4699,14 @@
 							height: 40px;
 							padding-left: 10px;
 							border: solid 1px #828282;
-							background: #3e3e3e;
-							color: #cfcfcf;
+							background: #3d3d3d;
+							color: #cacaca;
 							border-radius: 3px;
 							box-sizing: border-box;
 						}
 
 						button {
-							color: #cfcfcf;
+							color: #cacaca;
 							padding: 5px 8px;
 							border: solid 1px #ababab;
 							border-radius: 3px;
@@ -5784,9 +4730,9 @@
 					width: 150px;
 					height: auto;
 					border: solid 1px #828282;
-					background: #3e3e3e;
+					background: #3d3d3d;
 					border-radius: 3px;
-					color: #cfcfcf;
+					color: #cacaca;
 					line-height: 35px;
 					font-size: 18px;
 					margin-right: 15px;
@@ -5797,7 +4743,7 @@
 
 					&:hover,&:active,&.active {
 						background: #fff;
-						color: #4d4d4d;
+						color: #505050;
 
 						span {
 							background-position-y: 100%;
@@ -5836,9 +4782,9 @@
 					width: 150px;
 					height: auto;
 					border: solid 1px #828282;
-					background: #3e3e3e;
+					background: #3d3d3d;
 					border-radius: 3px;
-					color: #cfcfcf;
+					color: #cacaca;
 					line-height: 35px;
 					font-size: 18px;
 					margin-right: 15px;
@@ -5849,7 +4795,7 @@
 
 					&:hover,&:active,&.active {
 						background: #fff;
-						color: #4d4d4d;
+						color: #505050;
 					}
 				}
 
@@ -5862,11 +4808,11 @@
 						width: 240px;
 						height: 40px;
 						border: solid 1px #828282;
-						background: #3e3e3e;
+						background: #3d3d3d;
 						border-radius: 3px;
 						box-sizing: border-box;
 						padding-left: 10px;
-						color: #cfcfcf;
+						color: #cacaca;
 						font-size: 14px;
 					}
 
@@ -5874,7 +4820,7 @@
 						display: inline-block;
 						color: #fff;
 						margin-left: 30px;
-						font-size: 12px;
+						font-size: 14px;
 						position: relative;
 
 						&::before {
@@ -5883,7 +4829,7 @@
 							height: 15px;
 							position: absolute;
 							background: url(../images/infor.png) no-repeat;
-							top: -1px;
+							top: -2px;
 							left: -18px;
 						}
 					}
@@ -5893,7 +4839,7 @@
 					display: block;
 					width: 240px;
 					height: 40px;
-					background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+					background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
 					border-radius: 3px;
 					font-size: 16px;
 					color: #fff;
