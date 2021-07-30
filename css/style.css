@@ -873,18 +873,17 @@ main .bg {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  background: #ababab;
 }
 .right .room .livelist::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .right .room .livelist::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #121212;
   border-radius: 10px;
 }
 .right .room .livelist::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #606360;
   border-radius: 10px;
 }
 .right .room .livelist.open {
@@ -894,33 +893,37 @@ main .bg {
   width: 100%;
   height: 30px;
   line-height: 30px;
-  border-bottom: solid 1px #ebebeb;
+  border-bottom: solid 1px #6a6a6a;
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  background: linear-gradient(to top, #323232 0%, #434343 100%);
 }
 .right .room .livelist ul li:hover, .right .room .livelist ul li:active {
-  background: #dadada;
+  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+  border: solid 1px #29650f;
 }
 .right .room .livelist ul li:hover::before, .right .room .livelist ul li:active::before {
   transform: rotate(90deg);
 }
-.right .room .livelist ul li:hover span, .right .room .livelist ul li:active span {
-  color: #000;
+.right .room .livelist ul li:hover .gameName, .right .room .livelist ul li:hover .games, .right .room .livelist ul li:active .gameName, .right .room .livelist ul li:active .games {
+  color: #57ed22;
 }
 .right .room .livelist ul li.active {
   height: auto;
-  background: #dadada;
+  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+  border: solid 1px #29650f;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 2;
+  color: #57ed22;
 }
 .right .room .livelist ul li.active::before {
   transform: rotate(90deg);
 }
-.right .room .livelist ul li.active span {
-  color: #000;
+.right .room .livelist ul li.active .gameName, .right .room .livelist ul li.active .games {
+  color: #57ed22;
 }
 .right .room .livelist ul li::before {
   content: "";
@@ -929,13 +932,13 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 7px 0px 7px 8px;
-  border-color: transparent #000;
+  border-color: transparent #b2b2b2;
   right: 25px;
   top: 8px;
   transition: 0.3s all;
 }
 .right .room .livelist ul li .gameName {
-  color: #fff;
+  color: #e4e4e4;
   font-size: 13px;
   margin-left: 30px;
 }
@@ -943,16 +946,19 @@ main .bg {
   float: right;
   font-size: 13px;
   font-weight: bold;
-  color: #000;
+  color: #e4e4e4;
   margin: 2px 60px 0px 0px;
 }
 .right .room .livelist ul li .innerList {
   width: 100%;
   height: 70px;
-  background: #bcbcbc;
+  background: #2d2d2d;
   position: relative;
-  border-top: solid 1px #ebebeb;
   cursor: default;
+  border-top: solid 1px #505050;
+}
+.right .room .livelist ul li .innerList:nth-of-type(1) {
+  border-color: #29650f;
 }
 .right .room .livelist ul li .innerList p {
   width: 100%;
@@ -962,11 +968,11 @@ main .bg {
   top: 50%;
   transform: translateY(-50%);
   font-size: 12px;
-  color: #575757;
+  color: #b6b6b6;
 }
 .right .room .livelist ul li .innerList p span {
   font-weight: bold;
-  color: #000;
+  color: #ececec;
 }
 .right .room .livelist ul li .innerList p span .situation {
   font-weight: normal;
@@ -975,7 +981,7 @@ main .bg {
 }
 .right .room .livelist ul li .innerList p span .situation.onLive {
   position: relative;
-  color: #4c6ef5;
+  color: #57ed22;
 }
 .right .room .livelist ul li .innerList p span .situation.onLive::before {
   content: "";
@@ -985,7 +991,7 @@ main .bg {
   border-radius: 12px;
   top: 6px;
   left: -12px;
-  background: #4c6ef5;
+  background: #57ed22;
 }
 .right .room .livelist ul li .innerList p button {
   position: absolute;
@@ -993,14 +999,15 @@ main .bg {
   bottom: 0px;
   width: 70px;
   height: 30px;
-  background: #ababab;
+  background: #252525;
   border-radius: 3px;
-  border: solid 1px #fff;
-  color: #fff;
+  border: solid 1px #317f0f;
+  color: #aeaeae;
 }
 .right .room .livelist ul li .innerList p button:hover, .right .room .livelist ul li .innerList p button:active, .right .room .livelist ul li .innerList p button.active {
-  background: #fff;
-  color: #ababab;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 90%);
+  border-color: #aef156;
+  color: #252525;
 }
 .right .room .bettingStatus {
   display: none;
@@ -1068,9 +1075,6 @@ main .bg {
   top: 70px;
   z-index: 2;
 }
-.playBoard tr th:nth-of-type(1) {
-  color: #44be1d;
-}
 .playBoard tr th.tLeft {
   text-align: left;
   padding: 8px 10px;
@@ -1078,6 +1082,9 @@ main .bg {
 .playBoard tr th .date {
   float: right;
   margin-right: 10px;
+}
+.playBoard tr th:nth-of-type(1).tLeft {
+  color: #44be1d;
 }
 .playBoard tr td {
   font-size: 12px;
@@ -1095,7 +1102,7 @@ main .bg {
   padding: 0px 10px;
 }
 .playBoard tr td.allScore {
-  color: #ffd400;
+  color: #71e31d;
 }
 .playBoard tr td .gameStyle {
   color: #95f221;
@@ -1537,7 +1544,7 @@ main .bg {
   padding-bottom: 8px;
 }
 .playBoard.tType4_result tr td p.first {
-  color: #ffd400;
+  color: #71e31d;
 }
 .playBoard.tType4_result tr td p:last-child {
   padding: 0px;
@@ -2404,22 +2411,22 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #505050;
+  background: #2c2c2c;
 }
 .teachBoard tr {
   text-align: center;
-  border-bottom: solid 1px #ababab;
+  border-bottom: solid 1px #727272;
 }
 .teachBoard tr.noBorder {
   border: none;
 }
 .teachBoard tr th {
-  color: #fff;
+  color: #44be1d;
   font-size: 13px;
   padding: 8px 0px 6px;
   vertical-align: middle;
-  background: #3d3d3d;
-  border-bottom: solid 1px #ababab;
+  background: #1b1b1b;
+  border-bottom: solid 1px #33bc19;
   position: -webkit-sticky;
   position: sticky;
   top: 70px;
@@ -2451,13 +2458,13 @@ main .bg {
   position: relative;
 }
 .teachBoard tr td .team p {
-  color: #fff;
+  color: #d0d0d0;
   font-size: 14px;
   line-height: 24px;
 }
 .teachBoard tr td .team p .odd {
   font-weight: bold;
-  color: #ffd400;
+  color: #71e31d;
   padding-left: 5px;
 }
 .teachBoard tr td .team .img {
@@ -2482,7 +2489,7 @@ main .bg {
   height: 88px;
   line-height: 88px;
   vertical-align: top;
-  color: #fff;
+  color: #d0d0d0;
   position: relative;
 }
 .teachBoard tr td .vs span {
@@ -2496,16 +2503,17 @@ main .bg {
   left: 50%;
   transform: translateX(-50%);
   bottom: -24px;
-  border: solid 1px #828282;
+  border: solid 1px #727272;
   border-radius: 30px;
-  background: #505050;
+  background: #2c2c2c;
+  color: #d0d0d0;
 }
 .teachBoard tr td .explain {
   width: 220px;
   height: auto;
   display: inline-block;
   padding: 20px 0px;
-  color: #cacaca;
+  color: #d0d0d0;
 }
 .teachBoard tr td .explain.lside {
   text-align: right;
@@ -2527,7 +2535,7 @@ main .bg {
 }
 .teachBoard tr td .box::before {
   content: "";
-  background: #3d3d3d;
+  background: #222222;
   width: 90%;
   height: 70px;
   border-radius: 80px;
@@ -2535,6 +2543,7 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 3px 0px #51544e, 0px 0px 10px 2px #151515 inset;
 }
 .teachBoard tr td .box .textBox {
   width: 120px;
@@ -2550,37 +2559,39 @@ main .bg {
   float: right;
 }
 .teachBoard tr td .box .textBox p {
-  color: #fff;
+  color: #dcdcdc;
   font-size: 14px;
   line-height: 24px;
 }
 .teachBoard tr td .box .textBox p.win {
   font-weight: bold;
-  color: #ffd400;
+  color: #71e31d;
 }
 .teachBoard tr td .box .textBox p.lose {
-  color: #8f8f8f;
+  color: #959595;
 }
 .teachBoard tr td .box .midBox {
   width: 80px;
   height: 80px;
-  background: #5e5e5e;
+  background: linear-gradient(to top, #2c2c2c 27%, #3e3e3e 94%);
   border-radius: 90px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  border: solid 1px #38730e;
+  box-shadow: 0px 0px 10px 2px #374d23;
 }
 .teachBoard tr td .box .midBox p {
-  color: #fff;
+  color: #f0f0f0;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   margin-top: 12px;
 }
 .teachBoard tr td .box .midBox p.score {
-  color: #ffd400;
+  color: #71e31d;
   margin-top: 6px;
   font-size: 24px;
 }
@@ -4613,7 +4624,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 10px 13px 10px 0px;
-  border-color: transparent #fff;
+  border-color: transparent #b2b2b2;
   cursor: pointer;
   transform: translateY(4px);
   transform-origin: 10px 32px;
@@ -4627,7 +4638,7 @@ main .bg {
 .topfix .nor .timeSelect .date {
   display: inline-block;
   margin: 0px 10px;
-  color: #fff;
+  color: #e0e0e0;
   cursor: pointer;
   position: relative;
 }
@@ -4636,7 +4647,7 @@ main .bg {
 }
 .topfix .nor .timeSelect .date .total {
   display: inline-block;
-  background: #2a2a2a;
+  background: #131313;
   border-radius: 3px;
   margin-left: 10px;
   line-height: 22px;
@@ -4644,14 +4655,14 @@ main .bg {
   text-align: center;
 }
 .topfix .nor .timeSelect .date .total span {
-  color: #ffee00;
+  color: #33ba04;
 }
 .topfix .nor .timeSelect .date .arrow {
   display: inline-block;
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-color: #b1b1b1 transparent;
+  border-color: #747474 transparent;
   border-width: 8px 6px 0px 6px;
   margin-left: 10px;
 }
@@ -4662,9 +4673,11 @@ main .bg {
   top: 50px;
   width: 143px;
   height: auto;
-  background: #505050;
+  background: #333333;
   line-height: 30px;
   border-radius: 0px 0px 3px 3px;
+  border: solid 1px #6e6e6e;
+  border-top: none;
 }
 .topfix .nor .timeSelect .date .moreTimeList.display {
   display: block;
@@ -4672,20 +4685,20 @@ main .bg {
 .topfix .nor .timeSelect .date .moreTimeList li {
   text-align: center;
   font-size: 14px;
-  border-bottom: solid 1px #a0a0a0;
-  color: #fff;
+  border-bottom: solid 1px #6e6e6e;
+  color: #e0e0e0;
 }
 .topfix .nor .timeSelect .date .moreTimeList li:last-child {
   border: none;
 }
 .topfix .nor .timeSelect .date .moreTimeList li:hover, .topfix .nor .timeSelect .date .moreTimeList li:active, .topfix .nor .timeSelect .date .moreTimeList li.active {
-  background: #747474;
+  background: #444444;
 }
 .topfix .nor .timeSelect .smallBtn {
-  background: transparent;
-  border: solid 1px #ffffff;
-  color: #fff;
-  padding: 3px 10px 4px;
+  background: #212121;
+  border: solid 1px #6a8e2a;
+  color: #bfbfbf;
+  padding: 5px 10px 6px;
   border-radius: 3px;
   margin: 0px 3px;
 }
@@ -4693,8 +4706,9 @@ main .bg {
   margin-left: 10px;
 }
 .topfix .nor .timeSelect .smallBtn:hover, .topfix .nor .timeSelect .smallBtn:active, .topfix .nor .timeSelect .smallBtn.active {
-  background: #fff;
-  color: #000;
+  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
+  color: #33ba04;
+  border-color: #32980e;
 }
 .topfix .inn {
   display: none;
@@ -4771,18 +4785,20 @@ main .bg {
 .topfix .teach li {
   float: left;
   font-size: 15px;
-  height: 46px;
+  height: 48px;
   line-height: 50px;
-  border-bottom: solid 3px transparent;
-  color: #fff;
+  background: linear-gradient(to top, #323232 0%, #434343 100%);
+  color: #bfbfbf;
   cursor: pointer;
-}
-.topfix .teach li:first-child {
-  margin-left: 15px;
+  padding: 0px 10px;
+  text-align: center;
+  border: solid 1px #7b7b7b;
+  border-radius: 3px;
 }
 .topfix .teach li:hover, .topfix .teach li:active, .topfix .teach li.active {
-  color: #fff;
-  border-color: #59a936;
+  color: #33ba04;
+  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
+  border-color: #32980e;
 }
 .topfix .teach li.name {
   color: #fff;
@@ -4791,6 +4807,7 @@ main .bg {
   pointer-events: none;
 }
 .topfix .teach .line {
+  display: none;
   width: 1px;
   height: 15px;
   background: #bcbcbc;
@@ -4814,7 +4831,7 @@ main .bg {
   top: 55px;
   left: 280px;
   z-index: 5;
-  background: #ababab;
+  background: #3a3a3a;
   scrollbar-width: thin;
   text-align: center;
 }
@@ -4823,11 +4840,11 @@ main .bg {
   background-color: transparent;
 }
 .chleague::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #121212;
   border-radius: 10px;
 }
 .chleague::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #606360;
   border-radius: 10px;
 }
 .chleague.display {
@@ -4861,28 +4878,29 @@ main .bg {
 }
 .chleague ul li p {
   position: relative;
-  padding: 6px 0px;
+  padding: 6px 5px;
   font-size: 13px;
+  color: #ababab;
 }
-.chleague ul li p .cube {
+.chleague ul li p .cube2 {
   left: -20px;
   top: 5px;
 }
 .chleague button {
   width: 160px;
   height: 36px;
-  border: 1px solid #495cc5;
+  border: 1px solid #37da14;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-  background-color: #3247b8;
-  color: #fff;
+  background: #333333;
+  color: #37da14;
   margin-top: 15px;
 }
 .chleague button:hover, .chleague button:active, .chleague button.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
-  background-color: #8e9bdc;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  border-color: #aef156;
+  color: #222222;
 }
 
 .filter {
@@ -5110,6 +5128,7 @@ main .bg {
   top: 15%;
   transform: translateX(-50%);
   border: solid 1px #3e8a13;
+  box-shadow: 0px 0px 10px 5px #3f8a1385;
 }
 .controlBox h1 {
   width: 100%;
@@ -5322,6 +5341,32 @@ main .bg {
   border: solid 1px #fff;
   transform: rotate(45deg);
   border-width: 0px 2px 2px 0px;
+}
+
+.cube2 {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #393939;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3a3a3a #474747 #626262;
+  box-shadow: 0px 0px 5px 2px #181818 inset;
+  border-radius: 3px;
+  position: absolute;
+  cursor: pointer;
+}
+.cube2.active {
+  box-shadow: 0px 0px 5px 2px #181818 inset, 0px 0px 2px 1px #587920;
+}
+.cube2.active::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  background: url("../images/cubeArrow.png") no-repeat;
 }
 
 .norbetting {
@@ -6408,6 +6453,9 @@ main .bg {
   transform: translateX(-50%);
   top: 200px;
   z-index: 20;
+  box-shadow: 0px 0px 10px 5px #3f8a1385;
+  border-radius: 5px;
+  border: solid 2px #3e8a13;
 }
 .unLogin.display {
   display: block;
@@ -6415,48 +6463,52 @@ main .bg {
 .unLogin .topBar {
   width: 100%;
   height: 50px;
-  background: #2a2a2a;
+  background: #242424;
   border-radius: 3px 3px 0px 0px;
   position: relative;
+  border-bottom: solid 1px #3e8a13;
 }
 .unLogin .topBar span {
   font-size: 17px;
-  color: #fff;
+  color: #4be119;
   line-height: 54px;
   padding-left: 20px;
 }
 .unLogin .topBar button {
-  width: 18px;
-  height: 18px;
   position: absolute;
-  right: 20px;
-  top: 16px;
-  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #404040;
+  border: solid 3px #4be119;
+  right: -50px;
+  top: -50px;
+  box-shadow: 0px 0px 0px 5px #404040;
 }
 .unLogin .topBar button::before {
   content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
   position: absolute;
-  left: 8px;
-  top: 0px;
+  width: 3px;
+  height: 18px;
+  right: 16px;
+  top: 8px;
+  background: #4be119;
   transform: rotate(45deg);
 }
 .unLogin .topBar button::after {
   content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
   position: absolute;
-  left: 8px;
-  top: 0px;
-  transform: rotate(135deg);
+  width: 3px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background: #4be119;
+  transform: rotate(-45deg);
 }
 .unLogin .remindBox {
   width: 100%;
   height: 110px;
-  background: #747474;
+  background: #242424;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
@@ -6464,23 +6516,24 @@ main .bg {
 .unLogin .remindBox p {
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: #c8c8c8;
   margin-top: 10px;
 }
 .unLogin .remindBox button {
   width: 180px;
   height: 36px;
   margin-top: 30px;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-  background-color: #3247b8;
-  border: 1px solid #495cc5;
-  color: #fff;
+  background: #2d2d2d;
+  border: 1px solid #d9d9d9;
+  color: #b2b2b2;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
 }
 .unLogin .remindBox button:hover, .unLogin .remindBox button:active, .unLogin .remindBox button.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #191919;
+  border-color: #aef156;
 }
 
 .liveRemind {
@@ -6510,7 +6563,7 @@ main .bg {
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  background: #8e9bdc;
+  background: #25a00e;
 }
 
 .redCard, .yellowCard {
@@ -6520,11 +6573,11 @@ main .bg {
   display: inline-block;
   width: 10px;
   height: 15px;
-  background: #ff0000;
+  background: #b20707;
   margin: 0px 4px -3px 0px;
 }
 .redCard.yellowCard span, .yellowCard.yellowCard span {
-  background: #ffee00;
+  background: #ffc334;
 }
 
 .playerStatus {
@@ -6532,7 +6585,7 @@ main .bg {
 }
 
 .pitcher {
-  color: #8596ee;
+  color: #71e31d;
   padding-left: 7px;
   font-size: 12px;
 }
@@ -6661,7 +6714,8 @@ main .bg {
 .fixside .search {
   width: 300px;
   height: 60px;
-  background: #eaedf4;
+  background: linear-gradient(to top, #272727 0%, #434343);
+  border: solid 1px #327e1a;
   border-radius: 3px 0px 0px 3px;
   position: absolute;
   top: 0px;
@@ -6671,6 +6725,7 @@ main .bg {
 }
 .fixside .search.open {
   left: -240px;
+  background: #414141;
 }
 .fixside .search .searchbut {
   width: 60px;
@@ -6681,53 +6736,60 @@ main .bg {
   text-align: center;
 }
 .fixside .search .searchbut:hover, .fixside .search .searchbut:active, .fixside .search .searchbut.active {
-  background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+  background: linear-gradient(to bottom, #33ab0a 0%, #68e73c 100%);
 }
 .fixside .search .searchbut:hover span, .fixside .search .searchbut:active span, .fixside .search .searchbut.active span {
-  color: #fff;
+  color: #131313;
 }
 .fixside .search .searchbut:hover .fixsideimg, .fixside .search .searchbut:active .fixsideimg, .fixside .search .searchbut.active .fixsideimg {
   background-position-y: 100%;
 }
 .fixside .search .searchbut span {
   font-size: 13px;
+  color: #c8c8c8;
 }
 .fixside .search .searchbut .fixsideimg {
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_ic.png");
-  background-size: 900%;
+  background: url("../images/fixside_ic2.png");
+  background-size: 500%;
   float: left;
   margin: 7px 15px 3px 14px;
+  pointer-events: none;
 }
 .fixside .search input {
   width: 140px;
   height: 30px;
   font-size: 16px;
   padding-left: 10px;
-  box-shadow: inset 0 0 2px 2px #c6cae0;
-  border: none;
-  border-radius: 15px;
+  box-shadow: 0 -3 2px 0px #1f1f1f inset;
+  border: solid 1px #5d5d5d;
+  border-top: none;
+  border-radius: 3px;
   float: left;
   margin: 15px 0px 0px 10px;
+  background: linear-gradient(to bottom, #303030 21%, #424242 100%);
+  color: #898787;
 }
 .fixside .search input::placeholder {
   font-weight: bold;
-  color: #cacaca;
+  color: #898787;
   font-size: 14px;
 }
 .fixside .search button {
   width: 50px;
   height: 28px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-  color: #fff;
+  background: #2b2b2b;
+  border: solid 1px #34aa0d;
+  color: #42c317;
   float: left;
   border-radius: 5px;
   font-size: 16px;
   margin: 16px 0px 16px 15px;
 }
 .fixside .search button:hover, .fixside .search button:active, .fixside .search button.active {
-  background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
+  color: #2b2b2b;
+  background: #34aa0d;
 }
 .fixside .search .searchbox {
   width: 240px;
@@ -6744,26 +6806,33 @@ main .bg {
   padding-left: 20px;
   position: relative;
   font-size: 14px;
-  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+  background: linear-gradient(to top, #393939 0%, #555555 100%);
   cursor: pointer;
+  color: #dadada;
+  border-bottom: solid 1px #6c6c6c;
 }
 .fixside .search .searchbox li::before {
   content: "";
-  width: 6px;
-  height: 8px;
+  width: 0px;
+  height: 0px;
   position: absolute;
-  background: url("../images/arrow_b.png");
+  border-style: solid;
+  border-color: #b2b2b2 transparent;
+  border-width: 10px 8px 0px 8px;
   right: 40px;
   top: 21px;
+  transform: rotate(-90deg);
+  transition: 0.3s all;
 }
 .fixside .search .searchbox li:hover, .fixside .search .searchbox li:active, .fixside .search .searchbox li.active {
-  background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
+  background: linear-gradient(to bottom, #2d2d2d 0%, #393939 100%);
+  color: #dadada;
 }
 .fixside .search .searchbox li:hover::before, .fixside .search .searchbox li:active::before, .fixside .search .searchbox li.active::before {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 .fixside .search .searchbox div {
-  background: #fff;
+  background: #2c2c2c;
   width: 100%;
   height: 0px;
   overflow: hidden;
@@ -6776,15 +6845,13 @@ main .bg {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  color: #000;
-  border-bottom: solid 1px #4d515d;
+  color: #b9b9b9;
+  border-bottom: solid 1px #8c8c8c;
   font-size: 14px;
 }
-.fixside .search .searchbox div a:last-child {
-  border: none;
-}
 .fixside .search .searchbox div a:hover, .fixside .search .searchbox div a:active, .fixside .search .searchbox div a.active {
-  text-decoration: underline;
+  background: #212121;
+  color: #53ca2a;
 }
 .fixside .search .searchbox div a .team {
   display: block;
@@ -6808,11 +6875,9 @@ main .bg {
 .fixside .fun {
   width: 60px;
   height: auto;
-  margin-top: 62px;
-  border-radius: 3px 0px 0px 3px;
+  margin-top: 65px;
   position: relative;
   transition: all 0.3s;
-  overflow: hidden;
 }
 .fixside .fun .hamBtn {
   display: none;
@@ -6849,34 +6914,34 @@ main .bg {
 .fixside .fun a {
   display: block;
   width: 100%;
-  height: 70px;
-  background: #eaedf4;
+  height: 62px;
+  background: linear-gradient(to top, #272727 0%, #434343 100%);
+  border-radius: 3px 0px 0px 3px;
   text-align: center;
+  margin-top: 3px;
+  border: solid 1px #327e1a;
   cursor: pointer;
 }
-.fixside .fun a:last-child {
-  height: 75px;
-}
 .fixside .fun a:hover, .fixside .fun a:active, .fixside .fun a.active {
-  background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+  background: linear-gradient(to bottom, #33ab0a 0%, #68e73c 100%);
 }
 .fixside .fun a:hover span, .fixside .fun a:active span, .fixside .fun a.active span {
-  color: #fff;
+  color: #131313;
 }
 .fixside .fun a:hover .fixsideimg, .fixside .fun a:active .fixsideimg, .fixside .fun a.active .fixsideimg {
-  background-position-y: -30px;
+  background-position-y: 100%;
 }
 .fixside .fun a span {
   font-size: 13px;
-  color: #000;
+  color: #d0d0d0;
 }
 .fixside .fun a .fixsideimg {
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_ic.png");
-  background-size: 900%;
+  background: url("../images/fixside_ic2.png");
+  background-size: 500%;
   float: left;
-  margin: 13px 15px 3px 17px;
+  margin: 8px 15px 3px 17px;
 }
 .fixside .fun a .fixsideimg.img2 {
   background-position-x: -30px;
@@ -6888,19 +6953,19 @@ main .bg {
   background-position-x: -90px;
 }
 .fixside .fun a .fixsideimg.img5 {
-  background-position-x: -120px;
+  background-position-x: 50%;
 }
 .fixside .fun a .fixsideimg.img6 {
-  background-position-x: -150px;
+  background-position-x: 75%;
 }
 .fixside .fun a .fixsideimg.img7 {
-  background-position-x: -180px;
+  background-position-x: 100%;
 }
 .fixside .fun a .fixsideimg.img8 {
   background-position-x: -210px;
 }
 .fixside .fun a .fixsideimg.img9 {
-  background-position-x: -240px;
+  background-position-x: 25%;
 }
 
 .discount {

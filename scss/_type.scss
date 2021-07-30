@@ -346,7 +346,7 @@
                 height: 0px;
                 border-style: solid;
                 border-width: 10px 13px 10px 0px;
-                border-color: transparent #fff;
+                border-color: transparent #b2b2b2;
                 cursor: pointer;
                 transform: translateY(4px);
                 transform-origin: 10px 32px;
@@ -363,7 +363,7 @@
             .date {
                 display: inline-block;
                 margin: 0px 10px;
-                color: #fff;
+                color: #e0e0e0;
                 cursor: pointer;
                 position: relative;
 
@@ -376,7 +376,7 @@
 
                 .total {
                     display: inline-block;
-                    background: #2a2a2a;
+                    background: #131313;
                     border-radius: 3px;
                     margin-left: 10px;
                     line-height: 22px;
@@ -384,7 +384,7 @@
                     text-align: center;
 
                     span {
-                        color: #ffee00;
+                        color: #33ba04;
                     }
                 }
 
@@ -393,7 +393,7 @@
                     width: 0px;
                     height: 0px;
                     border-style: solid;
-                    border-color: #b1b1b1 transparent;
+                    border-color: #747474 transparent;
                     border-width: 8px 6px 0px 6px;
                     margin-left: 10px;
                 }
@@ -405,9 +405,11 @@
                     top: 50px;
                     width: 143px;
                     height: auto;
-                    background: #505050;
+                    background: #333333;
                     line-height: 30px;
                     border-radius: 0px 0px 3px 3px;
+                    border: solid 1px #6e6e6e;
+                    border-top: none;
 
                     &.display {
                         display: block;
@@ -416,25 +418,25 @@
                     li {
                         text-align: center;
                         font-size: 14px;
-                        border-bottom: solid 1px #a0a0a0;
-                        color: #fff;
+                        border-bottom: solid 1px #6e6e6e;
+                        color: #e0e0e0;
 
                         &:last-child {
                             border: none;
                         }
 
                         &:hover,&:active,&.active {
-                            background: #747474;
+                            background: #444444;
                         }
                     }
                 }
             }
 
             .smallBtn {
-                background: transparent;
-                border: solid 1px #ffffff;
-                color: #fff;
-                padding: 3px 10px 4px;
+                background: #212121;
+                border: solid 1px #6a8e2a;
+                color: #bfbfbf;
+                padding: 5px 10px 6px;
                 border-radius: 3px;
                 margin: 0px 3px;
 
@@ -443,8 +445,9 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: #fff;
-                    color: #000;
+                    background: linear-gradient(to bottom,#141414 0%,#434343 100%);
+                    color: #33ba04;
+                    border-color: #32980e;
                 }
             }
         }
@@ -539,19 +542,20 @@
         li {
             float: left;
             font-size: 15px;
-            height: 46px;
+            height: 48px;
             line-height: 50px;
-            border-bottom: solid 3px transparent;
-            color: #fff;
+            background: linear-gradient(to top,#323232 0%,#434343 100%);
+            color: #bfbfbf;
             cursor: pointer;
-
-            &:first-child {
-                margin-left: 15px;
-            }
+            padding: 0px 10px;
+            text-align: center;
+            border: solid 1px #7b7b7b;
+            border-radius: 3px;
 
             &:hover,&:active,&.active {
-                color: #fff;
-                border-color: #59a936;
+                color: #33ba04;
+                background: linear-gradient(to bottom,#141414 0%,#434343 100%);
+                border-color: #32980e;
             }
 
             &.name {
@@ -563,6 +567,7 @@
         }
 
         .line {
+            display: none;
             width: 1px;
             height: 15px;
             background: #bcbcbc;
@@ -590,7 +595,7 @@
     top: 55px;
     left: 280px;
     z-index: 5;
-    background: #ababab;
+    background: #3a3a3a;
     scrollbar-width: thin;
     text-align: center;
 
@@ -600,12 +605,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: #121212;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #b9becf;
+        background: #606360;
         border-radius: 10px;
     }
 
@@ -650,10 +655,11 @@
 
             p {
                 position: relative;
-                padding: 6px 0px;
+                padding: 6px 5px;
                 font-size: 13px;
+                color: #ababab;
 
-                .cube {
+                .cube2 {
                     left: -20px;
                     top: 5px;
                 }
@@ -664,18 +670,18 @@
     button {
         width: 160px;
         height: 36px;
-        border: 1px solid #495cc5;
+        border: 1px solid #37da14;
         border-radius: 5px;
         font-size: 16px;
         font-weight: bold;
-        background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-        background-color: #3247b8;
-        color: #fff;
+        background: #333333;
+        color: #37da14;
         margin-top: 15px;
 
         &:hover,&:active,&.active {
-            background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
-            background-color: #8e9bdc;
+            background: linear-gradient(to right,#92e820 0%,#46dd16 100%);
+            border-color: #aef156;
+            color: #222222;
         }
     }
 }
@@ -932,6 +938,7 @@
     top: 15%;
     transform: translateX(-50%);
     border: solid 1px #3e8a13;
+    box-shadow: 0px 0px 10px 5px #3f8a1385;
 
     h1 {
         width: 100%;
@@ -1182,6 +1189,33 @@
             border: solid 1px #fff;
             transform: rotate(45deg);
             border-width: 0px 2px 2px 0px;
+        }
+    }
+}
+.cube2 {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #393939;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3a3a3a #474747 #626262;
+    box-shadow: 0px 0px 5px 2px #181818 inset;
+    border-radius: 3px;
+    position: absolute;
+    cursor: pointer;
+
+    &.active {
+        box-shadow: 0px 0px 5px 2px #181818 inset, 0px 0px 2px 1px #587920;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            left: 0px;
+            width: 18px;
+            height: 18px;
+            background: url('../images/cubeArrow.png') no-repeat;
         }
     }
 }
@@ -2436,6 +2470,9 @@
     transform: translateX(-50%);
     top: 200px;
     z-index: 20;
+    box-shadow: 0px 0px 10px 5px #3f8a1385;
+    border-radius: 5px;
+    border: solid 2px #3e8a13;
 
     &.display {
         display: block;
@@ -2445,46 +2482,49 @@
     .topBar {
         width: 100%;
         height: 50px;
-        background: #2a2a2a;
+        background: #242424;
         border-radius: 3px 3px 0px 0px;
         position: relative;
+        border-bottom: solid 1px #3e8a13;
 
         span {
             font-size: 17px;
-            color: #fff;
+            color: #4be119;
             line-height: 54px;
             padding-left: 20px;
         }
 
         //上XX
         button {
-            width: 18px;
-            height: 18px;
             position: absolute;
-            right: 20px;
-            top: 16px;
-            background: transparent;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background: #404040;
+            border: solid 3px #4be119;
+            right: -50px;
+            top: -50px;
+            box-shadow: 0px 0px 0px 5px #404040;
 
             &::before {
                 content: "";
-                width: 1px;
-                height: 18px;
-                background: #fff;
                 position: absolute;
-                left: 8px;
-                top: 0px;
+                width: 3px;
+                height: 18px;
+                right: 16px;
+                top: 8px;
+                background: #4be119;
                 transform: rotate(45deg);
             }
-
             &::after {
                 content: "";
-                width: 1px;
-                height: 18px;
-                background: #fff;
                 position: absolute;
-                left: 8px;
-                top: 0px;
-                transform: rotate(135deg);
+                width: 3px;
+                height: 18px;
+                left: 16px;
+                top: 8px;
+                background: #4be119;
+                transform: rotate(-45deg);
             }
         }
     }
@@ -2493,7 +2533,7 @@
     .remindBox {
         width: 100%;
         height: 110px;
-        background: #747474;
+        background: #242424;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
         text-align: center;
@@ -2501,7 +2541,7 @@
         p {
             font-size: 24px;
             font-weight: bold;
-            color: #fff;
+            color: #c8c8c8;
             margin-top: 10px;
         }
 
@@ -2509,15 +2549,16 @@
             width: 180px;
             height: 36px;
             margin-top: 30px;
-            background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-            background-color: #3247b8;
-            border: 1px solid #495cc5;
-            color: #fff;
+            background: #2d2d2d;
+            border: 1px solid #d9d9d9;
+            color: #b2b2b2;
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
             &:hover,&:active,&.active {
-                background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+                background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+                color: #191919;
+                border-color: #aef156;
             }
         }
     }
@@ -2555,7 +2596,7 @@
     width: 10px;
     height: 10px;
     border-radius: 10px;
-    background: #8e9bdc;
+    background: #25a00e;
 }
 
 //足球
@@ -2568,14 +2609,14 @@
         display: inline-block;
         width: 10px;
         height: 15px;
-        background: #ff0000;
+        background: #b20707;
         margin: 0px 4px -3px 0px;
     }
 
     &.yellowCard {
 
         span {
-            background: #ffee00;
+            background: #ffc334;
         }
     }
 }
@@ -2589,7 +2630,7 @@
 
 //投手名稱
 .pitcher {
-    color: #8596ee;
+    color: #71e31d;
     padding-left: 7px;
     font-size: 12px;
 }

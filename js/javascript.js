@@ -831,6 +831,9 @@ $(function(){
     $('.cube').click(function(){
         $(this).toggleClass('active');
     });
+    $('.cube2').click(function(){
+        $(this).toggleClass('active');
+    });
 });
 
 //left自動高度

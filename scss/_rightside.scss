@@ -201,6 +201,7 @@
         width: 100%;
         height: auto;
         margin-top: 5px;
+
         //切換按鈕
         .twobut {
             width: 100%;
@@ -266,20 +267,19 @@
             overflow-y: auto;
             overflow-x: hidden;
             scrollbar-width: thin;
-            background: #ababab;
 
             &::-webkit-scrollbar {
                 width: 5px;
                 background-color: transparent;
             }
-
+        
             &::-webkit-scrollbar-track {
-                background: #f1f1f1;
+                background: #121212;
                 border-radius: 10px;
             }
-
+        
             &::-webkit-scrollbar-thumb {
-                background: #b9becf;
+                background: #606360;
                 border-radius: 10px;
             }
 
@@ -294,36 +294,40 @@
                     width: 100%;
                     height: 30px;
                     line-height: 30px;
-                    border-bottom: solid 1px #ebebeb;
+                    border-bottom: solid 1px #6a6a6a;
                     position: relative;
                     overflow: hidden;
                     cursor: pointer;
+                    background: linear-gradient(to top,#323232 0%,#434343 100%);
 
                     &:hover,&:active {
-                        background: rgb(218, 218, 218);
+                        background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
+                        border: solid 1px #29650f;
 
                         &::before {
                             transform: rotate(90deg);
                         }
 
-                        span {
-                            color: #000;
+                        .gameName,.games {
+                            color: #57ed22;
                         }
                     }
 
                     &.active {
                         height: auto;
-                        background: rgb(218, 218, 218);
+                        background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
+                        border: solid 1px #29650f;
                         position: sticky;
                         top: 0px;
                         z-index: 2;
+                        color: #57ed22;
 
                         &::before {
                             transform: rotate(90deg);
                         }
 
-                        span {
-                            color: #000;
+                        .gameName,.games {
+                            color: #57ed22;
                         }
                     }
 
@@ -334,14 +338,14 @@
                         height: 0px;
                         border-style: solid;
                         border-width: 7px 0px 7px 8px;
-                        border-color: transparent #000;
+                        border-color: transparent #b2b2b2;
                         right: 25px;
                         top: 8px;
                         transition: 0.3s all;
                     }
 
                     .gameName {
-                        color: #fff;
+                        color: #e4e4e4;
                         font-size: 13px;
                         margin-left: 30px;
                     }
@@ -350,17 +354,21 @@
                         float: right;
                         font-size: 13px;
                         font-weight: bold;
-                        color: #000;
+                        color: #e4e4e4;
                         margin: 2px 60px 0px 0px;
                     }
 
                     .innerList {
                         width: 100%;
                         height: 70px;
-                        background: #bcbcbc;
+                        background: #2d2d2d;
                         position: relative;
-                        border-top: solid 1px #ebebeb;
                         cursor: default;
+                        border-top: solid 1px #505050;
+                        
+                        &:nth-of-type(1) {
+                            border-color: #29650f;
+                        }
 
                         p {
                             width: 100%;
@@ -370,11 +378,11 @@
                             top: 50%;
                             transform: translateY(-50%);
                             font-size: 12px;
-                            color: #575757;
+                            color: #b6b6b6;
 
                             span {
                                 font-weight: bold;
-                                color: #000;
+                                color: #ececec;
 
                                 .situation {
                                     font-weight: normal;
@@ -383,7 +391,7 @@
 
                                     &.onLive {
                                         position: relative;
-                                        color: #4c6ef5;
+                                        color: #57ed22;
                                         
                                         &::before {
                                             content: "";
@@ -393,7 +401,7 @@
                                             border-radius: 12px;
                                             top: 6px;
                                             left: -12px;
-                                            background: #4c6ef5;
+                                            background: #57ed22;
                                         }
                                     }
                                 }
@@ -405,14 +413,15 @@
                                 bottom: 0px;
                                 width: 70px;
                                 height: 30px;
-                                background: #ababab;
+                                background: #252525;
                                 border-radius: 3px;
-                                border: solid 1px #fff;
-                                color: #fff;
+                                border: solid 1px #317f0f;
+                                color: #aeaeae;
 
                                 &:hover,&:active,&.active {
-                                    background: #fff;
-                                    color: #ababab;
+                                    background: linear-gradient(to right,#92e820 0%,#46dd16 90%);
+                                    border-color: #aef156;
+                                    color: #252525;
                                 }
                             }
                         }

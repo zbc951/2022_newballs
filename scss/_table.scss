@@ -43,10 +43,6 @@
 			top: 70px;
 			z-index: 2;
 
-			&:nth-of-type(1) {
-				color: #44be1d;
-			}
-
 			//字靠左
 			&.tLeft {
 				text-align: left;
@@ -56,6 +52,13 @@
 			.date {
 				float: right;
 				margin-right: 10px;
+			}
+		}
+
+		th:nth-of-type(1) {
+
+			&.tLeft {
+				color: #44be1d;
 			}
 		}
 		  
@@ -84,7 +87,7 @@
 			}
 
 			&.allScore {
-				color: #ffd400;
+				color: #71e31d;
 			}
 
 			//遊戲種類著名顏色
@@ -876,7 +879,7 @@
 					padding-bottom: 8px;
 
 					&.first {
-						color: #ffd400;
+						color: #71e31d;
 					}
 
 					&:last-child {
@@ -2426,24 +2429,24 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #505050;
+	background: #2c2c2c;
 
 	//內容
     tr {
 		text-align: center;
-		border-bottom: solid 1px #ababab;
+		border-bottom: solid 1px #727272;
 		
 		&.noBorder {
 			border: none;
 		}
 
       	th {
-			color: #fff;
+			color: #44be1d;
 			font-size: 13px;
 			padding: 8px 0px 6px;
 			vertical-align: middle;
-			background: #3d3d3d;
-			border-bottom: solid 1px #ababab;
+			background: #1b1b1b;
+			border-bottom: solid 1px #33bc19;
 			position: sticky;
 			top: 70px;
 			z-index: 2;
@@ -2453,7 +2456,7 @@
 				text-align: left;
 				padding: 8px 10px 7px;
 			}
-		  }
+		}
 		  
 		td {
 			padding: 8px 0px;
@@ -2480,13 +2483,13 @@
 				position: relative;
 
 				p {
-					color: #fff;
+					color: #d0d0d0;
 					font-size: 14px;
 					line-height: 24px;
 
 					.odd {
 						font-weight: bold;
-						color: #ffd400;
+						color: #71e31d;
 						padding-left: 5px;
 					}
 				}
@@ -2516,7 +2519,7 @@
 				height: 88px;
 				line-height: 88px;
 				vertical-align: top;
-				color: #fff;
+				color: #d0d0d0;
 				position: relative;
 
 				span {
@@ -2530,9 +2533,10 @@
 					left: 50%;
 					transform: translateX(-50%);
 					bottom: -24px;
-					border: solid 1px #828282;
+					border: solid 1px #727272;
 					border-radius: 30px;
-					background: #505050;
+					background: #2c2c2c;
+					color: #d0d0d0;
 				}
 			}
 
@@ -2542,7 +2546,7 @@
 				height: auto;
 				display: inline-block;
 				padding: 20px 0px;
-				color: #cacaca;
+				color: #d0d0d0;
 
 				&.lside {
 					text-align: right;
@@ -2569,7 +2573,7 @@
 
 				&::before {
 					content: "";
-					background: #3d3d3d;
+					background: #222222;
 					width: 90%;
 					height: 70px;
 					border-radius: 80px;
@@ -2577,6 +2581,7 @@
 					top: 50%;
 					left: 50%;
 					transform: translate(-50%,-50%);
+					box-shadow: 0px 2px 3px 0px #51544e,0px 0px 10px 2px #151515 inset;
 				}
 				
 				//左右字
@@ -2596,17 +2601,17 @@
 					}
 
 					p {
-						color: #fff;
+						color: #dcdcdc;
 						font-size: 14px;
 						line-height: 24px;
 
 						&.win {
 							font-weight: bold;
-							color: #ffd400;
+							color: #71e31d;
 						}
 
 						&.lose {
-							color: #8f8f8f;
+							color: #959595;
 						}
 					}
 				}
@@ -2615,23 +2620,25 @@
 				.midBox {
 					width: 80px;
 					height: 80px;
-					background: #5e5e5e;
+					background: linear-gradient(to top,#2c2c2c 27%,#3e3e3e 94%);
 					border-radius: 90px;
 					position: absolute;
 					left: 50%;
 					top: 50%;
 					transform: translate(-50%,-50%);
 					z-index: 2;
+					border: solid 1px #38730e;
+					box-shadow: 0px 0px 10px 2px #374d23;
 
 					p {
-						color: #fff;
+						color: #f0f0f0;
 						font-weight: bold;
 						font-size: 18px;
 						line-height: 24px;
 						margin-top: 12px;
 
 						&.score {
-							color: #ffd400;
+							color: #71e31d;
 							margin-top: 6px;
 							font-size: 24px;
 
