@@ -1216,7 +1216,7 @@ main .bg {
   display: block;
   width: 125px;
   height: 40px;
-  margin: 0px auto 5px;
+  margin: 0px 3px 5px;
 }
 .playBoard.newP tr td button:last-child {
   margin-bottom: 0px;
@@ -1274,7 +1274,7 @@ main .bg {
   min-width: 40px;
 }
 .playBoard.tType1 tr td:nth-of-type(4), .playBoard.tType1 tr td:nth-of-type(5), .playBoard.tType1 tr td:nth-of-type(6) {
-  min-width: 130px;
+  width: 1%;
 }
 .playBoard.tType1 tr td:nth-of-type(7) {
   min-width: 50px;
@@ -2187,54 +2187,51 @@ main .bg {
   height: auto;
   margin: 2% auto 0px;
   border-radius: 3px;
-  border: solid 1px #cacaca;
+  border: solid 1px #777777;
 }
 .conversionBoard tr {
   text-align: center;
 }
 .conversionBoard tr:nth-of-type(1) {
-  background: #505050;
-}
-.conversionBoard tr:nth-of-type(1) td:nth-of-type(2) {
-  background: #3c7424;
+  background: #353535;
 }
 .conversionBoard tr:nth-of-type(2) {
-  background: #3d3d3d;
-}
-.conversionBoard tr:nth-of-type(2) td:nth-of-type(1) {
-  background: #304880;
+  background: #282828;
 }
 .conversionBoard tr td {
   vertical-align: middle;
-  border: solid 1px #8f8f8f;
+  border: solid 1px #828282;
   height: 45px;
   width: 7%;
   font-size: 13px;
   line-height: 15px;
-  color: #ababab;
+  color: #c3c3c3;
 }
 .conversionBoard tr td.title {
   width: 9%;
-  background: #505050;
+  background: #282828;
+}
+.conversionBoard tr td:nth-of-type(2) {
+  color: #f6f6f6;
 }
 
 .bettingRemind {
   width: 100%;
   height: auto;
   border-collapse: collapse;
-  background: #505050;
+  background: #303030;
 }
 .bettingRemind tr th {
   padding: 7px 15px;
-  color: #fff;
+  color: #e1e1e1;
   font-size: 13px;
-  border-bottom: solid 1px #ababab;
+  border-bottom: solid 1px #686868;
   text-align: left;
 }
 .bettingRemind tr td {
   width: 50%;
   vertical-align: middle;
-  color: #fff;
+  color: #b0b0b0;
   padding: 15px;
   font-size: 13px;
 }
@@ -2243,10 +2240,10 @@ main .bg {
 }
 .bettingRemind tr td .remind .odds {
   margin-left: 5px;
-  color: #ff0000;
+  color: #ee2626;
 }
 .bettingRemind tr td:last-child {
-  border-left: solid 1px #ababab;
+  border-left: solid 1px #626262;
   line-height: 18px;
 }
 
@@ -4906,12 +4903,14 @@ main .bg {
   width: 800px;
   height: 375px;
   border-radius: 3px;
-  background: #747474;
+  background: #242424;
   position: fixed;
   z-index: 20;
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
+  border: solid 1px #3e8a13;
+  box-shadow: 0px 0px 10px 5px #3f8a1385;
 }
 .conversionBox.display {
   display: block;
@@ -4921,28 +4920,30 @@ main .bg {
   height: 40px;
   line-height: 42px;
   text-align: center;
-  background: #ababab;
-  color: #434343;
+  background: #242424;
+  color: #43dc16;
   border-radius: 3px 3px 0px 0px;
   font-size: 14px;
   font-weight: bold;
+  border-bottom: solid 1px #3e8a13;
 }
 .conversionBox .innerBox {
   width: 94%;
   height: 285px;
-  background: #9b9b9b;
+  background: #191919;
   border-radius: 3px;
   margin: 3% auto;
+  border: solid 1px #494949;
 }
 .conversionBox .innerBox p {
-  color: #595959;
+  color: #ffffff;
   padding: 12px 14px;
   font-size: 14px;
 }
 .conversionBox .innerBox .baseline {
   width: 96%;
   height: 1px;
-  background: #ababab;
+  background: #494949;
   margin: 0px auto;
 }
 .conversionBox button {
@@ -4950,11 +4951,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #cacaca;
-  border: solid 3px #676767;
+  background: #404040;
+  border: solid 3px #4be119;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #404040;
 }
 .conversionBox button::before {
   content: "";
@@ -4963,7 +4964,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #676767;
+  background: #4be119;
   transform: rotate(45deg);
 }
 .conversionBox button::after {
@@ -4973,7 +4974,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #676767;
+  background: #4be119;
   transform: rotate(-45deg);
 }
 
@@ -5102,40 +5103,49 @@ main .bg {
   width: 600px;
   height: 430px;
   border-radius: 3px;
-  background: #747474;
+  background: #242424;
   position: fixed;
   z-index: 20;
   left: 50%;
   top: 15%;
   transform: translateX(-50%);
+  border: solid 1px #3e8a13;
 }
 .controlBox h1 {
   width: 100%;
   height: 40px;
   line-height: 42px;
   text-align: center;
-  background: #ababab;
-  color: #434343;
+  background: #242424;
+  color: #4be119;
   border-radius: 3px 3px 0px 0px;
   font-size: 14px;
   font-weight: bold;
+  border-bottom: solid 1px #3aad1b;
 }
 .controlBox .innerBox1 {
   width: 96%;
   height: 90px;
   margin: 2% auto 0px;
-  background: #9b9b9b;
+  background: #191919;
   border-radius: 3px;
+  border: solid 1px #5b5b5b;
 }
 .controlBox .innerBox1 p {
   font-size: 14px;
   padding: 10px 12px;
-  color: #595959;
+  color: #cdcdcd;
+}
+.controlBox .innerBox1 p span {
+  color: #c71526;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
 }
 .controlBox .innerBox1 .baseline {
   width: 100%;
   height: 1px;
-  background: #ababab;
+  background: #5b5b5b;
 }
 .controlBox .innerBox1 .partingBox {
   height: 54px;
@@ -5144,6 +5154,7 @@ main .bg {
   text-align: right;
   line-height: 54px;
   font-size: 14px;
+  color: #b0b0b0;
 }
 .controlBox .innerBox1 .partingBox .slideBase {
   float: right;
@@ -5158,16 +5169,16 @@ main .bg {
   left: 2%;
 }
 .controlBox .innerBox1 .partingBox .slideBase.lSide p:nth-of-type(1) {
-  color: #353535;
+  color: #2cbd0d;
 }
 .controlBox .innerBox1 .partingBox .slideBase.rSide .slideBar {
-  right: 2%;
+  left: 49%;
 }
 .controlBox .innerBox1 .partingBox .slideBase.rSide p:nth-of-type(2) {
-  color: #353535;
+  color: #2cbd0d;
 }
 .controlBox .innerBox1 .partingBox .slideBase p {
-  width: calc(50% - 1px);
+  width: calc(50% - 2px);
   height: 100%;
   line-height: 35px;
   float: left;
@@ -5181,19 +5192,20 @@ main .bg {
   cursor: pointer;
 }
 .controlBox .innerBox1 .partingBox .slideBase p:first-child {
-  padding-left: 1px;
+  padding-left: 2px;
 }
 .controlBox .innerBox1 .partingBox .slideBase p:last-child {
-  padding-right: 1px;
+  padding-right: 2px;
 }
 .controlBox .innerBox1 .partingBox .slideBase .slideBar {
   position: absolute;
   width: 48%;
-  height: 84%;
-  top: 8.5%;
-  background: #ababab;
+  height: 83%;
+  top: 8%;
+  background: #2d2d2d;
   border-radius: 30px;
   transition: all 0.2s;
+  border: solid 1px #2cbd0d;
 }
 .controlBox .innerBox1 .longBox {
   width: 100%;
@@ -5201,10 +5213,11 @@ main .bg {
   line-height: 54px;
   padding-left: 30px;
   font-size: 14px;
+  color: #b0b0b0;
 }
 .controlBox .innerBox1 .longBox input {
   text-align: right;
-  background: #535353;
+  background: #212121;
   border-radius: 3px;
   width: 67px;
   height: 30px;
@@ -5212,36 +5225,37 @@ main .bg {
   font-size: 16px;
   color: #ababab;
   margin-right: 4px;
-  border: solid 1px transparent;
+  border: solid 1px #ababab;
 }
 .controlBox .innerBox1 .longBox input:nth-of-type(1) {
   margin-left: 20px;
 }
 .controlBox .innerBox1 .longBox input:hover, .controlBox .innerBox1 .longBox input:active, .controlBox .innerBox1 .longBox input.active {
-  background: #353535;
-  border-color: #fff;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 90%);
+  border-color: #aef156;
+  color: #191919;
 }
 .controlBox .innerBox2 {
   width: calc(96% - 15px);
   height: 50px;
   margin: 2% auto 0px;
-  background: #9b9b9b;
+  background: #191919;
   border-radius: 3px;
   line-height: 50px;
-  color: #595959;
+  color: #b0b0b0;
   padding-left: 15px;
   font-size: 14px;
+  border: solid 1px #5b5b5b;
 }
 .controlBox .innerBox2 p {
   display: inline-block;
-  color: #434343;
+  color: #d9d9d9;
   margin: 0px 35px;
   font-size: 15px;
   font-weight: bold;
 }
 .controlBox .innerBox2 p span {
-  color: #923e4c;
-  font-weight: normal;
+  color: #c71526;
   font-size: 12px;
   margin-left: 10px;
 }
@@ -5250,11 +5264,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #cacaca;
-  border: solid 3px #676767;
+  background: #404040;
+  border: solid 3px #4be119;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #404040;
 }
 .controlBox .cancelBtn::before {
   content: "";
@@ -5263,7 +5277,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #676767;
+  background: #4be119;
   transform: rotate(45deg);
 }
 .controlBox .cancelBtn::after {
@@ -5273,7 +5287,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #676767;
+  background: #4be119;
   transform: rotate(-45deg);
 }
 .controlBox.display {
@@ -5316,69 +5330,78 @@ main .bg {
   height: 50px;
   position: fixed;
   left: 50%;
-  top: 10%;
+  top: 20%;
   transform: translateX(-50%);
-  background: #3d3d3d;
+  background: #242424;
   border-radius: 3px 3px 0px 0px;
   z-index: 16;
   text-align: left;
+  box-shadow: -4px -2px 10px 0px #3f8a1385, 4px -2px 10px 0px #3f8a1385;
+  border: solid 2px #3e8a13;
+  box-sizing: border-box;
 }
 .norbetting.display {
   display: block;
 }
 .norbetting .barname {
   line-height: 50px;
-  color: #cacaca;
+  color: #4be119;
   padding-left: 20px;
 }
 .norbetting .norcancelbtn {
-  width: 20px;
-  height: 20px;
-  float: right;
-  margin: 15px 25px 0px 0px;
-  background: transparent;
-  position: relative;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #404040;
+  border: solid 3px #4be119;
+  right: -50px;
+  top: -50px;
+  box-shadow: 0px 0px 0px 5px #404040;
 }
 .norbetting .norcancelbtn::before {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 20px;
-  top: 0px;
-  left: 10px;
-  transform: rotate(-45deg);
-  background: #fff;
+  width: 3px;
+  height: 18px;
+  right: 16px;
+  top: 8px;
+  background: #4be119;
+  transform: rotate(45deg);
 }
 .norbetting .norcancelbtn::after {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 20px;
-  top: 0px;
-  right: 9px;
-  transform: rotate(45deg);
-  background: #fff;
+  width: 3px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background: #4be119;
+  transform: rotate(-45deg);
 }
 .norbetting .nor_bettingbox {
   width: 576px;
   height: auto;
-  background: #fff;
-  border: solid 2px #3d3d3d;
+  border: solid 2px #3e8a13;
   border-radius: 0px 0px 3px 3px;
   border-top-width: 0px;
   overflow: hidden;
+  box-shadow: 4px 2px 10px 0px #3f8a1385, -4px 2px 10px 0px #3f8a1385;
+  transform: translate(-2px, -2px);
 }
 .norbetting .nor_bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  background: #747474;
+  background: #282828;
 }
 .norbetting .nor_bettingbox .bettingtotal div {
   display: block;
   width: 180px;
   height: 100%;
-  color: #fff;
-  border-right: solid 1px #ababab;
+  color: #b0b0b0;
+  border-style: solid;
+  border-color: #626262;
+  border-width: 1px 1px 1px 0px;
   float: left;
   line-height: 45px;
   font-size: 14px;
@@ -5386,35 +5409,37 @@ main .bg {
   padding-left: 10px;
 }
 .norbetting .nor_bettingbox .bettingtotal div:last-child {
-  border: none;
+  border-right: none;
 }
 .norbetting .nor_bettingbox .bettingend {
   width: 100%;
   height: 140px;
-  background: #4d4d4d;
+  background: #303030;
   padding-top: 15px;
 }
 .norbetting .nor_bettingbox .bettingend .endbox {
   width: 50%;
   text-align: right;
   float: left;
-  color: #fff;
+  color: #b0b0b0;
 }
 .norbetting .nor_bettingbox .bettingend .endbox input {
   width: 150px;
   height: 31px;
   margin: 1px 5px 11px 0px;
   border-radius: 3px;
-  border: none;
   font-size: 16px;
   padding-left: 5px;
+  background: #1c1c1c;
+  border: solid 1px #858585;
+  color: #ffffff;
 }
 .norbetting .nor_bettingbox .bettingend .endbox input::placeholder {
-  color: #c7c7c7;
+  color: #626262;
   font-size: 14px;
 }
 .norbetting .nor_bettingbox .bettingend .endbox input:last-child {
-  color: #ff0000;
+  color: #ee2626;
 }
 .norbetting .nor_bettingbox .bettingend .endbox div {
   position: relative;
@@ -5434,31 +5459,26 @@ main .bg {
   height: 35px;
   float: left;
   margin: 0px 3px 10px 3px;
-  border: solid 1px #495cc5;
+  border: solid 1px #6a8e2a;
   border-radius: 5px;
   font-size: 17px;
-  color: #4d515d;
+  color: #b0b0b0;
   font-weight: bold;
   line-height: 35px;
-  background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
-  background-color: #d5d9ef;
+  background: #212121;
 }
-.norbetting .nor_bettingbox .bettingend .endbox button:hover {
-  background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
-}
-.norbetting .nor_bettingbox .bettingend .endbox button:active, .norbetting .nor_bettingbox .bettingend .endbox button.active {
-  background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
-  background-color: #2e44b7;
-  color: #fff;
+.norbetting .nor_bettingbox .bettingend .endbox button:hover, .norbetting .nor_bettingbox .bettingend .endbox button:active, .norbetting .nor_bettingbox .bettingend .endbox button.active {
+  background: #4fde17;
+  color: #292929;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn {
   width: 176px;
-  color: #fff;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
-  background-color: #2e44b7;
+  color: #1c1c1c;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
 }
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:hover, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:active, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn.active {
-  background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
+  background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
+  color: #f4f4f4;
 }
 
 .norbettingCheck {
@@ -5470,65 +5490,74 @@ main .bg {
   left: 50%;
   transform: translateX(-50%);
   top: 150px;
-  background: #3d3d3d;
+  background: #242424;
   border-radius: 3px 3px 0px 0px;
+  box-shadow: -4px -2px 10px 0px #3f8a1385, 4px -2px 10px 0px #3f8a1385;
+  border: solid 2px #3e8a13;
+  box-sizing: border-box;
 }
 .norbettingCheck.display {
   display: block;
 }
 .norbettingCheck .barname {
   line-height: 50px;
-  color: #cacaca;
+  color: #4be119;
   padding-left: 20px;
 }
 .norbettingCheck .checkCancelBtn {
-  width: 22px;
-  height: 22px;
   position: absolute;
-  background: transparent;
-  right: 30px;
-  top: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #404040;
+  border: solid 3px #4be119;
+  right: -50px;
+  top: -50px;
+  box-shadow: 0px 0px 0px 5px #404040;
 }
 .norbettingCheck .checkCancelBtn::before {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 20px;
-  background: #fff;
-  top: 0px;
-  left: 11px;
+  width: 3px;
+  height: 18px;
+  right: 16px;
+  top: 8px;
+  background: #4be119;
   transform: rotate(45deg);
 }
 .norbettingCheck .checkCancelBtn::after {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 20px;
-  background: #fff;
-  top: 0px;
-  left: 11px;
-  transform: rotate(135deg);
+  width: 3px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background: #4be119;
+  transform: rotate(-45deg);
 }
 .norbettingCheck .bettingbox {
   width: 576px;
   height: auto;
-  background: #fff;
-  border: solid 2px #3d3d3d;
+  border: solid 2px #3e8a13;
   border-top-width: 0px;
   border-radius: 0px 0px 3px 3px;
   overflow: hidden;
+  box-shadow: 4px 2px 10px 0px #3f8a1385, -4px 2px 10px 0px #3f8a1385;
+  transform: translate(-2px, -2px);
 }
 .norbettingCheck .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  background: #747474;
+  background: #282828;
 }
 .norbettingCheck .bettingbox .bettingtotal div {
   display: block;
   width: 180px;
   height: 100%;
-  color: #fff;
-  border-right: solid 1px #ababab;
+  color: #b0b0b0;
+  border-style: solid;
+  border-color: #626262;
+  border-width: 1px 1px 1px 0px;
   float: left;
   line-height: 45px;
   font-size: 14px;
@@ -5536,12 +5565,12 @@ main .bg {
   padding-left: 10px;
 }
 .norbettingCheck .bettingbox .bettingtotal div:last-child {
-  border: none;
+  border-right: none;
 }
 .norbettingCheck .bettingbox .bettingend {
   width: 100%;
   height: 90px;
-  background: #4d4d4d;
+  background: #303030;
 }
 .norbettingCheck .bettingbox .bettingend .endbox {
   width: 287px;
@@ -5549,15 +5578,15 @@ main .bg {
   text-align: left;
   float: left;
   margin-top: 20px;
-  color: #fff;
+  color: #b0b0b0;
 }
 .norbettingCheck .bettingbox .bettingend .endbox:last-child {
-  border-left: solid 1px #c7c7c7;
+  border-left: solid 1px #626262;
 }
 .norbettingCheck .bettingbox .bettingend .endbox p {
   margin: 0px 0px 0px 40px;
   line-height: 48px;
-  color: #556de7;
+  color: #43c31d;
   font-size: 14px;
   position: relative;
 }
@@ -5566,7 +5595,7 @@ main .bg {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #354ecf;
+  background: #3dab1e;
   border-radius: 12px;
   left: -25px;
   top: 14px;
@@ -5576,7 +5605,7 @@ main .bg {
   position: absolute;
   width: 4px;
   height: 8px;
-  border: solid 3px #fff;
+  border: solid 3px #22351c;
   border-width: 0px 2px 2px 0px;
   transform: rotate(45deg);
   top: 18px;

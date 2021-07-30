@@ -703,12 +703,14 @@
     width: 800px;
     height: 375px;
     border-radius: 3px;
-    background: #747474;
+    background: #242424;
     position: fixed;
     z-index: 20;
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
+    border: solid 1px #3e8a13;
+    box-shadow: 0px 0px 10px 5px #3f8a1385;
 
     &.display {
         display: block;
@@ -719,22 +721,24 @@
         height: 40px;
         line-height: 42px;
         text-align: center;
-        background: #ababab;
-        color: #434343;
+        background: #242424;
+        color: #43dc16;
         border-radius: 3px 3px 0px 0px;
         font-size: 14px;
         font-weight: bold;
+        border-bottom: solid 1px #3e8a13;
     }
 
     .innerBox {
         width: 94%;
         height: 285px;
-        background: #9b9b9b;
+        background: #191919;
         border-radius: 3px;
         margin: 3% auto;
+        border: solid 1px #494949;
 
         p {
-            color: #595959;
+            color: #ffffff;
             padding: 12px 14px;
             font-size: 14px;
         }
@@ -742,7 +746,7 @@
         .baseline {
             width: 96%;
             height: 1px;
-            background: #ababab;
+            background: #494949;
             margin: 0px auto;
         }
     }
@@ -752,11 +756,11 @@
         width: 40px;
         height: 40px;
         border-radius: 40px;
-        background: #cacaca;
-        border: solid 3px #676767;
+        background: #404040;
+        border: solid 3px #4be119;
         right: -50px;
         top: -50px;
-        box-shadow: 0px 0px 0px 5px #cacaca;
+        box-shadow: 0px 0px 0px 5px #404040;
 
         &::before {
             content: "";
@@ -765,7 +769,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #676767;
+            background: #4be119;
             transform: rotate(45deg);
         }
         &::after {
@@ -775,7 +779,7 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #676767;
+            background: #4be119;
             transform: rotate(-45deg);
         }
     }
@@ -921,42 +925,52 @@
     width: 600px;
     height: 430px;
     border-radius: 3px;
-    background: #747474;
+    background: #242424;
     position: fixed;
     z-index: 20;
     left: 50%;
     top: 15%;
     transform: translateX(-50%);
+    border: solid 1px #3e8a13;
 
     h1 {
         width: 100%;
         height: 40px;
         line-height: 42px;
         text-align: center;
-        background: #ababab;
-        color: #434343;
+        background: #242424;
+        color: #4be119;
         border-radius: 3px 3px 0px 0px;
         font-size: 14px;
         font-weight: bold;
+        border-bottom: solid 1px #3aad1b;
     }
 
     .innerBox1 {
         width: 96%;
         height: 90px;
         margin: 2% auto 0px;
-        background: #9b9b9b;
+        background: #191919;
         border-radius: 3px;
+        border: solid 1px #5b5b5b;
 
         p {
             font-size: 14px;
             padding: 10px 12px;
-            color: #595959;
+            color: #cdcdcd;
+
+            span {
+                color: #c71526;
+                padding-left: 10px;
+                font-size: 12px;
+                font-weight: bold;
+            }
         }
 
         .baseline {
             width: 100%;
             height: 1px;
-            background: #ababab;
+            background: #5b5b5b;
         }
 
         .partingBox {
@@ -966,6 +980,7 @@
             text-align: right;
             line-height: 54px;
             font-size: 14px;
+            color: #b0b0b0;
 
             .slideBase {
                 float: right;
@@ -985,7 +1000,7 @@
                     p {
 
                         &:nth-of-type(1) {
-                            color: #353535;
+                            color: #2cbd0d;
                         }
                     }
                 }
@@ -993,19 +1008,19 @@
                 &.rSide {
 
                     .slideBar {
-                        right: 2%;
+                        left: 49%;
                     }
 
                     p {
 
                         &:nth-of-type(2) {
-                            color: #353535;
+                            color: #2cbd0d;
                         }
                     }
                 }
 
                 p {
-                    width: calc(50% - 1px);
+                    width: calc(50% - 2px);
                     height: 100%;
                     line-height: 35px;
                     float: left;
@@ -1019,22 +1034,23 @@
                     cursor: pointer;
 
                     &:first-child {
-                        padding-left: 1px;
+                        padding-left: 2px;
                     }
 
                     &:last-child {
-                        padding-right: 1px;
+                        padding-right: 2px;
                     }
                 }
 
                 .slideBar {
                     position: absolute;
                     width: 48%;
-                    height: 84%;
-                    top: 8.5%;
-                    background: #ababab;
+                    height: 83%;
+                    top: 8%;
+                    background: #2d2d2d;
                     border-radius: 30px;
                     transition: all 0.2s;
+                    border: solid 1px #2cbd0d;
                 }
             }
         }
@@ -1045,10 +1061,11 @@
             line-height: 54px;
             padding-left: 30px;
             font-size: 14px;
+            color: #b0b0b0;
 
             input {
                 text-align: right;
-                background: #535353;
+                background: #212121;
                 border-radius: 3px;
                 width: 67px;
                 height: 30px;
@@ -1056,15 +1073,16 @@
                 font-size: 16px;
                 color: #ababab;
                 margin-right: 4px;
-                border: solid 1px transparent;
+                border: solid 1px #ababab;
 
                 &:nth-of-type(1) {
                     margin-left: 20px;
                 }
 
                 &:hover,&:active,&.active {
-                    background: #353535;
-                    border-color: #fff;
+                    background: linear-gradient(to right,#92e820 0%,#46dd16 90%);
+                    border-color: #aef156;
+                    color: #191919;
                 }
             }
         }
@@ -1074,23 +1092,23 @@
         width: calc(96% - 15px);
         height: 50px;
         margin: 2% auto 0px;
-        background: #9b9b9b;
+        background: #191919;
         border-radius: 3px;
         line-height: 50px;
-        color: #595959;
+        color: #b0b0b0;
         padding-left: 15px;
         font-size: 14px;
+        border: solid 1px #5b5b5b;
 
         p {
             display: inline-block;
-            color: #434343;
+            color: #d9d9d9;
             margin: 0px 35px;
             font-size: 15px;
             font-weight: bold;
 
             span {
-                color: #923e4c;
-                font-weight: normal;
+                color: #c71526;
                 font-size: 12px;
                 margin-left: 10px;
             }
@@ -1102,11 +1120,11 @@
         width: 40px;
         height: 40px;
         border-radius: 40px;
-        background: #cacaca;
-        border: solid 3px #676767;
+        background: #404040;
+        border: solid 3px #4be119;
         right: -50px;
         top: -50px;
-        box-shadow: 0px 0px 0px 5px #cacaca;
+        box-shadow: 0px 0px 0px 5px #404040;
 
         &::before {
             content: "";
@@ -1115,7 +1133,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #676767;
+            background: #4be119;
             transform: rotate(45deg);
         }
         &::after {
@@ -1125,7 +1143,7 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #676767;
+            background: #4be119;
             transform: rotate(-45deg);
         }
     }
@@ -1175,12 +1193,15 @@
     height: 50px;
     position: fixed;
     left: 50%;
-    top: 10%;
+    top: 20%;
     transform: translateX(-50%);
-    background: #3d3d3d;
+    background: #242424;
     border-radius: 3px 3px 0px 0px;
     z-index: 16;
     text-align: left;
+    box-shadow: -4px -2px 10px 0px #3f8a1385,4px -2px 10px 0px #3f8a1385;
+    border: solid 2px #3e8a13;
+    box-sizing: border-box;
 
     &.display {
         display: block;
@@ -1188,60 +1209,67 @@
 
     .barname {
         line-height: 50px;
-        color: #cacaca;
+        color: #4be119;
         padding-left: 20px;
     }
 
     .norcancelbtn {
-        width: 20px;
-        height: 20px;
-        float: right;
-        margin: 15px 25px 0px 0px;
-        background: transparent;
-        position: relative;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background: #404040;
+        border: solid 3px #4be119;
+        right: -50px;
+        top: -50px;
+        box-shadow: 0px 0px 0px 5px #404040;
+
         &::before {
             content: "";
             position: absolute;
-            width: 1px;
-            height: 20px;
-            top: 0px;
-            left: 10px;
-            transform: rotate(-45deg);
-            background: #fff;
+            width: 3px;
+            height: 18px;
+            right: 16px;
+            top: 8px;
+            background: #4be119;
+            transform: rotate(45deg);
         }
         &::after {
             content: "";
             position: absolute;
-            width: 1px;
-            height: 20px;
-            top: 0px;
-            right: 9px;
-            transform: rotate(45deg);
-            background: #fff;
+            width: 3px;
+            height: 18px;
+            left: 16px;
+            top: 8px;
+            background: #4be119;
+            transform: rotate(-45deg);
         }
     }
 
     .nor_bettingbox {
         width: 576px;
         height: auto;
-        background: #fff;
-        border: solid 2px #3d3d3d;
+        border: solid 2px #3e8a13;
         border-radius: 0px 0px 3px 3px;
         border-top-width: 0px;
         overflow: hidden;
+        box-shadow: 4px 2px 10px 0px #3f8a1385,-4px 2px 10px 0px #3f8a1385;
+        transform: translate(-2px, -2px);
 
         //總額顯示
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #747474;
+            background: #282828;
 
             div {
                 display: block;
                 width: 180px;
                 height: 100%;
-                color: #fff;
-                border-right: solid 1px #ababab;
+                color: #b0b0b0;
+                border-style: solid;
+                border-color: #626262;
+                border-width: 1px 1px 1px 0px;
                 float: left;
                 line-height: 45px;
                 font-size: 14px;
@@ -1249,7 +1277,7 @@
                 padding-left: 10px;
 
                 &:last-child {
-                    border: none;
+                    border-right: none;
                 }
             }
         }
@@ -1258,31 +1286,33 @@
         .bettingend {
             width: 100%;
             height: 140px;
-            background: #4d4d4d;
+            background: #303030;
             padding-top: 15px;
 
             .endbox {
                 width: 50%;
                 text-align: right;
                 float: left;
-                color: #fff;
+                color: #b0b0b0;
 
                 input {
                     width: 150px;
                     height: 31px;
                     margin: 1px 5px 11px 0px;
                     border-radius: 3px;
-                    border: none;
                     font-size: 16px;
                     padding-left: 5px;
+                    background: #1c1c1c;
+                    border: solid 1px #858585;
+                    color: #ffffff;
 
                     &::placeholder {
-                        color: #c7c7c7;
+                        color: #626262;
                         font-size: 14px;
                     }
 
                     &:last-child {
-                        color: #ff0000;
+                        color: #ee2626;
                     }
                 }
 
@@ -1307,32 +1337,26 @@
                     height: 35px;
                     float: left;
                     margin: 0px 3px 10px 3px;
-                    border: solid 1px #495cc5;
+                    border: solid 1px #6a8e2a;
                     border-radius: 5px;
                     font-size: 17px;
-                    color: #4d515d;
+                    color: #b0b0b0;
                     font-weight: bold;
                     line-height: 35px;
-                    background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
-                    background-color:#d5d9ef;
+                    background: #212121;
 
-                    &:hover {
-                        background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
-                    }
-
-                    &:active,&.active {
-                        background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
-                        background-color: #2e44b7;
-                        color: #fff;
+                    &:hover,&:active,&.active {
+                        background: #4fde17;
+                        color: #292929;
                     }
 
                     &.decideBtn {
                         width: 176px;
-                        color: #fff;
-                        background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
-                        background-color: #2e44b7;
+                        color: #1c1c1c;
+                        background: linear-gradient(to right,#92e820 0%,#46dd16 100%);
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
+                            background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
+                            color: #f4f4f4;
                         }
                     }
                 }
@@ -1351,8 +1375,11 @@
     left: 50%;
     transform: translateX(-50%);
     top: 150px;
-    background: #3d3d3d;
+    background: #242424;
     border-radius: 3px 3px 0px 0px;
+    box-shadow: -4px -2px 10px 0px #3f8a1385,4px -2px 10px 0px #3f8a1385;
+    border: solid 2px #3e8a13;
+    box-sizing: border-box;
 
     &.display {
         display: block;
@@ -1360,36 +1387,40 @@
 
     .barname {
         line-height: 50px;
-        color: #cacaca;
+        color: #4be119;
         padding-left: 20px;
     }
 
     .checkCancelBtn {
-        width: 22px;
-        height: 22px;
         position: absolute;
-        background: transparent;
-        right: 30px;
-        top: 15px;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background: #404040;
+        border: solid 3px #4be119;
+        right: -50px;
+        top: -50px;
+        box-shadow: 0px 0px 0px 5px #404040;
+
         &::before {
             content: "";
             position: absolute;
-            width: 1px;
-            height: 20px;
-            background: #fff;
-            top: 0px;
-            left: 11px;
+            width: 3px;
+            height: 18px;
+            right: 16px;
+            top: 8px;
+            background: #4be119;
             transform: rotate(45deg);
         }
         &::after {
             content: "";
             position: absolute;
-            width: 1px;
-            height: 20px;
-            background: #fff;
-            top: 0px;
-            left: 11px;
-            transform: rotate(135deg);
+            width: 3px;
+            height: 18px;
+            left: 16px;
+            top: 8px;
+            background: #4be119;
+            transform: rotate(-45deg);
         }
     }
 
@@ -1397,24 +1428,27 @@
     .bettingbox {
         width: 576px;
         height: auto;
-        background: #fff;
-        border: solid 2px #3d3d3d;
+        border: solid 2px #3e8a13;
         border-top-width: 0px;
         border-radius: 0px 0px 3px 3px;
         overflow: hidden;
+        box-shadow: 4px 2px 10px 0px #3f8a1385,-4px 2px 10px 0px #3f8a1385;
+        transform: translate(-2px, -2px);
         
         //總額顯示
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #747474;
+            background: #282828;
 
             div {
                 display: block;
                 width: 180px;
                 height: 100%;
-                color: #fff;
-                border-right: solid 1px #ababab;
+                color: #b0b0b0;
+                border-style: solid;
+                border-color: #626262;
+                border-width: 1px 1px 1px 0px;
                 float: left;
                 line-height: 45px;
                 font-size: 14px;
@@ -1422,15 +1456,16 @@
                 padding-left: 10px;
 
                 &:last-child {
-                    border: none;
+                    border-right: none;
                 }
             }
         }
+
         //決定金額
         .bettingend {
             width: 100%;
             height: 90px;
-            background: #4d4d4d;
+            background: #303030;
 
             .endbox {
                 width: 287px;
@@ -1438,16 +1473,16 @@
                 text-align: left;
                 float: left;
                 margin-top: 20px;
-                color: #fff;
+                color: #b0b0b0;
 
                 &:last-child {
-                    border-left: solid 1px #c7c7c7;
+                    border-left: solid 1px #626262;
                 }
 
                 p {
                     margin: 0px 0px 0px 40px;
                     line-height: 48px;
-                    color: #556de7;
+                    color: #43c31d;
                     font-size: 14px;
                     position: relative;
                     &::before {
@@ -1455,7 +1490,7 @@
                         position: absolute;
                         width: 20px;
                         height: 20px;
-                        background: #354ecf;
+                        background: #3dab1e ;
                         border-radius: 12px;
                         left: -25px;
                         top: 14px;
@@ -1465,7 +1500,7 @@
                         position: absolute;
                         width: 4px;
                         height: 8px;
-                        border: solid 3px #fff;
+                        border: solid 3px #22351c;
                         border-width: 0px 2px 2px 0px;
                         transform: rotate(45deg);
                         top: 18px;
