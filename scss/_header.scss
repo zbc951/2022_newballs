@@ -6,6 +6,7 @@ header {
     background: #1f1f1f;
     position: relative;
     z-index: 10;
+    overflow: hidden;
 
     &.mine {
         min-width: 1200px;
@@ -287,19 +288,20 @@ header {
             //字體
             p {
                 display: inline-block;
-                color: #c6c6c6;
+                color: #ababab;
                 font-size: 13px;
                 margin: 10px 5px 0px 0px;
 
                 //信用額度
                 &.quota {
                     padding: 7px 7px 5px;
-                    border: solid 1px #a3a3a3;
+                    border: solid 1px #707070;
                     border-radius: 3px;
+                    background: #262626;
                 }
 
                 span {
-                    color: #0080e1;
+                    color: #40c50f;
                     padding-left: 8px;
                 }
             }
@@ -308,13 +310,15 @@ header {
             button {
                 border-radius: 3px;
                 padding: 4px 15px;
-                background: linear-gradient(to top,#484848 0%,#3a3a3a 50%,#484848 100%);
-                color: #fff;
+                background: linear-gradient(to top,#131313,#323232 100%);
+                color: #40c50f;
                 font-size: 14px;
+                border: solid 1px #2c8e0b;
 
                 &:hover,&:active,&.active {
-                    background: #fff;
-                    color: #393939;
+                    background: linear-gradient(to bottom,#45dc16 10%,#91e820 90%);
+                    color: #1c1c1c;
+                    border-color: #cdff7f;
                 }
             }
 

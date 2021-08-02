@@ -2659,18 +2659,18 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #505050;
+	background: #2c2c2c;
 
 	tr {
 		text-align: center;
 
 		th {
-			color: #fff;
+			color: #33bc19;
 			font-size: 13px;
 			padding: 8px 0px 7px;
 			vertical-align: middle;
-			background: #3d3d3d;
-			border-bottom: solid 1px #ababab;
+			background: #1b1b1b;
+			border-bottom: solid 1px #33bc19;
 			position: relative;
 
 			//字靠左
@@ -2735,12 +2735,12 @@
 				.mainWindow {
 					width: 98%;
 					height: 100%;
-					border: solid 1px #828282;
+					border: solid 1px #6a6a6a;
 					border-radius: 5px;
 					box-sizing: border-box;
 					margin: 25px 0px 15px;
 					font-size: 0px;
-					background: #3d3d3d;
+					background: #373737;
 
 					div {
 						display: inline-block;
@@ -2751,7 +2751,7 @@
 						box-sizing: border-box;
 
 						p {
-							color: #fff;
+							color: #c4c4c4;
 							font-size: 14px;
 							position: relative;
 
@@ -2765,21 +2765,22 @@
 
 								&:nth-of-type(2) {
 									width: 60%;
-									color: #ff8c00;
+									color: #ffffff;
 									font-size: 13px;
 								}
 							}
 
 							button {
-								border: solid 1px #ababab;
-								background: transparent;
+								border: solid 1px #707070;
+								background: #2b2b2b;
 								padding: 5px 8px;
-								color: #fff;
+								color: #dddddd;
 								border-radius: 3px;
 
 								&:hover,&:active,&.active {
-									background: #fff;
-									color: #ababab;
+									border-color: #aef156;
+									background: linear-gradient(to right,#92e820 0%,#46dd16 100%);
+									color: #272727;
 								}
 							}
 						}
@@ -2796,7 +2797,7 @@
 					font-size: 13px;
 
 					a {
-						color: #4dff00;
+						color: #80d91e;
 						padding-left: 5px;
 					}
 				}
@@ -2809,16 +2810,32 @@
 		width: calc(50% - 12px);
 
 		tr {
+
+			&:nth-of-type(1) {
+				
+				th {
+					border-bottom-color: #606060;
+				}
+			}
+
+			&:nth-of-type(2) {
+
+				th {
+					background: #242424;
+					color: #ffffff;
+					border-bottom-color: #606060;
+				}
+			}
 			
-			&:nth-of-type(2n) {
-				background: #3d3d3d;
+			&:nth-of-type(2n+1) {
+				background: #373737;
 			}
 
 			td {
 				width: 33.3%;
 				padding: 10px 0px;
 				font-size: 14px;
-				color: #fff;
+				color: #c4c4c4;
 			}
 		}
 	}

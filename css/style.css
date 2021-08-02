@@ -85,6 +85,7 @@ header {
   background: #1f1f1f;
   position: relative;
   z-index: 10;
+  overflow: hidden;
 }
 header.mine {
   min-width: 1200px;
@@ -321,29 +322,32 @@ header article .loggedIn.display {
 }
 header article .loggedIn p {
   display: inline-block;
-  color: #c6c6c6;
+  color: #ababab;
   font-size: 13px;
   margin: 10px 5px 0px 0px;
 }
 header article .loggedIn p.quota {
   padding: 7px 7px 5px;
-  border: solid 1px #a3a3a3;
+  border: solid 1px #707070;
   border-radius: 3px;
+  background: #262626;
 }
 header article .loggedIn p span {
-  color: #0080e1;
+  color: #40c50f;
   padding-left: 8px;
 }
 header article .loggedIn button {
   border-radius: 3px;
   padding: 4px 15px;
-  background: linear-gradient(to top, #484848 0%, #3a3a3a 50%, #484848 100%);
-  color: #fff;
+  background: linear-gradient(to top, #131313, #323232 100%);
+  color: #40c50f;
   font-size: 14px;
+  border: solid 1px #2c8e0b;
 }
 header article .loggedIn button:hover, header article .loggedIn button:active, header article .loggedIn button.active {
-  background: #fff;
-  color: #393939;
+  background: linear-gradient(to bottom, #45dc16 10%, #91e820 90%);
+  color: #1c1c1c;
+  border-color: #cdff7f;
 }
 header article .loggedIn .selectBox {
   float: right;
@@ -424,6 +428,7 @@ main .bg {
   scrollbar-width: thin;
   border: solid 1px #6a6a6a;
   border-width: 1px 0px;
+  background: #404040;
 }
 .left::-webkit-scrollbar {
   width: 5px;
@@ -436,6 +441,9 @@ main .bg {
 .left::-webkit-scrollbar-thumb {
   background: #606360;
   border-radius: 10px;
+}
+.left.mine {
+  border: none;
 }
 .left.mine .minewindow {
   width: 100%;
@@ -453,20 +461,23 @@ main .bg {
   margin: 0px auto 20px;
   background: url("../images/avatar_big.png");
 }
+.left.mine .minewindow .avater p {
+  color: #ffffff;
+}
 .left.mine .minewindow .avater p.joinday {
-  color: #304880;
+  color: #ffffff;
   font-size: 15px;
   padding-top: 5px;
 }
 .left.mine .minewindow .avater p span {
   display: inline-block;
-  width: 40px;
+  width: 36px;
   height: 17px;
-  background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
-  background-color: #2e44b6;
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  background-color: #34da14;
   position: relative;
   text-align: right;
-  color: #fff;
+  color: #161616;
   font-weight: bold;
   border-radius: 5px;
   margin: -3px 0px 0px 5px;
@@ -474,6 +485,7 @@ main .bg {
   font-size: 15px;
 }
 .left.mine .minewindow .avater p span::before {
+  display: none;
   content: "";
   position: absolute;
   width: 23px;
@@ -492,16 +504,18 @@ main .bg {
   width: 60px;
   height: 58px;
   margin: 0px 4px;
-  border-radius: 3px;
+  border-radius: 8px;
   font-size: 16px;
   text-align: center;
   background: transparent;
-  color: #4556b1;
+  color: #c0c0c0;
   padding-top: 10px;
+  border: solid 1px transparent;
 }
 .left.mine .minewindow .threebut a:hover, .left.mine .minewindow .threebut a:active, .left.mine .minewindow .threebut a.active {
-  background: #4556b1;
-  color: #fff;
+  background: linear-gradient(to top, #363636 0%, #1d1d1d 100%);
+  color: #53c120;
+  border-color: #2d7e12;
 }
 .left.mine .minewindow .threebut a:hover span, .left.mine .minewindow .threebut a:active span, .left.mine .minewindow .threebut a.active span {
   background-position-y: -30px;
@@ -511,11 +525,23 @@ main .bg {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.left.mine ul li:nth-of-type(1), .left.mine ul li:nth-of-type(5), .left.mine ul li:nth-of-type(9) {
-  border-bottom: solid 1px #e6e9f3;
+.left.mine ul li {
+  border-bottom: solid 1px #6f6f6f;
 }
-.left.mine ul li:nth-of-type(1) a, .left.mine ul li:nth-of-type(5) a, .left.mine ul li:nth-of-type(9) a {
-  border: none;
+.left.mine ul li:nth-of-type(1), .left.mine ul li:nth-of-type(5), .left.mine ul li:nth-of-type(9) {
+  border-color: #e6e9f3;
+}
+.left.mine ul li:hover a, .left.mine ul li:active a, .left.mine ul li.active a {
+  border-color: #30800e;
+}
+.left.mine ul li:hover .live, .left.mine ul li:active .live, .left.mine ul li.active .live {
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  color: #2b4517;
+}
+.left.mine ul li a {
+  border: solid 1px transparent;
+  width: 100%;
+  box-sizing: border-box;
 }
 .left.mine ul li a .live {
   display: inline-block;
@@ -526,6 +552,8 @@ main .bg {
   position: initial;
   margin-left: 10px;
   transform: translateY(0px);
+  background: #1d1d1d;
+  color: #60dc1c;
 }
 .left.mine ul li a i {
   font-size: 22px;
@@ -2604,18 +2632,18 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #505050;
+  background: #2c2c2c;
 }
 .minetable tr {
   text-align: center;
 }
 .minetable tr th {
-  color: #fff;
+  color: #33bc19;
   font-size: 13px;
   padding: 8px 0px 7px;
   vertical-align: middle;
-  background: #3d3d3d;
-  border-bottom: solid 1px #ababab;
+  background: #1b1b1b;
+  border-bottom: solid 1px #33bc19;
   position: relative;
 }
 .minetable tr th.tLeft {
@@ -2662,12 +2690,12 @@ main .bg {
 .minetable.infor tr td .mainWindow {
   width: 98%;
   height: 100%;
-  border: solid 1px #828282;
+  border: solid 1px #6a6a6a;
   border-radius: 5px;
   box-sizing: border-box;
   margin: 25px 0px 15px;
   font-size: 0px;
-  background: #3d3d3d;
+  background: #373737;
 }
 .minetable.infor tr td .mainWindow div {
   display: inline-block;
@@ -2678,7 +2706,7 @@ main .bg {
   box-sizing: border-box;
 }
 .minetable.infor tr td .mainWindow div p {
-  color: #fff;
+  color: #c4c4c4;
   font-size: 14px;
   position: relative;
 }
@@ -2691,19 +2719,20 @@ main .bg {
 }
 .minetable.infor tr td .mainWindow div p span:nth-of-type(2) {
   width: 60%;
-  color: #ff8c00;
+  color: #ffffff;
   font-size: 13px;
 }
 .minetable.infor tr td .mainWindow div p button {
-  border: solid 1px #ababab;
-  background: transparent;
+  border: solid 1px #707070;
+  background: #2b2b2b;
   padding: 5px 8px;
-  color: #fff;
+  color: #dddddd;
   border-radius: 3px;
 }
 .minetable.infor tr td .mainWindow div p button:hover, .minetable.infor tr td .mainWindow div p button:active, .minetable.infor tr td .mainWindow div p button.active {
-  background: #fff;
-  color: #ababab;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetable.infor tr td .remind {
   width: 98.3%;
@@ -2714,21 +2743,29 @@ main .bg {
   font-size: 13px;
 }
 .minetable.infor tr td .remind a {
-  color: #4dff00;
+  color: #80d91e;
   padding-left: 5px;
 }
 .minetable.bettingLimit {
   float: left;
   width: calc(50% - 12px);
 }
-.minetable.bettingLimit tr:nth-of-type(2n) {
-  background: #3d3d3d;
+.minetable.bettingLimit tr:nth-of-type(1) th {
+  border-bottom-color: #606060;
+}
+.minetable.bettingLimit tr:nth-of-type(2) th {
+  background: #242424;
+  color: #ffffff;
+  border-bottom-color: #606060;
+}
+.minetable.bettingLimit tr:nth-of-type(2n+1) {
+  background: #373737;
 }
 .minetable.bettingLimit tr td {
   width: 33.3%;
   padding: 10px 0px;
   font-size: 14px;
-  color: #fff;
+  color: #c4c4c4;
 }
 .minetable.totalMoney {
   width: 1150px;
@@ -4882,7 +4919,7 @@ main .bg {
   font-size: 13px;
   color: #ababab;
 }
-.chleague ul li p .cube2 {
+.chleague ul li p .cube {
   left: -20px;
   top: 5px;
 }
@@ -5317,36 +5354,6 @@ main .bg {
   display: block;
   width: 12px;
   height: 12px;
-  background: #1f1f1f;
-  border: 1px solid #ababab;
-  border-radius: 3px;
-  overflow: hidden;
-  position: absolute;
-  cursor: pointer;
-}
-.cube.active {
-  width: 12px;
-  height: 12px;
-  background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
-  background-color: #3449b9;
-  position: absolute;
-}
-.cube.active::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 3px;
-  width: 3px;
-  height: 8px;
-  border: solid 1px #fff;
-  transform: rotate(45deg);
-  border-width: 0px 2px 2px 0px;
-}
-
-.cube2 {
-  display: block;
-  width: 12px;
-  height: 12px;
   background: #393939;
   border-style: solid;
   border-width: 1px;
@@ -5356,10 +5363,10 @@ main .bg {
   position: absolute;
   cursor: pointer;
 }
-.cube2.active {
+.cube.active {
   box-shadow: 0px 0px 5px 2px #181818 inset, 0px 0px 2px 1px #587920;
 }
-.cube2.active::before {
+.cube.active::before {
   content: "";
   position: absolute;
   top: -8px;
@@ -7141,11 +7148,11 @@ main .bg {
   background-color: transparent;
 }
 .myself::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #121212;
   border-radius: 10px;
 }
 .myself::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #606360;
   border-radius: 10px;
 }
 .myself .mineMainBox {
@@ -7724,7 +7731,7 @@ main .bg {
 .minetopfix {
   width: 1150px;
   height: 125px;
-  background: #bcbcbc;
+  background: #3d3d3d;
   border-radius: 0px 0px 5px 5px;
   position: absolute;
   text-align: center;
@@ -7737,10 +7744,12 @@ main .bg {
   width: 100%;
   height: 45px;
   border-radius: 5px;
-  background: #747474;
+  background: #313131;
   bottom: 0px;
   z-index: 2;
   color: #fff;
+  border: solid 1px #242424;
+  box-sizing: border-box;
 }
 .minetopfix .fixbar .editbut, .minetopfix .fixbar .cancelbut, .minetopfix .fixbar .delbut {
   display: none;
@@ -7808,7 +7817,7 @@ main .bg {
 .minetopfix .fixbar .line {
   width: 1px;
   height: 25px;
-  background: #bcbcbc;
+  background: #313131;
   float: left;
   margin: 10px 10px 0px 10px;
 }
@@ -7877,9 +7886,9 @@ main .bg {
 .minetopfix .fixbar .changePassword {
   float: right;
   padding: 3px 5px;
-  color: #fff;
-  background: #505050;
-  border: solid 1px #fff;
+  color: #dddddd;
+  background: #2b2b2b;
+  border: solid 1px #707070;
   border-radius: 5px;
   font-size: 15px;
   margin: 8px 10px 0px 0px;
@@ -7930,7 +7939,7 @@ main .bg {
   padding-left: 20px;
 }
 .minetopfix .fixbar p span {
-  color: #ff8c00;
+  color: #6ad237;
 }
 .minetopfix .floatName {
   width: 100%;
@@ -7993,7 +8002,7 @@ main .bg {
 }
 .minetopfix .leftword {
   font-weight: bold;
-  color: #4d515d;
+  color: #ffffff;
   float: left;
   margin: 30px 0px 0px 20px;
 }
@@ -8008,12 +8017,12 @@ main .bg {
   font-weight: bold;
   margin: 20px 10px 0px;
   font-size: 17px;
+  color: #ffffff;
 }
 .minetopfix .midword p span {
   display: block;
   padding-top: 13px;
   font-size: 17px;
-  color: #2a2a36;
 }
 .minetopfix .midword .topline {
   display: inline-block;
@@ -8026,7 +8035,7 @@ main .bg {
 .mineHideBoard {
   width: 1155px;
   height: 125px;
-  background: #2a2a2a;
+  background: #131313;
   position: absolute;
   z-index: 5;
   left: 270px;
@@ -8043,11 +8052,12 @@ main .bg {
   display: none;
   position: absolute;
   width: 350px;
-  height: 360px;
+  height: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
+  box-shadow: 0px 0px 10px 2px #517b09;
 }
 .changePasswordWindow.display {
   display: block;
@@ -8055,14 +8065,14 @@ main .bg {
 .changePasswordWindow .topbar {
   width: 100%;
   height: 50px;
-  background: #ababab;
+  background: #242424;
   border-radius: 3px 3px 0px 0px;
   position: relative;
-  border: solid 1px #a2a2a2;
+  border: solid 1px #3aad1b;
 }
 .changePasswordWindow .topbar span {
   font-size: 14px;
-  color: #3d3d3d;
+  color: #4be119;
   line-height: 50px;
   padding-left: 20px;
   font-weight: bold;
@@ -8072,11 +8082,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #cacaca;
-  border: solid 3px #5e5e5e;
+  background: #404040;
+  border: solid 3px #4be119;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #404040;
 }
 .changePasswordWindow .topbar button::before {
   content: "";
@@ -8085,7 +8095,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #5e5e5e;
+  background: #4be119;
   transform: rotate(45deg);
 }
 .changePasswordWindow .topbar button::after {
@@ -8095,16 +8105,16 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #5e5e5e;
+  background: #4be119;
   transform: rotate(-45deg);
 }
 .changePasswordWindow .box {
   width: 100%;
   height: 160px;
-  background: #747474;
+  background: #242424;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
-  border: solid 1px #a2a2a2;
+  border: solid 1px #3e8a13;
   border-top: none;
 }
 .changePasswordWindow .box div {
@@ -8126,36 +8136,40 @@ main .bg {
   font-size: 17px;
   padding: 3px 0px 3px 10px;
   float: right;
-  border: 1px solid #ababab;
-  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent #3c3c3c #6c6c6c #3c3c3c;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
+  box-shadow: 0px 1px 0px 0px #3c3c3c;
+  color: #fff;
 }
 .changePasswordWindow .box div span {
   line-height: 40px;
-  color: #fff;
+  color: #c8c8c8;
   padding-left: 15px;
 }
 .changePasswordWindow .box div button {
   width: 152px;
   height: 36px;
   margin-right: 10px;
-  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-  border: 1px solid #4556b1;
-  color: #4d515d;
+  background: #2d2d2d;
+  border: 1px solid #d9d9d9;
+  color: #b2b2b2;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  color: #4d515d;
-}
-.changePasswordWindow .box div button:hover, .changePasswordWindow .box div button:active, .changePasswordWindow .box div button.active {
-  background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 .changePasswordWindow .box div button:last-child {
   margin: 0px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-  color: #fff;
+  background: #50ad19;
+  color: #191919;
+  border-color: #aef156;
 }
-.changePasswordWindow .box div button:last-child:hover, .changePasswordWindow .box div button:last-child:active, .changePasswordWindow .box div button:last-child.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+.changePasswordWindow .box div button:hover, .changePasswordWindow .box div button:active, .changePasswordWindow .box div button.active {
+  background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+  border-color: #2b7d16;
+  color: #46d317;
 }
 
 .cardremind {

@@ -15,12 +15,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: #121212;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #b9becf;
+        background: #606360;
         border-radius: 10px;
     }
 
@@ -704,7 +704,7 @@
 .minetopfix {
     width: 1150px;
     height: 125px;
-    background: #bcbcbc;
+    background: #3d3d3d;
     border-radius: 0px 0px 5px 5px;
     position: absolute;
     text-align: center;
@@ -718,10 +718,12 @@
         width: 100%;
         height: 45px;
         border-radius: 5px;
-        background: #747474;
+        background: #313131;
         bottom: 0px;
         z-index: 2;
         color: #fff;
+        border: solid 1px #242424;
+        box-sizing: border-box;
 
         .editbut,.cancelbut,.delbut {
             display: none;
@@ -810,7 +812,7 @@
         .line {
             width: 1px;
             height: 25px;
-            background: #bcbcbc;
+            background: #313131;
             float: left;
             margin: 10px 10px 0px 10px;
         }
@@ -895,9 +897,9 @@
         .changePassword {
             float: right;
             padding: 3px 5px;
-            color: #fff;
-            background: #505050;
-            border: solid 1px #fff;
+            color: #dddddd;
+            background: #2b2b2b;
+            border: solid 1px #707070;
             border-radius: 5px;
             font-size: 15px;
             margin: 8px 10px 0px 0px;
@@ -955,7 +957,7 @@
             }
 
             span {
-                color: #ff8c00;
+                color: #6ad237;
             }
         }
     }
@@ -1045,7 +1047,7 @@
     //左段字
     .leftword {
         font-weight: bold;
-        color: #4d515d;
+        color: #ffffff;
         float: left;
         margin: 30px 0px 0px 20px;
     }
@@ -1062,11 +1064,11 @@
             font-weight: bold;
             margin: 20px 10px 0px;
             font-size: 17px;
+            color: #ffffff;
             span {
                 display: block;
                 padding-top: 13px;
                 font-size: 17px;
-                color: #2a2a36;
             }
         }
 
@@ -1085,7 +1087,7 @@
 .mineHideBoard {
     width: 1155px;
     height: 125px;
-    background: #2a2a2a;
+    background: #131313;
     position: absolute;
     z-index: 5;
     left: 270px;
@@ -1109,11 +1111,12 @@
     display: none;
     position: absolute;
     width: 350px;
-    height: 360px;
+    height: auto;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     z-index: 20;
+    box-shadow: 0px 0px 10px 2px #517b09;
 
     &.display {
         display: block;
@@ -1123,14 +1126,14 @@
     .topbar {
         width: 100%;
         height: 50px;
-        background: #ababab;
+        background: #242424;
         border-radius: 3px 3px 0px 0px;
         position: relative;
-        border: solid 1px #a2a2a2;
+        border: solid 1px #3aad1b;
 
         span {
             font-size: 14px;
-            color: #3d3d3d;
+            color: #4be119;
             line-height: 50px;
             padding-left: 20px;
             font-weight: bold;
@@ -1142,11 +1145,11 @@
             width: 40px;
             height: 40px;
             border-radius: 40px;
-            background: #cacaca;
-            border: solid 3px #5e5e5e;
+            background: #404040;
+            border: solid 3px #4be119;
             right: -50px;
             top: -50px;
-            box-shadow: 0px 0px 0px 5px #cacaca;
+            box-shadow: 0px 0px 0px 5px #404040;
 
             &::before {
                 content: "";
@@ -1155,7 +1158,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #5e5e5e;
+                background: #4be119;
                 transform: rotate(45deg);
             }
 
@@ -1166,7 +1169,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #5e5e5e;
+                background: #4be119;
                 transform: rotate(-45deg);
             }
         }
@@ -1176,10 +1179,10 @@
     .box {
         width: 100%;
         height: 160px;
-        background: #747474;
+        background: #242424;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
-        border: solid 1px #a2a2a2;
+        border: solid 1px #3e8a13;
         border-top: none;
 
         div {
@@ -1202,13 +1205,18 @@
                 font-size: 17px;
                 padding: 3px 0px 3px 10px;
                 float: right;
-                border: 1px solid #ababab;
-                border-radius: 4px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: transparent #3c3c3c #6c6c6c #3c3c3c;
+                border-radius: 5px;
+                background: linear-gradient(to bottom,#0f0f0f 21%,#303030 100%);
+                box-shadow: 0px 1px 0px 0px #3c3c3c;
+                color: #fff;
             }
             
             span {
                 line-height: 40px;
-                color: #fff;
+                color: #c8c8c8;
                 padding-left: 15px;
             }
 
@@ -1216,25 +1224,24 @@
                 width: 152px;
                 height: 36px;
                 margin-right: 10px;
-                background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-                border: 1px solid #4556b1;
-                color: #4d515d;
+                background: #2d2d2d;
+                border: 1px solid #d9d9d9;
+                color: #b2b2b2;
                 border-radius: 5px;
                 font-size: 16px;
                 font-weight: bold;
-                color: #4d515d;
-
-                &:hover,&:active,&.active {
-                    background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
-                }
 
                 &:last-child {
                     margin: 0px;
-                    background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-                    color: #fff;
-                    &:hover,&:active,&.active {
-                        background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
-                    }
+                    background: #50ad19;
+                    color: #191919;
+                    border-color: #aef156;
+                }
+
+                &:hover,&:active,&.active {
+                    background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                    border-color: #2b7d16;
+                    color: #46d317;
                 }
             }
         }

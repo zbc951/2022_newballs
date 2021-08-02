@@ -281,6 +281,9 @@ $(function(){
     $('.chooseLeague span').click(function(){
         $('.chleague').toggleClass('display');
     })
+    $('.chleague button').click(function(){
+        $('.chleague').removeClass('display');
+    })
 })
 
 //一般投注
@@ -829,9 +832,6 @@ $(function(){
 //cube
 $(function(){
     $('.cube').click(function(){
-        $(this).toggleClass('active');
-    });
-    $('.cube2').click(function(){
         $(this).toggleClass('active');
     });
 });

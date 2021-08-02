@@ -9,6 +9,7 @@
     scrollbar-width: thin;
     border: solid 1px #6a6a6a;
     border-width: 1px 0px;
+    background: #404040;
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -27,6 +28,7 @@
     
     //我的頁面
     &.mine {
+        border: none;
 
         //上視窗
         .minewindow {
@@ -50,22 +52,23 @@
 
                 //字樣
                 p {
+                    color: #ffffff;
 
                     &.joinday {
-                        color: #304880;
+                        color: #ffffff;
                         font-size: 15px;
                         padding-top: 5px;
                     }
                     
                     span {
                         display: inline-block;
-                        width: 40px;
+                        width: 36px;
                         height: 17px;
-                        background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
-                        background-color: #2e44b6;
+                        background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+                        background-color: #34da14;
                         position: relative;
                         text-align: right;
-                        color: #fff;
+                        color: #161616;
                         font-weight: bold;
                         border-radius: 5px;
                         margin: -3px 0px 0px 5px;
@@ -73,6 +76,7 @@
                         font-size: 15px;
 
                         &::before {
+                            display: none;
                             content: "";
                             position: absolute;
                             width: 23px;
@@ -84,6 +88,7 @@
                     }
                 }
             }
+
             //三按鈕
             .threebut {
                 width: 100%;
@@ -95,16 +100,18 @@
                     width: 60px;
                     height: 58px;
                     margin: 0px 4px;
-                    border-radius: 3px;
+                    border-radius: 8px;
                     font-size: 16px;
                     text-align: center;
                     background: transparent;
-                    color: #4556b1;
+                    color: #c0c0c0;
                     padding-top: 10px;
+                    border: solid 1px transparent;
 
                     &:hover,&:active,&.active {
-                        background: #4556b1;
-                        color: #fff;
+                        background: linear-gradient(to top,#363636 0%,#1d1d1d 100%);
+                        color: #53c120;
+                        border-color: #2d7e12;
                         span {
                             background-position-y: -30px;
                         }
@@ -122,16 +129,28 @@
         //下半選單
         ul {
             li {
+                border-bottom: solid 1px #6f6f6f;
 
                 &:nth-of-type(1),&:nth-of-type(5),&:nth-of-type(9) {
-                    border-bottom: solid 1px #e6e9f3;
+                    border-color: #e6e9f3;
+                }
+
+                &:hover,&:active,&.active {
 
                     a {
-                        border: none;
+                        border-color: #30800e;
+                    }
+
+                    .live {
+                        background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+                        color: #2b4517;
                     }
                 }
 
                 a {
+                    border: solid 1px transparent;
+                    width: 100%;
+                    box-sizing: border-box;
                     
                     .live {
                         display: inline-block;
@@ -142,6 +161,8 @@
                         position: initial;
                         margin-left: 10px;
                         transform: translateY(0px);
+                        background: #1d1d1d;
+                        color: #60dc1c;
                     }
 
                     i {
