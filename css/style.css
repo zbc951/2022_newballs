@@ -2637,6 +2637,9 @@ main .bg {
 .minetable tr {
   text-align: center;
 }
+.minetable tr:last-child {
+  border-bottom: solid 1px #5d5d5d;
+}
 .minetable tr th {
   color: #33bc19;
   font-size: 13px;
@@ -3966,10 +3969,10 @@ main .bg {
 }
 .minetable.withdrawl tr td .inputBox .remind::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
+  background: url(../images/infor2.png) no-repeat;
   top: -2px;
   left: -18px;
 }
@@ -4056,10 +4059,10 @@ main .bg {
 }
 .minetable.transpoint tr td p.remind::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
+  background: url(../images/infor2.png) no-repeat;
   top: -2px;
   left: -18px;
 }
@@ -4091,7 +4094,7 @@ main .bg {
 }
 .minetable.payStyle tr th .remind {
   float: right;
-  color: #fff;
+  color: #898989;
   margin-right: 20px;
   font-size: 12px;
   position: relative;
@@ -4099,11 +4102,11 @@ main .bg {
 }
 .minetable.payStyle tr th .remind::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
-  top: 1px;
+  background: url(../images/infor2.png) no-repeat;
+  top: 2px;
   left: -18px;
 }
 .minetable.payStyle tr td {
@@ -4115,25 +4118,24 @@ main .bg {
 .minetable.payStyle tr td button {
   width: 10%;
   height: 90px;
-  border: solid 1px #828282;
+  border: solid 1px #858585;
   background: #3d3d3d;
   border-radius: 3px;
-  color: #cacaca;
+  color: #d2d2d2;
   margin: 0px 15px 20px;
   position: relative;
+  overflow: hidden;
 }
 .minetable.payStyle tr td button:hover, .minetable.payStyle tr td button:active, .minetable.payStyle tr td button.active {
-  border-color: #ababab;
-  background: #fff;
-  color: #505050;
-  border-radius: 3px 3px 10px 3px;
+  border-color: #47a215;
+  background: linear-gradient(to top, #242424 0%, #1b1b1b 100%);
 }
 .minetable.payStyle tr td button:hover::before, .minetable.payStyle tr td button:active::before, .minetable.payStyle tr td button.active::before {
   content: "";
   position: absolute;
-  width: 29px;
+  width: 30px;
   height: 29px;
-  background: url(../images/box_check.png);
+  background: url(../images/box_check2.png);
   right: -1px;
   bottom: -1px;
 }
@@ -4191,14 +4193,39 @@ main .bg {
   text-align: left;
   padding: 20px;
 }
-.minetable.tbank tr td select {
+.minetable.tbank tr td label {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.minetable.tbank tr td label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7px 6px 0px 6px;
+  border-color: #d2d2d2 transparent;
+}
+.minetable.tbank tr td label select {
   width: 240px;
   height: 40px;
-  background: #3d3d3d;
-  border: solid 1px #828282;
+  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  border: solid 1px #858585;
   border-radius: 3px;
-  color: #cacaca;
+  color: #d2d2d2;
   padding-left: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-shadow: 0px 2px 5px 0px #1c1c1c;
+}
+.minetable.tbank tr td label select option {
+  background: #373737;
 }
 .minetable.tnum {
   width: 1150px;
@@ -4210,7 +4237,6 @@ main .bg {
 .minetable.tnum tr td .line {
   width: 1px;
   height: 120px;
-  background: #ababab;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -4237,23 +4263,62 @@ main .bg {
   font-size: 14px;
   padding-right: 15px;
 }
-.minetable.tnum tr td .half .inputBox select, .minetable.tnum tr td .half .inputBox input {
+.minetable.tnum tr td .half .inputBox label {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.minetable.tnum tr td .half .inputBox label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7px 6px 0px 6px;
+  border-color: #d2d2d2 transparent;
+}
+.minetable.tnum tr td .half .inputBox label select {
   width: 220px;
   height: 40px;
   padding-left: 10px;
-  border: solid 1px #828282;
-  background: #3d3d3d;
-  color: #cacaca;
+  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  border: solid 1px #858585;
+  color: #d2d2d2;
+  border-radius: 3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-shadow: 0px 2px 5px 0px #1c1c1c;
+}
+.minetable.tnum tr td .half .inputBox label select option {
+  background: #373737;
+}
+.minetable.tnum tr td .half .inputBox input {
+  width: 220px;
+  height: 40px;
+  padding-left: 10px;
+  border: solid 1px #858585;
+  background: linear-gradient(to top, #333333 0%, #272727 100%);
+  color: #d2d2d2;
   border-radius: 3px;
   box-sizing: border-box;
+  box-shadow: 0px 2px 5px 0px #1c1c1c;
 }
 .minetable.tnum tr td .half .inputBox button {
-  color: #cacaca;
+  color: #dddddd;
   padding: 5px 8px;
-  border: solid 1px #ababab;
+  border: solid 1px #707070;
   border-radius: 3px;
-  background: transparent;
+  background: #252525;
   margin-left: 20px;
+}
+.minetable.tnum tr td .half .inputBox button:hover, .minetable.tnum tr td .half .inputBox button:active, .minetable.tnum tr td .half .inputBox button.active {
+  color: #30b017;
+  border-color: #299913;
 }
 .minetable.tnetcard {
   width: 1150px;
@@ -4264,10 +4329,10 @@ main .bg {
 .minetable.tnetcard tr td button {
   width: 150px;
   height: auto;
-  border: solid 1px #828282;
-  background: #3d3d3d;
+  border: solid 1px #8c8c8c;
+  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
   border-radius: 3px;
-  color: #cacaca;
+  color: #c9c9c9;
   line-height: 35px;
   font-size: 18px;
   margin-right: 15px;
@@ -4276,8 +4341,9 @@ main .bg {
   margin: 0px;
 }
 .minetable.tnetcard tr td button:hover, .minetable.tnetcard tr td button:active, .minetable.tnetcard tr td button.active {
-  background: #fff;
-  color: #505050;
+  background: #202020;
+  color: #2ea31b;
+  border-color: #247f16;
 }
 .minetable.tnetcard tr td button:hover span, .minetable.tnetcard tr td button:active span, .minetable.tnetcard tr td button.active span {
   background-position-y: 100%;
@@ -4285,8 +4351,8 @@ main .bg {
 .minetable.tnetcard tr td button span {
   display: inline-block;
   width: 25px;
-  height: 25px;
-  background: url("../images/change.png") no-repeat;
+  height: 22px;
+  background: url("../images/change2.png") no-repeat;
   margin: 0px 10px -5px 0px;
 }
 .minetable.tbank, .minetable.tnum, .minetable.tnetcard {
@@ -4305,10 +4371,10 @@ main .bg {
 .minetable.depositMoney tr td .moneybut {
   width: 150px;
   height: auto;
-  border: solid 1px #828282;
-  background: #3d3d3d;
+  border: solid 1px #8c8c8c;
+  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
   border-radius: 3px;
-  color: #cacaca;
+  color: #cccccc;
   line-height: 35px;
   font-size: 18px;
   margin-right: 15px;
@@ -4317,8 +4383,9 @@ main .bg {
   margin: 0px;
 }
 .minetable.depositMoney tr td .moneybut:hover, .minetable.depositMoney tr td .moneybut:active, .minetable.depositMoney tr td .moneybut.active {
-  background: #fff;
-  color: #505050;
+  border-color: #247f16;
+  background: #202020;
+  color: #2ea31b;
 }
 .minetable.depositMoney tr td .inputBox {
   width: 100%;
@@ -4328,12 +4395,12 @@ main .bg {
 .minetable.depositMoney tr td .inputBox input {
   width: 240px;
   height: 40px;
-  border: solid 1px #828282;
-  background: #3d3d3d;
+  border: solid 1px #858585;
+  background: linear-gradient(to top, #333333 0%, #272727 100%);
   border-radius: 3px;
   box-sizing: border-box;
   padding-left: 10px;
-  color: #cacaca;
+  color: #8d8d8d;
   font-size: 14px;
 }
 .minetable.depositMoney tr td .inputBox .remind {
@@ -4345,25 +4412,27 @@ main .bg {
 }
 .minetable.depositMoney tr td .inputBox .remind::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
-  top: -2px;
+  background: url(../images/infor2.png) no-repeat;
+  top: 0px;
   left: -18px;
 }
 .minetable.depositMoney tr td .depositBtn {
   display: block;
   width: 240px;
   height: 40px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
   border-radius: 3px;
   font-size: 16px;
-  color: #fff;
+  color: #232323;
   margin: 0px 0px 20px;
 }
 .minetable.depositMoney tr td .depositBtn:hover, .minetable.depositMoney tr td .depositBtn:active, .minetable.depositMoney tr td .depositBtn.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+  border: solid 1px #2b7d16;
+  color: #46d317;
 }
 
 .middle {
