@@ -2330,29 +2330,25 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 187px 0px 20px 10px;
-	background: #505050;
+	background: #2c2c2c;
 
 	tr {
-
-		&:hover,&:active,&.active {
-			background: #8f8f8f;
-		}
 
 		th {
 			width: 100%;
 			padding: 5px 8px;
-			color: #fff;
-			border-bottom: solid 1px #8f8f8f;
+			color: #eaeaea;
+			border-bottom: solid 1px #727272;
 			font-size: 14px;
 			text-align: left;
-			background: #505050;
+			background: #2c2c2c;
 		}
 
 		td {
 			display: flex;
 			justify-content: space-around;
 			padding: 8px 5px 0px;
-			border-bottom: solid 1px #8f8f8f;
+			border-bottom: solid 1px #7b7b7b;
 			flex-wrap: wrap;
 
 			&.two {
@@ -2392,21 +2388,24 @@
 				border: none;
 				height: auto;
 				padding: 8px;
-				background: #747474;
+				background: #212121;
 				font-size: 14px;
-				color: #d9de06;
+				color: #fefefe;
 				margin-bottom: 8px;
+				border: solid 1px #6a8e2a;
 
 				&:hover,&:active,&.active {
-					background: #f1f1f1;
-					color: #3d3d3d;
+					border-color: #aef156;
+					background: linear-gradient(to right,#92e820 0%,#46dd16 100%);
+					color: #202020;
 
 					span {
-						color: #3d3d3d;
+						color: #202020;
 					}
 				}
 
 				&.title {
+					border: none;
 					background: transparent;
 					pointer-events: none;
 					color: #fff;
@@ -2975,7 +2974,7 @@
 					&.big {
 						float: left;
 						width: 60%;
-						border: solid 1px #ababab;
+						border: solid 1px #5d5d5d;
 						border-radius: 3px;
 						font-size: 0px;
 						position: relative;
@@ -2994,7 +2993,7 @@
 								float: left;
 								width: 30px;
 								height: 28px;
-								background: url(../images/wallet_ic.png) no-repeat;
+								background: url(../images/wallet_ic2.png) no-repeat;
 								background-size: 200%;
 								margin: -6px 10px 0px 0px;
 
@@ -3010,14 +3009,15 @@
 
 								&.dollar {
 									padding-top: 15px;
+									color: #c4c4c4;
 
 									span {
 										font-size: 18px;
 										padding-left: 10px;
-										color: #ff8c00;
+										color: #6ad237;
 
 										&.locked {
-											color: #ff0000;
+											color: #ea1c1c;
 										}
 									}
 								}
@@ -3047,14 +3047,14 @@
 							transform: translateY(-50%);
 							width: 1px;
 							height: 40px;
-							background: #ababab;
+							background: #5d5d5d;
 						}
 					}
 
 					&.small {
 						float: right;
 						width: 30%;
-						border: solid 1px #ababab;
+						border: solid 1px #5d5d5d;
 						border-radius: 3px;
 						font-size: 0px;
 						position: relative;
@@ -3066,11 +3066,11 @@
 							font-size: 16px;
 							text-align: left;
 							font-weight: bold;
-							color: #ff8c00;
+							color: #f7f7f7;
 
 							&.remind {
 								font-size: 13px;
-								color: #ababab;
+								color: #9b9b9b;
 								padding-top: 20px;
 							}
 						}
@@ -3078,7 +3078,7 @@
 						.turnBtn {
 							width: 50px;
 							height: 25px;
-							background: #8f8f8f;
+							background: #222222;
 							position: absolute;
 							right: 30px;
 							top: 50%;
@@ -3086,19 +3086,26 @@
 							border-radius: 15px;
 							transition: 0.3s all;
 							cursor: pointer;
+							border-bottom: solid 2px #434343;
+							box-shadow: 0px 0px 10px 2px #151515 inset;
 
 							&.turn {
-								background: #747474;
+								background: #3ed610;
 
 								div {
 									left: 50%;
+									box-shadow: none;
+									border: none;
 								}
 							}
 
 							div {
 								width: 40%;
 								height: 80%;
-								background: #fff;
+								background: linear-gradient(-20deg,#111111 0%,#353535 93%);
+								box-sizing: border-box;
+								border: solid 1px #2a8f17;
+								box-shadow: 0px 0px 5px 2px #27611c;
 								position: absolute;
 								top: 10%;
 								left: 10%;
@@ -3312,9 +3319,9 @@
 					display: inline-block;
 					width: 23%;
 					height: 100px;
-					border: solid 1px #ababab;
+					border: solid 1px #727272;
 					border-radius: 3px;
-					background: #bcbcbc;
+					background: #242424;
 					margin: 0px 10px 20px 0px;
 					padding: 20px;
 					box-sizing: border-box;
@@ -3328,6 +3335,7 @@
 						text-align: left;
 						line-height: 28px;
 						font-size: 15px;
+						color: #c4c4c4;
 
 						&.dollar {
 							font-size: 13px;
@@ -3335,20 +3343,23 @@
 							span {
 								font-size: 15px;
 								font-weight: bold;
+								color: #fefefe;
 							}
 						}
 
 						.charge {
 							padding: 5px 8px;
-							background: transparent;
-							border-radius: 15px;
-							border: solid 1px #505050;
+							background: #2b2b2b;
+							border-radius: 3px;
+							border: solid 1px #707070;
 							position: absolute;
 							right: 10px;
+							color: #a7a7a7;
 
 							&:hover,&:active,&.active {
-								background: #505050;
-								color: #fff;
+								border-color: #299913;
+								background: #252525;
+								color: #299913;
 							}
 						}
 					}
@@ -4377,7 +4388,7 @@
 							height: 13px;
 							position: absolute;
 							background: url(../images/infor2.png) no-repeat;
-							top: -2px;
+							top: 0px;
 							left: -18px;
 						}
 					}
@@ -4453,29 +4464,55 @@
 					width: 100%;
 					height: auto;
 
-					select {
-						width: 240px;
-						height: 40px;
-						box-sizing: border-box;
-						border: solid 1px #828282;
-						background: #3d3d3d;
-						border-radius: 3px;
-						padding-left: 10px;
-						color: #cacaca;
+					label {
+						display: inline-block;
+						width: auto;
+						height: auto;
+						position: relative;
+
+						&::before {
+							content: "";
+							position: absolute;
+							width: 0px;
+							height: 0px;
+							border-style: solid;
+							border-width: 7px 6px 0px 6px;
+							border-color: #d2d2d2 transparent;
+							right: 10px;
+							top: 50%;
+							transform: translateY(-50%);
+						}
+
+						select {
+							width: 240px;
+							height: 40px;
+							box-sizing: border-box;
+							border: solid 1px #828282;
+							box-shadow: 0px 2px 5px 0px #1c1c1c;
+							background: linear-gradient(to top,#373737 0%,#3d3d3d 100%);
+							border-radius: 3px;
+							padding-left: 10px;
+							color: #d2d2d2;
+							appearance: none;
+
+							option {
+								background: #373737;
+							}
+						}
 					}
 
 					.arrow {
 						display: inline-block;
-						width: 24px;
-						height: 15px;
-						background: url(../images/arrow_trans.png);
-						margin: 0px 10px -3px 10px;
+						width: 32px;
+						height: 20px;
+						background: url(../images/arrow_trans2.png) no-repeat;
+						margin: 0px 10px -5px 10px;
 					}
 				}
 
 				p {
 					margin: 20px 0px;
-					color: #cacaca;
+					color: #bfbfbf;
 					font-size: 14px;
 					font-weight: bold;
 
@@ -4489,7 +4526,7 @@
 							height: 13px;
 							position: absolute;
 							background: url(../images/infor2.png) no-repeat;
-							top: -2px;
+							top: 0px;
 							left: -18px;
 						}
 					}
@@ -4499,25 +4536,28 @@
 					width: 240px;
 					height: 40px;
 					box-sizing: border-box;
-					border: solid 1px #828282;
-					background: #3d3d3d;
+					border: solid 1px #858585;
+					background: linear-gradient(to top,#333333 0%,#272727 100%);
 					border-radius: 3px;
 					padding-left: 10px;
-					color: #cacaca;
+					color: #999999;
 				}
 
 				button {
 					display: block;
 					width: 240px;
 					height: 40px;
-					background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+					background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+					border: solid 1px #7af537;
 					border-radius: 3px;
 					font-size: 16px;
-					color: #fff;
+					color: #232323;
 					margin: 10px 0px 20px;
 
 					&:hover,&:active,&.active {
-						background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+						border-color: #87d620;
+						color: #ffffff;
+						background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
 					}
 				}
 			}
@@ -4930,11 +4970,12 @@
 					font-size: 16px;
 					color: #232323;
 					margin: 0px 0px 20px;
+					border: solid 1px #7af537;
 
 					&:hover,&:active,&.active {
-						background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
-						border: solid 1px #2b7d16;
-						color: #46d317;
+						border-color: #87d620;
+						color: #ffffff;
+						background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
 					}
 				}
 			}

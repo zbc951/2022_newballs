@@ -2369,25 +2369,22 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 187px 0px 20px 10px;
-  background: #505050;
-}
-.innerBoard tr:hover, .innerBoard tr:active, .innerBoard tr.active {
-  background: #8f8f8f;
+  background: #2c2c2c;
 }
 .innerBoard tr th {
   width: 100%;
   padding: 5px 8px;
-  color: #fff;
-  border-bottom: solid 1px #8f8f8f;
+  color: #eaeaea;
+  border-bottom: solid 1px #727272;
   font-size: 14px;
   text-align: left;
-  background: #505050;
+  background: #2c2c2c;
 }
 .innerBoard tr td {
   display: flex;
   justify-content: space-around;
   padding: 8px 5px 0px;
-  border-bottom: solid 1px #8f8f8f;
+  border-bottom: solid 1px #7b7b7b;
   flex-wrap: wrap;
 }
 .innerBoard tr td.two button {
@@ -2410,19 +2407,22 @@ main .bg {
   border: none;
   height: auto;
   padding: 8px;
-  background: #747474;
+  background: #212121;
   font-size: 14px;
-  color: #d9de06;
+  color: #fefefe;
   margin-bottom: 8px;
+  border: solid 1px #6a8e2a;
 }
 .innerBoard tr td button:hover, .innerBoard tr td button:active, .innerBoard tr td button.active {
-  background: #f1f1f1;
-  color: #3d3d3d;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #202020;
 }
 .innerBoard tr td button:hover span, .innerBoard tr td button:active span, .innerBoard tr td button.active span {
-  color: #3d3d3d;
+  color: #202020;
 }
 .innerBoard tr td button.title {
+  border: none;
   background: transparent;
   pointer-events: none;
   color: #fff;
@@ -2873,7 +2873,7 @@ main .bg {
 .minetable.totalMoney tr td .separateBox.big {
   float: left;
   width: 60%;
-  border: solid 1px #ababab;
+  border: solid 1px #5d5d5d;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
@@ -2892,7 +2892,7 @@ main .bg {
   float: left;
   width: 30px;
   height: 28px;
-  background: url(../images/wallet_ic.png) no-repeat;
+  background: url(../images/wallet_ic2.png) no-repeat;
   background-size: 200%;
   margin: -6px 10px 0px 0px;
 }
@@ -2906,14 +2906,15 @@ main .bg {
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar {
   padding-top: 15px;
+  color: #c4c4c4;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span {
   font-size: 18px;
   padding-left: 10px;
-  color: #ff8c00;
+  color: #6ad237;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span.locked {
-  color: #ff0000;
+  color: #ea1c1c;
 }
 .minetable.totalMoney tr td .separateBox.big .half p button {
   background: transparent;
@@ -2936,12 +2937,12 @@ main .bg {
   transform: translateY(-50%);
   width: 1px;
   height: 40px;
-  background: #ababab;
+  background: #5d5d5d;
 }
 .minetable.totalMoney tr td .separateBox.small {
   float: right;
   width: 30%;
-  border: solid 1px #ababab;
+  border: solid 1px #5d5d5d;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
@@ -2953,17 +2954,17 @@ main .bg {
   font-size: 16px;
   text-align: left;
   font-weight: bold;
-  color: #ff8c00;
+  color: #f7f7f7;
 }
 .minetable.totalMoney tr td .separateBox.small p.remind {
   font-size: 13px;
-  color: #ababab;
+  color: #9b9b9b;
   padding-top: 20px;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn {
   width: 50px;
   height: 25px;
-  background: #8f8f8f;
+  background: #222222;
   position: absolute;
   right: 30px;
   top: 50%;
@@ -2971,17 +2972,24 @@ main .bg {
   border-radius: 15px;
   transition: 0.3s all;
   cursor: pointer;
+  border-bottom: solid 2px #434343;
+  box-shadow: 0px 0px 10px 2px #151515 inset;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn.turn {
-  background: #747474;
+  background: #3ed610;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn.turn div {
   left: 50%;
+  box-shadow: none;
+  border: none;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn div {
   width: 40%;
   height: 80%;
-  background: #fff;
+  background: linear-gradient(-20deg, #111111 0%, #353535 93%);
+  box-sizing: border-box;
+  border: solid 1px #2a8f17;
+  box-shadow: 0px 0px 5px 2px #27611c;
   position: absolute;
   top: 10%;
   left: 10%;
@@ -3134,9 +3142,9 @@ main .bg {
   display: inline-block;
   width: 23%;
   height: 100px;
-  border: solid 1px #ababab;
+  border: solid 1px #727272;
   border-radius: 3px;
-  background: #bcbcbc;
+  background: #242424;
   margin: 0px 10px 20px 0px;
   padding: 20px;
   box-sizing: border-box;
@@ -3149,6 +3157,7 @@ main .bg {
   text-align: left;
   line-height: 28px;
   font-size: 15px;
+  color: #c4c4c4;
 }
 .minetable.moneyDetail tr td div p.dollar {
   font-size: 13px;
@@ -3156,18 +3165,21 @@ main .bg {
 .minetable.moneyDetail tr td div p.dollar span {
   font-size: 15px;
   font-weight: bold;
+  color: #fefefe;
 }
 .minetable.moneyDetail tr td div p .charge {
   padding: 5px 8px;
-  background: transparent;
-  border-radius: 15px;
-  border: solid 1px #505050;
+  background: #2b2b2b;
+  border-radius: 3px;
+  border: solid 1px #707070;
   position: absolute;
   right: 10px;
+  color: #a7a7a7;
 }
 .minetable.moneyDetail tr td div p .charge:hover, .minetable.moneyDetail tr td div p .charge:active, .minetable.moneyDetail tr td div p .charge.active {
-  background: #505050;
-  color: #fff;
+  border-color: #299913;
+  background: #252525;
+  color: #299913;
 }
 .minetable.dealRecord {
   width: 1150px;
@@ -3973,7 +3985,7 @@ main .bg {
   height: 13px;
   position: absolute;
   background: url(../images/infor2.png) no-repeat;
-  top: -2px;
+  top: 0px;
   left: -18px;
 }
 .minetable.withdrawl tr td .inputBox button {
@@ -4030,26 +4042,51 @@ main .bg {
   width: 100%;
   height: auto;
 }
-.minetable.transpoint tr td .inputBox select {
+.minetable.transpoint tr td .inputBox label {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.minetable.transpoint tr td .inputBox label::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7px 6px 0px 6px;
+  border-color: #d2d2d2 transparent;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.minetable.transpoint tr td .inputBox label select {
   width: 240px;
   height: 40px;
   box-sizing: border-box;
   border: solid 1px #828282;
-  background: #3d3d3d;
+  box-shadow: 0px 2px 5px 0px #1c1c1c;
+  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
   border-radius: 3px;
   padding-left: 10px;
-  color: #cacaca;
+  color: #d2d2d2;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.minetable.transpoint tr td .inputBox label select option {
+  background: #373737;
 }
 .minetable.transpoint tr td .inputBox .arrow {
   display: inline-block;
-  width: 24px;
-  height: 15px;
-  background: url(../images/arrow_trans.png);
-  margin: 0px 10px -3px 10px;
+  width: 32px;
+  height: 20px;
+  background: url(../images/arrow_trans2.png) no-repeat;
+  margin: 0px 10px -5px 10px;
 }
 .minetable.transpoint tr td p {
   margin: 20px 0px;
-  color: #cacaca;
+  color: #bfbfbf;
   font-size: 14px;
   font-weight: bold;
 }
@@ -4063,31 +4100,34 @@ main .bg {
   height: 13px;
   position: absolute;
   background: url(../images/infor2.png) no-repeat;
-  top: -2px;
+  top: 0px;
   left: -18px;
 }
 .minetable.transpoint tr td input {
   width: 240px;
   height: 40px;
   box-sizing: border-box;
-  border: solid 1px #828282;
-  background: #3d3d3d;
+  border: solid 1px #858585;
+  background: linear-gradient(to top, #333333 0%, #272727 100%);
   border-radius: 3px;
   padding-left: 10px;
-  color: #cacaca;
+  color: #999999;
 }
 .minetable.transpoint tr td button {
   display: block;
   width: 240px;
   height: 40px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  border: solid 1px #7af537;
   border-radius: 3px;
   font-size: 16px;
-  color: #fff;
+  color: #232323;
   margin: 10px 0px 20px;
 }
 .minetable.transpoint tr td button:hover, .minetable.transpoint tr td button:active, .minetable.transpoint tr td button.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+  border-color: #87d620;
+  color: #ffffff;
+  background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
 }
 .minetable.payStyle {
   width: 1150px;
@@ -4428,11 +4468,12 @@ main .bg {
   font-size: 16px;
   color: #232323;
   margin: 0px 0px 20px;
+  border: solid 1px #7af537;
 }
 .minetable.depositMoney tr td .depositBtn:hover, .minetable.depositMoney tr td .depositBtn:active, .minetable.depositMoney tr td .depositBtn.active {
-  background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
-  border: solid 1px #2b7d16;
-  color: #46d317;
+  border-color: #87d620;
+  color: #ffffff;
+  background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
 }
 
 .middle {
@@ -4834,35 +4875,27 @@ main .bg {
   margin-left: 90px;
 }
 .topfix .inn li:hover button, .topfix .inn li:active button, .topfix .inn li.active button {
-  border-color: #59a936;
+  border-color: #32980e;
+  color: #33ba04;
+  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
 }
 .topfix .inn li button {
+  width: 80px;
   height: 50px;
-  background: transparent;
-  border-bottom: solid 4px transparent;
+  background: linear-gradient(to top, #323232 0%, #434343 100%);
+  border: solid 1px #7b7b7b;
   position: relative;
-  color: #fff;
+  color: #bfbfbf;
   padding: 0px 8px;
-  margin-left: 4px;
-}
-.topfix .inn li button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -2px;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 24px;
-  background: #fff;
 }
 .topfix .inn .back {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 6px 8px 8px 21px;
-  background: #535353;
-  color: #fff;
-  border: solid 1px #fff;
+  background: #363636;
+  color: #d0d0d0;
+  border: solid 1px #727272;
   border-radius: 3px;
   left: 15px;
 }
@@ -4875,7 +4908,7 @@ main .bg {
   transform: translateY(-50%);
   left: 6px;
   border-style: solid;
-  border-color: transparent #fff;
+  border-color: transparent #b2b2b2;
   border-width: 6px 10px 6px 0px;
 }
 .topfix .inn .back:hover, .topfix .inn .back:active, .topfix .inn .back.active {
