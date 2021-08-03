@@ -534,8 +534,8 @@ $(function(){
     })
 
     $('.withdrawlBtn').click(function(){
-        $('.dealRecord.withdrawl').addClass('display');
-        $('.dealRecord.withdrawl').siblings().removeClass('display');
+        $('.dealRecord.withdrawl2').addClass('display');
+        $('.dealRecord.withdrawl2').siblings().removeClass('display');
     })
 })
 

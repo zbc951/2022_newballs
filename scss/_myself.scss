@@ -41,23 +41,27 @@
     .recordbar {
         width: 1150px;
         height: 35px;
-        background: #cacaca;
+        background: linear-gradient(to top,#343434 0%,#404040 100%);
         border-radius: 3px;
         margin: 0px 0px 15px 10px;
-        border: 1px solid #828282;
         box-sizing: border-box;
         position: relative;
         z-index: 1;
 
         &.open {
-            background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
+            border: solid 1px #30800e;
+            background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+
+            div {
+                color: #3abc0d;
+            }
         }
 
         div {
             float: left;
             width: 25%;
             text-align: center;
-            color: #4d515d;
+            color: #dddddd;
             font-size: 15px;
             line-height: 37px;
             cursor: pointer;
@@ -66,24 +70,24 @@
             .line {
                 width: 1px;
                 height: 15px;
-                background: #000000;
+                background: #747474;
                 margin: 10px 0px 0px 0px;
                 float: right;
             }
             
             span {
-                color: #ff0000;
+                color: #3abc0d;
 
                 &.remind {
                     position: absolute;
                     width: 20px;
                     height: 18px;
-                    background: #ff0000;
+                    background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
                     left: 35px;
                     top: 48%;
                     transform: translateY(-50%);
                     line-height: 20px;
-                    color: #fff;
+                    color: #161616;
                     border-radius: 5px;
                     padding-left: 2px;
                 }
@@ -95,9 +99,8 @@
         width: 1150px;
         height: auto;
         margin: 0px 0px 15px 10px;
-        border: 1px solid #b7906e;
         border-top: none;
-        background: #b59273;
+        background: #1a1a1a;
         padding-top: 20px;
         border-radius: 0px 0px 3px 3px;
         box-sizing: border-box;
@@ -839,7 +842,7 @@
                 &.date {
                     width: 19px;
                     height: 19px;
-                    background: url('../images/date_icon.png') no-repeat;
+                    background: url('../images/date_icon2.png') no-repeat;
                     float: left;
                     margin: 13px 0px 0px 0px;
                     border: none;
@@ -847,11 +850,11 @@
 
                 &.timesearchbut {
                     margin: 8px 24px 0px 0px;
-                    border: solid 1px #bcbcbc;
-                    background: transparent;
+                    border: solid 1px #707070;
+                    background: #2b2b2b;
                     padding: 5px 8px;
                     border-radius: 3px;
-                    color: #fff;
+                    color: #dddddd;
 
                     &:hover,&:active,&.active {
                         background: #fff;
@@ -867,29 +870,52 @@
                 padding: 0px 10px;
             }
 
-            select {
+            label {
                 float: left;
-                margin: 11px 0px 0px 10px;
-                border: 1px solid #4556b1;
-                outline: none;
-                border-radius: 5px;
-                width: 95px;
-                height: 24px;
-                font-family: "my_font";
+                width: auto;
+                height: auto;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 6px 5px 0px 5px;
+                    border-color: #747474 transparent;
+                    top: 21px;
+                    right: 5px;
+                }
+
+                select {
+                    margin: 11px 0px 0px 10px;
+                    border: 1px solid #707070;
+                    outline: none;
+                    border-radius: 5px;
+                    width: 95px;
+                    height: 24px;
+                    font-family: "my_font";
+                    background: #2b2b2b;
+                    color: #dddddd;
+                    appearance: none;
+                    padding-left: 5px;
+                }
             }
         }
         .smallTimeBtn {
             margin: 8px 12px 0px 0px;
-            border: solid 1px #bcbcbc;
-            background: transparent;
+            border: solid 1px #6a8e2a;
+            background: #212121;
             padding: 5px 8px;
             border-radius: 3px;
-            color: #fff;
+            color: #bfbfbf;
             float: right;
 
             &:hover,&:active,&.active {
-                background: #fff;
-                color: #000;
+                background: linear-gradient(to bottom,#141414 0%,#434343 100%);
+                color: #33ba04;
+                border-color: #32980e;
             }
         }
 
@@ -926,22 +952,24 @@
         }
 
         ul {
+
             li {
                 float: left;
+                width: 80px;
                 font-size: 15px;
-                height: 42px;
-                line-height: 47px;
-                border-bottom: solid 3px transparent;
-                color: #2a2a2a;
+                height: 43px;
+                line-height: 45px;
+                color: #bfbfbf;
+                box-sizing: border-box;
+                border: solid 1px #7b7b7b;
+                background: linear-gradient(to top,#323232 0%,#434343 100%);
                 cursor: pointer;
-
-                &:first-child {
-                    margin-left: 15px;
-                }
+                border-radius: 3px;
 
                 &:hover,&:active,&.active {
-                    color: #fff;
-                    border-color: #59a936;
+                    color: #33ba04;
+                    border-color: #32980e;
+                    background: linear-gradient(to bottom,#141414 0%,#434343 100%);
                 }
             }
         }
@@ -965,8 +993,8 @@
     .floatName {
         width: 100%;
         height: 35px;
-        background: #404b87;
-        border-radius: 0px 0px 3px 3px;
+        background: #1f1f1f;
+        border-bottom: solid 1px #3abc0d;
 
         //投注紀錄用
         &.betting {
@@ -975,14 +1003,14 @@
                 float: left;
                 width: 25%;
                 text-align: center;
-                color: #fff;
+                color: #37ad10;
                 font-size: 15px;
                 padding-top: 12px;
 
                 .line {
                     width: 1px;
                     height: 10px;
-                    background: #bcbcbc;
+                    background: #747474;
                     margin: -5px 0px 0px 0px;
                     float: right;
                 }
@@ -995,7 +1023,7 @@
             div {
                 float: left;
                 text-align: center;
-                color: #fff;
+                color: #37ad10;
                 font-size: 15px;
                 padding-top: 12px;
 
@@ -1033,7 +1061,7 @@
                 .line {
                     width: 1px;
                     height: 10px;
-                    background: #bcbcbc;
+                    background: #747474;
                     margin: -5px 0px 0px 0px;
                     float: right;
 
@@ -1233,9 +1261,15 @@
 
                 &:last-child {
                     margin: 0px;
-                    background: #50ad19;
+                    background: linear-gradient(to right,#57b21a 0%,#349a14 100%);
                     color: #191919;
                     border-color: #aef156;
+
+                    &:hover,&:active,&.active {
+                        background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                        color: #46d317;
+                        border-color: #2b7d16;
+                    }
                 }
 
                 &:hover,&:active,&.active {
@@ -1253,11 +1287,14 @@
     display: none;
     position: absolute;
     width: 500px;
-    height: 200px;
+    height: auto;
     left: 50%;
     transform: translateX(-50%);
     top: 200px;
     z-index: 20;
+    border: solid 1px #3aad1b;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 2px #517b09;
 
     &.display {
         display: block;
@@ -1267,14 +1304,14 @@
     .topbar {
         width: 100%;
         height: 50px;
-        background: #ababab;
+        background: #242424;
         border-radius: 3px 3px 0px 0px;
         position: relative;
-        border: solid 1px #a2a2a2;
+        border-bottom: solid 1px #3aad1b;
 
         span {
             font-size: 14px;
-            color: #3d3d3d;
+            color: #4be119;
             line-height: 50px;
             padding-left: 20px;
             font-weight: bold;
@@ -1286,11 +1323,11 @@
             width: 40px;
             height: 40px;
             border-radius: 40px;
-            background: #cacaca;
-            border: solid 3px #5e5e5e;
+            background: #404040;
+            border: solid 3px #4be119;
             right: -50px;
             top: -50px;
-            box-shadow: 0px 0px 0px 5px #cacaca;
+            box-shadow: 0px 0px 0px 5px #404040;
 
             &::before {
                 content: "";
@@ -1299,7 +1336,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #5e5e5e;
+                background: #4be119;
                 transform: rotate(45deg);
             }
 
@@ -1310,7 +1347,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #5e5e5e;
+                background: #4be119;
                 transform: rotate(-45deg);
             }
         }
@@ -1320,42 +1357,34 @@
     .box {
         width: 100%;
         height: 105px;
-        background: #747474;
+        background: #242424;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
         text-align: center;
-        border: solid 1px #a2a2a2;
-        border-top: none;
 
         p {
             font-size: 14px;
             padding-bottom: 20px;
-            color: #fff;
+            color: #bdbdbd;
 
             &.remind {
-                color: #ff8c00;
+                color: #ffffff;
             }
         }
 
         button {
             width: 160px;
             height: 36px;
-            background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-            border: 1px solid #4556b1;
+            background: linear-gradient(to right,#57b21a 0%,#349a14 100%);
+            border: 1px solid #aef156;
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
-            color: #4d515d;
+            color: #191919;
             &:hover,&:active,&.active {
-                background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
-            }
-            &:last-child {
-                margin: 0px;
-                background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-                color: #fff;
-                &:hover,&:active,&.active {
-                    background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
-                }
+                background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                color: #46d317;
+                border-color: #2b7d16;
             }
         }
     }

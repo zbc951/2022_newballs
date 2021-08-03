@@ -503,7 +503,7 @@ main .bg {
   display: inline-block;
   width: 60px;
   height: 58px;
-  margin: 0px 4px;
+  margin: 0px 3px;
   border-radius: 8px;
   font-size: 16px;
   text-align: center;
@@ -2801,11 +2801,11 @@ main .bg {
 .minetable.totalMoney tr td .box {
   width: 90%;
   margin: 0px auto;
-  border: solid 1px #828282;
+  border: solid 1px #5d5d5d;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
-  background: #3d3d3d;
+  background: #292929;
 }
 .minetable.totalMoney tr td .box .half {
   display: inline-block;
@@ -2823,13 +2823,16 @@ main .bg {
   padding-top: 13px;
   position: relative;
 }
+.minetable.totalMoney tr td .box .half p.dollar {
+  color: #c4c4c4;
+}
 .minetable.totalMoney tr td .box .half p.dollar span {
-  color: #ff8c00;
+  color: #6ad237;
   font-size: 18px;
   padding-left: 10px;
 }
 .minetable.totalMoney tr td .box .half p.locked span {
-  color: #ff0000;
+  color: #ea1c1c;
   font-size: 18px;
   padding-left: 10px;
 }
@@ -2851,7 +2854,7 @@ main .bg {
   float: left;
   width: 34px;
   height: 32px;
-  background: url("../images/wallet_ic.png") no-repeat;
+  background: url("../images/wallet_ic2.png") no-repeat;
   background-size: 200%;
   margin: 20px 0px 20px 40px;
 }
@@ -2865,7 +2868,7 @@ main .bg {
   transform: translateY(-50%);
   width: 1px;
   height: 25px;
-  background: #ababab;
+  background: #5d5d5d;
 }
 .minetable.totalMoney tr td .separateBox {
   height: 89px;
@@ -3003,41 +3006,49 @@ main .bg {
   float: right;
   padding-bottom: 4px;
   font-size: 13px;
+  color: #ffffff;
 }
 .minetable.creditcard tr td .creditcardBtn {
   width: 25%;
   height: 145px;
   border-radius: 5px;
-  background: #747474;
+  background: #242424;
   color: #fff;
   font-size: 17px;
   margin: 20px 30px;
   transition: 0.25s all;
   position: relative;
+  border: solid 1px #287c12;
 }
 .minetable.creditcard tr td .creditcardBtn:hover, .minetable.creditcard tr td .creditcardBtn:active, .minetable.creditcard tr td .creditcardBtn.active {
-  background: #cacaca;
-  box-shadow: 0px 0px 5px 0px #fff;
-  color: #000;
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  color: #232323;
+  border-color: #7af537;
 }
 .minetable.creditcard tr td .creditcardBtn:hover div, .minetable.creditcard tr td .creditcardBtn:active div, .minetable.creditcard tr td .creditcardBtn.active div {
-  background-position-x: 100%;
+  background-position-y: 100%;
+}
+.minetable.creditcard tr td .creditcardBtn.c1, .minetable.creditcard tr td .creditcardBtn.c2, .minetable.creditcard tr td .creditcardBtn.c3 {
+  background: linear-gradient(135deg, #3d3d3d 0%, #242424 100%);
 }
 .minetable.creditcard tr td .creditcardBtn.c1:hover, .minetable.creditcard tr td .creditcardBtn.c2:hover, .minetable.creditcard tr td .creditcardBtn.c3:hover {
-  color: #fff;
-  box-shadow: none;
+  background: linear-gradient(-45deg, #3d3d3d 0%, #242424 100%);
+  color: #fefefe;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:active, .minetable.creditcard tr td .creditcardBtn.c1.active, .minetable.creditcard tr td .creditcardBtn.c2:active, .minetable.creditcard tr td .creditcardBtn.c2.active, .minetable.creditcard tr td .creditcardBtn.c3:active, .minetable.creditcard tr td .creditcardBtn.c3.active {
-  color: #fff;
-  box-shadow: none;
+  background: linear-gradient(-45deg, #3d3d3d 0%, #242424 100%);
+  color: #fefefe;
+  box-shadow: 0px 0px 10px 2px #49701f;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:active::before, .minetable.creditcard tr td .creditcardBtn.c1.active::before, .minetable.creditcard tr td .creditcardBtn.c2:active::before, .minetable.creditcard tr td .creditcardBtn.c2.active::before, .minetable.creditcard tr td .creditcardBtn.c3:active::before, .minetable.creditcard tr td .creditcardBtn.c3.active::before {
   content: "";
   position: absolute;
   width: 30px;
   height: 30px;
-  border: solid 5px #fff;
+  border: solid 2px #34b00e;
   border-radius: 30px;
+  background: #343434;
+  box-shadow: 0px 0px 0px 3px #343434, 0px 0px 10px 2px #49701f;
   top: -8px;
   right: -8px;
 }
@@ -3045,55 +3056,28 @@ main .bg {
   content: "";
   position: absolute;
   width: 8px;
-  height: 16px;
-  border: solid 5px #fff;
-  border-width: 0px 5px 5px 0px;
+  height: 14px;
+  border: solid 5px #47e916;
+  border-width: 0px 4px 4px 0px;
   transform: rotate(45deg);
-  top: 0px;
-  right: 5px;
-}
-.minetable.creditcard tr td .creditcardBtn.c1 {
-  background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
-}
-.minetable.creditcard tr td .creditcardBtn.c1:hover {
-  background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
-}
-.minetable.creditcard tr td .creditcardBtn.c1:active::before, .minetable.creditcard tr td .creditcardBtn.c1.active::before {
-  background: #6589c6;
-}
-.minetable.creditcard tr td .creditcardBtn.c2 {
-  background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
-}
-.minetable.creditcard tr td .creditcardBtn.c2:hover {
-  background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
-}
-.minetable.creditcard tr td .creditcardBtn.c2:active::before, .minetable.creditcard tr td .creditcardBtn.c2.active::before {
-  background: #31a8b1;
-}
-.minetable.creditcard tr td .creditcardBtn.c3 {
-  background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
-}
-.minetable.creditcard tr td .creditcardBtn.c3:hover {
-  background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
-}
-.minetable.creditcard tr td .creditcardBtn.c3:active::before, .minetable.creditcard tr td .creditcardBtn.c3.active::before {
-  background: #d7767a;
+  top: -2px;
+  right: 3px;
 }
 .minetable.creditcard tr td .creditcardBtn .addCard {
   width: 42px;
   height: 29px;
   margin: 0px auto 10px;
-  background: url("../images/add_card.png") no-repeat;
-  background-size: 200%;
+  background: url("../images/add_card2.png") no-repeat;
+  background-size: 100%;
 }
 .minetable.creditcard tr td .creditcardBtn .box .bankIc {
   width: 40px;
   height: 40px;
-  background: url("../images/bank_ic.png") no-repeat;
+  background: url("../images/bank_ic2.png") no-repeat;
   background-size: 300%;
   position: absolute;
-  top: 24%;
-  left: 10%;
+  top: 22%;
+  left: 13%;
 }
 .minetable.creditcard tr td .creditcardBtn .box .bankIc.c1 {
   background-position-x: 0%;
@@ -3115,22 +3099,22 @@ main .bg {
 }
 .minetable.creditcard tr td .remind {
   float: right;
-  color: #fff;
+  color: #bfbfbf;
   margin: 0px 20px 20px 0px;
   font-size: 14px;
   position: relative;
 }
 .minetable.creditcard tr td .remind::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   position: absolute;
-  background: url("../images/infor.png") no-repeat;
-  top: -2px;
+  background: url("../images/infor2.png") no-repeat;
+  top: 0px;
   left: -18px;
 }
 .minetable.creditcard tr td .remind a {
-  color: #ff8c00;
+  color: #3edb15;
 }
 .minetable.moneyDetail {
   width: 1150px;
@@ -3183,25 +3167,25 @@ main .bg {
 }
 .minetable.dealRecord {
   width: 1150px;
-  background: #505050;
   display: none;
 }
 .minetable.dealRecord.display {
   display: table;
 }
 .minetable.dealRecord tr {
-  border-bottom: solid 1px #ababab;
+  border-bottom: solid 1px #747474;
+  background: linear-gradient(to top, #343434 0%, #404040 100%);
 }
 .minetable.dealRecord tr.fail {
-  background: #3d3d3d;
+  background: linear-gradient(to top, #2a2a2a 0%, #343434 100%);
 }
 .minetable.dealRecord tr:last-child {
   border: none;
 }
 .minetable.dealRecord tr td {
-  border-right: solid 1px #ababab;
+  border-right: solid 1px #747474;
   padding: 10px;
-  color: #fff;
+  color: #dddddd;
   font-size: 14px;
 }
 .minetable.dealRecord tr td:nth-of-type(1) {
@@ -3230,7 +3214,7 @@ main .bg {
   color: #90b9ff;
 }
 .minetable.dealRecord tr td.depositMoney {
-  color: #ff8c00;
+  color: #43d710;
 }
 .minetable.dealRecord tr td .time {
   padding-left: 8px;
@@ -3252,13 +3236,15 @@ main .bg {
   margin: 0px 0px 10px 10px;
 }
 .minetable.bettingRecord tr {
-  border-bottom: solid 1px #ababab;
+  border-bottom: solid 1px #676767;
 }
 .minetable.bettingRecord tr.totalInfo {
-  background: #404b87;
+  background: #212121;
 }
 .minetable.bettingRecord tr th {
-  border-bottom: solid 1px #828282;
+  border-bottom: solid 1px #2d910e;
+  background: #3f3f3f;
+  color: #dddddd;
 }
 .minetable.bettingRecord tr th p {
   float: left;
@@ -3267,7 +3253,7 @@ main .bg {
   float: left;
   width: 1px;
   height: 14px;
-  background: #bcbcbc;
+  background: #747474;
   margin: 0px 10px;
 }
 .minetable.bettingRecord tr th .arrow {
@@ -3283,7 +3269,7 @@ main .bg {
 }
 .minetable.bettingRecord tr td {
   padding: 10px;
-  color: #fff;
+  color: #bfbfbf;
   font-size: 14px;
   border-right: solid 1px #ababab;
 }
@@ -3314,21 +3300,26 @@ main .bg {
   transform: translateY(-1px);
 }
 .minetable.bettingRecord tr td .odd {
-  color: #ff8c00;
+  color: #50cd1b;
 }
 .minetable.bettingRecord tr td .vs {
-  color: #90b9ff;
+  color: #9c9b9b;
   font-size: 12px;
   padding: 0px 8px;
 }
 .minetable.totalInfo {
   width: 1070px;
   margin: 0px auto;
-  background: #f3b378;
+  background: linear-gradient(to top, #1a1a1a 0%, #2a2a2a 100%);
+}
+.minetable.totalInfo tr {
+  border: solid 1px #30800e;
+  border-width: 1px 0px;
 }
 .minetable.totalInfo tr td {
   padding: 10px 0px;
   font-size: 15px;
+  color: #3abc0d;
 }
 .minetable.totalInfo tr td:nth-of-type(1), .minetable.totalInfo tr td:nth-of-type(3), .minetable.totalInfo tr td:nth-of-type(5) {
   width: 10%;
@@ -3347,7 +3338,7 @@ main .bg {
   float: right;
   width: 1px;
   height: 16px;
-  background: #000000;
+  background: #747474;
 }
 .minetable.sportRule {
   display: none;
@@ -3948,7 +3939,7 @@ main .bg {
 }
 .minetable.withdrawl tr td {
   padding: 15px;
-  color: #fff;
+  color: #ededed;
 }
 .minetable.withdrawl tr td p {
   font-size: 14px;
@@ -3964,17 +3955,17 @@ main .bg {
   width: 180px;
   height: 36px;
   box-sizing: border-box;
-  border: solid 1px #ababab;
+  border: solid 1px #858585;
   border-radius: 3px;
   color: #fff;
   padding-left: 10px;
-  background: #505050;
+  background: linear-gradient(to top, #333333 0%, #272727 100%);
 }
 .minetable.withdrawl tr td .inputBox input::placeholder {
-  color: #ababab;
+  color: #999999;
 }
 .minetable.withdrawl tr td .inputBox .remind {
-  color: #fff;
+  color: #bfbfbf;
   margin-left: 30px;
   font-size: 14px;
   position: relative;
@@ -3992,21 +3983,24 @@ main .bg {
   width: 180px;
   height: 36px;
   font-weight: bold;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-  color: #fff;
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  color: #232323;
   border-radius: 3px;
-  border: solid 1px #3c7424;
+  border: solid 1px #7af537;
   margin-top: 15px;
 }
 .minetable.withdrawl tr td .inputBox button:hover, .minetable.withdrawl tr td .inputBox button:active, .minetable.withdrawl tr td .inputBox button.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+  color: #ffffff;
+  border-color: #87d620;
+  background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
 }
 .minetable.withdrawl tr td .box {
   display: inline-block;
   width: 31%;
   height: auto;
   margin-right: 12px;
-  border: solid 1px #ababab;
+  background: #292929;
+  border: solid 1px #5d5d5d;
   border-radius: 3px;
   box-sizing: border-box;
   overflow: hidden;
@@ -4015,21 +4009,21 @@ main .bg {
   margin: 0px;
 }
 .minetable.withdrawl tr td .box .title {
-  background: #828282;
   padding: 10px 20px;
+  border-bottom: solid 1px #5d5d5d;
 }
 .minetable.withdrawl tr td .box .content p {
   width: 100%;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 22px;
   color: #fff;
   text-align: center;
-  padding: 20px 0px;
+  padding: 20px 0px 15px;
 }
 .minetable.withdrawl tr td .box .content span {
   display: block;
   font-size: 14px;
   padding-bottom: 15px;
+  color: #bfbfbf;
 }
 .minetable.transpoint {
   width: 1150px;
@@ -5139,11 +5133,14 @@ main .bg {
   display: none;
   position: absolute;
   width: 800px;
-  height: 360px;
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
   top: 200px;
   z-index: 20;
+  border: solid 1px #3aad1b;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 2px #517b09;
 }
 .signupWindow.display {
   display: block;
@@ -5151,48 +5148,52 @@ main .bg {
 .signupWindow .signupbar {
   width: 100%;
   height: 50px;
-  background: #2a2a2a;
+  background: #242424;
   border-radius: 3px 3px 0px 0px;
+  border-bottom: solid 1px #3aad1b;
   position: relative;
 }
 .signupWindow .signupbar span {
   font-size: 17px;
-  color: #fff;
+  color: #4be119;
   line-height: 54px;
   padding-left: 20px;
 }
 .signupWindow .signupbar button {
-  width: 18px;
-  height: 18px;
   position: absolute;
-  right: 20px;
-  top: 16px;
-  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #404040;
+  border: solid 3px #4be119;
+  right: -50px;
+  top: -50px;
+  box-shadow: 0px 0px 0px 5px #404040;
 }
 .signupWindow .signupbar button::before {
   content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
   position: absolute;
-  left: 8px;
-  top: 0px;
+  width: 3px;
+  height: 18px;
+  right: 16px;
+  top: 8px;
+  background: #4be119;
   transform: rotate(45deg);
 }
 .signupWindow .signupbar button::after {
   content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
   position: absolute;
-  left: 8px;
-  top: 0px;
-  transform: rotate(135deg);
+  width: 3px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background: #4be119;
+  transform: rotate(-45deg);
 }
 .signupWindow .signupbox {
   width: 100%;
   height: 265px;
-  background: #747474;
+  background: #242424;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
 }
@@ -5216,43 +5217,45 @@ main .bg {
   padding: 3px 0px 3px 10px;
   float: right;
   margin: 7px 10px 0px 0px;
-  border: 1px solid #b9bfdc;
-  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent #3c3c3c #6c6c6c #3c3c3c;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
+  box-shadow: 0px 1px 0px 0px #3c3c3c;
+  color: #fff;
 }
 .signupWindow .signupbox div span {
   line-height: 50px;
-  color: #fff;
+  color: #c8c8c8;
   padding-left: 40px;
 }
 .signupWindow .signupbox div button {
   width: 180px;
   height: 36px;
   margin-right: 10px;
-  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-  background-color: #d5d9ef;
-  border: 1px solid #495cc5;
-  color: #4d515d;
+  background: #2d2d2d;
+  border: 1px solid #d9d9d9;
+  color: #b2b2b2;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  color: #4d515d;
-}
-.signupWindow .signupbox div button:hover, .signupWindow .signupbox div button:active, .signupWindow .signupbox div button.active {
-  background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 .signupWindow .signupbox div button:last-child {
   margin: 0px;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-  color: #fff;
-  /*for IE 9*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  .signupWindow .signupbox div button:last-child {
-    color: #4d515d;
-  }
+  color: #1c1c1c;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  border-color: #6a8e2a;
 }
 .signupWindow .signupbox div button:last-child:hover, .signupWindow .signupbox div button:last-child:active, .signupWindow .signupbox div button:last-child.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
+  color: #f4f4f4;
+  border-color: #6a8e2a;
+}
+.signupWindow .signupbox div button:hover, .signupWindow .signupbox div button:active, .signupWindow .signupbox div button.active {
+  background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+  border-color: #2b7d16;
+  color: #46d317;
 }
 
 .controlBox {
@@ -5627,12 +5630,14 @@ main .bg {
 }
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn {
   width: 176px;
-  color: #1c1c1c;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  background: linear-gradient(to right, #57b21a 0%, #349a14 100%);
+  color: #191919;
+  border-color: #aef156;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:hover, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:active, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn.active {
-  background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
-  color: #f4f4f4;
+  background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+  color: #46d317;
+  border-color: #2b7d16;
 }
 
 .norbettingCheck {
@@ -5778,10 +5783,11 @@ main .bg {
   position: fixed;
   margin: 0px 0px 0px 280px;
   bottom: 0px;
-  background: #828282;
+  background: #3a3a3a;
   border-radius: 3px 3px 0px 0px;
   z-index: 10;
   transition: 0.5s all;
+  border: solid 1px #2fac17;
 }
 .bettingbar.display {
   display: block;
@@ -5808,12 +5814,12 @@ main .bg {
   float: left;
   width: 24px;
   height: 24px;
-  background: #fff;
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
   border-radius: 3px;
   margin: 13px 0px 0px 40px;
   line-height: 28px;
   font-size: 17px;
-  color: #850004;
+  color: #161616;
   position: relative;
   text-align: center;
   /*for IE 9*/
@@ -5837,7 +5843,7 @@ main .bg {
 .bettingbar .openBtn span {
   float: left;
   margin: 18px 0px 0px 10px;
-  color: #fff;
+  color: #4fde17;
   font-size: 16px;
 }
 .bettingbar .calbtn {
@@ -5849,14 +5855,16 @@ main .bg {
   background: url("../images/calculator.png") no-repeat;
 }
 .bettingbar .bettingbox {
-  width: 100%;
+  width: calc(100% + 2px);
   height: 0px;
-  background: #ababab;
-  border: solid 2px #828282;
+  background: #2f2f2f;
+  border: solid 1px #33bc19;
+  border-top-color: #7b7b7b;
   box-sizing: border-box;
-  border-width: 0px 2px;
   overflow: hidden;
   transition: 0.5s all;
+  position: absolute;
+  left: -1px;
 }
 .bettingbar .bettingbox .bettingwindow {
   width: 100%;
@@ -5870,11 +5878,11 @@ main .bg {
   background-color: transparent;
 }
 .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #121212;
   border-radius: 10px;
 }
 .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #606360;
   border-radius: 10px;
 }
 .bettingbar .bettingbox .bettingwindow table {
@@ -6632,17 +6640,17 @@ main .bg {
   width: 180px;
   height: 36px;
   margin-top: 30px;
-  background: #2d2d2d;
-  border: 1px solid #d9d9d9;
-  color: #b2b2b2;
+  color: #191919;
+  background: linear-gradient(to right, #57b21a 0%, #349a14 100%);
+  border: solid 1px #aef156;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
 }
 .unLogin .remindBox button:hover, .unLogin .remindBox button:active, .unLogin .remindBox button.active {
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #191919;
-  border-color: #aef156;
+  background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+  color: #46d317;
+  border-color: #2b7d16;
 }
 
 .liveRemind {
@@ -7270,22 +7278,25 @@ main .bg {
 .myself .recordbar {
   width: 1150px;
   height: 35px;
-  background: #cacaca;
+  background: linear-gradient(to top, #343434 0%, #404040 100%);
   border-radius: 3px;
   margin: 0px 0px 15px 10px;
-  border: 1px solid #828282;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
 .myself .recordbar.open {
-  background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
+  border: solid 1px #30800e;
+  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+}
+.myself .recordbar.open div {
+  color: #3abc0d;
 }
 .myself .recordbar div {
   float: left;
   width: 25%;
   text-align: center;
-  color: #4d515d;
+  color: #dddddd;
   font-size: 15px;
   line-height: 37px;
   cursor: pointer;
@@ -7293,23 +7304,23 @@ main .bg {
 .myself .recordbar div .line {
   width: 1px;
   height: 15px;
-  background: #000000;
+  background: #747474;
   margin: 10px 0px 0px 0px;
   float: right;
 }
 .myself .recordbar div span {
-  color: #ff0000;
+  color: #3abc0d;
 }
 .myself .recordbar div span.remind {
   position: absolute;
   width: 20px;
   height: 18px;
-  background: #ff0000;
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
   left: 35px;
   top: 48%;
   transform: translateY(-50%);
   line-height: 20px;
-  color: #fff;
+  color: #161616;
   border-radius: 5px;
   padding-left: 2px;
 }
@@ -7318,9 +7329,8 @@ main .bg {
   width: 1150px;
   height: auto;
   margin: 0px 0px 15px 10px;
-  border: 1px solid #b7906e;
   border-top: none;
-  background: #b59273;
+  background: #1a1a1a;
   padding-top: 20px;
   border-radius: 0px 0px 3px 3px;
   box-sizing: border-box;
@@ -7939,18 +7949,18 @@ main .bg {
 .minetopfix .fixbar .timeSearch button.date {
   width: 19px;
   height: 19px;
-  background: url("../images/date_icon.png") no-repeat;
+  background: url("../images/date_icon2.png") no-repeat;
   float: left;
   margin: 13px 0px 0px 0px;
   border: none;
 }
 .minetopfix .fixbar .timeSearch button.timesearchbut {
   margin: 8px 24px 0px 0px;
-  border: solid 1px #bcbcbc;
-  background: transparent;
+  border: solid 1px #707070;
+  background: #2b2b2b;
   padding: 5px 8px;
   border-radius: 3px;
-  color: #fff;
+  color: #dddddd;
 }
 .minetopfix .fixbar .timeSearch button.timesearchbut:hover, .minetopfix .fixbar .timeSearch button.timesearchbut:active, .minetopfix .fixbar .timeSearch button.timesearchbut.active {
   background: #fff;
@@ -7962,28 +7972,51 @@ main .bg {
   font-weight: bold;
   padding: 0px 10px;
 }
-.minetopfix .fixbar .timeSearch select {
+.minetopfix .fixbar .timeSearch label {
   float: left;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.minetopfix .fixbar .timeSearch label::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 6px 5px 0px 5px;
+  border-color: #747474 transparent;
+  top: 21px;
+  right: 5px;
+}
+.minetopfix .fixbar .timeSearch label select {
   margin: 11px 0px 0px 10px;
-  border: 1px solid #4556b1;
+  border: 1px solid #707070;
   outline: none;
   border-radius: 5px;
   width: 95px;
   height: 24px;
   font-family: "my_font";
+  background: #2b2b2b;
+  color: #dddddd;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 5px;
 }
 .minetopfix .fixbar .smallTimeBtn {
   margin: 8px 12px 0px 0px;
-  border: solid 1px #bcbcbc;
-  background: transparent;
+  border: solid 1px #6a8e2a;
+  background: #212121;
   padding: 5px 8px;
   border-radius: 3px;
-  color: #fff;
+  color: #bfbfbf;
   float: right;
 }
 .minetopfix .fixbar .smallTimeBtn:hover, .minetopfix .fixbar .smallTimeBtn:active, .minetopfix .fixbar .smallTimeBtn.active {
-  background: #fff;
-  color: #000;
+  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
+  color: #33ba04;
+  border-color: #32980e;
 }
 .minetopfix .fixbar .changePassword {
   float: right;
@@ -8017,19 +8050,21 @@ main .bg {
 }
 .minetopfix .fixbar ul li {
   float: left;
+  width: 80px;
   font-size: 15px;
-  height: 42px;
-  line-height: 47px;
-  border-bottom: solid 3px transparent;
-  color: #2a2a2a;
+  height: 43px;
+  line-height: 45px;
+  color: #bfbfbf;
+  box-sizing: border-box;
+  border: solid 1px #7b7b7b;
+  background: linear-gradient(to top, #323232 0%, #434343 100%);
   cursor: pointer;
-}
-.minetopfix .fixbar ul li:first-child {
-  margin-left: 15px;
+  border-radius: 3px;
 }
 .minetopfix .fixbar ul li:hover, .minetopfix .fixbar ul li:active, .minetopfix .fixbar ul li.active {
-  color: #fff;
-  border-color: #59a936;
+  color: #33ba04;
+  border-color: #32980e;
+  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
 }
 .minetopfix .fixbar p {
   line-height: 45px;
@@ -8046,28 +8081,28 @@ main .bg {
 .minetopfix .floatName {
   width: 100%;
   height: 35px;
-  background: #404b87;
-  border-radius: 0px 0px 3px 3px;
+  background: #1f1f1f;
+  border-bottom: solid 1px #3abc0d;
 }
 .minetopfix .floatName.betting div {
   float: left;
   width: 25%;
   text-align: center;
-  color: #fff;
+  color: #37ad10;
   font-size: 15px;
   padding-top: 12px;
 }
 .minetopfix .floatName.betting div .line {
   width: 1px;
   height: 10px;
-  background: #bcbcbc;
+  background: #747474;
   margin: -5px 0px 0px 0px;
   float: right;
 }
 .minetopfix .floatName.deal div {
   float: left;
   text-align: center;
-  color: #fff;
+  color: #37ad10;
   font-size: 15px;
   padding-top: 12px;
 }
@@ -8095,7 +8130,7 @@ main .bg {
 .minetopfix .floatName.deal div .line {
   width: 1px;
   height: 10px;
-  background: #bcbcbc;
+  background: #747474;
   margin: -5px 0px 0px 0px;
   float: right;
 }
@@ -8264,9 +8299,14 @@ main .bg {
 }
 .changePasswordWindow .box div button:last-child {
   margin: 0px;
-  background: #50ad19;
+  background: linear-gradient(to right, #57b21a 0%, #349a14 100%);
   color: #191919;
   border-color: #aef156;
+}
+.changePasswordWindow .box div button:last-child:hover, .changePasswordWindow .box div button:last-child:active, .changePasswordWindow .box div button:last-child.active {
+  background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+  color: #46d317;
+  border-color: #2b7d16;
 }
 .changePasswordWindow .box div button:hover, .changePasswordWindow .box div button:active, .changePasswordWindow .box div button.active {
   background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
@@ -8278,11 +8318,14 @@ main .bg {
   display: none;
   position: absolute;
   width: 500px;
-  height: 200px;
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
   top: 200px;
   z-index: 20;
+  border: solid 1px #3aad1b;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 2px #517b09;
 }
 .cardremind.display {
   display: block;
@@ -8290,14 +8333,14 @@ main .bg {
 .cardremind .topbar {
   width: 100%;
   height: 50px;
-  background: #ababab;
+  background: #242424;
   border-radius: 3px 3px 0px 0px;
   position: relative;
-  border: solid 1px #a2a2a2;
+  border-bottom: solid 1px #3aad1b;
 }
 .cardremind .topbar span {
   font-size: 14px;
-  color: #3d3d3d;
+  color: #4be119;
   line-height: 50px;
   padding-left: 20px;
   font-weight: bold;
@@ -8307,11 +8350,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #cacaca;
-  border: solid 3px #5e5e5e;
+  background: #404040;
+  border: solid 3px #4be119;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #404040;
 }
 .cardremind .topbar button::before {
   content: "";
@@ -8320,7 +8363,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #5e5e5e;
+  background: #4be119;
   transform: rotate(45deg);
 }
 .cardremind .topbar button::after {
@@ -8330,47 +8373,39 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #5e5e5e;
+  background: #4be119;
   transform: rotate(-45deg);
 }
 .cardremind .box {
   width: 100%;
   height: 105px;
-  background: #747474;
+  background: #242424;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
-  border: solid 1px #a2a2a2;
-  border-top: none;
 }
 .cardremind .box p {
   font-size: 14px;
   padding-bottom: 20px;
-  color: #fff;
+  color: #bdbdbd;
 }
 .cardremind .box p.remind {
-  color: #ff8c00;
+  color: #ffffff;
 }
 .cardremind .box button {
   width: 160px;
   height: 36px;
-  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-  border: 1px solid #4556b1;
+  background: linear-gradient(to right, #57b21a 0%, #349a14 100%);
+  border: 1px solid #aef156;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  color: #4d515d;
+  color: #191919;
 }
 .cardremind .box button:hover, .cardremind .box button:active, .cardremind .box button.active {
-  background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
-}
-.cardremind .box button:last-child {
-  margin: 0px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-  color: #fff;
-}
-.cardremind .box button:last-child:hover, .cardremind .box button:last-child:active, .cardremind .box button:last-child.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+  color: #46d317;
+  border-color: #2b7d16;
 }
 
 .cardAdd {

@@ -2886,11 +2886,11 @@
 				.box {
 					width: 90%;
 					margin: 0px auto;
-					border: solid 1px #828282;
+					border: solid 1px #5d5d5d;
 					border-radius: 3px;
 					font-size: 0px;
 					position: relative;
-					background: #3d3d3d;
+					background: #292929;
 
 					.half {
 						display: inline-block;
@@ -2909,9 +2909,10 @@
 							position: relative;
 
 							&.dollar {
+								color: #c4c4c4;
 
 								span {
-									color: #ff8c00;
+									color: #6ad237;
 									font-size: 18px;
 									padding-left: 10px;
 								}
@@ -2920,7 +2921,7 @@
 							&.locked {
 
 								span {
-									color: #ff0000;
+									color: #ea1c1c;
 									font-size: 18px;
 									padding-left: 10px;
 								}
@@ -2947,7 +2948,7 @@
 							float: left;
 							width: 34px;
 							height: 32px;
-							background: url('../images/wallet_ic.png') no-repeat;
+							background: url('../images/wallet_ic2.png') no-repeat;
 							background-size: 200%;
 							margin: 20px 0px 20px 40px;
 
@@ -2964,7 +2965,7 @@
 						transform: translateY(-50%);
 						width: 1px;
 						height: 25px;
-						background: #ababab;
+						background: #5d5d5d;
 					}
 				}
 
@@ -3130,6 +3131,7 @@
 					float: right;
 					padding-bottom: 4px;
 					font-size: 13px;
+					color: #ffffff;
 				}
 			}
 
@@ -3139,100 +3141,61 @@
 					width: 25%;
 					height: 145px;
 					border-radius: 5px;
-					background: #747474;
+					background: #242424;
 					color: #fff;
 					font-size: 17px;
 					margin: 20px 30px;
 					transition: 0.25s all;
 					position: relative;
+					border: solid 1px #287c12;
 
 					&:hover,&:active,&.active {
-						background: #cacaca;
-						box-shadow: 0px 0px 5px 0px #fff;
-						color: #000;
+						background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+						color: #232323;
+						border-color: #7af537;
 
 						div {
-							background-position-x: 100%;
+							background-position-y: 100%;
 						}
 					}
 
 					&.c1,&.c2,&.c3 {
+						background: linear-gradient(135deg,#3d3d3d 0%,#242424 100%);
 
 						&:hover {
-							color: #fff;
-							box-shadow: none;
+							background: linear-gradient(-45deg,#3d3d3d 0%,#242424 100%);
+							color: #fefefe;
 						}
 
 						&:active,&.active {
-							color: #fff;
-							box-shadow: none;
+							background: linear-gradient(-45deg,#3d3d3d 0%,#242424 100%);
+							color: #fefefe;
+							box-shadow: 0px 0px 10px 2px #49701f;
 
 							&::before {
 								content: "";
 								position: absolute;
 								width: 30px;
 								height: 30px;
-								border: solid 5px #fff;
+								border: solid 2px #34b00e;
 								border-radius: 30px;
+								background: #343434;
+								box-shadow: 0px 0px 0px 3px #343434,0px 0px 10px 2px #49701f;
 								top: -8px;
 								right: -8px;
+								
 							}
 
 							&::after {
 								content: "";
 								position: absolute;
 								width: 8px;
-								height: 16px;
-								border: solid 5px #fff;
-								border-width: 0px 5px 5px 0px;
+								height: 14px;
+								border: solid 5px #47e916;
+								border-width: 0px 4px 4px 0px;
 								transform: rotate(45deg);
-								top: 0px;
-								right: 5px;
-							}
-						}
-					}
-
-					&.c1 {
-						background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
-						
-						&:hover {
-							background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
-						}
-
-						&:active,&.active {
-
-							&::before {
-								background: #6589c6;
-							}
-						}
-					}
-
-					&.c2 {
-						background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
-						
-						&:hover {
-							background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
-						}
-
-						&:active,&.active {
-
-							&::before {
-								background: #31a8b1;
-							}
-						}
-					}
-
-					&.c3 {
-						background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
-						
-						&:hover {
-							background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
-						}
-
-						&:active,&.active {
-
-							&::before {
-								background: #d7767a;
+								top: -2px;
+								right: 3px;
 							}
 						}
 					}
@@ -3241,8 +3204,8 @@
 						width: 42px;
 						height: 29px;
 						margin: 0px auto 10px;
-						background: url('../images/add_card.png') no-repeat;
-						background-size: 200%;
+						background: url('../images/add_card2.png') no-repeat;
+						background-size: 100%;
 					}
 
 					.box {
@@ -3250,11 +3213,11 @@
 						.bankIc {
 							width: 40px;
 							height: 40px;
-							background: url('../images/bank_ic.png') no-repeat;
+							background: url('../images/bank_ic2.png') no-repeat;
 							background-size: 300%;
 							position: absolute;
-							top: 24%;
-							left: 10%;
+							top: 22%;
+							left: 13%;
 
 							&.c1 {
 								background-position-x: 0%;
@@ -3284,23 +3247,23 @@
 
 				.remind {
 					float: right;
-					color: #fff;
+					color: #bfbfbf;
 					margin: 0px 20px 20px 0px;
 					font-size: 14px;
 					position: relative;
 
 					&::before {
 						content: "";
-						width: 15px;
-						height: 15px;
+						width: 13px;
+						height: 13px;
 						position: absolute;
-						background: url('../images/infor.png') no-repeat;
-						top: -2px;
+						background: url('../images/infor2.png') no-repeat;
+						top: 0px;
 						left: -18px;
 					}
 
 					a {
-						color: #ff8c00;
+						color: #3edb15;
 					}
 				}
 			}
@@ -3371,7 +3334,6 @@
 	//交易紀錄
 	&.dealRecord {
 		width: 1150px;
-		background: #505050;
 		display: none;
 
 		&.display {
@@ -3379,10 +3341,11 @@
 		}
 
 		tr {
-			border-bottom: solid 1px #ababab;
+			border-bottom: solid 1px #747474;
+			background: linear-gradient(to top,#343434 0%,#404040 100%);
 
 			&.fail {
-				background: #3d3d3d;
+				background: linear-gradient(to top,#2a2a2a 0%,#343434 100%);
 			}
 
 			&:last-child {
@@ -3390,9 +3353,9 @@
 			}
 			
 			td {
-				border-right: solid 1px #ababab;
+				border-right: solid 1px #747474;
 				padding: 10px;
-				color: #fff;
+				color: #dddddd;
 				font-size: 14px;
 
 				&:nth-of-type(1) {
@@ -3429,7 +3392,7 @@
 				}
 
 				&.depositMoney {
-					color: #ff8c00;
+					color: #43d710;
 				}
 
 				.time {
@@ -3463,14 +3426,16 @@
 		}
 		
 		tr {
-			border-bottom: solid 1px #ababab;
+			border-bottom: solid 1px #676767;
 
 			&.totalInfo {
-				background: #404b87;
+				background: #212121;
 			}
 
 			th {
-				border-bottom: solid 1px #828282;
+				border-bottom: solid 1px #2d910e;
+				background: #3f3f3f;
+				color: #dddddd;
 
 				p {
 					float: left;
@@ -3480,7 +3445,7 @@
 					float: left;
 					width: 1px;
 					height: 14px;
-					background: #bcbcbc;
+					background: #747474;
 					margin: 0px 10px;
 				}
 
@@ -3499,7 +3464,7 @@
 
 			td {
 				padding: 10px;
-				color: #fff;
+				color: #bfbfbf;
 				font-size: 14px;
 				border-right: solid 1px #ababab;
 
@@ -3538,11 +3503,11 @@
 				}
 
 				.odd {
-					color: #ff8c00;
+					color: #50cd1b;
 				}
 
 				.vs {
-					color: #90b9ff;
+					color: #9c9b9b;
 					font-size: 12px;
 					padding: 0px 8px;
 				}
@@ -3553,13 +3518,16 @@
 	&.totalInfo {
 		width: 1070px;
 		margin: 0px auto;
-		background: #f3b378;
+		background: linear-gradient(to top,#1a1a1a 0%,#2a2a2a 100%);
 		
 		tr {
+			border: solid 1px #30800e;
+			border-width: 1px 0px;
 
 			td {
 				padding: 10px 0px;
 				font-size: 15px;
+				color: #3abc0d;
 
 				&:nth-of-type(1),&:nth-of-type(3),&:nth-of-type(5) {
 					width: 10%;
@@ -3582,7 +3550,7 @@
 					float: right;
 					width: 1px;
 					height: 16px;
-					background: #000000;
+					background: #747474;
 				}
 			}
 		}
@@ -4348,7 +4316,7 @@
 
 			td {
 				padding: 15px;
-				color: #fff;
+				color: #ededed;
 
 				p {
 					font-size: 14px;
@@ -4365,19 +4333,19 @@
 						width: 180px;
 						height: 36px;
 						box-sizing: border-box;
-						border: solid 1px #ababab;
+						border: solid 1px #858585;
 						border-radius: 3px;
 						color: #fff;
 						padding-left: 10px;
-						background: #505050;
+						background: linear-gradient(to top,#333333 0%,#272727 100%);
 	
 						&::placeholder {
-							color: #ababab;
+							color: #999999;
 						}
 					}
 
 					.remind {
-						color: #fff;
+						color: #bfbfbf;
 						margin-left: 30px;
 						font-size: 14px;
 						position: relative;
@@ -4397,14 +4365,16 @@
 						width: 180px;
 						height: 36px;
 						font-weight: bold;
-						background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-						color: #fff;
+						background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+						color: #232323;
 						border-radius: 3px;
-						border: solid 1px #3c7424;
+						border: solid 1px #7af537;
 						margin-top: 15px;
 	
 						&:hover,&:active,&.active {
-							background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+							color: #ffffff;
+							border-color: #87d620;
+							background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
 						}
 					}
 				}
@@ -4414,7 +4384,8 @@
 					width: 31%;
 					height: auto;
 					margin-right: 12px;
-					border: solid 1px #ababab;
+					background: #292929;
+					border: solid 1px #5d5d5d;
 					border-radius: 3px;
 					box-sizing: border-box;
 					overflow: hidden;
@@ -4424,25 +4395,25 @@
 					}
 
 					.title {
-						background: #828282;
 						padding: 10px 20px;
+						border-bottom: solid 1px #5d5d5d;
 					}
 
 					.content {
 						
 						p {
 							width: 100%;
-							font-size: 24px;
-							font-weight: bold;
+							font-size: 22px;
 							color: #fff;
 							text-align: center;
-							padding: 20px 0px;
+							padding: 20px 0px 15px;
 						}
 
 						span {
 							display: block;
 							font-size: 14px;
 							padding-bottom: 15px;
+							color: #bfbfbf;
 						}
 					}
 				}
