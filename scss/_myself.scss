@@ -1266,14 +1266,14 @@
                     border-color: #aef156;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                        background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
                         color: #46d317;
                         border-color: #2b7d16;
                     }
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                    background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
                     border-color: #2b7d16;
                     color: #46d317;
                 }
@@ -1382,7 +1382,7 @@
             font-weight: bold;
             color: #191919;
             &:hover,&:active,&.active {
-                background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
                 color: #46d317;
                 border-color: #2b7d16;
             }

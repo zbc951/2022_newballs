@@ -915,14 +915,14 @@
                     border-color: #6a8e2a;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to top, #4daa03 0%, #24700c 100%);
+                        background: linear-gradient(to right, #4daa03 0%, #24700c 100%);
                         color: #f4f4f4;
                         border-color: #6a8e2a;
                     }
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                    background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
                     border-color: #2b7d16;
                     color: #46d317;
                 }
@@ -1365,7 +1365,7 @@
                         color: #191919;
                         border-color: #aef156;
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                            background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
                             color: #46d317;
                             border-color: #2b7d16;
                         }
@@ -1839,7 +1839,7 @@
                         background: #4fad18;
                         border-color: #aef156;
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                            background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
                             color: #46d317;
                             border-color: #2b7d16;
                         }
@@ -2156,6 +2156,10 @@
     top: 10%;
     transform: translateX(-50%);
     z-index: 20;
+    border: solid 1px #3e8a13;
+    border-radius: 3px;
+    border-width: 1px 2px;
+    box-shadow: 0px 0px 10px 2px #3c5711;
 
     &.display {
         display: block;
@@ -2165,24 +2169,25 @@
         width: 100%;
         height: 40px;
         border-radius: 3px 3px 0px 0px;
-        background: #ababab;
-        color: #434343;
+        background: #242424;
+        color: #43dc16;
         position: relative;
         text-align: center;
         line-height: 42px;
         font-size: 14px;
         font-weight: bold;
+        border-bottom: solid 1px #3aad1b;
 
         button {
             position: absolute;
             width: 40px;
             height: 40px;
             border-radius: 40px;
-            background: #cacaca;
-            border: solid 3px #676767;
+            background: #353535;
+            border: solid 3px #4be119;
             right: -50px;
             top: -50px;
-            box-shadow: 0px 0px 0px 5px #cacaca;
+            box-shadow: 0px 0px 0px 5px #353535;
 
             &::before {
                 content: "";
@@ -2191,7 +2196,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #676767;
+                background: #4be119;
                 transform: rotate(45deg);
             }
 
@@ -2202,7 +2207,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #676767;
+                background: #4be119;
                 transform: rotate(-45deg);
             }
         }
@@ -2211,7 +2216,7 @@
     .calbox {
         width: 100%;
         height: 430px;
-        background: #747474;
+        background: #303030 ;
         box-sizing: border-box;
         border-radius: 0px 0px 3px 3px;
         position: relative;
@@ -2220,7 +2225,7 @@
 
         .top {
             padding: 10px 0px;
-            color: #fff;
+            color: #eeeeee;
 
             .inputbox {
 
@@ -2228,22 +2233,27 @@
                     width: 80px;
                     height: 24px;
                     padding-left: 7px;
-                    border: solid 1px #9ba1c5;
+                    border: solid 1px #464646;
+                    border-top: none;
+                    box-shadow: 0px -1px 0px 0px #737373;
                     margin: 0px 10px 0px 5px;
                     font-size: 15px;
                     font-weight: bold;
-                    color: #2539a0;
+                    color: #ffffff;
+                    background: linear-gradient(to bottom,#0f0f0f 21%,#303030 100%);
                 }
 
                 button {
                     width: 60px;
                     height: 28px;
-                    color: #fff;
-                    background: #556de7;
+                    color: #ababab;
+                    background: #212121;
                     font-size: 15px;
                     border-radius: 3px;
+                    border: solid 1px #808080;
                     &:hover,&:active,&.active {
-                        background: #2539a0;
+                        background: #808080;
+                        color: #000000;
                     }
                 }
             }
@@ -2252,7 +2262,7 @@
         .mid {
             width: 100%;
             height: auto;
-            border: solid 1px #ababab;
+            border: solid 1px #5b5b5b;
             border-radius: 3px;
             overflow-x: hidden;
             overflow-y: auto;
@@ -2261,24 +2271,29 @@
             table {
                 width: 100%;
                 height: auto;
-                background: #5a5a5a;
+                background: #252525;
 
                 tr {
+                    border-bottom: solid 1px #5b5b5b;
+
+                    &:last-child {
+                        border: none;
+                    }
 
                     &:nth-child(odd) {
-                        background: #909090;
+                        background: #191919;
                     }
                     
                     th {
                         font-size: 14px;
                         padding: 5px 0px;
-                        color: #fff;
+                        color: #bfbfbf;
                     }
 
                     td {
                         padding: 5px 0px;
                         text-align: center;
-                        color: #fff;
+                        color: #ababab;
                         vertical-align: middle;
 
                         &:nth-of-type(1),&:nth-of-type(4) {
@@ -2289,9 +2304,12 @@
                             width: 50px;
                             height: 18px;
                             padding-left: 5px;
-                            border: solid 1px #ababab;
+                            background: linear-gradient(to bottom,#1f1f1f 0%,#414141 100%);
+                            border: solid 1px #323232;
+                            border-top: none;
+                            box-shadow: 0px -1px 0px 0px #656565 inset;
                             border-radius: 3px;
-                            
+                            color: #ababab;
                         }
 
                         .selectbox {
@@ -2327,20 +2345,21 @@
                                 height: 0px;
                                 border-style: solid;
                                 border-width: 5px 3px 0px 3px;
-                                border-color: #687abc transparent transparent transparent;
+                                border-color: #d2d2d2 transparent transparent transparent;
                                 top: 9px;
-                                left: 92px;
+                                left: 94px;
                                 pointer-events: none;
                             }
 
                             select {
-                                color: #687abc;
+                                color: #c8c8c8;
                                 appearance: none;
                                 -moz-appearance: none;
                                 -webkit-appearance: none;
                                 width: 55px;
                                 height: 22px;
-                                border: solid 1px #9ba1c5;
+                                border: solid 1px #858585;
+                                background: #383838;
                                 border-radius: 3px;
                                 padding-left: 5px;
                                 line-height: 22px;
@@ -2364,13 +2383,16 @@
                             }
 
                             input {
-                                background: #d7d7d7;
+                                background: linear-gradient(to bottom,#1f1f1f 0%,#414141 100%);
+                                border: solid 1px #323232;
+                                border-top: none;
+                                box-shadow: 0px -1px 0px 0px #656565 inset;
                                 border-radius: 3px;
                                 width: 35px;
                                 height: 20px;
                                 border: none;
                                 text-align: center;
-                                color: #585858;
+                                color: #ababab;
                                 font-weight: bold;
                                 font-size: 15px;
                             }
@@ -2389,7 +2411,7 @@
             width: 100%;
             height: auto;
             text-align: center;
-            color: #fff;
+            color: #eeeeee;
 
             .inputbox {
                 margin: 10px 0px;
@@ -2399,10 +2421,12 @@
                     width: 100px;
                     height: 28px;
                     padding-left: 10px;
-                    border: solid 1px #ababab;
+                    border: solid 1px #464646;
+                    background: linear-gradient(to bottom,#0f0f0f 21%,#303030 100%);
+                    box-shadow: 0px -1px 0px 0px #737373 inset;
                     border-radius: 3px;
                     margin-left: 5px;
-                    color: #e60012;
+                    color: #eeeeee;
                     font-size: 16px;
                     font-weight: bold;
                 }
@@ -2410,14 +2434,16 @@
                 button {
                     width: 260px;
                     height: 40px;
-                    background: linear-gradient(to left,#9ca8e4,#495cc5);
-                    background-color: #495cc5;
+                    background: #51ae19;
                     border-radius: 3px;
-                    color: #fff;
+                    color: #191919;
                     font-size: 16px;
+                    border: solid 1px #aef156;
                     margin-left: 50px;
                     &:hover,&:active,&.active {
-                        background: #2539a0;
+                        background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
+                        color: #46d317;
+                        border-color: #2b7d16;
                     }
                 }
             }
@@ -2426,18 +2452,19 @@
                 margin-top: 10px;
                 width: calc(100% - 20px);
                 border-radius: 3px;
-                background: #5a5a5a;
+                background: #252525;
                 text-align: left;
-                border: solid 1px #ababab;
+                border: solid 1px #5b5b5b;
                 padding: 10px;
 
                 p {
                     font-size: 14px;
                     line-height: 20px;
+                    color: #ababab;
 
                     &.retitle {
                         text-align: center;
-                        border-bottom: solid 1px #e0e1e3;
+                        border-bottom: solid 1px #5b5b5b;
                         padding-bottom: 7px;
                     }
 
@@ -2546,7 +2573,7 @@
             font-size: 16px;
             font-weight: bold;
             &:hover,&:active,&.active {
-                background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
                 color: #46d317;
                 border-color: #2b7d16;
             }
