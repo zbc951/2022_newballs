@@ -152,9 +152,9 @@
 
         //編輯中
         &.edit {
-            background: #313131;
+            background: linear-gradient(to top,#404040 0%,#4e4e4e 100%);
 
-            input {
+            label {
                 display: block;
             }
         }
@@ -185,12 +185,37 @@
             font-size: 15px;
         }
 
-        input {
+        label {
             display: none;
+            width: 16px;
+            height: 16px;
             float: left;
-            margin: 15px 0px 0px 20px;
+            margin: 13px 0px 0px 20px;
             position: relative;
             z-index: 1;
+            background: #393939;
+            border-radius: 30px;
+            box-shadow: 0px 2px 2px 0px #1a1a1a inset;
+            border-bottom: solid 1px #686868;
+
+            &.active {
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+                    border-radius: 30px;
+                }
+            }
+
+            input {
+                display: none;
+            }
         }
     }
     .helpbox {
@@ -746,11 +771,11 @@
         .editbut,.cancelbut,.delbut {
             display: none;
             float: right;
-            padding: 3px 5px;
-            color: #fff;
-            background: #505050;
-            border: solid 1px #fff;
-            border-radius: 5px;
+            padding: 4px 6px;
+            color: #dddddd;
+            background: #2b2b2b;
+            border: solid 1px #707070;
+            border-radius: 3px;
             font-size: 15px;
             margin: 8px 10px 0px 0px;
 

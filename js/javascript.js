@@ -726,6 +726,9 @@ $(function(){
             $(this).addClass('lside');
         };
     });
+    $('.helpbar label').click(function(){
+        $(this).toggleClass('active');
+    })
 });
 
 //聯繫我們
