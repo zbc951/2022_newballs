@@ -1530,7 +1530,7 @@
 }
 
 //串關投注
-.bettingbar {
+.bettingbar { 
     display: none;
     width: 580px;
     height: 50px;
@@ -1614,7 +1614,7 @@
         position: absolute;
         right: 100px;
         top: 10px;
-        background: url('../images/calculator.png') no-repeat;
+        background: url('../images/calculator2.png') no-repeat;
     }
 
     //投注內容
@@ -1660,13 +1660,12 @@
 
                 tr {
                     text-align: center;
-                    border-bottom: solid 1px #ababab;
 
                     th {
-                        color: #fff;
+                        color: #c3c3c3;
                         font-size: 12px;
                         padding: 8px 10px 9px;
-                        background: #3d3d3d;
+                        background: #1e1e1e;
                         position: sticky;
                         top: 0px;
                         z-index: 2;
@@ -1675,7 +1674,8 @@
 
                     td {
                         vertical-align: middle;
-                        font-size: 14px; 
+                        font-size: 14px;
+                        color: #bfbfbf;
 
                         &:nth-of-type(1) {
                             width: 10%;
@@ -1696,20 +1696,20 @@
                         }
 
                         .pitcher {
-                            color: #233698;
+                            color: #e9e9e9;
                         }
 
                         .odds {
-                            color: #ff0000;
+                            color: #33ba04;
                         }
 
                         p {
-                            color: #000;
+                            color: #e9e9e9;
                             font-size: 12px;
                             line-height: 20px;
 
                             &.leagueName {
-                                color: #4d4d4d;
+                                color: #c3c3c3;
                             }
 
                             .odds {
@@ -1717,7 +1717,7 @@
                             }
 
                             &.vs {
-                                color: #354ecf;
+                                color: #c3c3c3;
                             }
                         }
                     }
@@ -1729,13 +1729,13 @@
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #828282;
-            color: #fff;
+            background: #171717;
+            color: #e7e7e7;
 
             div {
                 width: 180px;
                 height: 100%;
-                border-right: solid 1px #c7c7c7;
+                border-right: solid 1px #535353;
                 float: left;
                 line-height: 45px;
                 font-size: 14px;
@@ -1747,7 +1747,7 @@
                 }
 
                 .remind {
-                    color: #ffd400;
+                    color: #30aa06;
                     padding-left: 5px;
                 }
             }
@@ -1757,7 +1757,7 @@
         .bettingend {
             width: 100%;
             height: 197px;
-            background: #cccccc;
+            background: #3a3a3a;
 
             p {
                 width: 100%;
@@ -1765,6 +1765,7 @@
                 font-size: 14px;
                 font-weight: bold;
                 padding: 17px;
+                color: #e7e7e7;
             }
 
             .endbox {
@@ -1776,19 +1777,23 @@
                     width: 150px;
                     height: 31px;
                     margin: 0px 5px 10px 0px;
+                    background: linear-gradient(to bottom,#0f0f0f 21%,#303030 100%);
                     border-radius: 3px;
-                    border: solid 1px #ababab;
+                    border: solid 1px #4f4f4f;
+                    border-top: none;
+                    box-shadow: 0px -1px 0px 0px #797979 inset;
                     font-size: 16px;
                     padding-left: 5px;
+                    color: #ffffff;
 
                     &::placeholder {
                         font-weight: bold;
-                        color: #c7c7c7;
+                        color: #7d7d7d;
                         font-size: 15px;
                     }
 
                     &:last-child {
-                        color: #ff0000;
+                        color: #ff1b1b;
                     }
                 }
 
@@ -1799,12 +1804,14 @@
                         float: left;
                         margin: 12px 0px 0px 15px;
                         font-size: 14px;
+                        color: #e7e7e7;
                     }
 
                     .dollar {
                         position: absolute;
                         top: 10px;
                         right: 20px;
+                        color: #e7e7e7;
                     }
                 }
 
@@ -1813,32 +1820,28 @@
                     height: 35px;
                     float: left;
                     margin: 0px 3px 10px 3px;
-                    border: solid 1px #eb0004;
+                    border: solid 1px #6a8e2a;
                     border-radius: 5px;
                     font-size: 17px;
-                    color: #4d515d;
+                    color: #b0b0b0;
                     font-weight: bold;
                     line-height: 35px;
-                    background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
-                    background-color: #efd5d5;
+                    background: #212121;
 
-                    &:hover {
-                        background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
-                    }
-
-                    &:active,&.active {
-                        background: linear-gradient(to top, #ec0004 0%, #850004 100%);
-                        background-color: #850004;
-                        color: #fff;
+                    &:hover,&:active,&.active {
+                        background: #4fde17;
+                        color: #292929;
                     }
 
                     &.cur {
                         width: 176px;
-                        color: #fff;
-                        background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
-                        background-color: #850004;
+                        color: #191919;
+                        background: #4fad18;
+                        border-color: #aef156;
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                            background: linear-gradient(to top, #2d2d2d 0%, #1a1a1a 99%);
+                            color: #46d317;
+                            border-color: #2b7d16;
                         }
                     }
                 }
@@ -1862,6 +1865,9 @@
     top: 150px;
     background: #828282;
     border-radius: 3px 3px 0px 0px;
+    border: solid 1px #2fac17;
+    box-shadow: -4px -2px 10px 0px #3f8a1385,4px -2px 10px 0px #3f8a1385;
+    background: #242424;
 
     //總投注額
     .num {
@@ -1869,12 +1875,12 @@
         float: left;
         width: 24px;
         height: 24px;
-        background: #fff;
+        background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
         border-radius: 5px;
         margin: 13px 0px 0px 15px;
         line-height: 28px;
         font-size: 17px;
-        color: #850004;
+        color: #161616;
         position: relative;
         text-align: center;
 
@@ -1890,7 +1896,7 @@
     }
 
     .barword {
-        color: #fff;
+        color: #4fde17;
         float: left;
         margin: 18px 0px 0px 10px;
     }
@@ -1900,11 +1906,11 @@
         width: 40px;
         height: 40px;
         border-radius: 40px;
-        background: #cacaca;
-        border: solid 3px #676767;
+        background: #404040;
+        border: solid 3px #4be119;
         right: -50px;
         top: -50px;
-        box-shadow: 0px 0px 0px 5px #cacaca;
+        box-shadow: 0px 0px 0px 5px #404040;
 
         &::before {
             content: "";
@@ -1913,7 +1919,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #676767;
+            background: #4be119;
             transform: rotate(45deg);
         }
 
@@ -1924,22 +1930,25 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #676767;
+            background: #4be119;
             transform: rotate(-45deg);
         }
     }
 
     //投注內容
     .bettingbox {
-        width: 576px;
+        width: 580px;
         height: 430px;
         margin-top: 50px;
-        background: #ababab;
-        border: solid 2px #828282;
-        border-top-width: 0px;
+        background: #2f2f2f;
+        border: solid 1px #2fac17;
+        border-top-color: #7b7b7b;
         border-radius: 0px 0px 3px 3px;
+        box-shadow: 4px 2px 10px 0px #3f8a1385,-4px 2px 10px 0px #3f8a1385;
         overflow: hidden;
         cursor: default;
+        position: absolute;
+        left: -1px;
 
         //table視窗
         .bettingwindow {
@@ -1953,14 +1962,14 @@
                 width: 5px;
                 background-color: transparent;
             }
-
+        
             &::-webkit-scrollbar-track {
-                background: #f1f1f1;
+                background: #121212;
                 border-radius: 10px;
             }
-
+        
             &::-webkit-scrollbar-thumb {
-                background: #b9becf;
+                background: #606360;
                 border-radius: 10px;
             }
             
@@ -1971,13 +1980,12 @@
 
                 tr {
                     text-align: center;
-                    border-bottom: solid 1px #ababab;
 
                     th {
-                        color: #fff;
+                        color: #c3c3c3;
                         font-size: 12px;
                         padding: 8px 10px 9px;
-                        background: #3d3d3d;
+                        background: #1e1e1e;
                         position: sticky;
                         top: 0px;
                         z-index: 2;
@@ -1986,7 +1994,8 @@
 
                     td {
                         vertical-align: middle;
-                        font-size: 14px; 
+                        font-size: 14px;
+                        color: #bfbfbf;
 
                         &:nth-of-type(1) {
                             width: 10%;
@@ -2001,26 +2010,26 @@
                         }
 
                         &.tLeft {
-                            border-left: solid 1px #8a8a8a;
+                            border-left: solid 1px #7b7b7b;
                             text-align: left;
                             padding: 2px 8px;
                         }
 
                         .pitcher {
-                            color: #233698;
+                            color: #bfbfbf;
                         }
 
                         .odds {
-                            color: #ff0000;
+                            color: #33ba04;
                         }
 
                         p {
-                            color: #000;
+                            color: #e9e9e9;
                             font-size: 12px;
                             line-height: 20px;
 
                             &.leagueName {
-                                color: #4d4d4d;
+                                color: #c3c3c3;
                             }
 
                             .odds {
@@ -2028,7 +2037,7 @@
                             }
 
                             &.vs {
-                                color: #354ecf;
+                                color: #c3c3c3;
                             }
                         }
                     }
@@ -2040,13 +2049,13 @@
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #828282;
-            color: #fff;
+            background: #171717;
+            color: #e7e7e7;
 
             div {
                 width: 180px;
                 height: 100%;
-                border-right: solid 1px #c7c7c7;
+                border-right: solid 1px #535353;
                 float: left;
                 line-height: 45px;
                 font-size: 14px;
@@ -2058,7 +2067,7 @@
                 }
 
                 .remind {
-                    color: #ffd400;
+                    color: #33ba04;
                     padding-left: 5px;
                 }
             }
@@ -2067,7 +2076,7 @@
         .bettingend {
             width: 100%;
             height: 200px;
-            background: #cccccc;
+            background: #3a3a3a;
 
             .endbox {
                 width: 287px;
@@ -2083,7 +2092,7 @@
                 .remind {
                     margin: 0px 0px 0px 40px;
                     line-height: 75px;
-                    color: #f31d1d;
+                    color: #43c31d;
                     font-size: 14px;
                     position: relative;
                     &::before {
@@ -2091,7 +2100,7 @@
                         position: absolute;
                         width: 20px;
                         height: 20px;
-                        background: #f31d1d;
+                        background: #3dab1e;
                         border-radius: 12px;
                         left: -25px;
                         top: 26px;
@@ -2101,7 +2110,7 @@
                         position: absolute;
                         width: 4px;
                         height: 8px;
-                        border: solid 3px #fff;
+                        border: solid 3px #22351c;
                         border-width: 0px 2px 2px 0px;
                         transform: rotate(45deg);
                         top: 30px;
@@ -2113,16 +2122,17 @@
                     font-size: 13px;
                     line-height: 24px;
                     margin-left: 10px;
+                    color: #bfbfbf;
 
                     span {
                         padding-left: 5px;
 
                         &.listCode {
-                            color: #354ecf;
+                            color: #7e94ff;
                         }
 
                         &.way {
-                            color: #f31d1d;
+                            color: #43c31d;
                         }
                     }
                 }
