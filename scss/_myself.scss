@@ -116,39 +116,43 @@
     .helpbar {
         width: 1150px;
         height: 45px;
-        background: #cacaca;
+        background: linear-gradient(to top,#343434 0%,#404040 100%);
         border-radius: 3px;
         position: relative;
         z-index: 1;
         margin: 0px 0px 15px 10px;
         cursor: pointer;
+        box-sizing: border-box;
+        border: solid 1px transparent;
 
         &::before {
             content: "";
             position: absolute;
             width: 6px;
-            height: 8px;
-            background: url('../images/arrow_b.png') no-repeat;
+            height: 10px;
+            background: url('../images/arrow_w.png') no-repeat;
             right: 20px;
             top: 18px;
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
         }
 
         &.open {
-            background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
+            background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+            border: solid 1px #30800e;
+            box-shadow: 0px 0px 10px 2px #2c561d;
 
             &::before {
                 width: 6px;
-                height: 8px;
-                background: url('../images/arrow_b.png') no-repeat;
+                height: 10px;
+                background: url('../images/arrow_w.png') no-repeat;
                 background-size: 100%;
-                transform: rotate(-90deg);
+                transform: rotate(90deg);
             }
         }
 
         //編輯中
         &.edit {
-            background: #ffffff;
+            background: #313131;
 
             input {
                 display: block;
@@ -169,7 +173,7 @@
             line-height: 45px;
             padding-left: 15px;
             font-size: 15px;
-            color: #4d515d;
+            color: #ffffff;
             font-weight: bold;
         }
 
@@ -177,7 +181,7 @@
             float: right;
             line-height: 45px;
             padding-right: 50px;
-            color: #4d515d;
+            color: #ffffff;
             font-size: 15px;
         }
 
@@ -194,11 +198,11 @@
         width: 1150px;
         height: auto;
         margin: -20px 0px 15px 10px;
-        background: #fff;
+        background: #212121;
         padding-top: 20px;
         border-radius: 0px 0px 3px 3px;
-        color: #4d515d;
         text-align: left;
+        border-bottom: solid 1px #cecece;
 
         &.display {
             display: block;
@@ -219,7 +223,7 @@
             width: 97%;
             font-size: 14px;
             line-height: 24px;
-            color: #4d515d;
+            color: #d4d4d4;
             padding: 0px 15px 15px 15px;
         }
 
@@ -284,7 +288,7 @@
         width: 1150px;
         height: 100%;
         margin: -15px 0px 0px 10px;
-        background: #fff;
+        background: #2c2c2c;
         border-radius: 0px 0px 3px 3px;
         overflow: hidden;
 
@@ -292,8 +296,8 @@
         .chatwindow {
             width: 100%;
             height: 75%;
-            background: #f1f1f1;
-            border-bottom: solid 1px #ababab;
+            background: #242424;
+            border-bottom: solid 1px #5d5d5d;
             overflow-x: hidden;
             overflow-y: auto;
             scrollbar-width: thin;
@@ -302,12 +306,14 @@
                 width: 5px;
                 background-color: transparent;
             }
+        
             &::-webkit-scrollbar-track {
-                background: #f1f1f1;
+                background: #121212;
                 border-radius: 10px;
             }
+        
             &::-webkit-scrollbar-thumb {
-                background: #b9becf;
+                background: #606360;
                 border-radius: 10px;
             }
 
@@ -316,7 +322,7 @@
                 width: 100%;
                 height: 50px;
                 line-height: 50px;
-                color: #4556b1;
+                color: #32980e;
                 float: left;
             }
             
@@ -349,29 +355,31 @@
                 
                 .gmchat {
                     float: left;
-                    border: 1px solid #304880;
-                    box-shadow: 0 0 8px 1px #f1f1f1;
+                    border: 1px solid #636363;
+                    background: #1c1c1c;
                     border-radius: 0px 8px 8px 8px;
                     font-size: 14px;
                     padding: 12px;
                     text-align: left;
+                    color: #c2c2c2;
 
                     a {
                         display: block;
                         width: 60%;
                         padding: 5px 10px 4px;
+                        color: #34ac0d;
                         &:hover,&:active,&.active {
-                            background: #4556b1;
-                            color: #fff;
+                            background: #40dc15;
+                            color: #1c1c1c;
                         }
                     }
                 }
 
                 .userchat {
                     float: right;
-                    background: #4556b1;
-                    color: #fff;
-                    box-shadow: 0 0 8px 1px #f1f1f1;
+                    background: #1c1c1c;
+                    color: #c2c2c2;
+                    border: solid 1px #636363;
                     border-radius: 8px 0px 8px 8px;
                     font-size: 14px;
                     padding: 12px;
@@ -392,12 +400,14 @@
                 width: 5px;
                 background-color: transparent;
             }
+        
             &::-webkit-scrollbar-track {
-                background: #f1f1f1;
+                background: #121212;
                 border-radius: 10px;
             }
+        
             &::-webkit-scrollbar-thumb {
-                background: #b9becf;
+                background: #606360;
                 border-radius: 10px;
             }
 
@@ -410,7 +420,7 @@
                 button {
                     width: 16px;
                     height: 16px;
-                    background: url('../images/windowface.png') no-repeat;
+                    background: url('../images/windowface2.png') no-repeat;
                     background-size: 200%;
                     float: left;
                     margin-right: 10px;
@@ -430,6 +440,8 @@
                 resize: none;
                 box-sizing: border-box;
                 font-size: 15px;
+                background: transparent;
+                color: #c2c2c2;
 
                 &::placeholder {
                     color: #8f8f8f;
@@ -442,12 +454,15 @@
                 width: 90px;
                 height: 36px;
                 margin: 0px 20px 20px 0px;
-                background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+                background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
                 border-radius: 5px;
-                color: #fff;
+                color: #232323;
+                border: solid 1px #7af537;
                 font-size: 15px;
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
+                    border-color: #87d620;
+                    color: #ffffff;
+                    background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
                 }
             }
         }
@@ -813,6 +828,7 @@
 
         //線段
         .line {
+            display: none;
             width: 1px;
             height: 25px;
             background: #313131;
@@ -1266,14 +1282,14 @@
                     border-color: #aef156;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
+                        background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
                         color: #46d317;
                         border-color: #2b7d16;
                     }
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
+                    background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
                     border-color: #2b7d16;
                     color: #46d317;
                 }
@@ -1382,7 +1398,7 @@
             font-weight: bold;
             color: #191919;
             &:hover,&:active,&.active {
-                background: linear-gradient(to right, #2d2d2d 0%, #1a1a1a 99%);
+                background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
                 color: #46d317;
                 border-color: #2b7d16;
             }
