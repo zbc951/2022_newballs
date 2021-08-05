@@ -14,12 +14,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #121212;
+        background: #131313;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #606360;
+        background: #626262;
         border-radius: 10px;
     }
 
@@ -222,7 +222,7 @@
                 height: 0px;
                 border-style: solid;
                 border-width: 8px 6px 0px 6px;
-                border-color: #fff transparent;
+                border-color: #ffffff transparent;
                 right: 10px;
                 top: 22px;
                 pointer-events: none;
@@ -276,7 +276,7 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: #fff;
+                    background: #ffffff;
 
                     i {
                         color: #000;
@@ -370,7 +370,7 @@
                 &:hover,&:active,&.active {
 
                     .arrow {
-                        border-color: #fff transparent;
+                        border-color: #ffffff transparent;
                     }
                 }
 
@@ -393,7 +393,7 @@
                     width: 0px;
                     height: 0px;
                     border-style: solid;
-                    border-color: #747474 transparent;
+                    border-color: #707070 transparent;
                     border-width: 8px 6px 0px 6px;
                     margin-left: 10px;
                 }
@@ -405,10 +405,10 @@
                     top: 50px;
                     width: 143px;
                     height: auto;
-                    background: #333333;
+                    background: #393939;
                     line-height: 30px;
                     border-radius: 0px 0px 3px 3px;
-                    border: solid 1px #6e6e6e;
+                    border: solid 1px #626262;
                     border-top: none;
 
                     &.display {
@@ -418,7 +418,7 @@
                     li {
                         text-align: center;
                         font-size: 14px;
-                        border-bottom: solid 1px #6e6e6e;
+                        border-bottom: solid 1px #626262;
                         color: #e0e0e0;
 
                         &:last-child {
@@ -518,7 +518,7 @@
 
             &:hover,&:active,&.active {
                 color: #535353;
-                background: #fff;
+                background: #ffffff;
 
                 &::before {
                     border-color: transparent #535353;
@@ -550,7 +550,7 @@
             }
 
             &.name {
-                color: #fff;
+                color: #ffffff;
                 font-size: 20px;
                 margin-right: 10px;
                 pointer-events: none;
@@ -586,7 +586,7 @@
     top: 55px;
     left: 280px;
     z-index: 5;
-    background: #3a3a3a;
+    background: #393939;
     scrollbar-width: thin;
     text-align: center;
 
@@ -596,12 +596,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #121212;
+        background: #131313;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #606360;
+        background: #626262;
         border-radius: 10px;
     }
 
@@ -665,7 +665,7 @@
         border-radius: 5px;
         font-size: 16px;
         font-weight: bold;
-        background: #333333;
+        background: #393939;
         color: #37da14;
         margin-top: 15px;
 
@@ -888,7 +888,7 @@
                 border-radius: 5px;
                 background: linear-gradient(to bottom,#0f0f0f 21%,#303030 100%);
                 box-shadow: 0px 1px 0px 0px #3c3c3c;
-                color: #fff;
+                color: #ffffff;
             }
 
             span {
@@ -1174,14 +1174,14 @@
     background: #393939;
     border-style: solid;
     border-width: 1px;
-    border-color: #3a3a3a #474747 #626262;
-    box-shadow: 0px 0px 5px 2px #181818 inset;
+    border-color: #393939 #393939 #626262;
+    box-shadow: 0px 0px 5px 2px #131313 inset;
     border-radius: 3px;
     position: absolute;
     cursor: pointer;
 
     &.active {
-        box-shadow: 0px 0px 5px 2px #181818 inset, 0px 0px 2px 1px #587920;
+        box-shadow: 0px 0px 5px 2px #131313 inset, 0px 0px 2px 1px #39792d;
         
         &::before {
             content: "";
@@ -1537,7 +1537,7 @@
     position: fixed;
     margin: 0px 0px 0px 280px;
     bottom: 0px;
-    background: #3a3a3a;
+    background: #393939;
     border-radius: 3px 3px 0px 0px;
     z-index: 10;
     transition: 0.5s all;
@@ -1644,12 +1644,12 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #121212;
+                background: #131313;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #606360;
+                background: #626262;
                 border-radius: 10px;
             }
             
@@ -1757,7 +1757,7 @@
         .bettingend {
             width: 100%;
             height: 197px;
-            background: #3a3a3a;
+            background: #393939;
 
             p {
                 width: 100%;
@@ -1964,12 +1964,12 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #121212;
+                background: #131313;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #606360;
+                background: #626262;
                 border-radius: 10px;
             }
             
@@ -2076,7 +2076,7 @@
         .bettingend {
             width: 100%;
             height: 200px;
-            background: #3a3a3a;
+            background: #393939;
 
             .endbox {
                 width: 287px;
@@ -2665,7 +2665,7 @@
         span {
 
             &.first {
-                background: #fff;
+                background: #ffffff;
             }
         }
     }
@@ -2675,7 +2675,7 @@
         span {
 
             &.second {
-                background: #fff;
+                background: #ffffff;
             }
         }
     }
@@ -2685,7 +2685,7 @@
         span {
 
             &.third {
-                background: #fff;
+                background: #ffffff;
             }
         }
     }
@@ -2697,7 +2697,7 @@
         height: 10px;
         transform: rotate(45deg);
         background: transparent;
-        border: solid 1px #fff;
+        border: solid 1px #ffffff;
 
         &.first {
             bottom: 0px;

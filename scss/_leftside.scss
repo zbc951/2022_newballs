@@ -7,7 +7,7 @@
     position: relative;
     z-index: 6;
     scrollbar-width: thin;
-    border: solid 1px #6a6a6a;
+    border: solid 1px #626262;
     border-width: 1px 0px;
     background: #404040;
 
@@ -17,12 +17,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #121212;
+        background: #131313;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #606360;
+        background: #626262;
         border-radius: 10px;
     }
     
@@ -197,11 +197,11 @@
                     color: #57ed22;
 
                     svg {
-                        fill: #3abc0d;
+                        fill: #37bd10;
                     }
 
                     i {
-                        color: #3abc0d;
+                        color: #37bd10;
                     }
                 }
             }
@@ -217,11 +217,11 @@
                     color: #57ed22;
 
                     svg {
-                        fill: #3abc0d;
+                        fill: #37bd10;
                     }
 
                     i {
-                        color: #3abc0d;
+                        color: #37bd10;
                     }
                 }
             }
@@ -243,7 +243,7 @@
                 font-size: 14px;
                 padding-left: 50px;
                 position: relative;
-                border-bottom: solid 1px #6a6a6a;
+                border-bottom: solid 1px #626262;
 
                 //字前小圖
                 i {

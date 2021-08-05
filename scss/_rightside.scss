@@ -128,7 +128,7 @@
         .title {
             background: linear-gradient(to top,#323232 0%,#434343 100%);
             box-shadow: 0px 2px 1px 0px #171717;
-            color: #fff;
+            color: #ffffff;
             padding: 7px 15px;
             font-size: 12px;
             text-align: left;
@@ -232,7 +232,7 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to top,#262626 0%,#3c3c3c 100%);
+                    background: linear-gradient(to top,#1f1f1f 0%,#3c3c3c 100%);
                     color: #49dd16;
                 }
             }
@@ -252,7 +252,7 @@
                 border-bottom: none;
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to top,#262626 0%,#3c3c3c 100%);
+                    background: linear-gradient(to top,#1f1f1f 0%,#3c3c3c 100%);
                     color: #49dd16;
                 }
             }
@@ -274,12 +274,12 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #121212;
+                background: #131313;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #606360;
+                background: #626262;
                 border-radius: 10px;
             }
 
@@ -294,7 +294,7 @@
                     width: 100%;
                     height: 30px;
                     line-height: 30px;
-                    border-bottom: solid 1px #6a6a6a;
+                    border-bottom: solid 1px #626262;
                     position: relative;
                     overflow: hidden;
                     cursor: pointer;
@@ -446,12 +446,12 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #121212;
+                background: #131313;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #606360;
+                background: #626262;
                 border-radius: 10px;
             }
 

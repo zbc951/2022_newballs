@@ -115,7 +115,7 @@ header .top .marqueeBox .fa-volume-up {
   position: absolute;
   left: -23px;
   top: 4px;
-  color: #31be16;
+  color: #37bd10;
 }
 header .top .marqueeBox marquee {
   line-height: 25px;
@@ -126,7 +126,7 @@ header .top .marqueeBox marquee {
 header .top span {
   float: right;
   font-size: 12px;
-  color: #7a7a7a;
+  color: #969696;
   line-height: 25px;
   margin-right: 15px;
 }
@@ -141,7 +141,7 @@ header .top .threeCircle button {
   height: 15px;
   border-radius: 30px;
   margin: 5px 5px 0px 0px;
-  border: solid 1px #46d616;
+  border: solid 1px #37bd10;
   background: #131313;
 }
 header .top .threeCircle button:nth-of-type(2) {
@@ -165,7 +165,7 @@ header article .logo {
   font-weight: bolder;
   text-align: center;
   line-height: 85px;
-  color: #fff;
+  color: #ffffff;
 }
 header article ul {
   float: left;
@@ -181,7 +181,7 @@ header article ul li a {
   padding: 0px 10px;
   height: 76px;
   line-height: 85px;
-  color: #fff;
+  color: #ffffff;
   border-bottom: solid 5px transparent;
   font-size: 14px;
 }
@@ -253,13 +253,13 @@ header article .logged .loginBtn {
 }
 header article .logged .loginBtn:hover, header article .logged .loginBtn:active, header article .logged .loginBtn.active {
   border-color: #ffffff;
-  background: #fff;
+  background: #ffffff;
   color: #393939;
 }
 header article .logged .signupBtn {
   background: linear-gradient(to top, #131313 0%, #323232 100%);
   border-radius: 3px;
-  color: #fff;
+  color: #ffffff;
   padding: 6px 14px;
   font-size: 14px;
   font-weight: bold;
@@ -267,7 +267,7 @@ header article .logged .signupBtn {
 }
 header article .logged .signupBtn:hover, header article .logged .signupBtn:active, header article .logged .signupBtn.active {
   border-color: #ffffff;
-  background: #fff;
+  background: #ffffff;
   color: #59a936;
 }
 header article .logged .selectBox {
@@ -304,7 +304,7 @@ header article .logged .selectBox select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: #262626;
+  background: #1f1f1f;
 }
 header article .logged .selectBox select option {
   color: #ababab;
@@ -330,7 +330,7 @@ header article .loggedIn p.quota {
   padding: 7px 7px 5px;
   border: solid 1px #707070;
   border-radius: 3px;
-  background: #262626;
+  background: #1f1f1f;
 }
 header article .loggedIn p span {
   color: #40c50f;
@@ -380,7 +380,7 @@ header article .loggedIn .selectBox select {
   border-radius: 3px;
   color: #ababab;
   font-size: 12px;
-  background: #262626;
+  background: #1f1f1f;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -426,7 +426,7 @@ main .bg {
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
-  border: solid 1px #6a6a6a;
+  border: solid 1px #626262;
   border-width: 1px 0px;
   background: #404040;
 }
@@ -435,11 +435,11 @@ main .bg {
   background-color: transparent;
 }
 .left::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .left::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .left.mine {
@@ -572,10 +572,10 @@ main .bg {
   color: #57ed22;
 }
 .left ul li:hover a svg {
-  fill: #3abc0d;
+  fill: #37bd10;
 }
 .left ul li:hover a i {
-  color: #3abc0d;
+  color: #37bd10;
 }
 .left ul li:active .smallList, .left ul li.active .smallList {
   display: block;
@@ -585,10 +585,10 @@ main .bg {
   color: #57ed22;
 }
 .left ul li:active a svg, .left ul li.active a svg {
-  fill: #3abc0d;
+  fill: #37bd10;
 }
 .left ul li:active a i, .left ul li.active a i {
-  color: #3abc0d;
+  color: #37bd10;
 }
 .left ul li.onLive .live {
   display: block;
@@ -603,7 +603,7 @@ main .bg {
   font-size: 14px;
   padding-left: 50px;
   position: relative;
-  border-bottom: solid 1px #6a6a6a;
+  border-bottom: solid 1px #626262;
 }
 .left ul li a i {
   position: absolute;
@@ -788,7 +788,7 @@ main .bg {
 .right .liveWindow .title {
   background: linear-gradient(to top, #323232 0%, #434343 100%);
   box-shadow: 0px 2px 1px 0px #171717;
-  color: #fff;
+  color: #ffffff;
   padding: 7px 15px;
   font-size: 12px;
   text-align: left;
@@ -872,7 +872,7 @@ main .bg {
   margin: 0px;
 }
 .right .room .twobut button:hover, .right .room .twobut button:active, .right .room .twobut button.active {
-  background: linear-gradient(to top, #262626 0%, #3c3c3c 100%);
+  background: linear-gradient(to top, #1f1f1f 0%, #3c3c3c 100%);
   color: #49dd16;
 }
 .right .room .onebut {
@@ -890,7 +890,7 @@ main .bg {
   border-bottom: none;
 }
 .right .room .onebut button:hover, .right .room .onebut button:active, .right .room .onebut button.active {
-  background: linear-gradient(to top, #262626 0%, #3c3c3c 100%);
+  background: linear-gradient(to top, #1f1f1f 0%, #3c3c3c 100%);
   color: #49dd16;
 }
 .right .room .livelist {
@@ -907,11 +907,11 @@ main .bg {
   background-color: transparent;
 }
 .right .room .livelist::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .right .room .livelist::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .right .room .livelist.open {
@@ -921,7 +921,7 @@ main .bg {
   width: 100%;
   height: 30px;
   line-height: 30px;
-  border-bottom: solid 1px #6a6a6a;
+  border-bottom: solid 1px #626262;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -1052,11 +1052,11 @@ main .bg {
   background-color: transparent;
 }
 .right .room .bettingStatus::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .right .room .bettingStatus::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .right .room .bettingStatus.open {
@@ -1312,7 +1312,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType1 tr td:nth-of-type(7) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType1_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1342,7 +1342,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType1_2 tr td:nth-of-type(9) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType1_index tr td div p.redCard, .playBoard.tType1_index tr td div p.yellowCard {
   padding: 0px;
@@ -1357,7 +1357,7 @@ main .bg {
   min-width: 60px;
 }
 .playBoard.tType1_index tr td:nth-of-type(2), .playBoard.tType1_index tr td:nth-of-type(3), .playBoard.tType1_index tr td:nth-of-type(10), .playBoard.tType1_index tr td:nth-of-type(6), .playBoard.tType1_index tr td:nth-of-type(9) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType1_index tr td:nth-of-type(4), .playBoard.tType1_index tr td:nth-of-type(7) {
   width: 50%;
@@ -1390,7 +1390,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType2 tr td:nth-of-type(2), .playBoard.tType2 tr td:nth-of-type(3) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2 tr td:nth-of-type(2) p, .playBoard.tType2 tr td:nth-of-type(3) p {
   padding: 0px;
@@ -1402,7 +1402,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType2 tr td:nth-of-type(7) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType2_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType2_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType2_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1412,7 +1412,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType2_2 tr td:nth-of-type(2), .playBoard.tType2_2 tr td:nth-of-type(3) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_2 tr td:nth-of-type(2) p, .playBoard.tType2_2 tr td:nth-of-type(3) p {
   padding: 0px;
@@ -1428,7 +1428,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType2_2 tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_index tr td p.baseBag {
   margin: 0px auto;
@@ -1440,7 +1440,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType2_index tr td:nth-of-type(2), .playBoard.tType2_index tr td:nth-of-type(3), .playBoard.tType2_index tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_index tr td:nth-of-type(5), .playBoard.tType2_index tr td:nth-of-type(6) {
   width: 40%;
@@ -1449,7 +1449,7 @@ main .bg {
   min-width: 20px;
 }
 .playBoard.tType2_index tr td:nth-of-type(20) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_result tr td:nth-of-type(1) {
   min-width: 70px;
@@ -1479,7 +1479,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType3 tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType3_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1506,13 +1506,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType3_2 tr td:nth-of-type(13) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType3_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType3_index tr td:nth-of-type(2), .playBoard.tType3_index tr td:nth-of-type(3), .playBoard.tType3_index tr td:nth-of-type(11) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType3_index tr td:nth-of-type(4) {
   width: 100%;
@@ -1545,7 +1545,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType4 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType4_index tr td p {
   padding-bottom: 8px;
@@ -1557,7 +1557,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType4_index tr td:nth-of-type(2), .playBoard.tType4_index tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType4_index tr td:nth-of-type(3), .playBoard.tType4_index tr td:nth-of-type(4), .playBoard.tType4_index tr td:nth-of-type(8) {
   min-width: 30px;
@@ -1590,7 +1590,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType4_result tr td:nth-of-type(6), .playBoard.tType4_result tr td:nth-of-type(7) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5 tr td:nth-of-type(1) {
   width: 100%;
@@ -1605,7 +1605,7 @@ main .bg {
   width: 11%;
 }
 .playBoard.tType5 tr td:nth-of-type(12) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1632,13 +1632,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType5_2 tr td:nth-of-type(15) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(2), .playBoard.tType5_lol_index tr td:nth-of-type(19) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(3) {
   width: 100%;
@@ -1653,7 +1653,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(2), .playBoard.tType5_dota_index tr td:nth-of-type(18) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(3) {
   width: 100%;
@@ -1668,7 +1668,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(2), .playBoard.tType5_cs_index tr td:nth-of-type(15) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(3) {
   width: 100%;
@@ -1737,7 +1737,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType6 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType6_index tr td:nth-of-type(1) {
   min-width: 120px;
@@ -1746,7 +1746,7 @@ main .bg {
   width: 25%;
 }
 .playBoard.tType6_index tr td:nth-of-type(6) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType6_result tr td:nth-of-type(1), .playBoard.tType6_result tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1761,7 +1761,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType7 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(1), .playBoard.tType7_bingo_index tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1773,7 +1773,7 @@ main .bg {
   min-width: 20px;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(16) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(1), .playBoard.tType7_lottery_index tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1788,7 +1788,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType7_bingo_result tr td:nth-of-type(1), .playBoard.tType7_bingo_result tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1827,7 +1827,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType8 tr td:nth-of-type(12) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType8_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType8_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType8_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType8_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1857,13 +1857,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType8_2 tr td:nth-of-type(15) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType8_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType8_index tr td:nth-of-type(2), .playBoard.tType8_index tr td:nth-of-type(13) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType8_index tr td:nth-of-type(3), .playBoard.tType8_index tr td:nth-of-type(11), .playBoard.tType8_index tr td:nth-of-type(12) {
   min-width: 30px;
@@ -1899,7 +1899,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType9 tr td:nth-of-type(6) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType9_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1919,13 +1919,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType9_2 tr td:nth-of-type(9) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType9_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType9_index tr td:nth-of-type(2), .playBoard.tType9_index tr td:nth-of-type(3), .playBoard.tType9_index tr td:nth-of-type(6) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType9_index tr td:nth-of-type(4) {
   width: 100%;
@@ -1961,7 +1961,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType10 tr td:nth-of-type(13) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType10_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1988,13 +1988,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType10_2 tr td:nth-of-type(16) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType10_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType10_index tr td:nth-of-type(2), .playBoard.tType10_index tr td:nth-of-type(14) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType10_index tr td:nth-of-type(3), .playBoard.tType10_index tr td:nth-of-type(12), .playBoard.tType10_index tr td:nth-of-type(13) {
   min-width: 30px;
@@ -2027,7 +2027,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType11 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType11_index tr td p {
   padding-bottom: 8px;
@@ -2039,7 +2039,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType11_index tr td:nth-of-type(2), .playBoard.tType11_index tr td:nth-of-type(6), .playBoard.tType11_index tr td:nth-of-type(11) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType11_index tr td:nth-of-type(3), .playBoard.tType11_index tr td:nth-of-type(4), .playBoard.tType11_index tr td:nth-of-type(7), .playBoard.tType11_index tr td:nth-of-type(10) {
   min-width: 30px;
@@ -2081,7 +2081,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType12 tr td:nth-of-type(11) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType12_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -2108,7 +2108,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType12_2 tr td:nth-of-type(14) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType12_index.hide1 tr td:nth-of-type(4) {
   width: 51%;
@@ -2120,7 +2120,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType12_index tr td:nth-of-type(2), .playBoard.tType12_index tr td:nth-of-type(12) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType12_index tr td:nth-of-type(3), .playBoard.tType12_index tr td:nth-of-type(10), .playBoard.tType12_index tr td:nth-of-type(11) {
   min-width: 30px;
@@ -2289,7 +2289,7 @@ main .bg {
 .imgBoard tr td {
   vertical-align: middle;
   word-break: break-all;
-  color: #fff;
+  color: #ffffff;
   position: relative;
 }
 .imgBoard tr td:nth-of-type(1) {
@@ -2323,7 +2323,7 @@ main .bg {
   position: absolute;
   width: 40px;
   height: 40px;
-  background: #fff;
+  background: #ffffff;
   top: 50%;
   transform: translateY(-50%);
   right: 0px;
@@ -2356,7 +2356,7 @@ main .bg {
   position: absolute;
   width: 20px;
   height: 60px;
-  background: linear-gradient(to right, transparent, #fff, transparent);
+  background: linear-gradient(to right, transparent, #ffffff, transparent);
   transform: rotate(135deg);
   top: -15px;
   left: -40px;
@@ -2425,12 +2425,12 @@ main .bg {
   border: none;
   background: transparent;
   pointer-events: none;
-  color: #fff;
+  color: #ffffff;
 }
 .innerBoard tr td button .name {
   font-size: 13px;
   padding-right: 20px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .teachBoard {
@@ -2693,7 +2693,7 @@ main .bg {
 .minetable.infor tr td .mainWindow {
   width: 98%;
   height: 100%;
-  border: solid 1px #6a6a6a;
+  border: solid 1px #626262;
   border-radius: 5px;
   box-sizing: border-box;
   margin: 25px 0px 15px;
@@ -2742,7 +2742,7 @@ main .bg {
   height: auto;
   text-align: right;
   padding-bottom: 15px;
-  color: #fff;
+  color: #ffffff;
   font-size: 13px;
 }
 .minetable.infor tr td .remind a {
@@ -2774,7 +2774,7 @@ main .bg {
   width: 1150px;
 }
 .minetable.totalMoney tr th button {
-  color: #fff;
+  color: #ffffff;
   background: transparent;
   border: none;
   float: right;
@@ -2816,7 +2816,7 @@ main .bg {
 }
 .minetable.totalMoney tr td .box .half p {
   font-size: 14px;
-  color: #fff;
+  color: #ffffff;
   text-align: left;
   width: 50%;
   margin: 0px auto;
@@ -2841,7 +2841,7 @@ main .bg {
   border: solid 1px #ababab;
   border-radius: 30px;
   padding: 5px 8px;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   right: -80px;
   top: 5px;
@@ -2904,7 +2904,7 @@ main .bg {
   background-position-x: 100%;
 }
 .minetable.totalMoney tr td .separateBox.big .half p {
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   text-align: left;
 }
@@ -2922,7 +2922,7 @@ main .bg {
 }
 .minetable.totalMoney tr td .separateBox.big .half p button {
   background: transparent;
-  color: #fff;
+  color: #ffffff;
   border: solid 1px #ababab;
   font-size: 12px;
   padding: 2px 5px;
@@ -3015,7 +3015,7 @@ main .bg {
   height: 145px;
   border-radius: 5px;
   background: #242424;
-  color: #fff;
+  color: #ffffff;
   font-size: 17px;
   margin: 20px 30px;
   transition: 0.25s all;
@@ -3175,7 +3175,7 @@ main .bg {
   display: table;
 }
 .minetable.dealRecord tr {
-  border-bottom: solid 1px #747474;
+  border-bottom: solid 1px #707070;
   background: linear-gradient(to top, #343434 0%, #404040 100%);
 }
 .minetable.dealRecord tr.fail {
@@ -3185,7 +3185,7 @@ main .bg {
   border: none;
 }
 .minetable.dealRecord tr td {
-  border-right: solid 1px #747474;
+  border-right: solid 1px #707070;
   padding: 10px;
   color: #dddddd;
   font-size: 14px;
@@ -3255,7 +3255,7 @@ main .bg {
   float: left;
   width: 1px;
   height: 14px;
-  background: #747474;
+  background: #707070;
   margin: 0px 10px;
 }
 .minetable.bettingRecord tr th .arrow {
@@ -3294,7 +3294,7 @@ main .bg {
   line-height: 20px;
 }
 .minetable.bettingRecord tr td .teamName {
-  color: #fff;
+  color: #ffffff;
 }
 .minetable.bettingRecord tr td .separate {
   display: inline-block;
@@ -3321,7 +3321,7 @@ main .bg {
 .minetable.totalInfo tr td {
   padding: 10px 0px;
   font-size: 15px;
-  color: #3abc0d;
+  color: #37bd10;
 }
 .minetable.totalInfo tr td:nth-of-type(1), .minetable.totalInfo tr td:nth-of-type(3), .minetable.totalInfo tr td:nth-of-type(5) {
   width: 10%;
@@ -3340,7 +3340,7 @@ main .bg {
   float: right;
   width: 1px;
   height: 16px;
-  background: #747474;
+  background: #707070;
 }
 .minetable.sportRule {
   display: none;
@@ -3370,7 +3370,7 @@ main .bg {
 .minetable.sportRule tr td {
   text-align: left;
   padding: 10px 35px;
-  color: #fff;
+  color: #ffffff;
   line-height: 24px;
   font-size: 14px;
 }
@@ -3623,7 +3623,7 @@ main .bg {
 .minetable.callus tr td .box .officalimg p {
   font-size: 14px;
   line-height: 20px;
-  color: #fff;
+  color: #ffffff;
 }
 .minetable.callus tr td .box .partnerimg {
   display: inline-block;
@@ -3660,7 +3660,7 @@ main .bg {
 .minetable.callus tr td .box .partnerimg p {
   font-size: 14px;
   line-height: 20px;
-  color: #fff;
+  color: #ffffff;
 }
 .minetable.callus tr td .bigBox {
   display: inline-block;
@@ -3692,7 +3692,7 @@ main .bg {
 }
 .minetable.callus tr td .bigBox p {
   font-size: 14px;
-  color: #fff;
+  color: #ffffff;
 }
 .minetable.callus tr td .bigBox p.remind {
   font-size: 13px;
@@ -3766,7 +3766,7 @@ main .bg {
   box-sizing: border-box;
   outline: none;
   padding: 10px;
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   resize: none;
   border-radius: 3px;
@@ -3849,7 +3849,7 @@ main .bg {
 }
 .minetable.innerActive tr td {
   padding: 10px;
-  color: #fff;
+  color: #ffffff;
   border-right: solid 1px #ababab;
 }
 .minetable.innerActive tr td:last-child {
@@ -3860,7 +3860,7 @@ main .bg {
   float: left;
 }
 .minetable.download tr td p {
-  color: #fff;
+  color: #ffffff;
   padding: 10px;
   font-size: 14px;
 }
@@ -3921,7 +3921,7 @@ main .bg {
   border: solid 1px #ababab;
   border-radius: 3px;
   padding: 5px 8px;
-  color: #fff;
+  color: #ffffff;
 }
 .minetable.download tr td .codeBox div button:hover, .minetable.download tr td .codeBox div button:active, .minetable.download tr td .codeBox div button.active {
   border-color: #aef156;
@@ -3963,7 +3963,7 @@ main .bg {
   border: solid 1px #ababab;
   border-radius: 3px;
   padding: 5px 8px;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   right: 0px;
   top: 19px;
@@ -3996,9 +3996,9 @@ main .bg {
   box-sizing: border-box;
   border: solid 1px #858585;
   border-radius: 3px;
-  color: #fff;
+  color: #ffffff;
   padding-left: 10px;
-  background: linear-gradient(to top, #333333 0%, #272727 100%);
+  background: linear-gradient(to top, #393939 0%, #272727 100%);
 }
 .minetable.withdrawl tr td .inputBox input::placeholder {
   color: #999999;
@@ -4054,7 +4054,7 @@ main .bg {
 .minetable.withdrawl tr td .box .content p {
   width: 100%;
   font-size: 22px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding: 20px 0px 15px;
 }
@@ -4141,7 +4141,7 @@ main .bg {
   height: 40px;
   box-sizing: border-box;
   border: solid 1px #858585;
-  background: linear-gradient(to top, #333333 0%, #272727 100%);
+  background: linear-gradient(to top, #393939 0%, #272727 100%);
   border-radius: 3px;
   padding-left: 10px;
   color: #999999;
@@ -4375,7 +4375,7 @@ main .bg {
   height: 40px;
   padding-left: 10px;
   border: solid 1px #858585;
-  background: linear-gradient(to top, #333333 0%, #272727 100%);
+  background: linear-gradient(to top, #393939 0%, #272727 100%);
   color: #d2d2d2;
   border-radius: 3px;
   box-sizing: border-box;
@@ -4470,7 +4470,7 @@ main .bg {
   width: 240px;
   height: 40px;
   border: solid 1px #858585;
-  background: linear-gradient(to top, #333333 0%, #272727 100%);
+  background: linear-gradient(to top, #393939 0%, #272727 100%);
   border-radius: 3px;
   box-sizing: border-box;
   padding-left: 10px;
@@ -4479,7 +4479,7 @@ main .bg {
 }
 .minetable.depositMoney tr td .inputBox .remind {
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   margin-left: 30px;
   font-size: 14px;
   position: relative;
@@ -4525,11 +4525,11 @@ main .bg {
   background-color: transparent;
 }
 .middle::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .middle::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .middle .mainBox {
@@ -4696,7 +4696,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 8px 6px 0px 6px;
-  border-color: #fff transparent;
+  border-color: #ffffff transparent;
   right: 10px;
   top: 22px;
   pointer-events: none;
@@ -4746,7 +4746,7 @@ main .bg {
   color: #c9c9c9;
 }
 .topfix .nor .reWeb .reBtn:hover, .topfix .nor .reWeb .reBtn:active, .topfix .nor .reWeb .reBtn.active {
-  background: #fff;
+  background: #ffffff;
 }
 .topfix .nor .reWeb .reBtn:hover i, .topfix .nor .reWeb .reBtn:active i, .topfix .nor .reWeb .reBtn.active i {
   color: #000;
@@ -4824,7 +4824,7 @@ main .bg {
   position: relative;
 }
 .topfix .nor .timeSelect .date:hover .arrow, .topfix .nor .timeSelect .date:active .arrow, .topfix .nor .timeSelect .date.active .arrow {
-  border-color: #fff transparent;
+  border-color: #ffffff transparent;
 }
 .topfix .nor .timeSelect .date .total {
   display: inline-block;
@@ -4843,7 +4843,7 @@ main .bg {
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-color: #747474 transparent;
+  border-color: #707070 transparent;
   border-width: 8px 6px 0px 6px;
   margin-left: 10px;
 }
@@ -4854,10 +4854,10 @@ main .bg {
   top: 50px;
   width: 143px;
   height: auto;
-  background: #333333;
+  background: #393939;
   line-height: 30px;
   border-radius: 0px 0px 3px 3px;
-  border: solid 1px #6e6e6e;
+  border: solid 1px #626262;
   border-top: none;
 }
 .topfix .nor .timeSelect .date .moreTimeList.display {
@@ -4866,7 +4866,7 @@ main .bg {
 .topfix .nor .timeSelect .date .moreTimeList li {
   text-align: center;
   font-size: 14px;
-  border-bottom: solid 1px #6e6e6e;
+  border-bottom: solid 1px #626262;
   color: #e0e0e0;
 }
 .topfix .nor .timeSelect .date .moreTimeList li:last-child {
@@ -4947,7 +4947,7 @@ main .bg {
 }
 .topfix .inn .back:hover, .topfix .inn .back:active, .topfix .inn .back.active {
   color: #535353;
-  background: #fff;
+  background: #ffffff;
 }
 .topfix .inn .back:hover::before, .topfix .inn .back:active::before, .topfix .inn .back.active::before {
   border-color: transparent #535353;
@@ -4974,7 +4974,7 @@ main .bg {
   border-color: #32980e;
 }
 .topfix .teach li.name {
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   margin-right: 10px;
   pointer-events: none;
@@ -5004,7 +5004,7 @@ main .bg {
   top: 55px;
   left: 280px;
   z-index: 5;
-  background: #3a3a3a;
+  background: #393939;
   scrollbar-width: thin;
   text-align: center;
 }
@@ -5013,11 +5013,11 @@ main .bg {
   background-color: transparent;
 }
 .chleague::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .chleague::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .chleague.display {
@@ -5066,7 +5066,7 @@ main .bg {
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  background: #333333;
+  background: #393939;
   color: #37da14;
   margin-top: 15px;
 }
@@ -5263,7 +5263,7 @@ main .bg {
   border-radius: 5px;
   background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
   box-shadow: 0px 1px 0px 0px #3c3c3c;
-  color: #fff;
+  color: #ffffff;
 }
 .signupWindow .signupbox div span {
   line-height: 50px;
@@ -5502,14 +5502,14 @@ main .bg {
   background: #393939;
   border-style: solid;
   border-width: 1px;
-  border-color: #3a3a3a #474747 #626262;
-  box-shadow: 0px 0px 5px 2px #181818 inset;
+  border-color: #393939 #393939 #626262;
+  box-shadow: 0px 0px 5px 2px #131313 inset;
   border-radius: 3px;
   position: absolute;
   cursor: pointer;
 }
 .cube.active {
-  box-shadow: 0px 0px 5px 2px #181818 inset, 0px 0px 2px 1px #587920;
+  box-shadow: 0px 0px 5px 2px #131313 inset, 0px 0px 2px 1px #39792d;
 }
 .cube.active::before {
   content: "";
@@ -5823,7 +5823,7 @@ main .bg {
   position: fixed;
   margin: 0px 0px 0px 280px;
   bottom: 0px;
-  background: #3a3a3a;
+  background: #393939;
   border-radius: 3px 3px 0px 0px;
   z-index: 10;
   transition: 0.5s all;
@@ -5918,11 +5918,11 @@ main .bg {
   background-color: transparent;
 }
 .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .bettingbar .bettingbox .bettingwindow table {
@@ -6009,7 +6009,7 @@ main .bg {
 .bettingbar .bettingbox .bettingend {
   width: 100%;
   height: 197px;
-  background: #3a3a3a;
+  background: #393939;
 }
 .bettingbar .bettingbox .bettingend p {
   width: 100%;
@@ -6194,11 +6194,11 @@ main .bg {
   background-color: transparent;
 }
 .bettingCheck .bettingbox .bettingwindow::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .bettingCheck .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .bettingCheck .bettingbox .bettingwindow table {
@@ -6285,7 +6285,7 @@ main .bg {
 .bettingCheck .bettingbox .bettingend {
   width: 100%;
   height: 200px;
-  background: #3a3a3a;
+  background: #393939;
 }
 .bettingCheck .bettingbox .bettingend .endbox {
   width: 287px;
@@ -6795,13 +6795,13 @@ main .bg {
   padding: 0px;
 }
 .baseBag.one span.first {
-  background: #fff;
+  background: #ffffff;
 }
 .baseBag.two span.second {
-  background: #fff;
+  background: #ffffff;
 }
 .baseBag.three span.third {
-  background: #fff;
+  background: #ffffff;
 }
 .baseBag span {
   display: block;
@@ -6810,7 +6810,7 @@ main .bg {
   height: 10px;
   transform: rotate(45deg);
   background: transparent;
-  border: solid 1px #fff;
+  border: solid 1px #ffffff;
 }
 .baseBag span.first {
   bottom: 0px;
@@ -7092,7 +7092,7 @@ main .bg {
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
 }
 .fixside .fun .hamBtn:hover span, .fixside .fun .hamBtn:active span, .fixside .fun .hamBtn.active span {
-  background: #fff;
+  background: #ffffff;
 }
 .fixside .fun .hamBtn span {
   display: block;
@@ -7205,7 +7205,7 @@ main .bg {
   background: url("../images/discounttitle_bg.png") no-repeat;
   background-size: 100%;
   padding-left: 45px;
-  color: #fff;
+  color: #ffffff;
 }
 .discount .window .topbar.blue {
   background-position-y: 0px;
@@ -7287,7 +7287,7 @@ main .bg {
   right: 30px;
   bottom: 20px;
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
   border-radius: 3px;
   font-size: 18px;
 }
@@ -7338,11 +7338,11 @@ main .bg {
   background-color: transparent;
 }
 .myself::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .myself::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .myself .mineMainBox {
@@ -7370,7 +7370,7 @@ main .bg {
   background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
 }
 .myself .recordbar.open div {
-  color: #3abc0d;
+  color: #37bd10;
 }
 .myself .recordbar div {
   float: left;
@@ -7384,12 +7384,12 @@ main .bg {
 .myself .recordbar div .line {
   width: 1px;
   height: 15px;
-  background: #747474;
+  background: #707070;
   margin: 10px 0px 0px 0px;
   float: right;
 }
 .myself .recordbar div span {
-  color: #3abc0d;
+  color: #37bd10;
 }
 .myself .recordbar div span.remind {
   position: absolute;
@@ -7539,7 +7539,7 @@ main .bg {
   width: 92%;
   height: auto;
   border-radius: 12px;
-  border: 1px solid #747474;
+  border: 1px solid #707070;
   margin: 0px auto 20px;
   padding: 15px;
 }
@@ -7604,11 +7604,11 @@ main .bg {
   background-color: transparent;
 }
 .myself .onlineCilent .chatwindow::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .myself .onlineCilent .chatwindow::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .myself .onlineCilent .chatwindow .time {
@@ -7683,11 +7683,11 @@ main .bg {
   background-color: transparent;
 }
 .myself .onlineCilent .onlineroom::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 .myself .onlineCilent .onlineroom::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
 .myself .onlineCilent .onlineroom .chatStyle {
@@ -7791,7 +7791,7 @@ main .bg {
   width: 8px;
   height: 8px;
   border-radius: 8px;
-  background: #fff;
+  background: #ffffff;
   margin: 0px 5px 2px;
 }
 .myself .ruleBox ol li .remind {
@@ -7943,7 +7943,7 @@ main .bg {
 }
 .myself .linkBox div a p {
   height: 32px;
-  background: #fff;
+  background: #ffffff;
   line-height: 32px;
   padding-left: 15px;
   font-size: 15px;
@@ -7969,7 +7969,7 @@ main .bg {
   background: #313131;
   bottom: 0px;
   z-index: 2;
-  color: #fff;
+  color: #ffffff;
   border: solid 1px #242424;
   box-sizing: border-box;
 }
@@ -8101,7 +8101,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 6px 5px 0px 5px;
-  border-color: #747474 transparent;
+  border-color: #707070 transparent;
   top: 21px;
   right: 5px;
 }
@@ -8198,7 +8198,7 @@ main .bg {
   width: 100%;
   height: 35px;
   background: #1f1f1f;
-  border-bottom: solid 1px #3abc0d;
+  border-bottom: solid 1px #37bd10;
 }
 .minetopfix .floatName.betting div {
   float: left;
@@ -8211,7 +8211,7 @@ main .bg {
 .minetopfix .floatName.betting div .line {
   width: 1px;
   height: 10px;
-  background: #747474;
+  background: #707070;
   margin: -5px 0px 0px 0px;
   float: right;
 }
@@ -8246,7 +8246,7 @@ main .bg {
 .minetopfix .floatName.deal div .line {
   width: 1px;
   height: 10px;
-  background: #747474;
+  background: #707070;
   margin: -5px 0px 0px 0px;
   float: right;
 }
@@ -8395,7 +8395,7 @@ main .bg {
   border-radius: 5px;
   background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
   box-shadow: 0px 1px 0px 0px #3c3c3c;
-  color: #fff;
+  color: #ffffff;
 }
 .changePasswordWindow .box div span {
   line-height: 40px;
@@ -8586,7 +8586,7 @@ main .bg {
 .cardAdd .box {
   width: 100%;
   height: 315px;
-  background: #747474;
+  background: #707070;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   border: solid 1px #a2a2a2;
@@ -8634,7 +8634,7 @@ main .bg {
   height: 36px;
   background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   border: 1px solid #4556b1;
-  color: #fff;
+  color: #ffffff;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
@@ -8726,10 +8726,10 @@ html body::-webkit-scrollbar {
   background-color: transparent;
 }
 html body::-webkit-scrollbar-track {
-  background: #121212;
+  background: #131313;
   border-radius: 10px;
 }
 html body::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #626262;
   border-radius: 10px;
 }
