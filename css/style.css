@@ -1150,7 +1150,7 @@ main .bg {
   margin: 0px 1px;
 }
 .playBoard tr td button:hover, .playBoard tr td button:active, .playBoard tr td button.active {
-  background: #fff;
+  background: linear-gradient(to right, #A1EA22 0%, #34DA14 100%);
   color: #000;
 }
 .playBoard tr td button:hover span, .playBoard tr td button:active span, .playBoard tr td button.active span {
@@ -2847,8 +2847,9 @@ main .bg {
   top: 5px;
 }
 .minetable.totalMoney tr td .box .half p button:hover, .minetable.totalMoney tr td .box .half p button:active, .minetable.totalMoney tr td .box .half p button.active {
-  background: #fff;
-  color: #505050;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetable.totalMoney tr td .box .half .wallet_ic {
   float: left;
@@ -2930,8 +2931,9 @@ main .bg {
   margin: -4px 40px 0px 0px;
 }
 .minetable.totalMoney tr td .separateBox.big .half p button:hover, .minetable.totalMoney tr td .separateBox.big .half p button:active, .minetable.totalMoney tr td .separateBox.big .half p button.active {
-  color: #505050;
-  background: #fff;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetable.totalMoney tr td .separateBox.big .line {
   position: absolute;
@@ -3547,8 +3549,9 @@ main .bg {
   top: 5px;
 }
 .minetable.callus tr td .box .half p button:hover, .minetable.callus tr td .box .half p button:active, .minetable.callus tr td .box .half p button.active {
-  background: #fff;
-  color: #000000;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetable.callus tr td .box .half .rowbut {
   display: inline-block;
@@ -3921,8 +3924,9 @@ main .bg {
   color: #fff;
 }
 .minetable.download tr td .codeBox div button:hover, .minetable.download tr td .codeBox div button:active, .minetable.download tr td .codeBox div button.active {
-  color: #505050;
-  background: #fff;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetable.download tr td .bowserBox {
   width: 90%;
@@ -3965,8 +3969,9 @@ main .bg {
   top: 19px;
 }
 .minetable.download tr td .bowserBox button:hover, .minetable.download tr td .bowserBox button:active, .minetable.download tr td .bowserBox button.active {
-  color: #505050;
-  background: #fff;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetable.withdrawl {
   width: 1150px;
@@ -4385,8 +4390,9 @@ main .bg {
   margin-left: 20px;
 }
 .minetable.tnum tr td .half .inputBox button:hover, .minetable.tnum tr td .half .inputBox button:active, .minetable.tnum tr td .half .inputBox button.active {
-  color: #30b017;
-  border-color: #299913;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetable.tnetcard {
   width: 1150px;
@@ -7466,7 +7472,6 @@ main .bg {
   padding-left: 15px;
   font-size: 15px;
   color: #ffffff;
-  font-weight: bold;
 }
 .myself .helpbar span {
   float: right;
@@ -7983,8 +7988,9 @@ main .bg {
   display: block;
 }
 .minetopfix .fixbar .editbut:hover, .minetopfix .fixbar .editbut:active, .minetopfix .fixbar .editbut.active, .minetopfix .fixbar .cancelbut:hover, .minetopfix .fixbar .cancelbut:active, .minetopfix .fixbar .cancelbut.active, .minetopfix .fixbar .delbut:hover, .minetopfix .fixbar .delbut:active, .minetopfix .fixbar .delbut.active {
-  background: #fff;
-  color: #505050;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetopfix .fixbar .rowbutMes {
   display: none;
@@ -8072,8 +8078,9 @@ main .bg {
   color: #dddddd;
 }
 .minetopfix .fixbar .timeSearch button.timesearchbut:hover, .minetopfix .fixbar .timeSearch button.timesearchbut:active, .minetopfix .fixbar .timeSearch button.timesearchbut.active {
-  background: #fff;
-  color: #000;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetopfix .fixbar .timeSearch span {
   float: left;
@@ -8150,9 +8157,9 @@ main .bg {
   }
 }
 .minetopfix .fixbar .changePassword:hover, .minetopfix .fixbar .changePassword:active, .minetopfix .fixbar .changePassword.active {
-  background: #fff;
-  border-color: #505050;
-  color: #505050;
+  border-color: #aef156;
+  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+  color: #272727;
 }
 .minetopfix .fixbar .changePassword.none {
   display: none;
@@ -8296,11 +8303,11 @@ main .bg {
 
 .changePasswordWindow {
   display: none;
-  position: absolute;
+  position: fixed;
   width: 350px;
   height: auto;
   left: 50%;
-  top: 50%;
+  top: 20%;
   transform: translate(-50%, -50%);
   z-index: 20;
   box-shadow: 0px 0px 10px 2px #517b09;
@@ -8425,7 +8432,7 @@ main .bg {
 
 .cardremind {
   display: none;
-  position: absolute;
+  position: fixed;
   width: 500px;
   height: auto;
   left: 50%;
@@ -8706,7 +8713,7 @@ main .bg {
 html {
   width: 100%;
   height: 100%;
-  background: #2a2a2a;
+  background: #131313;
 }
 html body {
   width: 100%;

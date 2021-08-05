@@ -996,10 +996,11 @@ $(function(){
 
     if(wWD >= 1480){
         $('article.mine').css('width',(String(1480) + 'px'));
+        $('header').css('width',(String(100) + '%'));
     } else if(wWD < 1480 && wWD > 1200) {
-        $('article.mine').css('width',(String(wWD) + 'px'));
+        $('article.mine,header').css('width',(String(wWD) + 'px'));
     } else {
-        $('article.mine').css('width',(String(1200) + 'px'));
+        $('article.mine,header').css('width',(String(1200) + 'px'));
     }
 
     if(wWD >= 1470){
@@ -1104,10 +1105,11 @@ $(function(){
 
         if(wWD >= 1480){
             $('article.mine').css('width',(String(1480) + 'px'));
+            $('header').css('width',(String(100) + '%'));
         } else if(wWD < 1480 && wWD > 1200) {
-            $('article.mine').css('width',(String(wWD) + 'px'));
+            $('article.mine,header').css('width',(String(wWD) + 'px'));
         } else {
-            $('article.mine').css('width',(String(1200) + 'px'));
+            $('article.mine,header').css('width',(String(1200) + 'px'));
         }
 
         if(wWD >= 1470){
@@ -1157,6 +1159,5 @@ function isMobile() {
 $(function(){
     if(isMobile()){
         $('.left,.middle,.right,.myself').css('height',(String(880) + 'px'));
-        $('header.mine').css('width',(String(1480) + 'px'));
     }
 })
