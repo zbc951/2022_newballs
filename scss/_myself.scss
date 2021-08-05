@@ -792,12 +792,13 @@
             display: none;
             float: right;
             position: relative;
-            background: #ababab;
+            background: #353535;
             margin: 7px 20px 0px 0px;
             padding: 8px 12px;
             border-radius: 20px;
             position: relative;
             cursor: pointer;
+            border: solid 1px #5b5b5b;
 
             &.display {
                 display: block;
@@ -807,7 +808,7 @@
 
                 span {
                     &:last-child {
-                        color: #fff;
+                            color: #ababab;
                     }
                 }
 
@@ -819,7 +820,7 @@
             &.rside {
                 span {
                     &:nth-of-type(1) {
-                        color: #fff;
+                            color: #ababab;
                     }
                 }
                 
@@ -833,7 +834,7 @@
                 margin-right: 20px;
                 font-size: 14px;
                 position: relative;
-                color: #505050;
+                color: #2cbd0d;
 
                 &:last-child {
                     margin: 0px;
@@ -843,11 +844,13 @@
             .innbut {
                 width: 44%;
                 height: 80%;
-                background: #fff;
+                background: #2d2d2d;
                 position: absolute;
                 left: 3%;
                 top: 10%;
                 border-radius: 20px;
+                box-sizing: border-box;
+                border: solid 1px #2cbd0d;
             }
         }
 

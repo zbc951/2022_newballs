@@ -3496,7 +3496,7 @@ main .bg {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: url("../images/joinus_ic.png") no-repeat;
+  background: url("../images/joinus_ic2.png") no-repeat;
   background-size: 500%;
   margin-left: 25px;
   transform: translateY(5px);
@@ -3553,7 +3553,7 @@ main .bg {
 .minetable.callus tr td .box .half .rowbut {
   display: inline-block;
   position: relative;
-  background: #ababab;
+  background: #353535;
   padding: 8px 12px;
   border-radius: 20px;
   position: relative;
@@ -3566,29 +3566,32 @@ main .bg {
   animation: rowbut 0.3s ease-out 0s;
 }
 .minetable.callus tr td .box .half .rowbut.lside span:nth-of-type(2) {
-  color: #fff;
+  color: #ababab;
 }
 .minetable.callus tr td .box .half .rowbut.rside .innbut {
-  left: 49%;
+  left: 49.5%;
   animation: rowbut2 0.3s ease-out 0s;
 }
 .minetable.callus tr td .box .half .rowbut.rside span:nth-of-type(1) {
-  color: #fff;
+  color: #ababab;
 }
 .minetable.callus tr td .box .half .rowbut .innbut {
   display: block;
   width: 48%;
   height: 80%;
-  background: #fff;
+  background: #2d2d2d;
   position: absolute;
   left: 3%;
   top: 10%;
   border-radius: 20px;
+  box-sizing: border-box;
+  border: solid 1px #2cbd0d;
 }
 .minetable.callus tr td .box .half .rowbut span {
   font-size: 15px;
   position: relative;
-  padding-right: 15px;
+  padding-right: 17px;
+  color: #2cbd0d;
 }
 .minetable.callus tr td .box .half .rowbut span:last-child {
   padding: 0px;
@@ -3660,14 +3663,13 @@ main .bg {
   display: inline-block;
   width: 31%;
   height: 170px;
-  border: solid 1px #828282;
-  border-radius: 5px;
+  border: solid 1px #727272;
   box-sizing: border-box;
   margin-right: 12px;
   font-size: 0px;
   padding: 15px 0px;
   vertical-align: top;
-  background: #3d3d3d;
+  background: #242424;
 }
 .minetable.callus tr td .bigBox:last-child {
   margin: 0px;
@@ -3675,7 +3677,7 @@ main .bg {
 .minetable.callus tr td .bigBox .join_ic {
   width: 50px;
   height: 50px;
-  background: url("../images/joinus_ic.png") no-repeat;
+  background: url("../images/joinus_ic2.png") no-repeat;
   background-size: 500%;
   margin: 15px auto;
 }
@@ -3861,13 +3863,12 @@ main .bg {
 }
 .minetable.download tr td .codeBox {
   width: 80%;
-  border: solid 1px #828282;
-  border-radius: 3px;
+  border: solid 1px #727272;
   padding: 10px;
   box-sizing: border-box;
   font-size: 0px;
   margin: 20px auto 10px;
-  background: #3d3d3d;
+  background: #242424;
 }
 .minetable.download tr td .codeBox.control {
   margin: 20px auto;
@@ -3928,15 +3929,14 @@ main .bg {
   height: auto;
   padding: 10px;
   margin: 19px auto;
-  border: solid 1px #828282;
-  border-radius: 3px;
-  background: #3d3d3d;
+  border: solid 1px #727272;
+  background: #242424;
 }
 .minetable.download tr td .bowserBox .bowser {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("../images/download_app_browser.png") no-repeat;
+  background: url("../images/download_app_browser2.png") no-repeat;
   background-size: 200%;
 }
 .minetable.download tr td .bowserBox .bowser.ie {
@@ -7990,24 +7990,25 @@ main .bg {
   display: none;
   float: right;
   position: relative;
-  background: #ababab;
+  background: #353535;
   margin: 7px 20px 0px 0px;
   padding: 8px 12px;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
+  border: solid 1px #5b5b5b;
 }
 .minetopfix .fixbar .rowbutMes.display {
   display: block;
 }
 .minetopfix .fixbar .rowbutMes.lside span:last-child {
-  color: #fff;
+  color: #ababab;
 }
 .minetopfix .fixbar .rowbutMes.lside .innbut {
   animation: rowbut 0.3s ease-out 0s;
 }
 .minetopfix .fixbar .rowbutMes.rside span:nth-of-type(1) {
-  color: #fff;
+  color: #ababab;
 }
 .minetopfix .fixbar .rowbutMes.rside .innbut {
   left: 53%;
@@ -8017,7 +8018,7 @@ main .bg {
   margin-right: 20px;
   font-size: 14px;
   position: relative;
-  color: #505050;
+  color: #2cbd0d;
 }
 .minetopfix .fixbar .rowbutMes span:last-child {
   margin: 0px;
@@ -8025,11 +8026,13 @@ main .bg {
 .minetopfix .fixbar .rowbutMes .innbut {
   width: 44%;
   height: 80%;
-  background: #fff;
+  background: #2d2d2d;
   position: absolute;
   left: 3%;
   top: 10%;
   border-radius: 20px;
+  box-sizing: border-box;
+  border: solid 1px #2cbd0d;
 }
 .minetopfix .fixbar .line {
   display: none;

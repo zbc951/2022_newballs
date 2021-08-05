@@ -3763,7 +3763,7 @@
 							display: inline-block;
 							width: 50px;
 							height: 50px;
-							background: url('../images/joinus_ic.png') no-repeat;
+							background: url('../images/joinus_ic2.png') no-repeat;
 							background-size: 500%;
 							margin-left: 25px;
 							transform: translateY(5px);
@@ -3831,7 +3831,7 @@
 						.rowbut {
 							display: inline-block;
 							position: relative;
-							background: #ababab;
+							background: #353535;
 							padding: 8px 12px;
 							border-radius: 20px;
 							position: relative;
@@ -3848,7 +3848,7 @@
 								span {
 
 									&:nth-of-type(2) {
-										color: #fff;
+										color: #ababab;
 									}
 								}
 							}
@@ -3856,14 +3856,14 @@
 							&.rside {
 
 								.innbut {
-									left: 49%;
+									left: 49.5%;
 									animation: rowbut2 0.3s ease-out 0s;
 								}
 
 								span {
 
 									&:nth-of-type(1) {
-										color: #fff;
+										color: #ababab;
 									}
 								}
 							}
@@ -3872,17 +3872,20 @@
 								display: block;
 								width: 48%;
 								height: 80%;
-								background: #fff;
+								background: #2d2d2d;
 								position: absolute;
 								left: 3%;
 								top: 10%;
 								border-radius: 20px;
+								box-sizing: border-box;
+								border: solid 1px #2cbd0d;
 							}
 
 							span {
 								font-size: 15px;
 								position: relative;
-								padding-right: 15px;
+								padding-right: 17px;
+								color: #2cbd0d;
 
 								&:last-child {
 									padding: 0px;
@@ -3973,14 +3976,13 @@
 					display: inline-block;
 					width: 31%;
 					height: 170px;
-					border: solid 1px #828282;
-					border-radius: 5px;
+					border: solid 1px #727272;
 					box-sizing: border-box;
 					margin-right: 12px;
 					font-size: 0px;
 					padding: 15px 0px;
 					vertical-align: top;
-					background: #3d3d3d;
+					background: #242424;
 
 					&:last-child {
 						margin: 0px;
@@ -3989,7 +3991,7 @@
 					.join_ic {
 						width: 50px;
 						height: 50px;
-						background: url('../images/joinus_ic.png') no-repeat;
+						background: url('../images/joinus_ic2.png') no-repeat;
 						background-size: 500%;
 						margin: 15px auto;
 
@@ -4217,13 +4219,12 @@
 
 				.codeBox {
 					width: 80%;
-					border: solid 1px #828282;
-					border-radius: 3px;
+					border: solid 1px #727272;
 					padding: 10px;
 					box-sizing: border-box;
 					font-size: 0px;
 					margin: 20px auto 10px;
-					background: #3d3d3d;
+					background: #242424;
 
 					&.control {
 						margin: 20px auto;
@@ -4294,15 +4295,14 @@
 					height: auto;
 					padding: 10px;
 					margin: 19px auto;
-					border: solid 1px #828282;
-					border-radius: 3px;
-					background: #3d3d3d;
+					border: solid 1px #727272;
+					background: #242424;
 
 					.bowser {
 						display: inline-block;
 						width: 40px;
 						height: 40px;
-						background: url('../images/download_app_browser.png') no-repeat;
+						background: url('../images/download_app_browser2.png') no-repeat;
 						background-size: 200%;
 
 						&.ie {
