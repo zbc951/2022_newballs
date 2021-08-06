@@ -1,40 +1,179 @@
 $black001: #131313;
 $black002: #1f1f1f;
 $black003: #393939;
+$black004: #2b2b2b;
+$black005: #303030;
+$black006: #353535;
+$black007: #404040;
+$black008: #242424;
+$black009: #494949;
+$black010: #292929;
+$black011: #5d5d5d;
+$black012: #505050;
 
-$green001: #37bd10;
-$green002: #7df81a;
-$green003: #33ba04;
+$green001: #44be1d;
 $green004: #39792d;
-$green005: #45b51f;
-$green006: #cdff7f;
-$green007: #2c8e0b;
-$green008: #59a936;
-$green009: #57ed22;
-$green010: #2b4517;
+$green006: #57ed22;
+$green007: #2b4517;
+$green008: #097c25;
+$green009: #43b71b;
+$green010: #3e6f14;
+$green011: #4be119;
+$green012: #43dc16;
+$green013: #3e8a13;
+$green014: #3aad1b;
+$green015: #2cbd0d;
+$green016: #aef156;
+$green017: #37bb18;
+$green018: #49dd16;
+$green019: #29650f;
+$green021: #95f221;
+$green022: #16e329;
 
-$white001: #ebf1fb;
-$white002: #ffffff;
-$white003: #ababab;
+$white001: #ffffff;
+$white002: #ababab;
 $white004: #e0e0e0;
 $white005: #b2b2b2;
+$white006: #cacaca;
+$white007: #c3c3c3;
+$white010: #d9d9d9;
+$white011: #ececec;
 
-$blue001: #1856bd;
-$blue002: #90c1f2;
+$gray001: #999999;
+$gray002: #626262;
+$gray003: #707070;
+$gray004: #828282;
+$gray005: #686868;
+$gray006: #8c8c8c;
 
-$gray001: #969696;
-$gray002: #999999;
-$gray003: #626262;
-$gray004: #707070;
-$gray005: #404040;
-$gray006: #444444;
+$yellow001: #ffee00;
+$yellow002: #ffc334;
 
-$linear-gradient001: linear-gradient(to right, #45dc16 0%, #91e820 90%);
-$linear-gradient002: linear-gradient(to top, #131313 0%, #323232 100%);
-$linear-gradient003: linear-gradient(to top, #323232 0%, #434343 100%);
-$linear-gradient004: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-$linear-gradient005: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+$red001: #b20707;
+$red002: #c84a4a;
+$red003: #c71526;
+$red004: #eb1414;
+$red005: #e82f2f;
+
+$orange001: #ff9000;
+
+$linear-gradient001: linear-gradient(to top, #323232 0%, #434343 100%);
+$linear-gradient002: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+$linear-gradient003: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+$linear-gradient004: linear-gradient(to top, #1f1f1f 0%, #3c3c3c 100%);
 
 @mixin btnStyle001 {
-    
+    background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+    border: solid 1px #6a8e2a;
+    color: #1c1c1c;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
+        border-color: #6a8e2a;
+        color: #f4f4f4;
+    }
+}
+@mixin btnStyle002 {
+    background: linear-gradient(to left, #131313 0%, #323232 100%);
+    border: solid 1px #2c8e0b;
+    color: #ffffff;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to right, #45dc16 10%, #91e820 90%);
+        border-color: #cdff7f;
+        color: #1c1c1c;
+    }
+}
+@mixin btnStyle003 {
+    background: #2b2b2b;
+    border: solid 1px #707070;
+    color: #e0e0e0;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+        border-color: #aef156;
+        color: #272727;
+    }
+}
+@mixin btnStyle004 {
+    background: #1f1f1f;
+    border: solid 1px #6a8e2a;
+    color: #b2b2b2;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, #141414 0%, #434343 100%);
+        border-color: #32980e;
+        color: #44be1d;
+    }
+}
+@mixin btnStyle005 {
+    background: #393939;
+    border: solid 1px #37da14;
+    color: #37da14;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to right, #92e820 0%, #46dd16 90%);
+        border-color: #aef156;
+        color: #222222;
+    }
+}
+@mixin btnStyle006 {
+    background: #1f1f1f;
+    border: solid 1px #6a8e2a;
+    color: #f2f2f2;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to right, #A1EA22 0%, #34DA14 100%);
+        border-color: #aef156;
+        color: #000000;
+
+        span {
+            color: #000000;
+        }
+    }
+}
+@mixin btnStyle007 {
+    background: linear-gradient(to top, #323232 0%, #434343 100%);
+    border: solid 1px #7b7b7b;
+    color: #b2b2b2;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, #141414 0%, #434343 100%);
+        border-color: #32980e;
+        color: #44be1d;
+    }
+}
+
+
+@mixin inputStyle001 {
+    background: #1f1f1f;
+    border: solid 1px #ababab;
+    color: #ababab;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to right, #92e820 0%, #46dd16 90%);
+        border-color: #aef156;
+        color: #131313;
+    }
+}
+@mixin inputStyle002 {
+    background: linear-gradient(to bottom, #303030 21%, #424242 100%);
+    border: solid 1px #5d5d5d;
+    box-shadow: 0px 3px 10px 2px #1f1f1f inset;
+    color: #898787;
+
+    &::placeholder {
+        color: #999999
+    }
+}
+
+@mixin selectStyle001 {
+    background: #1f1f1f;
+    border: solid 1px #707070;
+    color: #ababab;
+    appearance: none;
+
+    option {
+        background: #1f1f1f;
+    }
 }

@@ -1,3 +1,5 @@
+@import "./colorCode";
+
 //右列
 .right {
     width: 300px;
@@ -33,7 +35,7 @@
         position: relative;
         
         p {
-            background: linear-gradient(to top,#323232 0%,#434343 100%);
+            background: $linear-gradient001;
             color: #e5e5e5;
             padding: 7px 15px;
             font-size: 12px;
@@ -126,8 +128,8 @@
         text-align: center;
 
         .title {
-            background: linear-gradient(to top,#323232 0%,#434343 100%);
-            box-shadow: 0px 2px 1px 0px #171717;
+            background: $linear-gradient001;
+            box-shadow: 0px 2px 1px 0px $black001;
             color: #ffffff;
             padding: 7px 15px;
             font-size: 12px;
@@ -218,7 +220,7 @@
             button {
                 width: 49.5%;
                 height: 100%;
-                background: #3e3e3e;
+                background: #404040;
                 color: #ababab;
                 font-size: 14px;
                 float: left;
@@ -232,7 +234,7 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to top,#1f1f1f 0%,#3c3c3c 100%);
+                    background: $linear-gradient004;
                     color: #49dd16;
                 }
             }
@@ -244,7 +246,7 @@
             button {
                 width: 100%;
                 height: 100%;
-                background: #3e3e3e;
+                background: #404040;
                 color: #ababab;
                 font-size: 14px;
                 border-radius: 3px 3px 0px 0px;
@@ -252,7 +254,7 @@
                 border-bottom: none;
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to top,#1f1f1f 0%,#3c3c3c 100%);
+                    background: $linear-gradient004;
                     color: #49dd16;
                 }
             }
@@ -274,7 +276,7 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #131313;
+                background: $black001;
                 border-radius: 10px;
             }
         
@@ -298,10 +300,10 @@
                     position: relative;
                     overflow: hidden;
                     cursor: pointer;
-                    background: linear-gradient(to top,#323232 0%,#434343 100%);
+                    background: $linear-gradient001;
 
                     &:hover,&:active {
-                        background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
+                        background: $linear-gradient002;
                         border: solid 1px #29650f;
 
                         &::before {
@@ -315,7 +317,7 @@
 
                     &.active {
                         height: auto;
-                        background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
+                        background: $linear-gradient002;
                         border: solid 1px #29650f;
                         position: sticky;
                         top: 0px;
@@ -361,7 +363,7 @@
                     .innerList {
                         width: 100%;
                         height: 70px;
-                        background: #2d2d2d;
+                        background: #303030;
                         position: relative;
                         cursor: default;
                         border-top: solid 1px #505050;
@@ -378,7 +380,7 @@
                             top: 50%;
                             transform: translateY(-50%);
                             font-size: 12px;
-                            color: #b6b6b6;
+                            color: #b2b2b2;
 
                             span {
                                 font-weight: bold;
@@ -408,21 +410,13 @@
                             }
 
                             button {
+                                @include btnStyle003;
                                 position: absolute;
                                 right: 20px;
                                 bottom: 0px;
                                 width: 70px;
                                 height: 30px;
-                                background: #252525;
                                 border-radius: 3px;
-                                border: solid 1px #317f0f;
-                                color: #aeaeae;
-
-                                &:hover,&:active,&.active {
-                                    background: linear-gradient(to right,#92e820 0%,#46dd16 90%);
-                                    border-color: #aef156;
-                                    color: #252525;
-                                }
                             }
                         }
                     }
@@ -446,7 +440,7 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #131313;
+                background: $black001;
                 border-radius: 10px;
             }
         

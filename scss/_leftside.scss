@@ -1,3 +1,5 @@
+@import "./colorCode";
+
 .left {
     width: 270px;
     height: 850px;
@@ -17,7 +19,7 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #131313;
+        background: $black001;
         border-radius: 10px;
     }
 
@@ -109,7 +111,7 @@
                     border: solid 1px transparent;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to top,#363636 0%,#1d1d1d 100%);
+                        background: linear-gradient(to top,#353535 0%,#1d1d1d 100%);
                         color: #53c120;
                         border-color: #2d7e12;
                         span {
@@ -142,7 +144,7 @@
                     }
 
                     .live {
-                        background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+                        background: $linear-gradient003;
                         color: #2b4517;
                     }
                 }
@@ -193,15 +195,15 @@
             &:hover {
 
                 a {
-                    background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
+                    background: $linear-gradient002;
                     color: #57ed22;
 
                     svg {
-                        fill: #37bd10;
+                        fill: #44be1d;
                     }
 
                     i {
-                        color: #37bd10;
+                        color: #44be1d;
                     }
                 }
             }
@@ -213,15 +215,15 @@
                 }
 
                 a {
-                    background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
+                    background: $linear-gradient002;
                     color: #57ed22;
 
                     svg {
-                        fill: #37bd10;
+                        fill: #44be1d;
                     }
 
                     i {
-                        color: #37bd10;
+                        color: #44be1d;
                     }
                 }
             }
@@ -237,7 +239,7 @@
                 display: block;
                 color: #e0e0e0 ;
                 width: calc(100% - 50px);
-                background: linear-gradient(to top,#323232 0%,#434343 100%);
+                background: $linear-gradient001;
                 height: 45px;
                 line-height: 45px;
                 font-size: 14px;
@@ -301,7 +303,7 @@
                     transform: translateY(-50%);
                     right: 42px;
                     font-size: 12px;
-                    background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+                    background: $linear-gradient003;
                     color: #2b4517;
                     padding: 0px 4px;
                     border-radius: 3px;
@@ -312,7 +314,7 @@
                 display: none;
                 width: calc(100% - 30px);
                 height: 30px;
-                background: #2d2d2d;
+                background: #303030;
                 border-bottom: solid 1px #4c4c4c;
                 line-height: 30px;
                 padding-left: 30px;

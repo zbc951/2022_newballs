@@ -1,3 +1,5 @@
+@import "./colorCode";
+
 .middle {
     width: 1270px;
     height: 850px;
@@ -14,7 +16,7 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #131313;
+        background: $black001;
         border-radius: 10px;
     }
 
@@ -151,7 +153,7 @@
 .hideboard {
     width: 1260px;
     height: 70px;
-    background: #131313;
+    background: $black001;
     position: absolute;
     z-index: 5;
     left: 280px;
@@ -163,7 +165,7 @@
     width: calc(100% - 660px);
     height: 50px;
     border-radius: 3px;
-    background: linear-gradient(to top,#323232 0%,#434343 100%);
+    background: $linear-gradient001;
     position: absolute;
     top: 10px;
     left: 280px;
@@ -186,7 +188,7 @@
         }
 
         i {
-            color: #dddddd;
+            color: #e0e0e0;
             font-size: 18px;
             margin: 0px 6px 0px 12px;
             transform: translateY(2px);
@@ -197,7 +199,7 @@
             height: 18px;
             margin: 0px 6px 0px 12px;
             transform: translateY(4px);
-            fill: #dddddd;
+            fill: #e0e0e0;
         }
 
         //遊戲標題
@@ -230,7 +232,7 @@
 
             select {
                 background: #2b2b2b;
-                color: #dddddd;
+                color: #e0e0e0;
                 appearance:none;   
                 -moz-appearance:none;   
                 -webkit-appearance:none;
@@ -301,7 +303,7 @@
                 height: 0px;
                 border-style: solid;
                 border-width: 8px 6px 0px 6px;
-                border-color: #bfbfbf transparent;
+                border-color: #b2b2b2 transparent;
                 right: 10px;
                 top: 20px;
                 pointer-events: none;
@@ -309,7 +311,7 @@
             
             select {
                 background: #2b2b2b;
-                color: #dddddd;
+                color: #e0e0e0;
                 appearance:none;   
                 -moz-appearance:none;   
                 -webkit-appearance:none;
@@ -325,7 +327,7 @@
             
             span {
                 background: #2b2b2b;
-                color: #dddddd;
+                color: #e0e0e0;
                 padding: 7px 30px 4px 5px;
                 border: solid 1px #707070;
                 cursor: pointer;
@@ -376,7 +378,7 @@
 
                 .total {
                     display: inline-block;
-                    background: #131313;
+                    background: $black001;
                     border-radius: 3px;
                     margin-left: 10px;
                     line-height: 22px;
@@ -384,7 +386,7 @@
                     text-align: center;
 
                     span {
-                        color: #33ba04;
+                        color: #44be1d;
                     }
                 }
 
@@ -426,16 +428,16 @@
                         }
 
                         &:hover,&:active,&.active {
-                            background: #444444;
+                            background: #626262;
                         }
                     }
                 }
             }
 
             .smallBtn {
-                background: #212121;
+                background: #1f1f1f;
                 border: solid 1px #6a8e2a;
-                color: #bfbfbf;
+                color: #b2b2b2;
                 padding: 5px 10px 6px;
                 border-radius: 3px;
                 margin: 0px 3px;
@@ -446,7 +448,7 @@
 
                 &:hover,&:active,&.active {
                     background: linear-gradient(to bottom,#141414 0%,#434343 100%);
-                    color: #33ba04;
+                    color: #44be1d;
                     border-color: #32980e;
                 }
             }
@@ -476,7 +478,7 @@
                 
                 button {
                     border-color: #32980e;
-                    color: #33ba04;
+                    color: #44be1d;
                     background: linear-gradient(to bottom,#141414 0%,#434343 100%);
                 }
             }
@@ -484,10 +486,10 @@
             button {
                 width: 80px;
                 height: 50px;
-                background: linear-gradient(to top,#323232 0%,#434343 100%);
+                background: $linear-gradient001;
                 border: solid 1px #7b7b7b;
                 position: relative;
-                color: #bfbfbf;
+                color: #b2b2b2;
                 padding: 0px 8px;
             }
         }
@@ -497,7 +499,7 @@
             top: 50%;
             transform: translateY(-50%);
             padding: 6px 8px 8px 21px;
-            background: #363636;
+            background: #353535;
             color: #d0d0d0;
             border: solid 1px #727272 ;
             border-radius: 3px;
@@ -535,8 +537,8 @@
             font-size: 15px;
             height: 48px;
             line-height: 50px;
-            background: linear-gradient(to top,#323232 0%,#434343 100%);
-            color: #bfbfbf;
+            background: $linear-gradient001;
+            color: #b2b2b2;
             cursor: pointer;
             padding: 0px 10px;
             text-align: center;
@@ -544,7 +546,7 @@
             border-radius: 3px;
 
             &:hover,&:active,&.active {
-                color: #33ba04;
+                color: #44be1d;
                 background: linear-gradient(to bottom,#141414 0%,#434343 100%);
                 border-color: #32980e;
             }
@@ -596,7 +598,7 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #131313;
+        background: $black001;
         border-radius: 10px;
     }
 
@@ -707,7 +709,7 @@
     top: 20%;
     transform: translateX(-50%);
     border: solid 1px #3e8a13;
-    box-shadow: 0px 0px 10px 5px #3f8a1385;
+    box-shadow: 0px 0px 10px 5px #3e6f14;
 
     &.display {
         display: block;
@@ -729,7 +731,7 @@
     .innerBox {
         width: 94%;
         height: 285px;
-        background: #191919;
+        background: $black001;
         border-radius: 3px;
         margin: 3% auto;
         border: solid 1px #494949;
@@ -901,7 +903,7 @@
                 width: 180px;
                 height: 36px;
                 margin-right: 10px;
-                background: #2d2d2d;
+                background: #303030;
                 border: 1px solid #d9d9d9;
                 color: #b2b2b2;
                 border-radius: 5px;
@@ -922,7 +924,7 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
+                    background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
                     border-color: #2b7d16;
                     color: #46d317;
                 }
@@ -944,7 +946,7 @@
     top: 15%;
     transform: translateX(-50%);
     border: solid 1px #3e8a13;
-    box-shadow: 0px 0px 10px 5px #3f8a1385;
+    box-shadow: 0px 0px 10px 5px #3e6f14;
 
     h1 {
         width: 100%;
@@ -963,14 +965,14 @@
         width: 96%;
         height: 90px;
         margin: 2% auto 0px;
-        background: #191919;
+        background: $black001;
         border-radius: 3px;
         border: solid 1px #5b5b5b;
 
         p {
             font-size: 14px;
             padding: 10px 12px;
-            color: #cdcdcd;
+            color: #cacaca;
 
             span {
                 color: #c71526;
@@ -993,7 +995,7 @@
             text-align: right;
             line-height: 54px;
             font-size: 14px;
-            color: #b0b0b0;
+            color: #b2b2b2;
 
             .slideBase {
                 float: right;
@@ -1060,7 +1062,7 @@
                     width: 48%;
                     height: 83%;
                     top: 8%;
-                    background: #2d2d2d;
+                    background: #303030;
                     border-radius: 30px;
                     transition: all 0.2s;
                     border: solid 1px #2cbd0d;
@@ -1074,28 +1076,20 @@
             line-height: 54px;
             padding-left: 30px;
             font-size: 14px;
-            color: #b0b0b0;
+            color: #b2b2b2;
 
             input {
+                @include inputStyle001;
                 text-align: right;
-                background: #212121;
                 border-radius: 3px;
                 width: 67px;
                 height: 30px;
                 padding-right: 10px;
                 font-size: 16px;
-                color: #ababab;
                 margin-right: 4px;
-                border: solid 1px #ababab;
 
                 &:nth-of-type(1) {
                     margin-left: 20px;
-                }
-
-                &:hover,&:active,&.active {
-                    background: linear-gradient(to right,#92e820 0%,#46dd16 90%);
-                    border-color: #aef156;
-                    color: #191919;
                 }
             }
         }
@@ -1105,10 +1099,10 @@
         width: calc(96% - 15px);
         height: 50px;
         margin: 2% auto 0px;
-        background: #191919;
+        background: $black001;
         border-radius: 3px;
         line-height: 50px;
-        color: #b0b0b0;
+        color: #b2b2b2;
         padding-left: 15px;
         font-size: 14px;
         border: solid 1px #5b5b5b;
@@ -1175,13 +1169,13 @@
     border-style: solid;
     border-width: 1px;
     border-color: #393939 #393939 #626262;
-    box-shadow: 0px 0px 5px 2px #131313 inset;
+    box-shadow: 0px 0px 5px 2px $black001 inset;
     border-radius: 3px;
     position: absolute;
     cursor: pointer;
 
     &.active {
-        box-shadow: 0px 0px 5px 2px #131313 inset, 0px 0px 2px 1px #39792d;
+        box-shadow: 0px 0px 5px 2px $black001 inset, 0px 0px 2px 1px #39792d;
         
         &::before {
             content: "";
@@ -1208,7 +1202,7 @@
     border-radius: 3px 3px 0px 0px;
     z-index: 16;
     text-align: left;
-    box-shadow: -4px -2px 10px 0px #3f8a1385,4px -2px 10px 0px #3f8a1385;
+    box-shadow: -4px -2px 10px 0px #3e6f14,4px -2px 10px 0px #3e6f14;
     border: solid 2px #3e8a13;
     box-sizing: border-box;
 
@@ -1262,20 +1256,20 @@
         border-radius: 0px 0px 3px 3px;
         border-top-width: 0px;
         overflow: hidden;
-        box-shadow: 4px 2px 10px 0px #3f8a1385,-4px 2px 10px 0px #3f8a1385;
+        box-shadow: 4px 2px 10px 0px #3e6f14,-4px 2px 10px 0px #3e6f14;
         transform: translate(-2px, -2px);
 
         //總額顯示
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #282828;
+            background: #292929;
 
             div {
                 display: block;
                 width: 180px;
                 height: 100%;
-                color: #b0b0b0;
+                color: #b2b2b2;
                 border-style: solid;
                 border-color: #626262;
                 border-width: 1px 1px 1px 0px;
@@ -1302,7 +1296,7 @@
                 width: 50%;
                 text-align: right;
                 float: left;
-                color: #b0b0b0;
+                color: #b2b2b2;
 
                 input {
                     width: 150px;
@@ -1349,10 +1343,10 @@
                     border: solid 1px #6a8e2a;
                     border-radius: 5px;
                     font-size: 17px;
-                    color: #b0b0b0;
+                    color: #b2b2b2;
                     font-weight: bold;
                     line-height: 35px;
-                    background: #212121;
+                    background: #1f1f1f;
 
                     &:hover,&:active,&.active {
                         background: #4fde17;
@@ -1362,10 +1356,10 @@
                     &.decideBtn {
                         width: 176px;
                         background: linear-gradient(to right,#57b21a 0%,#349a14 100%);
-                        color: #191919;
+                        color: $black001;
                         border-color: #aef156;
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
+                            background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
                             color: #46d317;
                             border-color: #2b7d16;
                         }
@@ -1388,7 +1382,7 @@
     top: 150px;
     background: #242424;
     border-radius: 3px 3px 0px 0px;
-    box-shadow: -4px -2px 10px 0px #3f8a1385,4px -2px 10px 0px #3f8a1385;
+    box-shadow: -4px -2px 10px 0px #3e6f14,4px -2px 10px 0px #3e6f14;
     border: solid 2px #3e8a13;
     box-sizing: border-box;
 
@@ -1443,20 +1437,20 @@
         border-top-width: 0px;
         border-radius: 0px 0px 3px 3px;
         overflow: hidden;
-        box-shadow: 4px 2px 10px 0px #3f8a1385,-4px 2px 10px 0px #3f8a1385;
+        box-shadow: 4px 2px 10px 0px #3e6f14,-4px 2px 10px 0px #3e6f14;
         transform: translate(-2px, -2px);
         
         //總額顯示
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #282828;
+            background: #292929;
 
             div {
                 display: block;
                 width: 180px;
                 height: 100%;
-                color: #b0b0b0;
+                color: #b2b2b2;
                 border-style: solid;
                 border-color: #626262;
                 border-width: 1px 1px 1px 0px;
@@ -1484,7 +1478,7 @@
                 text-align: left;
                 float: left;
                 margin-top: 20px;
-                color: #b0b0b0;
+                color: #b2b2b2;
 
                 &:last-child {
                     border-left: solid 1px #626262;
@@ -1573,7 +1567,7 @@
         float: left;
         width: 24px;
         height: 24px;
-        background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+        background: $linear-gradient003;
         border-radius: 3px;
         margin: 13px 0px 0px 40px;
         line-height: 28px;
@@ -1622,7 +1616,7 @@
         width: calc(100% + 2px);
         height: 0px;
         background: #2f2f2f;
-        border: solid 1px #33bc19;
+        border: solid 1px #44be1d;
         border-top-color: #7b7b7b;
         box-sizing: border-box;
         overflow: hidden;
@@ -1644,7 +1638,7 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #131313;
+                background: $black001;
                 border-radius: 10px;
             }
         
@@ -1675,7 +1669,7 @@
                     td {
                         vertical-align: middle;
                         font-size: 14px;
-                        color: #bfbfbf;
+                        color: #b2b2b2;
 
                         &:nth-of-type(1) {
                             width: 10%;
@@ -1700,7 +1694,7 @@
                         }
 
                         .odds {
-                            color: #33ba04;
+                            color: #44be1d;
                         }
 
                         p {
@@ -1729,7 +1723,7 @@
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #171717;
+            background: $black001;
             color: #e7e7e7;
 
             div {
@@ -1823,10 +1817,10 @@
                     border: solid 1px #6a8e2a;
                     border-radius: 5px;
                     font-size: 17px;
-                    color: #b0b0b0;
+                    color: #b2b2b2;
                     font-weight: bold;
                     line-height: 35px;
-                    background: #212121;
+                    background: #1f1f1f;
 
                     &:hover,&:active,&.active {
                         background: #4fde17;
@@ -1835,11 +1829,11 @@
 
                     &.cur {
                         width: 176px;
-                        color: #191919;
+                        color: $black001;
                         background: #4fad18;
                         border-color: #aef156;
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
+                            background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
                             color: #46d317;
                             border-color: #2b7d16;
                         }
@@ -1866,7 +1860,7 @@
     background: #828282;
     border-radius: 3px 3px 0px 0px;
     border: solid 1px #2fac17;
-    box-shadow: -4px -2px 10px 0px #3f8a1385,4px -2px 10px 0px #3f8a1385;
+    box-shadow: -4px -2px 10px 0px #3e6f14,4px -2px 10px 0px #3e6f14;
     background: #242424;
 
     //總投注額
@@ -1875,7 +1869,7 @@
         float: left;
         width: 24px;
         height: 24px;
-        background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+        background: $linear-gradient003;
         border-radius: 5px;
         margin: 13px 0px 0px 15px;
         line-height: 28px;
@@ -1944,7 +1938,7 @@
         border: solid 1px #2fac17;
         border-top-color: #7b7b7b;
         border-radius: 0px 0px 3px 3px;
-        box-shadow: 4px 2px 10px 0px #3f8a1385,-4px 2px 10px 0px #3f8a1385;
+        box-shadow: 4px 2px 10px 0px #3e6f14,-4px 2px 10px 0px #3e6f14;
         overflow: hidden;
         cursor: default;
         position: absolute;
@@ -1964,7 +1958,7 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #131313;
+                background: $black001;
                 border-radius: 10px;
             }
         
@@ -1995,7 +1989,7 @@
                     td {
                         vertical-align: middle;
                         font-size: 14px;
-                        color: #bfbfbf;
+                        color: #b2b2b2;
 
                         &:nth-of-type(1) {
                             width: 10%;
@@ -2016,11 +2010,11 @@
                         }
 
                         .pitcher {
-                            color: #bfbfbf;
+                            color: #b2b2b2;
                         }
 
                         .odds {
-                            color: #33ba04;
+                            color: #44be1d;
                         }
 
                         p {
@@ -2049,7 +2043,7 @@
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #171717;
+            background: $black001;
             color: #e7e7e7;
 
             div {
@@ -2067,7 +2061,7 @@
                 }
 
                 .remind {
-                    color: #33ba04;
+                    color: #44be1d;
                     padding-left: 5px;
                 }
             }
@@ -2122,7 +2116,7 @@
                     font-size: 13px;
                     line-height: 24px;
                     margin-left: 10px;
-                    color: #bfbfbf;
+                    color: #b2b2b2;
 
                     span {
                         padding-left: 5px;
@@ -2247,7 +2241,7 @@
                     width: 60px;
                     height: 28px;
                     color: #ababab;
-                    background: #212121;
+                    background: #1f1f1f;
                     font-size: 15px;
                     border-radius: 3px;
                     border: solid 1px #808080;
@@ -2281,13 +2275,13 @@
                     }
 
                     &:nth-child(odd) {
-                        background: #191919;
+                        background: $black001;
                     }
                     
                     th {
                         font-size: 14px;
                         padding: 5px 0px;
-                        color: #bfbfbf;
+                        color: #b2b2b2;
                     }
 
                     td {
@@ -2436,12 +2430,12 @@
                     height: 40px;
                     background: #51ae19;
                     border-radius: 3px;
-                    color: #191919;
+                    color: $black001;
                     font-size: 16px;
                     border: solid 1px #aef156;
                     margin-left: 50px;
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
+                        background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
                         color: #46d317;
                         border-color: #2b7d16;
                     }
@@ -2487,7 +2481,7 @@
     transform: translateX(-50%);
     top: 200px;
     z-index: 20;
-    box-shadow: 0px 0px 10px 5px #3f8a1385;
+    box-shadow: 0px 0px 10px 5px #3e6f14;
     border-radius: 5px;
     border: solid 2px #3e8a13;
 
@@ -2566,14 +2560,14 @@
             width: 180px;
             height: 36px;
             margin-top: 30px;
-            color: #191919;
+            color: $black001;
             background: linear-gradient(to right,#57b21a 0%,#349a14 100%);
             border: solid 1px #aef156;
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
             &:hover,&:active,&.active {
-                background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
+                background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
                 color: #46d317;
                 border-color: #2b7d16;
             }
@@ -2755,7 +2749,7 @@
         span {
             
             &:nth-of-type(1) {
-                background: #f39800;
+                background: #ff9000;
             }
         }
     }
@@ -2765,7 +2759,7 @@
         span {
             
             &:nth-of-type(1),&:nth-of-type(2) {
-                background: #f39800;
+                background: #ff9000;
             }
         }
     }

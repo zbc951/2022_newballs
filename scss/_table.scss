@@ -1,3 +1,5 @@
+@import "./colorCode";
+
 //一般版
 .playBoard {
 	width: calc(100% - 10px);
@@ -12,20 +14,20 @@
 		text-align: center;
 		border-style: solid;
 		border-width: 1px;
-		border-color: transparent transparent #868282 transparent;
+		border-color: transparent transparent #828282 transparent;
 
 		&:nth-of-type(1) {
-			border-top-color: #33bc19;
+			border-top-color: #44be1d;
 			border-bottom: none;
 		}
 
 		&:nth-of-type(odd) {
-			background: #2c2c2c;
+			background: #2b2b2b;
 		}
 
 		&:hover,&:active,&.active {
 			border: solid 1px #43b71b;
-			background: #363636;
+			background: #353535;
 			box-shadow: 0px 0px 5px 2px #3e6f14 inset;
 
 			td {
@@ -38,7 +40,7 @@
 			font-size: 13px;
 			padding: 8px 0px 7px;
 			vertical-align: middle;
-			background: #1b1b1b;
+			background: #1f1f1f;
 			position: sticky;
 			top: 70px;
 			z-index: 2;
@@ -67,7 +69,7 @@
 			padding: 8px 0px;
 			vertical-align: middle;
 			word-break: break-all;
-			color: #e2e2e2;
+			color: #e0e0e0;
 			line-height: 18px;
 
 			&:nth-of-type(1) {
@@ -102,24 +104,13 @@
 
 			//行內按鈕
 			button {
-				background: #212121;
-				color: #f2f2f2;
+				@include btnStyle006;
 				border-radius: 3px;
 				position: relative;
 				word-break: break-all;
-				border: solid 1px #6a8e2a;
 				overflow: hidden;
 				font-size: 13px;
 				margin: 0px 1px;
-
-				&:hover,&:active,&.active {
-					background: linear-gradient(to right,#A1EA22 0%,#34DA14 100%);
-					color: #000;
-
-					span {
-						color: #000;
-					}
-				}
 
 				&::before {
 					display: none;
@@ -169,7 +160,7 @@
 				}
 
 				&.disable {
-					background: #282828;
+					background: #292929;
 					pointer-events: none;
 					color: transparent;
 					user-select: none;
@@ -2157,7 +2148,7 @@
 		}
 
 		&:nth-of-type(2) {
-			background: #282828;
+			background: #292929;
 		}
 
 		td {
@@ -2171,7 +2162,7 @@
 
 			&.title {
 				width: 9%;
-				background: #282828;
+				background: #292929;
 			}
 
 			&:nth-of-type(2) {
@@ -2201,7 +2192,7 @@
 		td {
 			width: 50%;
 			vertical-align: middle;
-			color: #b0b0b0;
+			color: #b2b2b2;
 			padding: 15px;
 			font-size: 13px;
 
@@ -2330,7 +2321,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 187px 0px 20px 10px;
-	background: #2c2c2c;
+	background: #2b2b2b;
 
 	tr {
 
@@ -2341,7 +2332,7 @@
 			border-bottom: solid 1px #727272;
 			font-size: 14px;
 			text-align: left;
-			background: #2c2c2c;
+			background: #2b2b2b;
 		}
 
 		td {
@@ -2384,25 +2375,12 @@
 			}
 
 			button {
+				@include btnStyle006;
 				border-radius: 3px;
-				border: none;
 				height: auto;
 				padding: 8px;
-				background: #212121;
 				font-size: 14px;
-				color: #fefefe;
 				margin-bottom: 8px;
-				border: solid 1px #6a8e2a;
-
-				&:hover,&:active,&.active {
-					border-color: #aef156;
-					background: linear-gradient(to right,#92e820 0%,#46dd16 100%);
-					color: #202020;
-
-					span {
-						color: #202020;
-					}
-				}
 
 				&.title {
 					border: none;
@@ -2428,7 +2406,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #2c2c2c;
+	background: #2b2b2b;
 
 	//內容
     tr {
@@ -2444,8 +2422,8 @@
 			font-size: 13px;
 			padding: 8px 0px 6px;
 			vertical-align: middle;
-			background: #1b1b1b;
-			border-bottom: solid 1px #33bc19;
+			background: #1f1f1f;
+			border-bottom: solid 1px #44be1d;
 			position: sticky;
 			top: 70px;
 			z-index: 2;
@@ -2534,7 +2512,7 @@
 					bottom: -24px;
 					border: solid 1px #727272;
 					border-radius: 30px;
-					background: #2c2c2c;
+					background: #2b2b2b;
 					color: #d0d0d0;
 				}
 			}
@@ -2619,7 +2597,7 @@
 				.midBox {
 					width: 80px;
 					height: 80px;
-					background: linear-gradient(to top,#2c2c2c 27%,#3e3e3e 94%);
+					background: linear-gradient(to top,#2b2b2b 27%,#3e3e3e 94%);
 					border-radius: 90px;
 					position: absolute;
 					left: 50%;
@@ -2658,7 +2636,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #2c2c2c;
+	background: #2b2b2b;
 
 	tr {
 		text-align: center;
@@ -2668,12 +2646,12 @@
 		}
 
 		th {
-			color: #33bc19;
+			color: #44be1d;
 			font-size: 13px;
 			padding: 8px 0px 7px;
 			vertical-align: middle;
-			background: #1b1b1b;
-			border-bottom: solid 1px #33bc19;
+			background: #1f1f1f;
+			border-bottom: solid 1px #44be1d;
 			position: relative;
 
 			//字靠左
@@ -2777,7 +2755,7 @@
 								border: solid 1px #707070;
 								background: #2b2b2b;
 								padding: 5px 8px;
-								color: #dddddd;
+								color: #e0e0e0;
 								border-radius: 3px;
 
 								&:hover,&:active,&.active {
@@ -2800,7 +2778,7 @@
 					font-size: 13px;
 
 					a {
-						color: #80d91e;
+						color: #6ad237;
 						padding-left: 5px;
 					}
 				}
@@ -3152,7 +3130,7 @@
 					border: solid 1px #287c12;
 
 					&:hover,&:active,&.active {
-						background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+						background: $linear-gradient003;
 						color: #232323;
 						border-color: #7af537;
 
@@ -3249,7 +3227,7 @@
 
 				.remind {
 					float: right;
-					color: #bfbfbf;
+					color: #b2b2b2;
 					margin: 0px 20px 20px 0px;
 					font-size: 14px;
 					position: relative;
@@ -3357,7 +3335,7 @@
 			td {
 				border-right: solid 1px #707070;
 				padding: 10px;
-				color: #dddddd;
+				color: #e0e0e0;
 				font-size: 14px;
 
 				&:nth-of-type(1) {
@@ -3431,13 +3409,13 @@
 			border-bottom: solid 1px #676767;
 
 			&.totalInfo {
-				background: #212121;
+				background: #1f1f1f;
 			}
 
 			th {
 				border-bottom: solid 1px #2d910e;
 				background: #3f3f3f;
-				color: #dddddd;
+				color: #e0e0e0;
 
 				p {
 					float: left;
@@ -3466,7 +3444,7 @@
 
 			td {
 				padding: 10px;
-				color: #bfbfbf;
+				color: #b2b2b2;
 				font-size: 14px;
 				border-right: solid 1px #ababab;
 
@@ -3529,7 +3507,7 @@
 			td {
 				padding: 10px 0px;
 				font-size: 15px;
-				color: #37bd10;
+				color: #44be1d;
 
 				&:nth-of-type(1),&:nth-of-type(3),&:nth-of-type(5) {
 					width: 10%;
@@ -3875,7 +3853,7 @@
 								display: block;
 								width: 48%;
 								height: 80%;
-								background: #2d2d2d;
+								background: #303030;
 								position: absolute;
 								left: 3%;
 								top: 10%;
@@ -4117,10 +4095,10 @@
 					font-size: 12px;
 
 					&:hover,&:active,&.active {
-						border-color: #33bc19;
+						border-color: #44be1d;
 						box-shadow: 0px 0px 10px 2px #27581d;
 						transition: all 0.3s;
-						color: #33bc19;
+						color: #44be1d;
 
 						span {
 							background-position-y: 100%;
@@ -4142,7 +4120,7 @@
 				}
 
 				.remind {
-					color: #bfbfbf;
+					color: #b2b2b2;
 					font-size: 14px;
 					margin: 10px 0px 0px 20px;
 					float: left;
@@ -4386,7 +4364,7 @@
 					}
 
 					.remind {
-						color: #bfbfbf;
+						color: #b2b2b2;
 						margin-left: 30px;
 						font-size: 14px;
 						position: relative;
@@ -4454,7 +4432,7 @@
 							display: block;
 							font-size: 14px;
 							padding-bottom: 15px;
-							color: #bfbfbf;
+							color: #b2b2b2;
 						}
 					}
 				}
@@ -4524,7 +4502,7 @@
 
 				p {
 					margin: 20px 0px;
-					color: #bfbfbf;
+					color: #b2b2b2;
 					font-size: 14px;
 					font-weight: bold;
 
@@ -4623,7 +4601,7 @@
 
 					&:hover,&:active,&.active {
 						border-color: #47a215;
-						background: linear-gradient(to top,#242424 0%,#1b1b1b 100%);
+						background: linear-gradient(to top,#242424 0%,#1f1f1f 100%);
 						
 						&::before {
 							content: "";
@@ -4837,7 +4815,7 @@
 						}
 
 						button {
-							color: #dddddd;
+							color: #e0e0e0;
 							padding: 5px 8px;
 							border: solid 1px #707070;
 							border-radius: 3px;
@@ -4978,7 +4956,7 @@
 					display: block;
 					width: 240px;
 					height: 40px;
-					background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+					background: $linear-gradient003;
 					border-radius: 3px;
 					font-size: 16px;
 					color: #232323;

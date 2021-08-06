@@ -1,3 +1,5 @@
+@import "./colorCode";
+
 //我的頁面
 .myself {
     width: 1170px;
@@ -15,7 +17,7 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #131313;
+        background: $black001;
         border-radius: 10px;
     }
 
@@ -50,10 +52,10 @@
 
         &.open {
             border: solid 1px #30800e;
-            background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+            background: $linear-gradient002;
 
             div {
-                color: #37bd10;
+                color: #44be1d;
             }
         }
 
@@ -61,7 +63,7 @@
             float: left;
             width: 25%;
             text-align: center;
-            color: #dddddd;
+            color: #e0e0e0;
             font-size: 15px;
             line-height: 37px;
             cursor: pointer;
@@ -76,13 +78,13 @@
             }
             
             span {
-                color: #37bd10;
+                color: #44be1d;
 
                 &.remind {
                     position: absolute;
                     width: 20px;
                     height: 18px;
-                    background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+                    background: $linear-gradient003;
                     left: 35px;
                     top: 48%;
                     transform: translateY(-50%);
@@ -137,7 +139,7 @@
         }
 
         &.open {
-            background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+            background: $linear-gradient002;
             border: solid 1px #30800e;
             box-shadow: 0px 0px 10px 2px #2c561d;
 
@@ -207,7 +209,7 @@
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%,-50%);
-                    background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+                    background: $linear-gradient003;
                     border-radius: 30px;
                 }
             }
@@ -222,7 +224,7 @@
         width: 1150px;
         height: auto;
         margin: -20px 0px 15px 10px;
-        background: #212121;
+        background: #1f1f1f;
         padding-top: 20px;
         border-radius: 0px 0px 3px 3px;
         text-align: left;
@@ -312,7 +314,7 @@
         width: 1150px;
         height: 100%;
         margin: -15px 0px 0px 10px;
-        background: #2c2c2c;
+        background: #2b2b2b;
         border-radius: 0px 0px 3px 3px;
         overflow: hidden;
 
@@ -332,7 +334,7 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #131313;
+                background: $black001;
                 border-radius: 10px;
             }
         
@@ -426,7 +428,7 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #131313;
+                background: $black001;
                 border-radius: 10px;
             }
         
@@ -771,7 +773,7 @@
             display: none;
             float: right;
             padding: 4px 6px;
-            color: #dddddd;
+            color: #e0e0e0;
             background: #2b2b2b;
             border: solid 1px #707070;
             border-radius: 3px;
@@ -844,7 +846,7 @@
             .innbut {
                 width: 44%;
                 height: 80%;
-                background: #2d2d2d;
+                background: #303030;
                 position: absolute;
                 left: 3%;
                 top: 10%;
@@ -898,7 +900,7 @@
                     background: #2b2b2b;
                     padding: 5px 8px;
                     border-radius: 3px;
-                    color: #dddddd;
+                    color: #e0e0e0;
 
                     &:hover,&:active,&.active {
                         border-color: #aef156;
@@ -942,7 +944,7 @@
                     height: 24px;
                     font-family: "my_font";
                     background: #2b2b2b;
-                    color: #dddddd;
+                    color: #e0e0e0;
                     appearance: none;
                     padding-left: 5px;
                 }
@@ -951,45 +953,27 @@
         .smallTimeBtn {
             margin: 8px 12px 0px 0px;
             border: solid 1px #6a8e2a;
-            background: #212121;
+            background: #1f1f1f;
             padding: 5px 8px;
             border-radius: 3px;
-            color: #bfbfbf;
+            color: #b2b2b2;
             float: right;
 
             &:hover,&:active,&.active {
                 background: linear-gradient(to bottom,#141414 0%,#434343 100%);
-                color: #33ba04;
+                color: #44be1d;
                 border-color: #32980e;
             }
         }
 
         //修改密碼按鈕
         .changePassword {
+            @include btnStyle003;
             float: right;
             padding: 3px 5px;
-            color: #dddddd;
-            background: #2b2b2b;
-            border: solid 1px #707070;
             border-radius: 5px;
             font-size: 15px;
             margin: 8px 10px 0px 0px;
-
-            /*for IE 9*/
-            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
-                padding: 6px 5px;
-            }
-
-            /*for IE*/
-            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-                padding: 6px 5px;
-            }
-
-            &:hover,&:active,&.active {
-                border-color: #aef156;
-                background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-                color: #272727;
-            }
 
             &.none {
                 display: none;
@@ -1004,15 +988,15 @@
                 font-size: 15px;
                 height: 43px;
                 line-height: 45px;
-                color: #bfbfbf;
+                color: #b2b2b2;
                 box-sizing: border-box;
                 border: solid 1px #7b7b7b;
-                background: linear-gradient(to top,#323232 0%,#434343 100%);
+                background: $linear-gradient001;
                 cursor: pointer;
                 border-radius: 3px;
 
                 &:hover,&:active,&.active {
-                    color: #33ba04;
+                    color: #44be1d;
                     border-color: #32980e;
                     background: linear-gradient(to bottom,#141414 0%,#434343 100%);
                 }
@@ -1039,7 +1023,7 @@
         width: 100%;
         height: 35px;
         background: #1f1f1f;
-        border-bottom: solid 1px #37bd10;
+        border-bottom: solid 1px #44be1d;
 
         //投注紀錄用
         &.betting {
@@ -1160,7 +1144,7 @@
 .mineHideBoard {
     width: 1155px;
     height: 125px;
-    background: #131313;
+    background: $black001;
     position: absolute;
     z-index: 5;
     left: 270px;
@@ -1297,7 +1281,7 @@
                 width: 152px;
                 height: 36px;
                 margin-right: 10px;
-                background: #2d2d2d;
+                background: #303030;
                 border: 1px solid #d9d9d9;
                 color: #b2b2b2;
                 border-radius: 5px;
@@ -1307,18 +1291,18 @@
                 &:last-child {
                     margin: 0px;
                     background: linear-gradient(to right,#57b21a 0%,#349a14 100%);
-                    color: #191919;
+                    color: $black001;
                     border-color: #aef156;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
+                        background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
                         color: #46d317;
                         border-color: #2b7d16;
                     }
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
+                    background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
                     border-color: #2b7d16;
                     color: #46d317;
                 }
@@ -1425,9 +1409,9 @@
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
-            color: #191919;
+            color: $black001;
             &:hover,&:active,&.active {
-                background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
+                background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
                 color: #46d317;
                 border-color: #2b7d16;
             }
