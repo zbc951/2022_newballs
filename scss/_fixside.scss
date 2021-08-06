@@ -66,8 +66,8 @@
     .search {
         width: 300px;
         height: 60px;
-        background: linear-gradient(to top,#272727 0%,#434343);
-        border: solid 1px #327e1a;
+        background: $linear-gradient004;
+        border: solid 1px $green003;
         border-radius: 3px 0px 0px 3px;
         position: absolute;
         top: 0px;
@@ -77,7 +77,7 @@
         
         &.open {
             left: -240px;
-            background: #414141;
+            background: $black003;
         }
 
         .searchbut {
@@ -89,7 +89,7 @@
             text-align: center;
 
             &:hover,&:active,&.active {
-                background: linear-gradient(to bottom, #33ab0a 0%, #68e73c 100%);
+                background: $linear-gradient005;
 
                 span {
                     color: $black001;
@@ -102,7 +102,7 @@
 
             span {
                 font-size: 13px;
-                color: #c8c8c8;
+                color: $white005;
             }
 
             .fixsideimg {
@@ -118,41 +118,30 @@
         }
 
         input {
+            @include inputStyle002;
             width: 140px;
             height: 30px;
             font-size: 16px;
             padding-left: 10px;
-            box-shadow: 0px 3px 10px 2px #1f1f1f inset;
-            border: solid 1px #5d5d5d;
             border-top: none;
             border-radius: 3px;
             float: left;
             margin: 15px 0px 0px 10px;
-            background: linear-gradient(to bottom,#303030 21%,#424242 100%);
-            color: #898787;
 
             &::placeholder {
                 font-weight: bold;
-                color: #898787;
                 font-size: 14px;
             }
         }
 
         button {
+            @include btnStyle005;
             width: 50px;
             height: 28px;
-            background: #2b2b2b;
-            border: solid 1px #34aa0d;
-            color: #42c317;
             float: left;
             border-radius: 5px;
             font-size: 16px;
             margin: 16px 0px 16px 15px;
-
-            &:hover,&:active,&.active {
-                color: #2b2b2b;
-                background: #34aa0d;
-            }
         }
 
         //隊伍內容
@@ -171,10 +160,14 @@
                 padding-left: 20px;
                 position: relative;
                 font-size: 14px;
-                background: linear-gradient(to top, #393939 0%, #555555 100%);
+                background: $linear-gradient001;
                 cursor: pointer;
-                color: #dadada;
-                border-bottom: solid 1px #6c6c6c;
+                color: $white003;
+                border-bottom: solid 1px $gray002;
+
+                &:nth-of-type(1) {
+                    border-top: solid 1px $gray002;
+                }
 
                 &::before {
                     content: "";
@@ -182,7 +175,7 @@
                     height: 0px;
                     position: absolute;
                     border-style: solid;
-                    border-color: #b2b2b2 transparent;
+                    border-color: $white004 transparent;
                     border-width: 10px 8px 0px 8px;
                     right: 40px;
                     top: 21px;
@@ -191,8 +184,7 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to bottom, #303030 0%, #393939 100%);
-                    color: #dadada;
+                    background: $linear-gradient002;
 
                     &::before {
                         transform: rotate(0deg);
@@ -201,7 +193,7 @@
             }
 
             div {
-                background: #2b2b2b;
+                background: $black007;
                 width: 100%;
                 height: 0px;
                 overflow: hidden;
@@ -215,13 +207,13 @@
                     width: 100%;
                     height: 50px;
                     line-height: 50px;
-                    color: #b9b9b9;
-                    border-bottom: solid 1px #8c8c8c;
+                    color: $white006;
+                    border-bottom: solid 1px $gray006;
                     font-size: 14px;
 
                     &:hover,&:active,&.active {
-                        background: #1f1f1f;
-                        color: #53ca2a;
+                        background: $black002;
+                        color: $green001;
                     }
 
                     .team {
@@ -259,54 +251,19 @@
         position: relative;
         transition: all 0.3s;
 
-        //漢堡選單
-        .hamBtn {
-            display: none;
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            top: 0px;
-            left: -30px;
-            border-radius: 3px 0px 0px 3px;
-            background: #eaedf4;
-            padding: 0px;
-            cursor: pointer;
-            &:hover,&:active,&.active {
-                background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-                span {
-                    background: #ffffff;
-                }
-            }
-
-            span {
-                display: block;
-                width: 55%;
-                height: 4px;
-                background: #f3b378;
-                margin:0px 0px 0px 7px;
-                border-radius: 5px;
-                &:first-child {
-                    margin: 6px 0px 3px 7px;
-                }
-                &:last-child {
-                    margin-top: 3px;
-                }
-            }
-        }
-
         a {
             display: block;
             width: 100%;
             height: 62px;
-            background: linear-gradient(to top,#272727 0%,#434343 100%);
+            background: $linear-gradient004;
             border-radius: 3px 0px 0px 3px;
             text-align: center;
             margin-top: 3px;
-            border: solid 1px #327e1a;
+            border: solid 1px $green003;
             cursor: pointer;
 
             &:hover,&:active,&.active {
-                background: linear-gradient(to bottom, #33ab0a 0%, #68e73c 100%);
+                background: $linear-gradient005;
 
                 span {
                     color: $black001;
@@ -319,7 +276,7 @@
 
             span {
                 font-size: 13px;
-                color: #d0d0d0;
+                color: $white005;
             }
 
             .fixsideimg {

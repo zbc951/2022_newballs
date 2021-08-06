@@ -661,21 +661,13 @@
     }
 
     button {
+        @include btnStyle005;
         width: 160px;
         height: 36px;
-        border: 1px solid #37da14;
         border-radius: 5px;
         font-size: 16px;
         font-weight: bold;
-        background: #393939;
-        color: #37da14;
         margin-top: 15px;
-
-        &:hover,&:active,&.active {
-            background: linear-gradient(to right,#92e820 0%,#46dd16 100%);
-            border-color: #aef156;
-            color: #222222;
-        }
     }
 }
 
@@ -1079,7 +1071,9 @@
             color: #b2b2b2;
 
             input {
-                @include inputStyle001;
+                background: #1f1f1f;
+                border: solid 1px #ababab;
+                color: #ababab;
                 text-align: right;
                 border-radius: 3px;
                 width: 67px;
@@ -1090,6 +1084,12 @@
 
                 &:nth-of-type(1) {
                     margin-left: 20px;
+                }
+
+                &:hover,&:active,&.active {
+                    background: linear-gradient(to right, #92e820 0%, #46dd16 90%);
+                    border-color: #aef156;
+                    color: #131313;
                 }
             }
         }

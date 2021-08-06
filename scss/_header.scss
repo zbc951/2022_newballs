@@ -196,12 +196,20 @@ header {
             }
 
             .loginBtn {
-                @include btnStyle001;
+                background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+                border: solid 1px #6a8e2a;
+                color: #1c1c1c;
                 padding: 6px 14px;
                 border-radius: 3px;
                 font-size: 14px;
                 font-weight: bold;
                 margin-right: 8px;
+
+                &:hover,&:active,&.active {
+                    background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
+                    border-color: #6a8e2a;
+                    color: #f4f4f4;
+                }
             }
 
             .signupBtn {

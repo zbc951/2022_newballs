@@ -60,18 +60,9 @@ $linear-gradient001: linear-gradient(to top, #323232 0%, #434343 100%);
 $linear-gradient002: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
 $linear-gradient003: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
 $linear-gradient004: linear-gradient(to top, #1f1f1f 0%, #3c3c3c 100%);
+$linear-gradient005: linear-gradient(to bottom, #33ab0a 0%, #68e73c 100%);
 
-@mixin btnStyle001 {
-    background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-    border: solid 1px #6a8e2a;
-    color: #1c1c1c;
 
-    &:hover,&:active,&.active {
-        background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
-        border-color: #6a8e2a;
-        color: #f4f4f4;
-    }
-}
 @mixin btnStyle002 {
     background: linear-gradient(to left, #131313 0%, #323232 100%);
     border: solid 1px #2c8e0b;
@@ -143,18 +134,6 @@ $linear-gradient004: linear-gradient(to top, #1f1f1f 0%, #3c3c3c 100%);
     }
 }
 
-
-@mixin inputStyle001 {
-    background: #1f1f1f;
-    border: solid 1px #ababab;
-    color: #ababab;
-
-    &:hover,&:active,&.active {
-        background: linear-gradient(to right, #92e820 0%, #46dd16 90%);
-        border-color: #aef156;
-        color: #131313;
-    }
-}
 @mixin inputStyle002 {
     background: linear-gradient(to bottom, #303030 21%, #424242 100%);
     border: solid 1px #5d5d5d;
