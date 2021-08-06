@@ -9,9 +9,9 @@
     position: relative;
     z-index: 6;
     scrollbar-width: thin;
-    border: solid 1px #626262;
+    border: solid 1px $gray002;
     border-width: 1px 0px;
-    background: #404040;
+    background: $black007;
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -24,7 +24,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #626262;
+        background: $gray002;
         border-radius: 10px;
     }
     
@@ -54,10 +54,10 @@
 
                 //字樣
                 p {
-                    color: #ffffff;
+                    color: $white001;
 
                     &.joinday {
-                        color: #ffffff;
+                        color: $white001;
                         font-size: 15px;
                         padding-top: 5px;
                     }
@@ -66,11 +66,10 @@
                         display: inline-block;
                         width: 36px;
                         height: 17px;
-                        background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-                        background-color: #34da14;
+                        background: $linear-gradient003;
                         position: relative;
                         text-align: right;
-                        color: #161616;
+                        color: $black001;
                         font-weight: bold;
                         border-radius: 5px;
                         margin: -3px 0px 0px 5px;
@@ -106,14 +105,14 @@
                     font-size: 16px;
                     text-align: center;
                     background: transparent;
-                    color: #c0c0c0;
+                    color: $white003;
                     padding-top: 10px;
                     border: solid 1px transparent;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to top,#353535 0%,#1d1d1d 100%);
-                        color: #53c120;
-                        border-color: #2d7e12;
+                        background: $linear-gradient002;
+                        color: $green001;
+                        border-color: $green002;
                         span {
                             background-position-y: -30px;
                         }
@@ -131,21 +130,21 @@
         //下半選單
         ul {
             li {
-                border-bottom: solid 1px #6f6f6f;
+                border-bottom: solid 1px $gray002;
 
                 &:nth-of-type(1),&:nth-of-type(5),&:nth-of-type(9) {
-                    border-color: #e6e9f3;
+                    border-color: $white008;
                 }
 
                 &:hover,&:active,&.active {
 
                     a {
-                        border-color: #30800e;
+                        border-color: $green002;
                     }
 
                     .live {
                         background: $linear-gradient003;
-                        color: #2b4517;
+                        color: $black001;
                     }
                 }
 
@@ -163,8 +162,8 @@
                         position: initial;
                         margin-left: 10px;
                         transform: translateY(0px);
-                        background: #1d1d1d;
-                        color: #60dc1c;
+                        background: $black001;
+                        color: $green017;
                     }
 
                     i {
@@ -196,14 +195,14 @@
 
                 a {
                     background: $linear-gradient002;
-                    color: #57ed22;
+                    color: $green001;
 
                     svg {
-                        fill: #44be1d;
+                        fill: $green001;
                     }
 
                     i {
-                        color: #44be1d;
+                        color: $green001;
                     }
                 }
             }
@@ -216,14 +215,14 @@
 
                 a {
                     background: $linear-gradient002;
-                    color: #57ed22;
+                    color: $green001;
 
                     svg {
-                        fill: #44be1d;
+                        fill: $green001;
                     }
 
                     i {
-                        color: #44be1d;
+                        color: $green001;
                     }
                 }
             }
@@ -237,7 +236,7 @@
 
             a {
                 display: block;
-                color: #e0e0e0 ;
+                color: $white003;
                 width: calc(100% - 50px);
                 background: $linear-gradient001;
                 height: 45px;
@@ -245,7 +244,7 @@
                 font-size: 14px;
                 padding-left: 50px;
                 position: relative;
-                border-bottom: solid 1px #626262;
+                border-bottom: solid 1px $gray002;
 
                 //字前小圖
                 i {
@@ -253,7 +252,7 @@
                     top: 12px;
                     left: 18px;
                     font-size: 18px;
-                    color: #ababab;
+                    color: $white002;
 
                     &::before {
                         margin: 0px auto;
@@ -280,7 +279,7 @@
                     position: absolute;
                     left: 18px;
                     top: 12px;
-                    fill: #ababab;
+                    fill: $white002;
                 }
 
                 //字後小框
@@ -289,7 +288,7 @@
                     right: 10px;
                     top: 0px;
                     font-size: 13px;
-                    color: #e0e0e0;
+                    color: $white003;
                 }
 
                 //LIVE小框
@@ -304,7 +303,7 @@
                     right: 42px;
                     font-size: 12px;
                     background: $linear-gradient003;
-                    color: #2b4517;
+                    color: #131313;
                     padding: 0px 4px;
                     border-radius: 3px;
                 }
@@ -314,17 +313,17 @@
                 display: none;
                 width: calc(100% - 30px);
                 height: 30px;
-                background: #303030;
-                border-bottom: solid 1px #4c4c4c;
+                background: $black005;
+                border-bottom: solid 1px $black012;
                 line-height: 30px;
                 padding-left: 30px;
                 font-size: 12px;
-                color: #46dd16;
+                color: $green006;
                 cursor: pointer;
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to right,#45dc16 0%,#8fe720 100%);
-                    color: #1d1d1d;
+                    background: $linear-gradient003;
+                    color: $black001;
                 }
 
                 span {

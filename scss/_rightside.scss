@@ -311,7 +311,7 @@
                         }
 
                         .gameName,.games {
-                            color: #57ed22;
+                            color: #44be1d;
                         }
                     }
 
@@ -322,14 +322,14 @@
                         position: sticky;
                         top: 0px;
                         z-index: 2;
-                        color: #57ed22;
+                        color: #44be1d;
 
                         &::before {
                             transform: rotate(90deg);
                         }
 
                         .gameName,.games {
-                            color: #57ed22;
+                            color: #44be1d;
                         }
                     }
 
@@ -393,7 +393,7 @@
 
                                     &.onLive {
                                         position: relative;
-                                        color: #57ed22;
+                                        color: #44be1d;
                                         
                                         &::before {
                                             content: "";
@@ -403,7 +403,7 @@
                                             border-radius: 12px;
                                             top: 6px;
                                             left: -12px;
-                                            background: #57ed22;
+                                            background: #44be1d;
                                         }
                                     }
                                 }

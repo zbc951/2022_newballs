@@ -211,18 +211,14 @@ header article .logged .inputBox {
   position: relative;
 }
 header article .logged .inputBox input {
-  background: linear-gradient(to bottom, #303030 21%, #424242 100%);
-  border: solid 1px #5d5d5d;
-  box-shadow: 0px 3px 10px 2px #1f1f1f inset;
-  color: #898787;
+  background: #131313;
+  border: solid 1px #39792d;
+  color: #ffffff;
   width: 130px;
   height: 25px;
   font-size: 14px;
   padding-left: 5px;
   border-radius: 3px;
-  border-color: #353535;
-  border-top: none;
-  box-shadow: 0px 3px 10px 2px #000000 inset;
 }
 header article .logged .inputBox input::placeholder {
   color: #999999;
@@ -476,10 +472,9 @@ main .bg {
   width: 36px;
   height: 17px;
   background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  background-color: #34da14;
   position: relative;
   text-align: right;
-  color: #161616;
+  color: #131313;
   font-weight: bold;
   border-radius: 5px;
   margin: -3px 0px 0px 5px;
@@ -510,14 +505,14 @@ main .bg {
   font-size: 16px;
   text-align: center;
   background: transparent;
-  color: #c0c0c0;
+  color: #e0e0e0;
   padding-top: 10px;
   border: solid 1px transparent;
 }
 .left.mine .minewindow .threebut a:hover, .left.mine .minewindow .threebut a:active, .left.mine .minewindow .threebut a.active {
-  background: linear-gradient(to top, #353535 0%, #1d1d1d 100%);
-  color: #53c120;
-  border-color: #2d7e12;
+  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+  color: #44be1d;
+  border-color: #39792d;
 }
 .left.mine .minewindow .threebut a:hover span, .left.mine .minewindow .threebut a:active span, .left.mine .minewindow .threebut a.active span {
   background-position-y: -30px;
@@ -528,17 +523,17 @@ main .bg {
   margin-bottom: 10px;
 }
 .left.mine ul li {
-  border-bottom: solid 1px #6f6f6f;
+  border-bottom: solid 1px #626262;
 }
 .left.mine ul li:nth-of-type(1), .left.mine ul li:nth-of-type(5), .left.mine ul li:nth-of-type(9) {
-  border-color: #e6e9f3;
+  border-color: #ececec;
 }
 .left.mine ul li:hover a, .left.mine ul li:active a, .left.mine ul li.active a {
-  border-color: #30800e;
+  border-color: #39792d;
 }
 .left.mine ul li:hover .live, .left.mine ul li:active .live, .left.mine ul li.active .live {
   background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  color: #2b4517;
+  color: #131313;
 }
 .left.mine ul li a {
   border: solid 1px transparent;
@@ -554,8 +549,8 @@ main .bg {
   position: initial;
   margin-left: 10px;
   transform: translateY(0px);
-  background: #1d1d1d;
-  color: #60dc1c;
+  background: #131313;
+  color: #6ad237;
 }
 .left.mine ul li a i {
   font-size: 22px;
@@ -571,7 +566,7 @@ main .bg {
 }
 .left ul li:hover a {
   background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  color: #57ed22;
+  color: #44be1d;
 }
 .left ul li:hover a svg {
   fill: #44be1d;
@@ -584,7 +579,7 @@ main .bg {
 }
 .left ul li:active a, .left ul li.active a {
   background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  color: #57ed22;
+  color: #44be1d;
 }
 .left ul li:active a svg, .left ul li.active a svg {
   fill: #44be1d;
@@ -652,7 +647,7 @@ main .bg {
   right: 42px;
   font-size: 12px;
   background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  color: #2b4517;
+  color: #131313;
   padding: 0px 4px;
   border-radius: 3px;
 }
@@ -661,16 +656,16 @@ main .bg {
   width: calc(100% - 30px);
   height: 30px;
   background: #303030;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #505050;
   line-height: 30px;
   padding-left: 30px;
   font-size: 12px;
-  color: #46dd16;
+  color: #4be119;
   cursor: pointer;
 }
 .left ul li .smallList:hover, .left ul li .smallList:active, .left ul li .smallList.active {
-  background: linear-gradient(to right, #45dc16 0%, #8fe720 100%);
-  color: #1d1d1d;
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  color: #131313;
 }
 .left ul li .smallList span {
   float: right;
@@ -937,7 +932,7 @@ main .bg {
   transform: rotate(90deg);
 }
 .right .room .livelist ul li:hover .gameName, .right .room .livelist ul li:hover .games, .right .room .livelist ul li:active .gameName, .right .room .livelist ul li:active .games {
-  color: #57ed22;
+  color: #44be1d;
 }
 .right .room .livelist ul li.active {
   height: auto;
@@ -947,13 +942,13 @@ main .bg {
   position: sticky;
   top: 0px;
   z-index: 2;
-  color: #57ed22;
+  color: #44be1d;
 }
 .right .room .livelist ul li.active::before {
   transform: rotate(90deg);
 }
 .right .room .livelist ul li.active .gameName, .right .room .livelist ul li.active .games {
-  color: #57ed22;
+  color: #44be1d;
 }
 .right .room .livelist ul li::before {
   content: "";
@@ -1011,7 +1006,7 @@ main .bg {
 }
 .right .room .livelist ul li .innerList p span .situation.onLive {
   position: relative;
-  color: #57ed22;
+  color: #44be1d;
 }
 .right .room .livelist ul li .innerList p span .situation.onLive::before {
   content: "";
@@ -1021,7 +1016,7 @@ main .bg {
   border-radius: 12px;
   top: 6px;
   left: -12px;
-  background: #57ed22;
+  background: #44be1d;
 }
 .right .room .livelist ul li .innerList p button {
   background: #2b2b2b;
@@ -3033,14 +3028,14 @@ main .bg {
   background-position-y: 100%;
 }
 .minetable.creditcard tr td .creditcardBtn.c1, .minetable.creditcard tr td .creditcardBtn.c2, .minetable.creditcard tr td .creditcardBtn.c3 {
-  background: linear-gradient(135deg, #3d3d3d 0%, #242424 100%);
+  background: linear-gradient(135deg, #404040 0%, #242424 100%);
 }
 .minetable.creditcard tr td .creditcardBtn.c1:hover, .minetable.creditcard tr td .creditcardBtn.c2:hover, .minetable.creditcard tr td .creditcardBtn.c3:hover {
-  background: linear-gradient(-45deg, #3d3d3d 0%, #242424 100%);
+  background: linear-gradient(-45deg, #404040 0%, #242424 100%);
   color: #fefefe;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:active, .minetable.creditcard tr td .creditcardBtn.c1.active, .minetable.creditcard tr td .creditcardBtn.c2:active, .minetable.creditcard tr td .creditcardBtn.c2.active, .minetable.creditcard tr td .creditcardBtn.c3:active, .minetable.creditcard tr td .creditcardBtn.c3.active {
-  background: linear-gradient(-45deg, #3d3d3d 0%, #242424 100%);
+  background: linear-gradient(-45deg, #404040 0%, #242424 100%);
   color: #fefefe;
   box-shadow: 0px 0px 10px 2px #49701f;
 }
@@ -3317,7 +3312,7 @@ main .bg {
   background: linear-gradient(to top, #1a1a1a 0%, #2a2a2a 100%);
 }
 .minetable.totalInfo tr {
-  border: solid 1px #30800e;
+  border: solid 1px #39792d;
   border-width: 1px 0px;
 }
 .minetable.totalInfo tr td {
@@ -3364,7 +3359,7 @@ main .bg {
 }
 .minetable.sportRule tr th {
   background: #bcbcbc;
-  color: #3d3d3d;
+  color: #404040;
 }
 .minetable.sportRule tr th.tLeft {
   padding: 8px 16px 7px;
@@ -3738,7 +3733,7 @@ main .bg {
 .minetable.problem tr td .inputBox label select {
   border: solid 1px #858585;
   border-radius: 3px;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  background: linear-gradient(to top, #373737 0%, #404040 100%);
   color: #c8c8c8;
   width: 156px;
   height: 36px;
@@ -4101,7 +4096,7 @@ main .bg {
   box-sizing: border-box;
   border: solid 1px #828282;
   box-shadow: 0px 2px 5px 0px #1c1c1c;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  background: linear-gradient(to top, #373737 0%, #404040 100%);
   border-radius: 3px;
   padding-left: 10px;
   color: #d2d2d2;
@@ -4194,7 +4189,7 @@ main .bg {
   width: 10%;
   height: 90px;
   border: solid 1px #858585;
-  background: #3d3d3d;
+  background: #404040;
   border-radius: 3px;
   color: #d2d2d2;
   margin: 0px 15px 20px;
@@ -4289,7 +4284,7 @@ main .bg {
 .minetable.tbank tr td label select {
   width: 240px;
   height: 40px;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  background: linear-gradient(to top, #373737 0%, #404040 100%);
   border: solid 1px #858585;
   border-radius: 3px;
   color: #d2d2d2;
@@ -4360,7 +4355,7 @@ main .bg {
   width: 220px;
   height: 40px;
   padding-left: 10px;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  background: linear-gradient(to top, #373737 0%, #404040 100%);
   border: solid 1px #858585;
   color: #d2d2d2;
   border-radius: 3px;
@@ -4406,7 +4401,7 @@ main .bg {
   width: 150px;
   height: auto;
   border: solid 1px #8c8c8c;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  background: linear-gradient(to top, #373737 0%, #404040 100%);
   border-radius: 3px;
   color: #c9c9c9;
   line-height: 35px;
@@ -4448,7 +4443,7 @@ main .bg {
   width: 150px;
   height: auto;
   border: solid 1px #8c8c8c;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  background: linear-gradient(to top, #373737 0%, #404040 100%);
   border-radius: 3px;
   color: #cccccc;
   line-height: 35px;
@@ -7368,7 +7363,7 @@ main .bg {
   z-index: 1;
 }
 .myself .recordbar.open {
-  border: solid 1px #30800e;
+  border: solid 1px #39792d;
   background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
 }
 .myself .recordbar.open div {
@@ -7446,7 +7441,7 @@ main .bg {
 }
 .myself .helpbar.open {
   background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  border: solid 1px #30800e;
+  border: solid 1px #39792d;
   box-shadow: 0px 0px 10px 2px #2c561d;
 }
 .myself .helpbar.open::before {
@@ -7837,7 +7832,7 @@ main .bg {
 }
 .myself .ruleBox ol li .tableBox table tr th {
   font-size: 14px;
-  background: #3d3d3d;
+  background: #404040;
   padding: 3px 0px;
   border-right: solid 1px #828282;
 }
@@ -7955,7 +7950,7 @@ main .bg {
 .minetopfix {
   width: 1150px;
   height: 125px;
-  background: #3d3d3d;
+  background: #404040;
   border-radius: 0px 0px 5px 5px;
   position: absolute;
   text-align: center;
@@ -8538,7 +8533,7 @@ main .bg {
 }
 .cardAdd .topbar span {
   font-size: 14px;
-  color: #3d3d3d;
+  color: #404040;
   line-height: 42px;
   font-weight: bold;
 }
@@ -8615,7 +8610,7 @@ main .bg {
 }
 .cardAdd .box .inputBox span {
   line-height: 50px;
-  color: #3d3d3d;
+  color: #404040;
   padding-left: 30px;
   font-weight: bold;
 }

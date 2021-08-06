@@ -51,7 +51,7 @@
         z-index: 1;
 
         &.open {
-            border: solid 1px #30800e;
+            border: solid 1px #39792d;
             background: $linear-gradient002;
 
             div {
@@ -140,7 +140,7 @@
 
         &.open {
             background: $linear-gradient002;
-            border: solid 1px #30800e;
+            border: solid 1px #39792d;
             box-shadow: 0px 0px 10px 2px #2c561d;
 
             &::before {
@@ -604,7 +604,7 @@
                             th {
 
                                 font-size: 14px;
-                                background: #3d3d3d;
+                                background: #404040;
                                 padding: 3px 0px;
                                 border-right: solid 1px #828282;
 
@@ -748,7 +748,7 @@
 .minetopfix {
     width: 1150px;
     height: 125px;
-    background: #3d3d3d;
+    background: #404040;
     border-radius: 0px 0px 5px 5px;
     position: absolute;
     text-align: center;
@@ -1447,7 +1447,7 @@
 
         span {
             font-size: 14px;
-            color: #3d3d3d;
+            color: #404040;
             line-height: 42px;
             font-weight: bold;
         }
@@ -1533,7 +1533,7 @@
 
             span {
                 line-height: 50px;
-                color: #3d3d3d;
+                color: #404040;
                 padding-left: 30px;
                 font-weight: bold;
             }

@@ -3140,15 +3140,15 @@
 					}
 
 					&.c1,&.c2,&.c3 {
-						background: linear-gradient(135deg,#3d3d3d 0%,#242424 100%);
+						background: linear-gradient(135deg,#404040 0%,#242424 100%);
 
 						&:hover {
-							background: linear-gradient(-45deg,#3d3d3d 0%,#242424 100%);
+							background: linear-gradient(-45deg,#404040 0%,#242424 100%);
 							color: #fefefe;
 						}
 
 						&:active,&.active {
-							background: linear-gradient(-45deg,#3d3d3d 0%,#242424 100%);
+							background: linear-gradient(-45deg,#404040 0%,#242424 100%);
 							color: #fefefe;
 							box-shadow: 0px 0px 10px 2px #49701f;
 
@@ -3501,7 +3501,7 @@
 		background: linear-gradient(to top,#1a1a1a 0%,#2a2a2a 100%);
 		
 		tr {
-			border: solid 1px #30800e;
+			border: solid 1px #39792d;
 			border-width: 1px 0px;
 
 			td {
@@ -3569,7 +3569,7 @@
 
 			th {
 				background: #bcbcbc;
-				color: #3d3d3d;
+				color: #404040;
 
 				&.tLeft {
 					padding: 8px 16px 7px;
@@ -4040,7 +4040,7 @@
 						select {
 							border: solid 1px #858585;
 							border-radius: 3px;
-							background: linear-gradient(to top,#373737 0%,#3d3d3d 100%);
+							background: linear-gradient(to top,#373737 0%,#404040 100%);
 							color: #c8c8c8;
 							width: 156px;
 							height: 36px;
@@ -4479,7 +4479,7 @@
 							box-sizing: border-box;
 							border: solid 1px #828282;
 							box-shadow: 0px 2px 5px 0px #1c1c1c;
-							background: linear-gradient(to top,#373737 0%,#3d3d3d 100%);
+							background: linear-gradient(to top,#373737 0%,#404040 100%);
 							border-radius: 3px;
 							padding-left: 10px;
 							color: #d2d2d2;
@@ -4592,7 +4592,7 @@
 					width: 10%;
 					height: 90px;
 					border: solid 1px #858585;;
-					background: #3d3d3d;
+					background: #404040;
 					border-radius: 3px;
 					color: #d2d2d2;
 					margin: 0px 15px 20px;
@@ -4709,7 +4709,7 @@
 					select {
 						width: 240px;
 						height: 40px;
-						background: linear-gradient(to top,#373737 0%,#3d3d3d 100%);
+						background: linear-gradient(to top,#373737 0%,#404040 100%);
 						border: solid 1px #858585;
 						border-radius: 3px;
 						color: #d2d2d2;
@@ -4789,7 +4789,7 @@
 								width: 220px;
 								height: 40px;
 								padding-left: 10px;
-								background: linear-gradient(to top,#373737 0%,#3d3d3d 100%);
+								background: linear-gradient(to top,#373737 0%,#404040 100%);
 								border: solid 1px #858585;
 								color: #d2d2d2;
 								border-radius: 3px;
@@ -4845,7 +4845,7 @@
 					width: 150px;
 					height: auto;
 					border: solid 1px #8c8c8c;
-					background: linear-gradient(to top,#373737 0%,#3d3d3d 100%);
+					background: linear-gradient(to top,#373737 0%,#404040 100%);
 					border-radius: 3px;
 					color: #c9c9c9 ;
 					line-height: 35px;
@@ -4898,7 +4898,7 @@
 					width: 150px;
 					height: auto;
 					border: solid 1px #8c8c8c;
-					background: linear-gradient(to top,#373737 0%,#3d3d3d 100%);
+					background: linear-gradient(to top,#373737 0%,#404040 100%);
 					border-radius: 3px;
 					color: #cccccc;
 					line-height: 35px;
