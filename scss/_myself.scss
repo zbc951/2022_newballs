@@ -1,5 +1,3 @@
-@import "./colorCode";
-
 //我的頁面
 .myself {
     width: 1170px;
@@ -17,12 +15,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: $black001;
+        background: #121212;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #626262;
+        background: #606360;
         border-radius: 10px;
     }
 
@@ -51,11 +49,11 @@
         z-index: 1;
 
         &.open {
-            border: solid 1px #39792d;
-            background: $linear-gradient002;
+            border: solid 1px #30800e;
+            background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
 
             div {
-                color: #44be1d;
+                color: #3abc0d;
             }
         }
 
@@ -63,7 +61,7 @@
             float: left;
             width: 25%;
             text-align: center;
-            color: #e0e0e0;
+            color: #dddddd;
             font-size: 15px;
             line-height: 37px;
             cursor: pointer;
@@ -72,19 +70,19 @@
             .line {
                 width: 1px;
                 height: 15px;
-                background: #707070;
+                background: #747474;
                 margin: 10px 0px 0px 0px;
                 float: right;
             }
             
             span {
-                color: #44be1d;
+                color: #3abc0d;
 
                 &.remind {
                     position: absolute;
                     width: 20px;
                     height: 18px;
-                    background: $linear-gradient003;
+                    background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
                     left: 35px;
                     top: 48%;
                     transform: translateY(-50%);
@@ -139,8 +137,8 @@
         }
 
         &.open {
-            background: $linear-gradient002;
-            border: solid 1px #39792d;
+            background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+            border: solid 1px #30800e;
             box-shadow: 0px 0px 10px 2px #2c561d;
 
             &::before {
@@ -209,7 +207,7 @@
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%,-50%);
-                    background: $linear-gradient003;
+                    background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
                     border-radius: 30px;
                 }
             }
@@ -224,7 +222,7 @@
         width: 1150px;
         height: auto;
         margin: -20px 0px 15px 10px;
-        background: #1f1f1f;
+        background: #212121;
         padding-top: 20px;
         border-radius: 0px 0px 3px 3px;
         text-align: left;
@@ -257,7 +255,7 @@
             width: 92%;
             height: auto;
             border-radius: 12px;
-            border: 1px solid #707070;
+            border: 1px solid #747474;
             margin: 0px auto 20px;
             padding: 15px;
 
@@ -314,7 +312,7 @@
         width: 1150px;
         height: 100%;
         margin: -15px 0px 0px 10px;
-        background: #2b2b2b;
+        background: #2c2c2c;
         border-radius: 0px 0px 3px 3px;
         overflow: hidden;
 
@@ -334,12 +332,12 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: $black001;
+                background: #121212;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #626262;
+                background: #606360;
                 border-radius: 10px;
             }
 
@@ -428,12 +426,12 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: $black001;
+                background: #121212;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #626262;
+                background: #606360;
                 border-radius: 10px;
             }
 
@@ -553,7 +551,7 @@
                         width: 8px;
                         height: 8px;
                         border-radius: 8px;
-                        background: #ffffff;
+                        background: #fff;
                         margin: 0px 5px 2px;
                     }
                 }
@@ -604,7 +602,7 @@
                             th {
 
                                 font-size: 14px;
-                                background: #404040;
+                                background: #3d3d3d;
                                 padding: 3px 0px;
                                 border-right: solid 1px #828282;
 
@@ -733,7 +731,7 @@
                 
                 p {
                     height: 32px;
-                    background: #ffffff;
+                    background: #fff;
                     line-height: 32px;
                     padding-left: 15px;
                     font-size: 15px;
@@ -748,7 +746,7 @@
 .minetopfix {
     width: 1150px;
     height: 125px;
-    background: #404040;
+    background: #3d3d3d;
     border-radius: 0px 0px 5px 5px;
     position: absolute;
     text-align: center;
@@ -765,7 +763,7 @@
         background: #313131;
         bottom: 0px;
         z-index: 2;
-        color: #ffffff;
+        color: #fff;
         border: solid 1px #242424;
         box-sizing: border-box;
 
@@ -773,7 +771,7 @@
             display: none;
             float: right;
             padding: 4px 6px;
-            color: #e0e0e0;
+            color: #dddddd;
             background: #2b2b2b;
             border: solid 1px #707070;
             border-radius: 3px;
@@ -846,7 +844,7 @@
             .innbut {
                 width: 44%;
                 height: 80%;
-                background: #303030;
+                background: #2d2d2d;
                 position: absolute;
                 left: 3%;
                 top: 10%;
@@ -900,7 +898,7 @@
                     background: #2b2b2b;
                     padding: 5px 8px;
                     border-radius: 3px;
-                    color: #e0e0e0;
+                    color: #dddddd;
 
                     &:hover,&:active,&.active {
                         border-color: #aef156;
@@ -930,7 +928,7 @@
                     height: 0px;
                     border-style: solid;
                     border-width: 6px 5px 0px 5px;
-                    border-color: #707070 transparent;
+                    border-color: #747474 transparent;
                     top: 21px;
                     right: 5px;
                 }
@@ -944,7 +942,7 @@
                     height: 24px;
                     font-family: "my_font";
                     background: #2b2b2b;
-                    color: #e0e0e0;
+                    color: #dddddd;
                     appearance: none;
                     padding-left: 5px;
                 }
@@ -953,27 +951,45 @@
         .smallTimeBtn {
             margin: 8px 12px 0px 0px;
             border: solid 1px #6a8e2a;
-            background: #1f1f1f;
+            background: #212121;
             padding: 5px 8px;
             border-radius: 3px;
-            color: #b2b2b2;
+            color: #bfbfbf;
             float: right;
 
             &:hover,&:active,&.active {
                 background: linear-gradient(to bottom,#141414 0%,#434343 100%);
-                color: #44be1d;
+                color: #33ba04;
                 border-color: #32980e;
             }
         }
 
         //修改密碼按鈕
         .changePassword {
-            @include btnStyle003;
             float: right;
             padding: 3px 5px;
+            color: #dddddd;
+            background: #2b2b2b;
+            border: solid 1px #707070;
             border-radius: 5px;
             font-size: 15px;
             margin: 8px 10px 0px 0px;
+
+            /*for IE 9*/
+            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                padding: 6px 5px;
+            }
+
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                padding: 6px 5px;
+            }
+
+            &:hover,&:active,&.active {
+                border-color: #aef156;
+                background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
+                color: #272727;
+            }
 
             &.none {
                 display: none;
@@ -988,15 +1004,15 @@
                 font-size: 15px;
                 height: 43px;
                 line-height: 45px;
-                color: #b2b2b2;
+                color: #bfbfbf;
                 box-sizing: border-box;
                 border: solid 1px #7b7b7b;
-                background: $linear-gradient001;
+                background: linear-gradient(to top,#323232 0%,#434343 100%);
                 cursor: pointer;
                 border-radius: 3px;
 
                 &:hover,&:active,&.active {
-                    color: #44be1d;
+                    color: #33ba04;
                     border-color: #32980e;
                     background: linear-gradient(to bottom,#141414 0%,#434343 100%);
                 }
@@ -1023,7 +1039,7 @@
         width: 100%;
         height: 35px;
         background: #1f1f1f;
-        border-bottom: solid 1px #44be1d;
+        border-bottom: solid 1px #3abc0d;
 
         //投注紀錄用
         &.betting {
@@ -1039,7 +1055,7 @@
                 .line {
                     width: 1px;
                     height: 10px;
-                    background: #707070;
+                    background: #747474;
                     margin: -5px 0px 0px 0px;
                     float: right;
                 }
@@ -1090,7 +1106,7 @@
                 .line {
                     width: 1px;
                     height: 10px;
-                    background: #707070;
+                    background: #747474;
                     margin: -5px 0px 0px 0px;
                     float: right;
 
@@ -1144,7 +1160,7 @@
 .mineHideBoard {
     width: 1155px;
     height: 125px;
-    background: $black001;
+    background: #131313;
     position: absolute;
     z-index: 5;
     left: 270px;
@@ -1268,7 +1284,7 @@
                 border-radius: 5px;
                 background: linear-gradient(to bottom,#0f0f0f 21%,#303030 100%);
                 box-shadow: 0px 1px 0px 0px #3c3c3c;
-                color: #ffffff;
+                color: #fff;
             }
             
             span {
@@ -1281,7 +1297,7 @@
                 width: 152px;
                 height: 36px;
                 margin-right: 10px;
-                background: #303030;
+                background: #2d2d2d;
                 border: 1px solid #d9d9d9;
                 color: #b2b2b2;
                 border-radius: 5px;
@@ -1291,18 +1307,18 @@
                 &:last-child {
                     margin: 0px;
                     background: linear-gradient(to right,#57b21a 0%,#349a14 100%);
-                    color: $black001;
+                    color: #191919;
                     border-color: #aef156;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
+                        background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
                         color: #46d317;
                         border-color: #2b7d16;
                     }
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
+                    background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
                     border-color: #2b7d16;
                     color: #46d317;
                 }
@@ -1409,9 +1425,9 @@
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
-            color: $black001;
+            color: #191919;
             &:hover,&:active,&.active {
-                background: linear-gradient(to left, #303030 0%, #1a1a1a 99%);
+                background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
                 color: #46d317;
                 border-color: #2b7d16;
             }
@@ -1447,7 +1463,7 @@
 
         span {
             font-size: 14px;
-            color: #404040;
+            color: #3d3d3d;
             line-height: 42px;
             font-weight: bold;
         }
@@ -1490,7 +1506,7 @@
     .box {
         width: 100%;
         height: 315px;
-        background: #707070;
+        background: #747474;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
         border: solid 1px #a2a2a2;
@@ -1533,7 +1549,7 @@
 
             span {
                 line-height: 50px;
-                color: #404040;
+                color: #3d3d3d;
                 padding-left: 30px;
                 font-weight: bold;
             }
@@ -1544,7 +1560,7 @@
             height: 36px;
             background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
             border: 1px solid #4556b1;
-            color: #ffffff;
+            color: #fff;
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;

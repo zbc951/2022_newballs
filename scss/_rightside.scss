@@ -1,5 +1,3 @@
-@import "./colorCode";
-
 //右列
 .right {
     width: 300px;
@@ -35,7 +33,7 @@
         position: relative;
         
         p {
-            background: $linear-gradient001;
+            background: linear-gradient(to top,#323232 0%,#434343 100%);
             color: #e5e5e5;
             padding: 7px 15px;
             font-size: 12px;
@@ -128,9 +126,9 @@
         text-align: center;
 
         .title {
-            background: $linear-gradient001;
-            box-shadow: 0px 2px 1px 0px $black001;
-            color: #ffffff;
+            background: linear-gradient(to top,#323232 0%,#434343 100%);
+            box-shadow: 0px 2px 1px 0px #171717;
+            color: #fff;
             padding: 7px 15px;
             font-size: 12px;
             text-align: left;
@@ -220,7 +218,7 @@
             button {
                 width: 49.5%;
                 height: 100%;
-                background: #404040;
+                background: #3e3e3e;
                 color: #ababab;
                 font-size: 14px;
                 float: left;
@@ -234,7 +232,7 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: $linear-gradient004;
+                    background: linear-gradient(to top,#262626 0%,#3c3c3c 100%);
                     color: #49dd16;
                 }
             }
@@ -246,7 +244,7 @@
             button {
                 width: 100%;
                 height: 100%;
-                background: #404040;
+                background: #3e3e3e;
                 color: #ababab;
                 font-size: 14px;
                 border-radius: 3px 3px 0px 0px;
@@ -254,7 +252,7 @@
                 border-bottom: none;
 
                 &:hover,&:active,&.active {
-                    background: $linear-gradient004;
+                    background: linear-gradient(to top,#262626 0%,#3c3c3c 100%);
                     color: #49dd16;
                 }
             }
@@ -276,12 +274,12 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: $black001;
+                background: #121212;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #626262;
+                background: #606360;
                 border-radius: 10px;
             }
 
@@ -296,14 +294,14 @@
                     width: 100%;
                     height: 30px;
                     line-height: 30px;
-                    border-bottom: solid 1px #626262;
+                    border-bottom: solid 1px #6a6a6a;
                     position: relative;
                     overflow: hidden;
                     cursor: pointer;
-                    background: $linear-gradient001;
+                    background: linear-gradient(to top,#323232 0%,#434343 100%);
 
                     &:hover,&:active {
-                        background: $linear-gradient002;
+                        background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
                         border: solid 1px #29650f;
 
                         &::before {
@@ -311,25 +309,25 @@
                         }
 
                         .gameName,.games {
-                            color: #44be1d;
+                            color: #57ed22;
                         }
                     }
 
                     &.active {
                         height: auto;
-                        background: $linear-gradient002;
+                        background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
                         border: solid 1px #29650f;
                         position: sticky;
                         top: 0px;
                         z-index: 2;
-                        color: #44be1d;
+                        color: #57ed22;
 
                         &::before {
                             transform: rotate(90deg);
                         }
 
                         .gameName,.games {
-                            color: #44be1d;
+                            color: #57ed22;
                         }
                     }
 
@@ -363,7 +361,7 @@
                     .innerList {
                         width: 100%;
                         height: 70px;
-                        background: #303030;
+                        background: #2d2d2d;
                         position: relative;
                         cursor: default;
                         border-top: solid 1px #505050;
@@ -380,7 +378,7 @@
                             top: 50%;
                             transform: translateY(-50%);
                             font-size: 12px;
-                            color: #b2b2b2;
+                            color: #b6b6b6;
 
                             span {
                                 font-weight: bold;
@@ -393,7 +391,7 @@
 
                                     &.onLive {
                                         position: relative;
-                                        color: #44be1d;
+                                        color: #57ed22;
                                         
                                         &::before {
                                             content: "";
@@ -403,20 +401,28 @@
                                             border-radius: 12px;
                                             top: 6px;
                                             left: -12px;
-                                            background: #44be1d;
+                                            background: #57ed22;
                                         }
                                     }
                                 }
                             }
 
                             button {
-                                @include btnStyle003;
                                 position: absolute;
                                 right: 20px;
                                 bottom: 0px;
                                 width: 70px;
                                 height: 30px;
+                                background: #252525;
                                 border-radius: 3px;
+                                border: solid 1px #317f0f;
+                                color: #aeaeae;
+
+                                &:hover,&:active,&.active {
+                                    background: linear-gradient(to right,#92e820 0%,#46dd16 90%);
+                                    border-color: #aef156;
+                                    color: #252525;
+                                }
                             }
                         }
                     }
@@ -440,12 +446,12 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: $black001;
+                background: #121212;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #626262;
+                background: #606360;
                 border-radius: 10px;
             }
 

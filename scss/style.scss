@@ -13,7 +13,7 @@
 html {
     width: 100%;
     height: 100%;
-    background: $black001;
+    background: #131313;
 
     body {
         width: 100%;
@@ -27,12 +27,12 @@ html {
         }
     
         &::-webkit-scrollbar-track {
-            background: $black001;
+            background: #121212;
             border-radius: 10px;
         }
     
         &::-webkit-scrollbar-thumb {
-            background: $gray002;
+            background: #606360;
             border-radius: 10px;
         }
     }
