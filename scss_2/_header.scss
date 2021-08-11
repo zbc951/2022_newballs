@@ -3,7 +3,7 @@ header {
     width: 100%;
     min-width: 1480px;
     height: 110px;
-    background: #1f1f1f;
+    background: #356bf7;
     position: relative;
     z-index: 10;
     overflow: hidden;
@@ -16,14 +16,14 @@ header {
     .top {
         width: 100%;
         height: 25px;
-        background: #131313;
+        background: #efefef;
 
         //盤口對照表+設定
         .conversionBtn,.controlBtn {
             float: left;
             width: auto;
             height: 100%;
-            color: #969696;
+            color: #595959 ;
             background: transparent;
             margin-left: 15px;
             font-size: 13px;
@@ -41,13 +41,13 @@ header {
                 position: absolute;
                 left: -23px;
                 top: 4px;
-                color: #31be16;
+                color: #356bf7;
             }
 
             marquee {
                 line-height: 25px;
                 font-size: 12px;
-                color: #37bd10;
+                color: #356bf7;
                 overflow: visible;
             }
         }
@@ -56,7 +56,7 @@ header {
         span {
             float: right;
             font-size: 12px;
-            color: #7a7a7a;
+            color: #595959;
             line-height: 25px;
             margin-right: 15px;
         }
@@ -103,7 +103,7 @@ header {
             font-weight: bolder;
             text-align: center;
             line-height: 85px;
-            color: #fff
+            color: #ffffff
         }
 
         //上列表
@@ -121,13 +121,13 @@ header {
                     padding: 0px 10px;
                     height: 76px;
                     line-height: 85px;
-                    color: #fff;
+                    color: #ffffff;
                     border-bottom: solid 5px transparent;
                     font-size: 14px;
 
                     &:hover,&:active,&.active {
-                        border-color: #33ba04;
-                        color: #7df81a;
+                        border-color: #ffffff;
+                        color: #ffffff;
                     }
 
                     .fa-user {
@@ -162,12 +162,12 @@ header {
                     font-size: 14px;
                     padding-left: 5px;
                     border-radius: 3px;
-                    border: solid 1px #39792d;
-                    background: #131313;
-                    color: #45b51f;
+                    border: solid 1px #24349f;
+                    background: #ffffff;
+                    color: #000000;
 
                     &::placeholder {
-                        color: #999999;
+                        color: #8d8d8d;
                     }
                 }
 
@@ -176,7 +176,7 @@ header {
                     left: 0px;
                     bottom: -28px;
                     font-size: 14px;
-                    color: #45b51f;
+                    color: #ffffff;
                 }
 
                 .remember {
@@ -184,45 +184,50 @@ header {
                     left: 18px;
                     bottom: -28px;
                     font-size: 14px;
-                    color: #ababab;
+                    color: #ffffff;
 
                     .cube {
                         left: -18px;
                         top: -1px;
+                        background: transparent;
+                        border-color: #e3e3e3;
+
+                        &.active {
+
+                            &::before {
+                                background: url('../images/cubeArrow2_2.png') no-repeat;
+                            }
+                        }
                     }
                 }
             }
 
             .loginBtn {
-                background: linear-gradient(to right,#45dc16 0%,#91e820 90%);
-                border: solid 1px #cdff7f;
+                background: #ffffff;
                 padding: 5px 14px;
                 border-radius: 3px;
-                color: #131313;
+                color: #454545;
                 font-size: 14px;
                 font-weight: bold;
                 margin-right: 8px;
 
                 &:hover,&:active,&.active {
-                    border-color: #ffffff;
-                    background: #fff;
-                    color: #393939;
+                    background: #ffc651;
+                    color: #ffffff;
                 }
             }
 
             .signupBtn {
-                background: linear-gradient(to top,#131313 0%,#323232 100%);
+                background: #ffffff;
                 border-radius: 3px;
-                color: #fff;
-                padding: 6px 14px;
+                color: #454545;
+                padding: 5px 14px;
                 font-size: 14px;
                 font-weight: bold;
-                border: solid 1px #2c8e0b;
 
                 &:hover,&:active,&.active {
-                    border-color: #ffffff;
-                    background: #fff;
-                    color: #59a936;
+                    background: #ffc651;
+                    color: #ffffff;
                 }
             }
 
@@ -235,7 +240,7 @@ header {
                 .fa-globe {
                     float: left;
                     margin: 3px 6px 0px 0px;
-                    color: #ababab;
+                    color: #ffffff;
                 }
 
                 //下箭頭
@@ -247,7 +252,7 @@ header {
                     height: 0px;
                     border-style: solid;
                     border-width: 10px 8px 0px 8px;
-                    border-color: #ababab transparent;
+                    border-color: #ffffff transparent;
                     top: 7px;
                     right: 10px;
                 }
@@ -255,19 +260,14 @@ header {
                 select {
                     width: 110px;
                     padding: 3px 0px 3px 5px;
-                    background: transparent;
-                    border: solid 1px #707070;
+                    background: #356bf7;
+                    border: solid 1px #ffffff;
                     border-radius: 3px;
-                    color: #ababab;
+                    color: #ffffff;
                     font-size: 12px;
                     appearance:none;   
                     -moz-appearance:none;   
                     -webkit-appearance:none;
-                    background: #262626;
-
-                    option {
-                        color: #ababab;
-                    }
                 }
             }
         }
@@ -288,20 +288,24 @@ header {
             //字體
             p {
                 display: inline-block;
-                color: #ababab;
+                color: #ffffff;
                 font-size: 13px;
                 margin: 10px 5px 0px 0px;
 
                 //信用額度
                 &.quota {
                     padding: 7px 7px 5px;
-                    border: solid 1px #707070;
                     border-radius: 3px;
-                    background: #262626;
+                    background: #ffffff;
+                    color: #595959;
+                    
+                    span {
+                        color: #24349f;
+                    }
                 }
 
                 span {
-                    color: #40c50f;
+                    color: #ffffff;
                     padding-left: 8px;
                 }
             }
@@ -310,15 +314,12 @@ header {
             button {
                 border-radius: 3px;
                 padding: 4px 15px;
-                background: linear-gradient(to top,#131313,#323232 100%);
-                color: #40c50f;
+                background: #ffffff;
+                color: #454545;
                 font-size: 14px;
-                border: solid 1px #2c8e0b;
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to bottom,#45dc16 10%,#91e820 90%);
-                    color: #1c1c1c;
-                    border-color: #cdff7f;
+                    background: #ffc651;
                 }
             }
 
@@ -331,7 +332,7 @@ header {
                 .fa-globe {
                     float: left;
                     margin: 3px 6px 0px 0px;
-                    color: #ababab;
+                    color: #ffffff;
                 }
 
                 //下箭頭
@@ -343,7 +344,7 @@ header {
                     height: 0px;
                     border-style: solid;
                     border-width: 10px 8px 0px 8px;
-                    border-color: #ababab transparent;
+                    border-color: #8d8d8d transparent;
                     top: 7px;
                     right:10px;
                 }
@@ -352,18 +353,14 @@ header {
                     width: 110px;
                     padding: 3px 0px 3px 5px;
                     background: transparent;
-                    border: solid 1px #ababab;
+                    border: solid 1px #e3e3e3;
                     border-radius: 3px;
-                    color: #ababab;
+                    color: #595959;
                     font-size: 12px;
-                    background: #262626;
+                    background: #ffffff;
                     appearance:none;   
                     -moz-appearance:none;   
                     -webkit-appearance:none;
-
-                    option {
-                        color: #ababab;
-                    }
                 }
             }
         }

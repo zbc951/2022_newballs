@@ -8,20 +8,21 @@
     position: relative;
     z-index: 6;
     scrollbar-width: thin;
-    background: #242424;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 0px #00000049;
 
     &::-webkit-scrollbar {
-        width: 8px;
+        width: 5px;
         background-color: transparent;
     }
 
     &::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: #ffc651;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #b9becf;
+        background: #ffffff;
         border-radius: 10px;
     }
     
@@ -29,12 +30,13 @@
     .statusWindow {
         width: 100%;
         height: 113px;
-        background: #242424;
+        background: #ffffff;
         position: relative;
         
         p {
-            background: linear-gradient(to top,#323232 0%,#434343 100%);
-            color: #e5e5e5;
+            background: #ffffff;
+            border-bottom: solid 1px #f6f6f6;
+            color: #454545;
             padding: 7px 15px;
             font-size: 12px;
         }
@@ -122,13 +124,13 @@
     .liveWindow {
         width: 100%;
         height: auto;
-        background: #292929;
+        background: #ffffff;
         text-align: center;
 
         .title {
-            background: linear-gradient(to top,#323232 0%,#434343 100%);
-            box-shadow: 0px 2px 1px 0px #171717;
-            color: #fff;
+            background: #ffffff;
+            border-bottom: solid 1px #f6f6f6;
+            color: #454545;
             padding: 7px 15px;
             font-size: 12px;
             text-align: left;
@@ -163,7 +165,7 @@
     
                 p {
                     font-size: 12px;
-                    color: #ababab;
+                    color: #454545;
                     line-height: 20px;
                 }
             }
@@ -179,10 +181,10 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%,-50%);
-                    color: #ababab;
+                    color: #595959;
     
                     span {
-                        color: #37bb18;
+                        color: #356bf7;
                         font-size: 12px;
                     }
                 }
@@ -200,7 +202,6 @@
     .room {
         width: 100%;
         height: auto;
-        margin-top: 5px;
 
         //切換按鈕
         .twobut {
@@ -244,16 +245,15 @@
             button {
                 width: 100%;
                 height: 100%;
-                background: #3e3e3e;
-                color: #ababab;
+                background: #ffffff;
+                color: #595959;
                 font-size: 14px;
                 border-radius: 3px 3px 0px 0px;
-                border: solid 1px #686868;
-                border-bottom: none;
+                border-bottom: solid 1px #686868;
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to top,#262626 0%,#3c3c3c 100%);
-                    color: #49dd16;
+                    background: #ffffff;
+                    color: #595959;
                 }
             }
         }
@@ -274,12 +274,12 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #121212;
+                background: #ffffff;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #606360;
+                background: #ffc651;
                 border-radius: 10px;
             }
 
@@ -294,40 +294,40 @@
                     width: 100%;
                     height: 30px;
                     line-height: 30px;
-                    border-bottom: solid 1px #6a6a6a;
+                    border: solid 1px transparent;
+                    box-sizing: border-box;
                     position: relative;
                     overflow: hidden;
                     cursor: pointer;
-                    background: linear-gradient(to top,#323232 0%,#434343 100%);
+                    background: #ffffff;
 
                     &:hover,&:active {
-                        background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
-                        border: solid 1px #29650f;
+                        border-color: #356bf7;
 
                         &::before {
                             transform: rotate(90deg);
+                            border-color: transparent #356bf7; 
                         }
 
                         .gameName,.games {
-                            color: #57ed22;
+                            color: #24349f;
                         }
                     }
 
                     &.active {
                         height: auto;
-                        background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
-                        border: solid 1px #29650f;
+                        border-color: #356bf7;
                         position: sticky;
                         top: 0px;
                         z-index: 2;
-                        color: #57ed22;
 
                         &::before {
                             transform: rotate(90deg);
+                            border-color: transparent #356bf7;
                         }
 
                         .gameName,.games {
-                            color: #57ed22;
+                            color: #24349f;
                         }
                     }
 
@@ -338,14 +338,14 @@
                         height: 0px;
                         border-style: solid;
                         border-width: 7px 0px 7px 8px;
-                        border-color: transparent #b2b2b2;
+                        border-color: transparent #8d8d8d;
                         right: 25px;
                         top: 8px;
                         transition: 0.3s all;
                     }
 
                     .gameName {
-                        color: #e4e4e4;
+                        color: #454545;
                         font-size: 13px;
                         margin-left: 30px;
                     }
@@ -354,20 +354,20 @@
                         float: right;
                         font-size: 13px;
                         font-weight: bold;
-                        color: #e4e4e4;
+                        color: #454545;
                         margin: 2px 60px 0px 0px;
                     }
 
                     .innerList {
                         width: 100%;
                         height: 70px;
-                        background: #2d2d2d;
+                        background: #fafafa;
                         position: relative;
                         cursor: default;
-                        border-top: solid 1px #505050;
+                        border-top: solid 1px #eeeeee;
                         
                         &:nth-of-type(1) {
-                            border-color: #29650f;
+                            border-color: #356bf7;
                         }
 
                         p {
@@ -378,11 +378,11 @@
                             top: 50%;
                             transform: translateY(-50%);
                             font-size: 12px;
-                            color: #b6b6b6;
+                            color: #454545;
 
                             span {
                                 font-weight: bold;
-                                color: #ececec;
+                                color: #356bf7;
 
                                 .situation {
                                     font-weight: normal;

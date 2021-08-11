@@ -7,9 +7,9 @@
     position: relative;
     z-index: 6;
     scrollbar-width: thin;
-    border: solid 1px #6a6a6a;
     border-width: 1px 0px;
-    background: #404040;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 0px #00000049;
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -17,12 +17,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #121212;
+        background: #ffffff;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #606360;
+        background: #ffc651;
         border-radius: 10px;
     }
     
@@ -193,15 +193,17 @@
             &:hover {
 
                 a {
-                    background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
-                    color: #57ed22;
+                    border-color: #356bf7;
+                    color: #24349f;
+                    box-shadow: 0px 0px 5px 0px #00000049;
+                    z-index: 10;
 
                     svg {
-                        fill: #3abc0d;
+                        fill: #356bf7;
                     }
 
                     i {
-                        color: #3abc0d;
+                        color: #356bf7;
                     }
                 }
             }
@@ -213,15 +215,17 @@
                 }
 
                 a {
-                    background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
-                    color: #57ed22;
+                    border-color: #356bf7;
+                    color: #24349f;
+                    box-shadow: 0px 0px 5px 0px #00000049;
+                    z-index: 10;
 
                     svg {
-                        fill: #3abc0d;
+                        fill: #356bf7;
                     }
 
                     i {
-                        color: #3abc0d;
+                        color: #356bf7;
                     }
                 }
             }
@@ -235,15 +239,16 @@
 
             a {
                 display: block;
-                color: #e0e0e0 ;
-                width: calc(100% - 50px);
-                background: linear-gradient(to top,#323232 0%,#434343 100%);
+                color: #454545 ;
+                width: 100%;
+                background: #ffffff;
                 height: 45px;
                 line-height: 45px;
                 font-size: 14px;
                 padding-left: 50px;
                 position: relative;
-                border-bottom: solid 1px #6a6a6a;
+                box-sizing: border-box;
+                border: solid 1px transparent;
 
                 //字前小圖
                 i {
@@ -251,7 +256,7 @@
                     top: 12px;
                     left: 18px;
                     font-size: 18px;
-                    color: #ababab;
+                    color: #8d8d8d;
 
                     &::before {
                         margin: 0px auto;
@@ -278,7 +283,7 @@
                     position: absolute;
                     left: 18px;
                     top: 12px;
-                    fill: #ababab;
+                    fill: #8d8d8d;
                 }
 
                 //字後小框
@@ -287,7 +292,7 @@
                     right: 10px;
                     top: 0px;
                     font-size: 13px;
-                    color: #e0e0e0;
+                    color: #454545;
                 }
 
                 //LIVE小框
@@ -301,8 +306,8 @@
                     transform: translateY(-50%);
                     right: 42px;
                     font-size: 12px;
-                    background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
-                    color: #2b4517;
+                    background: #ffc651;
+                    color: #454545;
                     padding: 0px 4px;
                     border-radius: 3px;
                 }

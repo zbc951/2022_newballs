@@ -151,7 +151,7 @@
 .hideboard {
     width: 1260px;
     height: 70px;
-    background: #131313;
+    background: #ededed;
     position: absolute;
     z-index: 5;
     left: 280px;
@@ -162,12 +162,12 @@
 .topfix {
     width: calc(100% - 660px);
     height: 50px;
-    border-radius: 3px;
-    background: linear-gradient(to top,#323232 0%,#434343 100%);
+    background: #ededed;
     position: absolute;
     top: 10px;
     left: 280px;
     z-index: 6;
+    border-bottom: solid 1px #dfdfdf;
 
     &.innerMode {
         top: 126px;
@@ -301,20 +301,20 @@
                 height: 0px;
                 border-style: solid;
                 border-width: 8px 6px 0px 6px;
-                border-color: #bfbfbf transparent;
+                border-color: #8d8d8d transparent;
                 right: 10px;
                 top: 20px;
                 pointer-events: none;
             }
             
             select {
-                background: #2b2b2b;
-                color: #dddddd;
+                background: #ffffff;
+                color: #595959;
                 appearance:none;   
                 -moz-appearance:none;   
                 -webkit-appearance:none;
                 padding: 5px 30px 3px 5px;
-                border: solid 1px #707070;
+                border: solid 1px #e3e3e3;
 
                 span {
                     display: none;
@@ -324,10 +324,10 @@
         .chooseLeague {
             
             span {
-                background: #2b2b2b;
-                color: #dddddd;
+                background: #ffffff;
+                color: #595959;
                 padding: 7px 30px 4px 5px;
-                border: solid 1px #707070;
+                border: solid 1px #e3e3e3;
                 cursor: pointer;
             }
         }
@@ -346,7 +346,7 @@
                 height: 0px;
                 border-style: solid;
                 border-width: 10px 13px 10px 0px;
-                border-color: transparent #b2b2b2;
+                border-color: transparent #595959;
                 cursor: pointer;
                 transform: translateY(4px);
                 transform-origin: 10px 32px;
@@ -363,28 +363,21 @@
             .date {
                 display: inline-block;
                 margin: 0px 10px;
-                color: #e0e0e0;
+                color: #454545;
                 cursor: pointer;
-                position: relative;
-
-                &:hover,&:active,&.active {
-
-                    .arrow {
-                        border-color: #fff transparent;
-                    }
-                }
+                position: relative; 
 
                 .total {
                     display: inline-block;
-                    background: #131313;
+                    background: #595959;
                     border-radius: 3px;
                     margin-left: 10px;
                     line-height: 22px;
                     width: 36px;
-                    text-align: center;
+                    text-align: center; 
 
                     span {
-                        color: #33ba04;
+                        color: #ffffff;
                     }
                 }
 
@@ -393,7 +386,7 @@
                     width: 0px;
                     height: 0px;
                     border-style: solid;
-                    border-color: #747474 transparent;
+                    border-color: #595959 transparent;
                     border-width: 8px 6px 0px 6px;
                     margin-left: 10px;
                 }
@@ -405,11 +398,10 @@
                     top: 50px;
                     width: 143px;
                     height: auto;
-                    background: #333333;
+                    background: #ffffff;
                     line-height: 30px;
                     border-radius: 0px 0px 3px 3px;
-                    border: solid 1px #6e6e6e;
-                    border-top: none;
+                    box-shadow: 1px 2px 5px #000000d7;
 
                     &.display {
                         display: block;
@@ -418,24 +410,32 @@
                     li {
                         text-align: center;
                         font-size: 14px;
-                        border-bottom: solid 1px #6e6e6e;
-                        color: #e0e0e0;
+                        color: #595959;
 
                         &:last-child {
                             border: none;
                         }
 
                         &:hover,&:active,&.active {
-                            background: #444444;
+                            background: #356bf7;
+                            color: #ffffff;
+
+                            .total {
+                                background: #fcfcfc;
+                                
+                                span {
+                                    color: #454545;
+                                }
+                            }
                         }
                     }
                 }
             }
 
             .smallBtn {
-                background: #212121;
-                border: solid 1px #6a8e2a;
-                color: #bfbfbf;
+                background: #ffffff;
+                border: solid 1px #e3e3e3;
+                color: #595959;
                 padding: 5px 10px 6px;
                 border-radius: 3px;
                 margin: 0px 3px;
@@ -445,9 +445,9 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to bottom,#141414 0%,#434343 100%);
-                    color: #33ba04;
-                    border-color: #32980e;
+                    background: #356bf7;
+                    color: #ffffff;
+                    border-color: #356bf7;
                 }
             }
         }
@@ -586,9 +586,10 @@
     top: 55px;
     left: 280px;
     z-index: 5;
-    background: #3a3a3a;
+    background: #ffffff;
     scrollbar-width: thin;
     text-align: center;
+    box-shadow: 0px 0px 5px 0px #00000049;
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -596,12 +597,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #121212;
+        background: #ffffff;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #606360;
+        background: #ffc651;
         border-radius: 10px;
     }
 
@@ -648,7 +649,7 @@
                 position: relative;
                 padding: 6px 5px;
                 font-size: 13px;
-                color: #ababab;
+                color: #595959;
 
                 .cube {
                     left: -20px;
@@ -661,18 +662,16 @@
     button {
         width: 160px;
         height: 36px;
-        border: 1px solid #37da14;
         border-radius: 5px;
         font-size: 16px;
         font-weight: bold;
-        background: #333333;
-        color: #37da14;
+        background: #356bf7;
+        color: #ffffff;
         margin-top: 15px;
 
         &:hover,&:active,&.active {
-            background: linear-gradient(to right,#92e820 0%,#46dd16 100%);
-            border-color: #aef156;
-            color: #222222;
+            background: #ffc651;
+            color: #454545;
         }
     }
 }
@@ -1171,17 +1170,18 @@
     display: block;
     width: 12px;
     height: 12px;
-    background: #393939;
+    background: linear-gradient(to top,#ffffff 34%,#e5e5e5 100%);
     border-style: solid;
     border-width: 1px;
-    border-color: #3a3a3a #474747 #626262;
-    box-shadow: 0px 0px 5px 2px #181818 inset;
+    border-color: #d0d0d0;
     border-radius: 3px;
     position: absolute;
     cursor: pointer;
 
     &.active {
-        box-shadow: 0px 0px 5px 2px #181818 inset, 0px 0px 2px 1px #587920;
+        border-color: #b3c7fc;
+        box-shadow: 0px 0px 5px 0px #d9e3fd;
+        background: #ffffff;
         
         &::before {
             content: "";
@@ -1190,7 +1190,7 @@
             left: 0px;
             width: 18px;
             height: 18px;
-            background: url('../images/cubeArrow.png') no-repeat;
+            background: url('../images/cubeArrow2.png') no-repeat;
         }
     }
 }

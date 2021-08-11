@@ -82,7 +82,7 @@ header {
   width: 100%;
   min-width: 1480px;
   height: 110px;
-  background: #1f1f1f;
+  background: #356bf7;
   position: relative;
   z-index: 10;
   overflow: hidden;
@@ -93,13 +93,13 @@ header.mine {
 header .top {
   width: 100%;
   height: 25px;
-  background: #131313;
+  background: #efefef;
 }
 header .top .conversionBtn, header .top .controlBtn {
   float: left;
   width: auto;
   height: 100%;
-  color: #969696;
+  color: #595959;
   background: transparent;
   margin-left: 15px;
   font-size: 13px;
@@ -115,18 +115,18 @@ header .top .marqueeBox .fa-volume-up {
   position: absolute;
   left: -23px;
   top: 4px;
-  color: #31be16;
+  color: #356bf7;
 }
 header .top .marqueeBox marquee {
   line-height: 25px;
   font-size: 12px;
-  color: #37bd10;
+  color: #356bf7;
   overflow: visible;
 }
 header .top span {
   float: right;
   font-size: 12px;
-  color: #7a7a7a;
+  color: #595959;
   line-height: 25px;
   margin-right: 15px;
 }
@@ -165,7 +165,7 @@ header article .logo {
   font-weight: bolder;
   text-align: center;
   line-height: 85px;
-  color: #fff;
+  color: #ffffff;
 }
 header article ul {
   float: left;
@@ -181,13 +181,13 @@ header article ul li a {
   padding: 0px 10px;
   height: 76px;
   line-height: 85px;
-  color: #fff;
+  color: #ffffff;
   border-bottom: solid 5px transparent;
   font-size: 14px;
 }
 header article ul li a:hover, header article ul li a:active, header article ul li a.active {
-  border-color: #33ba04;
-  color: #7df81a;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 header article ul li a .fa-user {
   margin-right: 8px;
@@ -216,59 +216,60 @@ header article .logged .inputBox input {
   font-size: 14px;
   padding-left: 5px;
   border-radius: 3px;
-  border: solid 1px #39792d;
-  background: #131313;
-  color: #45b51f;
+  border: solid 1px #24349f;
+  background: #ffffff;
+  color: #000000;
 }
 header article .logged .inputBox input::placeholder {
-  color: #999999;
+  color: #8d8d8d;
 }
 header article .logged .inputBox .forget {
   position: absolute;
   left: 0px;
   bottom: -28px;
   font-size: 14px;
-  color: #45b51f;
+  color: #ffffff;
 }
 header article .logged .inputBox .remember {
   position: absolute;
   left: 18px;
   bottom: -28px;
   font-size: 14px;
-  color: #ababab;
+  color: #ffffff;
 }
 header article .logged .inputBox .remember .cube {
   left: -18px;
   top: -1px;
+  background: transparent;
+  border-color: #e3e3e3;
+}
+header article .logged .inputBox .remember .cube.active::before {
+  background: url("../images/cubeArrow2_2.png") no-repeat;
 }
 header article .logged .loginBtn {
-  background: linear-gradient(to right, #45dc16 0%, #91e820 90%);
-  border: solid 1px #cdff7f;
+  background: #ffffff;
   padding: 5px 14px;
   border-radius: 3px;
-  color: #131313;
+  color: #454545;
   font-size: 14px;
   font-weight: bold;
   margin-right: 8px;
 }
 header article .logged .loginBtn:hover, header article .logged .loginBtn:active, header article .logged .loginBtn.active {
-  border-color: #ffffff;
-  background: #fff;
-  color: #393939;
+  background: #ffc651;
+  color: #ffffff;
 }
 header article .logged .signupBtn {
-  background: linear-gradient(to top, #131313 0%, #323232 100%);
+  background: #ffffff;
   border-radius: 3px;
-  color: #fff;
-  padding: 6px 14px;
+  color: #454545;
+  padding: 5px 14px;
   font-size: 14px;
   font-weight: bold;
-  border: solid 1px #2c8e0b;
 }
 header article .logged .signupBtn:hover, header article .logged .signupBtn:active, header article .logged .signupBtn.active {
-  border-color: #ffffff;
-  background: #fff;
-  color: #59a936;
+  background: #ffc651;
+  color: #ffffff;
 }
 header article .logged .selectBox {
   float: right;
@@ -279,7 +280,7 @@ header article .logged .selectBox {
 header article .logged .selectBox .fa-globe {
   float: left;
   margin: 3px 6px 0px 0px;
-  color: #ababab;
+  color: #ffffff;
 }
 header article .logged .selectBox::after {
   content: "";
@@ -289,25 +290,21 @@ header article .logged .selectBox::after {
   height: 0px;
   border-style: solid;
   border-width: 10px 8px 0px 8px;
-  border-color: #ababab transparent;
+  border-color: #ffffff transparent;
   top: 7px;
   right: 10px;
 }
 header article .logged .selectBox select {
   width: 110px;
   padding: 3px 0px 3px 5px;
-  background: transparent;
-  border: solid 1px #707070;
+  background: #356bf7;
+  border: solid 1px #ffffff;
   border-radius: 3px;
-  color: #ababab;
+  color: #ffffff;
   font-size: 12px;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: #262626;
-}
-header article .logged .selectBox select option {
-  color: #ababab;
 }
 header article .loggedIn {
   display: none;
@@ -322,32 +319,32 @@ header article .loggedIn.display {
 }
 header article .loggedIn p {
   display: inline-block;
-  color: #ababab;
+  color: #ffffff;
   font-size: 13px;
   margin: 10px 5px 0px 0px;
 }
 header article .loggedIn p.quota {
   padding: 7px 7px 5px;
-  border: solid 1px #707070;
   border-radius: 3px;
-  background: #262626;
+  background: #ffffff;
+  color: #595959;
+}
+header article .loggedIn p.quota span {
+  color: #24349f;
 }
 header article .loggedIn p span {
-  color: #40c50f;
+  color: #ffffff;
   padding-left: 8px;
 }
 header article .loggedIn button {
   border-radius: 3px;
   padding: 4px 15px;
-  background: linear-gradient(to top, #131313, #323232 100%);
-  color: #40c50f;
+  background: #ffffff;
+  color: #454545;
   font-size: 14px;
-  border: solid 1px #2c8e0b;
 }
 header article .loggedIn button:hover, header article .loggedIn button:active, header article .loggedIn button.active {
-  background: linear-gradient(to bottom, #45dc16 10%, #91e820 90%);
-  color: #1c1c1c;
-  border-color: #cdff7f;
+  background: #ffc651;
 }
 header article .loggedIn .selectBox {
   float: right;
@@ -358,7 +355,7 @@ header article .loggedIn .selectBox {
 header article .loggedIn .selectBox .fa-globe {
   float: left;
   margin: 3px 6px 0px 0px;
-  color: #ababab;
+  color: #ffffff;
 }
 header article .loggedIn .selectBox::after {
   content: "";
@@ -368,7 +365,7 @@ header article .loggedIn .selectBox::after {
   height: 0px;
   border-style: solid;
   border-width: 10px 8px 0px 8px;
-  border-color: #ababab transparent;
+  border-color: #8d8d8d transparent;
   top: 7px;
   right: 10px;
 }
@@ -376,17 +373,14 @@ header article .loggedIn .selectBox select {
   width: 110px;
   padding: 3px 0px 3px 5px;
   background: transparent;
-  border: solid 1px #ababab;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
-  color: #ababab;
+  color: #595959;
   font-size: 12px;
-  background: #262626;
+  background: #ffffff;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-}
-header article .loggedIn .selectBox select option {
-  color: #ababab;
 }
 
 main {
@@ -413,7 +407,7 @@ main .bg {
   height: 1000px;
   position: absolute;
   top: 0px;
-  background: #131313;
+  background: #ededed;
   z-index: -999;
 }
 
@@ -426,20 +420,20 @@ main .bg {
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
-  border: solid 1px #6a6a6a;
   border-width: 1px 0px;
-  background: #404040;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 0px #00000049;
 }
 .left::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .left::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .left::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #ffc651;
   border-radius: 10px;
 }
 .left.mine {
@@ -568,49 +562,54 @@ main .bg {
   font-size: 20px;
 }
 .left ul li:hover a {
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  color: #57ed22;
+  border-color: #356bf7;
+  color: #24349f;
+  box-shadow: 0px 0px 5px 0px #00000049;
+  z-index: 10;
 }
 .left ul li:hover a svg {
-  fill: #3abc0d;
+  fill: #356bf7;
 }
 .left ul li:hover a i {
-  color: #3abc0d;
+  color: #356bf7;
 }
 .left ul li:active .smallList, .left ul li.active .smallList {
   display: block;
 }
 .left ul li:active a, .left ul li.active a {
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  color: #57ed22;
+  border-color: #356bf7;
+  color: #24349f;
+  box-shadow: 0px 0px 5px 0px #00000049;
+  z-index: 10;
 }
 .left ul li:active a svg, .left ul li.active a svg {
-  fill: #3abc0d;
+  fill: #356bf7;
 }
 .left ul li:active a i, .left ul li.active a i {
-  color: #3abc0d;
+  color: #356bf7;
 }
 .left ul li.onLive .live {
   display: block;
 }
 .left ul li a {
   display: block;
-  color: #e0e0e0;
-  width: calc(100% - 50px);
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
+  color: #454545;
+  width: 100%;
+  background: #ffffff;
   height: 45px;
   line-height: 45px;
   font-size: 14px;
   padding-left: 50px;
   position: relative;
-  border-bottom: solid 1px #6a6a6a;
+  box-sizing: border-box;
+  border: solid 1px transparent;
 }
 .left ul li a i {
   position: absolute;
   top: 12px;
   left: 18px;
   font-size: 18px;
-  color: #ababab;
+  color: #8d8d8d;
 }
 .left ul li a i::before {
   margin: 0px auto;
@@ -630,14 +629,14 @@ main .bg {
   position: absolute;
   left: 18px;
   top: 12px;
-  fill: #ababab;
+  fill: #8d8d8d;
 }
 .left ul li a .total {
   position: absolute;
   right: 10px;
   top: 0px;
   font-size: 13px;
-  color: #e0e0e0;
+  color: #454545;
 }
 .left ul li a .live {
   display: none;
@@ -649,8 +648,8 @@ main .bg {
   transform: translateY(-50%);
   right: 42px;
   font-size: 12px;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  color: #2b4517;
+  background: #ffc651;
+  color: #454545;
   padding: 0px 4px;
   border-radius: 3px;
 }
@@ -684,29 +683,31 @@ main .bg {
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
-  background: #242424;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 0px #00000049;
 }
 .right::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
   background-color: transparent;
 }
 .right::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #ffc651;
   border-radius: 10px;
 }
 .right::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #ffffff;
   border-radius: 10px;
 }
 .right .statusWindow {
   width: 100%;
   height: 113px;
-  background: #242424;
+  background: #ffffff;
   position: relative;
 }
 .right .statusWindow p {
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
-  color: #e5e5e5;
+  background: #ffffff;
+  border-bottom: solid 1px #f6f6f6;
+  color: #454545;
   padding: 7px 15px;
   font-size: 12px;
 }
@@ -782,13 +783,13 @@ main .bg {
 .right .liveWindow {
   width: 100%;
   height: auto;
-  background: #292929;
+  background: #ffffff;
   text-align: center;
 }
 .right .liveWindow .title {
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
-  box-shadow: 0px 2px 1px 0px #171717;
-  color: #fff;
+  background: #ffffff;
+  border-bottom: solid 1px #f6f6f6;
+  color: #454545;
   padding: 7px 15px;
   font-size: 12px;
   text-align: left;
@@ -814,7 +815,7 @@ main .bg {
 }
 .right .liveWindow .teamWindow .leftTeam p, .right .liveWindow .teamWindow .rightTeam p {
   font-size: 12px;
-  color: #ababab;
+  color: #454545;
   line-height: 20px;
 }
 .right .liveWindow .teamWindow .score {
@@ -828,10 +829,10 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ababab;
+  color: #595959;
 }
 .right .liveWindow .teamWindow .score p span {
-  color: #37bb18;
+  color: #356bf7;
   font-size: 12px;
 }
 .right .liveWindow .liveShow {
@@ -843,7 +844,6 @@ main .bg {
 .right .room {
   width: 100%;
   height: auto;
-  margin-top: 5px;
 }
 .right .room .twobut {
   width: 100%;
@@ -882,16 +882,15 @@ main .bg {
 .right .room .onebut button {
   width: 100%;
   height: 100%;
-  background: #3e3e3e;
-  color: #ababab;
+  background: #ffffff;
+  color: #595959;
   font-size: 14px;
   border-radius: 3px 3px 0px 0px;
-  border: solid 1px #686868;
-  border-bottom: none;
+  border-bottom: solid 1px #686868;
 }
 .right .room .onebut button:hover, .right .room .onebut button:active, .right .room .onebut button.active {
-  background: linear-gradient(to top, #262626 0%, #3c3c3c 100%);
-  color: #49dd16;
+  background: #ffffff;
+  color: #595959;
 }
 .right .room .livelist {
   display: none;
@@ -907,11 +906,11 @@ main .bg {
   background-color: transparent;
 }
 .right .room .livelist::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .right .room .livelist::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #ffc651;
   border-radius: 10px;
 }
 .right .room .livelist.open {
@@ -921,37 +920,37 @@ main .bg {
   width: 100%;
   height: 30px;
   line-height: 30px;
-  border-bottom: solid 1px #6a6a6a;
+  border: solid 1px transparent;
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
+  background: #ffffff;
 }
 .right .room .livelist ul li:hover, .right .room .livelist ul li:active {
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  border: solid 1px #29650f;
+  border-color: #356bf7;
 }
 .right .room .livelist ul li:hover::before, .right .room .livelist ul li:active::before {
   transform: rotate(90deg);
+  border-color: transparent #356bf7;
 }
 .right .room .livelist ul li:hover .gameName, .right .room .livelist ul li:hover .games, .right .room .livelist ul li:active .gameName, .right .room .livelist ul li:active .games {
-  color: #57ed22;
+  color: #24349f;
 }
 .right .room .livelist ul li.active {
   height: auto;
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  border: solid 1px #29650f;
+  border-color: #356bf7;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 2;
-  color: #57ed22;
 }
 .right .room .livelist ul li.active::before {
   transform: rotate(90deg);
+  border-color: transparent #356bf7;
 }
 .right .room .livelist ul li.active .gameName, .right .room .livelist ul li.active .games {
-  color: #57ed22;
+  color: #24349f;
 }
 .right .room .livelist ul li::before {
   content: "";
@@ -960,13 +959,13 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 7px 0px 7px 8px;
-  border-color: transparent #b2b2b2;
+  border-color: transparent #8d8d8d;
   right: 25px;
   top: 8px;
   transition: 0.3s all;
 }
 .right .room .livelist ul li .gameName {
-  color: #e4e4e4;
+  color: #454545;
   font-size: 13px;
   margin-left: 30px;
 }
@@ -974,19 +973,19 @@ main .bg {
   float: right;
   font-size: 13px;
   font-weight: bold;
-  color: #e4e4e4;
+  color: #454545;
   margin: 2px 60px 0px 0px;
 }
 .right .room .livelist ul li .innerList {
   width: 100%;
   height: 70px;
-  background: #2d2d2d;
+  background: #fafafa;
   position: relative;
   cursor: default;
-  border-top: solid 1px #505050;
+  border-top: solid 1px #eeeeee;
 }
 .right .room .livelist ul li .innerList:nth-of-type(1) {
-  border-color: #29650f;
+  border-color: #356bf7;
 }
 .right .room .livelist ul li .innerList p {
   width: 100%;
@@ -996,11 +995,11 @@ main .bg {
   top: 50%;
   transform: translateY(-50%);
   font-size: 12px;
-  color: #b6b6b6;
+  color: #454545;
 }
 .right .room .livelist ul li .innerList p span {
   font-weight: bold;
-  color: #ececec;
+  color: #356bf7;
 }
 .right .room .livelist ul li .innerList p span .situation {
   font-weight: normal;
@@ -4633,7 +4632,7 @@ main .bg {
 .hideboard {
   width: 1260px;
   height: 70px;
-  background: #131313;
+  background: #ededed;
   position: absolute;
   z-index: 5;
   left: 280px;
@@ -4643,12 +4642,12 @@ main .bg {
 .topfix {
   width: calc(100% - 660px);
   height: 50px;
-  border-radius: 3px;
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
+  background: #ededed;
   position: absolute;
   top: 10px;
   left: 280px;
   z-index: 6;
+  border-bottom: solid 1px #dfdfdf;
 }
 .topfix.innerMode {
   top: 126px;
@@ -4766,28 +4765,28 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 8px 6px 0px 6px;
-  border-color: #bfbfbf transparent;
+  border-color: #8d8d8d transparent;
   right: 10px;
   top: 20px;
   pointer-events: none;
 }
 .topfix .nor .kind select, .topfix .nor .sort select, .topfix .nor .chooseLeague select {
-  background: #2b2b2b;
-  color: #dddddd;
+  background: #ffffff;
+  color: #595959;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding: 5px 30px 3px 5px;
-  border: solid 1px #707070;
+  border: solid 1px #e3e3e3;
 }
 .topfix .nor .kind select span, .topfix .nor .sort select span, .topfix .nor .chooseLeague select span {
   display: none;
 }
 .topfix .nor .chooseLeague span {
-  background: #2b2b2b;
-  color: #dddddd;
+  background: #ffffff;
+  color: #595959;
   padding: 7px 30px 4px 5px;
-  border: solid 1px #707070;
+  border: solid 1px #e3e3e3;
   cursor: pointer;
 }
 .topfix .nor .timeSelect {
@@ -4805,7 +4804,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 10px 13px 10px 0px;
-  border-color: transparent #b2b2b2;
+  border-color: transparent #595959;
   cursor: pointer;
   transform: translateY(4px);
   transform-origin: 10px 32px;
@@ -4819,16 +4818,13 @@ main .bg {
 .topfix .nor .timeSelect .date {
   display: inline-block;
   margin: 0px 10px;
-  color: #e0e0e0;
+  color: #454545;
   cursor: pointer;
   position: relative;
 }
-.topfix .nor .timeSelect .date:hover .arrow, .topfix .nor .timeSelect .date:active .arrow, .topfix .nor .timeSelect .date.active .arrow {
-  border-color: #fff transparent;
-}
 .topfix .nor .timeSelect .date .total {
   display: inline-block;
-  background: #131313;
+  background: #595959;
   border-radius: 3px;
   margin-left: 10px;
   line-height: 22px;
@@ -4836,14 +4832,14 @@ main .bg {
   text-align: center;
 }
 .topfix .nor .timeSelect .date .total span {
-  color: #33ba04;
+  color: #ffffff;
 }
 .topfix .nor .timeSelect .date .arrow {
   display: inline-block;
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-color: #747474 transparent;
+  border-color: #595959 transparent;
   border-width: 8px 6px 0px 6px;
   margin-left: 10px;
 }
@@ -4854,11 +4850,10 @@ main .bg {
   top: 50px;
   width: 143px;
   height: auto;
-  background: #333333;
+  background: #ffffff;
   line-height: 30px;
   border-radius: 0px 0px 3px 3px;
-  border: solid 1px #6e6e6e;
-  border-top: none;
+  box-shadow: 1px 2px 5px #000000d7;
 }
 .topfix .nor .timeSelect .date .moreTimeList.display {
   display: block;
@@ -4866,19 +4861,25 @@ main .bg {
 .topfix .nor .timeSelect .date .moreTimeList li {
   text-align: center;
   font-size: 14px;
-  border-bottom: solid 1px #6e6e6e;
-  color: #e0e0e0;
+  color: #595959;
 }
 .topfix .nor .timeSelect .date .moreTimeList li:last-child {
   border: none;
 }
 .topfix .nor .timeSelect .date .moreTimeList li:hover, .topfix .nor .timeSelect .date .moreTimeList li:active, .topfix .nor .timeSelect .date .moreTimeList li.active {
-  background: #444444;
+  background: #356bf7;
+  color: #ffffff;
+}
+.topfix .nor .timeSelect .date .moreTimeList li:hover .total, .topfix .nor .timeSelect .date .moreTimeList li:active .total, .topfix .nor .timeSelect .date .moreTimeList li.active .total {
+  background: #fcfcfc;
+}
+.topfix .nor .timeSelect .date .moreTimeList li:hover .total span, .topfix .nor .timeSelect .date .moreTimeList li:active .total span, .topfix .nor .timeSelect .date .moreTimeList li.active .total span {
+  color: #454545;
 }
 .topfix .nor .timeSelect .smallBtn {
-  background: #212121;
-  border: solid 1px #6a8e2a;
-  color: #bfbfbf;
+  background: #ffffff;
+  border: solid 1px #e3e3e3;
+  color: #595959;
   padding: 5px 10px 6px;
   border-radius: 3px;
   margin: 0px 3px;
@@ -4887,9 +4888,9 @@ main .bg {
   margin-left: 10px;
 }
 .topfix .nor .timeSelect .smallBtn:hover, .topfix .nor .timeSelect .smallBtn:active, .topfix .nor .timeSelect .smallBtn.active {
-  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
-  color: #33ba04;
-  border-color: #32980e;
+  background: #356bf7;
+  color: #ffffff;
+  border-color: #356bf7;
 }
 .topfix .inn {
   display: none;
@@ -5004,20 +5005,21 @@ main .bg {
   top: 55px;
   left: 280px;
   z-index: 5;
-  background: #3a3a3a;
+  background: #ffffff;
   scrollbar-width: thin;
   text-align: center;
+  box-shadow: 0px 0px 5px 0px #00000049;
 }
 .chleague::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .chleague::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .chleague::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #ffc651;
   border-radius: 10px;
 }
 .chleague.display {
@@ -5053,7 +5055,7 @@ main .bg {
   position: relative;
   padding: 6px 5px;
   font-size: 13px;
-  color: #ababab;
+  color: #595959;
 }
 .chleague ul li p .cube {
   left: -20px;
@@ -5062,18 +5064,16 @@ main .bg {
 .chleague button {
   width: 160px;
   height: 36px;
-  border: 1px solid #37da14;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  background: #333333;
-  color: #37da14;
+  background: #356bf7;
+  color: #ffffff;
   margin-top: 15px;
 }
 .chleague button:hover, .chleague button:active, .chleague button.active {
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  border-color: #aef156;
-  color: #222222;
+  background: #ffc651;
+  color: #454545;
 }
 
 .filter {
@@ -5499,17 +5499,18 @@ main .bg {
   display: block;
   width: 12px;
   height: 12px;
-  background: #393939;
+  background: linear-gradient(to top, #ffffff 34%, #e5e5e5 100%);
   border-style: solid;
   border-width: 1px;
-  border-color: #3a3a3a #474747 #626262;
-  box-shadow: 0px 0px 5px 2px #181818 inset;
+  border-color: #d0d0d0;
   border-radius: 3px;
   position: absolute;
   cursor: pointer;
 }
 .cube.active {
-  box-shadow: 0px 0px 5px 2px #181818 inset, 0px 0px 2px 1px #587920;
+  border-color: #b3c7fc;
+  box-shadow: 0px 0px 5px 0px #d9e3fd;
+  background: #ffffff;
 }
 .cube.active::before {
   content: "";
@@ -5518,7 +5519,7 @@ main .bg {
   left: 0px;
   width: 18px;
   height: 18px;
-  background: url("../images/cubeArrow.png") no-repeat;
+  background: url("../images/cubeArrow2.png") no-repeat;
 }
 
 .norbetting {
@@ -8726,10 +8727,10 @@ html body::-webkit-scrollbar {
   background-color: transparent;
 }
 html body::-webkit-scrollbar-track {
-  background: #ffc651;
+  background: #ffffff;
   border-radius: 10px;
 }
 html body::-webkit-scrollbar-thumb {
-  background: #ffffff;
+  background: #ffc651;
   border-radius: 10px;
 }

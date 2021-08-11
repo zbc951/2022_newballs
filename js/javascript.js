@@ -839,6 +839,16 @@ $(function(){
     });
 });
 
+//點擊時版面顏色切換
+$(function(){
+    $('.threeCircle button:nth-of-type(1)').click(function(){
+        $('.indexStyle').attr('href','./css/style.css');
+    })
+    $('.threeCircle button:nth-of-type(3)').click(function(){
+        $('.indexStyle').attr('href','./css_2/style.css');
+    })
+})
+
 //left自動高度
 $(document).ready(function () {
     //預設高度
