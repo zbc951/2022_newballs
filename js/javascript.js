@@ -843,9 +843,11 @@ $(function(){
 $(function(){
     $('.threeCircle button:nth-of-type(1)').click(function(){
         $('.indexStyle').attr('href','./css/style.css');
+        $('.elseStyle').attr('href','../../css/style.css');
     })
     $('.threeCircle button:nth-of-type(3)').click(function(){
         $('.indexStyle').attr('href','./css_2/style.css');
+        $('.elseStyle').attr('href','../../css_2/style.css');
     })
 })
 

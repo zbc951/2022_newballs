@@ -194,7 +194,7 @@
 
                 a {
                     border-color: #356bf7;
-                    color: #24349f;
+                    color: #356bf7;
                     box-shadow: 0px 0px 5px 0px #00000049;
                     z-index: 10;
 
@@ -216,7 +216,7 @@
 
                 a {
                     border-color: #356bf7;
-                    color: #24349f;
+                    color: #356bf7;
                     box-shadow: 0px 0px 5px 0px #00000049;
                     z-index: 10;
 
@@ -317,17 +317,17 @@
                 display: none;
                 width: calc(100% - 30px);
                 height: 30px;
-                background: #2d2d2d;
-                border-bottom: solid 1px #4c4c4c;
+                background: #f7f7f7;
+                border-bottom: solid 1px #e8e8e8;
                 line-height: 30px;
                 padding-left: 30px;
                 font-size: 12px;
-                color: #46dd16;
+                color: #454545;
                 cursor: pointer;
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to right,#45dc16 0%,#8fe720 100%);
-                    color: #1d1d1d;
+                    background: #356bf7;
+                    color: #ffffff;
                 }
 
                 span {

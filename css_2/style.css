@@ -216,7 +216,7 @@ header article .logged .inputBox input {
   font-size: 14px;
   padding-left: 5px;
   border-radius: 3px;
-  border: solid 1px #24349f;
+  border: solid 1px #356bf7;
   background: #ffffff;
   color: #000000;
 }
@@ -330,7 +330,7 @@ header article .loggedIn p.quota {
   color: #595959;
 }
 header article .loggedIn p.quota span {
-  color: #24349f;
+  color: #356bf7;
 }
 header article .loggedIn p span {
   color: #ffffff;
@@ -365,7 +365,7 @@ header article .loggedIn .selectBox::after {
   height: 0px;
   border-style: solid;
   border-width: 10px 8px 0px 8px;
-  border-color: #8d8d8d transparent;
+  border-color: #ffffff transparent;
   top: 7px;
   right: 10px;
 }
@@ -373,11 +373,11 @@ header article .loggedIn .selectBox select {
   width: 110px;
   padding: 3px 0px 3px 5px;
   background: transparent;
-  border: solid 1px #e3e3e3;
+  background: #356bf7;
+  border: solid 1px #ffffff;
   border-radius: 3px;
-  color: #595959;
+  color: #ffffff;
   font-size: 12px;
-  background: #ffffff;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -563,7 +563,7 @@ main .bg {
 }
 .left ul li:hover a {
   border-color: #356bf7;
-  color: #24349f;
+  color: #356bf7;
   box-shadow: 0px 0px 5px 0px #00000049;
   z-index: 10;
 }
@@ -578,7 +578,7 @@ main .bg {
 }
 .left ul li:active a, .left ul li.active a {
   border-color: #356bf7;
-  color: #24349f;
+  color: #356bf7;
   box-shadow: 0px 0px 5px 0px #00000049;
   z-index: 10;
 }
@@ -657,17 +657,17 @@ main .bg {
   display: none;
   width: calc(100% - 30px);
   height: 30px;
-  background: #2d2d2d;
-  border-bottom: solid 1px #4c4c4c;
+  background: #f7f7f7;
+  border-bottom: solid 1px #e8e8e8;
   line-height: 30px;
   padding-left: 30px;
   font-size: 12px;
-  color: #46dd16;
+  color: #454545;
   cursor: pointer;
 }
 .left ul li .smallList:hover, .left ul li .smallList:active, .left ul li .smallList.active {
-  background: linear-gradient(to right, #45dc16 0%, #8fe720 100%);
-  color: #1d1d1d;
+  background: #356bf7;
+  color: #ffffff;
 }
 .left ul li .smallList span {
   float: right;
@@ -691,22 +691,21 @@ main .bg {
   background-color: transparent;
 }
 .right::-webkit-scrollbar-track {
-  background: #ffc651;
+  background: #ffffff;
   border-radius: 10px;
 }
 .right::-webkit-scrollbar-thumb {
-  background: #ffffff;
+  background: #ffc651;
   border-radius: 10px;
 }
 .right .statusWindow {
   width: 100%;
   height: 113px;
-  background: #ffffff;
+  background: #f5f5f5;
   position: relative;
 }
 .right .statusWindow p {
   background: #ffffff;
-  border-bottom: solid 1px #f6f6f6;
   color: #454545;
   padding: 7px 15px;
   font-size: 12px;
@@ -716,16 +715,15 @@ main .bg {
   width: 95%;
   height: auto;
   left: 50%;
-  bottom: 1%;
+  bottom: 4%;
   transform: translateX(-50%);
 }
 .right .statusWindow ul li {
   padding: 5px 15px 3px;
   font-size: 14px;
-  border: solid 1px #494949;
   position: relative;
-  background: #393939;
-  color: #cbcbcb;
+  background: #ffffff;
+  color: #454545;
   margin-bottom: 3px;
 }
 .right .statusWindow ul li::before {
@@ -735,16 +733,16 @@ main .bg {
   height: calc(100% + 2px);
   left: -1px;
   top: -1px;
-  background: #30a009;
+  background: #356bf7;
 }
 .right .statusWindow ul li span {
   float: right;
   font-size: 12px;
   padding-top: 2px;
-  color: #37bb18;
+  color: #356bf7;
 }
 .right .statusWindow ul li span.onWait {
-  color: #c7c7c7;
+  color: #454545;
 }
 .right .statusWindow ul li span.fail {
   color: #f42a2a;
@@ -754,7 +752,7 @@ main .bg {
   width: 15px;
   height: 15px;
   background: transparent;
-  border: solid 1px #a0a0a0;
+  border: solid 1px #8d8d8d;
   border-radius: 15px;
   margin-left: 15px;
   position: relative;
@@ -765,7 +763,7 @@ main .bg {
   position: absolute;
   width: 1px;
   height: 7px;
-  background: #a0a0a0;
+  background: #8d8d8d;
   transform: rotate(45deg);
   top: 3px;
   right: 6px;
@@ -775,7 +773,7 @@ main .bg {
   position: absolute;
   width: 1px;
   height: 7px;
-  background: #a0a0a0;
+  background: #8d8d8d;
   transform: rotate(-45deg);
   top: 3px;
   left: 6px;
@@ -844,6 +842,7 @@ main .bg {
 .right .room {
   width: 100%;
   height: auto;
+  margin-top: 5px;
 }
 .right .room .twobut {
   width: 100%;
@@ -859,21 +858,21 @@ main .bg {
 .right .room .twobut button {
   width: 49.5%;
   height: 100%;
-  background: #3e3e3e;
-  color: #ababab;
+  background: #e6e6e6;
+  color: #595959;
   font-size: 14px;
   float: left;
   margin-right: 1%;
   border-radius: 3px 3px 0px 0px;
-  border: solid 1px #686868;
-  border-bottom: none;
+  border: solid 1px transparent;
 }
 .right .room .twobut button:last-child {
   margin: 0px;
 }
 .right .room .twobut button:hover, .right .room .twobut button:active, .right .room .twobut button.active {
-  background: linear-gradient(to top, #262626 0%, #3c3c3c 100%);
-  color: #49dd16;
+  background: #ffffff;
+  border: solid 1px #356bf7;
+  color: #356bf7;
 }
 .right .room .onebut {
   width: 100%;
@@ -882,15 +881,15 @@ main .bg {
 .right .room .onebut button {
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #e6e6e6;
   color: #595959;
   font-size: 14px;
   border-radius: 3px 3px 0px 0px;
-  border-bottom: solid 1px #686868;
+  border: solid 1px transparent;
 }
 .right .room .onebut button:hover, .right .room .onebut button:active, .right .room .onebut button.active {
   background: #ffffff;
-  color: #595959;
+  color: #454545;
 }
 .right .room .livelist {
   display: none;
@@ -919,27 +918,27 @@ main .bg {
 .right .room .livelist ul li {
   width: 100%;
   height: 30px;
-  line-height: 30px;
-  border: solid 1px transparent;
+  line-height: 32px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   background: #ffffff;
 }
-.right .room .livelist ul li:hover, .right .room .livelist ul li:active {
-  border-color: #356bf7;
-}
 .right .room .livelist ul li:hover::before, .right .room .livelist ul li:active::before {
   transform: rotate(90deg);
   border-color: transparent #356bf7;
 }
-.right .room .livelist ul li:hover .gameName, .right .room .livelist ul li:hover .games, .right .room .livelist ul li:active .gameName, .right .room .livelist ul li:active .games {
-  color: #24349f;
+.right .room .livelist ul li:hover .gameName, .right .room .livelist ul li:active .gameName {
+  border-color: #356bf7;
+  color: #356bf7;
+}
+.right .room .livelist ul li:hover .games, .right .room .livelist ul li:active .games {
+  color: #356bf7;
 }
 .right .room .livelist ul li.active {
+  background: #f7f7f7;
   height: auto;
-  border-color: #356bf7;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -949,8 +948,13 @@ main .bg {
   transform: rotate(90deg);
   border-color: transparent #356bf7;
 }
-.right .room .livelist ul li.active .gameName, .right .room .livelist ul li.active .games {
-  color: #24349f;
+.right .room .livelist ul li.active .gameName {
+  border-color: #356bf7;
+  color: #356bf7;
+  background: #ffffff;
+}
+.right .room .livelist ul li.active .games {
+  color: #356bf7;
 }
 .right .room .livelist ul li::before {
   content: "";
@@ -965,27 +969,35 @@ main .bg {
   transition: 0.3s all;
 }
 .right .room .livelist ul li .gameName {
+  display: block;
+  width: 100%;
+  height: 30px;
   color: #454545;
   font-size: 13px;
-  margin-left: 30px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  border: solid 1px transparent;
 }
 .right .room .livelist ul li .games {
-  float: right;
   font-size: 13px;
   font-weight: bold;
   color: #454545;
-  margin: 2px 60px 0px 0px;
+  position: absolute;
+  right: 60px;
+  top: 0px;
 }
 .right .room .livelist ul li .innerList {
-  width: 100%;
+  width: 96%;
   height: 70px;
-  background: #fafafa;
+  background: #ffffff;
   position: relative;
   cursor: default;
-  border-top: solid 1px #eeeeee;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px #00000049;
+  margin: 0px auto 10px;
 }
 .right .room .livelist ul li .innerList:nth-of-type(1) {
-  border-color: #356bf7;
+  margin-top: 10px;
 }
 .right .room .livelist ul li .innerList p {
   width: 100%;
@@ -1005,20 +1017,22 @@ main .bg {
   font-weight: normal;
   float: right;
   margin-right: 20px;
+  color: #8d8d8d;
 }
 .right .room .livelist ul li .innerList p span .situation.onLive {
   position: relative;
-  color: #57ed22;
+  color: #ffffff;
+  margin: -7px 15px 0px 0px;
 }
-.right .room .livelist ul li .innerList p span .situation.onLive::before {
+.right .room .livelist ul li .innerList p span .situation.onLive::after {
   content: "";
   position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 12px;
-  top: 6px;
-  left: -12px;
-  background: #57ed22;
+  width: 40px;
+  height: 19px;
+  top: -1px;
+  left: -10px;
+  background: url("../images/liveBg.png") no-repeat;
+  z-index: -1;
 }
 .right .room .livelist ul li .innerList p button {
   position: absolute;
@@ -1026,15 +1040,14 @@ main .bg {
   bottom: 0px;
   width: 70px;
   height: 30px;
-  background: #252525;
+  background: #ffffff;
   border-radius: 3px;
-  border: solid 1px #317f0f;
-  color: #aeaeae;
+  box-shadow: 1px 2px 10px 0px #00000049;
+  color: #356bf7;
 }
 .right .room .livelist ul li .innerList p button:hover, .right .room .livelist ul li .innerList p button:active, .right .room .livelist ul li .innerList p button.active {
-  background: linear-gradient(to right, #92e820 0%, #46dd16 90%);
-  border-color: #aef156;
-  color: #252525;
+  background: #356bf7;
+  color: #ffffff;
 }
 .right .room .bettingStatus {
   display: none;
@@ -1044,18 +1057,18 @@ main .bg {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  background: #505050;
+  background: #f7f7f7;
 }
 .right .room .bettingStatus::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .right .room .bettingStatus::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .right .room .bettingStatus::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #ffc651;
   border-radius: 10px;
 }
 .right .room .bettingStatus.open {
@@ -2164,7 +2177,7 @@ main .bg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #00000096;
+  background: #c7c7c796;
 }
 .bettingBoard.fail tr td.failRemind {
   display: block;
@@ -2173,27 +2186,26 @@ main .bg {
   width: 50%;
   height: auto;
   padding: 7px;
-  color: #ababab;
+  color: #595959;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
-  border-color: #505050;
+  border-color: #f7f7f7;
   vertical-align: middle;
-  background: #353535;
-  box-shadow: 0px -1px 0px 0px #505050 inset;
+  background: #ffffff;
   font-size: 12px;
 }
 .bettingBoard tr td.waiting {
-  color: #37bb18;
+  color: #356bf7;
 }
 .bettingBoard tr td.listName {
   padding: 15px 7px;
 }
 .bettingBoard tr td.listName .vs {
-  color: #37bb18;
+  color: #ffab00;
   margin: 0px 5px;
 }
 .bettingBoard tr td.listName .odds {
-  color: #e82f2f;
+  color: #356bf7;
   margin-left: 5px;
 }
 .bettingBoard tr td:nth-of-type(odd) {
@@ -2211,9 +2223,10 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: solid 1px #8c8c8c;
+  border: solid 1px #c1c1c1;
   text-align: center;
   padding: 10px 0px;
+  color: #454545;
 }
 
 .conversionBoard {
@@ -4664,7 +4677,7 @@ main .bg {
   display: block;
 }
 .topfix .nor i {
-  color: #dddddd;
+  color: #356bf7;
   font-size: 18px;
   margin: 0px 6px 0px 12px;
   transform: translateY(2px);
@@ -4674,11 +4687,11 @@ main .bg {
   height: 18px;
   margin: 0px 6px 0px 12px;
   transform: translateY(4px);
-  fill: #dddddd;
+  fill: #356bf7;
 }
 .topfix .nor .gameName {
   display: inline-block;
-  color: #fefefe;
+  color: #356bf7;
   font-size: 13px;
 }
 .topfix .nor .reWeb {
@@ -4695,24 +4708,24 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 8px 6px 0px 6px;
-  border-color: #fff transparent;
+  border-color: #8d8d8d transparent;
   right: 10px;
   top: 22px;
   pointer-events: none;
 }
 .topfix .nor .reWeb select {
-  background: #2b2b2b;
-  color: #dddddd;
+  background: #ffffff;
+  color: #595959;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding: 5px 30px 4px 5px;
-  border: solid 1px #707070;
+  border: solid 1px #e3e3e3;
   font-size: 12px;
 }
 .topfix .nor .reWeb .clock {
   position: absolute;
-  background: #2b2b2b;
+  background: #595959;
   top: 50%;
   right: -36px;
   width: 30px;
@@ -4721,7 +4734,7 @@ main .bg {
   line-height: 24px;
   text-align: center;
   border-radius: 3px;
-  color: #37bb18;
+  color: #ffffff;
 }
 .topfix .nor .reWeb .reBtn {
   position: absolute;
@@ -4730,10 +4743,10 @@ main .bg {
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  border: solid 1px #848484;
+  border: solid 1px #595959;
   border-radius: 20px;
   cursor: pointer;
-  background: #313131;
+  background: #ededed;
 }
 .topfix .nor .reWeb .reBtn i {
   font-size: 14px;
@@ -4742,13 +4755,14 @@ main .bg {
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0px;
-  color: #c9c9c9;
+  color: #595959;
 }
 .topfix .nor .reWeb .reBtn:hover, .topfix .nor .reWeb .reBtn:active, .topfix .nor .reWeb .reBtn.active {
-  background: #fff;
+  background: #356bf7;
+  border-color: #356bf7;
 }
 .topfix .nor .reWeb .reBtn:hover i, .topfix .nor .reWeb .reBtn:active i, .topfix .nor .reWeb .reBtn.active i {
-  color: #000;
+  color: #ffffff;
 }
 .topfix .nor .kind, .topfix .nor .sort, .topfix .nor .chooseLeague {
   float: right;
@@ -4818,7 +4832,7 @@ main .bg {
 .topfix .nor .timeSelect .date {
   display: inline-block;
   margin: 0px 10px;
-  color: #454545;
+  color: #595959;
   cursor: pointer;
   position: relative;
 }
@@ -4853,7 +4867,7 @@ main .bg {
   background: #ffffff;
   line-height: 30px;
   border-radius: 0px 0px 3px 3px;
-  box-shadow: 1px 2px 5px #000000d7;
+  box-shadow: 0px 0px 5px 0px #00000017;
 }
 .topfix .nor .timeSelect .date .moreTimeList.display {
   display: block;
@@ -4863,15 +4877,12 @@ main .bg {
   font-size: 14px;
   color: #595959;
 }
-.topfix .nor .timeSelect .date .moreTimeList li:last-child {
-  border: none;
-}
 .topfix .nor .timeSelect .date .moreTimeList li:hover, .topfix .nor .timeSelect .date .moreTimeList li:active, .topfix .nor .timeSelect .date .moreTimeList li.active {
   background: #356bf7;
   color: #ffffff;
 }
 .topfix .nor .timeSelect .date .moreTimeList li:hover .total, .topfix .nor .timeSelect .date .moreTimeList li:active .total, .topfix .nor .timeSelect .date .moreTimeList li.active .total {
-  background: #fcfcfc;
+  background: #ffffff;
 }
 .topfix .nor .timeSelect .date .moreTimeList li:hover .total span, .topfix .nor .timeSelect .date .moreTimeList li:active .total span, .topfix .nor .timeSelect .date .moreTimeList li.active .total span {
   color: #454545;
@@ -5079,7 +5090,7 @@ main .bg {
 .filter {
   display: none;
   background: rgba(0, 0, 0, 0.8);
-  width: 1920px;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
@@ -6912,8 +6923,8 @@ main .bg {
 .fixside .search {
   width: 300px;
   height: 60px;
-  background: linear-gradient(to top, #272727 0%, #434343);
-  border: solid 1px #327e1a;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px 0px #00000017;
   border-radius: 3px 0px 0px 3px;
   position: absolute;
   top: 0px;
@@ -6923,7 +6934,10 @@ main .bg {
 }
 .fixside .search.open {
   left: -240px;
-  background: #414141;
+  background: #fafafa;
+}
+.fixside .search.open .searchbut:hover, .fixside .search.open .searchbut:active, .fixside .search.open .searchbut.active {
+  border-color: transparent #f6f6f6 transparent transparent;
 }
 .fixside .search .searchbut {
   width: 60px;
@@ -6932,24 +6946,26 @@ main .bg {
   border-radius: 3px 0px 0px 3px;
   float: left;
   text-align: center;
+  border: solid 1px transparent;
+  background: #ffffff;
 }
 .fixside .search .searchbut:hover, .fixside .search .searchbut:active, .fixside .search .searchbut.active {
-  background: linear-gradient(to bottom, #33ab0a 0%, #68e73c 100%);
+  border-color: #3366ec;
 }
 .fixside .search .searchbut:hover span, .fixside .search .searchbut:active span, .fixside .search .searchbut.active span {
-  color: #131313;
+  color: #356bf7;
 }
 .fixside .search .searchbut:hover .fixsideimg, .fixside .search .searchbut:active .fixsideimg, .fixside .search .searchbut.active .fixsideimg {
   background-position-y: 100%;
 }
 .fixside .search .searchbut span {
   font-size: 13px;
-  color: #c8c8c8;
+  color: #454545;
 }
 .fixside .search .searchbut .fixsideimg {
   width: 30px;
-  height: 30px;
-  background: url("../images/fixside_ic2.png");
+  height: 29px;
+  background: url("../images/fixside_ic3.png");
   background-size: 500%;
   float: left;
   margin: 7px 15px 3px 14px;
@@ -6960,40 +6976,39 @@ main .bg {
   height: 30px;
   font-size: 16px;
   padding-left: 10px;
-  box-shadow: 0px 3px 10px 2px #1f1f1f inset;
-  border: solid 1px #5d5d5d;
+  border: solid 1px #e3e3e3;
   border-top: none;
   border-radius: 3px;
   float: left;
   margin: 15px 0px 0px 10px;
-  background: linear-gradient(to bottom, #303030 21%, #424242 100%);
-  color: #898787;
+  background: #ffffff;
+  color: #8d8d8d;
 }
 .fixside .search input::placeholder {
   font-weight: bold;
-  color: #898787;
+  color: #8d8d8d;
   font-size: 14px;
 }
 .fixside .search button {
   width: 50px;
   height: 28px;
-  background: #2b2b2b;
-  border: solid 1px #34aa0d;
-  color: #42c317;
+  box-shadow: 0px 0px 10px 0px #00000017;
+  background: #ffffff;
+  color: #356bf7;
   float: left;
   border-radius: 5px;
   font-size: 16px;
   margin: 16px 0px 16px 15px;
 }
 .fixside .search button:hover, .fixside .search button:active, .fixside .search button.active {
-  color: #2b2b2b;
-  background: #34aa0d;
+  color: #ffffff;
+  background: #356bf7;
 }
 .fixside .search .searchbox {
   width: 240px;
   height: auto;
   float: left;
-  margin-left: 60px;
+  margin: -2px 0px 0px 62px;
   overflow: hidden;
   border-radius: 0px 0px 0px 3px;
 }
@@ -7004,10 +7019,12 @@ main .bg {
   padding-left: 20px;
   position: relative;
   font-size: 14px;
-  background: linear-gradient(to top, #393939 0%, #555555 100%);
+  background: #ffffff;
   cursor: pointer;
-  color: #dadada;
-  border-bottom: solid 1px #6c6c6c;
+  box-sizing: border-box;
+  color: #454545;
+  border: solid 1px transparent;
+  border-bottom-color: #c8c8c8;
 }
 .fixside .search .searchbox li::before {
   content: "";
@@ -7015,7 +7032,7 @@ main .bg {
   height: 0px;
   position: absolute;
   border-style: solid;
-  border-color: #b2b2b2 transparent;
+  border-color: #8d8d8d transparent;
   border-width: 10px 8px 0px 8px;
   right: 40px;
   top: 21px;
@@ -7023,14 +7040,13 @@ main .bg {
   transition: 0.3s all;
 }
 .fixside .search .searchbox li:hover, .fixside .search .searchbox li:active, .fixside .search .searchbox li.active {
-  background: linear-gradient(to bottom, #2d2d2d 0%, #393939 100%);
-  color: #dadada;
+  border-color: #356bf7;
 }
 .fixside .search .searchbox li:hover::before, .fixside .search .searchbox li:active::before, .fixside .search .searchbox li.active::before {
   transform: rotate(0deg);
 }
 .fixside .search .searchbox div {
-  background: #2c2c2c;
+  background: #f5f5f5;
   width: 100%;
   height: 0px;
   overflow: hidden;
@@ -7043,13 +7059,13 @@ main .bg {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  color: #b9b9b9;
-  border-bottom: solid 1px #8c8c8c;
+  color: #595959;
+  border-bottom: solid 1px #c8c8c8;
   font-size: 14px;
 }
 .fixside .search .searchbox div a:hover, .fixside .search .searchbox div a:active, .fixside .search .searchbox div a.active {
-  background: #212121;
-  color: #53ca2a;
+  background: #356bf7;
+  color: #ffffff;
 }
 .fixside .search .searchbox div a .team {
   display: block;
@@ -7077,66 +7093,35 @@ main .bg {
   position: relative;
   transition: all 0.3s;
 }
-.fixside .fun .hamBtn {
-  display: none;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 0px;
-  left: -30px;
-  border-radius: 3px 0px 0px 3px;
-  background: #eaedf4;
-  padding: 0px;
-  cursor: pointer;
-}
-.fixside .fun .hamBtn:hover, .fixside .fun .hamBtn:active, .fixside .fun .hamBtn.active {
-  background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-}
-.fixside .fun .hamBtn:hover span, .fixside .fun .hamBtn:active span, .fixside .fun .hamBtn.active span {
-  background: #fff;
-}
-.fixside .fun .hamBtn span {
-  display: block;
-  width: 55%;
-  height: 4px;
-  background: #f3b378;
-  margin: 0px 0px 0px 7px;
-  border-radius: 5px;
-}
-.fixside .fun .hamBtn span:first-child {
-  margin: 6px 0px 3px 7px;
-}
-.fixside .fun .hamBtn span:last-child {
-  margin-top: 3px;
-}
 .fixside .fun a {
   display: block;
   width: 100%;
   height: 62px;
-  background: linear-gradient(to top, #272727 0%, #434343 100%);
+  background: #ffffff;
   border-radius: 3px 0px 0px 3px;
   text-align: center;
   margin-top: 3px;
-  border: solid 1px #327e1a;
+  border: solid 1px transparent;
   cursor: pointer;
+  box-shadow: 0px 0px 10px 0px #00000017;
 }
 .fixside .fun a:hover, .fixside .fun a:active, .fixside .fun a.active {
-  background: linear-gradient(to bottom, #33ab0a 0%, #68e73c 100%);
+  border-color: #356bf7;
 }
 .fixside .fun a:hover span, .fixside .fun a:active span, .fixside .fun a.active span {
-  color: #131313;
+  color: #356bf7;
 }
 .fixside .fun a:hover .fixsideimg, .fixside .fun a:active .fixsideimg, .fixside .fun a.active .fixsideimg {
   background-position-y: 100%;
 }
 .fixside .fun a span {
   font-size: 13px;
-  color: #d0d0d0;
+  color: #454545;
 }
 .fixside .fun a .fixsideimg {
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_ic2.png");
+  background: url("../images/fixside_ic3.png") no-repeat;
   background-size: 500%;
   float: left;
   margin: 8px 15px 3px 17px;
