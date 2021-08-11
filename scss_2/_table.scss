@@ -5,40 +5,55 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #303030;
+	background: #ffffff;
 
 	//內容
     tr {
 		text-align: center;
 		border-style: solid;
 		border-width: 1px;
-		border-color: transparent transparent #868282 transparent;
+		border-color: transparent transparent #dedede transparent;
 
 		&:nth-of-type(1) {
-			border-top-color: #33bc19;
-			border-bottom: none;
+			border-top-color: #f2f2f2;
+			border-bottom-color: #f0f0f0;
+		}
+
+		&:nth-of-type(3) {
+			
+			td {
+				border-top: solid 1px #356bf7;
+			}
 		}
 
 		&:nth-of-type(odd) {
-			background: #2c2c2c;
+			background: #f5f5f5;
 		}
 
 		&:hover,&:active,&.active {
-			border: solid 1px #43b71b;
-			background: #363636;
-			box-shadow: 0px 0px 5px 2px #3e6f14 inset;
+			border: solid 1px #356bf7;
+			background: #ffffff;
+			box-shadow: 0px 0px 5px 2px #00000017;
 
 			td {
-				border-top: solid 1px #43b71b;
+				border-top: solid 1px #356bf7;
+				color: #356bf7;
+
+				a {
+
+					&.tbimg3 {
+						color: #356bf7;
+					}
+				}
 			}
 		}
 
       	th {
-			color: #cacaca;
+			color: #454545;
 			font-size: 13px;
 			padding: 8px 0px 7px;
 			vertical-align: middle;
-			background: #1b1b1b;
+			background: #ffffff;
 			position: sticky;
 			top: 70px;
 			z-index: 2;
@@ -58,7 +73,7 @@
 		th:nth-of-type(1) {
 
 			&.tLeft {
-				color: #44be1d;
+				color: #356bf7;
 			}
 		}
 		  
@@ -67,7 +82,7 @@
 			padding: 8px 0px;
 			vertical-align: middle;
 			word-break: break-all;
-			color: #e2e2e2;
+			color: #595959;
 			line-height: 18px;
 
 			&:nth-of-type(1) {
@@ -92,32 +107,33 @@
 
 			//遊戲種類著名顏色
 			.gameStyle {
-				color: #95f221;
+				color: #ffab00;
 			}
 
 			//已進行時間
 			.gameTime {
-				color: #a8a8a8;
+				color: #8d8d8d;
 			}
 
 			//行內按鈕
 			button {
-				background: #212121;
-				color: #f2f2f2;
+				background: #ffffff;
+				color: #356bf7;
 				border-radius: 3px;
 				position: relative;
 				word-break: break-all;
-				border: solid 1px #6a8e2a;
 				overflow: hidden;
 				font-size: 13px;
 				margin: 0px 1px;
+				box-shadow: 1px 2px 8px 0px #00000049;
 
 				&:hover,&:active,&.active {
-					background: linear-gradient(to right,#A1EA22 0%,#34DA14 100%);
-					color: #000;
+					background: #356bf7;
+					color: #ffffff;
+					box-shadow: none;
 
 					span {
-						color: #000;
+						color: #ffffff;
 					}
 				}
 
@@ -150,7 +166,7 @@
 				}
 
 				span {
-					color: #cccccc;
+					color: #595959;
 					font-size: 12px;
 				}
 
@@ -169,11 +185,11 @@
 				}
 
 				&.disable {
-					background: #282828;
+					background: #e6e6e6;
 					pointer-events: none;
 					color: transparent;
 					user-select: none;
-					border-color: #5d5d5d;
+					box-shadow: none;
 
 					span {
 						position: absolute;
@@ -183,7 +199,7 @@
 						font-size: 18px;
 
 						&.fa-lock {
-							color: #626262;
+							color: #c7c7c7;
 							font-size: 12px;
 						}
 					}
@@ -206,11 +222,11 @@
 				&.tbimg2 {
 					width: 20px;
 					height: 20px;
-					background: url('../images/heart.png') no-repeat;
+					background: url('../images/heart2.png') no-repeat;
 					background-size: 200%;
 
 					&:hover,&:active,&.active {
-						background-position: (-20px 0px);
+						background-position-X: 100%;
 					}
 				}
 
@@ -218,7 +234,7 @@
 				&.tbimg3 {
 					width: auto;
 					height: auto;
-					color: #cacaca;
+					color: #595959;
 				}
 			}
 			
@@ -226,12 +242,12 @@
 
 			//已完賽顏色
 			&.overGame {
-				color: #ff9000;
+				color: #ffab00;
 			}
 			span {
 
 				&.overGame {
-					color: #ff9000;
+					color: #ffab00;
 				}
 			}
 
@@ -362,7 +378,7 @@
 					width: 1%;
 				}
 				&:nth-of-type(7) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -424,7 +440,7 @@
 				}
 
 				&:nth-of-type(9) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -459,7 +475,7 @@
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(10),
 				&:nth-of-type(6),&:nth-of-type(9) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(7) {
@@ -524,7 +540,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					min-width: 50px;
+					min-width: 55px;
 
 					p {
 						padding: 0px;
@@ -540,7 +556,7 @@
 				}
 
 				&:nth-of-type(7) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -569,7 +585,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					min-width: 50px;
+					min-width: 55px;
 
 					p {
 						padding: 0px;
@@ -591,7 +607,7 @@
 				}
 
 				&:nth-of-type(10) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -618,7 +634,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6) {
@@ -634,7 +650,7 @@
 				}
 
 				&:nth-of-type(20) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -696,7 +712,7 @@
 				}
 
 				&:nth-of-type(10) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -748,7 +764,7 @@
 				}
 
 				&:nth-of-type(13) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -764,7 +780,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(11) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(4) {
@@ -828,7 +844,7 @@
 				}
 
 				&:nth-of-type(4) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -852,7 +868,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(10) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(8) {
@@ -904,7 +920,7 @@
 				}
 
 				&:nth-of-type(6),&:nth-of-type(7) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -936,7 +952,7 @@
 				}
 
 				&:nth-of-type(12) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -990,7 +1006,7 @@
 				}
 
 				&:nth-of-type(15) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1006,7 +1022,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(19) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(3) {
@@ -1038,7 +1054,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(18) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(3) {
@@ -1070,7 +1086,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(15) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(3) {
@@ -1208,7 +1224,7 @@
 				}
 
 				&:nth-of-type(4) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1229,7 +1245,7 @@
 				}
 
 				&:nth-of-type(6) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1268,7 +1284,7 @@
 				}
 
 				&:nth-of-type(4) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1295,7 +1311,7 @@
 				}
 
 				&:nth-of-type(16) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1324,7 +1340,7 @@
 				}
 
 				&:nth-of-type(10) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1407,7 +1423,7 @@
 				}
 
 				&:nth-of-type(12) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1464,7 +1480,7 @@
 				}
 
 				&:nth-of-type(15) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1480,7 +1496,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(13) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(11),&:nth-of-type(12) {
@@ -1548,7 +1564,7 @@
 				}
 
 				&:nth-of-type(6) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1591,7 +1607,7 @@
 				}
 
 				&:nth-of-type(9) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1607,7 +1623,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(6) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(4) {
@@ -1675,7 +1691,7 @@
 				}
 
 				&:nth-of-type(13) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1729,7 +1745,7 @@
 				}
 
 				&:nth-of-type(16) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1745,7 +1761,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(14) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(12),&:nth-of-type(13) {
@@ -1811,7 +1827,7 @@
 				}
 
 				&:nth-of-type(4) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1835,7 +1851,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(6),&:nth-of-type(11) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(7),
@@ -1912,7 +1928,7 @@
 				}
 
 				&:nth-of-type(11) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1966,7 +1982,7 @@
 				}
 
 				&:nth-of-type(14) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 			}
 		}
@@ -1999,7 +2015,7 @@
 				}
 
 				&:nth-of-type(2),&:nth-of-type(12) {
-					min-width: 50px;
+					min-width: 55px;
 				}
 
 				&:nth-of-type(3),&:nth-of-type(10),&:nth-of-type(11) {

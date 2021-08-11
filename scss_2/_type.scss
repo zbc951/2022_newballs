@@ -14,12 +14,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #121212;
+        background: #ffffff;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #606360;
+        background: #ffc651;
         border-radius: 10px;
     }
 
@@ -2585,7 +2585,7 @@
     display: inline-block;
     width: 5px;
     height: 5px;
-    background: #ffee00;
+    background: #356bf7;
     border-radius: 50px;
     transform: translateY(-2px);
     margin-right: 3px;
@@ -2598,7 +2598,7 @@
         top: 0px;
         width: 5px;
         height: 5px;
-        background: #ffee00;
+        background: #356bf7;
         border-radius: 50px;
         animation: liveRemind 0.8s ease-in 0s infinite;
     }
@@ -2623,14 +2623,14 @@
         display: inline-block;
         width: 10px;
         height: 15px;
-        background: #b20707;
+        background: #f77373;
         margin: 0px 4px -3px 0px;
     }
 
     &.yellowCard {
 
         span {
-            background: #ffc334;
+            background: #ffda5a;
         }
     }
 }

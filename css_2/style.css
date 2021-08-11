@@ -1081,35 +1081,42 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #303030;
+  background: #ffffff;
 }
 .playBoard tr {
   text-align: center;
   border-style: solid;
   border-width: 1px;
-  border-color: transparent transparent #868282 transparent;
+  border-color: transparent transparent #dedede transparent;
 }
 .playBoard tr:nth-of-type(1) {
-  border-top-color: #33bc19;
-  border-bottom: none;
+  border-top-color: #f2f2f2;
+  border-bottom-color: #f0f0f0;
+}
+.playBoard tr:nth-of-type(3) td {
+  border-top: solid 1px #356bf7;
 }
 .playBoard tr:nth-of-type(odd) {
-  background: #2c2c2c;
+  background: #f5f5f5;
 }
 .playBoard tr:hover, .playBoard tr:active, .playBoard tr.active {
-  border: solid 1px #43b71b;
-  background: #363636;
-  box-shadow: 0px 0px 5px 2px #3e6f14 inset;
+  border: solid 1px #356bf7;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 2px #00000017;
 }
 .playBoard tr:hover td, .playBoard tr:active td, .playBoard tr.active td {
-  border-top: solid 1px #43b71b;
+  border-top: solid 1px #356bf7;
+  color: #356bf7;
+}
+.playBoard tr:hover td a.tbimg3, .playBoard tr:active td a.tbimg3, .playBoard tr.active td a.tbimg3 {
+  color: #356bf7;
 }
 .playBoard tr th {
-  color: #cacaca;
+  color: #454545;
   font-size: 13px;
   padding: 8px 0px 7px;
   vertical-align: middle;
-  background: #1b1b1b;
+  background: #ffffff;
   position: -webkit-sticky;
   position: sticky;
   top: 70px;
@@ -1124,14 +1131,14 @@ main .bg {
   margin-right: 10px;
 }
 .playBoard tr th:nth-of-type(1).tLeft {
-  color: #44be1d;
+  color: #356bf7;
 }
 .playBoard tr td {
   font-size: 12px;
   padding: 8px 0px;
   vertical-align: middle;
   word-break: break-all;
-  color: #e2e2e2;
+  color: #595959;
   line-height: 18px;
 }
 .playBoard tr td:nth-of-type(1) p:nth-of-type(1) {
@@ -1145,28 +1152,29 @@ main .bg {
   color: #71e31d;
 }
 .playBoard tr td .gameStyle {
-  color: #95f221;
+  color: #ffab00;
 }
 .playBoard tr td .gameTime {
-  color: #a8a8a8;
+  color: #8d8d8d;
 }
 .playBoard tr td button {
-  background: #212121;
-  color: #f2f2f2;
+  background: #ffffff;
+  color: #356bf7;
   border-radius: 3px;
   position: relative;
   word-break: break-all;
-  border: solid 1px #6a8e2a;
   overflow: hidden;
   font-size: 13px;
   margin: 0px 1px;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .playBoard tr td button:hover, .playBoard tr td button:active, .playBoard tr td button.active {
-  background: linear-gradient(to right, #A1EA22 0%, #34DA14 100%);
-  color: #000;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .playBoard tr td button:hover span, .playBoard tr td button:active span, .playBoard tr td button.active span {
-  color: #000;
+  color: #ffffff;
 }
 .playBoard tr td button::before {
   display: none;
@@ -1195,7 +1203,7 @@ main .bg {
   animation: btnFlashing 1s linear 0s infinite;
 }
 .playBoard tr td button span {
-  color: #cccccc;
+  color: #595959;
   font-size: 12px;
 }
 .playBoard tr td button.up::before {
@@ -1205,12 +1213,12 @@ main .bg {
   display: block;
 }
 .playBoard tr td button.disable {
-  background: #282828;
+  background: #e6e6e6;
   pointer-events: none;
   color: transparent;
   -webkit-user-select: none;
           user-select: none;
-  border-color: #5d5d5d;
+  box-shadow: none;
 }
 .playBoard tr td button.disable span {
   position: absolute;
@@ -1220,7 +1228,7 @@ main .bg {
   font-size: 18px;
 }
 .playBoard tr td button.disable span.fa-lock {
-  color: #626262;
+  color: #c7c7c7;
   font-size: 12px;
 }
 .playBoard tr td a {
@@ -1236,22 +1244,22 @@ main .bg {
 .playBoard tr td a.tbimg2 {
   width: 20px;
   height: 20px;
-  background: url("../images/heart.png") no-repeat;
+  background: url("../images/heart2.png") no-repeat;
   background-size: 200%;
 }
 .playBoard tr td a.tbimg2:hover, .playBoard tr td a.tbimg2:active, .playBoard tr td a.tbimg2.active {
-  background-position: -20px 0px;
+  background-position-X: 100%;
 }
 .playBoard tr td a.tbimg3 {
   width: auto;
   height: auto;
-  color: #cacaca;
+  color: #595959;
 }
 .playBoard tr td.overGame {
-  color: #ff9000;
+  color: #ffab00;
 }
 .playBoard tr td span.overGame {
-  color: #ff9000;
+  color: #ffab00;
 }
 .playBoard tr td p:nth-of-type(1) {
   padding-bottom: 8px;
@@ -1324,7 +1332,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType1 tr td:nth-of-type(7) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType1_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1354,7 +1362,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType1_2 tr td:nth-of-type(9) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType1_index tr td div p.redCard, .playBoard.tType1_index tr td div p.yellowCard {
   padding: 0px;
@@ -1369,7 +1377,7 @@ main .bg {
   min-width: 60px;
 }
 .playBoard.tType1_index tr td:nth-of-type(2), .playBoard.tType1_index tr td:nth-of-type(3), .playBoard.tType1_index tr td:nth-of-type(10), .playBoard.tType1_index tr td:nth-of-type(6), .playBoard.tType1_index tr td:nth-of-type(9) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType1_index tr td:nth-of-type(4), .playBoard.tType1_index tr td:nth-of-type(7) {
   width: 50%;
@@ -1402,7 +1410,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType2 tr td:nth-of-type(2), .playBoard.tType2 tr td:nth-of-type(3) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2 tr td:nth-of-type(2) p, .playBoard.tType2 tr td:nth-of-type(3) p {
   padding: 0px;
@@ -1414,7 +1422,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType2 tr td:nth-of-type(7) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType2_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType2_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType2_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1424,7 +1432,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType2_2 tr td:nth-of-type(2), .playBoard.tType2_2 tr td:nth-of-type(3) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_2 tr td:nth-of-type(2) p, .playBoard.tType2_2 tr td:nth-of-type(3) p {
   padding: 0px;
@@ -1440,7 +1448,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType2_2 tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_index tr td p.baseBag {
   margin: 0px auto;
@@ -1452,7 +1460,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType2_index tr td:nth-of-type(2), .playBoard.tType2_index tr td:nth-of-type(3), .playBoard.tType2_index tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_index tr td:nth-of-type(5), .playBoard.tType2_index tr td:nth-of-type(6) {
   width: 40%;
@@ -1461,7 +1469,7 @@ main .bg {
   min-width: 20px;
 }
 .playBoard.tType2_index tr td:nth-of-type(20) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_result tr td:nth-of-type(1) {
   min-width: 70px;
@@ -1491,7 +1499,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType3 tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType3_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1518,13 +1526,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType3_2 tr td:nth-of-type(13) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType3_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType3_index tr td:nth-of-type(2), .playBoard.tType3_index tr td:nth-of-type(3), .playBoard.tType3_index tr td:nth-of-type(11) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType3_index tr td:nth-of-type(4) {
   width: 100%;
@@ -1557,7 +1565,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType4 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType4_index tr td p {
   padding-bottom: 8px;
@@ -1569,7 +1577,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType4_index tr td:nth-of-type(2), .playBoard.tType4_index tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType4_index tr td:nth-of-type(3), .playBoard.tType4_index tr td:nth-of-type(4), .playBoard.tType4_index tr td:nth-of-type(8) {
   min-width: 30px;
@@ -1602,7 +1610,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType4_result tr td:nth-of-type(6), .playBoard.tType4_result tr td:nth-of-type(7) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5 tr td:nth-of-type(1) {
   width: 100%;
@@ -1617,7 +1625,7 @@ main .bg {
   width: 11%;
 }
 .playBoard.tType5 tr td:nth-of-type(12) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1644,13 +1652,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType5_2 tr td:nth-of-type(15) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(2), .playBoard.tType5_lol_index tr td:nth-of-type(19) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(3) {
   width: 100%;
@@ -1665,7 +1673,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(2), .playBoard.tType5_dota_index tr td:nth-of-type(18) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(3) {
   width: 100%;
@@ -1680,7 +1688,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(2), .playBoard.tType5_cs_index tr td:nth-of-type(15) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(3) {
   width: 100%;
@@ -1749,7 +1757,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType6 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType6_index tr td:nth-of-type(1) {
   min-width: 120px;
@@ -1758,7 +1766,7 @@ main .bg {
   width: 25%;
 }
 .playBoard.tType6_index tr td:nth-of-type(6) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType6_result tr td:nth-of-type(1), .playBoard.tType6_result tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1773,7 +1781,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType7 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(1), .playBoard.tType7_bingo_index tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1785,7 +1793,7 @@ main .bg {
   min-width: 20px;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(16) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(1), .playBoard.tType7_lottery_index tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1800,7 +1808,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType7_bingo_result tr td:nth-of-type(1), .playBoard.tType7_bingo_result tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1839,7 +1847,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType8 tr td:nth-of-type(12) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType8_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType8_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType8_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType8_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1869,13 +1877,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType8_2 tr td:nth-of-type(15) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType8_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType8_index tr td:nth-of-type(2), .playBoard.tType8_index tr td:nth-of-type(13) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType8_index tr td:nth-of-type(3), .playBoard.tType8_index tr td:nth-of-type(11), .playBoard.tType8_index tr td:nth-of-type(12) {
   min-width: 30px;
@@ -1911,7 +1919,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType9 tr td:nth-of-type(6) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType9_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1931,13 +1939,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType9_2 tr td:nth-of-type(9) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType9_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType9_index tr td:nth-of-type(2), .playBoard.tType9_index tr td:nth-of-type(3), .playBoard.tType9_index tr td:nth-of-type(6) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType9_index tr td:nth-of-type(4) {
   width: 100%;
@@ -1973,7 +1981,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType10 tr td:nth-of-type(13) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType10_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -2000,13 +2008,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType10_2 tr td:nth-of-type(16) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType10_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType10_index tr td:nth-of-type(2), .playBoard.tType10_index tr td:nth-of-type(14) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType10_index tr td:nth-of-type(3), .playBoard.tType10_index tr td:nth-of-type(12), .playBoard.tType10_index tr td:nth-of-type(13) {
   min-width: 30px;
@@ -2039,7 +2047,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType11 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType11_index tr td p {
   padding-bottom: 8px;
@@ -2051,7 +2059,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType11_index tr td:nth-of-type(2), .playBoard.tType11_index tr td:nth-of-type(6), .playBoard.tType11_index tr td:nth-of-type(11) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType11_index tr td:nth-of-type(3), .playBoard.tType11_index tr td:nth-of-type(4), .playBoard.tType11_index tr td:nth-of-type(7), .playBoard.tType11_index tr td:nth-of-type(10) {
   min-width: 30px;
@@ -2093,7 +2101,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType12 tr td:nth-of-type(11) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType12_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -2120,7 +2128,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType12_2 tr td:nth-of-type(14) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType12_index.hide1 tr td:nth-of-type(4) {
   width: 51%;
@@ -2132,7 +2140,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType12_index tr td:nth-of-type(2), .playBoard.tType12_index tr td:nth-of-type(12) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType12_index tr td:nth-of-type(3), .playBoard.tType12_index tr td:nth-of-type(10), .playBoard.tType12_index tr td:nth-of-type(11) {
   min-width: 30px;
@@ -4537,11 +4545,11 @@ main .bg {
   background-color: transparent;
 }
 .middle::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .middle::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: #ffc651;
   border-radius: 10px;
 }
 .middle .mainBox {
@@ -6749,7 +6757,7 @@ main .bg {
   display: inline-block;
   width: 5px;
   height: 5px;
-  background: #ffee00;
+  background: #356bf7;
   border-radius: 50px;
   transform: translateY(-2px);
   margin-right: 3px;
@@ -6762,7 +6770,7 @@ main .bg {
   top: 0px;
   width: 5px;
   height: 5px;
-  background: #ffee00;
+  background: #356bf7;
   border-radius: 50px;
   animation: liveRemind 0.8s ease-in 0s infinite;
 }
@@ -6782,11 +6790,11 @@ main .bg {
   display: inline-block;
   width: 10px;
   height: 15px;
-  background: #b20707;
+  background: #f77373;
   margin: 0px 4px -3px 0px;
 }
 .redCard.yellowCard span, .yellowCard.yellowCard span {
-  background: #ffc334;
+  background: #ffda5a;
 }
 
 .playerStatus {
