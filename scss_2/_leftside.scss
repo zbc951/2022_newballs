@@ -52,10 +52,10 @@
 
                 //字樣
                 p {
-                    color: #ffffff;
+                    color: #454545;
 
                     &.joinday {
-                        color: #ffffff;
+                        color: #454545;
                         font-size: 15px;
                         padding-top: 5px;
                     }
@@ -64,11 +64,10 @@
                         display: inline-block;
                         width: 36px;
                         height: 17px;
-                        background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-                        background-color: #34da14;
+                        background: #356bf7;
                         position: relative;
                         text-align: right;
-                        color: #161616;
+                        color: #ffffff;
                         font-weight: bold;
                         border-radius: 5px;
                         margin: -3px 0px 0px 5px;
@@ -104,16 +103,15 @@
                     font-size: 16px;
                     text-align: center;
                     background: transparent;
-                    color: #c0c0c0;
+                    color: #454545;
                     padding-top: 10px;
-                    border: solid 1px transparent;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to top,#363636 0%,#1d1d1d 100%);
-                        color: #53c120;
-                        border-color: #2d7e12;
-                        span {
-                            background-position-y: -30px;
+                        background: #356bf7;
+                        color: #ffffff;
+
+                        i {
+                            color: #ffffff;
                         }
                     }
 
@@ -122,28 +120,24 @@
                         display: block;
                         font-size: 24px;
                         margin-bottom: 10px;
+                        color: #8d8d8d;
                     }
                 }
             }
         }
         //下半選單
         ul {
+            
             li {
-                border-bottom: solid 1px #6f6f6f;
 
                 &:nth-of-type(1),&:nth-of-type(5),&:nth-of-type(9) {
-                    border-color: #e6e9f3;
+                    border-bottom: solid 1px #eeeeee;
                 }
 
                 &:hover,&:active,&.active {
 
                     a {
-                        border-color: #30800e;
-                    }
-
-                    .live {
-                        background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
-                        color: #2b4517;
+                        border-color: #356bf7;
                     }
                 }
 
@@ -161,8 +155,8 @@
                         position: initial;
                         margin-left: 10px;
                         transform: translateY(0px);
-                        background: #1d1d1d;
-                        color: #60dc1c;
+                        background: #ffc651;
+                        color: #454545;
                     }
 
                     i {
