@@ -469,23 +469,54 @@
                 margin-left: 90px;
             }
 
+            &:last-child {
+
+                button {
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
             &:hover,&:active,&.active {
                 
                 button {
-                    border-color: #32980e;
-                    color: #33ba04;
-                    background: linear-gradient(to bottom,#141414 0%,#434343 100%);
+                    color: #356bf7;
+                    background: #ffffff;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0px;
+                        width: 100%;
+                        height: 2px;
+                        background: #356bf7;
+                    }
                 }
             }
 
             button {
                 width: 80px;
-                height: 50px;
-                background: linear-gradient(to top,#323232 0%,#434343 100%);
-                border: solid 1px #7b7b7b;
+                height: 48px;
+                background: transparent;
                 position: relative;
-                color: #bfbfbf;
+                color: #454545;
                 padding: 0px 8px;
+                margin-right: 1px;
+                border-radius: 3px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 55%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 30px;
+                    background: #dfdfdf;
+                    right: -1px;
+                }
             }
         }
 
@@ -494,11 +525,11 @@
             top: 50%;
             transform: translateY(-50%);
             padding: 6px 8px 8px 21px;
-            background: #363636;
-            color: #d0d0d0;
-            border: solid 1px #727272 ;
+            background: #ffffff;
+            color: #595959;
             border-radius: 3px;
             left: 15px;
+            box-shadow: 1px 2px 5px 0px #00000017;
 
             &::before {
                 content: "";
@@ -509,16 +540,17 @@
                 transform: translateY(-50%);
                 left: 6px;
                 border-style: solid;
-                border-color: transparent #b2b2b2;
+                border-color: transparent #8d8d8d;
                 border-width: 6px 10px 6px 0px;
             }
 
             &:hover,&:active,&.active {
-                color: #535353;
-                background: #fff;
+                color: #ffffff;
+                background: #356bf7;
+                box-shadow: none;
 
                 &::before {
-                    border-color: transparent #535353;
+                    border-color: transparent #ffffff;
                 }
             }
         }
@@ -2607,7 +2639,7 @@
     width: 10px;
     height: 10px;
     border-radius: 10px;
-    background: #25a00e;
+    background: #356bf7;
 }
 
 //足球
@@ -2641,7 +2673,7 @@
 
 //投手名稱
 .pitcher {
-    color: #71e31d;
+    color: #356bf7;
     padding-left: 7px;
     font-size: 12px;
 }
@@ -2659,7 +2691,7 @@
         span {
 
             &.first {
-                background: #fff;
+                background: #356bf7;
             }
         }
     }
@@ -2669,7 +2701,7 @@
         span {
 
             &.second {
-                background: #fff;
+                background: #356bf7;
             }
         }
     }
@@ -2679,7 +2711,7 @@
         span {
 
             &.third {
-                background: #fff;
+                background: #356bf7;
             }
         }
     }
@@ -2691,7 +2723,7 @@
         height: 10px;
         transform: rotate(45deg);
         background: transparent;
-        border: solid 1px #fff;
+        border: solid 1px #454545;
 
         &.first {
             bottom: 0px;

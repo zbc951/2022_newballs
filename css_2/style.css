@@ -1085,9 +1085,6 @@ main .bg {
   border-top-color: #f2f2f2;
   border-bottom-color: #f0f0f0;
 }
-.playBoard tr:nth-of-type(3) td {
-  border-top: solid 1px #356bf7;
-}
 .playBoard tr:nth-of-type(odd) {
   background: #f5f5f5;
 }
@@ -1099,6 +1096,12 @@ main .bg {
 .playBoard tr:hover td, .playBoard tr:active td, .playBoard tr.active td {
   border-top: solid 1px #356bf7;
   color: #356bf7;
+}
+.playBoard tr:hover td.allScore, .playBoard tr:active td.allScore, .playBoard tr.active td.allScore {
+  color: #ffab00;
+}
+.playBoard tr:hover td .pitcher, .playBoard tr:active td .pitcher, .playBoard tr.active td .pitcher {
+  color: #ffab00;
 }
 .playBoard tr:hover td a.tbimg3, .playBoard tr:active td a.tbimg3, .playBoard tr.active td a.tbimg3 {
   color: #356bf7;
@@ -1113,6 +1116,7 @@ main .bg {
   position: sticky;
   top: 70px;
   z-index: 2;
+  border-bottom: solid 1px #356bf7;
 }
 .playBoard tr th.tLeft {
   text-align: left;
@@ -1141,7 +1145,7 @@ main .bg {
   padding: 0px 10px;
 }
 .playBoard tr td.allScore {
-  color: #71e31d;
+  color: #356bf7;
 }
 .playBoard tr td .gameStyle {
   color: #ffab00;
@@ -1580,11 +1584,14 @@ main .bg {
 .playBoard.tType4_index tr td:nth-of-type(9) {
   min-width: 60px;
 }
+.playBoard.tType4_result tr:hover td p.first, .playBoard.tType4_result tr:active td p.first, .playBoard.tType4_result tr.active td p.first {
+  color: #ffab00;
+}
 .playBoard.tType4_result tr td p {
   padding-bottom: 8px;
 }
 .playBoard.tType4_result tr td p.first {
-  color: #71e31d;
+  color: #356bf7;
 }
 .playBoard.tType4_result tr td p:last-child {
   padding: 0px;
@@ -2381,22 +2388,20 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 187px 0px 20px 10px;
-  background: #2c2c2c;
+  background: #f5f5f5;
 }
 .innerBoard tr th {
   width: 100%;
   padding: 5px 8px;
-  color: #eaeaea;
-  border-bottom: solid 1px #727272;
+  color: #454545;
   font-size: 14px;
   text-align: left;
-  background: #2c2c2c;
+  background: #ffffff;
 }
 .innerBoard tr td {
   display: flex;
   justify-content: space-around;
   padding: 8px 5px 0px;
-  border-bottom: solid 1px #7b7b7b;
   flex-wrap: wrap;
 }
 .innerBoard tr td.two button {
@@ -2419,30 +2424,29 @@ main .bg {
   border: none;
   height: auto;
   padding: 8px;
-  background: #212121;
+  background: #ffffff;
   font-size: 14px;
-  color: #fefefe;
+  color: #356bf7;
   margin-bottom: 8px;
-  border: solid 1px #6a8e2a;
+  box-shadow: 1px 2px 5px 0px #00000049;
 }
 .innerBoard tr td button:hover, .innerBoard tr td button:active, .innerBoard tr td button.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #202020;
+  background: #356bf7;
+  color: #ffffff;
 }
 .innerBoard tr td button:hover span, .innerBoard tr td button:active span, .innerBoard tr td button.active span {
-  color: #202020;
+  color: #ffffff;
 }
 .innerBoard tr td button.title {
-  border: none;
   background: transparent;
   pointer-events: none;
-  color: #fff;
+  color: #454545;
+  box-shadow: none;
 }
 .innerBoard tr td button .name {
   font-size: 13px;
   padding-right: 20px;
-  color: #fff;
+  color: #595959;
 }
 
 .teachBoard {
@@ -4913,30 +4917,52 @@ main .bg {
 .topfix .inn li:nth-of-type(1) {
   margin-left: 90px;
 }
+.topfix .inn li:last-child button::after {
+  display: none;
+}
 .topfix .inn li:hover button, .topfix .inn li:active button, .topfix .inn li.active button {
-  border-color: #32980e;
-  color: #33ba04;
-  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
+  color: #356bf7;
+  background: #ffffff;
+}
+.topfix .inn li:hover button::before, .topfix .inn li:active button::before, .topfix .inn li.active button::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #356bf7;
 }
 .topfix .inn li button {
   width: 80px;
-  height: 50px;
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
-  border: solid 1px #7b7b7b;
+  height: 48px;
+  background: transparent;
   position: relative;
-  color: #bfbfbf;
+  color: #454545;
   padding: 0px 8px;
+  margin-right: 1px;
+  border-radius: 3px;
+}
+.topfix .inn li button::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 30px;
+  background: #dfdfdf;
+  right: -1px;
 }
 .topfix .inn .back {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 6px 8px 8px 21px;
-  background: #363636;
-  color: #d0d0d0;
-  border: solid 1px #727272;
+  background: #ffffff;
+  color: #595959;
   border-radius: 3px;
   left: 15px;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .topfix .inn .back::before {
   content: "";
@@ -4947,15 +4973,16 @@ main .bg {
   transform: translateY(-50%);
   left: 6px;
   border-style: solid;
-  border-color: transparent #b2b2b2;
+  border-color: transparent #8d8d8d;
   border-width: 6px 10px 6px 0px;
 }
 .topfix .inn .back:hover, .topfix .inn .back:active, .topfix .inn .back.active {
-  color: #535353;
-  background: #fff;
+  color: #ffffff;
+  background: #356bf7;
+  box-shadow: none;
 }
 .topfix .inn .back:hover::before, .topfix .inn .back:active::before, .topfix .inn .back.active::before {
-  border-color: transparent #535353;
+  border-color: transparent #ffffff;
 }
 .topfix .teach {
   width: 100%;
@@ -6760,7 +6787,7 @@ main .bg {
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  background: #25a00e;
+  background: #356bf7;
 }
 
 .redCard, .yellowCard {
@@ -6782,7 +6809,7 @@ main .bg {
 }
 
 .pitcher {
-  color: #71e31d;
+  color: #356bf7;
   padding-left: 7px;
   font-size: 12px;
 }
@@ -6795,13 +6822,13 @@ main .bg {
   padding: 0px;
 }
 .baseBag.one span.first {
-  background: #fff;
+  background: #356bf7;
 }
 .baseBag.two span.second {
-  background: #fff;
+  background: #356bf7;
 }
 .baseBag.three span.third {
-  background: #fff;
+  background: #356bf7;
 }
 .baseBag span {
   display: block;
@@ -6810,7 +6837,7 @@ main .bg {
   height: 10px;
   transform: rotate(45deg);
   background: transparent;
-  border: solid 1px #fff;
+  border: solid 1px #454545;
 }
 .baseBag span.first {
   bottom: 0px;

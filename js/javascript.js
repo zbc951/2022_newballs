@@ -851,6 +851,16 @@ $(function(){
     })
 })
 
+//css_2 th線段問題
+$(function(){
+    if(window.location.href.indexOf('index') >= 0 ){
+        $('.playBoard tr:nth-of-type(1) th').css('border','none');
+    }
+    if(window.location.href.indexOf('result') >= 0 ){
+        $('.playBoard tr:nth-of-type(1) th').css('border','none');
+    }
+})
+
 //left自動高度
 $(document).ready(function () {
     //預設高度
