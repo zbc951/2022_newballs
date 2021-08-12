@@ -532,18 +532,26 @@
             font-size: 15px;
             height: 48px;
             line-height: 50px;
-            background: linear-gradient(to top,#323232 0%,#434343 100%);
-            color: #bfbfbf;
+            color: #454545;
             cursor: pointer;
             padding: 0px 10px;
             text-align: center;
-            border: solid 1px #7b7b7b;
             border-radius: 3px;
+            position: relative;
 
             &:hover,&:active,&.active {
-                color: #33ba04;
-                background: linear-gradient(to bottom,#141414 0%,#434343 100%);
-                border-color: #32980e;
+                color: #356bf7;
+                background: #ffffff;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0px;
+                    background: #356bf7;
+                    width: 100%;
+                    height: 2px;
+                }
             }
 
             &.name {
@@ -555,12 +563,11 @@
         }
 
         .line {
-            display: none;
             width: 1px;
             height: 15px;
-            background: #bcbcbc;
+            background: #dfdfdf;
             float: left;
-            margin: 16px 10px 0px 10px;
+            margin-top: 16px;
 
             &.long {
                 height: 30px;
@@ -678,7 +685,7 @@
 //黑幕
 .filter {
     display: none;
-    background: rgba(0,0,0,.8);
+    background: #000000d7;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -696,14 +703,12 @@
     width: 800px;
     height: 375px;
     border-radius: 3px;
-    background: #242424;
+    background: #ededed;
     position: fixed;
     z-index: 20;
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
-    border: solid 1px #3e8a13;
-    box-shadow: 0px 0px 10px 5px #3f8a1385;
 
     &.display {
         display: block;
@@ -714,24 +719,24 @@
         height: 40px;
         line-height: 42px;
         text-align: center;
-        background: #242424;
-        color: #43dc16;
+        background: #356bf7;
+        color: #ffffff;
         border-radius: 3px 3px 0px 0px;
         font-size: 14px;
         font-weight: bold;
-        border-bottom: solid 1px #3e8a13;
+        border-bottom: solid 1px #dedede;
     }
 
     .innerBox {
         width: 94%;
         height: 285px;
-        background: #191919;
+        background: #ffffff;
         border-radius: 3px;
         margin: 3% auto;
-        border: solid 1px #494949;
+        border: solid 1px #e3e3e3;
 
         p {
-            color: #ffffff;
+            color: #356bf7;
             padding: 12px 14px;
             font-size: 14px;
         }
@@ -739,7 +744,7 @@
         .baseline {
             width: 96%;
             height: 1px;
-            background: #494949;
+            background: #e3e3e3;
             margin: 0px auto;
         }
     }
@@ -749,11 +754,11 @@
         width: 40px;
         height: 40px;
         border-radius: 40px;
-        background: #404040;
-        border: solid 3px #4be119;
+        background: #ededed;
+        border: solid 3px #356bf7;
         right: -50px;
         top: -50px;
-        box-shadow: 0px 0px 0px 5px #404040;
+        box-shadow: 0px 0px 0px 5px #ededed;
 
         &::before {
             content: "";
@@ -762,7 +767,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(45deg);
         }
         &::after {
@@ -772,7 +777,7 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(-45deg);
         }
     }
@@ -933,40 +938,38 @@
     width: 600px;
     height: 430px;
     border-radius: 3px;
-    background: #242424;
+    background: #ededed;
     position: fixed;
     z-index: 20;
     left: 50%;
     top: 15%;
-    transform: translateX(-50%);
-    border: solid 1px #3e8a13;
-    box-shadow: 0px 0px 10px 5px #3f8a1385;
+    transform: translateX(-50%); 
 
     h1 {
         width: 100%;
         height: 40px;
         line-height: 42px;
         text-align: center;
-        background: #242424;
-        color: #4be119;
+        background: #356bf7; 
+        color: #ffffff;
         border-radius: 3px 3px 0px 0px;
         font-size: 14px;
         font-weight: bold;
-        border-bottom: solid 1px #3aad1b;
+        border-bottom: solid 1px #dedede;
     }
 
     .innerBox1 {
         width: 96%;
         height: 90px;
         margin: 2% auto 0px;
-        background: #191919;
+        background: #ffffff;
         border-radius: 3px;
-        border: solid 1px #5b5b5b;
+        border: solid 1px #e3e3e3;
 
         p {
             font-size: 14px;
             padding: 10px 12px;
-            color: #cdcdcd;
+            color: #356bf7;
 
             span {
                 color: #c71526;
@@ -979,7 +982,7 @@
         .baseline {
             width: 100%;
             height: 1px;
-            background: #5b5b5b;
+            background: #e3e3e3;
         }
 
         .partingBox {
@@ -989,14 +992,14 @@
             text-align: right;
             line-height: 54px;
             font-size: 14px;
-            color: #b0b0b0;
+            color: #595959;
 
             .slideBase {
                 float: right;
                 margin: 9px 40px 0px 15px;
                 width: 120px;
                 height: 35px;
-                background: #353535;
+                background: #ededed;
                 border-radius: 40px;
                 position: relative;
 
@@ -1009,7 +1012,7 @@
                     p {
 
                         &:nth-of-type(1) {
-                            color: #2cbd0d;
+                            color: #356bf7;
                         }
                     }
                 }
@@ -1023,7 +1026,7 @@
                     p {
 
                         &:nth-of-type(2) {
-                            color: #2cbd0d;
+                            color: #356bf7;
                         }
                     }
                 }
@@ -1034,7 +1037,7 @@
                     line-height: 35px;
                     float: left;
                     font-size: 12px;
-                    color: #ababab;
+                    color: #595959;
                     text-align: center;
                     padding: 0px;
                     position: relative;
@@ -1056,10 +1059,10 @@
                     width: 48%;
                     height: 83%;
                     top: 8%;
-                    background: #2d2d2d;
+                    background: #ffffff;
                     border-radius: 30px;
                     transition: all 0.2s;
-                    border: solid 1px #2cbd0d;
+                    border: solid 1px #356bf7;
                 }
             }
         }
@@ -1070,28 +1073,29 @@
             line-height: 54px;
             padding-left: 30px;
             font-size: 14px;
-            color: #b0b0b0;
+            color: #595959;
 
             input {
                 text-align: right;
-                background: #212121;
+                background: #ffffff;
                 border-radius: 3px;
                 width: 67px;
                 height: 30px;
                 padding-right: 10px;
                 font-size: 16px;
-                color: #ababab;
+                color: #595959;
                 margin-right: 4px;
-                border: solid 1px #ababab;
+                border: none;
+                box-shadow: 1px 2px 8px 0px #00000049;
 
                 &:nth-of-type(1) {
                     margin-left: 20px;
                 }
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to right,#92e820 0%,#46dd16 90%);
-                    border-color: #aef156;
-                    color: #191919;
+                    background: #356bf7;
+                    color: #ffffff;
+                    box-shadow: none;
                 }
             }
         }
@@ -1101,17 +1105,17 @@
         width: calc(96% - 15px);
         height: 50px;
         margin: 2% auto 0px;
-        background: #191919;
+        background: #ffffff;
         border-radius: 3px;
         line-height: 50px;
-        color: #b0b0b0;
+        color: #356bf7;
         padding-left: 15px;
         font-size: 14px;
-        border: solid 1px #5b5b5b;
+        border: solid 1px #e3e3e3;
 
         p {
             display: inline-block;
-            color: #d9d9d9;
+            color: #8d8d8d;
             margin: 0px 35px;
             font-size: 15px;
             font-weight: bold;
@@ -1129,11 +1133,11 @@
         width: 40px;
         height: 40px;
         border-radius: 40px;
-        background: #404040;
-        border: solid 3px #4be119;
+        background: #ededed;
+        border: solid 3px #356bf7;
         right: -50px;
         top: -50px;
-        box-shadow: 0px 0px 0px 5px #404040;
+        box-shadow: 0px 0px 0px 5px #ededed;
 
         &::before {
             content: "";
@@ -1142,7 +1146,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(45deg);
         }
         &::after {
@@ -1152,7 +1156,7 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(-45deg);
         }
     }
@@ -1201,13 +1205,10 @@
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
-    background: #242424;
+    background: #356bf7;
     border-radius: 3px 3px 0px 0px;
     z-index: 16;
     text-align: left;
-    box-shadow: -4px -2px 10px 0px #3f8a1385,4px -2px 10px 0px #3f8a1385;
-    border: solid 2px #3e8a13;
-    box-sizing: border-box;
 
     &.display {
         display: block;
@@ -1215,7 +1216,7 @@
 
     .barname {
         line-height: 50px;
-        color: #4be119;
+        color: #ffffff;
         padding-left: 20px;
     }
 
@@ -1224,11 +1225,11 @@
         width: 40px;
         height: 40px;
         border-radius: 40px;
-        background: #404040;
-        border: solid 3px #4be119;
+        background: #ededed;
+        border: solid 3px #356bf7;
         right: -50px;
         top: -50px;
-        box-shadow: 0px 0px 0px 5px #404040;
+        box-shadow: 0px 0px 0px 5px #ededed;
 
         &::before {
             content: "";
@@ -1237,7 +1238,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(45deg);
         }
         &::after {
@@ -1247,34 +1248,31 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(-45deg);
         }
     }
 
     .nor_bettingbox {
-        width: 576px;
+        width: 580px;
         height: auto;
-        border: solid 2px #3e8a13;
         border-radius: 0px 0px 3px 3px;
-        border-top-width: 0px;
         overflow: hidden;
-        box-shadow: 4px 2px 10px 0px #3f8a1385,-4px 2px 10px 0px #3f8a1385;
-        transform: translate(-2px, -2px);
+        border-top: solid 1px #dedede;
 
         //總額顯示
-        .bettingtotal {
+        .bettingtotal { 
             width: 100%;
             height: 45px;
-            background: #282828;
+            background: #fafafa;
 
             div {
                 display: block;
                 width: 180px;
                 height: 100%;
-                color: #b0b0b0;
+                color: #595959;
                 border-style: solid;
-                border-color: #626262;
+                border-color: #d8d8d8;
                 border-width: 1px 1px 1px 0px;
                 float: left;
                 line-height: 45px;
@@ -1292,14 +1290,14 @@
         .bettingend {
             width: 100%;
             height: 140px;
-            background: #303030;
+            background: #ededed;
             padding-top: 15px;
 
             .endbox {
                 width: 50%;
                 text-align: right;
                 float: left;
-                color: #b0b0b0;
+                color: #595959;
 
                 input {
                     width: 150px;
@@ -1308,12 +1306,12 @@
                     border-radius: 3px;
                     font-size: 16px;
                     padding-left: 5px;
-                    background: #1c1c1c;
-                    border: solid 1px #858585;
-                    color: #ffffff;
+                    background: #ffffff;
+                    border: solid 1px #e3e3e3;
+                    color: #8d8d8d;
 
                     &::placeholder {
-                        color: #626262;
+                        color: #8d8d8d;
                         font-size: 14px;
                     }
 
@@ -1343,28 +1341,29 @@
                     height: 35px;
                     float: left;
                     margin: 0px 3px 10px 3px;
-                    border: solid 1px #6a8e2a;
+                    border: none;
                     border-radius: 5px;
                     font-size: 17px;
-                    color: #b0b0b0;
+                    color: #595959;
                     font-weight: bold;
                     line-height: 35px;
-                    background: #212121;
+                    background: #ffffff;
+                    box-shadow: 1px 2px 5px 0px #00000017;
 
                     &:hover,&:active,&.active {
-                        background: #4fde17;
-                        color: #292929;
+                        background: #356bf7;
+                        color: #ffffff;
+                        box-shadow: none;
                     }
 
                     &.decideBtn {
                         width: 176px;
-                        background: linear-gradient(to right,#57b21a 0%,#349a14 100%);
-                        color: #191919;
-                        border-color: #aef156;
+                        color: #356bf7;
+                        border: solid 1px #356bf7;
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-                            color: #46d317;
-                            border-color: #2b7d16;
+                            background: #ffc651;
+                            color: #ffffff;
+                            border: none;
                         }
                     }
                 }
@@ -1383,11 +1382,8 @@
     left: 50%;
     transform: translateX(-50%);
     top: 150px;
-    background: #242424;
+    background: #356bf7;
     border-radius: 3px 3px 0px 0px;
-    box-shadow: -4px -2px 10px 0px #3f8a1385,4px -2px 10px 0px #3f8a1385;
-    border: solid 2px #3e8a13;
-    box-sizing: border-box;
 
     &.display {
         display: block;
@@ -1395,7 +1391,7 @@
 
     .barname {
         line-height: 50px;
-        color: #4be119;
+        color: #ffffff;
         padding-left: 20px;
     }
 
@@ -1404,11 +1400,11 @@
         width: 40px;
         height: 40px;
         border-radius: 40px;
-        background: #404040;
-        border: solid 3px #4be119;
+        background: #ededed;
+        border: solid 3px #356bf7;
         right: -50px;
         top: -50px;
-        box-shadow: 0px 0px 0px 5px #404040;
+        box-shadow: 0px 0px 0px 5px #ededed;
 
         &::before {
             content: "";
@@ -1417,7 +1413,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(45deg);
         }
         &::after {
@@ -1427,35 +1423,32 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(-45deg);
         }
     }
 
     //投注內容
     .bettingbox {
-        width: 576px;
+        width: 580px;
         height: auto;
-        border: solid 2px #3e8a13;
-        border-top-width: 0px;
+        border-top: solid 1px #dedede;
         border-radius: 0px 0px 3px 3px;
         overflow: hidden;
-        box-shadow: 4px 2px 10px 0px #3f8a1385,-4px 2px 10px 0px #3f8a1385;
-        transform: translate(-2px, -2px);
         
         //總額顯示
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #282828;
+            background: #f7f7f7;
 
             div {
                 display: block;
                 width: 180px;
                 height: 100%;
-                color: #b0b0b0;
+                color: #595959;
                 border-style: solid;
-                border-color: #626262;
+                border-color: #d8d8d8;
                 border-width: 1px 1px 1px 0px;
                 float: left;
                 line-height: 45px;
@@ -1473,7 +1466,7 @@
         .bettingend {
             width: 100%;
             height: 90px;
-            background: #303030;
+            background: #ededed;
 
             .endbox {
                 width: 287px;
@@ -1481,16 +1474,16 @@
                 text-align: left;
                 float: left;
                 margin-top: 20px;
-                color: #b0b0b0;
+                color: #595959;
 
                 &:last-child {
-                    border-left: solid 1px #626262;
+                    border-left: solid 1px #d8d8d8;
                 }
 
                 p {
                     margin: 0px 0px 0px 40px;
                     line-height: 48px;
-                    color: #43c31d;
+                    color: #fa9819;
                     font-size: 14px;
                     position: relative;
                     &::before {
@@ -1498,7 +1491,7 @@
                         position: absolute;
                         width: 20px;
                         height: 20px;
-                        background: #3dab1e ;
+                        background: #f98d0f;
                         border-radius: 12px;
                         left: -25px;
                         top: 14px;
@@ -1508,7 +1501,7 @@
                         position: absolute;
                         width: 4px;
                         height: 8px;
-                        border: solid 3px #22351c;
+                        border: solid 3px #feebd5;
                         border-width: 0px 2px 2px 0px;
                         transform: rotate(45deg);
                         top: 18px;
@@ -1520,6 +1513,10 @@
                     font-size: 13px;
                     line-height: 24px;
                     margin-left: 10px;
+
+                    .wd_darkblue {
+                        color: #356bf7;
+                    }
                 }
             }
         }
