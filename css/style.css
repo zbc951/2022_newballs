@@ -141,7 +141,7 @@ header .top .threeCircle button {
   height: 15px;
   border-radius: 30px;
   margin: 5px 5px 0px 0px;
-  border: solid 1px #46d616;
+  border: solid 2px #31a20b;
   background: #131313;
 }
 header .top .threeCircle button:nth-of-type(2) {
@@ -5381,7 +5381,7 @@ main .bg {
 .controlBox .innerBox1 .partingBox .slideBase p {
   width: calc(50% - 2px);
   height: 100%;
-  line-height: 35px;
+  line-height: 36px;
   float: left;
   font-size: 12px;
   color: #ababab;
@@ -5661,7 +5661,7 @@ main .bg {
   font-size: 17px;
   color: #b0b0b0;
   font-weight: bold;
-  line-height: 35px;
+  line-height: 36px;
   background: #212121;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button:hover, .norbetting .nor_bettingbox .bettingend .endbox button:active, .norbetting .nor_bettingbox .bettingend .endbox button.active {
@@ -6070,7 +6070,7 @@ main .bg {
   font-size: 17px;
   color: #b0b0b0;
   font-weight: bold;
-  line-height: 35px;
+  line-height: 36px;
   background: #212121;
 }
 .bettingbar .bettingbox .bettingend .endbox button:hover, .bettingbar .bettingbox .bettingend .endbox button:active, .bettingbar .bettingbox .bettingend .endbox button.active {
@@ -8528,11 +8528,13 @@ main .bg {
   display: none;
   position: absolute;
   width: 800px;
-  height: 360px;
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
   top: 110px;
   z-index: 20;
+  box-shadow: 0px 0px 10px 5px #3f8a1385;
+  border: solid 1px #3e8a13;
 }
 .cardAdd.display {
   display: block;
@@ -8540,15 +8542,15 @@ main .bg {
 .cardAdd .topbar {
   width: 100%;
   height: 40px;
-  background: #ababab;
+  background: #242424;
   border-radius: 3px 3px 0px 0px;
   position: relative;
   text-align: center;
-  border: solid 1px #a2a2a2;
+  border-bottom: solid 1px #3aad1b;
 }
 .cardAdd .topbar span {
   font-size: 14px;
-  color: #3d3d3d;
+  color: #4be119;
   line-height: 42px;
   font-weight: bold;
 }
@@ -8557,11 +8559,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #cacaca;
-  border: solid 3px #5e5e5e;
+  background: #404040;
+  border: solid 3px #4be119;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #404040;
 }
 .cardAdd .topbar button::before {
   content: "";
@@ -8570,7 +8572,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #5e5e5e;
+  background: #4be119;
   transform: rotate(45deg);
 }
 .cardAdd .topbar button::after {
@@ -8580,17 +8582,15 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #5e5e5e;
+  background: #4be119;
   transform: rotate(-45deg);
 }
 .cardAdd .box {
   width: 100%;
   height: 315px;
-  background: #747474;
+  background: #242424;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
-  border: solid 1px #a2a2a2;
-  border-top: none;
 }
 .cardAdd .box .inputBox {
   width: 50%;
@@ -8603,18 +8603,19 @@ main .bg {
   padding-right: 30px;
 }
 .cardAdd .box .inputBox input, .cardAdd .box .inputBox select {
-  background: #505050;
-  color: #ababab;
+  background: linear-gradient(to top, #333333 0%, #272727 100%);
+  color: #d2d2d2;
   width: 245px;
   height: 36px;
   box-sizing: border-box;
   padding: 3px 0px 3px 10px;
   float: right;
   outline: none;
-  border: none;
+  border: solid 1px #858585;
   border-radius: 3px;
   font-size: 15px;
   margin: 7px 0px 0px 0px;
+  box-shadow: 0px 2px 5px 0px #1c1c1c;
 }
 .cardAdd .box .inputBox input.short, .cardAdd .box .inputBox select.short {
   width: 105px;
@@ -8625,26 +8626,28 @@ main .bg {
 }
 .cardAdd .box .inputBox span {
   line-height: 50px;
-  color: #3d3d3d;
+  color: #cacaca;
   padding-left: 30px;
   font-weight: bold;
 }
 .cardAdd .box button {
   width: 220px;
   height: 36px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-  border: 1px solid #4556b1;
-  color: #fff;
+  background: #51ae19;
+  border: solid 1px #aef156;
+  color: #191919;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0%;
+  bottom: 7%;
 }
 .cardAdd .box button:hover, .cardAdd .box button:active, .cardAdd .box button.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
+  color: #46d317;
+  border-color: #2b7d16;
 }
 
 @keyframes reset {
