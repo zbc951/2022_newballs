@@ -1563,11 +1563,10 @@
     position: fixed;
     margin: 0px 0px 0px 280px;
     bottom: 0px;
-    background: #3a3a3a;
+    background: #356bf7;
     border-radius: 3px 3px 0px 0px;
     z-index: 10;
     transition: 0.5s all;
-    border: solid 1px #2fac17;
 
     &.display {
         display: block;
@@ -1599,12 +1598,12 @@
         float: left;
         width: 24px;
         height: 24px;
-        background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+        background: #ffc651;
         border-radius: 3px;
         margin: 13px 0px 0px 40px;
         line-height: 28px;
         font-size: 17px;
-        color: #161616;
+        color: #454545;
         position: relative;
         text-align: center;
 
@@ -1628,7 +1627,7 @@
         span {
             float: left;
             margin: 18px 0px 0px 10px;
-            color: #4fde17;
+            color: #ffffff;
             font-size: 16px;
         }
     }
@@ -1640,21 +1639,19 @@
         position: absolute;
         right: 100px;
         top: 10px;
-        background: url('../images/calculator2.png') no-repeat;
+        background: url('../images/calculator.png') no-repeat;
     }
 
     //投注內容
     .bettingbox {
-        width: calc(100% + 2px);
+        width: 100%;
         height: 0px;
-        background: #2f2f2f;
-        border: solid 1px #33bc19;
-        border-top-color: #7b7b7b;
+        background: #f5f5f5;
         box-sizing: border-box;
         overflow: hidden;
         transition: 0.5s all;
         position: absolute;
-        left: -1px;
+        left: 0px;
 
         //table視窗
         .bettingwindow {
@@ -1670,28 +1667,36 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #121212;
+                background: #ffffff;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #606360;
+                background: #ffc651;
                 border-radius: 10px;
             }
             
             table {
-                width: 100%;
+                width: 95%;
+                margin: 10px auto;
                 height: auto;
                 position: relative;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 1px 2px 8px 0px #00000049;
+                background: #ffffff;
+
+                &:nth-of-type(1) {
+                    margin: 5px auto;
+                }
 
                 tr {
                     text-align: center;
 
                     th {
-                        color: #c3c3c3;
+                        color: #454545;
                         font-size: 12px;
                         padding: 8px 10px 9px;
-                        background: #1e1e1e;
                         position: sticky;
                         top: 0px;
                         z-index: 2;
@@ -1701,7 +1706,7 @@
                     td {
                         vertical-align: middle;
                         font-size: 14px;
-                        color: #bfbfbf;
+                        color: #595959;
 
                         &:nth-of-type(1) {
                             width: 10%;
@@ -1716,26 +1721,36 @@
                         }
 
                         &.tLeft {
-                            border-left: solid 1px #8a8a8a;
+                            position: relative;
                             text-align: left;
                             padding: 2px 8px;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: -20px;
+                                left: 0px;
+                                background: #dcdcdc;
+                                width: 1px;
+                                height: 95px;
+                            }
                         }
 
                         .pitcher {
-                            color: #e9e9e9;
+                            color: #356bf7;
                         }
 
                         .odds {
-                            color: #33ba04;
+                            color: #356bf7;
                         }
 
                         p {
-                            color: #e9e9e9;
+                            color: #595959;
                             font-size: 12px;
                             line-height: 20px;
 
                             &.leagueName {
-                                color: #c3c3c3;
+                                color: #8d8d8d;
                             }
 
                             .odds {
@@ -1743,7 +1758,7 @@
                             }
 
                             &.vs {
-                                color: #c3c3c3;
+                                color: #8d8d8d;
                             }
                         }
                     }
@@ -1755,13 +1770,16 @@
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #171717;
-            color: #e7e7e7;
+            background: #fafafa;
+            color: #454545;
+            border-style: solid;
+            border-width: 1px 0px;
+            border-color: #356bf7 transparent #dcdcdc;
 
             div {
                 width: 180px;
                 height: 100%;
-                border-right: solid 1px #535353;
+                border-right: solid 1px #dcdcdc;
                 float: left;
                 line-height: 45px;
                 font-size: 14px;
@@ -1773,7 +1791,7 @@
                 }
 
                 .remind {
-                    color: #30aa06;
+                    color: #356bf7;
                     padding-left: 5px;
                 }
             }
@@ -1783,7 +1801,7 @@
         .bettingend {
             width: 100%;
             height: 197px;
-            background: #3a3a3a;
+            background: #f5f5f5;
 
             p {
                 width: 100%;
@@ -1791,7 +1809,7 @@
                 font-size: 14px;
                 font-weight: bold;
                 padding: 17px;
-                color: #e7e7e7;
+                color: #454545;
             }
 
             .endbox {
@@ -1803,18 +1821,16 @@
                     width: 150px;
                     height: 31px;
                     margin: 0px 5px 10px 0px;
-                    background: linear-gradient(to bottom,#0f0f0f 21%,#303030 100%);
+                    background: #ffffff;
                     border-radius: 3px;
-                    border: solid 1px #4f4f4f;
-                    border-top: none;
-                    box-shadow: 0px -1px 0px 0px #797979 inset;
+                    border: solid 1px #e3e3e3;
                     font-size: 16px;
                     padding-left: 5px;
-                    color: #ffffff;
+                    color: #8d8d8d;
 
                     &::placeholder {
                         font-weight: bold;
-                        color: #7d7d7d;
+                        color: #8d8d8d;
                         font-size: 15px;
                     }
 
@@ -1830,14 +1846,14 @@
                         float: left;
                         margin: 12px 0px 0px 15px;
                         font-size: 14px;
-                        color: #e7e7e7;
+                        color: #454545;
                     }
 
                     .dollar {
                         position: absolute;
                         top: 10px;
                         right: 20px;
-                        color: #e7e7e7;
+                        color: #595959;
                     }
                 }
 
@@ -1846,28 +1862,30 @@
                     height: 35px;
                     float: left;
                     margin: 0px 3px 10px 3px;
-                    border: solid 1px #6a8e2a;
+                    border: none;
                     border-radius: 5px;
                     font-size: 17px;
-                    color: #b0b0b0;
+                    color: #454545;
                     font-weight: bold;
                     line-height: 35px;
-                    background: #212121;
+                    background: #ffffff;
+                    box-shadow: 1px 2px 8px 0px #00000049;
 
                     &:hover,&:active,&.active {
-                        background: #4fde17;
-                        color: #292929;
+                        background: #356bf7;
+                        color: #ffffff;
+                        box-shadow: none;
                     }
 
                     &.cur {
                         width: 176px;
-                        color: #191919;
-                        background: #4fad18;
-                        border-color: #aef156;
+                        color: #356bf7;
+                        background: #ffffff;
+                        border: solid 1px #356bf7;
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-                            color: #46d317;
-                            border-color: #2b7d16;
+                            background: #ffc651;
+                            color: #ffffff;
+                            border: none;
                         }
                     }
                 }
@@ -1889,11 +1907,8 @@
     z-index: 20;
     left: 35%;
     top: 150px;
-    background: #828282;
+    background: #356bf7;
     border-radius: 3px 3px 0px 0px;
-    border: solid 1px #2fac17;
-    box-shadow: -4px -2px 10px 0px #3f8a1385,4px -2px 10px 0px #3f8a1385;
-    background: #242424;
 
     //總投注額
     .num {
@@ -1901,12 +1916,12 @@
         float: left;
         width: 24px;
         height: 24px;
-        background: linear-gradient(to right,#a1ea22 0%,#34da14 100%);
+        background: #ffc651;
         border-radius: 5px;
         margin: 13px 0px 0px 15px;
         line-height: 28px;
         font-size: 17px;
-        color: #161616;
+        color: #454545;
         position: relative;
         text-align: center;
 
@@ -1922,7 +1937,7 @@
     }
 
     .barword {
-        color: #4fde17;
+        color: #ffffff;
         float: left;
         margin: 18px 0px 0px 10px;
     }
@@ -1932,11 +1947,11 @@
         width: 40px;
         height: 40px;
         border-radius: 40px;
-        background: #404040;
-        border: solid 3px #4be119;
+        background: #ededed;
+        border: solid 3px #356bf7;
         right: -50px;
         top: -50px;
-        box-shadow: 0px 0px 0px 5px #404040;
+        box-shadow: 0px 0px 0px 5px #ededed;
 
         &::before {
             content: "";
@@ -1945,7 +1960,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(45deg);
         }
 
@@ -1956,7 +1971,7 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #4be119;
+            background: #356bf7;
             transform: rotate(-45deg);
         }
     }
@@ -1966,15 +1981,12 @@
         width: 580px;
         height: 430px;
         margin-top: 50px;
-        background: #2f2f2f;
-        border: solid 1px #2fac17;
-        border-top-color: #7b7b7b;
+        background: #f5f5f5;
         border-radius: 0px 0px 3px 3px;
-        box-shadow: 4px 2px 10px 0px #3f8a1385,-4px 2px 10px 0px #3f8a1385;
         overflow: hidden;
         cursor: default;
         position: absolute;
-        left: -1px;
+        left: 0px;
 
         //table視窗
         .bettingwindow {
@@ -1990,28 +2002,32 @@
             }
         
             &::-webkit-scrollbar-track {
-                background: #121212;
+                background: #ffffff;
                 border-radius: 10px;
             }
         
             &::-webkit-scrollbar-thumb {
-                background: #606360;
+                background: #ffc651;
                 border-radius: 10px;
             }
             
             table {
-                width: 100%;
+                width: 95%;
+                margin: 10px auto;
                 height: auto;
                 position: relative;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 1px 2px 8px 0px #00000049;
+                background: #ffffff;
 
                 tr {
                     text-align: center;
 
                     th {
-                        color: #c3c3c3;
+                        color: #454545;
                         font-size: 12px;
                         padding: 8px 10px 9px;
-                        background: #1e1e1e;
                         position: sticky;
                         top: 0px;
                         z-index: 2;
@@ -2021,7 +2037,7 @@
                     td {
                         vertical-align: middle;
                         font-size: 14px;
-                        color: #bfbfbf;
+                        color: #595959;
 
                         &:nth-of-type(1) {
                             width: 10%;
@@ -2036,26 +2052,36 @@
                         }
 
                         &.tLeft {
-                            border-left: solid 1px #7b7b7b;
+                            position: relative;
                             text-align: left;
                             padding: 2px 8px;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: -20px;
+                                left: 0px;
+                                background: #dcdcdc;
+                                width: 1px;
+                                height: 95px;
+                            }
                         }
 
                         .pitcher {
-                            color: #bfbfbf;
+                            color: #356bf7;
                         }
 
                         .odds {
-                            color: #33ba04;
+                            color: #356bf7;
                         }
 
                         p {
-                            color: #e9e9e9;
+                            color: #595959;
                             font-size: 12px;
                             line-height: 20px;
 
                             &.leagueName {
-                                color: #c3c3c3;
+                                color: #8d8d8d;
                             }
 
                             .odds {
@@ -2063,7 +2089,7 @@
                             }
 
                             &.vs {
-                                color: #c3c3c3;
+                                color: #8d8d8d;
                             }
                         }
                     }
@@ -2075,13 +2101,16 @@
         .bettingtotal {
             width: 100%;
             height: 45px;
-            background: #171717;
-            color: #e7e7e7;
+            background: #fafafa;
+            color: #454545;
+            border-style: solid;
+            border-width: 1px 0px;
+            border-color: #356bf7 transparent #dcdcdc;
 
             div {
                 width: 180px;
                 height: 100%;
-                border-right: solid 1px #535353;
+                border-right: solid 1px #dcdcdc;
                 float: left;
                 line-height: 45px;
                 font-size: 14px;
@@ -2093,7 +2122,7 @@
                 }
 
                 .remind {
-                    color: #33ba04;
+                    color: #356bf7;
                     padding-left: 5px;
                 }
             }
@@ -2102,7 +2131,7 @@
         .bettingend {
             width: 100%;
             height: 200px;
-            background: #3a3a3a;
+            background: #f5f5f5;
 
             .endbox {
                 width: 287px;
@@ -2112,13 +2141,13 @@
                 margin-top: 25px;
 
                 &:last-child {
-                    border-left: solid 1px #888888;
+                    border-left: solid 1px #dcdcdc;
                 }
 
                 .remind {
                     margin: 0px 0px 0px 40px;
                     line-height: 75px;
-                    color: #43c31d;
+                    color: #356bf7;
                     font-size: 14px;
                     position: relative;
                     &::before {
@@ -2126,7 +2155,7 @@
                         position: absolute;
                         width: 20px;
                         height: 20px;
-                        background: #3dab1e;
+                        background: #356bf7;
                         border-radius: 12px;
                         left: -25px;
                         top: 26px;
@@ -2136,7 +2165,7 @@
                         position: absolute;
                         width: 4px;
                         height: 8px;
-                        border: solid 3px #22351c;
+                        border: solid 3px #ffffff;
                         border-width: 0px 2px 2px 0px;
                         transform: rotate(45deg);
                         top: 30px;
@@ -2148,17 +2177,17 @@
                     font-size: 13px;
                     line-height: 24px;
                     margin-left: 10px;
-                    color: #bfbfbf;
+                    color: #454545;
 
                     span {
                         padding-left: 5px;
 
                         &.listCode {
-                            color: #7e94ff;
+                            color: #356bf7;
                         }
 
                         &.way {
-                            color: #43c31d;
+                            color: #f77373;
                         }
                     }
                 }
@@ -2182,10 +2211,7 @@
     top: 10%;
     transform: translateX(-50%);
     z-index: 20;
-    border: solid 1px #3e8a13;
     border-radius: 3px;
-    border-width: 1px 2px;
-    box-shadow: 0px 0px 10px 2px #3c5711;
 
     &.display {
         display: block;
@@ -2195,25 +2221,24 @@
         width: 100%;
         height: 40px;
         border-radius: 3px 3px 0px 0px;
-        background: #242424;
-        color: #43dc16;
+        background: #356bf7;
+        color: #ffffff;
         position: relative;
         text-align: center;
         line-height: 42px;
         font-size: 14px;
         font-weight: bold;
-        border-bottom: solid 1px #3aad1b;
 
         button {
             position: absolute;
             width: 40px;
             height: 40px;
             border-radius: 40px;
-            background: #353535;
-            border: solid 3px #4be119;
+            background: #eaeaea;
+            border: solid 3px #356bf7;
             right: -50px;
             top: -50px;
-            box-shadow: 0px 0px 0px 5px #353535;
+            box-shadow: 0px 0px 0px 5px #eaeaea;
 
             &::before {
                 content: "";
@@ -2222,7 +2247,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #4be119;
+                background: #356bf7;
                 transform: rotate(45deg);
             }
 
@@ -2233,7 +2258,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #4be119;
+                background: #356bf7;
                 transform: rotate(-45deg);
             }
         }
@@ -2242,7 +2267,7 @@
     .calbox {
         width: 100%;
         height: 430px;
-        background: #303030 ;
+        background: #ededed;
         box-sizing: border-box;
         border-radius: 0px 0px 3px 3px;
         position: relative;
@@ -2251,7 +2276,7 @@
 
         .top {
             padding: 10px 0px;
-            color: #eeeeee;
+            color: #454545;
 
             .inputbox {
 
@@ -2259,27 +2284,25 @@
                     width: 80px;
                     height: 24px;
                     padding-left: 7px;
-                    border: solid 1px #464646;
-                    border-top: none;
-                    box-shadow: 0px -1px 0px 0px #737373;
+                    border: solid 1px #e3e3e3;
                     margin: 0px 10px 0px 5px;
                     font-size: 15px;
                     font-weight: bold;
-                    color: #ffffff;
-                    background: linear-gradient(to bottom,#0f0f0f 21%,#303030 100%);
+                    color: #454545;
+                    background: #ffffff;
                 }
 
                 button {
                     width: 60px;
                     height: 28px;
-                    color: #ababab;
-                    background: #212121;
+                    color: #454545;
+                    background: #ffffff;
                     font-size: 15px;
                     border-radius: 3px;
-                    border: solid 1px #808080;
+                    border: solid 1px #e9e9e9;
                     &:hover,&:active,&.active {
-                        background: #808080;
-                        color: #000000;
+                        background: #356bf7;
+                        color: #ffffff;
                     }
                 }
             }
@@ -2288,7 +2311,7 @@
         .mid {
             width: 100%;
             height: auto;
-            border: solid 1px #5b5b5b;
+            border: solid 1px #e3e3e3;
             border-radius: 3px;
             overflow-x: hidden;
             overflow-y: auto;
@@ -2297,29 +2320,24 @@
             table {
                 width: 100%;
                 height: auto;
-                background: #252525;
+                background: #f5f5f5;
 
                 tr {
-                    border-bottom: solid 1px #5b5b5b;
-
-                    &:last-child {
-                        border: none;
-                    }
 
                     &:nth-child(odd) {
-                        background: #191919;
+                        background: #ffffff;
                     }
                     
                     th {
                         font-size: 14px;
                         padding: 5px 0px;
-                        color: #bfbfbf;
+                        color: #454545;
                     }
 
                     td {
                         padding: 5px 0px;
                         text-align: center;
-                        color: #ababab;
+                        color: #595959;
                         vertical-align: middle;
 
                         &:nth-of-type(1),&:nth-of-type(4) {
@@ -2330,12 +2348,10 @@
                             width: 50px;
                             height: 18px;
                             padding-left: 5px;
-                            background: linear-gradient(to bottom,#1f1f1f 0%,#414141 100%);
-                            border: solid 1px #323232;
-                            border-top: none;
-                            box-shadow: 0px -1px 0px 0px #656565 inset;
+                            background: #ffffff;
+                            border: solid 1px #e3e3e3;
                             border-radius: 3px;
-                            color: #ababab;
+                            color: #454545;
                         }
 
                         .selectbox {
@@ -2371,26 +2387,27 @@
                                 height: 0px;
                                 border-style: solid;
                                 border-width: 5px 3px 0px 3px;
-                                border-color: #d2d2d2 transparent transparent transparent;
+                                border-color: #8d8d8d transparent;
                                 top: 9px;
                                 left: 94px;
                                 pointer-events: none;
                             }
 
                             select {
-                                color: #c8c8c8;
+                                color: #595959;
                                 appearance: none;
                                 -moz-appearance: none;
                                 -webkit-appearance: none;
                                 width: 55px;
                                 height: 22px;
-                                border: solid 1px #858585;
-                                background: #383838;
+                                border: solid 1px #e3e3e3;
+                                background: #ffffff;
                                 border-radius: 3px;
                                 padding-left: 5px;
                                 line-height: 22px;
                                 font-size: 14px;
                                 margin: 0px 3px;
+                                box-shadow: 1px 2px 3px 0px #00000017;
 
                                 /*for IE*/
                                 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
@@ -2409,16 +2426,15 @@
                             }
 
                             input {
-                                background: linear-gradient(to bottom,#1f1f1f 0%,#414141 100%);
-                                border: solid 1px #323232;
+                                background: #ffffff;
+                                border: solid 1px #e3e3e3;
                                 border-top: none;
-                                box-shadow: 0px -1px 0px 0px #656565 inset;
                                 border-radius: 3px;
                                 width: 35px;
                                 height: 20px;
                                 border: none;
                                 text-align: center;
-                                color: #ababab;
+                                color: #454545;
                                 font-weight: bold;
                                 font-size: 15px;
                             }
@@ -2437,22 +2453,21 @@
             width: 100%;
             height: auto;
             text-align: center;
-            color: #eeeeee;
+            color: #454545;
 
             .inputbox {
                 margin: 10px 0px;
                 text-align: center;
                 font-size: 17px;
+
                 input {
                     width: 100px;
                     height: 28px;
                     padding-left: 10px;
-                    border: solid 1px #464646;
-                    background: linear-gradient(to bottom,#0f0f0f 21%,#303030 100%);
-                    box-shadow: 0px -1px 0px 0px #737373 inset;
-                    border-radius: 3px;
+                    border: solid 1px #e3e3e3;
+                    background: #ffffff;
                     margin-left: 5px;
-                    color: #eeeeee;
+                    color: #454545;
                     font-size: 16px;
                     font-weight: bold;
                 }
@@ -2460,16 +2475,18 @@
                 button {
                     width: 260px;
                     height: 40px;
-                    background: #51ae19;
+                    background: #ffffff;
                     border-radius: 3px;
-                    color: #191919;
+                    color: #454545;
                     font-size: 16px;
-                    border: solid 1px #aef156;
+                    border: none;
                     margin-left: 50px;
+                    box-shadow: 1px 2px 8px 0px #00000049;
+
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-                        color: #46d317;
-                        border-color: #2b7d16;
+                        background: #356bd7;
+                        color: #ffffff;
+                        box-shadow: none;
                     }
                 }
             }
@@ -2478,20 +2495,21 @@
                 margin-top: 10px;
                 width: calc(100% - 20px);
                 border-radius: 3px;
-                background: #252525;
+                background: #ffffff;
                 text-align: left;
-                border: solid 1px #5b5b5b;
+                border: solid 1px #e3e3e3;
                 padding: 10px;
 
                 p {
                     font-size: 14px;
                     line-height: 20px;
-                    color: #ababab;
+                    color: #595959;
 
                     &.retitle {
                         text-align: center;
-                        border-bottom: solid 1px #5b5b5b;
+                        border-bottom: solid 1px #e3e3e3;
                         padding-bottom: 7px;
+                        color: #356bf7;
                     }
 
                     &.extitle {
@@ -2513,9 +2531,7 @@
     transform: translateX(-50%);
     top: 200px;
     z-index: 20;
-    box-shadow: 0px 0px 10px 5px #3f8a1385;
     border-radius: 5px;
-    border: solid 2px #3e8a13;
 
     &.display {
         display: block;
@@ -2525,14 +2541,13 @@
     .topBar {
         width: 100%;
         height: 50px;
-        background: #242424;
+        background: #356bf7;
         border-radius: 3px 3px 0px 0px;
         position: relative;
-        border-bottom: solid 1px #3e8a13;
 
         span {
             font-size: 17px;
-            color: #4be119;
+            color: #ffffff;
             line-height: 54px;
             padding-left: 20px;
         }
@@ -2543,11 +2558,11 @@
             width: 40px;
             height: 40px;
             border-radius: 40px;
-            background: #404040;
-            border: solid 3px #4be119;
+            background: #ededed;
+            border: solid 3px #356bf7;
             right: -50px;
             top: -50px;
-            box-shadow: 0px 0px 0px 5px #404040;
+            box-shadow: 0px 0px 0px 5px #ededed;
 
             &::before {
                 content: "";
@@ -2556,7 +2571,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #4be119;
+                background: #356bf7;
                 transform: rotate(45deg);
             }
             &::after {
@@ -2566,7 +2581,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #4be119;
+                background: #356bf7;
                 transform: rotate(-45deg);
             }
         }
@@ -2576,7 +2591,7 @@
     .remindBox {
         width: 100%;
         height: 110px;
-        background: #242424;
+        background: #f5f5f5;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
         text-align: center;
@@ -2584,7 +2599,7 @@
         p {
             font-size: 24px;
             font-weight: bold;
-            color: #c8c8c8;
+            color: #454545;
             margin-top: 10px;
         }
 
@@ -2592,16 +2607,17 @@
             width: 180px;
             height: 36px;
             margin-top: 30px;
-            color: #191919;
-            background: linear-gradient(to right,#57b21a 0%,#349a14 100%);
-            border: solid 1px #aef156;
+            color: #454545;
+            background: #ffffff;
+            border: none;
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
+            box-shadow: 1px 2px 8px 0px #00000049;
             &:hover,&:active,&.active {
-                background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-                color: #46d317;
-                border-color: #2b7d16;
+                background: #356bf7;
+                color: #ffffff;
+                box-shadow: none;
             }
         }
     }

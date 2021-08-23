@@ -3431,7 +3431,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
+  background: url(../images/infor2.png) no-repeat;
   top: -1px;
   left: -18px;
 }
@@ -7548,7 +7548,7 @@ main .bg {
   font-size: 16px;
 }
 .myself .helpbox .remind {
-  color: #505050;
+  color: #d4d4d4;
   font-size: 14px;
   margin: 0px 20px 20px 0px;
   float: right;
@@ -7560,7 +7560,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url("../images/infor.png") no-repeat;
+  background: url("../images/infor2.png") no-repeat;
   top: -2px;
   left: -18px;
 }
