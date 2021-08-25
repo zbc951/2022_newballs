@@ -869,6 +869,22 @@ $(function(){
     }
 })
 
+//css_4 th背景問題
+$(function(){
+    if(window.location.href.indexOf('index') >= 0 ){
+        $('.playBoard tr:nth-of-type(1) th').css({
+            background: '#ffffff',
+            color: '#ce1427',
+        });
+    }
+    if(window.location.href.indexOf('result') >= 0 ){
+        $('.playBoard tr:nth-of-type(1) th').css({
+            background: '#ffffff',
+            color: '#ce1427',
+        });
+    }
+})
+
 //left自動高度
 $(document).ready(function () {
     //預設高度
