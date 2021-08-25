@@ -2365,7 +2365,7 @@
 		th {
 			width: 100%;
 			padding: 5px 8px;
-			color: #454545;
+			color: #1b1b1b;
 			font-size: 14px;
 			text-align: left;
 			background: #ffffff;
@@ -2414,14 +2414,14 @@
 				border: none;
 				height: auto;
 				padding: 8px;
-				background: #ffffff;
+				background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
 				font-size: 14px;
-				color: #356bf7;
+				color: #ce1427;
 				margin-bottom: 8px;
 				box-shadow: 1px 2px 5px 0px #00000049;
 
 				&:hover,&:active,&.active {
-					background: #356bf7;
+					background: linear-gradient(to top,#d31c1c 0%,#bb092f 98%);
 					color: #ffffff;
 
 					span {
@@ -2432,14 +2432,14 @@
 				&.title {
 					background: transparent;
 					pointer-events: none;
-					color: #454545;
+					color: #1b1b1b;
 					box-shadow: none;
 				}
 
 				.name {
 					font-size: 13px;
 					padding-right: 20px;
-					color: #595959;
+					color: #1b1b1b;
 				}
 			}
 		}

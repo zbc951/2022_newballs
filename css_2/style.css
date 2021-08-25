@@ -5156,9 +5156,7 @@ main .bg {
   transform: translateX(-50%);
   top: 200px;
   z-index: 20;
-  border: solid 1px #3aad1b;
   border-radius: 3px;
-  box-shadow: 0px 0px 10px 2px #517b09;
 }
 .signupWindow.display {
   display: block;
@@ -5166,14 +5164,14 @@ main .bg {
 .signupWindow .signupbar {
   width: 100%;
   height: 50px;
-  background: #242424;
+  background: #356bf7;
   border-radius: 3px 3px 0px 0px;
-  border-bottom: solid 1px #3aad1b;
+  border-bottom: solid 1px #dedede;
   position: relative;
 }
 .signupWindow .signupbar span {
   font-size: 17px;
-  color: #4be119;
+  color: #ffffff;
   line-height: 54px;
   padding-left: 20px;
 }
@@ -5182,11 +5180,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .signupWindow .signupbar button::before {
   content: "";
@@ -5195,7 +5193,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .signupWindow .signupbar button::after {
@@ -5205,13 +5203,13 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .signupWindow .signupbox {
   width: 100%;
   height: 265px;
-  background: #242424;
+  background: #ededed;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
 }
@@ -5235,45 +5233,42 @@ main .bg {
   padding: 3px 0px 3px 10px;
   float: right;
   margin: 7px 10px 0px 0px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent #3c3c3c #6c6c6c #3c3c3c;
+  border: solid 1px #e3e3e3;
   border-radius: 5px;
-  background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
-  box-shadow: 0px 1px 0px 0px #3c3c3c;
-  color: #fff;
+  background: #ffffff;
+  color: #8d8d8d;
 }
 .signupWindow .signupbox div span {
   line-height: 50px;
-  color: #c8c8c8;
+  color: #454545;
   padding-left: 40px;
 }
 .signupWindow .signupbox div button {
   width: 180px;
   height: 36px;
   margin-right: 10px;
-  background: #2d2d2d;
-  border: 1px solid #d9d9d9;
-  color: #b2b2b2;
+  background: #ffffff;
+  border: none;
+  color: #454545;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .signupWindow .signupbox div button:last-child {
   margin: 0px;
-  color: #1c1c1c;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  border-color: #6a8e2a;
+  color: #356bf7;
+  border: solid 1px #356bf7;
 }
 .signupWindow .signupbox div button:last-child:hover, .signupWindow .signupbox div button:last-child:active, .signupWindow .signupbox div button:last-child.active {
-  background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
-  color: #f4f4f4;
-  border-color: #6a8e2a;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  color: #ffffff;
+  border: none;
 }
 .signupWindow .signupbox div button:hover, .signupWindow .signupbox div button:active, .signupWindow .signupbox div button.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  border-color: #2b7d16;
-  color: #46d317;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 .controlBox {

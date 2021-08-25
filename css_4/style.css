@@ -2395,7 +2395,7 @@ main .bg {
 .innerBoard tr th {
   width: 100%;
   padding: 5px 8px;
-  color: #454545;
+  color: #1b1b1b;
   font-size: 14px;
   text-align: left;
   background: #ffffff;
@@ -2426,14 +2426,14 @@ main .bg {
   border: none;
   height: auto;
   padding: 8px;
-  background: #ffffff;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
   font-size: 14px;
-  color: #356bf7;
+  color: #ce1427;
   margin-bottom: 8px;
   box-shadow: 1px 2px 5px 0px #00000049;
 }
 .innerBoard tr td button:hover, .innerBoard tr td button:active, .innerBoard tr td button.active {
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
   color: #ffffff;
 }
 .innerBoard tr td button:hover span, .innerBoard tr td button:active span, .innerBoard tr td button.active span {
@@ -2442,13 +2442,13 @@ main .bg {
 .innerBoard tr td button.title {
   background: transparent;
   pointer-events: none;
-  color: #454545;
+  color: #1b1b1b;
   box-shadow: none;
 }
 .innerBoard tr td button .name {
   font-size: 13px;
   padding-right: 20px;
-  color: #595959;
+  color: #1b1b1b;
 }
 
 .teachBoard {
@@ -4876,7 +4876,7 @@ main .bg {
   display: none;
 }
 .topfix .inn li:hover button, .topfix .inn li:active button, .topfix .inn li.active button {
-  color: #356bf7;
+  color: #ce1427;
   background: #ffffff;
 }
 .topfix .inn li:hover button::before, .topfix .inn li:active button::before, .topfix .inn li.active button::before {
@@ -4886,14 +4886,14 @@ main .bg {
   left: 0px;
   width: 100%;
   height: 2px;
-  background: #356bf7;
+  background: #d31c1c;
 }
 .topfix .inn li button {
   width: 80px;
   height: 48px;
   background: transparent;
   position: relative;
-  color: #454545;
+  color: #1b1b1b;
   padding: 0px 8px;
   margin-right: 1px;
   border-radius: 3px;
@@ -4913,11 +4913,11 @@ main .bg {
   top: 50%;
   transform: translateY(-50%);
   padding: 6px 8px 8px 21px;
-  background: #ffffff;
-  color: #595959;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 100%);
+  color: #1b1b1b;
   border-radius: 3px;
   left: 15px;
-  box-shadow: 1px 2px 5px 0px #00000017;
+  box-shadow: 1px 2px 5px 0px #00000049;
 }
 .topfix .inn .back::before {
   content: "";
@@ -4928,12 +4928,12 @@ main .bg {
   transform: translateY(-50%);
   left: 6px;
   border-style: solid;
-  border-color: transparent #8d8d8d;
+  border-color: transparent #595959;
   border-width: 6px 10px 6px 0px;
 }
 .topfix .inn .back:hover, .topfix .inn .back:active, .topfix .inn .back.active {
   color: #ffffff;
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
   box-shadow: none;
 }
 .topfix .inn .back:hover::before, .topfix .inn .back:active::before, .topfix .inn .back.active::before {
@@ -5170,9 +5170,7 @@ main .bg {
   transform: translateX(-50%);
   top: 200px;
   z-index: 20;
-  border: solid 1px #3aad1b;
   border-radius: 3px;
-  box-shadow: 0px 0px 10px 2px #517b09;
 }
 .signupWindow.display {
   display: block;
@@ -5180,14 +5178,13 @@ main .bg {
 .signupWindow .signupbar {
   width: 100%;
   height: 50px;
-  background: #242424;
+  background: #cd1721;
   border-radius: 3px 3px 0px 0px;
-  border-bottom: solid 1px #3aad1b;
   position: relative;
 }
 .signupWindow .signupbar span {
   font-size: 17px;
-  color: #4be119;
+  color: #ffffff;
   line-height: 54px;
   padding-left: 20px;
 }
@@ -5196,11 +5193,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ffffff;
+  border: solid 3px #d31c1c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ffffff;
 }
 .signupWindow .signupbar button::before {
   content: "";
@@ -5209,7 +5206,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #d31c1c;
   transform: rotate(45deg);
 }
 .signupWindow .signupbar button::after {
@@ -5219,13 +5216,13 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #d31c1c;
   transform: rotate(-45deg);
 }
 .signupWindow .signupbox {
   width: 100%;
   height: 265px;
-  background: #242424;
+  background: #ededed;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
 }
@@ -5249,45 +5246,43 @@ main .bg {
   padding: 3px 0px 3px 10px;
   float: right;
   margin: 7px 10px 0px 0px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent #3c3c3c #6c6c6c #3c3c3c;
+  border: solid 1px #e3e3e3;
   border-radius: 5px;
-  background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
-  box-shadow: 0px 1px 0px 0px #3c3c3c;
-  color: #fff;
+  background: #ffffff;
+  color: #686868;
 }
 .signupWindow .signupbox div span {
   line-height: 50px;
-  color: #c8c8c8;
+  color: #1b1b1b;
   padding-left: 40px;
 }
 .signupWindow .signupbox div button {
   width: 180px;
   height: 36px;
   margin-right: 10px;
-  background: #2d2d2d;
-  border: 1px solid #d9d9d9;
-  color: #b2b2b2;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
+  color: #1b1b1b;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
+  box-shadow: 0px 2px 3px 0px #00000049;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 }
 .signupWindow .signupbox div button:last-child {
   margin: 0px;
-  color: #1c1c1c;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  border-color: #6a8e2a;
+  background: linear-gradient(to bottom, #d31c1c 0%, #bb092f 98%);
+  color: #ffffff;
 }
 .signupWindow .signupbox div button:last-child:hover, .signupWindow .signupbox div button:last-child:active, .signupWindow .signupbox div button:last-child.active {
-  background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
-  color: #f4f4f4;
-  border-color: #6a8e2a;
+  background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
 }
 .signupWindow .signupbox div button:hover, .signupWindow .signupbox div button:active, .signupWindow .signupbox div button.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  border-color: #2b7d16;
-  color: #46d317;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+  border: none;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 .controlBox {
@@ -5811,8 +5806,10 @@ main .bg {
   position: fixed;
   margin: 0px 0px 0px 280px;
   bottom: 0px;
-  background: #356bf7;
-  border-radius: 3px 3px 0px 0px;
+  background: #cc1721;
+  border-radius: 8px 8px 0px 0px;
+  border: solid 2px #ffffff;
+  border-bottom: none;
   z-index: 10;
   transition: 0.5s all;
 }
@@ -5841,12 +5838,12 @@ main .bg {
   float: left;
   width: 24px;
   height: 24px;
-  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  background: #ffffff;
   border-radius: 3px;
   margin: 13px 0px 0px 40px;
   line-height: 28px;
   font-size: 17px;
-  color: #ffffff;
+  color: #d0152a;
   position: relative;
   text-align: center;
   /*for IE 9*/
@@ -5885,11 +5882,12 @@ main .bg {
   width: 100%;
   height: 0px;
   background: #f5f5f5;
-  box-sizing: border-box;
+  border: solid 2px #ffffff;
+  border-width: 0px 2px;
   overflow: hidden;
   transition: 0.5s all;
   position: absolute;
-  left: 0px;
+  left: -2px;
 }
 .bettingbar .bettingbox .bettingwindow {
   width: 100%;
@@ -5927,7 +5925,7 @@ main .bg {
   text-align: center;
 }
 .bettingbar .bettingbox .bettingwindow table tr th {
-  color: #454545;
+  color: #1b1b1b;
   font-size: 12px;
   padding: 8px 10px 9px;
   position: -webkit-sticky;
@@ -5939,10 +5937,11 @@ main .bg {
 .bettingbar .bettingbox .bettingwindow table tr td {
   vertical-align: middle;
   font-size: 14px;
-  color: #595959;
+  color: #1b1b1b;
 }
 .bettingbar .bettingbox .bettingwindow table tr td:nth-of-type(1) {
   width: 10%;
+  color: #000000;
 }
 .bettingbar .bettingbox .bettingwindow table tr td:nth-of-type(2) {
   width: 45%;
@@ -5965,33 +5964,34 @@ main .bg {
   height: 95px;
 }
 .bettingbar .bettingbox .bettingwindow table tr td .pitcher {
-  color: #356bf7;
+  color: #d0152a;
 }
 .bettingbar .bettingbox .bettingwindow table tr td .odds {
-  color: #356bf7;
+  color: #d0152a;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p {
-  color: #595959;
+  color: #1b1b1b;
   font-size: 12px;
   line-height: 20px;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p.leagueName {
-  color: #8d8d8d;
+  color: #1b1b1b;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p .odds {
   padding-left: 10px;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p.vs {
-  color: #8d8d8d;
+  color: #2155a9;
 }
 .bettingbar .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  background: #fafafa;
-  color: #454545;
+  background: #eaeaea;
+  color: #1b1b1b;
   border-style: solid;
   border-width: 1px 0px;
-  border-color: #356bf7 transparent #dcdcdc;
+  border-color: #e0e0e0 transparent #d2d2d2;
+  box-shadow: 0px -2px 6px 0px #00000049;
 }
 .bettingbar .bettingbox .bettingtotal div {
   width: 180px;
@@ -6007,7 +6007,7 @@ main .bg {
   border: none;
 }
 .bettingbar .bettingbox .bettingtotal div .remind {
-  color: #356bf7;
+  color: #d0152a;
   padding-left: 5px;
 }
 .bettingbar .bettingbox .bettingend {
@@ -6021,7 +6021,7 @@ main .bg {
   font-size: 14px;
   font-weight: bold;
   padding: 17px;
-  color: #454545;
+  color: #1b1b1b;
 }
 .bettingbar .bettingbox .bettingend .endbox {
   width: 50%;
@@ -6037,11 +6037,11 @@ main .bg {
   border: solid 1px #e3e3e3;
   font-size: 16px;
   padding-left: 5px;
-  color: #8d8d8d;
+  color: #595959;
 }
 .bettingbar .bettingbox .bettingend .endbox input::placeholder {
   font-weight: bold;
-  color: #8d8d8d;
+  color: #595959;
   font-size: 15px;
 }
 .bettingbar .bettingbox .bettingend .endbox input:last-child {
@@ -6054,43 +6054,44 @@ main .bg {
   float: left;
   margin: 12px 0px 0px 15px;
   font-size: 14px;
-  color: #454545;
+  color: #1b1b1b;
 }
 .bettingbar .bettingbox .bettingend .endbox div .dollar {
   position: absolute;
   top: 10px;
   right: 20px;
-  color: #595959;
+  color: #1b1b1b;
 }
 .bettingbar .bettingbox .bettingend .endbox button {
   width: 85px;
   height: 35px;
   float: left;
   margin: 0px 3px 10px 3px;
-  border: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ebebeb #d7d7d7 #bababa;
   border-radius: 5px;
   font-size: 17px;
-  color: #454545;
+  color: #1b1b1b;
   font-weight: bold;
   line-height: 36px;
-  background: #ffffff;
-  box-shadow: 1px 2px 8px 0px #00000049;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
+  box-shadow: 0px 2px 3px 0px #00000049;
 }
 .bettingbar .bettingbox .bettingend .endbox button:hover, .bettingbar .bettingbox .bettingend .endbox button:active, .bettingbar .bettingbox .bettingend .endbox button.active {
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
   color: #ffffff;
   box-shadow: none;
+  border: none;
 }
 .bettingbar .bettingbox .bettingend .endbox button.cur {
   width: 176px;
-  color: #356bf7;
-  background: #ffffff;
-  border: solid 1px #356bf7;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #d31c1c 0%, #bb092f 98%);
+  border: none;
 }
 .bettingbar .bettingbox .bettingend .endbox button.cur:hover, .bettingbar .bettingbox .bettingend .endbox button.cur:active, .bettingbar .bettingbox .bettingend .endbox button.cur.active {
-  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
-  color: #ffffff;
-  border: none;
+  background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
 }
 .bettingbar .bettingbox.open {
   height: 502px;
@@ -6104,20 +6105,22 @@ main .bg {
   z-index: 20;
   left: 35%;
   top: 150px;
-  background: #356bf7;
-  border-radius: 3px 3px 0px 0px;
+  background: #cd1721;
+  border-radius: 8px 8px 0px 0px;
+  border: solid 2px #ffffff;
+  border-bottom: none;
 }
 .bettingCheck .num {
   display: block;
   float: left;
   width: 24px;
   height: 24px;
-  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  background: #ffffff;
   border-radius: 5px;
   margin: 13px 0px 0px 15px;
   line-height: 28px;
   font-size: 17px;
-  color: #ffffff;
+  color: #d0152a;
   position: relative;
   text-align: center;
   /*for IE 9*/
@@ -6143,11 +6146,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #ededed;
-  border: solid 3px #356bf7;
+  background: #ffffff;
+  border: solid 3px #d31c1c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #ededed;
+  box-shadow: 0px 0px 0px 5px #ffffff;
 }
 .bettingCheck .cancelBtn::before {
   content: "";
@@ -6156,7 +6159,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(45deg);
 }
 .bettingCheck .cancelBtn::after {
@@ -6166,7 +6169,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(-45deg);
 }
 .bettingCheck .bettingbox {
@@ -6174,11 +6177,13 @@ main .bg {
   height: 430px;
   margin-top: 50px;
   background: #f5f5f5;
-  border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 8px 8px;
   overflow: hidden;
   cursor: default;
   position: absolute;
-  left: 0px;
+  left: -2px;
+  border: solid 2px #ffffff;
+  border-width: 0px 2px;
 }
 .bettingCheck .bettingbox .bettingwindow {
   width: 100%;
@@ -6213,7 +6218,7 @@ main .bg {
   text-align: center;
 }
 .bettingCheck .bettingbox .bettingwindow table tr th {
-  color: #454545;
+  color: #1b1b1b;
   font-size: 12px;
   padding: 8px 10px 9px;
   position: -webkit-sticky;
@@ -6225,10 +6230,11 @@ main .bg {
 .bettingCheck .bettingbox .bettingwindow table tr td {
   vertical-align: middle;
   font-size: 14px;
-  color: #595959;
+  color: #1b1b1b;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td:nth-of-type(1) {
   width: 10%;
+  color: #000000;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td:nth-of-type(2) {
   width: 45%;
@@ -6251,33 +6257,33 @@ main .bg {
   height: 95px;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td .pitcher {
-  color: #356bf7;
+  color: #d0152a;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td .odds {
-  color: #356bf7;
+  color: #d0152a;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p {
-  color: #595959;
+  color: #1b1b1b;
   font-size: 12px;
   line-height: 20px;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p.leagueName {
-  color: #8d8d8d;
+  color: #1b1b1b;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p .odds {
   padding-left: 10px;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p.vs {
-  color: #8d8d8d;
+  color: #2155a9;
 }
 .bettingCheck .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  background: #fafafa;
-  color: #454545;
+  background: #ffffff;
+  color: #1b1b1b;
   border-style: solid;
   border-width: 1px 0px;
-  border-color: #356bf7 transparent #dcdcdc;
+  border-color: #e0e0e0 transparent #d2d2d2;
 }
 .bettingCheck .bettingbox .bettingtotal div {
   width: 180px;
@@ -6293,7 +6299,7 @@ main .bg {
   border: none;
 }
 .bettingCheck .bettingbox .bettingtotal div .remind {
-  color: #356bf7;
+  color: #d0152a;
   padding-left: 5px;
 }
 .bettingCheck .bettingbox .bettingend {
@@ -6314,7 +6320,7 @@ main .bg {
 .bettingCheck .bettingbox .bettingend .endbox .remind {
   margin: 0px 0px 0px 40px;
   line-height: 75px;
-  color: #356bf7;
+  color: #1f55ad;
   font-size: 14px;
   position: relative;
 }
@@ -6323,7 +6329,7 @@ main .bg {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #356bf7;
+  background: #1d55ac;
   border-radius: 12px;
   left: -25px;
   top: 26px;
@@ -6333,7 +6339,7 @@ main .bg {
   position: absolute;
   width: 4px;
   height: 8px;
-  border: solid 3px #ffffff;
+  border: solid 3px #d7e1f0;
   border-width: 0px 2px 2px 0px;
   transform: rotate(45deg);
   top: 30px;
@@ -6343,16 +6349,16 @@ main .bg {
   font-size: 13px;
   line-height: 24px;
   margin-left: 10px;
-  color: #454545;
+  color: #1b1b1b;
 }
 .bettingCheck .bettingbox .bettingend .endbox p span {
   padding-left: 5px;
 }
 .bettingCheck .bettingbox .bettingend .endbox p span.listCode {
-  color: #356bf7;
+  color: #ce1427;
 }
 .bettingCheck .bettingbox .bettingend .endbox p span.way {
-  color: #f77373;
+  color: #1d55ac;
 }
 .bettingCheck.display {
   display: block;
@@ -6376,7 +6382,7 @@ main .bg {
   width: 100%;
   height: 40px;
   border-radius: 3px 3px 0px 0px;
-  background: #356bf7;
+  background: #cf191f;
   color: #ffffff;
   position: relative;
   text-align: center;
@@ -6389,11 +6395,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #eaeaea;
-  border: solid 3px #356bf7;
+  background: #ffffff;
+  border: solid 3px #d31c1c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #eaeaea;
+  box-shadow: 0px 0px 0px 5px #ffffff;
 }
 .calculator .calbar button::before {
   content: "";
@@ -6402,7 +6408,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(45deg);
 }
 .calculator .calbar button::after {
@@ -6412,7 +6418,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(-45deg);
 }
 .calculator .calbox {
@@ -6427,7 +6433,7 @@ main .bg {
 }
 .calculator .calbox .top {
   padding: 10px 0px;
-  color: #454545;
+  color: #1b1b1b;
 }
 .calculator .calbox .top .inputbox input {
   width: 80px;
@@ -6443,15 +6449,19 @@ main .bg {
 .calculator .calbox .top .inputbox button {
   width: 60px;
   height: 28px;
-  color: #454545;
-  background: #ffffff;
+  color: #1b1b1b;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
   font-size: 15px;
   border-radius: 3px;
-  border: solid 1px #e9e9e9;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4 #d0d0d0 #b4b4b4;
+  box-shadow: 0px 2px 3px 0px #00000049;
 }
 .calculator .calbox .top .inputbox button:hover, .calculator .calbox .top .inputbox button:active, .calculator .calbox .top .inputbox button.active {
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
   color: #ffffff;
+  box-shadow: none;
 }
 .calculator .calbox .mid {
   width: 100%;
@@ -6473,12 +6483,12 @@ main .bg {
 .calculator .calbox .mid table tr th {
   font-size: 14px;
   padding: 5px 0px;
-  color: #454545;
+  color: #1b1b1b;
 }
 .calculator .calbox .mid table tr td {
   padding: 5px 0px;
   text-align: center;
-  color: #595959;
+  color: #1b1b1b;
   vertical-align: middle;
 }
 .calculator .calbox .mid table tr td:nth-of-type(1), .calculator .calbox .mid table tr td:nth-of-type(4) {
@@ -6523,7 +6533,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 5px 3px 0px 3px;
-  border-color: #8d8d8d transparent;
+  border-color: #454545 transparent;
   top: 9px;
   left: 94px;
   pointer-events: none;
@@ -6535,14 +6545,16 @@ main .bg {
   -webkit-appearance: none;
   width: 55px;
   height: 22px;
-  border: solid 1px #e3e3e3;
-  background: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4 #d0d0d0 #b4b4b4;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
   border-radius: 3px;
   padding-left: 5px;
   line-height: 22px;
   font-size: 14px;
   margin: 0px 3px;
-  box-shadow: 1px 2px 3px 0px #00000017;
+  box-shadow: 0px 2px 3px 0px #00000049;
   /*for IE*/
   /*for IE 9*/
   /*for FireFox*/
@@ -6571,7 +6583,7 @@ main .bg {
   height: 20px;
   border: none;
   text-align: center;
-  color: #454545;
+  color: #1b1b1b;
   font-weight: bold;
   font-size: 15px;
 }
@@ -6604,23 +6616,22 @@ main .bg {
 .calculator .calbox .bottom .inputbox button {
   width: 260px;
   height: 40px;
-  background: #ffffff;
+  background: linear-gradient(to bottom, #d31c1c 0%, #bb092f 98%);
   border-radius: 3px;
-  color: #454545;
+  color: #ffffff;
   font-size: 16px;
   border: none;
   margin-left: 50px;
-  box-shadow: 1px 2px 8px 0px #00000049;
+  box-shadow: 0px 2px 3px 0px #00000049;
 }
 .calculator .calbox .bottom .inputbox button:hover, .calculator .calbox .bottom .inputbox button:active, .calculator .calbox .bottom .inputbox button.active {
-  background: #356bd7;
+  background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
   color: #ffffff;
   box-shadow: none;
 }
 .calculator .calbox .bottom .remind {
   margin-top: 10px;
   width: calc(100% - 20px);
-  border-radius: 3px;
   background: #ffffff;
   text-align: left;
   border: solid 1px #e3e3e3;
@@ -6629,13 +6640,13 @@ main .bg {
 .calculator .calbox .bottom .remind p {
   font-size: 14px;
   line-height: 20px;
-  color: #595959;
+  color: #1b1b1b;
 }
 .calculator .calbox .bottom .remind p.retitle {
   text-align: center;
   border-bottom: solid 1px #e3e3e3;
   padding-bottom: 7px;
-  color: #356bf7;
+  color: #ce1427;
 }
 .calculator .calbox .bottom .remind p.extitle {
   padding-top: 10px;
