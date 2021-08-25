@@ -853,6 +853,10 @@ $(function(){
         $('.indexStyle').attr('href','./css_2/style.css');
         $('.elseStyle').attr('href','../../css_2/style.css');
     })
+    $('.threeCircle button:nth-of-type(4)').click(function(){
+        $('.indexStyle').attr('href','./css_4/style.css');
+        $('.elseStyle').attr('href','../../css_4/style.css');
+    })
 })
 
 //css_2 th線段問題

@@ -151,6 +151,10 @@ header .top .threeCircle button:nth-of-type(2) {
 header .top .threeCircle button:nth-of-type(3) {
   background: #1856bd;
   border-color: #90c1f2;
+}
+header .top .threeCircle button:nth-of-type(4) {
+  background: #ffffff;
+  border-color: #d31c1c;
   margin-right: 20px;
 }
 header article {

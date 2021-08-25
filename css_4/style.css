@@ -82,7 +82,7 @@ header {
   width: 100%;
   min-width: 1480px;
   height: 110px;
-  background: #1f1f1f;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   position: relative;
   z-index: 10;
   overflow: hidden;
@@ -93,13 +93,13 @@ header.mine {
 header .top {
   width: 100%;
   height: 25px;
-  background: #131313;
+  background: #263f67;
 }
 header .top .conversionBtn, header .top .controlBtn {
   float: left;
   width: auto;
   height: 100%;
-  color: #969696;
+  color: #ffffff;
   background: transparent;
   margin-left: 15px;
   font-size: 13px;
@@ -115,18 +115,18 @@ header .top .marqueeBox .fa-volume-up {
   position: absolute;
   left: -23px;
   top: 4px;
-  color: #31be16;
+  color: #ffffff;
 }
 header .top .marqueeBox marquee {
   line-height: 25px;
   font-size: 12px;
-  color: #37bd10;
+  color: #ffffff;
   overflow: visible;
 }
 header .top span {
   float: right;
   font-size: 12px;
-  color: #7a7a7a;
+  color: #ffffff;
   line-height: 25px;
   margin-right: 15px;
 }
@@ -169,7 +169,7 @@ header article .logo {
   font-weight: bolder;
   text-align: center;
   line-height: 85px;
-  color: #fff;
+  color: #ffffff;
 }
 header article ul {
   float: left;
@@ -185,13 +185,13 @@ header article ul li a {
   padding: 0px 10px;
   height: 76px;
   line-height: 85px;
-  color: #fff;
+  color: #ffffff;
   border-bottom: solid 5px transparent;
   font-size: 14px;
 }
 header article ul li a:hover, header article ul li a:active, header article ul li a.active {
-  border-color: #33ba04;
-  color: #7df81a;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 header article ul li a .fa-user {
   margin-right: 8px;
@@ -220,59 +220,68 @@ header article .logged .inputBox input {
   font-size: 14px;
   padding-left: 5px;
   border-radius: 3px;
-  border: solid 1px #39792d;
-  background: #131313;
-  color: #45b51f;
+  border: solid 1px #d4364e;
+  border-top: none;
+  background: #ffffff;
+  box-shadow: 0px -2px 8px 0px #00000049, 0px -1px 0px 0px #ea9ab8 inset;
+  color: #676767;
 }
 header article .logged .inputBox input::placeholder {
-  color: #999999;
+  color: #676767;
 }
 header article .logged .inputBox .forget {
   position: absolute;
   left: 0px;
   bottom: -28px;
   font-size: 14px;
-  color: #45b51f;
+  color: #f6d627;
 }
 header article .logged .inputBox .remember {
   position: absolute;
   left: 18px;
   bottom: -28px;
   font-size: 14px;
-  color: #ababab;
+  color: #ffffff;
 }
 header article .logged .inputBox .remember .cube {
   left: -18px;
   top: -1px;
+  background: transparent;
+  border-color: #e3e3e3;
+}
+header article .logged .inputBox .remember .cube.active::before {
+  background: url("../images/cubeArrow2_2.png") no-repeat;
 }
 header article .logged .loginBtn {
-  background: linear-gradient(to right, #45dc16 0%, #91e820 90%);
-  border: solid 1px #cdff7f;
+  background: linear-gradient(to top, #ffffff 0%, #dedede 28%, #ffffff 78%);
   padding: 5px 14px;
   border-radius: 3px;
-  color: #131313;
+  border: solid 1px transparent;
+  color: #454545;
   font-size: 14px;
   font-weight: bold;
   margin-right: 8px;
+  box-shadow: 0px 2px 8px 0px #00000049;
 }
 header article .logged .loginBtn:hover, header article .logged .loginBtn:active, header article .logged .loginBtn.active {
-  border-color: #ffffff;
-  background: #fff;
-  color: #393939;
+  border-color: #bdd2f4;
+  background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
+  color: #ffffff;
 }
 header article .logged .signupBtn {
-  background: linear-gradient(to top, #131313 0%, #323232 100%);
+  background: linear-gradient(to top, #ffffff 0%, #dedede 28%, #ffffff 78%);
   border-radius: 3px;
-  color: #fff;
-  padding: 6px 14px;
+  border: solid 1px transparent;
+  color: #454545;
+  padding: 5px 14px;
   font-size: 14px;
   font-weight: bold;
-  border: solid 1px #2c8e0b;
+  box-shadow: 0px 2px 8px 0px #00000049;
 }
 header article .logged .signupBtn:hover, header article .logged .signupBtn:active, header article .logged .signupBtn.active {
-  border-color: #ffffff;
-  background: #fff;
-  color: #59a936;
+  border-color: #bdd2f4;
+  background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
+  color: #ffffff;
 }
 header article .logged .selectBox {
   float: right;
@@ -283,7 +292,7 @@ header article .logged .selectBox {
 header article .logged .selectBox .fa-globe {
   float: left;
   margin: 3px 6px 0px 0px;
-  color: #ababab;
+  color: #ffffff;
 }
 header article .logged .selectBox::after {
   content: "";
@@ -293,25 +302,21 @@ header article .logged .selectBox::after {
   height: 0px;
   border-style: solid;
   border-width: 10px 8px 0px 8px;
-  border-color: #ababab transparent;
+  border-color: #ffffff transparent;
   top: 7px;
   right: 10px;
 }
 header article .logged .selectBox select {
   width: 110px;
   padding: 3px 0px 3px 5px;
-  background: transparent;
-  border: solid 1px #707070;
+  background: #bb092e;
+  border: solid 1px #e8e8e8;
   border-radius: 3px;
-  color: #ababab;
+  color: #ffffff;
   font-size: 12px;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: #262626;
-}
-header article .logged .selectBox select option {
-  color: #ababab;
 }
 header article .loggedIn {
   display: none;
@@ -326,32 +331,37 @@ header article .loggedIn.display {
 }
 header article .loggedIn p {
   display: inline-block;
-  color: #ababab;
+  color: #ffffff;
   font-size: 13px;
   margin: 10px 5px 0px 0px;
 }
 header article .loggedIn p.quota {
   padding: 7px 7px 5px;
-  border: solid 1px #707070;
   border-radius: 3px;
-  background: #262626;
+  background: #ffffff;
+  color: #1b1b1b;
+  border: solid 1px #e8e8e8;
+}
+header article .loggedIn p.quota span {
+  color: #1f54ab;
 }
 header article .loggedIn p span {
-  color: #40c50f;
+  color: #ffffff;
   padding-left: 8px;
 }
 header article .loggedIn button {
   border-radius: 3px;
   padding: 4px 15px;
-  background: linear-gradient(to top, #131313, #323232 100%);
-  color: #40c50f;
+  background: linear-gradient(to top, #ffffff 0%, #dedede 28%, #ffffff 78%);
+  color: #454545;
   font-size: 14px;
-  border: solid 1px #2c8e0b;
+  box-shadow: 0px 2px 8px 0px #00000049;
+  border: solid 1px transparent;
 }
 header article .loggedIn button:hover, header article .loggedIn button:active, header article .loggedIn button.active {
-  background: linear-gradient(to bottom, #45dc16 10%, #91e820 90%);
-  color: #1c1c1c;
-  border-color: #cdff7f;
+  background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
+  color: #ffffff;
+  border-color: #bdd2f4;
 }
 header article .loggedIn .selectBox {
   float: right;
@@ -362,7 +372,7 @@ header article .loggedIn .selectBox {
 header article .loggedIn .selectBox .fa-globe {
   float: left;
   margin: 3px 6px 0px 0px;
-  color: #ababab;
+  color: #ffffff;
 }
 header article .loggedIn .selectBox::after {
   content: "";
@@ -372,7 +382,7 @@ header article .loggedIn .selectBox::after {
   height: 0px;
   border-style: solid;
   border-width: 10px 8px 0px 8px;
-  border-color: #ababab transparent;
+  border-color: #ffffff transparent;
   top: 7px;
   right: 10px;
 }
@@ -380,17 +390,14 @@ header article .loggedIn .selectBox select {
   width: 110px;
   padding: 3px 0px 3px 5px;
   background: transparent;
-  border: solid 1px #ababab;
+  background: #bb092e;
+  border: solid 1px #e8e8e8;
   border-radius: 3px;
-  color: #ababab;
+  color: #ffffff;
   font-size: 12px;
-  background: #262626;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-}
-header article .loggedIn .selectBox select option {
-  color: #ababab;
 }
 
 main {
@@ -417,7 +424,7 @@ main .bg {
   height: 1000px;
   position: absolute;
   top: 0px;
-  background: #131313;
+  background: #ededed;
   z-index: -999;
 }
 
@@ -430,20 +437,20 @@ main .bg {
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
-  border: solid 1px #6a6a6a;
   border-width: 1px 0px;
-  background: #404040;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 0px #00000049;
 }
 .left::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .left::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .left::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to bottom, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .left.mine {
@@ -466,10 +473,10 @@ main .bg {
   background: url("../images/avatar_big.png");
 }
 .left.mine .minewindow .avater p {
-  color: #ffffff;
+  color: #454545;
 }
 .left.mine .minewindow .avater p.joinday {
-  color: #ffffff;
+  color: #454545;
   font-size: 15px;
   padding-top: 5px;
 }
@@ -477,11 +484,10 @@ main .bg {
   display: inline-block;
   width: 36px;
   height: 17px;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  background-color: #34da14;
+  background: #356bf7;
   position: relative;
   text-align: right;
-  color: #161616;
+  color: #ffffff;
   font-weight: bold;
   border-radius: 5px;
   margin: -3px 0px 0px 5px;
@@ -512,35 +518,27 @@ main .bg {
   font-size: 16px;
   text-align: center;
   background: transparent;
-  color: #c0c0c0;
+  color: #454545;
   padding-top: 10px;
-  border: solid 1px transparent;
 }
 .left.mine .minewindow .threebut a:hover, .left.mine .minewindow .threebut a:active, .left.mine .minewindow .threebut a.active {
-  background: linear-gradient(to top, #363636 0%, #1d1d1d 100%);
-  color: #53c120;
-  border-color: #2d7e12;
+  background: #356bf7;
+  color: #ffffff;
 }
-.left.mine .minewindow .threebut a:hover span, .left.mine .minewindow .threebut a:active span, .left.mine .minewindow .threebut a.active span {
-  background-position-y: -30px;
+.left.mine .minewindow .threebut a:hover i, .left.mine .minewindow .threebut a:active i, .left.mine .minewindow .threebut a.active i {
+  color: #ffffff;
 }
 .left.mine .minewindow .threebut a i {
   display: block;
   font-size: 24px;
   margin-bottom: 10px;
-}
-.left.mine ul li {
-  border-bottom: solid 1px #6f6f6f;
+  color: #8d8d8d;
 }
 .left.mine ul li:nth-of-type(1), .left.mine ul li:nth-of-type(5), .left.mine ul li:nth-of-type(9) {
-  border-color: #e6e9f3;
+  border-bottom: solid 1px #eeeeee;
 }
 .left.mine ul li:hover a, .left.mine ul li:active a, .left.mine ul li.active a {
-  border-color: #30800e;
-}
-.left.mine ul li:hover .live, .left.mine ul li:active .live, .left.mine ul li.active .live {
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  color: #2b4517;
+  border-color: #356bf7;
 }
 .left.mine ul li a {
   border: solid 1px transparent;
@@ -556,8 +554,8 @@ main .bg {
   position: initial;
   margin-left: 10px;
   transform: translateY(0px);
-  background: #1d1d1d;
-  color: #60dc1c;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  color: #ffffff;
 }
 .left.mine ul li a i {
   font-size: 22px;
@@ -572,49 +570,54 @@ main .bg {
   font-size: 20px;
 }
 .left ul li:hover a {
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  color: #57ed22;
+  border-color: #356bf7;
+  color: #356bf7;
+  box-shadow: 0px 0px 5px 0px #00000049;
+  z-index: 10;
 }
 .left ul li:hover a svg {
-  fill: #3abc0d;
+  fill: #356bf7;
 }
 .left ul li:hover a i {
-  color: #3abc0d;
+  color: #356bf7;
 }
 .left ul li:active .smallList, .left ul li.active .smallList {
   display: block;
 }
 .left ul li:active a, .left ul li.active a {
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  color: #57ed22;
+  border-color: #356bf7;
+  color: #356bf7;
+  box-shadow: 0px 0px 5px 0px #00000049;
+  z-index: 10;
 }
 .left ul li:active a svg, .left ul li.active a svg {
-  fill: #3abc0d;
+  fill: #356bf7;
 }
 .left ul li:active a i, .left ul li.active a i {
-  color: #3abc0d;
+  color: #356bf7;
 }
 .left ul li.onLive .live {
   display: block;
 }
 .left ul li a {
   display: block;
-  color: #e0e0e0;
-  width: calc(100% - 50px);
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
+  color: #454545;
+  width: 100%;
+  background: #ffffff;
   height: 45px;
   line-height: 45px;
   font-size: 14px;
   padding-left: 50px;
   position: relative;
-  border-bottom: solid 1px #6a6a6a;
+  box-sizing: border-box;
+  border: solid 1px transparent;
 }
 .left ul li a i {
   position: absolute;
   top: 12px;
   left: 18px;
   font-size: 18px;
-  color: #ababab;
+  color: #8d8d8d;
 }
 .left ul li a i::before {
   margin: 0px auto;
@@ -634,14 +637,14 @@ main .bg {
   position: absolute;
   left: 18px;
   top: 12px;
-  fill: #ababab;
+  fill: #8d8d8d;
 }
 .left ul li a .total {
   position: absolute;
   right: 10px;
   top: 0px;
   font-size: 13px;
-  color: #e0e0e0;
+  color: #454545;
 }
 .left ul li a .live {
   display: none;
@@ -653,8 +656,8 @@ main .bg {
   transform: translateY(-50%);
   right: 42px;
   font-size: 12px;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  color: #2b4517;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  color: #ffffff;
   padding: 0px 4px;
   border-radius: 3px;
 }
@@ -662,17 +665,17 @@ main .bg {
   display: none;
   width: calc(100% - 30px);
   height: 30px;
-  background: #2d2d2d;
-  border-bottom: solid 1px #4c4c4c;
+  background: #f7f7f7;
+  border-bottom: solid 1px #e8e8e8;
   line-height: 30px;
   padding-left: 30px;
   font-size: 12px;
-  color: #46dd16;
+  color: #454545;
   cursor: pointer;
 }
 .left ul li .smallList:hover, .left ul li .smallList:active, .left ul li .smallList.active {
-  background: linear-gradient(to right, #45dc16 0%, #8fe720 100%);
-  color: #1d1d1d;
+  background: #356bf7;
+  color: #ffffff;
 }
 .left ul li .smallList span {
   float: right;
@@ -688,29 +691,30 @@ main .bg {
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
-  background: #242424;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 0px #00000049;
 }
 .right::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
   background-color: transparent;
 }
 .right::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #ffffff;
   border-radius: 10px;
 }
 .right::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: linear-gradient(to bottom, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .right .statusWindow {
   width: 100%;
   height: 113px;
-  background: #242424;
+  background: #f5f5f5;
   position: relative;
 }
 .right .statusWindow p {
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
-  color: #e5e5e5;
+  background: #ffffff;
+  color: #454545;
   padding: 7px 15px;
   font-size: 12px;
 }
@@ -719,16 +723,15 @@ main .bg {
   width: 95%;
   height: auto;
   left: 50%;
-  bottom: 1%;
+  bottom: 4%;
   transform: translateX(-50%);
 }
 .right .statusWindow ul li {
   padding: 5px 15px 3px;
   font-size: 14px;
-  border: solid 1px #494949;
   position: relative;
-  background: #393939;
-  color: #cbcbcb;
+  background: #ffffff;
+  color: #454545;
   margin-bottom: 3px;
 }
 .right .statusWindow ul li::before {
@@ -738,16 +741,16 @@ main .bg {
   height: calc(100% + 2px);
   left: -1px;
   top: -1px;
-  background: #30a009;
+  background: #356bf7;
 }
 .right .statusWindow ul li span {
   float: right;
   font-size: 12px;
   padding-top: 2px;
-  color: #37bb18;
+  color: #356bf7;
 }
 .right .statusWindow ul li span.onWait {
-  color: #c7c7c7;
+  color: #454545;
 }
 .right .statusWindow ul li span.fail {
   color: #f42a2a;
@@ -757,7 +760,7 @@ main .bg {
   width: 15px;
   height: 15px;
   background: transparent;
-  border: solid 1px #a0a0a0;
+  border: solid 1px #8d8d8d;
   border-radius: 15px;
   margin-left: 15px;
   position: relative;
@@ -768,7 +771,7 @@ main .bg {
   position: absolute;
   width: 1px;
   height: 7px;
-  background: #a0a0a0;
+  background: #8d8d8d;
   transform: rotate(45deg);
   top: 3px;
   right: 6px;
@@ -778,7 +781,7 @@ main .bg {
   position: absolute;
   width: 1px;
   height: 7px;
-  background: #a0a0a0;
+  background: #8d8d8d;
   transform: rotate(-45deg);
   top: 3px;
   left: 6px;
@@ -786,13 +789,13 @@ main .bg {
 .right .liveWindow {
   width: 100%;
   height: auto;
-  background: #292929;
+  background: #ffffff;
   text-align: center;
 }
 .right .liveWindow .title {
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
-  box-shadow: 0px 2px 1px 0px #171717;
-  color: #fff;
+  background: #ffffff;
+  border-bottom: solid 1px #f6f6f6;
+  color: #454545;
   padding: 7px 15px;
   font-size: 12px;
   text-align: left;
@@ -818,7 +821,7 @@ main .bg {
 }
 .right .liveWindow .teamWindow .leftTeam p, .right .liveWindow .teamWindow .rightTeam p {
   font-size: 12px;
-  color: #ababab;
+  color: #454545;
   line-height: 20px;
 }
 .right .liveWindow .teamWindow .score {
@@ -832,10 +835,10 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ababab;
+  color: #595959;
 }
 .right .liveWindow .teamWindow .score p span {
-  color: #37bb18;
+  color: #356bf7;
   font-size: 12px;
 }
 .right .liveWindow .liveShow {
@@ -863,21 +866,21 @@ main .bg {
 .right .room .twobut button {
   width: 49.5%;
   height: 100%;
-  background: #3e3e3e;
-  color: #ababab;
+  background: #e6e6e6;
+  color: #595959;
   font-size: 14px;
   float: left;
   margin-right: 1%;
   border-radius: 3px 3px 0px 0px;
-  border: solid 1px #686868;
-  border-bottom: none;
+  border: solid 1px transparent;
 }
 .right .room .twobut button:last-child {
   margin: 0px;
 }
 .right .room .twobut button:hover, .right .room .twobut button:active, .right .room .twobut button.active {
-  background: linear-gradient(to top, #262626 0%, #3c3c3c 100%);
-  color: #49dd16;
+  background: #ffffff;
+  border: solid 1px #356bf7;
+  color: #356bf7;
 }
 .right .room .onebut {
   width: 100%;
@@ -886,16 +889,15 @@ main .bg {
 .right .room .onebut button {
   width: 100%;
   height: 100%;
-  background: #3e3e3e;
-  color: #ababab;
+  background: #e6e6e6;
+  color: #595959;
   font-size: 14px;
   border-radius: 3px 3px 0px 0px;
-  border: solid 1px #686868;
-  border-bottom: none;
+  border: solid 1px transparent;
 }
 .right .room .onebut button:hover, .right .room .onebut button:active, .right .room .onebut button.active {
-  background: linear-gradient(to top, #262626 0%, #3c3c3c 100%);
-  color: #49dd16;
+  background: #ffffff;
+  color: #454545;
 }
 .right .room .livelist {
   display: none;
@@ -911,11 +913,11 @@ main .bg {
   background-color: transparent;
 }
 .right .room .livelist::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .right .room .livelist::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .right .room .livelist.open {
@@ -924,38 +926,43 @@ main .bg {
 .right .room .livelist ul li {
   width: 100%;
   height: 30px;
-  line-height: 30px;
-  border-bottom: solid 1px #6a6a6a;
+  line-height: 32px;
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
-}
-.right .room .livelist ul li:hover, .right .room .livelist ul li:active {
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  border: solid 1px #29650f;
+  background: #ffffff;
 }
 .right .room .livelist ul li:hover::before, .right .room .livelist ul li:active::before {
   transform: rotate(90deg);
+  border-color: transparent #356bf7;
 }
-.right .room .livelist ul li:hover .gameName, .right .room .livelist ul li:hover .games, .right .room .livelist ul li:active .gameName, .right .room .livelist ul li:active .games {
-  color: #57ed22;
+.right .room .livelist ul li:hover .gameName, .right .room .livelist ul li:active .gameName {
+  border-color: #356bf7;
+  color: #356bf7;
+}
+.right .room .livelist ul li:hover .games, .right .room .livelist ul li:active .games {
+  color: #356bf7;
 }
 .right .room .livelist ul li.active {
+  background: #f7f7f7;
   height: auto;
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  border: solid 1px #29650f;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 2;
-  color: #57ed22;
 }
 .right .room .livelist ul li.active::before {
   transform: rotate(90deg);
+  border-color: transparent #356bf7;
 }
-.right .room .livelist ul li.active .gameName, .right .room .livelist ul li.active .games {
-  color: #57ed22;
+.right .room .livelist ul li.active .gameName {
+  border-color: #356bf7;
+  color: #356bf7;
+  background: #ffffff;
+}
+.right .room .livelist ul li.active .games {
+  color: #356bf7;
 }
 .right .room .livelist ul li::before {
   content: "";
@@ -964,33 +971,41 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 7px 0px 7px 8px;
-  border-color: transparent #b2b2b2;
+  border-color: transparent #8d8d8d;
   right: 25px;
   top: 8px;
   transition: 0.3s all;
 }
 .right .room .livelist ul li .gameName {
-  color: #e4e4e4;
+  display: block;
+  width: 100%;
+  height: 30px;
+  color: #454545;
   font-size: 13px;
-  margin-left: 30px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  border: solid 1px transparent;
 }
 .right .room .livelist ul li .games {
-  float: right;
   font-size: 13px;
   font-weight: bold;
-  color: #e4e4e4;
-  margin: 2px 60px 0px 0px;
+  color: #454545;
+  position: absolute;
+  right: 60px;
+  top: 0px;
 }
 .right .room .livelist ul li .innerList {
-  width: 100%;
+  width: 96%;
   height: 70px;
-  background: #2d2d2d;
+  background: #ffffff;
   position: relative;
   cursor: default;
-  border-top: solid 1px #505050;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px #00000049;
+  margin: 0px auto 10px;
 }
 .right .room .livelist ul li .innerList:nth-of-type(1) {
-  border-color: #29650f;
+  margin-top: 10px;
 }
 .right .room .livelist ul li .innerList p {
   width: 100%;
@@ -1000,30 +1015,32 @@ main .bg {
   top: 50%;
   transform: translateY(-50%);
   font-size: 12px;
-  color: #b6b6b6;
+  color: #454545;
 }
 .right .room .livelist ul li .innerList p span {
   font-weight: bold;
-  color: #ececec;
+  color: #356bf7;
 }
 .right .room .livelist ul li .innerList p span .situation {
   font-weight: normal;
   float: right;
   margin-right: 20px;
+  color: #8d8d8d;
 }
 .right .room .livelist ul li .innerList p span .situation.onLive {
   position: relative;
-  color: #57ed22;
+  color: #ffffff;
+  margin: -7px 15px 0px 0px;
 }
-.right .room .livelist ul li .innerList p span .situation.onLive::before {
+.right .room .livelist ul li .innerList p span .situation.onLive::after {
   content: "";
   position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 12px;
-  top: 6px;
-  left: -12px;
-  background: #57ed22;
+  width: 40px;
+  height: 19px;
+  top: -1px;
+  left: -10px;
+  background: url("../images/liveBg.png") no-repeat;
+  z-index: -1;
 }
 .right .room .livelist ul li .innerList p button {
   position: absolute;
@@ -1031,15 +1048,14 @@ main .bg {
   bottom: 0px;
   width: 70px;
   height: 30px;
-  background: #252525;
+  background: #ffffff;
   border-radius: 3px;
-  border: solid 1px #317f0f;
-  color: #aeaeae;
+  box-shadow: 1px 2px 10px 0px #00000049;
+  color: #356bf7;
 }
 .right .room .livelist ul li .innerList p button:hover, .right .room .livelist ul li .innerList p button:active, .right .room .livelist ul li .innerList p button.active {
-  background: linear-gradient(to right, #92e820 0%, #46dd16 90%);
-  border-color: #aef156;
-  color: #252525;
+  background: #356bf7;
+  color: #ffffff;
 }
 .right .room .bettingStatus {
   display: none;
@@ -1049,18 +1065,18 @@ main .bg {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  background: #505050;
+  background: #f7f7f7;
 }
 .right .room .bettingStatus::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .right .room .bettingStatus::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .right .room .bettingStatus::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .right .room .bettingStatus.open {
@@ -1073,39 +1089,50 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #303030;
+  background: #ffffff;
 }
 .playBoard tr {
   text-align: center;
   border-style: solid;
   border-width: 1px;
-  border-color: transparent transparent #868282 transparent;
+  border-color: transparent transparent #dedede transparent;
 }
 .playBoard tr:nth-of-type(1) {
-  border-top-color: #33bc19;
-  border-bottom: none;
+  border-top-color: #f2f2f2;
+  border-bottom-color: #f0f0f0;
 }
 .playBoard tr:nth-of-type(odd) {
-  background: #2c2c2c;
+  background: #f5f5f5;
 }
 .playBoard tr:hover, .playBoard tr:active, .playBoard tr.active {
-  border: solid 1px #43b71b;
-  background: #363636;
-  box-shadow: 0px 0px 5px 2px #3e6f14 inset;
+  border: solid 1px #356bf7;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 2px #00000017;
 }
 .playBoard tr:hover td, .playBoard tr:active td, .playBoard tr.active td {
-  border-top: solid 1px #43b71b;
+  border-top: solid 1px #356bf7;
+  color: #356bf7;
+}
+.playBoard tr:hover td.allScore, .playBoard tr:active td.allScore, .playBoard tr.active td.allScore {
+  color: #ffab00;
+}
+.playBoard tr:hover td .pitcher, .playBoard tr:active td .pitcher, .playBoard tr.active td .pitcher {
+  color: #ffab00;
+}
+.playBoard tr:hover td a.tbimg3, .playBoard tr:active td a.tbimg3, .playBoard tr.active td a.tbimg3 {
+  color: #356bf7;
 }
 .playBoard tr th {
-  color: #cacaca;
+  color: #454545;
   font-size: 13px;
   padding: 8px 0px 7px;
   vertical-align: middle;
-  background: #1b1b1b;
+  background: #ffffff;
   position: -webkit-sticky;
   position: sticky;
   top: 70px;
   z-index: 2;
+  border-bottom: solid 1px #356bf7;
 }
 .playBoard tr th.tLeft {
   text-align: left;
@@ -1116,14 +1143,14 @@ main .bg {
   margin-right: 10px;
 }
 .playBoard tr th:nth-of-type(1).tLeft {
-  color: #44be1d;
+  color: #356bf7;
 }
 .playBoard tr td {
   font-size: 12px;
   padding: 8px 0px;
   vertical-align: middle;
   word-break: break-all;
-  color: #e2e2e2;
+  color: #595959;
   line-height: 18px;
 }
 .playBoard tr td:nth-of-type(1) p:nth-of-type(1) {
@@ -1134,31 +1161,32 @@ main .bg {
   padding: 0px 10px;
 }
 .playBoard tr td.allScore {
-  color: #71e31d;
+  color: #356bf7;
 }
 .playBoard tr td .gameStyle {
-  color: #95f221;
+  color: #ffab00;
 }
 .playBoard tr td .gameTime {
-  color: #a8a8a8;
+  color: #8d8d8d;
 }
 .playBoard tr td button {
-  background: #212121;
-  color: #f2f2f2;
+  background: #ffffff;
+  color: #356bf7;
   border-radius: 3px;
   position: relative;
   word-break: break-all;
-  border: solid 1px #6a8e2a;
   overflow: hidden;
   font-size: 13px;
   margin: 0px 1px;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .playBoard tr td button:hover, .playBoard tr td button:active, .playBoard tr td button.active {
-  background: linear-gradient(to right, #A1EA22 0%, #34DA14 100%);
-  color: #000;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .playBoard tr td button:hover span, .playBoard tr td button:active span, .playBoard tr td button.active span {
-  color: #000;
+  color: #ffffff;
 }
 .playBoard tr td button::before {
   display: none;
@@ -1187,7 +1215,7 @@ main .bg {
   animation: btnFlashing 1s linear 0s infinite;
 }
 .playBoard tr td button span {
-  color: #cccccc;
+  color: #595959;
   font-size: 12px;
 }
 .playBoard tr td button.up::before {
@@ -1197,12 +1225,12 @@ main .bg {
   display: block;
 }
 .playBoard tr td button.disable {
-  background: #282828;
+  background: #e6e6e6;
   pointer-events: none;
   color: transparent;
   -webkit-user-select: none;
           user-select: none;
-  border-color: #5d5d5d;
+  box-shadow: none;
 }
 .playBoard tr td button.disable span {
   position: absolute;
@@ -1212,7 +1240,7 @@ main .bg {
   font-size: 18px;
 }
 .playBoard tr td button.disable span.fa-lock {
-  color: #626262;
+  color: #c7c7c7;
   font-size: 12px;
 }
 .playBoard tr td a {
@@ -1228,22 +1256,22 @@ main .bg {
 .playBoard tr td a.tbimg2 {
   width: 20px;
   height: 20px;
-  background: url("../images/heart.png") no-repeat;
+  background: url("../images/heart2.png") no-repeat;
   background-size: 200%;
 }
 .playBoard tr td a.tbimg2:hover, .playBoard tr td a.tbimg2:active, .playBoard tr td a.tbimg2.active {
-  background-position: -20px 0px;
+  background-position-X: 100%;
 }
 .playBoard tr td a.tbimg3 {
   width: auto;
   height: auto;
-  color: #cacaca;
+  color: #595959;
 }
 .playBoard tr td.overGame {
-  color: #ff9000;
+  color: #ffab00;
 }
 .playBoard tr td span.overGame {
-  color: #ff9000;
+  color: #ffab00;
 }
 .playBoard tr td p:nth-of-type(1) {
   padding-bottom: 8px;
@@ -1572,11 +1600,14 @@ main .bg {
 .playBoard.tType4_index tr td:nth-of-type(9) {
   min-width: 60px;
 }
+.playBoard.tType4_result tr:hover td p.first, .playBoard.tType4_result tr:active td p.first, .playBoard.tType4_result tr.active td p.first {
+  color: #ffab00;
+}
 .playBoard.tType4_result tr td p {
   padding-bottom: 8px;
 }
 .playBoard.tType4_result tr td p.first {
-  color: #71e31d;
+  color: #356bf7;
 }
 .playBoard.tType4_result tr td p:last-child {
   padding: 0px;
@@ -2169,7 +2200,7 @@ main .bg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #00000096;
+  background: #c7c7c796;
 }
 .bettingBoard.fail tr td.failRemind {
   display: block;
@@ -2178,27 +2209,26 @@ main .bg {
   width: 50%;
   height: auto;
   padding: 7px;
-  color: #ababab;
+  color: #595959;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
-  border-color: #505050;
+  border-color: #f7f7f7;
   vertical-align: middle;
-  background: #353535;
-  box-shadow: 0px -1px 0px 0px #505050 inset;
+  background: #ffffff;
   font-size: 12px;
 }
 .bettingBoard tr td.waiting {
-  color: #37bb18;
+  color: #356bf7;
 }
 .bettingBoard tr td.listName {
   padding: 15px 7px;
 }
 .bettingBoard tr td.listName .vs {
-  color: #37bb18;
+  color: #ffab00;
   margin: 0px 5px;
 }
 .bettingBoard tr td.listName .odds {
-  color: #e82f2f;
+  color: #356bf7;
   margin-left: 5px;
 }
 .bettingBoard tr td:nth-of-type(odd) {
@@ -2216,9 +2246,10 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: solid 1px #8c8c8c;
+  border: solid 1px #c1c1c1;
   text-align: center;
   padding: 10px 0px;
+  color: #454545;
 }
 
 .conversionBoard {
@@ -2226,51 +2257,48 @@ main .bg {
   height: auto;
   margin: 2% auto 0px;
   border-radius: 3px;
-  border: solid 1px #777777;
+  border: solid 1px #e3e3e3;
 }
 .conversionBoard tr {
   text-align: center;
 }
 .conversionBoard tr:nth-of-type(1) {
-  background: #353535;
+  background: #f8f8f8;
 }
 .conversionBoard tr:nth-of-type(2) {
-  background: #282828;
+  background: #f2f2f2;
 }
 .conversionBoard tr td {
   vertical-align: middle;
-  border: solid 1px #828282;
+  border: solid 1px #e3e3e3;
   height: 45px;
   width: 7%;
   font-size: 13px;
   line-height: 15px;
-  color: #c3c3c3;
+  color: #454545;
 }
 .conversionBoard tr td.title {
   width: 9%;
-  background: #282828;
-}
-.conversionBoard tr td:nth-of-type(2) {
-  color: #f6f6f6;
+  background: #ffffff;
 }
 
 .bettingRemind {
   width: 100%;
   height: auto;
   border-collapse: collapse;
-  background: #303030;
+  background: #ededed;
 }
 .bettingRemind tr th {
   padding: 7px 15px;
-  color: #e1e1e1;
+  color: #356bf7;
   font-size: 13px;
-  border-bottom: solid 1px #686868;
+  border-bottom: solid 1px #d8d8d8;
   text-align: left;
 }
 .bettingRemind tr td {
   width: 50%;
   vertical-align: middle;
-  color: #b0b0b0;
+  color: #595959;
   padding: 15px;
   font-size: 13px;
 }
@@ -2281,8 +2309,11 @@ main .bg {
   margin-left: 5px;
   color: #ee2626;
 }
+.bettingRemind tr td .leagendName {
+  color: #356bf7;
+}
 .bettingRemind tr td:last-child {
-  border-left: solid 1px #626262;
+  border-left: solid 1px #d8d8d8;
   line-height: 18px;
 }
 
@@ -2373,22 +2404,20 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 187px 0px 20px 10px;
-  background: #2c2c2c;
+  background: #f5f5f5;
 }
 .innerBoard tr th {
   width: 100%;
   padding: 5px 8px;
-  color: #eaeaea;
-  border-bottom: solid 1px #727272;
+  color: #454545;
   font-size: 14px;
   text-align: left;
-  background: #2c2c2c;
+  background: #ffffff;
 }
 .innerBoard tr td {
   display: flex;
   justify-content: space-around;
   padding: 8px 5px 0px;
-  border-bottom: solid 1px #7b7b7b;
   flex-wrap: wrap;
 }
 .innerBoard tr td.two button {
@@ -2411,30 +2440,29 @@ main .bg {
   border: none;
   height: auto;
   padding: 8px;
-  background: #212121;
+  background: #ffffff;
   font-size: 14px;
-  color: #fefefe;
+  color: #356bf7;
   margin-bottom: 8px;
-  border: solid 1px #6a8e2a;
+  box-shadow: 1px 2px 5px 0px #00000049;
 }
 .innerBoard tr td button:hover, .innerBoard tr td button:active, .innerBoard tr td button.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #202020;
+  background: #356bf7;
+  color: #ffffff;
 }
 .innerBoard tr td button:hover span, .innerBoard tr td button:active span, .innerBoard tr td button.active span {
-  color: #202020;
+  color: #ffffff;
 }
 .innerBoard tr td button.title {
-  border: none;
   background: transparent;
   pointer-events: none;
-  color: #fff;
+  color: #454545;
+  box-shadow: none;
 }
 .innerBoard tr td button .name {
   font-size: 13px;
   padding-right: 20px;
-  color: #fff;
+  color: #595959;
 }
 
 .teachBoard {
@@ -2443,22 +2471,22 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #2c2c2c;
+  background: #ffffff;
 }
 .teachBoard tr {
   text-align: center;
-  border-bottom: solid 1px #727272;
+  border-bottom: solid 1px #f0f0f0;
 }
 .teachBoard tr.noBorder {
   border: none;
 }
 .teachBoard tr th {
-  color: #44be1d;
+  color: #454545;
   font-size: 13px;
   padding: 8px 0px 6px;
   vertical-align: middle;
-  background: #1b1b1b;
-  border-bottom: solid 1px #33bc19;
+  background: #ffffff;
+  border-bottom: solid 1px #356bf7;
   position: -webkit-sticky;
   position: sticky;
   top: 70px;
@@ -2490,13 +2518,13 @@ main .bg {
   position: relative;
 }
 .teachBoard tr td .team p {
-  color: #d0d0d0;
+  color: #595959;
   font-size: 14px;
   line-height: 24px;
 }
 .teachBoard tr td .team p .odd {
   font-weight: bold;
-  color: #71e31d;
+  color: #356bf7;
   padding-left: 5px;
 }
 .teachBoard tr td .team .img {
@@ -2521,7 +2549,7 @@ main .bg {
   height: 88px;
   line-height: 88px;
   vertical-align: top;
-  color: #d0d0d0;
+  color: #8d8d8d;
   position: relative;
 }
 .teachBoard tr td .vs span {
@@ -2535,17 +2563,17 @@ main .bg {
   left: 50%;
   transform: translateX(-50%);
   bottom: -24px;
-  border: solid 1px #727272;
+  border: solid 1px #f0f0f0;
   border-radius: 30px;
-  background: #2c2c2c;
-  color: #d0d0d0;
+  background: #ffffff;
+  color: #595959;
 }
 .teachBoard tr td .explain {
   width: 220px;
   height: auto;
   display: inline-block;
   padding: 20px 0px;
-  color: #d0d0d0;
+  color: #595959;
 }
 .teachBoard tr td .explain.lside {
   text-align: right;
@@ -2567,7 +2595,7 @@ main .bg {
 }
 .teachBoard tr td .box::before {
   content: "";
-  background: #222222;
+  background: #f5f5f5;
   width: 90%;
   height: 70px;
   border-radius: 80px;
@@ -2575,7 +2603,7 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 2px 3px 0px #51544e, 0px 0px 10px 2px #151515 inset;
+  box-shadow: 0px 2px 3px 0px #00000017, 0px 0px 10px 2px #00000017 inset;
 }
 .teachBoard tr td .box .textBox {
   width: 120px;
@@ -2591,39 +2619,38 @@ main .bg {
   float: right;
 }
 .teachBoard tr td .box .textBox p {
-  color: #dcdcdc;
+  color: #595959;
   font-size: 14px;
   line-height: 24px;
 }
 .teachBoard tr td .box .textBox p.win {
   font-weight: bold;
-  color: #71e31d;
+  color: #356bf7;
 }
 .teachBoard tr td .box .textBox p.lose {
-  color: #959595;
+  color: #454545;
 }
 .teachBoard tr td .box .midBox {
   width: 80px;
   height: 80px;
-  background: linear-gradient(to top, #2c2c2c 27%, #3e3e3e 94%);
+  background: #ffffff;
   border-radius: 90px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  border: solid 1px #38730e;
-  box-shadow: 0px 0px 10px 2px #374d23;
+  box-shadow: 0px 0px 10px 2px #00000017;
 }
 .teachBoard tr td .box .midBox p {
-  color: #f0f0f0;
+  color: #595959;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   margin-top: 12px;
 }
 .teachBoard tr td .box .midBox p.score {
-  color: #71e31d;
+  color: #356bf7;
   margin-top: 6px;
   font-size: 24px;
 }
@@ -2636,21 +2663,19 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #2c2c2c;
+  background: #f5f5f5;
+  box-shadow: 0px 2px 5px 2px #00000017;
 }
 .minetable tr {
   text-align: center;
 }
-.minetable tr:last-child {
-  border-bottom: solid 1px #5d5d5d;
-}
 .minetable tr th {
-  color: #33bc19;
+  color: #454545;
   font-size: 13px;
   padding: 8px 0px 7px;
   vertical-align: middle;
-  background: #1b1b1b;
-  border-bottom: solid 1px #33bc19;
+  background: #ffffff;
+  border-bottom: solid 1px #356bf7;
   position: relative;
 }
 .minetable tr th.tLeft {
@@ -2689,7 +2714,7 @@ main .bg {
   width: 30px;
   height: 30px;
   position: absolute;
-  background: url("../images/edit.png") no-repeat;
+  background: url("../images/edit2.png") no-repeat;
   right: 0px;
   bottom: 0px;
   cursor: pointer;
@@ -2697,12 +2722,12 @@ main .bg {
 .minetable.infor tr td .mainWindow {
   width: 98%;
   height: 100%;
-  border: solid 1px #6a6a6a;
+  border: solid 1px #e3e3e3;
   border-radius: 5px;
   box-sizing: border-box;
   margin: 25px 0px 15px;
   font-size: 0px;
-  background: #373737;
+  background: #ffffff;
 }
 .minetable.infor tr td .mainWindow div {
   display: inline-block;
@@ -2713,7 +2738,7 @@ main .bg {
   box-sizing: border-box;
 }
 .minetable.infor tr td .mainWindow div p {
-  color: #c4c4c4;
+  color: #595959;
   font-size: 14px;
   position: relative;
 }
@@ -2726,53 +2751,55 @@ main .bg {
 }
 .minetable.infor tr td .mainWindow div p span:nth-of-type(2) {
   width: 60%;
-  color: #ffffff;
+  color: #454545;
   font-size: 13px;
 }
 .minetable.infor tr td .mainWindow div p button {
-  border: solid 1px #707070;
-  background: #2b2b2b;
+  background: #ffffff;
   padding: 5px 8px;
-  color: #dddddd;
+  color: #595959;
   border-radius: 3px;
+  box-shadow: 1px 2px 5px 0px #00000049;
 }
 .minetable.infor tr td .mainWindow div p button:hover, .minetable.infor tr td .mainWindow div p button:active, .minetable.infor tr td .mainWindow div p button.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetable.infor tr td .remind {
   width: 98.3%;
   height: auto;
   text-align: right;
   padding-bottom: 15px;
-  color: #fff;
+  color: #595959;
   font-size: 13px;
 }
 .minetable.infor tr td .remind a {
-  color: #80d91e;
+  color: #fa9819;
   padding-left: 5px;
 }
 .minetable.bettingLimit {
   float: left;
   width: calc(50% - 12px);
 }
+.minetable.bettingLimit tr {
+  border-bottom: solid 1px #e8e8e8;
+}
 .minetable.bettingLimit tr:nth-of-type(1) th {
-  border-bottom-color: #606060;
+  border-bottom-color: #f7f7f7;
+  color: #356bf7;
 }
 .minetable.bettingLimit tr:nth-of-type(2) th {
-  background: #242424;
-  color: #ffffff;
-  border-bottom-color: #606060;
+  border-bottom-color: #356bf7;
 }
-.minetable.bettingLimit tr:nth-of-type(2n+1) {
-  background: #373737;
+.minetable.bettingLimit tr:nth-of-type(2n) {
+  background: #ffffff;
 }
 .minetable.bettingLimit tr td {
   width: 33.3%;
   padding: 10px 0px;
   font-size: 14px;
-  color: #c4c4c4;
+  color: #595959;
 }
 .minetable.totalMoney {
   width: 1150px;
@@ -2805,11 +2832,11 @@ main .bg {
 .minetable.totalMoney tr td .box {
   width: 90%;
   margin: 0px auto;
-  border: solid 1px #5d5d5d;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
-  background: #292929;
+  background: #ffffff;
 }
 .minetable.totalMoney tr td .box .half {
   display: inline-block;
@@ -2820,7 +2847,7 @@ main .bg {
 }
 .minetable.totalMoney tr td .box .half p {
   font-size: 14px;
-  color: #fff;
+  color: #454545;
   text-align: left;
   width: 50%;
   margin: 0px auto;
@@ -2828,10 +2855,10 @@ main .bg {
   position: relative;
 }
 .minetable.totalMoney tr td .box .half p.dollar {
-  color: #c4c4c4;
+  color: #595959;
 }
 .minetable.totalMoney tr td .box .half p.dollar span {
-  color: #6ad237;
+  color: #356bf7;
   font-size: 18px;
   padding-left: 10px;
 }
@@ -2841,19 +2868,20 @@ main .bg {
   padding-left: 10px;
 }
 .minetable.totalMoney tr td .box .half p button {
-  background: transparent;
-  border: solid 1px #ababab;
+  background: #ffffff;
+  border: none;
   border-radius: 30px;
   padding: 5px 8px;
-  color: #fff;
+  color: #454545;
   position: absolute;
+  box-shadow: 1px 2px 4px 0px #00000049;
   right: -80px;
   top: 5px;
 }
 .minetable.totalMoney tr td .box .half p button:hover, .minetable.totalMoney tr td .box .half p button:active, .minetable.totalMoney tr td .box .half p button.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetable.totalMoney tr td .box .half .wallet_ic {
   float: left;
@@ -2873,7 +2901,7 @@ main .bg {
   transform: translateY(-50%);
   width: 1px;
   height: 25px;
-  background: #5d5d5d;
+  background: #e3e3e3;
 }
 .minetable.totalMoney tr td .separateBox {
   height: 89px;
@@ -2881,7 +2909,8 @@ main .bg {
 .minetable.totalMoney tr td .separateBox.big {
   float: left;
   width: 60%;
-  border: solid 1px #5d5d5d;
+  border: solid 1px #e3e3e3;
+  background: #fff;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
@@ -2908,36 +2937,37 @@ main .bg {
   background-position-x: 100%;
 }
 .minetable.totalMoney tr td .separateBox.big .half p {
-  color: #fff;
+  color: #454545;
   font-size: 14px;
   text-align: left;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar {
   padding-top: 15px;
-  color: #c4c4c4;
+  color: #595959;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span {
   font-size: 18px;
   padding-left: 10px;
-  color: #6ad237;
+  color: #356bf7;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span.locked {
   color: #ea1c1c;
 }
 .minetable.totalMoney tr td .separateBox.big .half p button {
-  background: transparent;
-  color: #fff;
-  border: solid 1px #ababab;
+  background: #ffffff;
+  color: #454545;
+  border: none;
   font-size: 12px;
   padding: 2px 5px;
   border-radius: 20px;
   float: right;
+  box-shadow: 1px 2px 4px 0px #00000049;
   margin: -4px 40px 0px 0px;
 }
 .minetable.totalMoney tr td .separateBox.big .half p button:hover, .minetable.totalMoney tr td .separateBox.big .half p button:active, .minetable.totalMoney tr td .separateBox.big .half p button.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetable.totalMoney tr td .separateBox.big .line {
   position: absolute;
@@ -2946,34 +2976,35 @@ main .bg {
   transform: translateY(-50%);
   width: 1px;
   height: 40px;
-  background: #5d5d5d;
+  background: #e3e3e3;
 }
 .minetable.totalMoney tr td .separateBox.small {
   float: right;
   width: 30%;
-  border: solid 1px #5d5d5d;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
   box-sizing: border-box;
   margin-right: 20px;
   padding: 20px;
+  background: #ffffff;
 }
 .minetable.totalMoney tr td .separateBox.small p {
   font-size: 16px;
   text-align: left;
   font-weight: bold;
-  color: #f7f7f7;
+  color: #454545;
 }
 .minetable.totalMoney tr td .separateBox.small p.remind {
   font-size: 13px;
-  color: #9b9b9b;
+  color: #595959;
   padding-top: 20px;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn {
   width: 50px;
   height: 25px;
-  background: #222222;
+  background: #ccc;
   position: absolute;
   right: 30px;
   top: 50%;
@@ -2981,11 +3012,9 @@ main .bg {
   border-radius: 15px;
   transition: 0.3s all;
   cursor: pointer;
-  border-bottom: solid 2px #434343;
-  box-shadow: 0px 0px 10px 2px #151515 inset;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn.turn {
-  background: #3ed610;
+  background: #356bf7;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn.turn div {
   left: 50%;
@@ -2995,10 +3024,8 @@ main .bg {
 .minetable.totalMoney tr td .separateBox.small .turnBtn div {
   width: 40%;
   height: 80%;
-  background: linear-gradient(-20deg, #111111 0%, #353535 93%);
+  background: #ffffff;
   box-sizing: border-box;
-  border: solid 1px #2a8f17;
-  box-shadow: 0px 0px 5px 2px #27611c;
   position: absolute;
   top: 10%;
   left: 10%;
@@ -3012,34 +3039,35 @@ main .bg {
   float: right;
   padding-bottom: 4px;
   font-size: 13px;
-  color: #ffffff;
+  color: #454545;
 }
 .minetable.creditcard tr td .creditcardBtn {
   width: 25%;
   height: 145px;
   border-radius: 5px;
-  background: #242424;
-  color: #fff;
+  background: #ffffff;
+  color: #454545;
   font-size: 17px;
   margin: 20px 30px;
   transition: 0.25s all;
   position: relative;
-  border: solid 1px #287c12;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .minetable.creditcard tr td .creditcardBtn:hover, .minetable.creditcard tr td .creditcardBtn:active, .minetable.creditcard tr td .creditcardBtn.active {
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  color: #232323;
-  border-color: #7af537;
+  background: linear-gradient(to right, #356bf7 0%, #0e37a2 100%);
+  color: #ffffff;
 }
 .minetable.creditcard tr td .creditcardBtn:hover div, .minetable.creditcard tr td .creditcardBtn:active div, .minetable.creditcard tr td .creditcardBtn.active div {
   background-position-y: 100%;
 }
 .minetable.creditcard tr td .creditcardBtn.c1, .minetable.creditcard tr td .creditcardBtn.c2, .minetable.creditcard tr td .creditcardBtn.c3 {
-  background: linear-gradient(135deg, #3d3d3d 0%, #242424 100%);
+  background: #ffffff;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:hover, .minetable.creditcard tr td .creditcardBtn.c2:hover, .minetable.creditcard tr td .creditcardBtn.c3:hover {
-  background: linear-gradient(-45deg, #3d3d3d 0%, #242424 100%);
-  color: #fefefe;
+  border: solid 1px #356bf7;
+  color: #356bf7;
+  box-shadow: none;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:active, .minetable.creditcard tr td .creditcardBtn.c1.active, .minetable.creditcard tr td .creditcardBtn.c2:active, .minetable.creditcard tr td .creditcardBtn.c2.active, .minetable.creditcard tr td .creditcardBtn.c3:active, .minetable.creditcard tr td .creditcardBtn.c3.active {
   background: linear-gradient(-45deg, #3d3d3d 0%, #242424 100%);
@@ -3073,13 +3101,13 @@ main .bg {
   width: 42px;
   height: 29px;
   margin: 0px auto 10px;
-  background: url("../images/add_card2.png") no-repeat;
+  background: url("../images/add_card3.png") no-repeat;
   background-size: 100%;
 }
 .minetable.creditcard tr td .creditcardBtn .box .bankIc {
   width: 40px;
   height: 40px;
-  background: url("../images/bank_ic2.png") no-repeat;
+  background: url("../images/bank_ic3.png") no-repeat;
   background-size: 300%;
   position: absolute;
   top: 22%;
@@ -3105,7 +3133,7 @@ main .bg {
 }
 .minetable.creditcard tr td .remind {
   float: right;
-  color: #bfbfbf;
+  color: #454545;
   margin: 0px 20px 20px 0px;
   font-size: 14px;
   position: relative;
@@ -3115,12 +3143,12 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url("../images/infor2.png") no-repeat;
+  background: url("../images/infor3.png") no-repeat;
   top: 0px;
   left: -18px;
 }
 .minetable.creditcard tr td .remind a {
-  color: #3edb15;
+  color: #ff9a1d;
 }
 .minetable.moneyDetail {
   width: 1150px;
@@ -3132,9 +3160,9 @@ main .bg {
   display: inline-block;
   width: 23%;
   height: 100px;
-  border: solid 1px #727272;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
-  background: #242424;
+  background: #ffffff;
   margin: 0px 10px 20px 0px;
   padding: 20px;
   box-sizing: border-box;
@@ -3147,7 +3175,7 @@ main .bg {
   text-align: left;
   line-height: 28px;
   font-size: 15px;
-  color: #c4c4c4;
+  color: #454545;
 }
 .minetable.moneyDetail tr td div p.dollar {
   font-size: 13px;
@@ -3155,43 +3183,48 @@ main .bg {
 .minetable.moneyDetail tr td div p.dollar span {
   font-size: 15px;
   font-weight: bold;
-  color: #fefefe;
+  color: #595959;
 }
 .minetable.moneyDetail tr td div p .charge {
   padding: 5px 8px;
-  background: #2b2b2b;
+  background: #ffffff;
   border-radius: 3px;
-  border: solid 1px #707070;
+  border: none;
   position: absolute;
   right: 10px;
-  color: #a7a7a7;
+  color: #454545;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .minetable.moneyDetail tr td div p .charge:hover, .minetable.moneyDetail tr td div p .charge:active, .minetable.moneyDetail tr td div p .charge.active {
-  border-color: #299913;
-  background: #252525;
-  color: #299913;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetable.dealRecord {
   width: 1150px;
   display: none;
+  border: solid 1px #e3e3e3;
 }
 .minetable.dealRecord.display {
   display: table;
 }
 .minetable.dealRecord tr {
-  border-bottom: solid 1px #747474;
-  background: linear-gradient(to top, #343434 0%, #404040 100%);
+  border-bottom: solid 1px #b5b5b5;
+  background: #ffffff;
 }
 .minetable.dealRecord tr.fail {
-  background: linear-gradient(to top, #2a2a2a 0%, #343434 100%);
+  background: #e9e9e9;
+}
+.minetable.dealRecord tr.fail td.dealCode, .minetable.dealRecord tr.fail td.depositMoney {
+  color: #595959;
 }
 .minetable.dealRecord tr:last-child {
   border: none;
 }
 .minetable.dealRecord tr td {
-  border-right: solid 1px #747474;
+  border-right: solid 1px #b5b5b5;
   padding: 10px;
-  color: #dddddd;
+  color: #595959;
   font-size: 14px;
 }
 .minetable.dealRecord tr td:nth-of-type(1) {
@@ -3217,10 +3250,10 @@ main .bg {
   border: none;
 }
 .minetable.dealRecord tr td.dealCode {
-  color: #90b9ff;
+  color: #356bf7;
 }
 .minetable.dealRecord tr td.depositMoney {
-  color: #43d710;
+  color: #356bf7;
 }
 .minetable.dealRecord tr td .time {
   padding-left: 8px;
@@ -3235,22 +3268,26 @@ main .bg {
   display: table;
 }
 .minetable.bettingRecord.open .arrow {
-  transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(-90deg);
 }
 .minetable.bettingRecord.now {
   width: 1150px;
   margin: 0px 0px 10px 10px;
 }
 .minetable.bettingRecord tr {
-  border-bottom: solid 1px #676767;
+  border-bottom: solid 1px #dfdfdf;
+  background: #f5f5f5;
 }
 .minetable.bettingRecord tr.totalInfo {
-  background: #212121;
+  background: #356bf7;
+}
+.minetable.bettingRecord tr.totalInfo td {
+  color: #ffffff;
 }
 .minetable.bettingRecord tr th {
-  border-bottom: solid 1px #2d910e;
-  background: #3f3f3f;
-  color: #dddddd;
+  border-bottom: solid 1px #356bf7;
+  background: #ffffff;
+  color: #454545;
 }
 .minetable.bettingRecord tr th p {
   float: left;
@@ -3259,25 +3296,25 @@ main .bg {
   float: left;
   width: 1px;
   height: 14px;
-  background: #747474;
+  background: #dfdfdf;
   margin: 0px 10px;
 }
 .minetable.bettingRecord tr th .arrow {
   width: 9px;
   height: 16px;
-  background: url("../images/arrow_w.png") no-repeat;
+  background: url("../images/arrow_b.png") no-repeat;
   background-size: 100%;
   display: block;
   position: absolute;
   right: 25px;
   top: 50%;
-  transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(90deg);
 }
 .minetable.bettingRecord tr td {
   padding: 10px;
-  color: #bfbfbf;
+  color: #454545;
   font-size: 14px;
-  border-right: solid 1px #ababab;
+  border-right: solid 1px #dfdfdf;
 }
 .minetable.bettingRecord tr td:nth-of-type(1), .minetable.bettingRecord tr td:nth-of-type(3), .minetable.bettingRecord tr td:nth-of-type(5) {
   width: 10%;
@@ -3298,7 +3335,7 @@ main .bg {
   line-height: 20px;
 }
 .minetable.bettingRecord tr td .teamName {
-  color: #fff;
+  color: #595959;
 }
 .minetable.bettingRecord tr td .separate {
   display: inline-block;
@@ -3306,26 +3343,26 @@ main .bg {
   transform: translateY(-1px);
 }
 .minetable.bettingRecord tr td .odd {
-  color: #50cd1b;
+  color: #356bf7;
 }
 .minetable.bettingRecord tr td .vs {
-  color: #9c9b9b;
+  color: #595959;
   font-size: 12px;
   padding: 0px 8px;
 }
 .minetable.totalInfo {
   width: 1070px;
   margin: 0px auto;
-  background: linear-gradient(to top, #1a1a1a 0%, #2a2a2a 100%);
+  background: #ffffff;
 }
 .minetable.totalInfo tr {
-  border: solid 1px #30800e;
+  border-top: solid 1px #356bf7;
   border-width: 1px 0px;
 }
 .minetable.totalInfo tr td {
   padding: 10px 0px;
   font-size: 15px;
-  color: #3abc0d;
+  color: #356bf7;
 }
 .minetable.totalInfo tr td:nth-of-type(1), .minetable.totalInfo tr td:nth-of-type(3), .minetable.totalInfo tr td:nth-of-type(5) {
   width: 10%;
@@ -3344,86 +3381,13 @@ main .bg {
   float: right;
   width: 1px;
   height: 16px;
-  background: #747474;
-}
-.minetable.sportRule {
-  display: none;
-  margin-top: 122px;
-  width: 1150px;
-  background: #5e5e5e;
-}
-.minetable.sportRule.display {
-  display: table;
-}
-.minetable.sportRule tr:nth-of-type(2) td {
-  padding-top: 35px;
-}
-.minetable.sportRule tr:last-child td {
-  padding-bottom: 35px;
-}
-.minetable.sportRule tr:nth-of-type(2n) {
-  background: #505050;
-}
-.minetable.sportRule tr th {
-  background: #bcbcbc;
-  color: #3d3d3d;
-}
-.minetable.sportRule tr th.tLeft {
-  padding: 8px 16px 7px;
-}
-.minetable.sportRule tr td {
-  text-align: left;
-  padding: 10px 35px;
-  color: #fff;
-  line-height: 24px;
-  font-size: 14px;
-}
-.minetable.sportRule tr td span.remind {
-  color: #ff0000;
-  padding: 0px 3px;
-}
-.minetable.sportRule tr td button {
-  width: 10%;
-  height: auto;
-  padding: 8px 10px;
-  background: transparent;
-  border: solid 1px #ababab;
-  border-radius: 3px;
-  margin: 0px 8px 10px 0px;
-  color: #ababab;
-}
-.minetable.sportRule tr td button:hover, .minetable.sportRule tr td button:active, .minetable.sportRule tr td button.active {
-  background: #cacaca;
-  color: #000;
-}
-.minetable.sportRule tr td p {
-  padding: 8px 0px;
-}
-.minetable.sportRule tr td .conversionBoard {
-  margin: 2% auto;
-}
-.minetable.sportRule tr td .conversionBoard tr:nth-of-type(1) td, .minetable.sportRule tr td .conversionBoard tr:last-child td {
-  padding: 0px;
-}
-.minetable.sportRule tr td .conversionBoard tr td {
-  vertical-align: middle;
-  border: solid 1px #8f8f8f;
-  height: 45px;
-  width: 7%;
-  font-size: 13px;
-  line-height: 15px;
-  color: #ababab;
-  text-align: center;
-}
-.minetable.sportRule tr td .conversionBoard tr td.title {
-  width: 9%;
-  background: #505050;
+  background: #dfdfdf;
 }
 .minetable.callus {
   width: 1150px;
 }
 .minetable.callus tr th .remind {
-  color: #ababab;
+  color: #595959;
   font-size: 14px;
   margin-right: 20px;
   float: right;
@@ -3435,7 +3399,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url(../images/infor3.png) no-repeat;
   top: -1px;
   left: -18px;
 }
@@ -3444,17 +3408,17 @@ main .bg {
 }
 .minetable.callus tr td .box {
   width: 96%;
-  border: solid 1px #727272;
+  border: solid 1px #e3e3e3;
   box-sizing: border-box;
   margin: 0px auto;
   font-size: 0px;
   padding: 15px 0px;
-  background: #242424;
+  background: #ffffff;
 }
 .minetable.callus tr td .box .line {
   width: 1px;
   height: 40px;
-  background: #727272;
+  background: #dfdfdf;
   position: absolute;
   right: 0px;
   top: 50%;
@@ -3481,7 +3445,7 @@ main .bg {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("../images/contact_ic2.png") no-repeat;
+  background: url("../images/contact_ic3.png") no-repeat;
   background-size: 500%;
   margin-left: 30px;
   margin: 0px 0px 6px 30px;
@@ -3502,7 +3466,7 @@ main .bg {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: url("../images/joinus_ic2.png") no-repeat;
+  background: url("../images/joinus_ic3.png") no-repeat;
   background-size: 500%;
   margin-left: 25px;
   transform: translateY(5px);
@@ -3518,7 +3482,7 @@ main .bg {
   width: 85%;
   height: 100%;
   font-size: 15px;
-  color: #dfdfdf;
+  color: #454545;
   position: relative;
   padding-left: 30px;
   box-sizing: border-box;
@@ -3539,28 +3503,29 @@ main .bg {
 }
 .minetable.callus tr td .box .half p span.remind {
   font-size: 12px;
-  color: #ababab;
+  color: #595959;
 }
 .minetable.callus tr td .box .half p button {
   margin: 8px 24px 0px 0px;
-  border: solid 1px #707070;
-  background: #2b2b2b;
+  border: none;
+  background: #ffffff;
   padding: 5px 8px;
   border-radius: 3px;
-  color: #d1d1d1;
+  color: #454545;
   position: absolute;
   right: 0px;
   top: 5px;
+  box-shadow: 1px 2px 4px 0px #00000049;
 }
 .minetable.callus tr td .box .half p button:hover, .minetable.callus tr td .box .half p button:active, .minetable.callus tr td .box .half p button.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetable.callus tr td .box .half .rowbut {
   display: inline-block;
   position: relative;
-  background: #353535;
+  background: #f5f5f5;
   padding: 8px 12px;
   border-radius: 20px;
   position: relative;
@@ -3573,32 +3538,32 @@ main .bg {
   animation: rowbut 0.3s ease-out 0s;
 }
 .minetable.callus tr td .box .half .rowbut.lside span:nth-of-type(2) {
-  color: #ababab;
+  color: #595959;
 }
 .minetable.callus tr td .box .half .rowbut.rside .innbut {
   left: 49.5%;
   animation: rowbut2 0.3s ease-out 0s;
 }
 .minetable.callus tr td .box .half .rowbut.rside span:nth-of-type(1) {
-  color: #ababab;
+  color: #595959;
 }
 .minetable.callus tr td .box .half .rowbut .innbut {
   display: block;
   width: 48%;
   height: 80%;
-  background: #2d2d2d;
+  background: #ffffff;
   position: absolute;
   left: 3%;
   top: 10%;
   border-radius: 20px;
   box-sizing: border-box;
-  border: solid 1px #2cbd0d;
+  border: solid 1px #356bf7;
 }
 .minetable.callus tr td .box .half .rowbut span {
   font-size: 15px;
   position: relative;
   padding-right: 17px;
-  color: #2cbd0d;
+  color: #356bf7;
 }
 .minetable.callus tr td .box .half .rowbut span:last-child {
   padding: 0px;
@@ -3627,7 +3592,7 @@ main .bg {
 .minetable.callus tr td .box .officalimg p {
   font-size: 14px;
   line-height: 20px;
-  color: #fff;
+  color: #454545;
 }
 .minetable.callus tr td .box .partnerimg {
   display: inline-block;
@@ -3664,19 +3629,19 @@ main .bg {
 .minetable.callus tr td .box .partnerimg p {
   font-size: 14px;
   line-height: 20px;
-  color: #fff;
+  color: #454545;
 }
 .minetable.callus tr td .bigBox {
   display: inline-block;
   width: 31%;
   height: 170px;
-  border: solid 1px #727272;
+  border: solid 1px #e3e3e3;
   box-sizing: border-box;
   margin-right: 12px;
   font-size: 0px;
   padding: 15px 0px;
   vertical-align: top;
-  background: #242424;
+  background: #ffffff;
 }
 .minetable.callus tr td .bigBox:last-child {
   margin: 0px;
@@ -3684,7 +3649,7 @@ main .bg {
 .minetable.callus tr td .bigBox .join_ic {
   width: 50px;
   height: 50px;
-  background: url("../images/joinus_ic2.png") no-repeat;
+  background: url("../images/joinus_ic3.png") no-repeat;
   background-size: 500%;
   margin: 15px auto;
 }
@@ -3696,11 +3661,11 @@ main .bg {
 }
 .minetable.callus tr td .bigBox p {
   font-size: 14px;
-  color: #fff;
+  color: #454545;
 }
 .minetable.callus tr td .bigBox p.remind {
   font-size: 13px;
-  color: #ababab;
+  color: #595959;
   padding-top: 10px;
 }
 .minetable.problem {
@@ -3709,7 +3674,7 @@ main .bg {
 .minetable.problem tr td {
   padding: 15px 15px 0px;
   text-align: left;
-  color: #dfdfdf;
+  color: #454545;
   font-size: 15px;
 }
 .minetable.problem tr td .inputBox {
@@ -3717,7 +3682,7 @@ main .bg {
 }
 .minetable.problem tr td .inputBox span {
   padding-right: 30px;
-  color: #dfdfdf;
+  color: #595959;
 }
 .minetable.problem tr td .inputBox label {
   display: inline-block;
@@ -3735,33 +3700,29 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 6px 5px 0px 5px;
-  border-color: #d2d2d2 transparent;
+  border-color: #8d8d8d transparent;
 }
 .minetable.problem tr td .inputBox label select {
-  border: solid 1px #858585;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
-  color: #c8c8c8;
+  background: #ffffff;
+  color: #454545;
   width: 156px;
   height: 36px;
   padding-left: 10px;
-  box-shadow: 1px 2px 5px 0px #1c1c1c;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
-.minetable.problem tr td .inputBox label select option {
-  background: #373737;
-}
 .minetable.problem tr td .line {
   width: 100%;
   height: 1px;
-  background: #808080;
+  background: #dfdfdf;
   margin: 15px auto 0px;
 }
 .minetable.problem tr td .sword {
   font-size: 12px;
-  color: #b8b8b8;
+  color: #929292;
 }
 .minetable.problem tr td textarea {
   width: 100%;
@@ -3770,29 +3731,28 @@ main .bg {
   box-sizing: border-box;
   outline: none;
   padding: 10px;
-  color: #fff;
+  color: #454545;
   font-size: 15px;
   resize: none;
   border-radius: 3px;
-  border-color: #5d5d5d;
-}
-.minetable.problem tr td textarea::placeholder {
-  color: #666666;
+  border-color: #e3e3e3;
+  background: #ffffff;
 }
 .minetable.problem tr td .upimg {
   background: transparent;
-  border: solid 1px #5d5d5d;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
   width: 70px;
   height: 70px;
-  color: #a3a3a3;
+  color: #454545;
+  background: #ffffff;
   font-size: 12px;
 }
 .minetable.problem tr td .upimg:hover, .minetable.problem tr td .upimg:active, .minetable.problem tr td .upimg.active {
-  border-color: #33bc19;
-  box-shadow: 0px 0px 10px 2px #27581d;
+  border-color: #356bf7;
+  box-shadow: 0px 0px 10px 2px #00000017;
   transition: all 0.3s;
-  color: #33bc19;
+  color: #356bf7;
 }
 .minetable.problem tr td .upimg:hover span, .minetable.problem tr td .upimg:active span, .minetable.problem tr td .upimg.active span {
   background-position-y: 100%;
@@ -3801,7 +3761,7 @@ main .bg {
   display: block;
   width: 24px;
   height: 19px;
-  background: url(../images/uploadimg2.png);
+  background: url(../images/uploadimg3.png);
   background-size: 100%;
   margin: 0px auto 5px;
 }
@@ -3809,7 +3769,7 @@ main .bg {
   float: right;
 }
 .minetable.problem tr td .remind {
-  color: #bfbfbf;
+  color: #595959;
   font-size: 14px;
   margin: 10px 0px 0px 20px;
   float: left;
@@ -3821,40 +3781,45 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
-  top: 0px;
+  background: url(../images/infor3.png) no-repeat;
+  top: -1px;
   left: -18px;
 }
 .minetable.problem tr td .uploadImg {
   width: 220px;
   height: 36px;
-  color: #232323;
+  color: #454545;
   font-size: 16px;
   float: right;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  background: #ffffff;
   border-radius: 5px;
   margin-bottom: 15px;
-  border: solid 1px #7af537;
+  border: none;
+  box-shadow: 1px 2px 4px 0px #00000049;
 }
 .minetable.problem tr td .uploadImg:hover, .minetable.problem tr td .uploadImg:active, .minetable.problem tr td .uploadImg.active {
-  border-color: #87d620;
   color: #ffffff;
-  background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
+  box-shadow: none;
+  background: #356bf7;
 }
 .minetable.innerActive {
   width: 1000px;
   margin: 0px auto 20px;
 }
 .minetable.innerActive tr {
-  border-bottom: solid 1px #ababab;
+  border-bottom: solid 1px #dfdfdf;
 }
 .minetable.innerActive tr:nth-of-type(2n) {
-  background: #5e5e5e;
+  background: #ffffff;
+}
+.minetable.innerActive tr th {
+  background: #356bf7;
+  color: #ffffff;
 }
 .minetable.innerActive tr td {
   padding: 10px;
-  color: #fff;
-  border-right: solid 1px #ababab;
+  color: #454545;
+  border-right: solid 1px #dfdfdf;
 }
 .minetable.innerActive tr td:last-child {
   border: none;
@@ -3864,18 +3829,18 @@ main .bg {
   float: left;
 }
 .minetable.download tr td p {
-  color: #fff;
+  color: #454545;
   padding: 10px;
   font-size: 14px;
 }
 .minetable.download tr td .codeBox {
   width: 80%;
-  border: solid 1px #727272;
+  border: solid 1px #e3e3e3;
   padding: 10px;
   box-sizing: border-box;
   font-size: 0px;
   margin: 20px auto 10px;
-  background: #242424;
+  background: #ffffff;
 }
 .minetable.download tr td .codeBox.control {
   margin: 20px auto;
@@ -3889,7 +3854,7 @@ main .bg {
 }
 .minetable.download tr td .codeBox .versionWord span {
   display: block;
-  color: #4dff00;
+  color: #356bf7;
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 15px;
@@ -3921,30 +3886,31 @@ main .bg {
   box-sizing: border-box;
 }
 .minetable.download tr td .codeBox div button {
-  background: transparent;
-  border: solid 1px #ababab;
+  background: #ffffff;
+  border: none;
   border-radius: 3px;
   padding: 5px 8px;
-  color: #fff;
+  color: #454545;
+  box-shadow: 1px 2px 4px 0px #00000049;
 }
 .minetable.download tr td .codeBox div button:hover, .minetable.download tr td .codeBox div button:active, .minetable.download tr td .codeBox div button.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetable.download tr td .bowserBox {
   width: 90%;
   height: auto;
   padding: 10px;
   margin: 19px auto;
-  border: solid 1px #727272;
-  background: #242424;
+  border: solid 1px #e3e3e3;
+  background: #ffffff;
 }
 .minetable.download tr td .bowserBox .bowser {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("../images/download_app_browser2.png") no-repeat;
+  background: url("../images/download_app_browser3.png") no-repeat;
   background-size: 200%;
 }
 .minetable.download tr td .bowserBox .bowser.ie {
@@ -3963,26 +3929,27 @@ main .bg {
   display: block;
 }
 .minetable.download tr td .bowserBox button {
-  background: transparent;
-  border: solid 1px #ababab;
+  background: #ffffff;
+  border: none;
   border-radius: 3px;
   padding: 5px 8px;
-  color: #fff;
+  color: #454545;
   position: absolute;
   right: 0px;
   top: 19px;
+  box-shadow: 1px 2px 4px 0px #00000049;
 }
 .minetable.download tr td .bowserBox button:hover, .minetable.download tr td .bowserBox button:active, .minetable.download tr td .bowserBox button.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetable.withdrawl {
   width: 1150px;
 }
 .minetable.withdrawl tr td {
   padding: 15px;
-  color: #ededed;
+  color: #454545;
 }
 .minetable.withdrawl tr td p {
   font-size: 14px;
@@ -3998,17 +3965,17 @@ main .bg {
   width: 180px;
   height: 36px;
   box-sizing: border-box;
-  border: solid 1px #858585;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
-  color: #fff;
+  color: #454545;
   padding-left: 10px;
-  background: linear-gradient(to top, #333333 0%, #272727 100%);
+  background: #ffffff;
 }
 .minetable.withdrawl tr td .inputBox input::placeholder {
-  color: #999999;
+  color: #595959;
 }
 .minetable.withdrawl tr td .inputBox .remind {
-  color: #bfbfbf;
+  color: #454545;
   margin-left: 30px;
   font-size: 14px;
   position: relative;
@@ -4018,7 +3985,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url(../images/infor3.png) no-repeat;
   top: 0px;
   left: -18px;
 }
@@ -4026,24 +3993,24 @@ main .bg {
   width: 180px;
   height: 36px;
   font-weight: bold;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  color: #232323;
+  background: #ffffff;
+  color: #356bf7;
   border-radius: 3px;
-  border: solid 1px #7af537;
+  border: solid 1px #356bf7;
   margin-top: 15px;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .minetable.withdrawl tr td .inputBox button:hover, .minetable.withdrawl tr td .inputBox button:active, .minetable.withdrawl tr td .inputBox button.active {
   color: #ffffff;
-  border-color: #87d620;
-  background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
+  background: #356bf7;
 }
 .minetable.withdrawl tr td .box {
   display: inline-block;
   width: 31%;
   height: auto;
   margin-right: 12px;
-  background: #292929;
-  border: solid 1px #5d5d5d;
+  background: #ffffff;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
   box-sizing: border-box;
   overflow: hidden;
@@ -4053,12 +4020,12 @@ main .bg {
 }
 .minetable.withdrawl tr td .box .title {
   padding: 10px 20px;
-  border-bottom: solid 1px #5d5d5d;
+  border-bottom: solid 1px #e3e3e3;
 }
 .minetable.withdrawl tr td .box .content p {
   width: 100%;
   font-size: 22px;
-  color: #fff;
+  color: #454545;
   text-align: center;
   padding: 20px 0px 15px;
 }
@@ -4066,7 +4033,7 @@ main .bg {
   display: block;
   font-size: 14px;
   padding-bottom: 15px;
-  color: #bfbfbf;
+  color: #595959;
 }
 .minetable.transpoint {
   width: 1150px;
@@ -4092,7 +4059,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 7px 6px 0px 6px;
-  border-color: #d2d2d2 transparent;
+  border-color: #8d8d8d transparent;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
@@ -4101,29 +4068,26 @@ main .bg {
   width: 240px;
   height: 40px;
   box-sizing: border-box;
-  border: solid 1px #828282;
-  box-shadow: 0px 2px 5px 0px #1c1c1c;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  border: solid 1px #e3e3e3;
+  background: #ffffff;
   border-radius: 3px;
   padding-left: 10px;
-  color: #d2d2d2;
+  color: #454545;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-.minetable.transpoint tr td .inputBox label select option {
-  background: #373737;
 }
 .minetable.transpoint tr td .inputBox .arrow {
   display: inline-block;
   width: 32px;
   height: 20px;
-  background: url(../images/arrow_trans2.png) no-repeat;
+  background: url(../images/arrow_trans3.png) no-repeat;
+  background-size: 100%;
   margin: 0px 10px -5px 10px;
 }
 .minetable.transpoint tr td p {
   margin: 20px 0px;
-  color: #bfbfbf;
+  color: #454545;
   font-size: 14px;
   font-weight: bold;
 }
@@ -4136,7 +4100,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url(../images/infor3.png) no-repeat;
   top: 0px;
   left: -18px;
 }
@@ -4144,34 +4108,35 @@ main .bg {
   width: 240px;
   height: 40px;
   box-sizing: border-box;
-  border: solid 1px #858585;
-  background: linear-gradient(to top, #333333 0%, #272727 100%);
+  border: solid 1px #e3e3e3;
+  background: #ffffff;
   border-radius: 3px;
   padding-left: 10px;
-  color: #999999;
+  color: #454545;
 }
 .minetable.transpoint tr td button {
   display: block;
   width: 240px;
   height: 40px;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
-  border: solid 1px #7af537;
+  background: #ffffff;
+  border: solid 1px #356bf7;
   border-radius: 3px;
   font-size: 16px;
-  color: #232323;
+  color: #356bf7;
   margin: 10px 0px 20px;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .minetable.transpoint tr td button:hover, .minetable.transpoint tr td button:active, .minetable.transpoint tr td button.active {
-  border-color: #87d620;
   color: #ffffff;
-  background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
+  background: #356bf7;
+  box-shadow: none;
 }
 .minetable.payStyle {
   width: 1150px;
 }
 .minetable.payStyle tr th .remind {
   float: right;
-  color: #898989;
+  color: #595959;
   margin-right: 20px;
   font-size: 12px;
   position: relative;
@@ -4182,7 +4147,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url("../images/infor3.png") no-repeat;
   top: 2px;
   left: -18px;
 }
@@ -4195,24 +4160,24 @@ main .bg {
 .minetable.payStyle tr td button {
   width: 10%;
   height: 90px;
-  border: solid 1px #858585;
-  background: #3d3d3d;
+  border: solid 1px transparent;
+  background: #ffffff;
   border-radius: 3px;
-  color: #d2d2d2;
+  color: #595959;
   margin: 0px 15px 20px;
   position: relative;
   overflow: hidden;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .minetable.payStyle tr td button:hover, .minetable.payStyle tr td button:active, .minetable.payStyle tr td button.active {
-  border-color: #47a215;
-  background: linear-gradient(to top, #242424 0%, #1b1b1b 100%);
+  border-color: #356bf7;
 }
 .minetable.payStyle tr td button:hover::before, .minetable.payStyle tr td button:active::before, .minetable.payStyle tr td button.active::before {
   content: "";
   position: absolute;
   width: 30px;
   height: 29px;
-  background: url(../images/box_check2.png);
+  background: url("../images/box_check3.png");
   right: -1px;
   bottom: -1px;
 }
@@ -4286,23 +4251,19 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 7px 6px 0px 6px;
-  border-color: #d2d2d2 transparent;
+  border-color: #8d8d8d transparent;
 }
 .minetable.tbank tr td label select {
   width: 240px;
   height: 40px;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
-  border: solid 1px #858585;
+  background: #ffffff;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
-  color: #d2d2d2;
+  color: #595959;
   padding-left: 10px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  box-shadow: 0px 2px 5px 0px #1c1c1c;
-}
-.minetable.tbank tr td label select option {
-  background: #373737;
 }
 .minetable.tnum {
   width: 1150px;
@@ -4336,7 +4297,7 @@ main .bg {
 .minetable.tnum tr td .half .inputBox span {
   display: inline-block;
   width: 110px;
-  color: #cacaca;
+  color: #595959;
   font-size: 14px;
   padding-right: 15px;
 }
@@ -4356,47 +4317,42 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 7px 6px 0px 6px;
-  border-color: #d2d2d2 transparent;
+  border-color: #8d8d8d transparent;
 }
 .minetable.tnum tr td .half .inputBox label select {
   width: 220px;
   height: 40px;
   padding-left: 10px;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
-  border: solid 1px #858585;
-  color: #d2d2d2;
+  background: #ffffff;
+  border: solid 1px #e3e3e3;
+  color: #454545;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  box-shadow: 0px 2px 5px 0px #1c1c1c;
-}
-.minetable.tnum tr td .half .inputBox label select option {
-  background: #373737;
 }
 .minetable.tnum tr td .half .inputBox input {
   width: 220px;
   height: 40px;
   padding-left: 10px;
-  border: solid 1px #858585;
-  background: linear-gradient(to top, #333333 0%, #272727 100%);
-  color: #d2d2d2;
+  border: solid 1px #e3e3e3;
+  background: #ffffff;
+  color: #454545;
   border-radius: 3px;
   box-sizing: border-box;
-  box-shadow: 0px 2px 5px 0px #1c1c1c;
 }
 .minetable.tnum tr td .half .inputBox button {
-  color: #dddddd;
+  color: #595959;
   padding: 5px 8px;
-  border: solid 1px #707070;
   border-radius: 3px;
-  background: #252525;
+  background: #ffffff;
   margin-left: 20px;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .minetable.tnum tr td .half .inputBox button:hover, .minetable.tnum tr td .half .inputBox button:active, .minetable.tnum tr td .half .inputBox button.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetable.tnetcard {
   width: 1150px;
@@ -4407,21 +4363,21 @@ main .bg {
 .minetable.tnetcard tr td button {
   width: 150px;
   height: auto;
-  border: solid 1px #8c8c8c;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  background: #ffffff;
   border-radius: 3px;
-  color: #c9c9c9;
+  color: #595959;
   line-height: 35px;
   font-size: 18px;
   margin-right: 15px;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .minetable.tnetcard tr td button:last-child {
   margin: 0px;
 }
 .minetable.tnetcard tr td button:hover, .minetable.tnetcard tr td button:active, .minetable.tnetcard tr td button.active {
-  background: #202020;
-  color: #2ea31b;
-  border-color: #247f16;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetable.tnetcard tr td button:hover span, .minetable.tnetcard tr td button:active span, .minetable.tnetcard tr td button.active span {
   background-position-y: 100%;
@@ -4430,7 +4386,7 @@ main .bg {
   display: inline-block;
   width: 25px;
   height: 22px;
-  background: url("../images/change2.png") no-repeat;
+  background: url("../images/change3.png") no-repeat;
   margin: 0px 10px -5px 0px;
 }
 .minetable.tbank, .minetable.tnum, .minetable.tnetcard {
@@ -4449,21 +4405,21 @@ main .bg {
 .minetable.depositMoney tr td .moneybut {
   width: 150px;
   height: auto;
-  border: solid 1px #8c8c8c;
-  background: linear-gradient(to top, #373737 0%, #3d3d3d 100%);
+  background: #ffffff;
   border-radius: 3px;
-  color: #cccccc;
+  color: #595959;
   line-height: 35px;
   font-size: 18px;
   margin-right: 15px;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .minetable.depositMoney tr td .moneybut:last-child {
   margin: 0px;
 }
 .minetable.depositMoney tr td .moneybut:hover, .minetable.depositMoney tr td .moneybut:active, .minetable.depositMoney tr td .moneybut.active {
-  border-color: #247f16;
-  background: #202020;
-  color: #2ea31b;
+  box-shadow: none;
+  background: #356bf7;
+  color: #ffffff;
 }
 .minetable.depositMoney tr td .inputBox {
   width: 100%;
@@ -4473,17 +4429,20 @@ main .bg {
 .minetable.depositMoney tr td .inputBox input {
   width: 240px;
   height: 40px;
-  border: solid 1px #858585;
-  background: linear-gradient(to top, #333333 0%, #272727 100%);
+  border: solid 1px #e3e3e3;
+  background: #ffffff;
   border-radius: 3px;
   box-sizing: border-box;
   padding-left: 10px;
   color: #8d8d8d;
   font-size: 14px;
 }
+.minetable.depositMoney tr td .inputBox input::placeholder {
+  color: #8d8d8d;
+}
 .minetable.depositMoney tr td .inputBox .remind {
   display: inline-block;
-  color: #fff;
+  color: #595959;
   margin-left: 30px;
   font-size: 14px;
   position: relative;
@@ -4493,7 +4452,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url("../images/infor3.png") no-repeat;
   top: 0px;
   left: -18px;
 }
@@ -4501,17 +4460,17 @@ main .bg {
   display: block;
   width: 240px;
   height: 40px;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  background: #ffffff;
   border-radius: 3px;
   font-size: 16px;
-  color: #232323;
+  color: #356bf7;
   margin: 0px 0px 20px;
-  border: solid 1px #7af537;
+  border: solid 1px #356bf7;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .minetable.depositMoney tr td .depositBtn:hover, .minetable.depositMoney tr td .depositBtn:active, .minetable.depositMoney tr td .depositBtn.active {
-  border-color: #87d620;
   color: #ffffff;
-  background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
+  background: #356bf7;
 }
 
 .middle {
@@ -4529,11 +4488,11 @@ main .bg {
   background-color: transparent;
 }
 .middle::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .middle::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to bottom, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .middle .mainBox {
@@ -4637,7 +4596,7 @@ main .bg {
 .hideboard {
   width: 1260px;
   height: 70px;
-  background: #131313;
+  background: #ededed;
   position: absolute;
   z-index: 5;
   left: 280px;
@@ -4647,12 +4606,12 @@ main .bg {
 .topfix {
   width: calc(100% - 660px);
   height: 50px;
-  border-radius: 3px;
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
+  background: #ededed;
   position: absolute;
   top: 10px;
   left: 280px;
   z-index: 6;
+  border-bottom: solid 1px #dfdfdf;
 }
 .topfix.innerMode {
   top: 126px;
@@ -4669,7 +4628,7 @@ main .bg {
   display: block;
 }
 .topfix .nor i {
-  color: #dddddd;
+  color: #356bf7;
   font-size: 18px;
   margin: 0px 6px 0px 12px;
   transform: translateY(2px);
@@ -4679,11 +4638,11 @@ main .bg {
   height: 18px;
   margin: 0px 6px 0px 12px;
   transform: translateY(4px);
-  fill: #dddddd;
+  fill: #356bf7;
 }
 .topfix .nor .gameName {
   display: inline-block;
-  color: #fefefe;
+  color: #356bf7;
   font-size: 13px;
 }
 .topfix .nor .reWeb {
@@ -4700,24 +4659,24 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 8px 6px 0px 6px;
-  border-color: #fff transparent;
+  border-color: #8d8d8d transparent;
   right: 10px;
   top: 22px;
   pointer-events: none;
 }
 .topfix .nor .reWeb select {
-  background: #2b2b2b;
-  color: #dddddd;
+  background: #ffffff;
+  color: #595959;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding: 5px 30px 4px 5px;
-  border: solid 1px #707070;
+  border: solid 1px #e3e3e3;
   font-size: 12px;
 }
 .topfix .nor .reWeb .clock {
   position: absolute;
-  background: #2b2b2b;
+  background: #595959;
   top: 50%;
   right: -36px;
   width: 30px;
@@ -4726,7 +4685,7 @@ main .bg {
   line-height: 24px;
   text-align: center;
   border-radius: 3px;
-  color: #37bb18;
+  color: #ffffff;
 }
 .topfix .nor .reWeb .reBtn {
   position: absolute;
@@ -4735,10 +4694,10 @@ main .bg {
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  border: solid 1px #848484;
+  border: solid 1px #595959;
   border-radius: 20px;
   cursor: pointer;
-  background: #313131;
+  background: #ededed;
 }
 .topfix .nor .reWeb .reBtn i {
   font-size: 14px;
@@ -4747,13 +4706,14 @@ main .bg {
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0px;
-  color: #c9c9c9;
+  color: #595959;
 }
 .topfix .nor .reWeb .reBtn:hover, .topfix .nor .reWeb .reBtn:active, .topfix .nor .reWeb .reBtn.active {
-  background: #fff;
+  background: #356bf7;
+  border-color: #356bf7;
 }
 .topfix .nor .reWeb .reBtn:hover i, .topfix .nor .reWeb .reBtn:active i, .topfix .nor .reWeb .reBtn.active i {
-  color: #000;
+  color: #ffffff;
 }
 .topfix .nor .kind, .topfix .nor .sort, .topfix .nor .chooseLeague {
   float: right;
@@ -4770,28 +4730,28 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 8px 6px 0px 6px;
-  border-color: #bfbfbf transparent;
+  border-color: #8d8d8d transparent;
   right: 10px;
   top: 20px;
   pointer-events: none;
 }
 .topfix .nor .kind select, .topfix .nor .sort select, .topfix .nor .chooseLeague select {
-  background: #2b2b2b;
-  color: #dddddd;
+  background: #ffffff;
+  color: #595959;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding: 5px 30px 3px 5px;
-  border: solid 1px #707070;
+  border: solid 1px #e3e3e3;
 }
 .topfix .nor .kind select span, .topfix .nor .sort select span, .topfix .nor .chooseLeague select span {
   display: none;
 }
 .topfix .nor .chooseLeague span {
-  background: #2b2b2b;
-  color: #dddddd;
+  background: #ffffff;
+  color: #595959;
   padding: 7px 30px 4px 5px;
-  border: solid 1px #707070;
+  border: solid 1px #e3e3e3;
   cursor: pointer;
 }
 .topfix .nor .timeSelect {
@@ -4809,7 +4769,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 10px 13px 10px 0px;
-  border-color: transparent #b2b2b2;
+  border-color: transparent #595959;
   cursor: pointer;
   transform: translateY(4px);
   transform-origin: 10px 32px;
@@ -4823,16 +4783,13 @@ main .bg {
 .topfix .nor .timeSelect .date {
   display: inline-block;
   margin: 0px 10px;
-  color: #e0e0e0;
+  color: #595959;
   cursor: pointer;
   position: relative;
 }
-.topfix .nor .timeSelect .date:hover .arrow, .topfix .nor .timeSelect .date:active .arrow, .topfix .nor .timeSelect .date.active .arrow {
-  border-color: #fff transparent;
-}
 .topfix .nor .timeSelect .date .total {
   display: inline-block;
-  background: #131313;
+  background: #595959;
   border-radius: 3px;
   margin-left: 10px;
   line-height: 22px;
@@ -4840,14 +4797,14 @@ main .bg {
   text-align: center;
 }
 .topfix .nor .timeSelect .date .total span {
-  color: #33ba04;
+  color: #ffffff;
 }
 .topfix .nor .timeSelect .date .arrow {
   display: inline-block;
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-color: #747474 transparent;
+  border-color: #595959 transparent;
   border-width: 8px 6px 0px 6px;
   margin-left: 10px;
 }
@@ -4858,11 +4815,10 @@ main .bg {
   top: 50px;
   width: 143px;
   height: auto;
-  background: #333333;
+  background: #ffffff;
   line-height: 30px;
   border-radius: 0px 0px 3px 3px;
-  border: solid 1px #6e6e6e;
-  border-top: none;
+  box-shadow: 0px 0px 5px 0px #00000017;
 }
 .topfix .nor .timeSelect .date .moreTimeList.display {
   display: block;
@@ -4870,19 +4826,22 @@ main .bg {
 .topfix .nor .timeSelect .date .moreTimeList li {
   text-align: center;
   font-size: 14px;
-  border-bottom: solid 1px #6e6e6e;
-  color: #e0e0e0;
-}
-.topfix .nor .timeSelect .date .moreTimeList li:last-child {
-  border: none;
+  color: #595959;
 }
 .topfix .nor .timeSelect .date .moreTimeList li:hover, .topfix .nor .timeSelect .date .moreTimeList li:active, .topfix .nor .timeSelect .date .moreTimeList li.active {
-  background: #444444;
+  background: #356bf7;
+  color: #ffffff;
+}
+.topfix .nor .timeSelect .date .moreTimeList li:hover .total, .topfix .nor .timeSelect .date .moreTimeList li:active .total, .topfix .nor .timeSelect .date .moreTimeList li.active .total {
+  background: #ffffff;
+}
+.topfix .nor .timeSelect .date .moreTimeList li:hover .total span, .topfix .nor .timeSelect .date .moreTimeList li:active .total span, .topfix .nor .timeSelect .date .moreTimeList li.active .total span {
+  color: #454545;
 }
 .topfix .nor .timeSelect .smallBtn {
-  background: #212121;
-  border: solid 1px #6a8e2a;
-  color: #bfbfbf;
+  background: #ffffff;
+  border: solid 1px #e3e3e3;
+  color: #595959;
   padding: 5px 10px 6px;
   border-radius: 3px;
   margin: 0px 3px;
@@ -4891,9 +4850,9 @@ main .bg {
   margin-left: 10px;
 }
 .topfix .nor .timeSelect .smallBtn:hover, .topfix .nor .timeSelect .smallBtn:active, .topfix .nor .timeSelect .smallBtn.active {
-  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
-  color: #33ba04;
-  border-color: #32980e;
+  background: #356bf7;
+  color: #ffffff;
+  border-color: #356bf7;
 }
 .topfix .inn {
   display: none;
@@ -4912,30 +4871,52 @@ main .bg {
 .topfix .inn li:nth-of-type(1) {
   margin-left: 90px;
 }
+.topfix .inn li:last-child button::after {
+  display: none;
+}
 .topfix .inn li:hover button, .topfix .inn li:active button, .topfix .inn li.active button {
-  border-color: #32980e;
-  color: #33ba04;
-  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
+  color: #356bf7;
+  background: #ffffff;
+}
+.topfix .inn li:hover button::before, .topfix .inn li:active button::before, .topfix .inn li.active button::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #356bf7;
 }
 .topfix .inn li button {
   width: 80px;
-  height: 50px;
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
-  border: solid 1px #7b7b7b;
+  height: 48px;
+  background: transparent;
   position: relative;
-  color: #bfbfbf;
+  color: #454545;
   padding: 0px 8px;
+  margin-right: 1px;
+  border-radius: 3px;
+}
+.topfix .inn li button::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 30px;
+  background: #dfdfdf;
+  right: -1px;
 }
 .topfix .inn .back {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 6px 8px 8px 21px;
-  background: #363636;
-  color: #d0d0d0;
-  border: solid 1px #727272;
+  background: #ffffff;
+  color: #595959;
   border-radius: 3px;
   left: 15px;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .topfix .inn .back::before {
   content: "";
@@ -4946,15 +4927,16 @@ main .bg {
   transform: translateY(-50%);
   left: 6px;
   border-style: solid;
-  border-color: transparent #b2b2b2;
+  border-color: transparent #8d8d8d;
   border-width: 6px 10px 6px 0px;
 }
 .topfix .inn .back:hover, .topfix .inn .back:active, .topfix .inn .back.active {
-  color: #535353;
-  background: #fff;
+  color: #ffffff;
+  background: #356bf7;
+  box-shadow: none;
 }
 .topfix .inn .back:hover::before, .topfix .inn .back:active::before, .topfix .inn .back.active::before {
-  border-color: transparent #535353;
+  border-color: transparent #ffffff;
 }
 .topfix .teach {
   width: 100%;
@@ -4964,18 +4946,25 @@ main .bg {
   font-size: 15px;
   height: 48px;
   line-height: 50px;
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
-  color: #bfbfbf;
+  color: #454545;
   cursor: pointer;
   padding: 0px 10px;
   text-align: center;
-  border: solid 1px #7b7b7b;
   border-radius: 3px;
+  position: relative;
 }
 .topfix .teach li:hover, .topfix .teach li:active, .topfix .teach li.active {
-  color: #33ba04;
-  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
-  border-color: #32980e;
+  color: #356bf7;
+  background: #ffffff;
+}
+.topfix .teach li:hover::before, .topfix .teach li:active::before, .topfix .teach li.active::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  background: #356bf7;
+  width: 100%;
+  height: 2px;
 }
 .topfix .teach li.name {
   color: #fff;
@@ -4984,12 +4973,11 @@ main .bg {
   pointer-events: none;
 }
 .topfix .teach .line {
-  display: none;
   width: 1px;
   height: 15px;
-  background: #bcbcbc;
+  background: #dfdfdf;
   float: left;
-  margin: 16px 10px 0px 10px;
+  margin-top: 16px;
 }
 .topfix .teach .line.long {
   height: 30px;
@@ -5008,20 +4996,21 @@ main .bg {
   top: 55px;
   left: 280px;
   z-index: 5;
-  background: #3a3a3a;
+  background: #ffffff;
   scrollbar-width: thin;
   text-align: center;
+  box-shadow: 0px 0px 5px 0px #00000049;
 }
 .chleague::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .chleague::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .chleague::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to bottom, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .chleague.display {
@@ -5057,7 +5046,7 @@ main .bg {
   position: relative;
   padding: 6px 5px;
   font-size: 13px;
-  color: #ababab;
+  color: #595959;
 }
 .chleague ul li p .cube {
   left: -20px;
@@ -5066,24 +5055,22 @@ main .bg {
 .chleague button {
   width: 160px;
   height: 36px;
-  border: 1px solid #37da14;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  background: #333333;
-  color: #37da14;
+  background: #356bf7;
+  color: #ffffff;
   margin-top: 15px;
 }
 .chleague button:hover, .chleague button:active, .chleague button.active {
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  border-color: #aef156;
-  color: #222222;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  color: #454545;
 }
 
 .filter {
   display: none;
-  background: rgba(0, 0, 0, 0.8);
-  width: 1920px;
+  background: #000000d7;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
@@ -5098,14 +5085,12 @@ main .bg {
   width: 800px;
   height: 375px;
   border-radius: 3px;
-  background: #242424;
+  background: #ededed;
   position: fixed;
   z-index: 20;
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
-  border: solid 1px #3e8a13;
-  box-shadow: 0px 0px 10px 5px #3f8a1385;
 }
 .conversionBox.display {
   display: block;
@@ -5115,30 +5100,30 @@ main .bg {
   height: 40px;
   line-height: 42px;
   text-align: center;
-  background: #242424;
-  color: #43dc16;
+  background: #356bf7;
+  color: #ffffff;
   border-radius: 3px 3px 0px 0px;
   font-size: 14px;
   font-weight: bold;
-  border-bottom: solid 1px #3e8a13;
+  border-bottom: solid 1px #dedede;
 }
 .conversionBox .innerBox {
   width: 94%;
   height: 285px;
-  background: #191919;
+  background: #ffffff;
   border-radius: 3px;
   margin: 3% auto;
-  border: solid 1px #494949;
+  border: solid 1px #e3e3e3;
 }
 .conversionBox .innerBox p {
-  color: #ffffff;
+  color: #356bf7;
   padding: 12px 14px;
   font-size: 14px;
 }
 .conversionBox .innerBox .baseline {
   width: 96%;
   height: 1px;
-  background: #494949;
+  background: #e3e3e3;
   margin: 0px auto;
 }
 .conversionBox button {
@@ -5146,11 +5131,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .conversionBox button::before {
   content: "";
@@ -5159,7 +5144,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .conversionBox button::after {
@@ -5169,7 +5154,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 
@@ -5307,39 +5292,37 @@ main .bg {
   width: 600px;
   height: 430px;
   border-radius: 3px;
-  background: #242424;
+  background: #ededed;
   position: fixed;
   z-index: 20;
   left: 50%;
   top: 15%;
   transform: translateX(-50%);
-  border: solid 1px #3e8a13;
-  box-shadow: 0px 0px 10px 5px #3f8a1385;
 }
 .controlBox h1 {
   width: 100%;
   height: 40px;
   line-height: 42px;
   text-align: center;
-  background: #242424;
-  color: #4be119;
+  background: #356bf7;
+  color: #ffffff;
   border-radius: 3px 3px 0px 0px;
   font-size: 14px;
   font-weight: bold;
-  border-bottom: solid 1px #3aad1b;
+  border-bottom: solid 1px #dedede;
 }
 .controlBox .innerBox1 {
   width: 96%;
   height: 90px;
   margin: 2% auto 0px;
-  background: #191919;
+  background: #ffffff;
   border-radius: 3px;
-  border: solid 1px #5b5b5b;
+  border: solid 1px #e3e3e3;
 }
 .controlBox .innerBox1 p {
   font-size: 14px;
   padding: 10px 12px;
-  color: #cdcdcd;
+  color: #356bf7;
 }
 .controlBox .innerBox1 p span {
   color: #c71526;
@@ -5350,7 +5333,7 @@ main .bg {
 .controlBox .innerBox1 .baseline {
   width: 100%;
   height: 1px;
-  background: #5b5b5b;
+  background: #e3e3e3;
 }
 .controlBox .innerBox1 .partingBox {
   height: 54px;
@@ -5359,14 +5342,14 @@ main .bg {
   text-align: right;
   line-height: 54px;
   font-size: 14px;
-  color: #b0b0b0;
+  color: #595959;
 }
 .controlBox .innerBox1 .partingBox .slideBase {
   float: right;
   margin: 9px 40px 0px 15px;
   width: 120px;
   height: 35px;
-  background: #353535;
+  background: #ededed;
   border-radius: 40px;
   position: relative;
 }
@@ -5374,13 +5357,13 @@ main .bg {
   left: 2%;
 }
 .controlBox .innerBox1 .partingBox .slideBase.lSide p:nth-of-type(1) {
-  color: #2cbd0d;
+  color: #356bf7;
 }
 .controlBox .innerBox1 .partingBox .slideBase.rSide .slideBar {
   left: 49%;
 }
 .controlBox .innerBox1 .partingBox .slideBase.rSide p:nth-of-type(2) {
-  color: #2cbd0d;
+  color: #356bf7;
 }
 .controlBox .innerBox1 .partingBox .slideBase p {
   width: calc(50% - 2px);
@@ -5388,7 +5371,7 @@ main .bg {
   line-height: 36px;
   float: left;
   font-size: 12px;
-  color: #ababab;
+  color: #595959;
   text-align: center;
   padding: 0px;
   position: relative;
@@ -5407,10 +5390,10 @@ main .bg {
   width: 48%;
   height: 83%;
   top: 8%;
-  background: #2d2d2d;
+  background: #ffffff;
   border-radius: 30px;
   transition: all 0.2s;
-  border: solid 1px #2cbd0d;
+  border: solid 1px #356bf7;
 }
 .controlBox .innerBox1 .longBox {
   width: 100%;
@@ -5418,43 +5401,44 @@ main .bg {
   line-height: 54px;
   padding-left: 30px;
   font-size: 14px;
-  color: #b0b0b0;
+  color: #595959;
 }
 .controlBox .innerBox1 .longBox input {
   text-align: right;
-  background: #212121;
+  background: #ffffff;
   border-radius: 3px;
   width: 67px;
   height: 30px;
   padding-right: 10px;
   font-size: 16px;
-  color: #ababab;
+  color: #595959;
   margin-right: 4px;
-  border: solid 1px #ababab;
+  border: none;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .controlBox .innerBox1 .longBox input:nth-of-type(1) {
   margin-left: 20px;
 }
 .controlBox .innerBox1 .longBox input:hover, .controlBox .innerBox1 .longBox input:active, .controlBox .innerBox1 .longBox input.active {
-  background: linear-gradient(to right, #92e820 0%, #46dd16 90%);
-  border-color: #aef156;
-  color: #191919;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .controlBox .innerBox2 {
   width: calc(96% - 15px);
   height: 50px;
   margin: 2% auto 0px;
-  background: #191919;
+  background: #ffffff;
   border-radius: 3px;
   line-height: 50px;
-  color: #b0b0b0;
+  color: #356bf7;
   padding-left: 15px;
   font-size: 14px;
-  border: solid 1px #5b5b5b;
+  border: solid 1px #e3e3e3;
 }
 .controlBox .innerBox2 p {
   display: inline-block;
-  color: #d9d9d9;
+  color: #8d8d8d;
   margin: 0px 35px;
   font-size: 15px;
   font-weight: bold;
@@ -5469,11 +5453,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .controlBox .cancelBtn::before {
   content: "";
@@ -5482,7 +5466,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .controlBox .cancelBtn::after {
@@ -5492,7 +5476,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .controlBox.display {
@@ -5503,17 +5487,18 @@ main .bg {
   display: block;
   width: 12px;
   height: 12px;
-  background: #393939;
+  background: linear-gradient(to top, #ffffff 34%, #e5e5e5 100%);
   border-style: solid;
   border-width: 1px;
-  border-color: #3a3a3a #474747 #626262;
-  box-shadow: 0px 0px 5px 2px #181818 inset;
+  border-color: #d0d0d0;
   border-radius: 3px;
   position: absolute;
   cursor: pointer;
 }
 .cube.active {
-  box-shadow: 0px 0px 5px 2px #181818 inset, 0px 0px 2px 1px #587920;
+  border-color: #b3c7fc;
+  box-shadow: 0px 0px 5px 0px #d9e3fd;
+  background: #ffffff;
 }
 .cube.active::before {
   content: "";
@@ -5522,7 +5507,7 @@ main .bg {
   left: 0px;
   width: 18px;
   height: 18px;
-  background: url("../images/cubeArrow.png") no-repeat;
+  background: url("../images/cubeArrow2.png") no-repeat;
 }
 
 .norbetting {
@@ -5533,20 +5518,17 @@ main .bg {
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
-  background: #242424;
+  background: #356bf7;
   border-radius: 3px 3px 0px 0px;
   z-index: 16;
   text-align: left;
-  box-shadow: -4px -2px 10px 0px #3f8a1385, 4px -2px 10px 0px #3f8a1385;
-  border: solid 2px #3e8a13;
-  box-sizing: border-box;
 }
 .norbetting.display {
   display: block;
 }
 .norbetting .barname {
   line-height: 50px;
-  color: #4be119;
+  color: #ffffff;
   padding-left: 20px;
 }
 .norbetting .norcancelbtn {
@@ -5554,11 +5536,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .norbetting .norcancelbtn::before {
   content: "";
@@ -5567,7 +5549,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .norbetting .norcancelbtn::after {
@@ -5577,31 +5559,28 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .norbetting .nor_bettingbox {
-  width: 576px;
+  width: 580px;
   height: auto;
-  border: solid 2px #3e8a13;
   border-radius: 0px 0px 3px 3px;
-  border-top-width: 0px;
   overflow: hidden;
-  box-shadow: 4px 2px 10px 0px #3f8a1385, -4px 2px 10px 0px #3f8a1385;
-  transform: translate(-2px, -2px);
+  border-top: solid 1px #dedede;
 }
 .norbetting .nor_bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  background: #282828;
+  background: #fafafa;
 }
 .norbetting .nor_bettingbox .bettingtotal div {
   display: block;
   width: 180px;
   height: 100%;
-  color: #b0b0b0;
+  color: #595959;
   border-style: solid;
-  border-color: #626262;
+  border-color: #d8d8d8;
   border-width: 1px 1px 1px 0px;
   float: left;
   line-height: 45px;
@@ -5615,14 +5594,14 @@ main .bg {
 .norbetting .nor_bettingbox .bettingend {
   width: 100%;
   height: 140px;
-  background: #303030;
+  background: #ededed;
   padding-top: 15px;
 }
 .norbetting .nor_bettingbox .bettingend .endbox {
   width: 50%;
   text-align: right;
   float: left;
-  color: #b0b0b0;
+  color: #595959;
 }
 .norbetting .nor_bettingbox .bettingend .endbox input {
   width: 150px;
@@ -5631,12 +5610,12 @@ main .bg {
   border-radius: 3px;
   font-size: 16px;
   padding-left: 5px;
-  background: #1c1c1c;
-  border: solid 1px #858585;
-  color: #ffffff;
+  background: #ffffff;
+  border: solid 1px #e3e3e3;
+  color: #8d8d8d;
 }
 .norbetting .nor_bettingbox .bettingend .endbox input::placeholder {
-  color: #626262;
+  color: #8d8d8d;
   font-size: 14px;
 }
 .norbetting .nor_bettingbox .bettingend .endbox input:last-child {
@@ -5660,28 +5639,29 @@ main .bg {
   height: 35px;
   float: left;
   margin: 0px 3px 10px 3px;
-  border: solid 1px #6a8e2a;
+  border: none;
   border-radius: 5px;
   font-size: 17px;
-  color: #b0b0b0;
+  color: #595959;
   font-weight: bold;
   line-height: 36px;
-  background: #212121;
+  background: #ffffff;
+  box-shadow: 1px 2px 5px 0px #00000017;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button:hover, .norbetting .nor_bettingbox .bettingend .endbox button:active, .norbetting .nor_bettingbox .bettingend .endbox button.active {
-  background: #4fde17;
-  color: #292929;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn {
   width: 176px;
-  background: linear-gradient(to right, #57b21a 0%, #349a14 100%);
-  color: #191919;
-  border-color: #aef156;
+  color: #356bf7;
+  border: solid 1px #356bf7;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:hover, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:active, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  color: #46d317;
-  border-color: #2b7d16;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  color: #ffffff;
+  border: none;
 }
 
 .norbettingCheck {
@@ -5693,18 +5673,15 @@ main .bg {
   left: 50%;
   transform: translateX(-50%);
   top: 150px;
-  background: #242424;
+  background: #356bf7;
   border-radius: 3px 3px 0px 0px;
-  box-shadow: -4px -2px 10px 0px #3f8a1385, 4px -2px 10px 0px #3f8a1385;
-  border: solid 2px #3e8a13;
-  box-sizing: border-box;
 }
 .norbettingCheck.display {
   display: block;
 }
 .norbettingCheck .barname {
   line-height: 50px;
-  color: #4be119;
+  color: #ffffff;
   padding-left: 20px;
 }
 .norbettingCheck .checkCancelBtn {
@@ -5712,11 +5689,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .norbettingCheck .checkCancelBtn::before {
   content: "";
@@ -5725,7 +5702,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .norbettingCheck .checkCancelBtn::after {
@@ -5735,31 +5712,28 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .norbettingCheck .bettingbox {
-  width: 576px;
+  width: 580px;
   height: auto;
-  border: solid 2px #3e8a13;
-  border-top-width: 0px;
+  border-top: solid 1px #dedede;
   border-radius: 0px 0px 3px 3px;
   overflow: hidden;
-  box-shadow: 4px 2px 10px 0px #3f8a1385, -4px 2px 10px 0px #3f8a1385;
-  transform: translate(-2px, -2px);
 }
 .norbettingCheck .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  background: #282828;
+  background: #f7f7f7;
 }
 .norbettingCheck .bettingbox .bettingtotal div {
   display: block;
   width: 180px;
   height: 100%;
-  color: #b0b0b0;
+  color: #595959;
   border-style: solid;
-  border-color: #626262;
+  border-color: #d8d8d8;
   border-width: 1px 1px 1px 0px;
   float: left;
   line-height: 45px;
@@ -5773,7 +5747,7 @@ main .bg {
 .norbettingCheck .bettingbox .bettingend {
   width: 100%;
   height: 90px;
-  background: #303030;
+  background: #ededed;
 }
 .norbettingCheck .bettingbox .bettingend .endbox {
   width: 287px;
@@ -5781,15 +5755,15 @@ main .bg {
   text-align: left;
   float: left;
   margin-top: 20px;
-  color: #b0b0b0;
+  color: #595959;
 }
 .norbettingCheck .bettingbox .bettingend .endbox:last-child {
-  border-left: solid 1px #626262;
+  border-left: solid 1px #d8d8d8;
 }
 .norbettingCheck .bettingbox .bettingend .endbox p {
   margin: 0px 0px 0px 40px;
   line-height: 48px;
-  color: #43c31d;
+  color: #fa9819;
   font-size: 14px;
   position: relative;
 }
@@ -5798,7 +5772,7 @@ main .bg {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #3dab1e;
+  background: #f98d0f;
   border-radius: 12px;
   left: -25px;
   top: 14px;
@@ -5808,7 +5782,7 @@ main .bg {
   position: absolute;
   width: 4px;
   height: 8px;
-  border: solid 3px #22351c;
+  border: solid 3px #feebd5;
   border-width: 0px 2px 2px 0px;
   transform: rotate(45deg);
   top: 18px;
@@ -5819,6 +5793,9 @@ main .bg {
   line-height: 24px;
   margin-left: 10px;
 }
+.norbettingCheck .bettingbox .bettingend .endbox span .wd_darkblue {
+  color: #356bf7;
+}
 
 .bettingbar {
   display: none;
@@ -5827,11 +5804,10 @@ main .bg {
   position: fixed;
   margin: 0px 0px 0px 280px;
   bottom: 0px;
-  background: #3a3a3a;
+  background: #356bf7;
   border-radius: 3px 3px 0px 0px;
   z-index: 10;
   transition: 0.5s all;
-  border: solid 1px #2fac17;
 }
 .bettingbar.display {
   display: block;
@@ -5858,12 +5834,12 @@ main .bg {
   float: left;
   width: 24px;
   height: 24px;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   border-radius: 3px;
   margin: 13px 0px 0px 40px;
   line-height: 28px;
   font-size: 17px;
-  color: #161616;
+  color: #ffffff;
   position: relative;
   text-align: center;
   /*for IE 9*/
@@ -5887,7 +5863,7 @@ main .bg {
 .bettingbar .openBtn span {
   float: left;
   margin: 18px 0px 0px 10px;
-  color: #4fde17;
+  color: #ffffff;
   font-size: 16px;
 }
 .bettingbar .calbtn {
@@ -5896,19 +5872,17 @@ main .bg {
   position: absolute;
   right: 100px;
   top: 10px;
-  background: url("../images/calculator2.png") no-repeat;
+  background: url("../images/calculator.png") no-repeat;
 }
 .bettingbar .bettingbox {
-  width: calc(100% + 2px);
+  width: 100%;
   height: 0px;
-  background: #2f2f2f;
-  border: solid 1px #33bc19;
-  border-top-color: #7b7b7b;
+  background: #f5f5f5;
   box-sizing: border-box;
   overflow: hidden;
   transition: 0.5s all;
   position: absolute;
-  left: -1px;
+  left: 0px;
 }
 .bettingbar .bettingbox .bettingwindow {
   width: 100%;
@@ -5922,26 +5896,33 @@ main .bg {
   background-color: transparent;
 }
 .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .bettingbar .bettingbox .bettingwindow table {
-  width: 100%;
+  width: 95%;
+  margin: 10px auto;
   height: auto;
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 2px 8px 0px #00000049;
+  background: #ffffff;
+}
+.bettingbar .bettingbox .bettingwindow table:nth-of-type(1) {
+  margin: 5px auto;
 }
 .bettingbar .bettingbox .bettingwindow table tr {
   text-align: center;
 }
 .bettingbar .bettingbox .bettingwindow table tr th {
-  color: #c3c3c3;
+  color: #454545;
   font-size: 12px;
   padding: 8px 10px 9px;
-  background: #1e1e1e;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -5951,7 +5932,7 @@ main .bg {
 .bettingbar .bettingbox .bettingwindow table tr td {
   vertical-align: middle;
   font-size: 14px;
-  color: #bfbfbf;
+  color: #595959;
 }
 .bettingbar .bettingbox .bettingwindow table tr td:nth-of-type(1) {
   width: 10%;
@@ -5963,40 +5944,52 @@ main .bg {
   width: 45%;
 }
 .bettingbar .bettingbox .bettingwindow table tr td.tLeft {
-  border-left: solid 1px #8a8a8a;
+  position: relative;
   text-align: left;
   padding: 2px 8px;
 }
+.bettingbar .bettingbox .bettingwindow table tr td.tLeft::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  background: #dcdcdc;
+  width: 1px;
+  height: 95px;
+}
 .bettingbar .bettingbox .bettingwindow table tr td .pitcher {
-  color: #e9e9e9;
+  color: #356bf7;
 }
 .bettingbar .bettingbox .bettingwindow table tr td .odds {
-  color: #33ba04;
+  color: #356bf7;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p {
-  color: #e9e9e9;
+  color: #595959;
   font-size: 12px;
   line-height: 20px;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p.leagueName {
-  color: #c3c3c3;
+  color: #8d8d8d;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p .odds {
   padding-left: 10px;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p.vs {
-  color: #c3c3c3;
+  color: #8d8d8d;
 }
 .bettingbar .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  background: #171717;
-  color: #e7e7e7;
+  background: #fafafa;
+  color: #454545;
+  border-style: solid;
+  border-width: 1px 0px;
+  border-color: #356bf7 transparent #dcdcdc;
 }
 .bettingbar .bettingbox .bettingtotal div {
   width: 180px;
   height: 100%;
-  border-right: solid 1px #535353;
+  border-right: solid 1px #dcdcdc;
   float: left;
   line-height: 45px;
   font-size: 14px;
@@ -6007,13 +6000,13 @@ main .bg {
   border: none;
 }
 .bettingbar .bettingbox .bettingtotal div .remind {
-  color: #30aa06;
+  color: #356bf7;
   padding-left: 5px;
 }
 .bettingbar .bettingbox .bettingend {
   width: 100%;
   height: 197px;
-  background: #3a3a3a;
+  background: #f5f5f5;
 }
 .bettingbar .bettingbox .bettingend p {
   width: 100%;
@@ -6021,7 +6014,7 @@ main .bg {
   font-size: 14px;
   font-weight: bold;
   padding: 17px;
-  color: #e7e7e7;
+  color: #454545;
 }
 .bettingbar .bettingbox .bettingend .endbox {
   width: 50%;
@@ -6032,18 +6025,16 @@ main .bg {
   width: 150px;
   height: 31px;
   margin: 0px 5px 10px 0px;
-  background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
+  background: #ffffff;
   border-radius: 3px;
-  border: solid 1px #4f4f4f;
-  border-top: none;
-  box-shadow: 0px -1px 0px 0px #797979 inset;
+  border: solid 1px #e3e3e3;
   font-size: 16px;
   padding-left: 5px;
-  color: #ffffff;
+  color: #8d8d8d;
 }
 .bettingbar .bettingbox .bettingend .endbox input::placeholder {
   font-weight: bold;
-  color: #7d7d7d;
+  color: #8d8d8d;
   font-size: 15px;
 }
 .bettingbar .bettingbox .bettingend .endbox input:last-child {
@@ -6056,41 +6047,43 @@ main .bg {
   float: left;
   margin: 12px 0px 0px 15px;
   font-size: 14px;
-  color: #e7e7e7;
+  color: #454545;
 }
 .bettingbar .bettingbox .bettingend .endbox div .dollar {
   position: absolute;
   top: 10px;
   right: 20px;
-  color: #e7e7e7;
+  color: #595959;
 }
 .bettingbar .bettingbox .bettingend .endbox button {
   width: 85px;
   height: 35px;
   float: left;
   margin: 0px 3px 10px 3px;
-  border: solid 1px #6a8e2a;
+  border: none;
   border-radius: 5px;
   font-size: 17px;
-  color: #b0b0b0;
+  color: #454545;
   font-weight: bold;
   line-height: 36px;
-  background: #212121;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .bettingbar .bettingbox .bettingend .endbox button:hover, .bettingbar .bettingbox .bettingend .endbox button:active, .bettingbar .bettingbox .bettingend .endbox button.active {
-  background: #4fde17;
-  color: #292929;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .bettingbar .bettingbox .bettingend .endbox button.cur {
   width: 176px;
-  color: #191919;
-  background: #4fad18;
-  border-color: #aef156;
+  color: #356bf7;
+  background: #ffffff;
+  border: solid 1px #356bf7;
 }
 .bettingbar .bettingbox .bettingend .endbox button.cur:hover, .bettingbar .bettingbox .bettingend .endbox button.cur:active, .bettingbar .bettingbox .bettingend .endbox button.cur.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  color: #46d317;
-  border-color: #2b7d16;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  color: #ffffff;
+  border: none;
 }
 .bettingbar .bettingbox.open {
   height: 502px;
@@ -6104,23 +6097,20 @@ main .bg {
   z-index: 20;
   left: 35%;
   top: 150px;
-  background: #828282;
+  background: #356bf7;
   border-radius: 3px 3px 0px 0px;
-  border: solid 1px #2fac17;
-  box-shadow: -4px -2px 10px 0px #3f8a1385, 4px -2px 10px 0px #3f8a1385;
-  background: #242424;
 }
 .bettingCheck .num {
   display: block;
   float: left;
   width: 24px;
   height: 24px;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   border-radius: 5px;
   margin: 13px 0px 0px 15px;
   line-height: 28px;
   font-size: 17px;
-  color: #161616;
+  color: #ffffff;
   position: relative;
   text-align: center;
   /*for IE 9*/
@@ -6137,7 +6127,7 @@ main .bg {
   }
 }
 .bettingCheck .barword {
-  color: #4fde17;
+  color: #ffffff;
   float: left;
   margin: 18px 0px 0px 10px;
 }
@@ -6146,11 +6136,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .bettingCheck .cancelBtn::before {
   content: "";
@@ -6159,7 +6149,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .bettingCheck .cancelBtn::after {
@@ -6169,22 +6159,19 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .bettingCheck .bettingbox {
   width: 580px;
   height: 430px;
   margin-top: 50px;
-  background: #2f2f2f;
-  border: solid 1px #2fac17;
-  border-top-color: #7b7b7b;
+  background: #f5f5f5;
   border-radius: 0px 0px 3px 3px;
-  box-shadow: 4px 2px 10px 0px #3f8a1385, -4px 2px 10px 0px #3f8a1385;
   overflow: hidden;
   cursor: default;
   position: absolute;
-  left: -1px;
+  left: 0px;
 }
 .bettingCheck .bettingbox .bettingwindow {
   width: 100%;
@@ -6198,26 +6185,30 @@ main .bg {
   background-color: transparent;
 }
 .bettingCheck .bettingbox .bettingwindow::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .bettingCheck .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .bettingCheck .bettingbox .bettingwindow table {
-  width: 100%;
+  width: 95%;
+  margin: 10px auto;
   height: auto;
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 2px 8px 0px #00000049;
+  background: #ffffff;
 }
 .bettingCheck .bettingbox .bettingwindow table tr {
   text-align: center;
 }
 .bettingCheck .bettingbox .bettingwindow table tr th {
-  color: #c3c3c3;
+  color: #454545;
   font-size: 12px;
   padding: 8px 10px 9px;
-  background: #1e1e1e;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -6227,7 +6218,7 @@ main .bg {
 .bettingCheck .bettingbox .bettingwindow table tr td {
   vertical-align: middle;
   font-size: 14px;
-  color: #bfbfbf;
+  color: #595959;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td:nth-of-type(1) {
   width: 10%;
@@ -6239,40 +6230,52 @@ main .bg {
   width: 45%;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td.tLeft {
-  border-left: solid 1px #7b7b7b;
+  position: relative;
   text-align: left;
   padding: 2px 8px;
 }
+.bettingCheck .bettingbox .bettingwindow table tr td.tLeft::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  background: #dcdcdc;
+  width: 1px;
+  height: 95px;
+}
 .bettingCheck .bettingbox .bettingwindow table tr td .pitcher {
-  color: #bfbfbf;
+  color: #356bf7;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td .odds {
-  color: #33ba04;
+  color: #356bf7;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p {
-  color: #e9e9e9;
+  color: #595959;
   font-size: 12px;
   line-height: 20px;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p.leagueName {
-  color: #c3c3c3;
+  color: #8d8d8d;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p .odds {
   padding-left: 10px;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p.vs {
-  color: #c3c3c3;
+  color: #8d8d8d;
 }
 .bettingCheck .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  background: #171717;
-  color: #e7e7e7;
+  background: #fafafa;
+  color: #454545;
+  border-style: solid;
+  border-width: 1px 0px;
+  border-color: #356bf7 transparent #dcdcdc;
 }
 .bettingCheck .bettingbox .bettingtotal div {
   width: 180px;
   height: 100%;
-  border-right: solid 1px #535353;
+  border-right: solid 1px #dcdcdc;
   float: left;
   line-height: 45px;
   font-size: 14px;
@@ -6283,13 +6286,13 @@ main .bg {
   border: none;
 }
 .bettingCheck .bettingbox .bettingtotal div .remind {
-  color: #33ba04;
+  color: #356bf7;
   padding-left: 5px;
 }
 .bettingCheck .bettingbox .bettingend {
   width: 100%;
   height: 200px;
-  background: #3a3a3a;
+  background: #f5f5f5;
 }
 .bettingCheck .bettingbox .bettingend .endbox {
   width: 287px;
@@ -6299,12 +6302,12 @@ main .bg {
   margin-top: 25px;
 }
 .bettingCheck .bettingbox .bettingend .endbox:last-child {
-  border-left: solid 1px #888888;
+  border-left: solid 1px #dcdcdc;
 }
 .bettingCheck .bettingbox .bettingend .endbox .remind {
   margin: 0px 0px 0px 40px;
   line-height: 75px;
-  color: #43c31d;
+  color: #356bf7;
   font-size: 14px;
   position: relative;
 }
@@ -6313,7 +6316,7 @@ main .bg {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #3dab1e;
+  background: #356bf7;
   border-radius: 12px;
   left: -25px;
   top: 26px;
@@ -6323,7 +6326,7 @@ main .bg {
   position: absolute;
   width: 4px;
   height: 8px;
-  border: solid 3px #22351c;
+  border: solid 3px #ffffff;
   border-width: 0px 2px 2px 0px;
   transform: rotate(45deg);
   top: 30px;
@@ -6333,16 +6336,16 @@ main .bg {
   font-size: 13px;
   line-height: 24px;
   margin-left: 10px;
-  color: #bfbfbf;
+  color: #454545;
 }
 .bettingCheck .bettingbox .bettingend .endbox p span {
   padding-left: 5px;
 }
 .bettingCheck .bettingbox .bettingend .endbox p span.listCode {
-  color: #7e94ff;
+  color: #356bf7;
 }
 .bettingCheck .bettingbox .bettingend .endbox p span.way {
-  color: #43c31d;
+  color: #f77373;
 }
 .bettingCheck.display {
   display: block;
@@ -6357,10 +6360,7 @@ main .bg {
   top: 10%;
   transform: translateX(-50%);
   z-index: 20;
-  border: solid 1px #3e8a13;
   border-radius: 3px;
-  border-width: 1px 2px;
-  box-shadow: 0px 0px 10px 2px #3c5711;
 }
 .calculator.display {
   display: block;
@@ -6369,25 +6369,24 @@ main .bg {
   width: 100%;
   height: 40px;
   border-radius: 3px 3px 0px 0px;
-  background: #242424;
-  color: #43dc16;
+  background: #356bf7;
+  color: #ffffff;
   position: relative;
   text-align: center;
   line-height: 42px;
   font-size: 14px;
   font-weight: bold;
-  border-bottom: solid 1px #3aad1b;
 }
 .calculator .calbar button {
   position: absolute;
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #353535;
-  border: solid 3px #4be119;
+  background: #eaeaea;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #353535;
+  box-shadow: 0px 0px 0px 5px #eaeaea;
 }
 .calculator .calbar button::before {
   content: "";
@@ -6396,7 +6395,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .calculator .calbar button::after {
@@ -6406,13 +6405,13 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .calculator .calbox {
   width: 100%;
   height: 430px;
-  background: #303030;
+  background: #ededed;
   box-sizing: border-box;
   border-radius: 0px 0px 3px 3px;
   position: relative;
@@ -6421,38 +6420,36 @@ main .bg {
 }
 .calculator .calbox .top {
   padding: 10px 0px;
-  color: #eeeeee;
+  color: #454545;
 }
 .calculator .calbox .top .inputbox input {
   width: 80px;
   height: 24px;
   padding-left: 7px;
-  border: solid 1px #464646;
-  border-top: none;
-  box-shadow: 0px -1px 0px 0px #737373;
+  border: solid 1px #e3e3e3;
   margin: 0px 10px 0px 5px;
   font-size: 15px;
   font-weight: bold;
-  color: #ffffff;
-  background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
+  color: #454545;
+  background: #ffffff;
 }
 .calculator .calbox .top .inputbox button {
   width: 60px;
   height: 28px;
-  color: #ababab;
-  background: #212121;
+  color: #454545;
+  background: #ffffff;
   font-size: 15px;
   border-radius: 3px;
-  border: solid 1px #808080;
+  border: solid 1px #e9e9e9;
 }
 .calculator .calbox .top .inputbox button:hover, .calculator .calbox .top .inputbox button:active, .calculator .calbox .top .inputbox button.active {
-  background: #808080;
-  color: #000000;
+  background: #356bf7;
+  color: #ffffff;
 }
 .calculator .calbox .mid {
   width: 100%;
   height: auto;
-  border: solid 1px #5b5b5b;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
   overflow-x: hidden;
   overflow-y: auto;
@@ -6461,26 +6458,20 @@ main .bg {
 .calculator .calbox .mid table {
   width: 100%;
   height: auto;
-  background: #252525;
-}
-.calculator .calbox .mid table tr {
-  border-bottom: solid 1px #5b5b5b;
-}
-.calculator .calbox .mid table tr:last-child {
-  border: none;
+  background: #f5f5f5;
 }
 .calculator .calbox .mid table tr:nth-child(odd) {
-  background: #191919;
+  background: #ffffff;
 }
 .calculator .calbox .mid table tr th {
   font-size: 14px;
   padding: 5px 0px;
-  color: #bfbfbf;
+  color: #454545;
 }
 .calculator .calbox .mid table tr td {
   padding: 5px 0px;
   text-align: center;
-  color: #ababab;
+  color: #595959;
   vertical-align: middle;
 }
 .calculator .calbox .mid table tr td:nth-of-type(1), .calculator .calbox .mid table tr td:nth-of-type(4) {
@@ -6490,12 +6481,10 @@ main .bg {
   width: 50px;
   height: 18px;
   padding-left: 5px;
-  background: linear-gradient(to bottom, #1f1f1f 0%, #414141 100%);
-  border: solid 1px #323232;
-  border-top: none;
-  box-shadow: 0px -1px 0px 0px #656565 inset;
+  background: #ffffff;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
-  color: #ababab;
+  color: #454545;
 }
 .calculator .calbox .mid table tr td .selectbox {
   position: relative;
@@ -6527,25 +6516,26 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 5px 3px 0px 3px;
-  border-color: #d2d2d2 transparent transparent transparent;
+  border-color: #8d8d8d transparent;
   top: 9px;
   left: 94px;
   pointer-events: none;
 }
 .calculator .calbox .mid table tr td .selectbox select {
-  color: #c8c8c8;
+  color: #595959;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   width: 55px;
   height: 22px;
-  border: solid 1px #858585;
-  background: #383838;
+  border: solid 1px #e3e3e3;
+  background: #ffffff;
   border-radius: 3px;
   padding-left: 5px;
   line-height: 22px;
   font-size: 14px;
   margin: 0px 3px;
+  box-shadow: 1px 2px 3px 0px #00000017;
   /*for IE*/
   /*for IE 9*/
   /*for FireFox*/
@@ -6566,16 +6556,15 @@ main .bg {
   }
 }
 .calculator .calbox .mid table tr td .selectbox input {
-  background: linear-gradient(to bottom, #1f1f1f 0%, #414141 100%);
-  border: solid 1px #323232;
+  background: #ffffff;
+  border: solid 1px #e3e3e3;
   border-top: none;
-  box-shadow: 0px -1px 0px 0px #656565 inset;
   border-radius: 3px;
   width: 35px;
   height: 20px;
   border: none;
   text-align: center;
-  color: #ababab;
+  color: #454545;
   font-weight: bold;
   font-size: 15px;
 }
@@ -6587,7 +6576,7 @@ main .bg {
   width: 100%;
   height: auto;
   text-align: center;
-  color: #eeeeee;
+  color: #454545;
 }
 .calculator .calbox .bottom .inputbox {
   margin: 10px 0px;
@@ -6598,48 +6587,48 @@ main .bg {
   width: 100px;
   height: 28px;
   padding-left: 10px;
-  border: solid 1px #464646;
-  background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
-  box-shadow: 0px -1px 0px 0px #737373 inset;
-  border-radius: 3px;
+  border: solid 1px #e3e3e3;
+  background: #ffffff;
   margin-left: 5px;
-  color: #eeeeee;
+  color: #454545;
   font-size: 16px;
   font-weight: bold;
 }
 .calculator .calbox .bottom .inputbox button {
   width: 260px;
   height: 40px;
-  background: #51ae19;
+  background: #ffffff;
   border-radius: 3px;
-  color: #191919;
+  color: #454545;
   font-size: 16px;
-  border: solid 1px #aef156;
+  border: none;
   margin-left: 50px;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .calculator .calbox .bottom .inputbox button:hover, .calculator .calbox .bottom .inputbox button:active, .calculator .calbox .bottom .inputbox button.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  color: #46d317;
-  border-color: #2b7d16;
+  background: #356bd7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .calculator .calbox .bottom .remind {
   margin-top: 10px;
   width: calc(100% - 20px);
   border-radius: 3px;
-  background: #252525;
+  background: #ffffff;
   text-align: left;
-  border: solid 1px #5b5b5b;
+  border: solid 1px #e3e3e3;
   padding: 10px;
 }
 .calculator .calbox .bottom .remind p {
   font-size: 14px;
   line-height: 20px;
-  color: #ababab;
+  color: #595959;
 }
 .calculator .calbox .bottom .remind p.retitle {
   text-align: center;
-  border-bottom: solid 1px #5b5b5b;
+  border-bottom: solid 1px #e3e3e3;
   padding-bottom: 7px;
+  color: #356bf7;
 }
 .calculator .calbox .bottom .remind p.extitle {
   padding-top: 10px;
@@ -6654,9 +6643,7 @@ main .bg {
   transform: translateX(-50%);
   top: 200px;
   z-index: 20;
-  box-shadow: 0px 0px 10px 5px #3f8a1385;
   border-radius: 5px;
-  border: solid 2px #3e8a13;
 }
 .unLogin.display {
   display: block;
@@ -6664,14 +6651,13 @@ main .bg {
 .unLogin .topBar {
   width: 100%;
   height: 50px;
-  background: #242424;
+  background: #356bf7;
   border-radius: 3px 3px 0px 0px;
   position: relative;
-  border-bottom: solid 1px #3e8a13;
 }
 .unLogin .topBar span {
   font-size: 17px;
-  color: #4be119;
+  color: #ffffff;
   line-height: 54px;
   padding-left: 20px;
 }
@@ -6680,11 +6666,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .unLogin .topBar button::before {
   content: "";
@@ -6693,7 +6679,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .unLogin .topBar button::after {
@@ -6703,13 +6689,13 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .unLogin .remindBox {
   width: 100%;
   height: 110px;
-  background: #242424;
+  background: #f5f5f5;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
@@ -6717,31 +6703,32 @@ main .bg {
 .unLogin .remindBox p {
   font-size: 24px;
   font-weight: bold;
-  color: #c8c8c8;
+  color: #454545;
   margin-top: 10px;
 }
 .unLogin .remindBox button {
   width: 180px;
   height: 36px;
   margin-top: 30px;
-  color: #191919;
-  background: linear-gradient(to right, #57b21a 0%, #349a14 100%);
-  border: solid 1px #aef156;
+  color: #454545;
+  background: #ffffff;
+  border: none;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .unLogin .remindBox button:hover, .unLogin .remindBox button:active, .unLogin .remindBox button.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  color: #46d317;
-  border-color: #2b7d16;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 .liveRemind {
   display: inline-block;
   width: 5px;
   height: 5px;
-  background: #ffee00;
+  background: #356bf7;
   border-radius: 50px;
   transform: translateY(-2px);
   margin-right: 3px;
@@ -6754,7 +6741,7 @@ main .bg {
   top: 0px;
   width: 5px;
   height: 5px;
-  background: #ffee00;
+  background: #356bf7;
   border-radius: 50px;
   animation: liveRemind 0.8s ease-in 0s infinite;
 }
@@ -6764,7 +6751,7 @@ main .bg {
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  background: #25a00e;
+  background: #356bf7;
 }
 
 .redCard, .yellowCard {
@@ -6774,11 +6761,11 @@ main .bg {
   display: inline-block;
   width: 10px;
   height: 15px;
-  background: #b20707;
+  background: #f77373;
   margin: 0px 4px -3px 0px;
 }
 .redCard.yellowCard span, .yellowCard.yellowCard span {
-  background: #ffc334;
+  background: #ffda5a;
 }
 
 .playerStatus {
@@ -6786,7 +6773,7 @@ main .bg {
 }
 
 .pitcher {
-  color: #71e31d;
+  color: #356bf7;
   padding-left: 7px;
   font-size: 12px;
 }
@@ -6799,13 +6786,13 @@ main .bg {
   padding: 0px;
 }
 .baseBag.one span.first {
-  background: #fff;
+  background: #356bf7;
 }
 .baseBag.two span.second {
-  background: #fff;
+  background: #356bf7;
 }
 .baseBag.three span.third {
-  background: #fff;
+  background: #356bf7;
 }
 .baseBag span {
   display: block;
@@ -6814,7 +6801,7 @@ main .bg {
   height: 10px;
   transform: rotate(45deg);
   background: transparent;
-  border: solid 1px #fff;
+  border: solid 1px #454545;
 }
 .baseBag span.first {
   bottom: 0px;
@@ -6915,8 +6902,8 @@ main .bg {
 .fixside .search {
   width: 300px;
   height: 60px;
-  background: linear-gradient(to top, #272727 0%, #434343);
-  border: solid 1px #327e1a;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px 0px #00000017;
   border-radius: 3px 0px 0px 3px;
   position: absolute;
   top: 0px;
@@ -6926,7 +6913,10 @@ main .bg {
 }
 .fixside .search.open {
   left: -240px;
-  background: #414141;
+  background: #fafafa;
+}
+.fixside .search.open .searchbut:hover, .fixside .search.open .searchbut:active, .fixside .search.open .searchbut.active {
+  border-color: transparent #f6f6f6 transparent transparent;
 }
 .fixside .search .searchbut {
   width: 60px;
@@ -6935,24 +6925,26 @@ main .bg {
   border-radius: 3px 0px 0px 3px;
   float: left;
   text-align: center;
+  border: solid 1px transparent;
+  background: #ffffff;
 }
 .fixside .search .searchbut:hover, .fixside .search .searchbut:active, .fixside .search .searchbut.active {
-  background: linear-gradient(to bottom, #33ab0a 0%, #68e73c 100%);
+  border-color: #3366ec;
 }
 .fixside .search .searchbut:hover span, .fixside .search .searchbut:active span, .fixside .search .searchbut.active span {
-  color: #131313;
+  color: #356bf7;
 }
 .fixside .search .searchbut:hover .fixsideimg, .fixside .search .searchbut:active .fixsideimg, .fixside .search .searchbut.active .fixsideimg {
   background-position-y: 100%;
 }
 .fixside .search .searchbut span {
   font-size: 13px;
-  color: #c8c8c8;
+  color: #454545;
 }
 .fixside .search .searchbut .fixsideimg {
   width: 30px;
-  height: 30px;
-  background: url("../images/fixside_ic2.png");
+  height: 29px;
+  background: url("../images/fixside_ic3.png");
   background-size: 500%;
   float: left;
   margin: 7px 15px 3px 14px;
@@ -6963,40 +6955,39 @@ main .bg {
   height: 30px;
   font-size: 16px;
   padding-left: 10px;
-  box-shadow: 0px 3px 10px 2px #1f1f1f inset;
-  border: solid 1px #5d5d5d;
+  border: solid 1px #e3e3e3;
   border-top: none;
   border-radius: 3px;
   float: left;
   margin: 15px 0px 0px 10px;
-  background: linear-gradient(to bottom, #303030 21%, #424242 100%);
-  color: #898787;
+  background: #ffffff;
+  color: #8d8d8d;
 }
 .fixside .search input::placeholder {
   font-weight: bold;
-  color: #898787;
+  color: #8d8d8d;
   font-size: 14px;
 }
 .fixside .search button {
   width: 50px;
   height: 28px;
-  background: #2b2b2b;
-  border: solid 1px #34aa0d;
-  color: #42c317;
+  box-shadow: 0px 0px 10px 0px #00000017;
+  background: #ffffff;
+  color: #356bf7;
   float: left;
   border-radius: 5px;
   font-size: 16px;
   margin: 16px 0px 16px 15px;
 }
 .fixside .search button:hover, .fixside .search button:active, .fixside .search button.active {
-  color: #2b2b2b;
-  background: #34aa0d;
+  color: #ffffff;
+  background: #356bf7;
 }
 .fixside .search .searchbox {
   width: 240px;
   height: auto;
   float: left;
-  margin-left: 60px;
+  margin: -2px 0px 0px 62px;
   overflow: hidden;
   border-radius: 0px 0px 0px 3px;
 }
@@ -7007,10 +6998,12 @@ main .bg {
   padding-left: 20px;
   position: relative;
   font-size: 14px;
-  background: linear-gradient(to top, #393939 0%, #555555 100%);
+  background: #ffffff;
   cursor: pointer;
-  color: #dadada;
-  border-bottom: solid 1px #6c6c6c;
+  box-sizing: border-box;
+  color: #454545;
+  border: solid 1px transparent;
+  border-bottom-color: #c8c8c8;
 }
 .fixside .search .searchbox li::before {
   content: "";
@@ -7018,7 +7011,7 @@ main .bg {
   height: 0px;
   position: absolute;
   border-style: solid;
-  border-color: #b2b2b2 transparent;
+  border-color: #8d8d8d transparent;
   border-width: 10px 8px 0px 8px;
   right: 40px;
   top: 21px;
@@ -7026,14 +7019,13 @@ main .bg {
   transition: 0.3s all;
 }
 .fixside .search .searchbox li:hover, .fixside .search .searchbox li:active, .fixside .search .searchbox li.active {
-  background: linear-gradient(to bottom, #2d2d2d 0%, #393939 100%);
-  color: #dadada;
+  border-color: #356bf7;
 }
 .fixside .search .searchbox li:hover::before, .fixside .search .searchbox li:active::before, .fixside .search .searchbox li.active::before {
   transform: rotate(0deg);
 }
 .fixside .search .searchbox div {
-  background: #2c2c2c;
+  background: #f5f5f5;
   width: 100%;
   height: 0px;
   overflow: hidden;
@@ -7046,13 +7038,13 @@ main .bg {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  color: #b9b9b9;
-  border-bottom: solid 1px #8c8c8c;
+  color: #595959;
+  border-bottom: solid 1px #c8c8c8;
   font-size: 14px;
 }
 .fixside .search .searchbox div a:hover, .fixside .search .searchbox div a:active, .fixside .search .searchbox div a.active {
-  background: #212121;
-  color: #53ca2a;
+  background: #356bf7;
+  color: #ffffff;
 }
 .fixside .search .searchbox div a .team {
   display: block;
@@ -7080,66 +7072,35 @@ main .bg {
   position: relative;
   transition: all 0.3s;
 }
-.fixside .fun .hamBtn {
-  display: none;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 0px;
-  left: -30px;
-  border-radius: 3px 0px 0px 3px;
-  background: #eaedf4;
-  padding: 0px;
-  cursor: pointer;
-}
-.fixside .fun .hamBtn:hover, .fixside .fun .hamBtn:active, .fixside .fun .hamBtn.active {
-  background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-}
-.fixside .fun .hamBtn:hover span, .fixside .fun .hamBtn:active span, .fixside .fun .hamBtn.active span {
-  background: #fff;
-}
-.fixside .fun .hamBtn span {
-  display: block;
-  width: 55%;
-  height: 4px;
-  background: #f3b378;
-  margin: 0px 0px 0px 7px;
-  border-radius: 5px;
-}
-.fixside .fun .hamBtn span:first-child {
-  margin: 6px 0px 3px 7px;
-}
-.fixside .fun .hamBtn span:last-child {
-  margin-top: 3px;
-}
 .fixside .fun a {
   display: block;
   width: 100%;
   height: 62px;
-  background: linear-gradient(to top, #272727 0%, #434343 100%);
+  background: #ffffff;
   border-radius: 3px 0px 0px 3px;
   text-align: center;
   margin-top: 3px;
-  border: solid 1px #327e1a;
+  border: solid 1px transparent;
   cursor: pointer;
+  box-shadow: 0px 0px 10px 0px #00000017;
 }
 .fixside .fun a:hover, .fixside .fun a:active, .fixside .fun a.active {
-  background: linear-gradient(to bottom, #33ab0a 0%, #68e73c 100%);
+  border-color: #356bf7;
 }
 .fixside .fun a:hover span, .fixside .fun a:active span, .fixside .fun a.active span {
-  color: #131313;
+  color: #356bf7;
 }
 .fixside .fun a:hover .fixsideimg, .fixside .fun a:active .fixsideimg, .fixside .fun a.active .fixsideimg {
   background-position-y: 100%;
 }
 .fixside .fun a span {
   font-size: 13px;
-  color: #d0d0d0;
+  color: #454545;
 }
 .fixside .fun a .fixsideimg {
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_ic2.png");
+  background: url("../images/fixside_ic3.png") no-repeat;
   background-size: 500%;
   float: left;
   margin: 8px 15px 3px 17px;
@@ -7342,11 +7303,11 @@ main .bg {
   background-color: transparent;
 }
 .myself::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .myself::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to bottom, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .myself .mineMainBox {
@@ -7362,25 +7323,26 @@ main .bg {
 .myself .recordbar {
   width: 1150px;
   height: 35px;
-  background: linear-gradient(to top, #343434 0%, #404040 100%);
+  background: linear-gradient(to top, #f3f3f3 0%, #ffffff 100%);
   border-radius: 3px;
+  box-shadow: 1px 2px 8px 0px #00000035;
   margin: 0px 0px 15px 10px;
-  box-sizing: border-box;
   position: relative;
+  box-sizing: border-box;
   z-index: 1;
 }
 .myself .recordbar.open {
-  border: solid 1px #30800e;
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
+  border: solid 1px #356bf7;
+  background: linear-gradient(to bottom, #f3f3f3 0%, #ffffff 100%);
 }
 .myself .recordbar.open div {
-  color: #3abc0d;
+  color: #356bf7;
 }
 .myself .recordbar div {
   float: left;
   width: 25%;
   text-align: center;
-  color: #dddddd;
+  color: #454545;
   font-size: 15px;
   line-height: 37px;
   cursor: pointer;
@@ -7388,23 +7350,20 @@ main .bg {
 .myself .recordbar div .line {
   width: 1px;
   height: 15px;
-  background: #747474;
+  background: #dfdfdf;
   margin: 10px 0px 0px 0px;
   float: right;
-}
-.myself .recordbar div span {
-  color: #3abc0d;
 }
 .myself .recordbar div span.remind {
   position: absolute;
   width: 20px;
   height: 18px;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   left: 35px;
   top: 48%;
   transform: translateY(-50%);
   line-height: 20px;
-  color: #161616;
+  color: #ffffff;
   border-radius: 5px;
   padding-left: 2px;
 }
@@ -7414,12 +7373,13 @@ main .bg {
   height: auto;
   margin: 0px 0px 15px 10px;
   border-top: none;
-  background: #1a1a1a;
+  background: #d6d6d6;
   padding-top: 20px;
   border-radius: 0px 0px 3px 3px;
   box-sizing: border-box;
   overflow: hidden;
   transform: translateY(-20px);
+  box-shadow: 1px 2px 6px 0px #00000035;
 }
 .myself .recordbox.display {
   display: block;
@@ -7427,39 +7387,39 @@ main .bg {
 .myself .helpbar {
   width: 1150px;
   height: 45px;
-  background: linear-gradient(to top, #343434 0%, #404040 100%);
+  background: linear-gradient(to top, #f3f3f3 0%, #ffffff 100%);
   border-radius: 3px;
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
   margin: 0px 0px 15px 10px;
   cursor: pointer;
-  box-sizing: border-box;
   border: solid 1px transparent;
+  box-shadow: 1px 2px 6px 0px #00000035;
 }
 .myself .helpbar::before {
   content: "";
   position: absolute;
   width: 6px;
   height: 10px;
-  background: url("../images/arrow_w.png") no-repeat;
+  background: url("../images/arrow_b.png") no-repeat;
   right: 20px;
   top: 18px;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 .myself .helpbar.open {
-  background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
-  border: solid 1px #30800e;
-  box-shadow: 0px 0px 10px 2px #2c561d;
+  background: #ffffff;
+  border: solid 1px #356bf7;
 }
 .myself .helpbar.open::before {
   width: 6px;
   height: 10px;
-  background: url("../images/arrow_w.png") no-repeat;
+  background: url("../images/arrow_b.png") no-repeat;
   background-size: 100%;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 .myself .helpbar.edit {
-  background: linear-gradient(to top, #404040 0%, #4e4e4e 100%);
+  background: linear-gradient(to top, #f3f3f3 0%, #ffffff 100%);
 }
 .myself .helpbar.edit label {
   display: block;
@@ -7475,13 +7435,13 @@ main .bg {
   line-height: 45px;
   padding-left: 15px;
   font-size: 15px;
-  color: #ffffff;
+  color: #454545;
 }
 .myself .helpbar span {
   float: right;
   line-height: 45px;
   padding-right: 50px;
-  color: #ffffff;
+  color: #595959;
   font-size: 15px;
 }
 .myself .helpbar label {
@@ -7492,10 +7452,10 @@ main .bg {
   margin: 13px 0px 0px 20px;
   position: relative;
   z-index: 1;
-  background: #393939;
+  background: #f5f5f5;
   border-radius: 30px;
-  box-shadow: 0px 2px 2px 0px #1a1a1a inset;
-  border-bottom: solid 1px #686868;
+  box-shadow: 0px 2px 2px 0px #d4d4d4 inset;
+  border-bottom: solid 1px #ffffff;
 }
 .myself .helpbar label.active::before {
   content: "";
@@ -7505,7 +7465,7 @@ main .bg {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  background: #fdc147;
   border-radius: 30px;
 }
 .myself .helpbar label input {
@@ -7516,11 +7476,11 @@ main .bg {
   width: 1150px;
   height: auto;
   margin: -20px 0px 15px 10px;
-  background: #212121;
+  background: #ffffff;
   padding-top: 20px;
   border-radius: 0px 0px 3px 3px;
   text-align: left;
-  border-bottom: solid 1px #cecece;
+  box-shadow: 1px 2px 6px 0px #00000035;
 }
 .myself .helpbox.display {
   display: block;
@@ -7536,23 +7496,24 @@ main .bg {
   width: 97%;
   font-size: 14px;
   line-height: 24px;
-  color: #d4d4d4;
+  color: #454545;
   padding: 0px 15px 15px 15px;
 }
 .myself .helpbox .innerbox {
   width: 92%;
   height: auto;
   border-radius: 12px;
-  border: 1px solid #747474;
+  border: 1px solid #e3e3e3;
   margin: 0px auto 20px;
   padding: 15px;
 }
 .myself .helpbox .innerbox p {
   padding: 5px 15px;
   font-size: 16px;
+  color: #356bf7;
 }
 .myself .helpbox .remind {
-  color: #d4d4d4;
+  color: #595959;
   font-size: 14px;
   margin: 0px 20px 20px 0px;
   float: right;
@@ -7564,8 +7525,8 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url("../images/infor2.png") no-repeat;
-  top: -2px;
+  background: url("../images/infor3.png") no-repeat;
+  top: -1px;
   left: -18px;
 }
 .myself .depositP, .myself .transP, .myself .withP, .myself .betP, .myself .sportP, .myself .skillP {
@@ -7590,15 +7551,14 @@ main .bg {
   width: 1150px;
   height: 100%;
   margin: -15px 0px 0px 10px;
-  background: #2c2c2c;
+  background: #ffffff;
   border-radius: 0px 0px 3px 3px;
   overflow: hidden;
 }
 .myself .onlineCilent .chatwindow {
   width: 100%;
   height: 75%;
-  background: #242424;
-  border-bottom: solid 1px #5d5d5d;
+  background: #f5f5f5;
   overflow-x: hidden;
   overflow-y: auto;
   scrollbar-width: thin;
@@ -7608,18 +7568,18 @@ main .bg {
   background-color: transparent;
 }
 .myself .onlineCilent .chatwindow::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .myself .onlineCilent .chatwindow::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .myself .onlineCilent .chatwindow .time {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  color: #32980e;
+  color: #595959;
   float: left;
 }
 .myself .onlineCilent .chatwindow .chat {
@@ -7647,29 +7607,29 @@ main .bg {
 }
 .myself .onlineCilent .chatwindow .chat .gmchat {
   float: left;
-  border: 1px solid #636363;
-  background: #1c1c1c;
+  border: 1px solid #dfdfdf;
+  background: #ffffff;
   border-radius: 0px 8px 8px 8px;
   font-size: 14px;
   padding: 12px;
   text-align: left;
-  color: #c2c2c2;
+  color: #454545;
 }
 .myself .onlineCilent .chatwindow .chat .gmchat a {
   display: block;
   width: 60%;
   padding: 5px 10px 4px;
-  color: #34ac0d;
+  color: #356bf7;
 }
 .myself .onlineCilent .chatwindow .chat .gmchat a:hover, .myself .onlineCilent .chatwindow .chat .gmchat a:active, .myself .onlineCilent .chatwindow .chat .gmchat a.active {
-  background: #40dc15;
-  color: #1c1c1c;
+  background: #356bf7;
+  color: #ffffff;
 }
 .myself .onlineCilent .chatwindow .chat .userchat {
   float: right;
-  background: #1c1c1c;
-  color: #c2c2c2;
-  border: solid 1px #636363;
+  background: #ffffff;
+  color: #454545;
+  border: solid 1px #dfdfdf;
   border-radius: 8px 0px 8px 8px;
   font-size: 14px;
   padding: 12px;
@@ -7687,11 +7647,11 @@ main .bg {
   background-color: transparent;
 }
 .myself .onlineCilent .onlineroom::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 .myself .onlineCilent .onlineroom::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }
 .myself .onlineCilent .onlineroom .chatStyle {
@@ -7721,10 +7681,10 @@ main .bg {
   box-sizing: border-box;
   font-size: 15px;
   background: transparent;
-  color: #c2c2c2;
+  color: #454545;
 }
 .myself .onlineCilent .onlineroom textarea::placeholder {
-  color: #8f8f8f;
+  color: #595959;
   font-size: 14px;
   font-weight: bold;
 }
@@ -7732,16 +7692,17 @@ main .bg {
   width: 90px;
   height: 36px;
   margin: 0px 20px 20px 0px;
-  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  background: #ffffff;
   border-radius: 5px;
-  color: #232323;
-  border: solid 1px #7af537;
+  color: #454545;
+  border: none;
   font-size: 15px;
+  box-shadow: 1px 2px 4px 0px #00000049;
 }
 .myself .onlineCilent .onlineroom .send:hover, .myself .onlineCilent .onlineroom .send:active, .myself .onlineCilent .onlineroom .send.active {
-  border-color: #87d620;
   color: #ffffff;
-  background: linear-gradient(to left, #4daa03 0%, #24700c 100%);
+  background: #356bf7;
+  box-shadow: none;
 }
 .myself .ruleBox {
   display: none;
@@ -7951,40 +7912,42 @@ main .bg {
   line-height: 32px;
   padding-left: 15px;
   font-size: 15px;
-  color: #4d515d;
+  color: #454545;
 }
 
 .minetopfix {
   width: 1150px;
   height: 125px;
-  background: #3d3d3d;
+  background: #ffffff;
   border-radius: 0px 0px 5px 5px;
   position: absolute;
   text-align: center;
   z-index: 6;
   left: 280px;
   top: 0px;
+  box-shadow: 0px 0px 8px 2px #00000017;
 }
 .minetopfix .fixbar {
   position: absolute;
   width: 100%;
   height: 45px;
   border-radius: 5px;
-  background: #313131;
+  background: #f5f5f5;
   bottom: 0px;
   z-index: 2;
-  color: #fff;
-  border: solid 1px #242424;
+  color: #595959;
+  border-top: solid 1px #e8e8e8;
   box-sizing: border-box;
 }
 .minetopfix .fixbar .editbut, .minetopfix .fixbar .cancelbut, .minetopfix .fixbar .delbut {
   display: none;
   float: right;
   padding: 4px 6px;
-  color: #dddddd;
-  background: #2b2b2b;
-  border: solid 1px #707070;
+  color: #454545;
+  background: #ffffff;
+  border: none;
   border-radius: 3px;
+  box-shadow: 1px 2px 4px 0px #00000049;
   font-size: 15px;
   margin: 8px 10px 0px 0px;
 }
@@ -7992,33 +7955,32 @@ main .bg {
   display: block;
 }
 .minetopfix .fixbar .editbut:hover, .minetopfix .fixbar .editbut:active, .minetopfix .fixbar .editbut.active, .minetopfix .fixbar .cancelbut:hover, .minetopfix .fixbar .cancelbut:active, .minetopfix .fixbar .cancelbut.active, .minetopfix .fixbar .delbut:hover, .minetopfix .fixbar .delbut:active, .minetopfix .fixbar .delbut.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetopfix .fixbar .rowbutMes {
   display: none;
   float: right;
   position: relative;
-  background: #353535;
+  background: #d0d0d0;
   margin: 7px 20px 0px 0px;
   padding: 8px 12px;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
-  border: solid 1px #5b5b5b;
 }
 .minetopfix .fixbar .rowbutMes.display {
   display: block;
 }
 .minetopfix .fixbar .rowbutMes.lside span:last-child {
-  color: #ababab;
+  color: #595959;
 }
 .minetopfix .fixbar .rowbutMes.lside .innbut {
   animation: rowbut 0.3s ease-out 0s;
 }
 .minetopfix .fixbar .rowbutMes.rside span:nth-of-type(1) {
-  color: #ababab;
+  color: #595959;
 }
 .minetopfix .fixbar .rowbutMes.rside .innbut {
   left: 53%;
@@ -8028,7 +7990,7 @@ main .bg {
   margin-right: 20px;
   font-size: 14px;
   position: relative;
-  color: #2cbd0d;
+  color: #356bf7;
 }
 .minetopfix .fixbar .rowbutMes span:last-child {
   margin: 0px;
@@ -8036,21 +7998,20 @@ main .bg {
 .minetopfix .fixbar .rowbutMes .innbut {
   width: 44%;
   height: 80%;
-  background: #2d2d2d;
+  background: #ffffff;
   position: absolute;
   left: 3%;
   top: 10%;
   border-radius: 20px;
   box-sizing: border-box;
-  border: solid 1px #2cbd0d;
+  border: solid 1px #356bf7;
 }
 .minetopfix .fixbar .line {
-  display: none;
   width: 1px;
   height: 25px;
-  background: #313131;
+  background: #e3e3e3;
   float: left;
-  margin: 10px 10px 0px 10px;
+  margin: 10px 0px 0px;
 }
 .minetopfix .fixbar .timeSearch {
   width: 380px;
@@ -8068,23 +8029,23 @@ main .bg {
 .minetopfix .fixbar .timeSearch button.date {
   width: 19px;
   height: 19px;
-  background: url("../images/date_icon2.png") no-repeat;
+  background: url("../images/date_icon3.png") no-repeat;
   float: left;
   margin: 13px 0px 0px 0px;
   border: none;
 }
 .minetopfix .fixbar .timeSearch button.timesearchbut {
   margin: 8px 24px 0px 0px;
-  border: solid 1px #707070;
-  background: #2b2b2b;
+  border: none;
+  background: #ffffff;
   padding: 5px 8px;
   border-radius: 3px;
-  color: #dddddd;
+  color: #454545;
+  box-shadow: 1px 2px 4px 0px #00000049;
 }
 .minetopfix .fixbar .timeSearch button.timesearchbut:hover, .minetopfix .fixbar .timeSearch button.timesearchbut:active, .minetopfix .fixbar .timeSearch button.timesearchbut.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: #356bf7;
+  color: #ffffff;
 }
 .minetopfix .fixbar .timeSearch span {
   float: left;
@@ -8105,20 +8066,20 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 6px 5px 0px 5px;
-  border-color: #747474 transparent;
+  border-color: #8d8d8d transparent;
   top: 21px;
   right: 5px;
 }
 .minetopfix .fixbar .timeSearch label select {
   margin: 11px 0px 0px 10px;
-  border: 1px solid #707070;
+  border: 1px solid #e3e3e3;
   outline: none;
   border-radius: 5px;
   width: 95px;
   height: 24px;
   font-family: "my_font";
-  background: #2b2b2b;
-  color: #dddddd;
+  background: #ffffff;
+  color: #454545;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -8126,27 +8087,29 @@ main .bg {
 }
 .minetopfix .fixbar .smallTimeBtn {
   margin: 8px 12px 0px 0px;
-  border: solid 1px #6a8e2a;
-  background: #212121;
+  border: none;
+  background: #ffffff;
   padding: 5px 8px;
   border-radius: 3px;
-  color: #bfbfbf;
+  color: #454545;
   float: right;
+  box-shadow: 1px 2px 4px 0px #00000049;
 }
 .minetopfix .fixbar .smallTimeBtn:hover, .minetopfix .fixbar .smallTimeBtn:active, .minetopfix .fixbar .smallTimeBtn.active {
-  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
-  color: #33ba04;
-  border-color: #32980e;
+  background: #356bf7;
+  color: #ffffff;
+  -webkit-box-decoration-break: none;
+          box-decoration-break: none;
 }
 .minetopfix .fixbar .changePassword {
   float: right;
   padding: 3px 5px;
-  color: #dddddd;
-  background: #2b2b2b;
-  border: solid 1px #707070;
+  color: #595959;
+  background: #ffffff;
   border-radius: 5px;
   font-size: 15px;
   margin: 8px 10px 0px 0px;
+  box-shadow: 1px 2px 5px 0px #00000017;
   /*for IE 9*/
   /*for IE*/
 }
@@ -8161,9 +8124,9 @@ main .bg {
   }
 }
 .minetopfix .fixbar .changePassword:hover, .minetopfix .fixbar .changePassword:active, .minetopfix .fixbar .changePassword.active {
-  border-color: #aef156;
-  background: linear-gradient(to right, #92e820 0%, #46dd16 100%);
-  color: #272727;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  color: #ffffff;
+  box-shadow: none;
 }
 .minetopfix .fixbar .changePassword.none {
   display: none;
@@ -8174,17 +8137,25 @@ main .bg {
   font-size: 15px;
   height: 43px;
   line-height: 45px;
-  color: #bfbfbf;
+  color: #454545;
   box-sizing: border-box;
-  border: solid 1px #7b7b7b;
-  background: linear-gradient(to top, #323232 0%, #434343 100%);
   cursor: pointer;
   border-radius: 3px;
+  margin-right: 1px;
+  position: relative;
 }
 .minetopfix .fixbar ul li:hover, .minetopfix .fixbar ul li:active, .minetopfix .fixbar ul li.active {
-  color: #33ba04;
-  border-color: #32980e;
-  background: linear-gradient(to bottom, #141414 0%, #434343 100%);
+  color: #356bf7;
+  background: #ffffff;
+}
+.minetopfix .fixbar ul li:hover::before, .minetopfix .fixbar ul li:active::before, .minetopfix .fixbar ul li.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #356bf7;
+  bottom: -2px;
+  left: 0px;
 }
 .minetopfix .fixbar p {
   line-height: 45px;
@@ -8196,33 +8167,33 @@ main .bg {
   padding-left: 20px;
 }
 .minetopfix .fixbar p span {
-  color: #6ad237;
+  color: #356bf7;
 }
 .minetopfix .floatName {
   width: 100%;
   height: 35px;
-  background: #1f1f1f;
-  border-bottom: solid 1px #3abc0d;
+  background: #ffffff;
+  border-bottom: solid 1px #356bf7;
 }
 .minetopfix .floatName.betting div {
   float: left;
   width: 25%;
   text-align: center;
-  color: #37ad10;
+  color: #454545;
   font-size: 15px;
   padding-top: 12px;
 }
 .minetopfix .floatName.betting div .line {
   width: 1px;
   height: 10px;
-  background: #747474;
+  background: #dfdfdf;
   margin: -5px 0px 0px 0px;
   float: right;
 }
 .minetopfix .floatName.deal div {
   float: left;
   text-align: center;
-  color: #37ad10;
+  color: #454545;
   font-size: 15px;
   padding-top: 12px;
 }
@@ -8250,7 +8221,7 @@ main .bg {
 .minetopfix .floatName.deal div .line {
   width: 1px;
   height: 10px;
-  background: #747474;
+  background: #dfdfdf;
   margin: -5px 0px 0px 0px;
   float: right;
 }
@@ -8259,7 +8230,7 @@ main .bg {
 }
 .minetopfix .leftword {
   font-weight: bold;
-  color: #ffffff;
+  color: #454545;
   float: left;
   margin: 30px 0px 0px 20px;
 }
@@ -8274,7 +8245,7 @@ main .bg {
   font-weight: bold;
   margin: 20px 10px 0px;
   font-size: 17px;
-  color: #ffffff;
+  color: #454545;
 }
 .minetopfix .midword p span {
   display: block;
@@ -8285,14 +8256,14 @@ main .bg {
   display: inline-block;
   width: 1px;
   height: 45px;
-  background: #bcbcbc;
+  background: #dfdfdf;
   margin: 0px 10px 0px 10px;
 }
 
 .mineHideBoard {
   width: 1155px;
   height: 125px;
-  background: #131313;
+  background: #ededed;
   position: absolute;
   z-index: 5;
   left: 270px;
@@ -8311,10 +8282,9 @@ main .bg {
   width: 350px;
   height: auto;
   left: 50%;
-  top: 20%;
+  top: 30%;
   transform: translate(-50%, -50%);
   z-index: 20;
-  box-shadow: 0px 0px 10px 2px #517b09;
 }
 .changePasswordWindow.display {
   display: block;
@@ -8322,14 +8292,13 @@ main .bg {
 .changePasswordWindow .topbar {
   width: 100%;
   height: 50px;
-  background: #242424;
+  background: #356bf7;
   border-radius: 3px 3px 0px 0px;
   position: relative;
-  border: solid 1px #3aad1b;
 }
 .changePasswordWindow .topbar span {
   font-size: 14px;
-  color: #4be119;
+  color: #ffffff;
   line-height: 50px;
   padding-left: 20px;
   font-weight: bold;
@@ -8339,11 +8308,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .changePasswordWindow .topbar button::before {
   content: "";
@@ -8352,7 +8321,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .changePasswordWindow .topbar button::after {
@@ -8362,17 +8331,15 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .changePasswordWindow .box {
   width: 100%;
   height: 160px;
-  background: #242424;
+  background: #f5f5f5;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
-  border: solid 1px #3e8a13;
-  border-top: none;
 }
 .changePasswordWindow .box div {
   width: 95%;
@@ -8393,45 +8360,36 @@ main .bg {
   font-size: 17px;
   padding: 3px 0px 3px 10px;
   float: right;
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent #3c3c3c #6c6c6c #3c3c3c;
+  border: solid 1px #e3e3e3;
   border-radius: 5px;
-  background: linear-gradient(to bottom, #0f0f0f 21%, #303030 100%);
-  box-shadow: 0px 1px 0px 0px #3c3c3c;
-  color: #fff;
+  background: #ffffff;
+  color: #454545;
 }
 .changePasswordWindow .box div span {
   line-height: 40px;
-  color: #c8c8c8;
+  color: #454545;
   padding-left: 15px;
 }
 .changePasswordWindow .box div button {
   width: 152px;
   height: 36px;
   margin-right: 10px;
-  background: #2d2d2d;
-  border: 1px solid #d9d9d9;
-  color: #b2b2b2;
+  background: #ffffff;
+  color: #454545;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .changePasswordWindow .box div button:last-child {
   margin: 0px;
-  background: linear-gradient(to right, #57b21a 0%, #349a14 100%);
-  color: #191919;
-  border-color: #aef156;
-}
-.changePasswordWindow .box div button:last-child:hover, .changePasswordWindow .box div button:last-child:active, .changePasswordWindow .box div button:last-child.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  color: #46d317;
-  border-color: #2b7d16;
+  border: solid 1px #356bf7;
+  color: #356bf7;
 }
 .changePasswordWindow .box div button:hover, .changePasswordWindow .box div button:active, .changePasswordWindow .box div button.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  border-color: #2b7d16;
-  color: #46d317;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 .cardremind {
@@ -8443,9 +8401,7 @@ main .bg {
   transform: translateX(-50%);
   top: 200px;
   z-index: 20;
-  border: solid 1px #3aad1b;
   border-radius: 3px;
-  box-shadow: 0px 0px 10px 2px #517b09;
 }
 .cardremind.display {
   display: block;
@@ -8453,14 +8409,13 @@ main .bg {
 .cardremind .topbar {
   width: 100%;
   height: 50px;
-  background: #242424;
+  background: #356bf7;
   border-radius: 3px 3px 0px 0px;
   position: relative;
-  border-bottom: solid 1px #3aad1b;
 }
 .cardremind .topbar span {
   font-size: 14px;
-  color: #4be119;
+  color: #ffffff;
   line-height: 50px;
   padding-left: 20px;
   font-weight: bold;
@@ -8470,11 +8425,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .cardremind .topbar button::before {
   content: "";
@@ -8483,7 +8438,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .cardremind .topbar button::after {
@@ -8493,13 +8448,13 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .cardremind .box {
   width: 100%;
   height: 105px;
-  background: #242424;
+  background: #f5f5f5;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
@@ -8507,38 +8462,36 @@ main .bg {
 .cardremind .box p {
   font-size: 14px;
   padding-bottom: 20px;
-  color: #bdbdbd;
+  color: #454545;
 }
 .cardremind .box p.remind {
-  color: #ffffff;
+  color: #595959;
 }
 .cardremind .box button {
   width: 160px;
   height: 36px;
-  background: linear-gradient(to right, #57b21a 0%, #349a14 100%);
-  border: 1px solid #aef156;
+  background: #ffffff;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  color: #191919;
+  color: #454545;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .cardremind .box button:hover, .cardremind .box button:active, .cardremind .box button.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  color: #46d317;
-  border-color: #2b7d16;
+  background: #356bf7;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 .cardAdd {
   display: none;
   position: absolute;
   width: 800px;
-  height: auto;
+  height: 360px;
   left: 50%;
   transform: translateX(-50%);
   top: 110px;
   z-index: 20;
-  box-shadow: 0px 0px 10px 5px #3f8a1385;
-  border: solid 1px #3e8a13;
 }
 .cardAdd.display {
   display: block;
@@ -8546,15 +8499,14 @@ main .bg {
 .cardAdd .topbar {
   width: 100%;
   height: 40px;
-  background: #242424;
+  background: #356bf7;
   border-radius: 3px 3px 0px 0px;
   position: relative;
   text-align: center;
-  border-bottom: solid 1px #3aad1b;
 }
 .cardAdd .topbar span {
   font-size: 14px;
-  color: #4be119;
+  color: #ffffff;
   line-height: 42px;
   font-weight: bold;
 }
@@ -8563,11 +8515,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #404040;
-  border: solid 3px #4be119;
+  background: #ededed;
+  border: solid 3px #356bf7;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #404040;
+  box-shadow: 0px 0px 0px 5px #ededed;
 }
 .cardAdd .topbar button::before {
   content: "";
@@ -8576,7 +8528,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(45deg);
 }
 .cardAdd .topbar button::after {
@@ -8586,13 +8538,13 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #4be119;
+  background: #356bf7;
   transform: rotate(-45deg);
 }
 .cardAdd .box {
   width: 100%;
   height: 315px;
-  background: #242424;
+  background: #f5f5f5;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
 }
@@ -8607,19 +8559,18 @@ main .bg {
   padding-right: 30px;
 }
 .cardAdd .box .inputBox input, .cardAdd .box .inputBox select {
-  background: linear-gradient(to top, #333333 0%, #272727 100%);
-  color: #d2d2d2;
+  background: #ffffff;
+  color: #454545;
   width: 245px;
   height: 36px;
   box-sizing: border-box;
   padding: 3px 0px 3px 10px;
   float: right;
   outline: none;
-  border: solid 1px #858585;
+  border: solid 1px #e3e3e3;
   border-radius: 3px;
   font-size: 15px;
   margin: 7px 0px 0px 0px;
-  box-shadow: 0px 2px 5px 0px #1c1c1c;
 }
 .cardAdd .box .inputBox input.short, .cardAdd .box .inputBox select.short {
   width: 105px;
@@ -8630,28 +8581,29 @@ main .bg {
 }
 .cardAdd .box .inputBox span {
   line-height: 50px;
-  color: #cacaca;
+  color: #454545;
   padding-left: 30px;
   font-weight: bold;
 }
 .cardAdd .box button {
   width: 220px;
   height: 36px;
-  background: #51ae19;
-  border: solid 1px #aef156;
-  color: #191919;
+  background: #fff;
+  border: none;
+  color: #454545;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 7%;
+  bottom: 0%;
+  box-shadow: 1px 2px 8px 0px #00000049;
 }
 .cardAdd .box button:hover, .cardAdd .box button:active, .cardAdd .box button.active {
-  background: linear-gradient(to left, #2d2d2d 0%, #1a1a1a 99%);
-  color: #46d317;
-  border-color: #2b7d16;
+  background: #356bf7;
+  color: #fff;
+  box-shadow: none;
 }
 
 @keyframes reset {
@@ -8720,7 +8672,7 @@ main .bg {
 html {
   width: 100%;
   height: 100%;
-  background: #131313;
+  background: #ededed;
 }
 html body {
   width: 100%;
@@ -8733,10 +8685,10 @@ html body::-webkit-scrollbar {
   background-color: transparent;
 }
 html body::-webkit-scrollbar-track {
-  background: #121212;
+  background: #ffffff;
   border-radius: 10px;
 }
 html body::-webkit-scrollbar-thumb {
-  background: #606360;
+  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   border-radius: 10px;
 }

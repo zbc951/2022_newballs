@@ -150,6 +150,10 @@ header .top .threeCircle button:nth-of-type(2) {
 header .top .threeCircle button:nth-of-type(3) {
   background: #1856bd;
   border-color: #90c1f2;
+}
+header .top .threeCircle button:nth-of-type(4) {
+  background: #ffffff;
+  border-color: #d31c1c;
   margin-right: 20px;
 }
 header article {
@@ -1241,7 +1245,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType1 tr td:nth-of-type(7) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType1_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1271,7 +1275,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType1_2 tr td:nth-of-type(9) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType1_index tr td div p.redCard, .playBoard.tType1_index tr td div p.yellowCard {
   padding: 0px;
@@ -1286,7 +1290,7 @@ main .bg {
   min-width: 60px;
 }
 .playBoard.tType1_index tr td:nth-of-type(2), .playBoard.tType1_index tr td:nth-of-type(3), .playBoard.tType1_index tr td:nth-of-type(10), .playBoard.tType1_index tr td:nth-of-type(6), .playBoard.tType1_index tr td:nth-of-type(9) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType1_index tr td:nth-of-type(4), .playBoard.tType1_index tr td:nth-of-type(7) {
   width: 50%;
@@ -1319,7 +1323,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType2 tr td:nth-of-type(2), .playBoard.tType2 tr td:nth-of-type(3) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2 tr td:nth-of-type(2) p, .playBoard.tType2 tr td:nth-of-type(3) p {
   padding: 0px;
@@ -1331,7 +1335,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType2 tr td:nth-of-type(7) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType2_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType2_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType2_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1341,7 +1345,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType2_2 tr td:nth-of-type(2), .playBoard.tType2_2 tr td:nth-of-type(3) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_2 tr td:nth-of-type(2) p, .playBoard.tType2_2 tr td:nth-of-type(3) p {
   padding: 0px;
@@ -1357,7 +1361,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType2_2 tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType2_index tr td p.baseBag {
   margin: 0px auto;
@@ -1368,14 +1372,17 @@ main .bg {
 .playBoard.tType2_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
-.playBoard.tType2_index tr td:nth-of-type(2), .playBoard.tType2_index tr td:nth-of-type(3), .playBoard.tType2_index tr td:nth-of-type(4), .playBoard.tType2_index tr td:nth-of-type(19) {
-  min-width: 50px;
+.playBoard.tType2_index tr td:nth-of-type(2), .playBoard.tType2_index tr td:nth-of-type(3), .playBoard.tType2_index tr td:nth-of-type(4) {
+  min-width: 55px;
 }
-.playBoard.tType2_index tr td:nth-of-type(5) {
-  width: 100%;
+.playBoard.tType2_index tr td:nth-of-type(5), .playBoard.tType2_index tr td:nth-of-type(6) {
+  width: 40%;
 }
-.playBoard.tType2_index tr td:nth-of-type(6), .playBoard.tType2_index tr td:nth-of-type(7), .playBoard.tType2_index tr td:nth-of-type(8), .playBoard.tType2_index tr td:nth-of-type(9), .playBoard.tType2_index tr td:nth-of-type(10), .playBoard.tType2_index tr td:nth-of-type(11), .playBoard.tType2_index tr td:nth-of-type(12), .playBoard.tType2_index tr td:nth-of-type(13), .playBoard.tType2_index tr td:nth-of-type(14), .playBoard.tType2_index tr td:nth-of-type(15), .playBoard.tType2_index tr td:nth-of-type(16), .playBoard.tType2_index tr td:nth-of-type(17), .playBoard.tType2_index tr td:nth-of-type(18) {
+.playBoard.tType2_index tr td:nth-of-type(7), .playBoard.tType2_index tr td:nth-of-type(8), .playBoard.tType2_index tr td:nth-of-type(9), .playBoard.tType2_index tr td:nth-of-type(10), .playBoard.tType2_index tr td:nth-of-type(11), .playBoard.tType2_index tr td:nth-of-type(12), .playBoard.tType2_index tr td:nth-of-type(13), .playBoard.tType2_index tr td:nth-of-type(14), .playBoard.tType2_index tr td:nth-of-type(15), .playBoard.tType2_index tr td:nth-of-type(16), .playBoard.tType2_index tr td:nth-of-type(17), .playBoard.tType2_index tr td:nth-of-type(18), .playBoard.tType2_index tr td:nth-of-type(19) {
   min-width: 20px;
+}
+.playBoard.tType2_index tr td:nth-of-type(20) {
+  min-width: 55px;
 }
 .playBoard.tType2_result tr td:nth-of-type(1) {
   min-width: 70px;
@@ -1405,7 +1412,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType3 tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType3_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1432,13 +1439,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType3_2 tr td:nth-of-type(13) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType3_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType3_index tr td:nth-of-type(2), .playBoard.tType3_index tr td:nth-of-type(3), .playBoard.tType3_index tr td:nth-of-type(11) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType3_index tr td:nth-of-type(4) {
   width: 100%;
@@ -1468,7 +1475,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType4 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType4_index tr td p {
   padding-bottom: 8px;
@@ -1480,7 +1487,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType4_index tr td:nth-of-type(2), .playBoard.tType4_index tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType4_index tr td:nth-of-type(3), .playBoard.tType4_index tr td:nth-of-type(4), .playBoard.tType4_index tr td:nth-of-type(8) {
   min-width: 30px;
@@ -1513,7 +1520,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType4_result tr td:nth-of-type(6), .playBoard.tType4_result tr td:nth-of-type(7) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5 tr td:nth-of-type(1) {
   width: 100%;
@@ -1528,7 +1535,7 @@ main .bg {
   width: 11%;
 }
 .playBoard.tType5 tr td:nth-of-type(12) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1555,13 +1562,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType5_2 tr td:nth-of-type(15) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(2), .playBoard.tType5_lol_index tr td:nth-of-type(19) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(3) {
   width: 100%;
@@ -1576,7 +1583,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(2), .playBoard.tType5_dota_index tr td:nth-of-type(18) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(3) {
   width: 100%;
@@ -1591,7 +1598,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(2), .playBoard.tType5_cs_index tr td:nth-of-type(15) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(3) {
   width: 100%;
@@ -1660,7 +1667,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType6 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType6_index tr td:nth-of-type(1) {
   min-width: 120px;
@@ -1669,7 +1676,7 @@ main .bg {
   width: 25%;
 }
 .playBoard.tType6_index tr td:nth-of-type(6) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType6_result tr td:nth-of-type(1), .playBoard.tType6_result tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1684,7 +1691,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType7 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(1), .playBoard.tType7_bingo_index tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1696,7 +1703,7 @@ main .bg {
   min-width: 20px;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(16) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(1), .playBoard.tType7_lottery_index tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1711,7 +1718,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(10) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType7_bingo_result tr td:nth-of-type(1), .playBoard.tType7_bingo_result tr td:nth-of-type(2) {
   min-width: 120px;
@@ -1750,7 +1757,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType8 tr td:nth-of-type(12) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType8_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType8_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType8_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType8_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1780,13 +1787,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType8_2 tr td:nth-of-type(15) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType8_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType8_index tr td:nth-of-type(2), .playBoard.tType8_index tr td:nth-of-type(13) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType8_index tr td:nth-of-type(3), .playBoard.tType8_index tr td:nth-of-type(11), .playBoard.tType8_index tr td:nth-of-type(12) {
   min-width: 30px;
@@ -1822,7 +1829,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType9 tr td:nth-of-type(6) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType9_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1842,13 +1849,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType9_2 tr td:nth-of-type(9) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType9_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType9_index tr td:nth-of-type(2), .playBoard.tType9_index tr td:nth-of-type(3), .playBoard.tType9_index tr td:nth-of-type(6) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType9_index tr td:nth-of-type(4) {
   width: 100%;
@@ -1884,7 +1891,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType10 tr td:nth-of-type(13) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType10_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -1911,13 +1918,13 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType10_2 tr td:nth-of-type(16) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType10_index tr td:nth-of-type(1) {
   min-width: 70px;
 }
 .playBoard.tType10_index tr td:nth-of-type(2), .playBoard.tType10_index tr td:nth-of-type(14) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType10_index tr td:nth-of-type(3), .playBoard.tType10_index tr td:nth-of-type(12), .playBoard.tType10_index tr td:nth-of-type(13) {
   min-width: 30px;
@@ -1950,7 +1957,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType11 tr td:nth-of-type(4) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType11_index tr td p {
   padding-bottom: 8px;
@@ -1962,7 +1969,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType11_index tr td:nth-of-type(2), .playBoard.tType11_index tr td:nth-of-type(6), .playBoard.tType11_index tr td:nth-of-type(11) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType11_index tr td:nth-of-type(3), .playBoard.tType11_index tr td:nth-of-type(4), .playBoard.tType11_index tr td:nth-of-type(7), .playBoard.tType11_index tr td:nth-of-type(10) {
   min-width: 30px;
@@ -2004,7 +2011,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType12 tr td:nth-of-type(11) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType12_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr th:nth-last-of-type(3), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(3) {
   display: none;
@@ -2031,7 +2038,7 @@ main .bg {
   width: 1%;
 }
 .playBoard.tType12_2 tr td:nth-of-type(14) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType12_index.hide1 tr td:nth-of-type(4) {
   width: 51%;
@@ -2043,7 +2050,7 @@ main .bg {
   min-width: 70px;
 }
 .playBoard.tType12_index tr td:nth-of-type(2), .playBoard.tType12_index tr td:nth-of-type(12) {
-  min-width: 50px;
+  min-width: 55px;
 }
 .playBoard.tType12_index tr td:nth-of-type(3), .playBoard.tType12_index tr td:nth-of-type(10), .playBoard.tType12_index tr td:nth-of-type(11) {
   min-width: 30px;
