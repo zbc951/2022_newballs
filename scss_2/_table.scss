@@ -3195,19 +3195,19 @@
 						}
 
 						&:active,&.active {
-							background: linear-gradient(-45deg,#3d3d3d 0%,#242424 100%);
-							color: #fefefe;
-							box-shadow: 0px 0px 10px 2px #49701f;
+							background: #ffffff;
+							color: #454545;
+							box-shadow: 0px 0px 10px 2px #00000049;
 
 							&::before {
 								content: "";
 								position: absolute;
 								width: 30px;
 								height: 30px;
-								border: solid 2px #34b00e;
+								border: solid 2px #356bf7;
 								border-radius: 30px;
-								background: #343434;
-								box-shadow: 0px 0px 0px 3px #343434,0px 0px 10px 2px #49701f;
+								background: #ffffff;
+								box-shadow: 0px 0px 0px 3px #ffffff,0px 0px 10px 2px #00000049;
 								top: -8px;
 								right: -8px;
 								
@@ -3218,7 +3218,7 @@
 								position: absolute;
 								width: 8px;
 								height: 14px;
-								border: solid 5px #47e916;
+								border: solid 5px #356bf7;
 								border-width: 0px 4px 4px 0px;
 								transform: rotate(45deg);
 								top: -2px;
