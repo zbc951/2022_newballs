@@ -767,7 +767,7 @@
         height: 40px;
         line-height: 42px;
         text-align: center;
-        background: #d21b1d;
+        background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
         color: #ffffff;
         border-radius: 3px 3px 0px 0px;
         font-size: 14px;
@@ -854,7 +854,7 @@
     .signupbar {
         width: 100%;
         height: 50px;
-        background: #cd1721;
+        background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
         border-radius: 3px 3px 0px 0px;
         position: relative;
 
@@ -1252,7 +1252,7 @@
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
-    background: #cd1721;
+    background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
     border-radius: 3px 3px 0px 0px;
     z-index: 16;
     text-align: left;
@@ -1392,7 +1392,7 @@
                     border-color: #e4e4e4 #d0d0d0 #b4b4b4;
                     border-radius: 5px;
                     font-size: 17px;
-                    color: #595959;
+                    color: #1b1b1b;
                     font-weight: bold;
                     line-height: 36px;
                     background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
@@ -1432,7 +1432,7 @@
     left: 50%;
     transform: translateX(-50%);
     top: 150px;
-    background: #d0191f;
+    background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
     border-radius: 3px 3px 0px 0px;
 
     &.display {
@@ -1580,7 +1580,7 @@
     position: fixed;
     margin: 0px 0px 0px 280px;
     bottom: 0px;
-    background: #cc1721;
+    background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
     border-radius: 8px 8px 0px 0px;
     border: solid 2px #ffffff;
     border-bottom: none;
@@ -1930,7 +1930,7 @@
     z-index: 20;
     left: 35%;
     top: 150px;
-    background: #cd1721;
+    background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
     border-radius: 8px 8px 0px 0px;
     border: solid 2px #ffffff;
     border-bottom: none;
@@ -2250,7 +2250,7 @@
         width: 100%;
         height: 40px;
         border-radius: 3px 3px 0px 0px;
-        background: #cf191f;
+        background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
         color: #ffffff;
         position: relative;
         text-align: center;
@@ -2575,7 +2575,7 @@
     .topBar {
         width: 100%;
         height: 50px;
-        background: #ce1820;
+        background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
         border-radius: 3px 3px 0px 0px;
         position: relative;
 

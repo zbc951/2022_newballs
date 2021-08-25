@@ -474,7 +474,7 @@ main .bg {
   background: url("../images/avatar_big.png");
 }
 .left.mine .minewindow .avater p {
-  color: #454545;
+  color: #1b1b1b;
 }
 .left.mine .minewindow .avater p.joinday {
   color: #454545;
@@ -485,7 +485,7 @@ main .bg {
   display: inline-block;
   width: 36px;
   height: 17px;
-  background: #356bf7;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   position: relative;
   text-align: right;
   color: #ffffff;
@@ -519,11 +519,11 @@ main .bg {
   font-size: 16px;
   text-align: center;
   background: transparent;
-  color: #454545;
+  color: #1b1b1b;
   padding-top: 10px;
 }
 .left.mine .minewindow .threebut a:hover, .left.mine .minewindow .threebut a:active, .left.mine .minewindow .threebut a.active {
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
   color: #ffffff;
 }
 .left.mine .minewindow .threebut a:hover i, .left.mine .minewindow .threebut a:active i, .left.mine .minewindow .threebut a.active i {
@@ -533,13 +533,15 @@ main .bg {
   display: block;
   font-size: 24px;
   margin-bottom: 10px;
-  color: #8d8d8d;
+  color: #d21b1d;
 }
 .left.mine ul li:nth-of-type(1), .left.mine ul li:nth-of-type(5), .left.mine ul li:nth-of-type(9) {
   border-bottom: solid 1px #eeeeee;
 }
 .left.mine ul li:hover a, .left.mine ul li:active a, .left.mine ul li.active a {
-  border-color: #356bf7;
+  border-color: #d31c1c;
+  box-shadow: 0px 0px 5px 0px #d31c1c49;
+  color: #ce1427;
 }
 .left.mine ul li a {
   border: solid 1px transparent;
@@ -555,12 +557,13 @@ main .bg {
   position: initial;
   margin-left: 10px;
   transform: translateY(0px);
-  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  background: #39547f;
   color: #ffffff;
 }
 .left.mine ul li a i {
   font-size: 22px;
   top: 10px;
+  color: #d31c1c;
 }
 .left.mine ul li a i.fa-clipboard, .left.mine ul li a i.fa-mobile-alt {
   left: 21px;
@@ -2656,12 +2659,12 @@ main .bg {
   text-align: center;
 }
 .minetable tr th {
-  color: #454545;
+  color: #ce1427;
   font-size: 13px;
   padding: 8px 0px 7px;
   vertical-align: middle;
   background: #ffffff;
-  border-bottom: solid 1px #356bf7;
+  border-bottom: solid 1px #e8e8e8;
   position: relative;
 }
 .minetable tr th.tLeft {
@@ -2708,7 +2711,7 @@ main .bg {
 .minetable.infor tr td .mainWindow {
   width: 98%;
   height: 100%;
-  border: solid 1px #e3e3e3;
+  border: solid 1px #c8c8c8;
   border-radius: 5px;
   box-sizing: border-box;
   margin: 25px 0px 15px;
@@ -2724,7 +2727,7 @@ main .bg {
   box-sizing: border-box;
 }
 .minetable.infor tr td .mainWindow div p {
-  color: #595959;
+  color: #1b1b1b;
   font-size: 14px;
   position: relative;
 }
@@ -2737,20 +2740,24 @@ main .bg {
 }
 .minetable.infor tr td .mainWindow div p span:nth-of-type(2) {
   width: 60%;
-  color: #454545;
+  color: #1b1b1b;
   font-size: 13px;
 }
 .minetable.infor tr td .mainWindow div p button {
-  background: #ffffff;
   padding: 5px 8px;
-  color: #595959;
+  color: #1b1b1b;
   border-radius: 3px;
-  box-shadow: 1px 2px 5px 0px #00000049;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
+  box-shadow: 0px 2px 3px 0px #00000049;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 }
 .minetable.infor tr td .mainWindow div p button:hover, .minetable.infor tr td .mainWindow div p button:active, .minetable.infor tr td .mainWindow div p button.active {
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
   color: #ffffff;
   box-shadow: none;
+  border: none;
 }
 .minetable.infor tr td .remind {
   width: 98.3%;
@@ -2761,22 +2768,19 @@ main .bg {
   font-size: 13px;
 }
 .minetable.infor tr td .remind a {
-  color: #fa9819;
+  color: #ce1427;
   padding-left: 5px;
 }
 .minetable.bettingLimit {
   float: left;
   width: calc(50% - 12px);
 }
-.minetable.bettingLimit tr {
-  border-bottom: solid 1px #e8e8e8;
-}
 .minetable.bettingLimit tr:nth-of-type(1) th {
-  border-bottom-color: #f7f7f7;
-  color: #356bf7;
+  border-bottom-color: #e8e8e8;
 }
 .minetable.bettingLimit tr:nth-of-type(2) th {
-  border-bottom-color: #356bf7;
+  background: #39547f;
+  color: #ffffff;
 }
 .minetable.bettingLimit tr:nth-of-type(2n) {
   background: #ffffff;
@@ -2785,7 +2789,7 @@ main .bg {
   width: 33.3%;
   padding: 10px 0px;
   font-size: 14px;
-  color: #595959;
+  color: #1b1b1b;
 }
 .minetable.totalMoney {
   width: 1150px;
@@ -5101,7 +5105,7 @@ main .bg {
   height: 40px;
   line-height: 42px;
   text-align: center;
-  background: #d21b1d;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   color: #ffffff;
   border-radius: 3px 3px 0px 0px;
   font-size: 14px;
@@ -5178,7 +5182,7 @@ main .bg {
 .signupWindow .signupbar {
   width: 100%;
   height: 50px;
-  background: #cd1721;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   border-radius: 3px 3px 0px 0px;
   position: relative;
 }
@@ -5518,7 +5522,7 @@ main .bg {
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
-  background: #cd1721;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   border-radius: 3px 3px 0px 0px;
   z-index: 16;
   text-align: left;
@@ -5643,7 +5647,7 @@ main .bg {
   border-color: #e4e4e4 #d0d0d0 #b4b4b4;
   border-radius: 5px;
   font-size: 17px;
-  color: #595959;
+  color: #1b1b1b;
   font-weight: bold;
   line-height: 36px;
   background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
@@ -5676,7 +5680,7 @@ main .bg {
   left: 50%;
   transform: translateX(-50%);
   top: 150px;
-  background: #d0191f;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   border-radius: 3px 3px 0px 0px;
 }
 .norbettingCheck.display {
@@ -5806,7 +5810,7 @@ main .bg {
   position: fixed;
   margin: 0px 0px 0px 280px;
   bottom: 0px;
-  background: #cc1721;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   border-radius: 8px 8px 0px 0px;
   border: solid 2px #ffffff;
   border-bottom: none;
@@ -6105,7 +6109,7 @@ main .bg {
   z-index: 20;
   left: 35%;
   top: 150px;
-  background: #cd1721;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   border-radius: 8px 8px 0px 0px;
   border: solid 2px #ffffff;
   border-bottom: none;
@@ -6382,7 +6386,7 @@ main .bg {
   width: 100%;
   height: 40px;
   border-radius: 3px 3px 0px 0px;
-  background: #cf191f;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   color: #ffffff;
   position: relative;
   text-align: center;
@@ -6669,7 +6673,7 @@ main .bg {
 .unLogin .topBar {
   width: 100%;
   height: 50px;
-  background: #ce1820;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   border-radius: 3px 3px 0px 0px;
   position: relative;
 }
@@ -7958,7 +7962,7 @@ main .bg {
   background: #f5f5f5;
   bottom: 0px;
   z-index: 2;
-  color: #595959;
+  color: #1b1b1b;
   border-top: solid 1px #e8e8e8;
   box-sizing: border-box;
 }
@@ -8127,12 +8131,15 @@ main .bg {
 .minetopfix .fixbar .changePassword {
   float: right;
   padding: 3px 5px;
-  color: #595959;
-  background: #ffffff;
+  color: #1b1b1b;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
+  box-shadow: 0px 2px 3px 0px #00000049;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4 #d0d0d0 #b4b4b4;
   border-radius: 5px;
   font-size: 15px;
   margin: 8px 10px 0px 0px;
-  box-shadow: 1px 2px 5px 0px #00000017;
   /*for IE 9*/
   /*for IE*/
 }
@@ -8147,9 +8154,10 @@ main .bg {
   }
 }
 .minetopfix .fixbar .changePassword:hover, .minetopfix .fixbar .changePassword:active, .minetopfix .fixbar .changePassword.active {
-  background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
   color: #ffffff;
   box-shadow: none;
+  border: none;
 }
 .minetopfix .fixbar .changePassword.none {
   display: none;
@@ -8190,7 +8198,7 @@ main .bg {
   padding-left: 20px;
 }
 .minetopfix .fixbar p span {
-  color: #356bf7;
+  color: #ce1427;
 }
 .minetopfix .floatName {
   width: 100%;
@@ -8286,7 +8294,7 @@ main .bg {
 .mineHideBoard {
   width: 1155px;
   height: 125px;
-  background: #ededed;
+  background: #ddebf3;
   position: absolute;
   z-index: 5;
   left: 270px;
@@ -8315,7 +8323,7 @@ main .bg {
 .changePasswordWindow .topbar {
   width: 100%;
   height: 50px;
-  background: #356bf7;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   border-radius: 3px 3px 0px 0px;
   position: relative;
 }
@@ -8331,11 +8339,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #ededed;
-  border: solid 3px #356bf7;
+  background: #ffffff;
+  border: solid 3px #d31c1c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #ededed;
+  box-shadow: 0px 0px 0px 5px #ffffff;
 }
 .changePasswordWindow .topbar button::before {
   content: "";
@@ -8344,7 +8352,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(45deg);
 }
 .changePasswordWindow .topbar button::after {
@@ -8354,13 +8362,13 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(-45deg);
 }
 .changePasswordWindow .box {
   width: 100%;
   height: 160px;
-  background: #f5f5f5;
+  background: #ededed;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
 }
@@ -8390,27 +8398,34 @@ main .bg {
 }
 .changePasswordWindow .box div span {
   line-height: 40px;
-  color: #454545;
+  color: #1b1b1b;
   padding-left: 15px;
 }
 .changePasswordWindow .box div button {
   width: 152px;
   height: 36px;
   margin-right: 10px;
-  background: #ffffff;
-  color: #454545;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
+  color: #1b1b1b;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  box-shadow: 1px 2px 8px 0px #00000049;
+  box-shadow: 0px 2px 3px 0px #00000049;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 }
 .changePasswordWindow .box div button:last-child {
   margin: 0px;
-  border: solid 1px #356bf7;
-  color: #356bf7;
+  background: linear-gradient(to bottom, #d31c1c 0%, #bb092f 98%);
+  color: #ffffff;
+}
+.changePasswordWindow .box div button:last-child:hover, .changePasswordWindow .box div button:last-child:active, .changePasswordWindow .box div button:last-child.active {
+  background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
 }
 .changePasswordWindow .box div button:hover, .changePasswordWindow .box div button:active, .changePasswordWindow .box div button.active {
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+  border: none;
   color: #ffffff;
   box-shadow: none;
 }
@@ -8432,7 +8447,7 @@ main .bg {
 .cardremind .topbar {
   width: 100%;
   height: 50px;
-  background: #356bf7;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   border-radius: 3px 3px 0px 0px;
   position: relative;
 }
@@ -8448,11 +8463,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #ededed;
-  border: solid 3px #356bf7;
+  background: #ffffff;
+  border: solid 3px #d31c1c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #ededed;
+  box-shadow: 0px 0px 0px 5px #ffffff;
 }
 .cardremind .topbar button::before {
   content: "";
@@ -8461,7 +8476,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(45deg);
 }
 .cardremind .topbar button::after {
@@ -8471,13 +8486,13 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(-45deg);
 }
 .cardremind .box {
   width: 100%;
   height: 105px;
-  background: #f5f5f5;
+  background: #ededed;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
@@ -8485,23 +8500,23 @@ main .bg {
 .cardremind .box p {
   font-size: 14px;
   padding-bottom: 20px;
-  color: #454545;
+  color: #1b1b1b;
 }
 .cardremind .box p.remind {
-  color: #595959;
+  color: #454545;
 }
 .cardremind .box button {
   width: 160px;
   height: 36px;
-  background: #ffffff;
+  background: linear-gradient(to bottom, #d31c1c 0%, #bb092f 98%);
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  color: #454545;
+  color: #ffffff;
   box-shadow: 1px 2px 8px 0px #00000049;
 }
 .cardremind .box button:hover, .cardremind .box button:active, .cardremind .box button.active {
-  background: #356bf7;
+  background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
   color: #ffffff;
   box-shadow: none;
 }
@@ -8522,7 +8537,7 @@ main .bg {
 .cardAdd .topbar {
   width: 100%;
   height: 40px;
-  background: #356bf7;
+  background: linear-gradient(to right, #d31c1c 0%, #bb092f 98%);
   border-radius: 3px 3px 0px 0px;
   position: relative;
   text-align: center;
@@ -8538,11 +8553,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #ededed;
-  border: solid 3px #356bf7;
+  background: #ffffff;
+  border: solid 3px #d31c1c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #ededed;
+  box-shadow: 0px 0px 0px 5px #ffffff;
 }
 .cardAdd .topbar button::before {
   content: "";
@@ -8551,7 +8566,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(45deg);
 }
 .cardAdd .topbar button::after {
@@ -8561,13 +8576,13 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #356bf7;
+  background: #d31c1c;
   transform: rotate(-45deg);
 }
 .cardAdd .box {
   width: 100%;
   height: 315px;
-  background: #f5f5f5;
+  background: #ededed;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
 }
@@ -8604,16 +8619,16 @@ main .bg {
 }
 .cardAdd .box .inputBox span {
   line-height: 50px;
-  color: #454545;
+  color: #1b1b1b;
   padding-left: 30px;
   font-weight: bold;
 }
 .cardAdd .box button {
   width: 220px;
   height: 36px;
-  background: #fff;
+  background: linear-gradient(to bottom, #d31c1c 0%, #bb092f 98%);
   border: none;
-  color: #454545;
+  color: #ffffff;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
@@ -8624,8 +8639,8 @@ main .bg {
   box-shadow: 1px 2px 8px 0px #00000049;
 }
 .cardAdd .box button:hover, .cardAdd .box button:active, .cardAdd .box button.active {
-  background: #356bf7;
-  color: #fff;
+  background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
+  color: #ffffff;
   box-shadow: none;
 }
 

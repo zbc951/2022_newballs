@@ -52,7 +52,7 @@
 
                 //字樣
                 p {
-                    color: #454545;
+                    color: #1b1b1b;
 
                     &.joinday {
                         color: #454545;
@@ -64,7 +64,7 @@
                         display: inline-block;
                         width: 36px;
                         height: 17px;
-                        background: #356bf7;
+                        background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
                         position: relative;
                         text-align: right;
                         color: #ffffff;
@@ -103,11 +103,11 @@
                     font-size: 16px;
                     text-align: center;
                     background: transparent;
-                    color: #454545;
+                    color: #1b1b1b;
                     padding-top: 10px;
 
                     &:hover,&:active,&.active {
-                        background: #356bf7;
+                        background: linear-gradient(to top,#d31c1c 0%,#bb092f 98%);
                         color: #ffffff;
 
                         i {
@@ -120,7 +120,7 @@
                         display: block;
                         font-size: 24px;
                         margin-bottom: 10px;
-                        color: #8d8d8d;
+                        color: #d21b1d;
                     }
                 }
             }
@@ -137,7 +137,9 @@
                 &:hover,&:active,&.active {
 
                     a {
-                        border-color: #356bf7;
+                        border-color: #d31c1c;
+                        box-shadow: 0px 0px 5px 0px #d31c1c49; 
+                        color: #ce1427;
                     }
                 }
 
@@ -155,13 +157,14 @@
                         position: initial;
                         margin-left: 10px;
                         transform: translateY(0px);
-                        background: linear-gradient(to right,#ffab00 0%, #ff4802 100%);
+                        background: #39547f;
                         color: #ffffff;
                     }
 
                     i {
                         font-size: 22px;
                         top: 10px;
+                        color: #d31c1c;
 
                         &.fa-clipboard,&.fa-mobile-alt {
                             left: 21px;

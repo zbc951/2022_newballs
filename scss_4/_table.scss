@@ -2689,12 +2689,12 @@
 		text-align: center;
 
 		th {
-			color: #454545;
+			color: #ce1427;
 			font-size: 13px;
 			padding: 8px 0px 7px;
 			vertical-align: middle;
 			background: #ffffff;
-			border-bottom: solid 1px #356bf7;
+			border-bottom: solid 1px #e8e8e8;
 			position: relative;
 
 			//字靠左
@@ -2759,7 +2759,7 @@
 				.mainWindow {
 					width: 98%;
 					height: 100%;
-					border: solid 1px #e3e3e3;
+					border: solid 1px #c8c8c8;
 					border-radius: 5px;
 					box-sizing: border-box;
 					margin: 25px 0px 15px;
@@ -2775,7 +2775,7 @@
 						box-sizing: border-box;
 
 						p {
-							color: #595959;
+							color: #1b1b1b;
 							font-size: 14px;
 							position: relative;
 
@@ -2789,22 +2789,26 @@
 
 								&:nth-of-type(2) {
 									width: 60%;
-									color: #454545;
+									color: #1b1b1b;
 									font-size: 13px;
 								}
 							}
 
 							button {
-								background: #ffffff;
 								padding: 5px 8px;
-								color: #595959;
+								color: #1b1b1b;
 								border-radius: 3px;
-								box-shadow: 1px 2px 5px 0px #00000049;
+								background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+                    			box-shadow: 0px 2px 3px 0px #00000049;
+								border-style: solid;
+								border-width: 1px;
+								border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 
 								&:hover,&:active,&.active {
-									background: #356bf7;
+									background: linear-gradient(to top,#d31c1c 0%,#bb092f 98%);
 									color: #ffffff;
 									box-shadow: none;
+									border: none;
 								}
 							}
 						}
@@ -2821,7 +2825,7 @@
 					font-size: 13px;
 
 					a {
-						color: #fa9819;
+						color: #ce1427;
 						padding-left: 5px;
 					}
 				}
@@ -2834,20 +2838,19 @@
 		width: calc(50% - 12px);
 
 		tr {
-			border-bottom: solid 1px #e8e8e8;
 
 			&:nth-of-type(1) {
 				
 				th {
-					border-bottom-color: #f7f7f7;
-					color: #356bf7;
+					border-bottom-color: #e8e8e8;
 				}
 			}
 
 			&:nth-of-type(2) {
 
 				th {
-					border-bottom-color: #356bf7;
+					background: #39547f;
+					color: #ffffff;
 				}
 			}
 			
@@ -2859,7 +2862,7 @@
 				width: 33.3%;
 				padding: 10px 0px;
 				font-size: 14px;
-				color: #595959;
+				color: #1b1b1b;
 			}
 		}
 	}
