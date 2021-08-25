@@ -151,7 +151,7 @@
 .hideboard {
     width: 1260px;
     height: 70px;
-    background: #ededed;
+    background: #ddebf3;
     position: absolute;
     z-index: 5;
     left: 280px;
@@ -162,12 +162,12 @@
 .topfix {
     width: calc(100% - 660px);
     height: 50px;
-    background: #ededed;
+    background: #ffffff;
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 280px;
     z-index: 6;
-    border-bottom: solid 1px #dfdfdf;
+    box-shadow: 0px 2px 5px 0px #00000049;
 
     &.innerMode {
         top: 126px;
@@ -302,20 +302,23 @@
                 height: 0px;
                 border-style: solid;
                 border-width: 8px 6px 0px 6px;
-                border-color: #8d8d8d transparent;
+                border-color: #595959 transparent;
                 right: 10px;
                 top: 20px;
                 pointer-events: none;
             }
             
             select {
-                background: #ffffff;
-                color: #595959;
+                background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+                color: #1b1b1b;
                 appearance:none;   
                 -moz-appearance:none;   
                 -webkit-appearance:none;
                 padding: 5px 30px 3px 5px;
-                border: solid 1px #e3e3e3;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #f5f5f5 #e0e0e0 #c2c2c2;
+                box-shadow: 0px 2px 3px 0px #00000049;
 
                 span {
                     display: none;
@@ -325,11 +328,14 @@
         .chooseLeague {
             
             span {
-                background: #ffffff;
-                color: #595959;
+                background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+                color: #1b1b1b;
                 padding: 7px 30px 4px 5px;
-                border: solid 1px #e3e3e3;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #f5f5f5 #e0e0e0 #c2c2c2;
                 cursor: pointer;
+                box-shadow: 0px 2px 3px 0px #00000049;
             }
         }
 
@@ -364,13 +370,13 @@
             .date {
                 display: inline-block;
                 margin: 0px 10px;
-                color: #595959;
+                color: #1b1b1b;
                 cursor: pointer;
                 position: relative;
 
                 .total {
                     display: inline-block;
-                    background: #595959;
+                    background: linear-gradient(to top,#32496d 0%,#507abe 100%);
                     border-radius: 3px;
                     margin-left: 10px;
                     line-height: 22px;
@@ -414,7 +420,7 @@
                         color: #595959;
 
                         &:hover,&:active,&.active {
-                            background: #356bf7;
+                            background: #d21b1d;
                             color: #ffffff;
 
                             .total {
@@ -425,26 +431,33 @@
                                 }
                             }
                         }
+
+                        .total {
+                            background: #595959;
+                        }
                     }
                 }
             }
 
             .smallBtn {
-                background: #ffffff;
-                border: solid 1px #e3e3e3;
-                color: #595959;
+                background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+                color: #1b1b1b;
                 padding: 5px 10px 6px;
                 border-radius: 3px;
                 margin: 0px 3px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #f5f5f5 #e0e0e0 #c2c2c2;
+                box-shadow: 0px 2px 3px #00000049;
 
                 &:nth-of-type(1) {
                     margin-left: 10px;
                 }
 
                 &:hover,&:active,&.active {
-                    background: #356bf7;
+                    background: #cb1622;
                     color: #ffffff;
-                    border-color: #356bf7;
+                    box-shadow: none;
                 }
             }
         }

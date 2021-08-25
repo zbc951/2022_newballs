@@ -61,6 +61,7 @@ header {
         }
 
         .threeCircle {
+            font-size: 0px;
             float: right;
             width: auto;
             height: 100%;
@@ -70,7 +71,7 @@ header {
                 width: 15px;
                 height: 15px;
                 border-radius: 30px;
-                margin: 5px 5px 0px 0px;
+                margin: 5px 8px 0px 0px;
                 border: solid 2px #31a20b;
                 background: #131313;
 
@@ -87,7 +88,7 @@ header {
                 &:nth-of-type(4) {
                     background: #ffffff;
                     border-color: #d31c1c;
-                    margin-right: 20px;
+                    margin-right: 10px;
                 }
             }
         }
