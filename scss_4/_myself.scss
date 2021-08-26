@@ -41,20 +41,42 @@
     .recordbar {
         width: 1150px;
         height: 35px;
-        background: linear-gradient(to top, #f3f3f3 0%, #ffffff 100%);
+        background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
         border-radius: 3px;
-        box-shadow: 1px 2px 8px 0px #00000035;
+        box-shadow: 0px 2px 3px 0px #00000049;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #e4e4e4 #d0d0d0 #b4b4b4;
         margin: 0px 0px 15px 10px;
         position: relative;
         box-sizing: border-box;
         z-index: 1;
 
-        &.open {
-            border: solid 1px #356bf7;
-            background: linear-gradient(to bottom, #f3f3f3 0%, #ffffff 100%);
+        &:hover,&:active,&.active {
+            border-color: #d31c1c;
+            background: #ffffff;
+            box-shadow: none;
 
             div {
-                color: #356bf7;
+                color: #ce1427;
+            }
+
+            .remind {
+                background: #1f54ab;
+            }
+        }
+
+        &.open {
+            border: none;
+            background: #39547f;
+
+            div {
+                color: #ffffff;
+            }
+
+            .remind {
+                background: #ffffff;
+                color: #ce1427;
             }
         }
 
@@ -62,7 +84,7 @@
             float: left;
             width: 25%;
             text-align: center;
-            color: #454545;
+            color: #1b1b1b;
             font-size: 15px;
             line-height: 37px;
             cursor: pointer;
@@ -71,7 +93,7 @@
             .line {
                 width: 1px;
                 height: 15px;
-                background: #dfdfdf;
+                background: #c8c8c8;
                 margin: 10px 0px 0px 0px;
                 float: right;
             }
@@ -82,7 +104,7 @@
                     position: absolute;
                     width: 20px;
                     height: 18px;
-                    background: linear-gradient(to right,#ffab00 0%, #ff4802 100%);
+                    background: #d31c1c;
                     left: 35px;
                     top: 48%;
                     transform: translateY(-50%);
@@ -99,8 +121,7 @@
         width: 1150px;
         height: auto;
         margin: 0px 0px 15px 10px;
-        border-top: none;
-        background: #d6d6d6;
+        background: #f1f1f1;
         padding-top: 20px;
         border-radius: 0px 0px 3px 3px;
         box-sizing: border-box;
@@ -862,7 +883,7 @@
         .line {
             width: 1px;
             height: 25px;
-            background: #e3e3e3;
+            background: #e8e8e8;
             float: left;
             margin: 10px 0px 0px;
         }
@@ -889,7 +910,7 @@
                 &.date {
                     width: 19px;
                     height: 19px;
-                    background: url('../images/date_icon3.png') no-repeat;
+                    background: url('../images/date_icon4.png') no-repeat;
                     float: left;
                     margin: 13px 0px 0px 0px;
                     border: none;
@@ -897,16 +918,20 @@
 
                 &.timesearchbut {
                     margin: 8px 24px 0px 0px;
-                    border: none;
-                    background: #ffffff;
+                    background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+                    color: #1b1b1b;
                     padding: 5px 8px;
                     border-radius: 3px;
-                    color: #454545;
-                    box-shadow: 1px 2px 4px 0px #00000049;
+                    box-shadow: 0px 2px 3px 0px #00000049;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 
                     &:hover,&:active,&.active {
-                        background: #356bf7;
+                        background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+                        border: none;
                         color: #ffffff;
+                        box-shadow: none;
                     }
                 }
             }
@@ -931,21 +956,21 @@
                     height: 0px;
                     border-style: solid;
                     border-width: 6px 5px 0px 5px;
-                    border-color: #8d8d8d transparent;
+                    border-color: #595959 transparent;
                     top: 21px;
                     right: 5px;
                 }
 
                 select {
                     margin: 11px 0px 0px 10px;
-                    border: 1px solid #e3e3e3;
+                    border: 1px solid #c8c8c8;
                     outline: none;
                     border-radius: 5px;
                     width: 95px;
                     height: 24px;
                     font-family: "my_font";
                     background: #ffffff;
-                    color: #454545;
+                    color: #1b1b1b;
                     appearance: none;
                     padding-left: 5px;
                 }
@@ -953,18 +978,21 @@
         }
         .smallTimeBtn {
             margin: 8px 12px 0px 0px;
-            border: none;
-            background: #ffffff;
+            background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+            color: #1b1b1b;
             padding: 5px 8px;
             border-radius: 3px;
-            color: #454545;
             float: right;
-            box-shadow: 1px 2px 4px 0px #00000049;
+            box-shadow: 0px 2px 3px 0px #00000049;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 
             &:hover,&:active,&.active {
-                background: #356bf7;
+                background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+                border: none;
                 color: #ffffff;
-                box-decoration-break: none;
+                box-shadow: none;
             }
         }
 
@@ -1012,7 +1040,7 @@
                 font-size: 15px;
                 height: 43px;
                 line-height: 45px;
-                color: #454545;
+                color: #1b1b1b;
                 box-sizing: border-box;
                 cursor: pointer;
                 border-radius: 3px;
@@ -1020,7 +1048,7 @@
                 position: relative;
 
                 &:hover,&:active,&.active {
-                    color: #356bf7;
+                    color: #ce1427;
                     background: #ffffff;
 
                     &::before {
@@ -1028,7 +1056,7 @@
                         position: absolute;
                         width: 100%;
                         height: 2px;
-                        background: #356bf7;
+                        background: #d31c1c;
                         bottom: -2px;
                         left: 0px;
                     }
@@ -1056,7 +1084,7 @@
         width: 100%;
         height: 35px;
         background: #ffffff;
-        border-bottom: solid 1px #356bf7;
+        box-shadow: 0px 2px 8px 0px #00000049;
 
         //投注紀錄用
         &.betting {
@@ -1065,14 +1093,14 @@
                 float: left;
                 width: 25%;
                 text-align: center;
-                color: #454545;
+                color: #1b1b1b;
                 font-size: 15px;
                 padding-top: 12px;
 
                 .line {
                     width: 1px;
                     height: 10px;
-                    background: #dfdfdf;
+                    background: #c8c8c8;
                     margin: -5px 0px 0px 0px;
                     float: right;
                 }
@@ -1085,7 +1113,7 @@
             div {
                 float: left;
                 text-align: center;
-                color: #454545;
+                color: #1b1b1b;
                 font-size: 15px;
                 padding-top: 12px;
 
@@ -1123,7 +1151,7 @@
                 .line {
                     width: 1px;
                     height: 10px;
-                    background: #dfdfdf;
+                    background: #c8c8c8;
                     margin: -5px 0px 0px 0px;
                     float: right;
 
@@ -1138,7 +1166,7 @@
     //左段字
     .leftword {
         font-weight: bold;
-        color: #454545;
+        color: #1b1b1b;
         float: left;
         margin: 30px 0px 0px 20px;
     }
@@ -1155,7 +1183,7 @@
             font-weight: bold;
             margin: 20px 10px 0px;
             font-size: 17px;
-            color: #454545;
+            color: #1b1b1b;
             span {
                 display: block;
                 padding-top: 13px;
@@ -1168,7 +1196,7 @@
             display: inline-block;
             width: 1px;
             height: 45px;
-            background: #dfdfdf;
+            background: #c8c8c8;
             margin: 0px 10px 0px 10px;
         }
     }

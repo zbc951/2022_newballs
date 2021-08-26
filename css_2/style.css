@@ -2794,7 +2794,7 @@ main .bg {
   width: 1150px;
 }
 .minetable.totalMoney tr th button {
-  color: #fff;
+  color: #454545;
   background: transparent;
   border: none;
   float: right;
@@ -2810,7 +2810,7 @@ main .bg {
   position: absolute;
   width: 14px;
   height: 14px;
-  background: url("../images/reset2.png") no-repeat;
+  background: url("../images/reset.png") no-repeat;
   background-size: 100%;
   left: -18px;
   top: 3px;
