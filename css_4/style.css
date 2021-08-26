@@ -3824,19 +3824,19 @@ main .bg {
   margin: 0px auto 20px;
 }
 .minetable.innerActive tr {
-  border-bottom: solid 1px #dfdfdf;
+  border-bottom: solid 1px #c8c8c8;
 }
 .minetable.innerActive tr:nth-of-type(2n) {
   background: #ffffff;
 }
 .minetable.innerActive tr th {
-  background: #356bf7;
+  background: #39547f;
   color: #ffffff;
 }
 .minetable.innerActive tr td {
   padding: 10px;
-  color: #454545;
-  border-right: solid 1px #dfdfdf;
+  color: #1b1b1b;
+  border-right: solid 1px #c8c8c8;
 }
 .minetable.innerActive tr td:last-child {
   border: none;
@@ -3846,13 +3846,13 @@ main .bg {
   float: left;
 }
 .minetable.download tr td p {
-  color: #454545;
+  color: #1b1b1b;
   padding: 10px;
   font-size: 14px;
 }
 .minetable.download tr td .codeBox {
   width: 80%;
-  border: solid 1px #e3e3e3;
+  border: solid 1px #c8c8c8;
   padding: 10px;
   box-sizing: border-box;
   font-size: 0px;
@@ -3871,7 +3871,7 @@ main .bg {
 }
 .minetable.download tr td .codeBox .versionWord span {
   display: block;
-  color: #356bf7;
+  color: #ce1427;
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 15px;
@@ -3903,15 +3903,18 @@ main .bg {
   box-sizing: border-box;
 }
 .minetable.download tr td .codeBox div button {
-  background: #ffffff;
-  border: none;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
+  color: #1b1b1b;
   border-radius: 3px;
   padding: 5px 8px;
-  color: #454545;
-  box-shadow: 1px 2px 4px 0px #00000049;
+  box-shadow: 0px 2px 3px 0px #00000049;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 }
 .minetable.download tr td .codeBox div button:hover, .minetable.download tr td .codeBox div button:active, .minetable.download tr td .codeBox div button.active {
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+  border: none;
   color: #ffffff;
   box-shadow: none;
 }
@@ -3920,14 +3923,14 @@ main .bg {
   height: auto;
   padding: 10px;
   margin: 19px auto;
-  border: solid 1px #e3e3e3;
+  border: solid 1px #c8c8c8;
   background: #ffffff;
 }
 .minetable.download tr td .bowserBox .bowser {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("../images/download_app_browser3.png") no-repeat;
+  background: url("../images/download_app_browser4.png") no-repeat;
   background-size: 200%;
 }
 .minetable.download tr td .bowserBox .bowser.ie {
@@ -3946,18 +3949,22 @@ main .bg {
   display: block;
 }
 .minetable.download tr td .bowserBox button {
-  background: #ffffff;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
+  color: #1b1b1b;
   border: none;
   border-radius: 3px;
   padding: 5px 8px;
-  color: #454545;
   position: absolute;
   right: 0px;
   top: 19px;
-  box-shadow: 1px 2px 4px 0px #00000049;
+  box-shadow: 0px 2px 3px 0px #00000049;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 }
 .minetable.download tr td .bowserBox button:hover, .minetable.download tr td .bowserBox button:active, .minetable.download tr td .bowserBox button.active {
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+  border: none;
   color: #ffffff;
   box-shadow: none;
 }
@@ -5426,6 +5433,7 @@ main .bg {
   z-index: 5;
   padding-top: 1px;
   cursor: pointer;
+  background: none;
 }
 .controlBox .innerBox1 .partingBox .slideBase p:first-child {
   padding-left: 2px;
@@ -7475,7 +7483,7 @@ main .bg {
 .myself .helpbar {
   width: 1150px;
   height: 45px;
-  background: linear-gradient(to top, #f3f3f3 0%, #ffffff 100%);
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
   border-radius: 3px;
   position: relative;
   z-index: 1;
@@ -7490,27 +7498,42 @@ main .bg {
   position: absolute;
   width: 6px;
   height: 10px;
-  background: url("../images/arrow_b.png") no-repeat;
+  background: url("../images/arrow_bl.png") no-repeat;
   right: 20px;
   top: 18px;
   transform: rotate(90deg);
 }
-.myself .helpbar.open {
+.myself .helpbar:hover {
+  border: solid 1px transparent;
   background: #ffffff;
-  border: solid 1px #356bf7;
+  border-color: #d31c1c;
+}
+.myself .helpbar:hover p, .myself .helpbar:hover span {
+  color: #ce1427;
+}
+.myself .helpbar.open {
+  background: #39547f;
+  border-color: transparent;
+}
+.myself .helpbar.open p, .myself .helpbar.open span {
+  color: #ffffff;
 }
 .myself .helpbar.open::before {
   width: 6px;
   height: 10px;
-  background: url("../images/arrow_b.png") no-repeat;
+  background: url("../images/arrow_w.png") no-repeat;
   background-size: 100%;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 .myself .helpbar.edit {
-  background: linear-gradient(to top, #f3f3f3 0%, #ffffff 100%);
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
+  border: solid 1px transparent;
 }
 .myself .helpbar.edit label {
   display: block;
+}
+.myself .helpbar.edit p, .myself .helpbar.edit span {
+  color: #1b1b1b;
 }
 .myself .helpbar.feeback {
   pointer-events: none;
@@ -7523,13 +7546,13 @@ main .bg {
   line-height: 45px;
   padding-left: 15px;
   font-size: 15px;
-  color: #454545;
+  color: #1b1b1b;
 }
 .myself .helpbar span {
   float: right;
   line-height: 45px;
   padding-right: 50px;
-  color: #595959;
+  color: #1b1b1b;
   font-size: 15px;
 }
 .myself .helpbar label {
@@ -7540,10 +7563,9 @@ main .bg {
   margin: 13px 0px 0px 20px;
   position: relative;
   z-index: 1;
-  background: #f5f5f5;
+  background: #fcfcfc;
   border-radius: 30px;
-  box-shadow: 0px 2px 2px 0px #d4d4d4 inset;
-  border-bottom: solid 1px #ffffff;
+  box-shadow: 0px 2px 5px 0px #00000049 inset;
 }
 .myself .helpbar label.active::before {
   content: "";
@@ -7553,7 +7575,7 @@ main .bg {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: #fdc147;
+  background: linear-gradient(to bottom, #d31c1c 0%, #bb092f 98%);
   border-radius: 30px;
 }
 .myself .helpbar label input {
@@ -7584,21 +7606,20 @@ main .bg {
   width: 97%;
   font-size: 14px;
   line-height: 24px;
-  color: #454545;
+  color: #1b1b1b;
   padding: 0px 15px 15px 15px;
 }
 .myself .helpbox .innerbox {
   width: 92%;
   height: auto;
   border-radius: 12px;
-  border: 1px solid #e3e3e3;
   margin: 0px auto 20px;
   padding: 15px;
 }
 .myself .helpbox .innerbox p {
   padding: 5px 15px;
   font-size: 16px;
-  color: #356bf7;
+  color: #ce1427;
 }
 .myself .helpbox .remind {
   color: #595959;
@@ -7613,7 +7634,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url("../images/infor3.png") no-repeat;
+  background: url("../images/infor4.png") no-repeat;
   top: -1px;
   left: -18px;
 }
@@ -8031,11 +8052,13 @@ main .bg {
   display: none;
   float: right;
   padding: 4px 6px;
-  color: #454545;
-  background: #ffffff;
-  border: none;
+  background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
+  color: #1b1b1b;
   border-radius: 3px;
-  box-shadow: 1px 2px 4px 0px #00000049;
+  box-shadow: 0px 2px 3px 0px #00000049;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4 #d0d0d0 #b4b4b4;
   font-size: 15px;
   margin: 8px 10px 0px 0px;
 }
@@ -8043,7 +8066,8 @@ main .bg {
   display: block;
 }
 .minetopfix .fixbar .editbut:hover, .minetopfix .fixbar .editbut:active, .minetopfix .fixbar .editbut.active, .minetopfix .fixbar .cancelbut:hover, .minetopfix .fixbar .cancelbut:active, .minetopfix .fixbar .cancelbut.active, .minetopfix .fixbar .delbut:hover, .minetopfix .fixbar .delbut:active, .minetopfix .fixbar .delbut.active {
-  background: #356bf7;
+  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+  border: none;
   color: #ffffff;
   box-shadow: none;
 }
@@ -8051,7 +8075,7 @@ main .bg {
   display: none;
   float: right;
   position: relative;
-  background: #d0d0d0;
+  background: #dadada;
   margin: 7px 20px 0px 0px;
   padding: 8px 12px;
   border-radius: 20px;
@@ -8062,13 +8086,13 @@ main .bg {
   display: block;
 }
 .minetopfix .fixbar .rowbutMes.lside span:last-child {
-  color: #595959;
+  color: #1b1b1b;
 }
 .minetopfix .fixbar .rowbutMes.lside .innbut {
   animation: rowbut 0.3s ease-out 0s;
 }
 .minetopfix .fixbar .rowbutMes.rside span:nth-of-type(1) {
-  color: #595959;
+  color: #1b1b1b;
 }
 .minetopfix .fixbar .rowbutMes.rside .innbut {
   left: 53%;
@@ -8078,7 +8102,7 @@ main .bg {
   margin-right: 20px;
   font-size: 14px;
   position: relative;
-  color: #356bf7;
+  color: #ce1427;
 }
 .minetopfix .fixbar .rowbutMes span:last-child {
   margin: 0px;
@@ -8092,7 +8116,7 @@ main .bg {
   top: 10%;
   border-radius: 20px;
   box-sizing: border-box;
-  border: solid 1px #356bf7;
+  border: solid 1px #d31c1c;
 }
 .minetopfix .fixbar .line {
   width: 1px;

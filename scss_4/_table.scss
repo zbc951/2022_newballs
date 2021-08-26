@@ -4156,21 +4156,21 @@
 		margin: 0px auto 20px;
 
 		tr {
-			border-bottom: solid 1px #dfdfdf;
+			border-bottom: solid 1px #c8c8c8;
 
 			&:nth-of-type(2n) {
 				background: #ffffff;
 			}
 
 			th {
-				background: #356bf7;
+				background: #39547f;
 				color: #ffffff;
 			}
 
 			td {
 				padding: 10px;
-				color: #454545;
-				border-right: solid 1px #dfdfdf;
+				color: #1b1b1b;
+				border-right: solid 1px #c8c8c8;
 
 				&:last-child {
 					border: none;
@@ -4189,14 +4189,14 @@
 			td {
 
 				p {
-					color: #454545;
+					color: #1b1b1b;
 					padding: 10px;
 					font-size: 14px;
 				}
 
 				.codeBox {
 					width: 80%;
-					border: solid 1px #e3e3e3;
+					border: solid 1px #c8c8c8;
 					padding: 10px;
 					box-sizing: border-box;
 					font-size: 0px;
@@ -4216,7 +4216,7 @@
 
 						span {
 							display: block;
-							color: #356bf7;
+							color: #ce1427;
 							font-size: 20px;
 							font-weight: bold;
 							padding-bottom: 15px;
@@ -4253,15 +4253,18 @@
 						}
 
 						button {
-							background: #ffffff;
-							border: none;
+							background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+                			color: #1b1b1b;
 							border-radius: 3px;
 							padding: 5px 8px;
-							color: #454545;
-							box-shadow: 1px 2px 4px 0px #00000049;
+							box-shadow: 0px 2px 3px 0px #00000049;
+							border-style: solid;
+							border-width: 1px;
+							border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 
 							&:hover,&:active,&.active {
-								background: #356bf7;
+								background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+								border: none;
 								color: #ffffff;
 								box-shadow: none;
 							}
@@ -4274,14 +4277,14 @@
 					height: auto;
 					padding: 10px;
 					margin: 19px auto;
-					border: solid 1px #e3e3e3;
+					border: solid 1px #c8c8c8;
 					background: #ffffff;
 
 					.bowser {
 						display: inline-block;
 						width: 40px;
 						height: 40px;
-						background: url('../images/download_app_browser3.png') no-repeat;
+						background: url('../images/download_app_browser4.png') no-repeat;
 						background-size: 200%;
 
 						&.ie {
@@ -4304,18 +4307,22 @@
 					}
 
 					button {
-						background: #ffffff;
+						background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+                		color: #1b1b1b;
 						border: none;
 						border-radius: 3px;
 						padding: 5px 8px;
-						color: #454545;
 						position: absolute;
 						right: 0px;
 						top: 19px;
-						box-shadow: 1px 2px 4px 0px #00000049;
+						box-shadow: 0px 2px 3px 0px #00000049;
+						border-style: solid;
+						border-width: 1px;
+						border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 
 						&:hover,&:active,&.active {
-							background: #356bf7;
+							background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+							border: none;
 							color: #ffffff;
 							box-shadow: none;
 						}
