@@ -129,7 +129,7 @@
 					background: #d01a1e;
 					color: #ffffff;
 					box-shadow: none;
-					border: none;
+					border-color: transparent;
 
 					span {
 						color: #ffffff;
@@ -2808,7 +2808,7 @@
 									background: linear-gradient(to top,#d31c1c 0%,#bb092f 98%);
 									color: #ffffff;
 									box-shadow: none;
-									border: none;
+									border-color: transparent;
 								}
 							}
 						}
@@ -2966,7 +2966,7 @@
 								
 								&:hover,&:active,&.active {
 									background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
-									border: none;
+									border-color: transparent;
 									color: #ffffff;
 									box-shadow: none;
 								}
@@ -3068,7 +3068,7 @@
 
 									&:hover,&:active,&.active {
 										background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
-										border: none;
+										border-color: transparent;
 										color: #ffffff;
 										box-shadow: none;
 									}
@@ -3392,7 +3392,7 @@
 
 							&:hover,&:active,&.active {
 								background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
-								border: none;
+								border-color: transparent;
 								color: #ffffff;
 								box-shadow: none;
 							}
@@ -3661,7 +3661,7 @@
 						width: 15px;
 						height: 15px;
 						position: absolute;
-						background: url(../images/infor3.png) no-repeat;
+						background: url(../images/infor4.png) no-repeat;
 						top: -1px;
 						left: -18px;
 					}
@@ -3673,7 +3673,7 @@
 
 				.box {
 					width: 96%;
-					border: solid 1px #e3e3e3;
+					border: solid 1px #c8c8c8;
 					box-sizing: border-box;
 					margin: 0px auto;
 					font-size: 0px;
@@ -3683,7 +3683,7 @@
 					.line {
 						width: 1px;
 						height: 40px;
-						background: #dfdfdf;
+						background: #c8c8c8;
 						position: absolute;
 						right: 0px;
 						top: 50%;
@@ -3713,7 +3713,7 @@
 							display: inline-block;
 							width: 30px;
 							height: 30px;
-							background: url('../images/contact_ic3.png') no-repeat;
+							background: url('../images/contact_ic4.png') no-repeat;
 							background-size: 500%;
 							margin-left: 30px;
 							margin: 0px 0px 6px 30px;
@@ -3739,7 +3739,7 @@
 							display: inline-block;
 							width: 50px;
 							height: 50px;
-							background: url('../images/joinus_ic3.png') no-repeat;
+							background: url('../images/joinus_ic4.png') no-repeat;
 							background-size: 500%;
 							margin-left: 25px;
 							transform: translateY(5px);
@@ -3758,7 +3758,7 @@
 							width: 85%;
 							height: 100%;
 							font-size: 15px;
-							color: #454545;
+							color: #1b1b1b;
 							position: relative;
 							padding-left: 30px;
 							box-sizing: border-box;
@@ -3782,24 +3782,27 @@
 	
 								&.remind {
 									font-size: 12px;
-									color: #595959;
+									color: #ce1427;
 								}
 							}
 							
 							button {
 								margin: 8px 24px 0px 0px;
-								border: none;
-								background: #ffffff;
+								background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+                				color: #1b1b1b;
 								padding: 5px 8px;
 								border-radius: 3px;
-								color: #454545;
 								position: absolute;
 								right: 0px;
 								top: 5px;
-								box-shadow: 1px 2px 4px 0px #00000049;
+								box-shadow: 0px 2px 3px 0px #00000049;
+								border-style: solid;
+								border-width: 1px;
+								border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 
 								&:hover,&:active,&.active {
-									background: #356bf7;
+									background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+									border-color: transparent;
 									color: #ffffff;
 									box-shadow: none;
 								}
@@ -3809,7 +3812,7 @@
 						.rowbut {
 							display: inline-block;
 							position: relative;
-							background: #f5f5f5;
+							background: #ebebeb;
 							padding: 8px 12px;
 							border-radius: 20px;
 							position: relative;
@@ -3826,7 +3829,7 @@
 								span {
 
 									&:nth-of-type(2) {
-										color: #595959;
+										color: #1b1b1b;
 									}
 								}
 							}
@@ -3841,7 +3844,7 @@
 								span {
 
 									&:nth-of-type(1) {
-										color: #595959;
+										color: #1b1b1b;
 									}
 								}
 							}
@@ -3856,14 +3859,14 @@
 								top: 10%;
 								border-radius: 20px;
 								box-sizing: border-box;
-								border: solid 1px #356bf7;
+								border: solid 1px #d31c1c;
 							}
 
 							span {
 								font-size: 15px;
 								position: relative;
 								padding-right: 17px;
-								color: #356bf7;
+								color: #ce1427;
 
 								&:last-child {
 									padding: 0px;
@@ -3954,7 +3957,7 @@
 					display: inline-block;
 					width: 31%;
 					height: 170px;
-					border: solid 1px #e3e3e3;
+					border: solid 1px #c8c8c8;
 					box-sizing: border-box;
 					margin-right: 12px;
 					font-size: 0px;
@@ -3969,7 +3972,7 @@
 					.join_ic {
 						width: 50px;
 						height: 50px;
-						background: url('../images/joinus_ic3.png') no-repeat;
+						background: url('../images/joinus_ic4.png') no-repeat;
 						background-size: 500%;
 						margin: 15px auto;
 
@@ -3984,11 +3987,11 @@
 
 					p {
 						font-size: 14px;
-						color: #454545;
+						color: #1b1b1b;
 
 						&.remind {
 							font-size: 13px;
-							color: #595959;
+							color: #ce1427;
 							padding-top: 10px;
 						}
 					}
@@ -4001,10 +4004,15 @@
 
 		tr {
 
+			th {
+				background: #39547f;
+				color: #ffffff;
+			}
+
 			td {
 				padding: 15px 15px 0px;
 				text-align: left;
-				color: #454545;
+				color: #595959;
 				font-size: 15px;
 
 				.inputBox {
@@ -4012,7 +4020,7 @@
 
 					span {
 						padding-right: 30px;
-						color: #595959;
+						color: #1b1b1b;
 					}
 
 					label {
@@ -4031,18 +4039,20 @@
 							height: 0px;
 							border-style: solid;
 							border-width: 6px 5px 0px 5px;
-							border-color: #8d8d8d transparent;
+							border-color: #595959 transparent;
 						}
 
 						select {
-							border: solid 1px #e3e3e3;
 							border-radius: 3px;
-							background: #ffffff;
-							color: #454545;
+							background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
+                			color: #1b1b1b;
 							width: 156px;
 							height: 36px;
 							padding-left: 10px;
 							appearance: none;
+							border-style: solid;
+							border-width: 1px;
+							border-color: #e4e4e4 #d0d0d0 #b4b4b4;
 						}
 					}
 				}
@@ -4050,45 +4060,44 @@
 				.line {
 					width: 100%;
 					height: 1px;
-					background: #dfdfdf;
+					background: #c8c8c8;
 					margin: 15px auto 0px;
 				}
 
 				.sword {
 					font-size: 12px;
-					color: #929292;
+					color: #595959;
 				}
 				
 				textarea {
 					width: 100%;
 					height: auto;
-					background: transparent;
 					box-sizing: border-box;
 					outline: none;
 					padding: 10px;
-					color: #454545;
+					color: #1b1b1b;
 					font-size: 15px;
 					resize: none;
 					border-radius: 3px;
-					border-color: #e3e3e3;
+					border-color: #c8c8c8;
 					background: #ffffff;
 				}
 
 				.upimg {
-					background: transparent;
-					border: solid 1px #e3e3e3;
+					border: solid 1px #e4e4e4;
 					border-radius: 3px;
 					width: 70px;
 					height: 70px;
-					color: #454545;
+					color: #565656;
 					background: #ffffff;
 					font-size: 12px;
+					box-shadow: 0px 2px 5px 0px #00000035;
 
 					&:hover,&:active,&.active {
-						border-color: #356bf7;
-						box-shadow: 0px 0px 10px 2px #00000017;
+						border-color: #d31c1c;
+						box-shadow: none;
 						transition: all 0.3s;
-						color: #356bf7;
+						color: #1b1b1b;
 
 						span {
 							background-position-y: 100%;
@@ -4099,7 +4108,7 @@
 						display: block;
 						width: 24px;
 						height: 19px;
-						background: url(../images/uploadimg3.png);
+						background: url(../images/uploadimg4.png);
 						background-size: 100%;
 						margin: 0px auto 5px;
 					}
@@ -4122,7 +4131,7 @@
 						width: 13px;
 						height: 13px;
 						position: absolute;
-						background: url(../images/infor3.png) no-repeat;
+						background: url(../images/infor4.png) no-repeat;
 						top: -1px;
 						left: -18px;
 					}
@@ -4131,19 +4140,18 @@
 				.uploadImg {
 					width: 220px;
 					height: 36px;
-					color: #454545;
+					background: linear-gradient(to bottom,#d31c1c 0%,#bb092f 98%);
+                    color: #ffffff;
 					font-size: 16px;
 					float: right;
-					background: #ffffff;
 					border-radius: 5px;
 					margin-bottom: 15px;
 					border: none;
-					box-shadow: 1px 2px 4px 0px #00000049;
+					box-shadow: 0px 2px 3px 0px #00000049;
 
 					&:hover,&:active,&.active {
-						color: #ffffff;
+						background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
 						box-shadow: none;
-						background: #356bf7;
 					}
 				}
 			}
@@ -4264,7 +4272,7 @@
 
 							&:hover,&:active,&.active {
 								background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
-								border: none;
+								border-color: transparent;
 								color: #ffffff;
 								box-shadow: none;
 							}
@@ -4309,7 +4317,6 @@
 					button {
 						background: linear-gradient(to top,#ffffff 5%,#ebf0f2 26%,#ffffff 82%);
                 		color: #1b1b1b;
-						border: none;
 						border-radius: 3px;
 						padding: 5px 8px;
 						position: absolute;
@@ -4322,7 +4329,7 @@
 
 						&:hover,&:active,&.active {
 							background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
-							border: none;
+							border-color: transparent;
 							color: #ffffff;
 							box-shadow: none;
 						}
@@ -4823,7 +4830,7 @@
 
 							&:hover,&:active,&.active {
 								background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
-								border: none;
+								border-color: transparent;
 								color: #ffffff;
 								box-shadow: none;
 							}
@@ -4861,7 +4868,7 @@
 
 					&:hover,&:active,&.active {
 						background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
-						border: none;
+						border-color: transparent;
 						color: #ffffff;
 						box-shadow: none;
 
@@ -4918,7 +4925,7 @@
 
 					&:hover,&:active,&.active {
 						background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
-						border: none;
+						border-color: transparent;
 						color: #ffffff;
 						box-shadow: none;
 					}

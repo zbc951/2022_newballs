@@ -19,7 +19,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: linear-gradient(to bottom,#ffab00 0%, #ff4802 100%);
+        background: linear-gradient(to top,#32496d 0%, #507abe 100%);
         border-radius: 10px;
     }
 
@@ -654,7 +654,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: linear-gradient(to bottom,#ffab00 0%, #ff4802 100%);
+        background: linear-gradient(to top,#32496d 0%, #507abe 100%);
         border-radius: 10px;
     }
 
@@ -968,7 +968,7 @@
 
                 &:hover,&:active,&.active {
                     background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
-                    border: none;
+                    border-color: transparent;
                     color: #ffffff;
                     box-shadow: none;
                 }
@@ -1403,7 +1403,7 @@
                         background: linear-gradient(to top,#d31c1c 0%,#bb092f 98%);
                         color: #ffffff;
                         box-shadow: none;
-                        border: none;
+                        border-color: transparent;
                     }
 
                     &.decideBtn {
@@ -1693,7 +1693,7 @@
             }
         
             &::-webkit-scrollbar-thumb {
-                background: linear-gradient(to right,#ffab00 0%, #ff4802 100%);
+                background: linear-gradient(to top,#32496d 0%, #507abe 100%);
                 border-radius: 10px;
             }
             
@@ -1900,7 +1900,7 @@
                         background: linear-gradient(to top,#d31c1c 0%,#bb092f 98%);
                         color: #ffffff;
                         box-shadow: none;
-                        border: none;
+                        border-color: transparent;
                     }
 
                     &.cur {
@@ -2035,7 +2035,7 @@
             }
         
             &::-webkit-scrollbar-thumb {
-                background: linear-gradient(to right,#ffab00 0%, #ff4802 100%);
+                background: linear-gradient(to top,#32496d 0%, #507abe 100%);
                 border-radius: 10px;
             }
             
@@ -2468,7 +2468,6 @@
                                 border-radius: 3px;
                                 width: 35px;
                                 height: 20px;
-                                border: none;
                                 text-align: center;
                                 color: #1b1b1b;
                                 font-weight: bold;
