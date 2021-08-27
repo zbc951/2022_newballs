@@ -1172,7 +1172,7 @@ main .bg {
   border-style: solid;
   border-width: 0px 15px 15px 0px;
   border-color: transparent #16e329 transparent transparent;
-  animation: btnFlashing 1s linear 0s infinite;
+  animation: btnFlashing 1.5s linear 0s infinite;
 }
 .playBoard tr td button::after {
   display: none;
@@ -1185,7 +1185,7 @@ main .bg {
   border-style: solid;
   border-width: 15px 15px 0px 0px;
   border-color: transparent #eb1414 transparent transparent;
-  animation: btnFlashing 1s linear 0s infinite;
+  animation: btnFlashing 1.5s linear 0s infinite;
 }
 .playBoard tr td button span {
   color: #cccccc;
@@ -8548,7 +8548,7 @@ main .bg {
   0% {
     opacity: 0;
   }
-  50% {
+  80% {
     opacity: 1;
   }
   100% {

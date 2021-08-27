@@ -405,6 +405,13 @@ $(function(){
 
 //串關投注
 $(function(){
+    $('.mix').click(function(){
+        $('.bettingbar').addClass('display');
+    })
+    $('.mix').siblings().click(function(){
+        $('.bettingbar').removeClass('display');
+    })
+
     $('.openBtn').click(function(){
         $('.bettingbar,.bettingbox').toggleClass('open');
     });
