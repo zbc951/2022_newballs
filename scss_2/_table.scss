@@ -7,6 +7,30 @@
 	margin: 0px 0px 10px 10px;
 	background: #ffffff;
 
+	&.index_page,&.result_page {
+
+		tr {
+
+			&:nth-of-type(2) {
+
+				&:hover {
+					border-color: transparent transparent #356bf7 transparent;
+					box-shadow: none;
+				}
+			}
+
+			th {
+
+				&:nth-of-type(1) {
+					
+					&.tLeft {
+						border-bottom: solid 1px #dedede;
+					}
+				}
+			}
+		}
+	}
+
 	//內容
     tr {
 		text-align: center;
@@ -17,6 +41,11 @@
 		&:nth-of-type(1) {
 			border-top-color: #f2f2f2;
 			border-bottom-color: #f0f0f0;
+
+			&:hover {
+				border-color: transparent;
+				box-shadow: none;
+			}
 		}
 
 		&:nth-of-type(odd) {

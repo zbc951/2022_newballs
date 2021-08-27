@@ -760,46 +760,26 @@ $(function(){
 $(function(){
     $('.threeCircle button:nth-of-type(1)').click(function(){
         $('.indexStyle').attr('href','./css/style.css');
+        $('.playBoard').removeClass('css_2 css_4');
         $('.elseStyle').attr('href','../../css/style.css');
     })
     $('.threeCircle button:nth-of-type(2)').click(function(){
         $('.indexStyle').attr('href','./css_3/style.css');
+        $('.playBoard').removeClass('css_2 css_4');
         $('.elseStyle').attr('href','../../css_3/style.css');
     })
     $('.threeCircle button:nth-of-type(3)').click(function(){
         $('.indexStyle').attr('href','./css_2/style.css');
+        $('.playBoard').addClass('css_2');
+        $('.playBoard').removeClass('css_4');
         $('.elseStyle').attr('href','../../css_2/style.css');
     })
     $('.threeCircle button:nth-of-type(4)').click(function(){
         $('.indexStyle').attr('href','./css_4/style.css');
+        $('.playBoard').addClass('css_4')
+        $('.playBoard').removeClass('css_2');
         $('.elseStyle').attr('href','../../css_4/style.css');
     })
-})
-
-//css_2 th線段問題
-$(function(){
-    if(window.location.href.indexOf('index') >= 0 ){
-        $('.playBoard tr:nth-of-type(1) th').css('border','none');
-    }
-    if(window.location.href.indexOf('result') >= 0 ){
-        $('.playBoard tr:nth-of-type(1) th').css('border','none');
-    }
-})
-
-//css_4 th背景問題
-$(function(){
-    if(window.location.href.indexOf('index') >= 0 ){
-        $('.playBoard tr:nth-of-type(1) th').css({
-            background: '#ffffff',
-            color: '#ce1427',
-        });
-    }
-    if(window.location.href.indexOf('result') >= 0 ){
-        $('.playBoard tr:nth-of-type(1) th').css({
-            background: '#ffffff',
-            color: '#ce1427',
-        });
-    }
 })
 
 //left自動高度
