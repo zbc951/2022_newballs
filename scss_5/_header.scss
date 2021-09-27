@@ -3,7 +3,7 @@ header {
     width: 100%;
     min-width: 1480px;
     height: 110px;
-    background: linear-gradient(to right,#d31c1c 0%,#bb092f 98%);
+    background: #ffffff;
     position: relative;
     z-index: 10;
     overflow: hidden;
@@ -16,14 +16,14 @@ header {
     .top {
         width: 100%;
         height: 25px;
-        background: #263f67;
+        background: #efefef;
 
         //盤口對照表+設定
         .conversionBtn,.controlBtn {
             float: left;
             width: auto;
             height: 100%;
-            color: #ffffff;
+            color: #595959;
             background: transparent;
             margin-left: 15px;
             font-size: 13px;
@@ -41,13 +41,13 @@ header {
                 position: absolute;
                 left: -23px;
                 top: 4px;
-                color: #ffffff;
+                color: #de1e30;
             }
 
             marquee {
                 line-height: 25px;
                 font-size: 12px;
-                color: #ffffff;
+                color: #de1e30;
                 overflow: visible;
             }
         }
@@ -56,7 +56,7 @@ header {
         span {
             float: right;
             font-size: 12px;
-            color: #ffffff;
+            color: #595959;
             line-height: 25px;
             margin-right: 15px;
         }
@@ -115,7 +115,7 @@ header {
             font-weight: bolder;
             text-align: center;
             line-height: 85px;
-            color: #ffffff
+            color: #de1e30;
         }
 
         //上列表
@@ -133,13 +133,13 @@ header {
                     padding: 0px 10px;
                     height: 76px;
                     line-height: 85px;
-                    color: #ffffff;
+                    color: #393939;
                     border-bottom: solid 5px transparent;
                     font-size: 14px;
 
                     &:hover,&:active,&.active {
-                        border-color: #ffffff;
-                        color: #ffffff;
+                        border-color: #de1e30;
+                        color: #de1e30;
                     }
 
                     .fa-user {
@@ -174,14 +174,13 @@ header {
                     font-size: 14px;
                     padding-left: 5px;
                     border-radius: 3px;
-                    border: solid 1px #d4364e;
-                    border-top: none;
+                    border: solid 1px #cccccc;
                     background: #ffffff;
-                    box-shadow: 0px -2px 8px 0px #00000049,0px -1px 0px 0px #ea9ab8 inset;
-                    color: #676767;
+                    box-shadow: none;
+                    color: #8d8d8d;
 
                     &::placeholder {
-                        color: #676767;
+                        color: #8d8d8d;
                     }
                 }
 
@@ -190,7 +189,7 @@ header {
                     left: 0px;
                     bottom: -28px;
                     font-size: 14px;
-                    color: #f6d627;
+                    color: #de1e30;
                 }
 
                 .remember {
@@ -198,18 +197,18 @@ header {
                     left: 18px;
                     bottom: -28px;
                     font-size: 14px;
-                    color: #ffffff;
+                    color: #333333;
 
                     .cube {
                         left: -18px;
                         top: -1px;
                         background: transparent;
-                        border-color: #e3e3e3;
+                        border-color: #ababab;
 
                         &.active {
 
                             &::before {
-                                background: url('../images/cubeArrow2_2.png') no-repeat;
+                                background: url('../images/cubeArrow3.png') no-repeat;
                             }
                         }
                     }
@@ -217,36 +216,35 @@ header {
             }
 
             .loginBtn {
-                background: linear-gradient(to top,#ffffff 0%,#dedede 28%,#ffffff 78%);
+                background: #de1e30;
                 padding: 5px 14px;
                 border-radius: 3px;
                 border: solid 1px transparent;
-                color: #454545;
+                color: #ffffff;
                 font-size: 14px;
                 font-weight: bold;
                 margin-right: 8px;
-                box-shadow: 0px 2px 8px 0px #00000049;
+                box-shadow: none;
 
                 &:hover,&:active,&.active {
-                    border-color: #bdd2f4;
-                    background: linear-gradient(to bottom,#32496d 0%, #507abe 100%);
+                    background: #bc0617;
                     color: #ffffff;
                 }
             }
 
             .signupBtn {
-                background: linear-gradient(to top,#ffffff 0%,#dedede 28%,#ffffff 78%); 
+                background: #ffffff; 
                 border-radius: 3px;
-                border: solid 1px transparent;
-                color: #454545;
+                border: solid 1px #de1e30;
+                color: #de1e30;
                 padding: 5px 14px;
                 font-size: 14px;
                 font-weight: bold;
-                box-shadow: 0px 2px 8px 0px #00000049;
+                box-shadow: none;
 
                 &:hover,&:active,&.active {
-                    border-color: #bdd2f4;
-                    background: linear-gradient(to bottom,#32496d 0%, #507abe 100%);
+                    border-color: transparent;
+                    background: #de1e30;
                     color: #ffffff;
                 }
             }
@@ -260,7 +258,7 @@ header {
                 .fa-globe {
                     float: left;
                     margin: 3px 6px 0px 0px;
-                    color: #ffffff;
+                    color: #8d8d8d;
                 }
 
                 //下箭頭
@@ -272,7 +270,7 @@ header {
                     height: 0px;
                     border-style: solid;
                     border-width: 10px 8px 0px 8px;
-                    border-color: #ffffff transparent;
+                    border-color: #a4a4a4 transparent;
                     top: 7px;
                     right: 10px;
                 }
@@ -280,10 +278,10 @@ header {
                 select {
                     width: 110px;
                     padding: 3px 0px 3px 5px;
-                    background: #bb092e;
-                    border: solid 1px #e8e8e8;
+                    background: #ffffff;
+                    border: solid 1px #dddddd;
                     border-radius: 3px;
-                    color: #ffffff;
+                    color: #595959;
                     font-size: 12px;
                     appearance:none;   
                     -moz-appearance:none;   
@@ -308,7 +306,7 @@ header {
             //字體
             p {
                 display: inline-block;
-                color: #ffffff;
+                color: #666666;
                 font-size: 13px;
                 margin: 10px 5px 0px 0px;
 
@@ -317,16 +315,16 @@ header {
                     padding: 7px 7px 5px;
                     border-radius: 3px;
                     background: #ffffff;
-                    color: #1b1b1b;
-                    border: solid 1px #e8e8e8;
+                    color: #666666;
+                    border: solid 1px #dddddd;
                     
                     span {
-                        color: #1f54ab;
+                        color: #de1e30;
                     }
                 }
 
                 span {
-                    color: #ffffff;
+                    color: #666666;
                     padding-left: 8px;
                 }
             }
@@ -335,16 +333,15 @@ header {
             button {
                 border-radius: 3px;
                 padding: 4px 15px;
-                background: linear-gradient(to top,#ffffff 0%,#dedede 28%,#ffffff 78%);
-                color: #454545;
+                background: #de1e30;
+                color: #ffffff;
                 font-size: 14px;
-                box-shadow: 0px 2px 8px 0px #00000049;
+                box-shadow: none;
                 border: solid 1px transparent;
 
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to bottom,#32496d 0%, #507abe 100%);
+                    background: #bb0a1b;
                     color: #ffffff;
-                    border-color: #bdd2f4;
                 }
             }
 
@@ -357,7 +354,7 @@ header {
                 .fa-globe {
                     float: left;
                     margin: 3px 6px 0px 0px;
-                    color: #ffffff;
+                    color: #8d8d8d;
                 }
 
                 //下箭頭
@@ -369,7 +366,7 @@ header {
                     height: 0px;
                     border-style: solid;
                     border-width: 10px 8px 0px 8px;
-                    border-color: #ffffff transparent;
+                    border-color: #a4a4a4 transparent;
                     top: 7px;
                     right:10px;
                 }
@@ -377,11 +374,10 @@ header {
                 select {
                     width: 110px;
                     padding: 3px 0px 3px 5px;
-                    background: transparent;
-                    background: #bb092e;
-                    border: solid 1px #e8e8e8;
+                    background: #ffffff;
+                    border: solid 1px #dddddd;
                     border-radius: 3px;
-                    color: #ffffff;
+                    color: #666666;
                     font-size: 12px;
                     appearance:none;   
                     -moz-appearance:none;
