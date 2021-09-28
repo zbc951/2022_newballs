@@ -231,6 +231,10 @@
                 }
             }
 
+            &:last-child {
+                margin-bottom: 20px;
+            }
+
             a {
                 display: block;
                 color: #454545 ;

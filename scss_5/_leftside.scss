@@ -9,7 +9,7 @@
     scrollbar-width: thin;
     border-width: 1px 0px;
     background: #ffffff;
-    box-shadow: 0px 0px 5px 0px #00000049;
+    margin-top: 15px;
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -22,7 +22,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: linear-gradient(to top,#32496d 0%, #507abe 100%);
+        background: #999999;
         border-radius: 10px;
     }
     
@@ -190,13 +190,10 @@
             &:hover {
 
                 a {
-                    border-color: #d31c1c;
-                    color: #ce1427;
-                    box-shadow: 0px 0px 5px 0px #d31c1c49;
-                    z-index: 10; 
+                    color: #de1e30;
 
                     .total {
-                        color: #ce1427;
+                        color: #de1e30;
                     }
                 }
             }
@@ -208,13 +205,10 @@
                 }
 
                 a {
-                    border-color: #d31c1c;
-                    color: #ce1427;
-                    box-shadow: 0px 0px 5px 0px #d31c1c49;
-                    z-index: 10;
+                    color: #de1e30;
 
                     .total {
-                        color: #ce1427;
+                        color: #de1e30;
                     }
                 }
             }
@@ -224,6 +218,10 @@
                 .live {
                     display: block;
                 }
+            }
+
+            &:last-child {
+                margin-bottom: 40px;
             }
 
             a {
@@ -237,7 +235,6 @@
                 padding-left: 50px;
                 position: relative;
                 box-sizing: border-box;
-                border: solid 1px transparent;
 
                 //字前小圖
                 i {
@@ -245,7 +242,7 @@
                     top: 12px;
                     left: 18px;
                     font-size: 18px;
-                    color: #d31c1c;
+                    color: #de1e30;
 
                     &::before {
                         margin: 0px auto;
@@ -272,7 +269,7 @@
                     position: absolute;
                     left: 18px;
                     top: 12px;
-                    fill: #d31c1c;
+                    fill: #de1e30;
                 }
 
                 //字後小框
@@ -295,7 +292,7 @@
                     transform: translateY(-50%);
                     right: 42px;
                     font-size: 12px;
-                    background: linear-gradient(to left,#0d8c31 0%, #12bb26 100%);
+                    background: #15ae56;
                     color: #ffffff;
                     padding: 0px 4px;
                     border-radius: 3px;
@@ -304,19 +301,29 @@
 
             .smallList {
                 display: none;
-                width: calc(100% - 30px);
+                width: calc(100% - 50px);
+                margin: 0px auto;
                 height: 30px;
-                background: #f7f7f7;
-                border-bottom: solid 1px #e8e8e8;
+                background: #f5f6f7;
                 line-height: 30px;
                 padding-left: 30px;
                 font-size: 12px;
-                color: #454545;
+                color: #424242;
                 cursor: pointer;
+                overflow: hidden;
+
+                &:nth-of-type(1) {
+                    margin-top: 10px;
+                    border-radius: 5px 5px 0px 0px;
+                }
+
+                &:last-child {
+                    margin-bottom: 10px;
+                    border-radius: 0px 0px 5px 5px;
+                }
 
                 &:hover,&:active,&.active {
-                    background: #356bf7;
-                    color: #ffffff;
+                    background: #dedede;
                 }
 
                 span {

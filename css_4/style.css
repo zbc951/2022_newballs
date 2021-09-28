@@ -602,6 +602,9 @@ main .bg {
 .left ul li.onLive .live {
   display: block;
 }
+.left ul li:last-child {
+  margin-bottom: 20px;
+}
 .left ul li a {
   display: block;
   color: #1b1b1b;

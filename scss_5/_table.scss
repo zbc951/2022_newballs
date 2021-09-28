@@ -2147,7 +2147,7 @@
 			width: 50%;
 			height: auto;
 			padding: 7px;
-			color: #1b1b1b;
+			color: #757575;
 			border-style: solid;
 			border-width: 0px 0px 1px 0px;
 			border-color: #e6e6e6;
@@ -2156,19 +2156,23 @@
 			font-size: 12px;
 
 			&.waiting {
-				color: #ce1427;
+				color: #212121;
+			}
+
+			&.sus {
+				color: #08b30c;
 			}
 
 			&.listName {
 				padding: 15px 7px;
 
 				.vs {
-					color: #1f54ab;
+					color: #969696;
 					margin: 0px 5px;
 				}
 
 				.odds {
-					color: #ce1427;
+					color: #f29613;
 					margin-left: 5px;
 				}
 			}
@@ -2191,10 +2195,11 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%,-50%);
-				border: solid 1px #c1c1c1;
 				text-align: center;
 				padding: 10px 0px;
-				color: #1b1b1b;
+				color: #757575;
+				background: #efefef;
+				box-shadow: 1px 2px 5px 0px #00000035;
 			}
 		}
 	}

@@ -233,6 +233,10 @@
                 }
             }
 
+            &:last-child {
+                margin-bottom: 20px;
+            }
+
             a {
                 display: block;
                 color: #e0e0e0 ;

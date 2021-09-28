@@ -13,7 +13,7 @@
 html {
     width: 100%;
     height: 100%;
-    background: #c8dfed;
+    background: #f0f0f0;
 
     body {
         width: 100%;
@@ -32,7 +32,7 @@ html {
         }
     
         &::-webkit-scrollbar-thumb {
-            background: linear-gradient(to top,#32496d 0%, #507abe 100%);
+            background: #999999;
             border-radius: 10px;
         }
     }
