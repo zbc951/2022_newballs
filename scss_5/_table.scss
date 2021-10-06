@@ -85,15 +85,16 @@
 			td {
 
 				button {
-					background: #ffffff;
+					background: #ece3cb;
 				}
 			}
 		}
 
 		&:hover,&:active,&.active {
-			background: #f3f6fe;
+			background: #d5dcef;
 
 			td {
+				color: #000000;
 
 				button {
 					background: #ffffff;
@@ -163,15 +164,13 @@
 
 			//行內按鈕
 			button {
-				background: #fff8f9;
-				color: #0a9746;
+				color: #f28220;
 				border-radius: 3px;
 				position: relative;
 				word-break: break-all;
 				overflow: hidden;
 				font-size: 13px;
 				margin: 0px 1px;
-				border: solid 1px #e89e9e;
 				font-weight: bold;
 
 				&:hover,&:active,&.active {
@@ -344,7 +343,7 @@
 		tr {
 
 			td {
-				padding: 6px 2px;
+				padding: 10px 3px;
 
 				&.tLeft {
 					text-align: left;
@@ -354,7 +353,7 @@
 				button {
 					width: 100px;
 					height: 50px;
-					margin-bottom: 15px;
+					margin-bottom: 8px;
 
 					&:last-child {
 						margin: 0px;
@@ -484,7 +483,7 @@
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8) {
-					min-width: 110px;
+					width: 1%;
 				}
 
 				&:nth-of-type(9) {
@@ -651,7 +650,7 @@
 
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8),&:nth-of-type(9) {
-					min-width: 110px;
+					width: 1%;
 				}
 
 				&:nth-of-type(10) {
@@ -808,7 +807,7 @@
 				
 				&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10),
 				&:nth-of-type(11),&:nth-of-type(12) {
-					min-width: 110px;
+					width: 1%;
 				}
 
 				&:nth-of-type(13) {
@@ -1050,7 +1049,7 @@
 
 				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
 				&:nth-of-type(13),&:nth-of-type(14) {
-					min-width: 110px;
+					width: 1%;
 				}
 
 				&:nth-of-type(15) {
@@ -1524,7 +1523,7 @@
 
 				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
 				&:nth-of-type(13),&:nth-of-type(14) {
-					min-width: 110px;
+					width: 1%;
 				}
 
 				&:nth-of-type(15) {
@@ -1651,7 +1650,7 @@
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8) {
-					min-width: 110px;
+					width: 1%;
 				}
 
 				&:nth-of-type(9) {
@@ -1789,7 +1788,7 @@
 
 				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
 				&:nth-of-type(14),&:nth-of-type(15) {
-					min-width: 110px;
+					width: 1%;
 				}
 
 				&:nth-of-type(16) {
@@ -2026,7 +2025,7 @@
 
 				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11),
 				&:nth-of-type(12),&:nth-of-type(13) {
-					min-width: 110px;
+					width: 1%;
 				}
 
 				&:nth-of-type(14) {
