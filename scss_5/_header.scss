@@ -74,29 +74,52 @@ header {
                 height: 15px;
                 border-radius: 30px;
                 margin: 5px 8px 0px 0px;
-                border: solid 2px #31a20b;
-                background: #131313;
+                border: solid 2px transparent;
+                background: #31a20b;
+
+                &:hover,&:active,&.active {
+                    border-color: #31a20b;
+                    background: #131313;
+                }
+
+                &:last-child {
+                    margin-right: 10px;
+                }
 
                 &:nth-of-type(2) {
-                    background: #ebf1fb;
-                    border-color: #9b7c55;
+                    background: #505050;
+
+                    &:hover,&:active,&.active {
+                        border-color: #bcbcbc;
+                        background: #505050;
+                    }
                 }
 
                 &:nth-of-type(3) {
                     background: #1856bd;
-                    border-color: #90c1f2;
+
+                    &:hover,&:active,&.active {
+                        border-color: #1856bd;
+                        background: #ffffff;
+                    }
                 }
 
                 &:nth-of-type(4) {
-                    background: #ffffff;
-                    border-color: #d31c1c;
-                    margin-right: 10px;
+                    background: #d31c1c;
+
+                    &:hover,&:active,&.active {
+                        border-color: #c8dfed;
+                        background: #d31c1c;
+                    }
                 }
 
                 &:nth-of-type(5) {
-                    background: #de1e30;
-                    border-color: #ffffff;
-                    margin-right: 10px;
+                    background: #ffffff;
+
+                    &:hover,&:active,&.active {
+                        border-color: #de1e30;
+                        background: #ffffff;
+                    }
                 }
             }
         }

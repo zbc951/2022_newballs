@@ -212,6 +212,7 @@
             &:hover {
 
                 a {
+                    background: #e3e3e3;
                     color: #de1e30;
 
                     .total {
@@ -227,6 +228,7 @@
                 }
 
                 a {
+                    background: #e3e3e3;
                     color: #de1e30;
 
                     .total {
@@ -249,7 +251,7 @@
             a {
                 display: block;
                 color: #1b1b1b;
-                width: 100%;
+                width: 94%;
                 background: #ffffff;
                 height: 45px;
                 line-height: 45px;
@@ -257,6 +259,7 @@
                 padding-left: 50px;
                 position: relative;
                 box-sizing: border-box;
+                margin: 0px auto;
 
                 //字前小圖
                 i {
@@ -268,6 +271,12 @@
 
                     &::before {
                         margin: 0px auto;
+                    }
+
+                    &.fa-heart {
+                        color: transparent;
+                        background: linear-gradient(to top,#e63e17 0%,#f7a024 100%);
+                        background-clip: text;
                     }
 
                     &.fa-hotjar,&.fa-hockey-puck,

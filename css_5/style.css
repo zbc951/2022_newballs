@@ -143,26 +143,43 @@ header .top .threeCircle button {
   height: 15px;
   border-radius: 30px;
   margin: 5px 8px 0px 0px;
-  border: solid 2px #31a20b;
+  border: solid 2px transparent;
+  background: #31a20b;
+}
+header .top .threeCircle button:hover, header .top .threeCircle button:active, header .top .threeCircle button.active {
+  border-color: #31a20b;
   background: #131313;
 }
+header .top .threeCircle button:last-child {
+  margin-right: 10px;
+}
 header .top .threeCircle button:nth-of-type(2) {
-  background: #ebf1fb;
-  border-color: #9b7c55;
+  background: #505050;
+}
+header .top .threeCircle button:nth-of-type(2):hover, header .top .threeCircle button:nth-of-type(2):active, header .top .threeCircle button:nth-of-type(2).active {
+  border-color: #bcbcbc;
+  background: #505050;
 }
 header .top .threeCircle button:nth-of-type(3) {
   background: #1856bd;
-  border-color: #90c1f2;
+}
+header .top .threeCircle button:nth-of-type(3):hover, header .top .threeCircle button:nth-of-type(3):active, header .top .threeCircle button:nth-of-type(3).active {
+  border-color: #1856bd;
+  background: #ffffff;
 }
 header .top .threeCircle button:nth-of-type(4) {
-  background: #ffffff;
-  border-color: #d31c1c;
-  margin-right: 10px;
+  background: #d31c1c;
+}
+header .top .threeCircle button:nth-of-type(4):hover, header .top .threeCircle button:nth-of-type(4):active, header .top .threeCircle button:nth-of-type(4).active {
+  border-color: #c8dfed;
+  background: #d31c1c;
 }
 header .top .threeCircle button:nth-of-type(5) {
-  background: #de1e30;
-  border-color: #ffffff;
-  margin-right: 10px;
+  background: #ffffff;
+}
+header .top .threeCircle button:nth-of-type(5):hover, header .top .threeCircle button:nth-of-type(5):active, header .top .threeCircle button:nth-of-type(5).active {
+  border-color: #de1e30;
+  background: #ffffff;
 }
 header article {
   width: 100%;
@@ -587,6 +604,7 @@ main .bg {
   font-size: 20px;
 }
 .left ul li:hover a {
+  background: #e3e3e3;
   color: #de1e30;
 }
 .left ul li:hover a .total {
@@ -596,6 +614,7 @@ main .bg {
   display: block;
 }
 .left ul li:active a, .left ul li.active a {
+  background: #e3e3e3;
   color: #de1e30;
 }
 .left ul li:active a .total, .left ul li.active a .total {
@@ -610,7 +629,7 @@ main .bg {
 .left ul li a {
   display: block;
   color: #1b1b1b;
-  width: 100%;
+  width: 94%;
   background: #ffffff;
   height: 45px;
   line-height: 45px;
@@ -618,6 +637,7 @@ main .bg {
   padding-left: 50px;
   position: relative;
   box-sizing: border-box;
+  margin: 0px auto;
 }
 .left ul li a i {
   position: absolute;
@@ -628,6 +648,12 @@ main .bg {
 }
 .left ul li a i::before {
   margin: 0px auto;
+}
+.left ul li a i.fa-heart {
+  color: transparent;
+  background: linear-gradient(to top, #e63e17 0%, #f7a024 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .left ul li a i.fa-hotjar, .left ul li a i.fa-hockey-puck, .left ul li a i.fa-baseball-ball, .left ul li a i.fa-basketball-ball, .left ul li a i.fa-futbol, .left ul li a i.fa-volleyball-ball, .left ul li a i.fa-calendar-alt {
   left: 19px;
@@ -700,14 +726,14 @@ main .bg {
 .right {
   width: 300px;
   height: 850px;
-  margin-left: 10px;
+  margin: 15px 0px 0px 10px;
   float: left;
   overflow: hidden;
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
-  background: #ffffff;
   margin-top: 15px;
+  background: #ffffff;
 }
 .right::-webkit-scrollbar {
   width: 5px;
@@ -723,9 +749,19 @@ main .bg {
 }
 .right .statusWindow {
   width: 100%;
-  height: 113px;
+  height: 120px;
   background: #ffffff;
   position: relative;
+  margin-bottom: 10px;
+}
+.right .statusWindow::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -10px;
+  left: 0px;
+  background: #f0f0f0;
 }
 .right .statusWindow p {
   background: #ffffff;
@@ -759,7 +795,7 @@ main .bg {
   width: 95%;
   height: auto;
   left: 50%;
-  bottom: 2%;
+  bottom: 5%;
   transform: translateX(-50%);
 }
 .right .statusWindow ul li {
@@ -821,6 +857,17 @@ main .bg {
   height: auto;
   background: #ffffff;
   text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.right .liveWindow::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+  left: 0px;
+  bottom: -10px;
 }
 .right .liveWindow .title {
   background: #ffffff;
@@ -900,7 +947,7 @@ main .bg {
 .right .room {
   width: 95%;
   height: auto;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 .right .room .twobut {
   width: 100%;
@@ -1202,10 +1249,16 @@ main .bg {
   border: none;
 }
 .playBoard tr.onTime {
-  background: #fcf8ef;
+  background: #fff7e4;
+}
+.playBoard tr.onTime td button {
+  background: #ffffff;
 }
 .playBoard tr:hover, .playBoard tr:active, .playBoard tr.active {
   background: #f3f6fe;
+}
+.playBoard tr:hover td button, .playBoard tr:active td button, .playBoard tr.active td button {
+  background: #ffffff;
 }
 .playBoard tr th {
   color: #333333;
@@ -1251,15 +1304,16 @@ main .bg {
   color: #8d8d8d;
 }
 .playBoard tr td button {
-  background: #ffffff;
-  color: #de1e30;
+  background: #fff8f9;
+  color: #0a9746;
   border-radius: 3px;
   position: relative;
   word-break: break-all;
   overflow: hidden;
   font-size: 13px;
   margin: 0px 1px;
-  box-shadow: 0px 1px 5px 1px #00000049;
+  border: solid 1px #e89e9e;
+  font-weight: bold;
 }
 .playBoard tr td button:hover, .playBoard tr td button:active, .playBoard tr td button.active {
   background: #de1e30;
@@ -1312,6 +1366,7 @@ main .bg {
   -webkit-user-select: none;
           user-select: none;
   box-shadow: none;
+  border: none;
 }
 .playBoard tr td button.disable span {
   position: absolute;
@@ -1382,7 +1437,7 @@ main .bg {
 .playBoard.oldP tr td button {
   width: 100px;
   height: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .playBoard.oldP tr td button:last-child {
   margin: 0px;
@@ -1422,7 +1477,7 @@ main .bg {
   min-width: 40px;
 }
 .playBoard.tType1 tr td:nth-of-type(4), .playBoard.tType1 tr td:nth-of-type(5), .playBoard.tType1 tr td:nth-of-type(6) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType1 tr td:nth-of-type(7) {
   min-width: 55px;
@@ -1452,7 +1507,7 @@ main .bg {
   padding: 0px;
 }
 .playBoard.tType1_2 tr td:nth-of-type(4), .playBoard.tType1_2 tr td:nth-of-type(5), .playBoard.tType1_2 tr td:nth-of-type(6), .playBoard.tType1_2 tr td:nth-of-type(7), .playBoard.tType1_2 tr td:nth-of-type(8) {
-  width: 1%;
+  min-width: 110px;
 }
 .playBoard.tType1_2 tr td:nth-of-type(9) {
   min-width: 55px;
@@ -1512,7 +1567,7 @@ main .bg {
   min-width: 40px;
 }
 .playBoard.tType2 tr td:nth-of-type(5), .playBoard.tType2 tr td:nth-of-type(6) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType2 tr td:nth-of-type(7) {
   min-width: 55px;
@@ -1538,7 +1593,7 @@ main .bg {
   padding: 0px;
 }
 .playBoard.tType2_2 tr td:nth-of-type(5), .playBoard.tType2_2 tr td:nth-of-type(6), .playBoard.tType2_2 tr td:nth-of-type(7), .playBoard.tType2_2 tr td:nth-of-type(8), .playBoard.tType2_2 tr td:nth-of-type(9) {
-  width: 1%;
+  min-width: 110px;
 }
 .playBoard.tType2_2 tr td:nth-of-type(10) {
   min-width: 55px;
@@ -1589,7 +1644,7 @@ main .bg {
   min-width: 30px;
 }
 .playBoard.tType3 tr td:nth-of-type(8), .playBoard.tType3 tr td:nth-of-type(9) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType3 tr td:nth-of-type(10) {
   min-width: 55px;
@@ -1616,7 +1671,7 @@ main .bg {
   padding: 0px;
 }
 .playBoard.tType3_2 tr td:nth-of-type(8), .playBoard.tType3_2 tr td:nth-of-type(9), .playBoard.tType3_2 tr td:nth-of-type(10), .playBoard.tType3_2 tr td:nth-of-type(11), .playBoard.tType3_2 tr td:nth-of-type(12) {
-  width: 1%;
+  min-width: 110px;
 }
 .playBoard.tType3_2 tr td:nth-of-type(13) {
   min-width: 55px;
@@ -1655,7 +1710,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType4 tr td:nth-of-type(2), .playBoard.tType4 tr td:nth-of-type(3) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType4 tr td:nth-of-type(4) {
   min-width: 55px;
@@ -1715,7 +1770,7 @@ main .bg {
   min-width: 30px;
 }
 .playBoard.tType5 tr td:nth-of-type(10), .playBoard.tType5 tr td:nth-of-type(11) {
-  width: 11%;
+  min-width: 138px;
 }
 .playBoard.tType5 tr td:nth-of-type(12) {
   min-width: 55px;
@@ -1742,7 +1797,7 @@ main .bg {
   padding: 0px;
 }
 .playBoard.tType5_2 tr td:nth-of-type(10), .playBoard.tType5_2 tr td:nth-of-type(11), .playBoard.tType5_2 tr td:nth-of-type(12), .playBoard.tType5_2 tr td:nth-of-type(13), .playBoard.tType5_2 tr td:nth-of-type(14) {
-  width: 1%;
+  min-width: 110px;
 }
 .playBoard.tType5_2 tr td:nth-of-type(15) {
   min-width: 55px;
@@ -1847,7 +1902,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType6 tr td:nth-of-type(2), .playBoard.tType6 tr td:nth-of-type(3) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType6 tr td:nth-of-type(4) {
   min-width: 55px;
@@ -1871,7 +1926,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType7 tr td:nth-of-type(2), .playBoard.tType7 tr td:nth-of-type(3) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType7 tr td:nth-of-type(4) {
   min-width: 55px;
@@ -1937,7 +1992,7 @@ main .bg {
   min-width: 30px;
 }
 .playBoard.tType8 tr td:nth-of-type(10), .playBoard.tType8 tr td:nth-of-type(11) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType8 tr td:nth-of-type(12) {
   min-width: 55px;
@@ -1967,7 +2022,7 @@ main .bg {
   padding: 0px;
 }
 .playBoard.tType8_2 tr td:nth-of-type(10), .playBoard.tType8_2 tr td:nth-of-type(11), .playBoard.tType8_2 tr td:nth-of-type(12), .playBoard.tType8_2 tr td:nth-of-type(13), .playBoard.tType8_2 tr td:nth-of-type(14) {
-  width: 1%;
+  min-width: 110px;
 }
 .playBoard.tType8_2 tr td:nth-of-type(15) {
   min-width: 55px;
@@ -2009,7 +2064,7 @@ main .bg {
   min-width: 40px;
 }
 .playBoard.tType9 tr td:nth-of-type(4), .playBoard.tType9 tr td:nth-of-type(5) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType9 tr td:nth-of-type(6) {
   min-width: 55px;
@@ -2029,7 +2084,7 @@ main .bg {
   padding: 0px;
 }
 .playBoard.tType9_2 tr td:nth-of-type(4), .playBoard.tType9_2 tr td:nth-of-type(5), .playBoard.tType9_2 tr td:nth-of-type(6), .playBoard.tType9_2 tr td:nth-of-type(7), .playBoard.tType9_2 tr td:nth-of-type(8) {
-  width: 1%;
+  min-width: 110px;
 }
 .playBoard.tType9_2 tr td:nth-of-type(9) {
   min-width: 55px;
@@ -2071,7 +2126,7 @@ main .bg {
   min-width: 30px;
 }
 .playBoard.tType10 tr td:nth-of-type(11), .playBoard.tType10 tr td:nth-of-type(12) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType10 tr td:nth-of-type(13) {
   min-width: 55px;
@@ -2098,7 +2153,7 @@ main .bg {
   padding: 0px;
 }
 .playBoard.tType10_2 tr td:nth-of-type(11), .playBoard.tType10_2 tr td:nth-of-type(12), .playBoard.tType10_2 tr td:nth-of-type(13), .playBoard.tType10_2 tr td:nth-of-type(14), .playBoard.tType10_2 tr td:nth-of-type(15) {
-  width: 1%;
+  min-width: 110px;
 }
 .playBoard.tType10_2 tr td:nth-of-type(16) {
   min-width: 55px;
@@ -2137,7 +2192,7 @@ main .bg {
   width: 100%;
 }
 .playBoard.tType11 tr td:nth-of-type(2), .playBoard.tType11 tr td:nth-of-type(3) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType11 tr td:nth-of-type(4) {
   min-width: 55px;
@@ -2191,7 +2246,7 @@ main .bg {
   min-width: 30px;
 }
 .playBoard.tType12 tr td:nth-of-type(9), .playBoard.tType12 tr td:nth-of-type(10) {
-  width: 1%;
+  min-width: 138px;
 }
 .playBoard.tType12 tr td:nth-of-type(11) {
   min-width: 55px;
@@ -2218,7 +2273,7 @@ main .bg {
   padding: 0px;
 }
 .playBoard.tType12_2 tr td:nth-of-type(9), .playBoard.tType12_2 tr td:nth-of-type(10), .playBoard.tType12_2 tr td:nth-of-type(11), .playBoard.tType12_2 tr td:nth-of-type(12), .playBoard.tType12_2 tr td:nth-of-type(13) {
-  width: 1%;
+  min-width: 110px;
 }
 .playBoard.tType12_2 tr td:nth-of-type(14) {
   min-width: 55px;
@@ -2783,7 +2838,7 @@ main .bg {
   height: auto;
   border-collapse: collapse;
   border-radius: 5px;
-  margin: 0px 0px 15px 10px;
+  margin: 0px 0px 14px 10px;
   background: #ffffff;
   overflow: hidden;
 }
@@ -3661,7 +3716,6 @@ main .bg {
   margin-right: 20px;
   float: right;
   position: relative;
-  font-weight: bold;
 }
 .minetable.callus tr th .remind::before {
   content: "";
@@ -3873,6 +3927,9 @@ main .bg {
   width: 20%;
   height: 100%;
 }
+.minetable.callus tr td .box .partnerimg:nth-of-type(6), .minetable.callus tr td .box .partnerimg:nth-of-type(7) {
+  margin-top: 35px;
+}
 .minetable.callus tr td .box .partnerimg div {
   width: 80px;
   height: 50px;
@@ -4053,7 +4110,6 @@ main .bg {
   margin: 10px 0px 0px 20px;
   float: left;
   position: relative;
-  font-weight: bold;
 }
 .minetable.problem tr td .remind::before {
   content: "";
@@ -4224,7 +4280,7 @@ main .bg {
   height: auto;
   padding: 10px;
   margin: 19px auto;
-  border: solid 1px #c8c8c8;
+  border: solid 1px #e0e0e0;
   background: #fafafa;
   border-radius: 5px;
 }
@@ -4409,7 +4465,6 @@ main .bg {
   margin: 20px 0px;
   color: #666666;
   font-size: 14px;
-  font-weight: bold;
 }
 .minetable.transpoint tr td p.remind {
   position: relative;
@@ -5030,8 +5085,8 @@ main .bg {
   color: #de1e30;
 }
 .topfix .nor .reWeb .reBtn:hover, .topfix .nor .reWeb .reBtn:active, .topfix .nor .reWeb .reBtn.active {
-  background: #24349f;
-  border-color: #24349f;
+  background: #de1e30;
+  border-color: #de1e30;
 }
 .topfix .nor .reWeb .reBtn:hover i, .topfix .nor .reWeb .reBtn:active i, .topfix .nor .reWeb .reBtn.active i {
   color: #ffffff;
@@ -5501,12 +5556,13 @@ main .bg {
   background: #ffffff;
   border-radius: 3px 3px 0px 0px;
   position: relative;
+  text-align: center;
 }
 .signupWindow .signupbar span {
-  font-size: 17px;
+  font-size: 14px;
   color: #df1e31;
   line-height: 54px;
-  padding-left: 20px;
+  font-weight: bold;
 }
 .signupWindow .signupbar button {
   position: absolute;
@@ -5642,7 +5698,6 @@ main .bg {
   color: #308e44;
   padding-left: 10px;
   font-size: 12px;
-  font-weight: bold;
 }
 .controlBox .innerBox1 .baseline {
   width: 96%;
@@ -5762,6 +5817,7 @@ main .bg {
   color: #308e44;
   font-size: 12px;
   margin-left: 10px;
+  font-weight: normal;
 }
 .controlBox .cancelBtn {
   position: absolute;
@@ -5835,6 +5891,7 @@ main .bg {
   border-radius: 3px 3px 0px 0px;
   z-index: 16;
   text-align: left;
+  text-align: center;
 }
 .norbetting.display {
   display: block;
@@ -5842,7 +5899,8 @@ main .bg {
 .norbetting .barname {
   line-height: 50px;
   color: #df1e31;
-  padding-left: 20px;
+  font-weight: bold;
+  font-size: 14px;
 }
 .norbetting .norcancelbtn {
   position: absolute;
@@ -5989,6 +6047,7 @@ main .bg {
   top: 150px;
   background: #ffffff;
   border-radius: 3px 3px 0px 0px;
+  text-align: center;
 }
 .norbettingCheck.display {
   display: block;
@@ -5996,7 +6055,8 @@ main .bg {
 .norbettingCheck .barname {
   line-height: 50px;
   color: #df1d30;
-  padding-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .norbettingCheck .checkCancelBtn {
   position: absolute;
@@ -6983,12 +7043,13 @@ main .bg {
   background: #ffffff;
   border-radius: 3px 3px 0px 0px;
   position: relative;
+  text-align: center;
 }
 .unLogin .topBar span {
-  font-size: 17px;
+  font-size: 14px;
   color: #de1e30;
   line-height: 54px;
-  padding-left: 20px;
+  font-weight: bold;
 }
 .unLogin .topBar button {
   position: absolute;
@@ -7030,8 +7091,7 @@ main .bg {
   text-align: center;
 }
 .unLogin .remindBox p {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 16px;
   color: #1b1b1b;
   margin-top: 10px;
 }
@@ -7723,7 +7783,7 @@ main .bg {
   width: 1150px;
   height: auto;
   margin: 0px 0px 15px 10px;
-  background: #ffffff;
+  background: #dadada;
   padding-top: 20px;
   border-radius: 0px 0px 3px 3px;
   box-sizing: border-box;
@@ -7894,7 +7954,6 @@ main .bg {
   margin: 0px 20px 20px 0px;
   float: right;
   position: relative;
-  font-weight: bold;
 }
 .myself .helpbox .remind::before {
   content: "";
@@ -8160,6 +8219,7 @@ main .bg {
   z-index: 6;
   left: 280px;
   top: 15px;
+  border-radius: 5px;
 }
 .minetopfix .fixbar {
   position: absolute;
@@ -8538,6 +8598,7 @@ main .bg {
   background: #ffffff;
   border-radius: 3px 3px 0px 0px;
   position: relative;
+  text-align: center;
 }
 .changePasswordWindow .topbar span {
   font-size: 14px;
@@ -8658,6 +8719,7 @@ main .bg {
   background: #ffffff;
   border-radius: 3px 3px 0px 0px;
   position: relative;
+  text-align: center;
 }
 .cardremind .topbar span {
   font-size: 14px;

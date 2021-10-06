@@ -775,22 +775,32 @@ $(function(){
     $('.threeCircle button:nth-of-type(1)').click(function(){
         $('.indexStyle').attr('href','./css/style.css');
         $('.elseStyle').attr('href','../../css/style.css');
+        $('.threeCircle button:nth-of-type(1)').addClass('active');
+        $('.threeCircle button:nth-of-type(1)').siblings().removeClass('active');
     })
     $('.threeCircle button:nth-of-type(2)').click(function(){
         $('.indexStyle').attr('href','./css_3/style.css');
         $('.elseStyle').attr('href','../../css_3/style.css');
+        $('.threeCircle button:nth-of-type(2)').addClass('active');
+        $('.threeCircle button:nth-of-type(2)').siblings().removeClass('active');
     })
     $('.threeCircle button:nth-of-type(3)').click(function(){
         $('.indexStyle').attr('href','./css_2/style.css');
         $('.elseStyle').attr('href','../../css_2/style.css');
+        $('.threeCircle button:nth-of-type(3)').addClass('active');
+        $('.threeCircle button:nth-of-type(3)').siblings().removeClass('active');
     })
     $('.threeCircle button:nth-of-type(4)').click(function(){
         $('.indexStyle').attr('href','./css_4/style.css');
         $('.elseStyle').attr('href','../../css_4/style.css');
+        $('.threeCircle button:nth-of-type(4)').addClass('active');
+        $('.threeCircle button:nth-of-type(4)').siblings().removeClass('active');
     })
     $('.threeCircle button:nth-of-type(5)').click(function(){
         $('.indexStyle').attr('href','./css_5/style.css');
         $('.elseStyle').attr('href','../../css_5/style.css');
+        $('.threeCircle button:nth-of-type(5)').addClass('active');
+        $('.threeCircle button:nth-of-type(5)').siblings().removeClass('active');
     })
 })
 
