@@ -7814,6 +7814,11 @@ main .bg {
   color: #fff;
   border-color: #59a936;
 }
+.minetopfix .fixbar ul li.only {
+  width: auto;
+  color: #ffffff;
+  pointer-events: none;
+}
 .minetopfix .fixbar p {
   line-height: 45px;
   font-size: 15px;

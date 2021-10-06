@@ -742,6 +742,13 @@ $(function(){
 
     //共用
 
+//滾球背景色抓取
+$(function(){
+    if($('.playBoard tr td p span').hasClass('gameStyle')){
+        $('.gameStyle').closest('tr').addClass('onTime');
+    }
+})
+
 //radio單擊取消
 $(function(){
     $('input:radio').click(function(){

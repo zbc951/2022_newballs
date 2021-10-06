@@ -8053,6 +8053,14 @@ main .bg {
   border-color: #32980e;
   background: linear-gradient(to bottom, #141414 0%, #434343 100%);
 }
+.minetopfix .fixbar ul li.only {
+  width: auto;
+  border: none;
+  background: none;
+  color: #33ba04;
+  pointer-events: none;
+  padding-left: 15px;
+}
 .minetopfix .fixbar p {
   line-height: 45px;
   font-size: 15px;

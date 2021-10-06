@@ -8163,6 +8163,12 @@ main .bg {
   bottom: -2px;
   left: 0px;
 }
+.minetopfix .fixbar ul li.only {
+  width: auto;
+  color: #ce1427;
+  padding-left: 15px;
+  pointer-events: none;
+}
 .minetopfix .fixbar p {
   line-height: 45px;
   font-size: 15px;

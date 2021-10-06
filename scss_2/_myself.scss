@@ -860,6 +860,13 @@
                         left: 0px;
                     }
                 }
+
+                &.only {
+                    width: auto;
+                    color: #356bf7;
+                    pointer-events: none;
+                    padding-left: 15px;
+                }
             }
         }
 

@@ -818,6 +818,12 @@
                     color: #fff;
                     border-color: #59a936;
                 }
+
+                &.only {
+                    width: auto;
+                    color: #ffffff;
+                    pointer-events: none;
+                }
             }
         }
 

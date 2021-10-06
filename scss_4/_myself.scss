@@ -912,6 +912,13 @@
                         left: 0px;
                     }
                 }
+
+                &.only {
+                    width: auto;
+                    color: #ce1427;
+                    padding-left: 15px;
+                    pointer-events: none;
+                }
             }
         }
 
