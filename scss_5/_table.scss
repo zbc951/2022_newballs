@@ -2123,6 +2123,7 @@
     overflow: hidden;
 	margin: 8px auto 0px;
 	border-collapse: inherit;
+	border: solid 1px #c5c5c5;
 
 	&:last-child {
 		margin-bottom: 30px;
@@ -2161,7 +2162,7 @@
 			border-width: 0px 0px 1px 0px;
 			border-color: #e6e6e6;
 			vertical-align: middle;
-			background: #ffffff;
+			background: #f5f6f7;
 			font-size: 12px;
 
 			&.waiting {

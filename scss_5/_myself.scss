@@ -1093,7 +1093,7 @@
 .changePasswordWindow {
     display: none;
     position: fixed;
-    width: 350px;
+    width: 390px;
     height: auto;
     left: 50%;
     top: 30%;
@@ -1114,10 +1114,9 @@
         text-align: center;
 
         span {
-            font-size: 14px;
+            font-size: 16px;
             color: #df1e31;
             line-height: 50px;
-            padding-left: 20px;
             font-weight: bold;
         }
 
@@ -1163,19 +1162,19 @@
         height: 160px;
         background: #ededed;
         border-radius: 0px 0px 3px 3px;
-        padding: 20px 0px;
+        padding: 30px 0px;
 
         div {
-            width: 95%;
+            width: 81%;
             height: 50px;
-            float: left;
             position: relative;
+            margin: 0px auto;
 
             &:last-child {
-                width: 500px;
+                width: auto;
                 left: 50%;
                 transform: translateX(-50%);
-                margin-top: 20px;
+                margin-top: 15px;
                 text-align: center;
             }
 
@@ -1194,7 +1193,6 @@
             span {
                 line-height: 40px;
                 color: #333333;
-                padding-left: 15px;
             }
 
             button {
@@ -1254,10 +1252,9 @@
         text-align: center;
 
         span {
-            font-size: 14px;
+            font-size: 16px;
             color: #de1e30;
             line-height: 50px;
-            padding-left: 20px;
             font-weight: bold;
         }
 
@@ -1360,7 +1357,7 @@
         text-align: center;
 
         span {
-            font-size: 14px;
+            font-size: 16px;
             color: #df1e31;
             line-height: 42px;
             font-weight: bold;

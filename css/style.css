@@ -8202,7 +8202,7 @@ main .bg {
 .changePasswordWindow {
   display: none;
   position: fixed;
-  width: 350px;
+  width: 390px;
   height: auto;
   left: 50%;
   top: 20%;
@@ -8264,21 +8264,21 @@ main .bg {
   height: 160px;
   background: #242424;
   border-radius: 0px 0px 3px 3px;
-  padding: 20px 0px;
+  padding: 30px 0px;
   border: solid 1px #3e8a13;
   border-top: none;
 }
 .changePasswordWindow .box div {
-  width: 95%;
+  width: 81%;
   height: 50px;
-  float: left;
+  margin: 0px auto;
   position: relative;
 }
 .changePasswordWindow .box div:last-child {
-  width: 500px;
+  width: auto;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: center;
 }
 .changePasswordWindow .box div input {
@@ -8298,7 +8298,6 @@ main .bg {
 .changePasswordWindow .box div span {
   line-height: 40px;
   color: #c8c8c8;
-  padding-left: 15px;
 }
 .changePasswordWindow .box div button {
   width: 152px;

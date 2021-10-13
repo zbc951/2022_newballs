@@ -1035,7 +1035,7 @@
 .changePasswordWindow {
     display: none;
     position: fixed;
-    width: 350px;
+    width: 390px;
     height: auto;
     left: 50%;
     top: 30%;
@@ -1104,19 +1104,19 @@
         height: 160px;
         background: #f5f5f5;
         border-radius: 0px 0px 3px 3px;
-        padding: 20px 0px;
+        padding: 30px 0px;
 
         div {
-            width: 95%;
+            width: 81%;
             height: 50px;
-            float: left;
+            margin: 0px auto;
             position: relative;
 
             &:last-child {
-                width: 500px;
+                width: auto;
                 left: 50%;
                 transform: translateX(-50%);
-                margin-top: 20px;
+                margin-top: 15px;
                 text-align: center;
             }
 
@@ -1135,7 +1135,6 @@
             span {
                 line-height: 40px;
                 color: #454545;
-                padding-left: 15px;
             }
 
             button {

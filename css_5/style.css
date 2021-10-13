@@ -935,9 +935,8 @@ main .bg {
   background-size: cover;
 }
 .right .room {
-  width: 96%;
+  width: 100%;
   height: auto;
-  margin: 10px auto;
 }
 .right .room .twobut {
   width: 100%;
@@ -953,15 +952,15 @@ main .bg {
 .right .room .twobut button {
   width: 49.5%;
   height: 100%;
-  background: #f4f4f4;
-  color: #7f7f7f;
+  background: #dadada;
+  color: #676767;
   font-size: 14px;
   float: left;
   border-radius: 3px 3px 0px 0px;
 }
 .right .room .twobut button:hover, .right .room .twobut button:active, .right .room .twobut button.active {
-  background: #e6e6e6;
-  color: #393939;
+  background: #ffffff;
+  color: #000000;
 }
 .right .room .twobut button:last-child {
   float: right;
@@ -1008,6 +1007,7 @@ main .bg {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
+  background: #ffffff;
 }
 .right .room .livelist::-webkit-scrollbar {
   width: 5px;
@@ -1168,7 +1168,7 @@ main .bg {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  background: #e6e6e6;
+  background: #ffffff;
 }
 .right .room .bettingStatus::-webkit-scrollbar {
   width: 5px;
@@ -2312,6 +2312,7 @@ main .bg {
   overflow: hidden;
   margin: 8px auto 0px;
   border-collapse: inherit;
+  border: solid 1px #c5c5c5;
 }
 .bettingBoard:last-child {
   margin-bottom: 30px;
@@ -2338,7 +2339,7 @@ main .bg {
   border-width: 0px 0px 1px 0px;
   border-color: #e6e6e6;
   vertical-align: middle;
-  background: #ffffff;
+  background: #f5f6f7;
   font-size: 12px;
 }
 .bettingBoard tr td.waiting {
@@ -5472,7 +5473,7 @@ main .bg {
   background: #ffffff;
   color: #df1e31;
   border-radius: 3px 3px 0px 0px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 .conversionBox .innerBox {
@@ -5550,7 +5551,7 @@ main .bg {
   text-align: center;
 }
 .signupWindow .signupbar span {
-  font-size: 14px;
+  font-size: 16px;
   color: #df1e31;
   line-height: 54px;
   font-weight: bold;
@@ -5668,7 +5669,7 @@ main .bg {
   background: #ffffff;
   color: #de1e30;
   border-radius: 3px 3px 0px 0px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 .controlBox .innerBox1 {
@@ -5891,7 +5892,7 @@ main .bg {
   line-height: 50px;
   color: #df1e31;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 .norbetting .norcancelbtn {
   position: absolute;
@@ -6046,7 +6047,7 @@ main .bg {
 .norbettingCheck .barname {
   line-height: 50px;
   color: #df1d30;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 .norbettingCheck .checkCancelBtn {
@@ -6755,7 +6756,7 @@ main .bg {
   position: relative;
   text-align: center;
   line-height: 42px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 .calculator .calbar button {
@@ -7037,7 +7038,7 @@ main .bg {
   text-align: center;
 }
 .unLogin .topBar span {
-  font-size: 14px;
+  font-size: 16px;
   color: #de1e30;
   line-height: 54px;
   font-weight: bold;
@@ -8573,7 +8574,7 @@ main .bg {
 .changePasswordWindow {
   display: none;
   position: fixed;
-  width: 350px;
+  width: 390px;
   height: auto;
   left: 50%;
   top: 30%;
@@ -8592,10 +8593,9 @@ main .bg {
   text-align: center;
 }
 .changePasswordWindow .topbar span {
-  font-size: 14px;
+  font-size: 16px;
   color: #df1e31;
   line-height: 50px;
-  padding-left: 20px;
   font-weight: bold;
 }
 .changePasswordWindow .topbar button {
@@ -8634,19 +8634,19 @@ main .bg {
   height: 160px;
   background: #ededed;
   border-radius: 0px 0px 3px 3px;
-  padding: 20px 0px;
+  padding: 30px 0px;
 }
 .changePasswordWindow .box div {
-  width: 95%;
+  width: 81%;
   height: 50px;
-  float: left;
   position: relative;
+  margin: 0px auto;
 }
 .changePasswordWindow .box div:last-child {
-  width: 500px;
+  width: auto;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: center;
 }
 .changePasswordWindow .box div input {
@@ -8663,7 +8663,6 @@ main .bg {
 .changePasswordWindow .box div span {
   line-height: 40px;
   color: #333333;
-  padding-left: 15px;
 }
 .changePasswordWindow .box div button {
   width: 152px;
@@ -8713,10 +8712,9 @@ main .bg {
   text-align: center;
 }
 .cardremind .topbar span {
-  font-size: 14px;
+  font-size: 16px;
   color: #de1e30;
   line-height: 50px;
-  padding-left: 20px;
   font-weight: bold;
 }
 .cardremind .topbar button {
@@ -8804,7 +8802,7 @@ main .bg {
   text-align: center;
 }
 .cardAdd .topbar span {
-  font-size: 14px;
+  font-size: 16px;
   color: #df1e31;
   line-height: 42px;
   font-weight: bold;
