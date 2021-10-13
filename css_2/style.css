@@ -587,8 +587,15 @@ main .bg {
   display: block;
 }
 .left ul li:active a, .left ul li.active a {
+  background: #ededed;
   border-color: transparent;
-  color: #e45b08;
+  color: #356bf7;
+}
+.left ul li:active a i, .left ul li.active a i {
+  color: #356bf7;
+}
+.left ul li:active a svg, .left ul li.active a svg {
+  fill: #356bf7;
 }
 .left ul li:active a .total, .left ul li.active a .total {
   color: #e45b08;
@@ -605,7 +612,7 @@ main .bg {
 .left ul li a {
   display: block;
   color: #1b1b1b;
-  width: 90%;
+  width: 95%;
   background: #ffffff;
   height: 45px;
   line-height: 45px;
@@ -625,6 +632,9 @@ main .bg {
 }
 .left ul li a i::before {
   margin: 0px auto;
+}
+.left ul li a i.fa-heart {
+  color: #f8778f;
 }
 .left ul li a i.fa-hotjar, .left ul li a i.fa-hockey-puck, .left ul li a i.fa-baseball-ball, .left ul li a i.fa-basketball-ball, .left ul li a i.fa-futbol, .left ul li a i.fa-volleyball-ball, .left ul li a i.fa-calendar-alt {
   left: 19px;
@@ -678,6 +688,13 @@ main .bg {
   cursor: pointer;
   margin: 0px auto;
 }
+.left ul li .smallList:nth-of-type(1) {
+  margin-top: 10px;
+}
+.left ul li .smallList:last-child {
+  margin-bottom: 10px;
+  border: none;
+}
 .left ul li .smallList:hover, .left ul li .smallList:active, .left ul li .smallList.active {
   background: #356bf7;
   color: #ffffff;
@@ -696,8 +713,6 @@ main .bg {
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
-  background: #ffffff;
-  box-shadow: 0px 0px 5px 0px #00000049;
 }
 .right::-webkit-scrollbar {
   width: 5px;
@@ -716,9 +731,11 @@ main .bg {
   height: 113px;
   background: #ffffff;
   position: relative;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 5px 0px #00000049;
 }
 .right .statusWindow p {
-  background: #f08512;
+  background: #294282;
   color: #ffffff;
   padding: 7px 15px;
   font-size: 12px;
@@ -797,9 +814,11 @@ main .bg {
   height: auto;
   background: #ffffff;
   text-align: center;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 5px 0px #00000049;
 }
 .right .liveWindow .title {
-  background: #f08512;
+  background: #294282;
   color: #ffffff;
   padding: 7px 15px;
   font-size: 12px;
@@ -871,8 +890,8 @@ main .bg {
 .right .room .twobut button {
   width: 49.5%;
   height: 100%;
-  background: #f4f4f4;
-  color: #7b7b7b;
+  background: #294282;
+  color: #ffffff;
   font-size: 14px;
   float: left;
   margin-right: 1%;
@@ -882,8 +901,8 @@ main .bg {
   margin: 0px;
 }
 .right .room .twobut button:hover, .right .room .twobut button:active, .right .room .twobut button.active {
-  background: #f08512;
-  color: #ffffff;
+  background: #ffffff;
+  color: #294282;
 }
 .right .room .onebut {
   width: 100%;
@@ -892,7 +911,7 @@ main .bg {
 .right .room .onebut button {
   width: 100%;
   height: 100%;
-  background: #f08512;
+  background: #294282;
   color: #ffffff;
   font-size: 14px;
   border-radius: 3px 3px 0px 0px;
@@ -1063,7 +1082,7 @@ main .bg {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  background: #f08512;
+  background: #ffffff;
 }
 .right .room .bettingStatus::-webkit-scrollbar {
   width: 5px;
@@ -2194,6 +2213,7 @@ main .bg {
   overflow: hidden;
   margin: 8px auto 0px;
   border-collapse: inherit;
+  border: solid 1px #dedede;
 }
 .bettingBoard:last-child {
   margin-bottom: 20px;
@@ -2218,9 +2238,9 @@ main .bg {
   color: #595959;
   border-style: solid;
   border-width: 0px 0px 2px 0px;
-  border-color: #f08512;
+  border-color: #dedede;
   vertical-align: middle;
-  background: #ffffff;
+  background: #f7f7f7;
   font-size: 12px;
 }
 .bettingBoard tr td.waiting {
@@ -2242,7 +2262,7 @@ main .bg {
 }
 .bettingBoard tr td:nth-of-type(odd) {
   border-right-width: 1px;
-  border-right-color: #eef0f6;
+  border-right-color: #dedede;
 }
 .bettingBoard tr td:last-child {
   border-right-width: 0px;

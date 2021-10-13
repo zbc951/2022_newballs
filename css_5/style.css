@@ -307,14 +307,14 @@ header article .logged .signupBtn:hover, header article .logged .signupBtn:activ
 }
 header article .logged .selectBox {
   float: right;
-  width: 25%;
+  width: 24%;
   position: relative;
   margin-top: 10px;
 }
 header article .logged .selectBox .fa-globe {
   float: left;
-  margin: 3px 6px 0px 0px;
-  color: #8d8d8d;
+  margin: 3px 0px 0px 0px;
+  color: #393939;
 }
 header article .logged .selectBox::after {
   content: "";
@@ -323,9 +323,9 @@ header article .logged .selectBox::after {
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 10px 8px 0px 8px;
-  border-color: #a4a4a4 transparent;
-  top: 7px;
+  border-width: 6px 5px 0px 5px;
+  border-color: #de1e30 transparent;
+  top: 8px;
   right: 10px;
 }
 header article .logged .selectBox select {
@@ -386,14 +386,14 @@ header article .loggedIn button:hover, header article .loggedIn button:active, h
 }
 header article .loggedIn .selectBox {
   float: right;
-  width: 21%;
+  width: 20%;
   position: relative;
   margin-top: 10px;
 }
 header article .loggedIn .selectBox .fa-globe {
   float: left;
-  margin: 3px 6px 0px 0px;
-  color: #8d8d8d;
+  margin: 3px 3px 0px 0px;
+  color: #393939;
 }
 header article .loggedIn .selectBox::after {
   content: "";
@@ -402,9 +402,9 @@ header article .loggedIn .selectBox::after {
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 10px 8px 0px 8px;
-  border-color: #a4a4a4 transparent;
-  top: 7px;
+  border-width: 6px 5px 0px 5px;
+  border-color: #de1e30 transparent;
+  top: 8px;
   right: 10px;
 }
 header article .loggedIn .selectBox select {
@@ -1088,7 +1088,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 7px 0px 7px 8px;
-  border-color: transparent #a4a4a4;
+  border-color: transparent #de1e30;
   right: 25px;
   top: 8px;
   transition: 0.3s all;
@@ -1402,7 +1402,8 @@ main .bg {
 .playBoard tr td a.tbimg3 {
   width: auto;
   height: auto;
-  color: #0955f0;
+  color: #0046d4;
+  font-size: 13px;
 }
 .playBoard tr td.overGame {
   color: #666666;
