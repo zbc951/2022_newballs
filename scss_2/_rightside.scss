@@ -221,8 +221,8 @@
             button {
                 width: 49.5%;
                 height: 100%;
-                background: #294282;
-                color: #ffffff;
+                background: #dbdbdb;
+                color: #595959;
                 font-size: 14px;
                 float: left;
                 margin-right: 1%;
@@ -245,8 +245,8 @@
             button {
                 width: 100%;
                 height: 100%;
-                background: #294282;
-                color: #ffffff;
+                background: #ffffff;
+                color: #294282;
                 font-size: 14px;
                 border-radius: 3px 3px 0px 0px;
             }
@@ -273,7 +273,7 @@
             }
         
             &::-webkit-scrollbar-thumb {
-                background: linear-gradient(to right,#ffab00 0%, #ff4802 100%);
+                background: linear-gradient(to bottom,#ffab00 0%, #ff4802 100%);
                 border-radius: 10px;
             }
 
@@ -312,7 +312,7 @@
                     }
 
                     &.active {
-                        background: #f7f7f7;
+                        background: #ffffff;
                         height: auto;
                         position: sticky;
                         top: 0px;
@@ -341,7 +341,7 @@
                         height: 0px;
                         border-style: solid;
                         border-width: 7px 0px 7px 8px;
-                        border-color: transparent #8d8d8d;
+                        border-color: transparent #356bf7;
                         right: 25px;
                         top: 8px;
                         transition: 0.3s all;
@@ -361,7 +361,7 @@
                     .games {
                         font-size: 13px;
                         font-weight: bold;
-                        color: #454545;
+                        color: #356bf7;
                         position: absolute;
                         right: 60px;
                         top: 0px;
@@ -370,11 +370,10 @@
                     .innerList {
                         width: 96%;
                         height: 70px;
-                        background: #ffffff;
+                        background: #7787af;
                         position: relative;
                         cursor: default;
                         border-radius: 5px;
-                        box-shadow: 0px 0px 5px 0px #00000049;
                         margin: 0px auto 10px;
 
                         &:nth-of-type(1) {
@@ -389,11 +388,11 @@
                             top: 50%;
                             transform: translateY(-50%);
                             font-size: 12px;
-                            color: #454545;
+                            color: #ffffff;
 
                             span {
                                 font-weight: bold;
-                                color: #356bf7;
+                                color: #ffffff;
 
                                 .situation {
                                     font-weight: normal;
@@ -412,7 +411,7 @@
                                             width: 40px;
                                             height: 19px;
                                             top: -1px;
-                                            left: -10px;
+                                            left: -11px;
                                             background: url('../images/liveBg.png') no-repeat;
                                             z-index: -1;
                                         }
