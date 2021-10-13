@@ -4,7 +4,7 @@
     height: 850px;
     margin-left: 10px;
     float: left;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     z-index: 6;
     scrollbar-width: thin;
@@ -125,7 +125,6 @@
         height: auto;
         background: #ffffff;
         text-align: center;
-        margin-bottom: 10px;
         box-shadow: 0px 2px 5px 0px #00000049;
 
         .title {
@@ -203,7 +202,6 @@
     .room {
         width: 100%;
         height: auto;
-        margin-top: 5px;
 
         //切換按鈕
         .twobut {
@@ -314,9 +312,6 @@
                     &.active {
                         background: #ffffff;
                         height: auto;
-                        position: sticky;
-                        top: 0px;
-                        z-index: 2;
 
                         &::before {
                             transform: rotate(90deg);
@@ -431,7 +426,7 @@
                                 color: #356bf7;
 
                                 &:hover,&:active,&.active {
-                                    background: #356bf7;
+                                    background: #f96262;
                                     color: #ffffff;
                                 }
                             }

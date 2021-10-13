@@ -728,7 +728,7 @@ main .bg {
   height: 850px;
   margin: 15px 0px 0px 10px;
   float: left;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
@@ -857,17 +857,7 @@ main .bg {
   height: auto;
   background: #ffffff;
   text-align: center;
-  margin-bottom: 10px;
   position: relative;
-}
-.right .liveWindow::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  background: #f0f0f0;
-  left: 0px;
-  bottom: -10px;
 }
 .right .liveWindow .title {
   background: #ffffff;
@@ -945,9 +935,9 @@ main .bg {
   background-size: cover;
 }
 .right .room {
-  width: 95%;
+  width: 96%;
   height: auto;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 .right .room .twobut {
   width: 100%;
@@ -1066,10 +1056,6 @@ main .bg {
   height: auto;
   border-color: #ffffff;
   background: #ffffff;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5px;
-  z-index: 2;
 }
 .right .room .livelist ul li.active::before {
   transform: rotate(90deg);
@@ -1208,6 +1194,9 @@ main .bg {
   margin: 0px 0px 15px 20px;
   background: #ffffff;
   position: relative;
+}
+.playBoard:last-child {
+  margin-bottom: 40px;
 }
 .playBoard::before {
   content: "";
@@ -2325,7 +2314,7 @@ main .bg {
   border-collapse: inherit;
 }
 .bettingBoard:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .bettingBoard.fail {
   position: relative;

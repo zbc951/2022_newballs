@@ -8,6 +8,10 @@
 	background: #ffffff;
 	box-shadow: 0px 0px 5px 0px #00000049;
 
+	&:last-child {
+		margin-bottom: 40px;
+	}
+
 	&.index_page,&.result_page {
 
 		tr {

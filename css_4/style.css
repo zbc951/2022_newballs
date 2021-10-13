@@ -710,7 +710,7 @@ main .bg {
   height: 850px;
   margin-left: 10px;
   float: left;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
@@ -866,7 +866,6 @@ main .bg {
 .right .room {
   width: 100%;
   height: auto;
-  margin-top: 5px;
 }
 .right .room .twobut {
   width: 100%;
@@ -960,10 +959,6 @@ main .bg {
   height: auto;
   border-color: #ffffff;
   background: #39537e;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 2;
 }
 .right .room .livelist ul li.active::before {
   transform: rotate(90deg);
@@ -975,6 +970,9 @@ main .bg {
 }
 .right .room .livelist ul li.active .games {
   color: #ce1427;
+}
+.right .room .livelist ul li:last-child {
+  margin-bottom: 30px;
 }
 .right .room .livelist ul li::before {
   content: "";
@@ -1104,6 +1102,9 @@ main .bg {
   margin: 0px 0px 10px 10px;
   background: #ffffff;
   box-shadow: 0px 0px 5px 0px #00000049;
+}
+.playBoard:last-child {
+  margin-bottom: 40px;
 }
 .playBoard.index_page tr:nth-of-type(2):hover, .playBoard.result_page tr:nth-of-type(2):hover {
   border-color: transparent transparent #f0f0f0 transparent;

@@ -4,7 +4,7 @@
     height: 850px;
     margin-left: 10px;
     float: left;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     z-index: 6;
     scrollbar-width: thin;
@@ -137,7 +137,7 @@
                 }
     
                 p {
-                    font-size: 13px;
+                    font-size: 12px;
                     color: #000;
                     line-height: 20px;
                 }
@@ -277,9 +277,6 @@
                     &.active {
                         height: auto;
                         background: #f1f1f1;
-                        position: sticky;
-                        top: 0px;
-                        z-index: 2;
 
                         &::before {
                             transform: rotate(90deg);
@@ -288,6 +285,10 @@
                         span {
                             color: #000;
                         }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 30px;
                     }
 
                     &::before {

@@ -7,6 +7,10 @@
 	margin: 0px 0px 10px 10px;
 	background: #303030;
 
+	&:last-child {
+		margin-bottom: 40px;
+	}
+
 	//內容
     tr {
 		text-align: center;

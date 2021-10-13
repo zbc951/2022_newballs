@@ -8,6 +8,10 @@
 	background: #ffffff;
 	position: relative;
 
+	&:last-child {
+		margin-bottom: 40px;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -2121,7 +2125,7 @@
 	border-collapse: inherit;
 
 	&:last-child {
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 
 	&.fail {

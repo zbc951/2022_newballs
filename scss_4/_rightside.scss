@@ -4,7 +4,7 @@
     height: 850px;
     margin-left: 10px;
     float: left;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     z-index: 6;
     scrollbar-width: thin;
@@ -193,7 +193,6 @@
     .room {
         width: 100%;
         height: auto;
-        margin-top: 5px;
 
         //切換按鈕
         .twobut {
@@ -305,9 +304,6 @@
                         height: auto;
                         border-color: #ffffff;
                         background: #39537e;
-                        position: sticky;
-                        top: 0px;
-                        z-index: 2;
 
                         &::before {
                             transform: rotate(90deg);
@@ -322,6 +318,10 @@
                         .games {
                             color: #ce1427;
                         }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 30px;
                     }
 
                     &::before {

@@ -80,12 +80,12 @@ $(function(){
         $(this).addClass('active');
         $(this).siblings().removeClass('active')
         $('.livelist').addClass('open');
-        $('.chatroom').removeClass('open');
+        $('.bettingStatus').removeClass('open');
     });
     $('.StatusBtn').click(function(){
         $(this).addClass('active');
         $(this).siblings().removeClass('active')
-        $('.chatroom').addClass('open');
+        $('.bettingStatus').addClass('open');
         $('.livelist').removeClass('open');
     });
     //直播賽事選單開關
@@ -863,33 +863,33 @@ $(document).ready(function () {
 // rightlivelist自動高度
 $(document).ready(function () {
     var livelistNav = $(".livelist");
+    var bettingStatusNav = $(".bettingStatus");
+    var livelistNav2 = $($(".room div.onebut").next('.livelist'));
     var wH = window.innerHeight;
-    livelistNav.css("height", (String(wH - 525) + "px"));
+
+    if(wH > 825) {
+        livelistNav.css("height", (String(wH - 525) + "px"));
+        bettingStatusNav.css("height", (String(wH - 525) + "px"));
+        livelistNav2.css("height", (String(wH - 412) + "px"));
+    } else {
+        livelistNav.css("height", (String(300) + "px"));
+        bettingStatusNav.css("height", (String(300) + "px"));
+        livelistNav2.css("height", (String(wH - 395) + "px"));
+    }
+
     $(window).resize(function () {
         var livelistNav = $(".livelist");
-        var wH = window.innerHeight;
-        livelistNav.css("height", (String(wH - 525) + "px"));
-    });
-
-    if($('.room div').hasClass('onebut')) {
-         livelistNav.css("height", (String(wH - 412) + "px"));
-        $(window).resize(function () {
-            var livelistNav = $(".livelist");
-            var wH = window.innerHeight;
-            livelistNav.css("height", (String(wH - 412) + "px"));
-        });
-    }
-});
-
-// rightchatroom自動高度
-$(document).ready(function () {
-    var bettingStatusNav = $(".bettingStatus");
-    var wH = window.innerHeight;
-    bettingStatusNav.css("height", (String(wH - 525) + "px"));
-    $(window).resize(function () {
         var bettingStatusNav = $(".bettingStatus");
         var wH = window.innerHeight;
-        bettingStatusNav.css("height", (String(wH - 525) + "px"));
+        if(wH > 825) {
+            livelistNav.css("height", (String(wH - 525) + "px"));
+            bettingStatusNav.css("height", (String(wH - 525) + "px"));
+            livelistNav2.css("height", (String(wH - 412) + "px"));
+        } else {
+            livelistNav.css("height", (String(300) + "px"));
+            bettingStatusNav.css("height", (String(300) + "px"));
+            livelistNav2.css("height", (String(wH - 395) + "px"));
+        }
     });
 });
 

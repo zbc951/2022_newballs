@@ -673,7 +673,7 @@ main .bg {
   height: 850px;
   margin-left: 10px;
   float: left;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
@@ -780,7 +780,7 @@ main .bg {
   padding: 5px 5px 5px 0px;
 }
 .right .liveWindow .teamWindow .leftTeam p, .right .liveWindow .teamWindow .rightTeam p {
-  font-size: 13px;
+  font-size: 12px;
   color: #000;
   line-height: 20px;
 }
@@ -895,16 +895,15 @@ main .bg {
 .right .room .livelist ul li.active {
   height: auto;
   background: #f1f1f1;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 2;
 }
 .right .room .livelist ul li.active::before {
   transform: rotate(90deg);
 }
 .right .room .livelist ul li.active span {
   color: #000;
+}
+.right .room .livelist ul li:last-child {
+  margin-bottom: 30px;
 }
 .right .room .livelist ul li::before {
   content: "";
@@ -1019,6 +1018,9 @@ main .bg {
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
   background: #505050;
+}
+.playBoard:last-child {
+  margin-bottom: 40px;
 }
 .playBoard tr {
   text-align: center;

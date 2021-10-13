@@ -710,7 +710,7 @@ main .bg {
   height: 850px;
   margin-left: 10px;
   float: left;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   z-index: 6;
   scrollbar-width: thin;
@@ -873,7 +873,6 @@ main .bg {
 .right .room {
   width: 100%;
   height: auto;
-  margin-top: 5px;
 }
 .right .room .twobut {
   width: 100%;
@@ -971,10 +970,6 @@ main .bg {
   height: auto;
   background: linear-gradient(to bottom, #1d1d1d 16%, #303030 100%);
   border: solid 1px #29650f;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 2;
   color: #57ed22;
 }
 .right .room .livelist ul li.active::before {
@@ -994,6 +989,9 @@ main .bg {
   right: 25px;
   top: 8px;
   transition: 0.3s all;
+}
+.right .room .livelist ul li:last-child {
+  margin-bottom: 30px;
 }
 .right .room .livelist ul li .gameName {
   color: #e4e4e4;
@@ -1100,6 +1098,9 @@ main .bg {
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
   background: #303030;
+}
+.playBoard:last-child {
+  margin-bottom: 40px;
 }
 .playBoard tr {
   text-align: center;

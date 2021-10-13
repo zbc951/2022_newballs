@@ -7,6 +7,10 @@
 	margin: 0px 0px 10px 10px;
 	background: #ffffff;
 
+	&:last-child {
+		margin-bottom: 40px;
+	}
+
 	&.index_page,&.result_page {
 
 		tr {

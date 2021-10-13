@@ -4,7 +4,7 @@
     height: 850px;
     margin-left: 10px;
     float: left;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     z-index: 6;
     scrollbar-width: thin;
@@ -200,7 +200,6 @@
     .room {
         width: 100%;
         height: auto;
-        margin-top: 5px;
 
         //切換按鈕
         .twobut {
@@ -317,9 +316,6 @@
                         height: auto;
                         background: linear-gradient(to bottom,#1d1d1d 16%,#303030 100%);
                         border: solid 1px #29650f;
-                        position: sticky;
-                        top: 0px;
-                        z-index: 2;
                         color: #57ed22;
 
                         &::before {
@@ -342,6 +338,10 @@
                         right: 25px;
                         top: 8px;
                         transition: 0.3s all;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 30px;
                     }
 
                     .gameName {
