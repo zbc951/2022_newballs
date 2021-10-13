@@ -717,15 +717,15 @@ main .bg {
   background: #242424;
 }
 .right::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
   background-color: transparent;
 }
 .right::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #121212;
   border-radius: 10px;
 }
 .right::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #606360;
   border-radius: 10px;
 }
 .right .statusWindow {
