@@ -160,8 +160,9 @@
                 &:hover,&:active,&.active {
 
                     a {
-                        background: #e3e3e3;
+                        background: #f1f1f1;
                         color: #df1e31;
+                        font-weight: bold;
                     }
                 }
 
@@ -212,8 +213,9 @@
             &:hover {
 
                 a {
-                    background: #e3e3e3;
+                    background: #f1f1f1;
                     color: #de1e30;
+                    font-weight: bold;
 
                     .total {
                         color: #de1e30;
@@ -228,8 +230,9 @@
                 }
 
                 a {
-                    background: #e3e3e3;
+                    background: #f1f1f1;
                     color: #de1e30;
+                    font-weight: bold;
 
                     .total {
                         color: #de1e30;
