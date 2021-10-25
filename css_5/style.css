@@ -1059,10 +1059,6 @@ main .bg {
   height: auto;
   border-color: #ffffff;
   background: #ffffff;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5px;
-  z-index: 2;
 }
 .right .room .livelist ul li.active:hover .gameName {
   background: none;

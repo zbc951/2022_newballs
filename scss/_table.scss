@@ -18,6 +18,10 @@
 		border-width: 1px;
 		border-color: transparent transparent #868282 transparent;
 
+		&.onTime {
+			background: #ffffff;
+		}
+
 		&:nth-of-type(1) {
 			border-top-color: #33bc19;
 			border-bottom: none;
