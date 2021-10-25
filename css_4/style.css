@@ -2266,17 +2266,21 @@ main .bg {
 .scoreBoard tr th {
   color: #1b1b1b;
   font-size: 13px;
-  padding: 4px 0px 3px;
+  padding: 7px 0px 3px;
   vertical-align: middle;
   background: #ffe29f;
   border-style: solid;
   border-width: 0px 1px 1px 0px;
   border-color: transparent #fba978 #e8b746 transparent;
   position: static;
+  pointer-events: none;
+}
+.scoreBoard tr th::before {
+  display: none;
 }
 .scoreBoard tr th.tLeft {
   text-align: left;
-  padding: 0px 10px;
+  padding: 3px 0px 0px 10px;
 }
 .scoreBoard tr td {
   font-size: 13px;
@@ -2345,120 +2349,156 @@ main .bg {
 }
 .scoreBoard.soccer tr td:nth-of-type(1) {
   width: 50%;
+  min-width: 0px;
 }
 .scoreBoard.soccer tr td:nth-of-type(2), .scoreBoard.soccer tr td:nth-of-type(4) {
   width: 15%;
+  min-width: 0px;
 }
 .scoreBoard.soccer tr td:nth-of-type(2) .yellowCard, .scoreBoard.soccer tr td:nth-of-type(4) .yellowCard {
   padding-left: 6px;
 }
 .scoreBoard.soccer tr td:nth-of-type(3), .scoreBoard.soccer tr td:nth-of-type(5) {
   width: 10%;
+  min-width: 0px;
 }
 .scoreBoard.baseball tr td:nth-of-type(1) {
   width: 44%;
+  min-width: 0px;
 }
 .scoreBoard.baseball tr td:nth-of-type(2), .scoreBoard.baseball tr td:nth-of-type(3), .scoreBoard.baseball tr td:nth-of-type(4), .scoreBoard.baseball tr td:nth-of-type(5), .scoreBoard.baseball tr td:nth-of-type(6), .scoreBoard.baseball tr td:nth-of-type(7), .scoreBoard.baseball tr td:nth-of-type(8), .scoreBoard.baseball tr td:nth-of-type(9), .scoreBoard.baseball tr td:nth-of-type(10) {
   width: 4%;
+  min-width: 0px;
 }
 .scoreBoard.baseball tr td:nth-of-type(11), .scoreBoard.baseball tr td:nth-of-type(12), .scoreBoard.baseball tr td:nth-of-type(13), .scoreBoard.baseball tr td:nth-of-type(14) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.basketball tr td:nth-of-type(1) {
   width: 74%;
+  min-width: 0px;
 }
 .scoreBoard.basketball tr td:nth-of-type(2), .scoreBoard.basketball tr td:nth-of-type(3), .scoreBoard.basketball tr td:nth-of-type(4), .scoreBoard.basketball tr td:nth-of-type(5) {
   width: 4%;
+  min-width: 0px;
 }
 .scoreBoard.basketball tr td:nth-of-type(6), .scoreBoard.basketball tr td:nth-of-type(7) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.race tr td:nth-of-type(1), .scoreBoard.race tr td:nth-of-type(2), .scoreBoard.race tr td:nth-of-type(6) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.race tr td:nth-of-type(4), .scoreBoard.race tr td:nth-of-type(5), .scoreBoard.race tr td:nth-of-type(7) {
   width: 10%;
+  min-width: 0px;
 }
 .scoreBoard.race tr td:nth-of-type(3) {
   width: 55%;
+  min-width: 0px;
 }
 .scoreBoard.esp.lol tr td:nth-of-type(1) {
   width: 32%;
+  min-width: 0px;
 }
 .scoreBoard.esp.lol tr td:nth-of-type(2), .scoreBoard.esp.lol tr td:nth-of-type(3), .scoreBoard.esp.lol tr td:nth-of-type(4), .scoreBoard.esp.lol tr td:nth-of-type(5), .scoreBoard.esp.lol tr td:nth-of-type(6), .scoreBoard.esp.lol tr td:nth-of-type(7), .scoreBoard.esp.lol tr td:nth-of-type(8) {
   width: 4%;
+  min-width: 0px;
 }
 .scoreBoard.esp.lol tr td:nth-of-type(9), .scoreBoard.esp.lol tr td:nth-of-type(10), .scoreBoard.esp.lol tr td:nth-of-type(11), .scoreBoard.esp.lol tr td:nth-of-type(12), .scoreBoard.esp.lol tr td:nth-of-type(13), .scoreBoard.esp.lol tr td:nth-of-type(14), .scoreBoard.esp.lol tr td:nth-of-type(15), .scoreBoard.esp.lol tr td:nth-of-type(16) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.esp.dota tr td:nth-of-type(1) {
   width: 37%;
+  min-width: 0px;
 }
 .scoreBoard.esp.dota tr td:nth-of-type(2), .scoreBoard.esp.dota tr td:nth-of-type(3), .scoreBoard.esp.dota tr td:nth-of-type(4), .scoreBoard.esp.dota tr td:nth-of-type(5), .scoreBoard.esp.dota tr td:nth-of-type(6), .scoreBoard.esp.dota tr td:nth-of-type(7), .scoreBoard.esp.dota tr td:nth-of-type(8) {
   width: 4%;
+  min-width: 0px;
 }
 .scoreBoard.esp.dota tr td:nth-of-type(9), .scoreBoard.esp.dota tr td:nth-of-type(10), .scoreBoard.esp.dota tr td:nth-of-type(11), .scoreBoard.esp.dota tr td:nth-of-type(12), .scoreBoard.esp.dota tr td:nth-of-type(13), .scoreBoard.esp.dota tr td:nth-of-type(14), .scoreBoard.esp.dota tr td:nth-of-type(15) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.esp.cs tr td:nth-of-type(1) {
   width: 51%;
+  min-width: 0px;
 }
 .scoreBoard.esp.cs tr td:nth-of-type(2), .scoreBoard.esp.cs tr td:nth-of-type(3), .scoreBoard.esp.cs tr td:nth-of-type(4), .scoreBoard.esp.cs tr td:nth-of-type(5), .scoreBoard.esp.cs tr td:nth-of-type(6), .scoreBoard.esp.cs tr td:nth-of-type(7), .scoreBoard.esp.cs tr td:nth-of-type(8) {
   width: 4%;
+  min-width: 0px;
 }
 .scoreBoard.esp.cs tr td:nth-of-type(9), .scoreBoard.esp.cs tr td:nth-of-type(10), .scoreBoard.esp.cs tr td:nth-of-type(11) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.esp.cs tr td:nth-of-type(12) {
   width: 6%;
+  min-width: 0px;
 }
 .scoreBoard.stock tr td:nth-of-type(1), .scoreBoard.stock tr td:nth-of-type(2) {
   width: 30%;
+  min-width: 0px;
 }
 .scoreBoard.stock tr td:nth-of-type(3), .scoreBoard.stock tr td:nth-of-type(4) {
   width: 20%;
+  min-width: 0px;
 }
 .scoreBoard.lottery tr td p:nth-of-type(2) {
   padding-top: 5px;
 }
 .scoreBoard.lottery.bingo tr td:nth-of-type(1) {
   width: 30%;
+  min-width: 0px;
 }
 .scoreBoard.lottery.bingo tr td:nth-of-type(2), .scoreBoard.lottery.bingo tr td:nth-of-type(3), .scoreBoard.lottery.bingo tr td:nth-of-type(4), .scoreBoard.lottery.bingo tr td:nth-of-type(5), .scoreBoard.lottery.bingo tr td:nth-of-type(6), .scoreBoard.lottery.bingo tr td:nth-of-type(7), .scoreBoard.lottery.bingo tr td:nth-of-type(8), .scoreBoard.lottery.bingo tr td:nth-of-type(9), .scoreBoard.lottery.bingo tr td:nth-of-type(10) {
   width: 4%;
-  border: none;
+  min-width: 0px;
+  border-right: none;
 }
 .scoreBoard.lottery.bingo tr td:nth-of-type(11) {
   width: 4%;
+  min-width: 0px;
 }
 .scoreBoard.lottery.bingo tr td:nth-of-type(12), .scoreBoard.lottery.bingo tr td:nth-of-type(13), .scoreBoard.lottery.bingo tr td:nth-of-type(14) {
   width: 10%;
+  min-width: 0px;
 }
 .scoreBoard.lottery.lotto tr td:nth-of-type(1) {
   width: 30%;
+  min-width: 0px;
 }
 .scoreBoard.lottery.lotto tr td:nth-of-type(2) {
   width: 10%;
-  border: none;
+  min-width: 0px;
+  border-right: none;
 }
 .scoreBoard.lottery.lotto tr td:nth-of-type(3), .scoreBoard.lottery.lotto tr td:nth-of-type(4), .scoreBoard.lottery.lotto tr td:nth-of-type(5), .scoreBoard.lottery.lotto tr td:nth-of-type(6) {
   width: 5%;
-  border: none;
+  min-width: 0px;
+  border-right: none;
 }
 .scoreBoard.lottery.lotto tr td:nth-of-type(7) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.lottery.lotto tr td:nth-of-type(8) {
   width: 35%;
+  min-width: 0px;
 }
 .scoreBoard.tennis tr td:nth-of-type(1), .scoreBoard.tennis tr td:nth-of-type(9), .scoreBoard.tennis tr td:nth-of-type(10) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.tennis tr td:nth-of-type(2) {
   width: 61%;
+  min-width: 0px;
 }
 .scoreBoard.tennis tr td:nth-of-type(3), .scoreBoard.tennis tr td:nth-of-type(4), .scoreBoard.tennis tr td:nth-of-type(5), .scoreBoard.tennis tr td:nth-of-type(6), .scoreBoard.tennis tr td:nth-of-type(7), .scoreBoard.tennis tr td:nth-of-type(8) {
   width: 4%;
+  min-width: 0px;
 }
 .scoreBoard.snooker tr td p:nth-of-type(2) {
   padding-top: 5px;
@@ -2469,39 +2509,51 @@ main .bg {
 }
 .scoreBoard.snooker tr td:nth-of-type(1), .scoreBoard.snooker tr td:nth-of-type(3) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.snooker tr td:nth-of-type(2) {
   width: 90%;
+  min-width: 0px;
 }
 .scoreBoard.vball tr td:nth-of-type(1), .scoreBoard.vball tr td:nth-of-type(10), .scoreBoard.vball tr td:nth-of-type(11) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.vball tr td:nth-of-type(2) {
   width: 57%;
+  min-width: 0px;
 }
 .scoreBoard.vball tr td:nth-of-type(3), .scoreBoard.vball tr td:nth-of-type(4), .scoreBoard.vball tr td:nth-of-type(5), .scoreBoard.vball tr td:nth-of-type(6), .scoreBoard.vball tr td:nth-of-type(7), .scoreBoard.vball tr td:nth-of-type(8), .scoreBoard.vball tr td:nth-of-type(9) {
   width: 4%;
+  min-width: 0px;
 }
 .scoreBoard.raceCar tr td:nth-of-type(1), .scoreBoard.raceCar tr td:nth-of-type(2), .scoreBoard.raceCar tr td:nth-of-type(5), .scoreBoard.raceCar tr td:nth-of-type(8) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.raceCar tr td:nth-of-type(4) {
   width: 6%;
+  min-width: 0px;
 }
 .scoreBoard.raceCar tr td:nth-of-type(3), .scoreBoard.raceCar tr td:nth-of-type(6) {
   width: 32%;
+  min-width: 0px;
 }
 .scoreBoard.raceCar tr td:nth-of-type(7) {
   width: 10%;
+  min-width: 0px;
 }
 .scoreBoard.badminton tr td:nth-of-type(1), .scoreBoard.badminton tr td:nth-of-type(8), .scoreBoard.badminton tr td:nth-of-type(9) {
   width: 5%;
+  min-width: 0px;
 }
 .scoreBoard.badminton tr td:nth-of-type(2) {
   width: 65%;
+  min-width: 0px;
 }
 .scoreBoard.badminton tr td:nth-of-type(3), .scoreBoard.badminton tr td:nth-of-type(4), .scoreBoard.badminton tr td:nth-of-type(5), .scoreBoard.badminton tr td:nth-of-type(6), .scoreBoard.badminton tr td:nth-of-type(7) {
   width: 4%;
+  min-width: 0px;
 }
 
 .bettingBoard {

@@ -2185,18 +2185,23 @@
 		th {
 			color: #1b1b1b;
 			font-size: 13px;
-			padding: 4px 0px 3px;
+			padding: 7px 0px 3px;
 			vertical-align: middle;
 			background: #ffe29f;
 			border-style: solid;
 			border-width: 0px 1px 1px 0px;
 			border-color: transparent #fba978 #e8b746 transparent;
 			position: static;
+			pointer-events: none;
+
+			&::before {
+				display: none;
+			}
 	
 			//字靠左
 			&.tLeft {
 				text-align: left;
-				padding: 0px 10px;
+				padding: 3px 0px 0px 10px;
 			}
 		}
   
@@ -2282,11 +2287,13 @@
 				
 				&:nth-of-type(1) {
 					width: 50%;
+					min-width: 0px;
 				}
 	
 				&:nth-of-type(2),
 				&:nth-of-type(4) {
 					width: 15%;
+					min-width: 0px;
 		
 					.yellowCard {
 						padding-left: 6px;
@@ -2296,6 +2303,7 @@
 				&:nth-of-type(3),
 				&:nth-of-type(5) {
 					width: 10%;
+					min-width: 0px;
 				}
 			}
 		}
@@ -2308,6 +2316,7 @@
 
 				&:nth-of-type(1) {
 					width: 44%;
+					min-width: 0px;
 				}
 	
 				&:nth-of-type(2),
@@ -2320,6 +2329,7 @@
 				&:nth-of-type(9),
 				&:nth-of-type(10) {
 					width: 4%;
+					min-width: 0px;
 				}
 	
 				&:nth-of-type(11),
@@ -2327,6 +2337,7 @@
 				&:nth-of-type(13),
 				&:nth-of-type(14) {
 					width: 5%;
+					min-width: 0px;
 				}
 			}
 		}
@@ -2338,6 +2349,7 @@
 			td {
 				&:nth-of-type(1) {
 					width: 74%;
+					min-width: 0px;
 				}
 	
 				&:nth-of-type(2),
@@ -2345,11 +2357,13 @@
 				&:nth-of-type(4),
 				&:nth-of-type(5) {
 					width: 4%;
+					min-width: 0px;
 				}
 	
 				&:nth-of-type(6),
 				&:nth-of-type(7) {
 					width: 5%;
+					min-width: 0px;
 				}
 			}
 		}
@@ -2364,16 +2378,19 @@
 				&:nth-of-type(2),
 				&:nth-of-type(6) {
 					width: 5%;
+					min-width: 0px;
 				}
 	
 				&:nth-of-type(4),
 				&:nth-of-type(5),
 				&:nth-of-type(7) {
 					width: 10%;
+					min-width: 0px;
 				}
 	
 				&:nth-of-type(3) {
 					width: 55%;
+					min-width: 0px;
 				}
 			}
 		}
@@ -2388,6 +2405,7 @@
 
 					&:nth-of-type(1) {
 						width: 32%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(2),
@@ -2398,6 +2416,7 @@
 					&:nth-of-type(7),
 					&:nth-of-type(8) {
 						width: 4%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(9),
@@ -2409,6 +2428,7 @@
 					&:nth-of-type(15),
 					&:nth-of-type(16) {
 						width: 5%;
+						min-width: 0px;
 					}
 				}
 			}
@@ -2422,6 +2442,7 @@
 
 					&:nth-of-type(1) {
 						width: 37%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(2),
@@ -2432,6 +2453,7 @@
 					&:nth-of-type(7),
 					&:nth-of-type(8) {
 						width: 4%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(9),
@@ -2442,6 +2464,7 @@
 					&:nth-of-type(14),
 					&:nth-of-type(15) {
 						width: 5%;
+						min-width: 0px;
 					}
 				}
 			}
@@ -2453,6 +2476,7 @@
 
 					&:nth-of-type(1) {
 						width: 51%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(2),
@@ -2463,16 +2487,19 @@
 					&:nth-of-type(7),
 					&:nth-of-type(8) {
 						width: 4%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(9),
 					&:nth-of-type(10),
 					&:nth-of-type(11) {
 						width: 5%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(12) {
 						width: 6%;
+						min-width: 0px;
 					}
 				}
 			}
@@ -2487,11 +2514,13 @@
 				&:nth-of-type(1),
 				&:nth-of-type(2) {
 					width: 30%;
+					min-width: 0px;
 				}
 	
 				&:nth-of-type(3),
 				&:nth-of-type(4) {
 					width: 20%;
+					min-width: 0px;
 				}
 			}
 		}
@@ -2518,6 +2547,7 @@
 
 					&:nth-of-type(1) {
 						width: 30%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(2),
@@ -2530,17 +2560,20 @@
 					&:nth-of-type(9),
 					&:nth-of-type(10) {
 						width: 4%;
-						border: none;
+						min-width: 0px;
+						border-right: none;
 					}
 		
 					&:nth-of-type(11) {
 						width: 4%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(12),
 					&:nth-of-type(13),
 					&:nth-of-type(14) {
 						width: 10%;
+						min-width: 0px;
 					}
 				}
 			}
@@ -2554,11 +2587,13 @@
 
 					&:nth-of-type(1) {
 						width: 30%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(2) {
 						width: 10%;
-						border: none;
+						min-width: 0px;
+						border-right: none;
 					}
 		
 					&:nth-of-type(3),
@@ -2566,15 +2601,18 @@
 					&:nth-of-type(5),
 					&:nth-of-type(6) {
 						width: 5%;
-						border: none;
+						min-width: 0px;
+						border-right: none;
 					}
 		
 					&:nth-of-type(7) {
 						width: 5%;
+						min-width: 0px;
 					}
 		
 					&:nth-of-type(8) {
 						width: 35%;
+						min-width: 0px;
 					}
 				}
 			}
@@ -2590,10 +2628,12 @@
 				&:nth-of-type(9),
 				&:nth-of-type(10) {
 					width: 5%;
+					min-width: 0px;
 				}
 		
 				&:nth-of-type(2) {
 					width: 61%;
+					min-width: 0px;
 				}
 		
 				&:nth-of-type(3),
@@ -2603,6 +2643,7 @@
 				&:nth-of-type(7),
 				&:nth-of-type(8) {
 					width: 4%;
+					min-width: 0px;
 				}
 			}
 		}
@@ -2627,10 +2668,12 @@
 				&:nth-of-type(1),
 				&:nth-of-type(3) {
 					width: 5%;
+					min-width: 0px;
 				}
 		
 				&:nth-of-type(2) {
 					width: 90%;
+					min-width: 0px;
 				}
 			}
 		}
@@ -2642,10 +2685,12 @@
 				&:nth-of-type(10),
 				&:nth-of-type(11) {
 					width: 5%;
+					min-width: 0px;
 				}
 		
 				&:nth-of-type(2) {
 					width: 57%;
+					min-width: 0px;
 				}
 		
 				&:nth-of-type(3),
@@ -2656,6 +2701,7 @@
 				&:nth-of-type(8),
 				&:nth-of-type(9) {
 					width: 4%;
+					min-width: 0px;
 				}
 			}
 		}
@@ -2670,19 +2716,23 @@
 				&:nth-of-type(5),
 				&:nth-of-type(8) {
 					width: 5%;
+					min-width: 0px;
 				}
 	
 				&:nth-of-type(4) {
 					width: 6%;
+					min-width: 0px;
 				}
 		
 				&:nth-of-type(3),
 				&:nth-of-type(6) {
 					width: 32%;
+					min-width: 0px;
 				}
 		
 				&:nth-of-type(7) {
 					width: 10%;
+					min-width: 0px;
 				}
 			}
 		}
@@ -2697,10 +2747,12 @@
 				&:nth-of-type(8),
 				&:nth-of-type(9) {
 					width: 5%;
+					min-width: 0px;
 				}
 		
 				&:nth-of-type(2) {
 					width: 65%;
+					min-width: 0px;
 				}
 		
 				&:nth-of-type(3),
@@ -2709,6 +2761,7 @@
 				&:nth-of-type(6),
 				&:nth-of-type(7) {
 					width: 4%;
+					min-width: 0px;
 				}
 			}
 		}
