@@ -2109,6 +2109,584 @@
 	}
 }
 
+//滾球盤時下方新增視窗
+.scoreBoard {
+	width: calc(100% - 10px);
+	height: auto;
+	border-collapse: collapse;
+	margin: 0px auto;
+	background: #fffbcc;
+  
+	&.live {
+  
+	  th {
+			padding: 8px 0px 6px;
+			background: #39547f;
+			color: #ffffff;
+	  	}
+	}
+  
+	//內容
+	tr {
+		text-align: center;
+	
+		&:hover,&:active,&.active {
+			box-shadow: none;
+			border: none;
+			background: none;
+
+			&:nth-of-type(1) {
+				border-top: solid 1px #ffdfcc;
+			}
+	
+			td {
+				border-color: #e8b746;
+				color: #1b1b1b;
+	
+				.pitcher {
+					color: #ce1427;
+				}
+			}
+		}
+	
+		&:nth-of-type(odd) {
+			background: #fffbcc;
+			border-top-color: #ffdfcc;
+		}
+  
+		th {
+			color: #1b1b1b;
+			font-size: 13px;
+			padding: 4px 0px 3px;
+			vertical-align: middle;
+			background: #ffe29f;
+			border-style: solid;
+			border-width: 0px 1px 1px 0px;
+			border-color: transparent #fba978 #e8b746 transparent;
+			position: static;
+	
+			//字靠左
+			&.tLeft {
+				text-align: left;
+				padding: 0px 10px;
+			}
+		}
+  
+		td {
+			font-size: 13px;
+			padding: 8px 3px;
+			vertical-align: middle;
+			word-break: break-all;
+			color: #1b1b1b;
+			line-height: 18px;
+			border-style: solid;
+			border-width: 0px 1px 1px 0px;
+			border-color: #e8b746;
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				background: #ffffff;
+				width: 100%;
+				height: 1px;
+			}
+	
+			//字靠左
+			&.tLeft {
+				text-align: left;
+				padding: 0px 10px;
+			}
+	
+			.mainTeam {
+				display: inline-block;
+				color: #ffffff;
+				position: relative;
+				z-index: 1;
+				margin-right: 5px;
+				line-height: 0px;
+	
+				&::before {
+					content: "";
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-53%, -53%);
+					width: 18px;
+					height: 18px;
+					background: #b71719;
+					border-radius: 3px;
+					z-index: -1;
+				}
+			}
+  
+			.customTeam {
+				display: inline-block;
+				color: #ffffff;
+				position: relative;
+				z-index: 1;
+				margin-right: 5px;
+				line-height: 0px;
+	
+				&::before {
+					content: "";
+					position: absolute;
+					left: 50%;
+					top: 42%;
+					transform: translate(-53%, -57%);
+					width: 18px;
+					height: 18px;
+					background: #1e62c5;
+					border-radius: 3px;
+					z-index: -1;
+				}
+			}
+	 	}
+	}
+  
+	&.soccer {
+
+		tr {
+
+			td {
+				
+				&:nth-of-type(1) {
+					width: 50%;
+				}
+	
+				&:nth-of-type(2),
+				&:nth-of-type(4) {
+					width: 15%;
+		
+					.yellowCard {
+						padding-left: 6px;
+					}
+				}
+	
+				&:nth-of-type(3),
+				&:nth-of-type(5) {
+					width: 10%;
+				}
+			}
+		}
+	}
+	&.baseball {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 44%;
+				}
+	
+				&:nth-of-type(2),
+				&:nth-of-type(3),
+				&:nth-of-type(4),
+				&:nth-of-type(5),
+				&:nth-of-type(6),
+				&:nth-of-type(7),
+				&:nth-of-type(8),
+				&:nth-of-type(9),
+				&:nth-of-type(10) {
+					width: 4%;
+				}
+	
+				&:nth-of-type(11),
+				&:nth-of-type(12),
+				&:nth-of-type(13),
+				&:nth-of-type(14) {
+					width: 5%;
+				}
+			}
+		}
+	}
+	&.basketball {
+
+		tr {
+
+			td {
+				&:nth-of-type(1) {
+					width: 74%;
+				}
+	
+				&:nth-of-type(2),
+				&:nth-of-type(3),
+				&:nth-of-type(4),
+				&:nth-of-type(5) {
+					width: 4%;
+				}
+	
+				&:nth-of-type(6),
+				&:nth-of-type(7) {
+					width: 5%;
+				}
+			}
+		}
+	}
+	&.race {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1),
+				&:nth-of-type(2),
+				&:nth-of-type(6) {
+					width: 5%;
+				}
+	
+				&:nth-of-type(4),
+				&:nth-of-type(5),
+				&:nth-of-type(7) {
+					width: 10%;
+				}
+	
+				&:nth-of-type(3) {
+					width: 55%;
+				}
+			}
+		}
+	}
+	&.esp {
+
+		&.lol {
+			
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 32%;
+					}
+		
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						width: 4%;
+					}
+		
+					&:nth-of-type(9),
+					&:nth-of-type(10),
+					&:nth-of-type(11),
+					&:nth-of-type(12),
+					&:nth-of-type(13),
+					&:nth-of-type(14),
+					&:nth-of-type(15),
+					&:nth-of-type(16) {
+						width: 5%;
+					}
+				}
+			}
+	  	}
+  
+		&.dota {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 37%;
+					}
+		
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						width: 4%;
+					}
+		
+					&:nth-of-type(9),
+					&:nth-of-type(10),
+					&:nth-of-type(11),
+					&:nth-of-type(12),
+					&:nth-of-type(13),
+					&:nth-of-type(14),
+					&:nth-of-type(15) {
+						width: 5%;
+					}
+				}
+			}
+		}
+  
+		&.cs {
+			tr {
+				td {
+
+					&:nth-of-type(1) {
+						width: 51%;
+					}
+		
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						width: 4%;
+					}
+		
+					&:nth-of-type(9),
+					&:nth-of-type(10),
+					&:nth-of-type(11) {
+						width: 5%;
+					}
+		
+					&:nth-of-type(12) {
+						width: 6%;
+					}
+				}
+			}
+		}
+	}
+	&.stock {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1),
+				&:nth-of-type(2) {
+					width: 30%;
+				}
+	
+				&:nth-of-type(3),
+				&:nth-of-type(4) {
+					width: 20%;
+				}
+			}
+		}
+	}
+	&.lottery {
+
+		tr {
+
+			td {
+				
+				p {
+					&:nth-of-type(2) {
+						padding-top: 5px;
+					}
+				}
+			}
+		}
+  
+		&.bingo {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 30%;
+					}
+		
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8),
+					&:nth-of-type(9),
+					&:nth-of-type(10) {
+						width: 4%;
+						border: none;
+					}
+		
+					&:nth-of-type(11) {
+						width: 4%;
+					}
+		
+					&:nth-of-type(12),
+					&:nth-of-type(13),
+					&:nth-of-type(14) {
+						width: 10%;
+					}
+				}
+			}
+		}
+  
+		&.lotto {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 30%;
+					}
+		
+					&:nth-of-type(2) {
+						width: 10%;
+						border: none;
+					}
+		
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6) {
+						width: 5%;
+						border: none;
+					}
+		
+					&:nth-of-type(7) {
+						width: 5%;
+					}
+		
+					&:nth-of-type(8) {
+						width: 35%;
+					}
+				}
+			}
+		}
+	}
+	&.tennis {
+
+		tr {
+
+			td {
+					
+				&:nth-of-type(1),
+				&:nth-of-type(9),
+				&:nth-of-type(10) {
+					width: 5%;
+				}
+		
+				&:nth-of-type(2) {
+					width: 61%;
+				}
+		
+				&:nth-of-type(3),
+				&:nth-of-type(4),
+				&:nth-of-type(5),
+				&:nth-of-type(6),
+				&:nth-of-type(7),
+				&:nth-of-type(8) {
+					width: 4%;
+				}
+			}
+		}
+	}
+	&.snooker {
+
+		tr {
+
+			td {
+
+				p {
+					&:nth-of-type(2) {
+						padding-top: 5px;
+					}
+				}
+		
+				&.tLeft {
+					text-align: left;
+					padding: 8px 10px;
+				}
+		
+				&:nth-of-type(1),
+				&:nth-of-type(3) {
+					width: 5%;
+				}
+		
+				&:nth-of-type(2) {
+					width: 90%;
+				}
+			}
+		}
+	}
+	&.vball {
+		tr {
+			td {
+				&:nth-of-type(1),
+				&:nth-of-type(10),
+				&:nth-of-type(11) {
+					width: 5%;
+				}
+		
+				&:nth-of-type(2) {
+					width: 57%;
+				}
+		
+				&:nth-of-type(3),
+				&:nth-of-type(4),
+				&:nth-of-type(5),
+				&:nth-of-type(6),
+				&:nth-of-type(7),
+				&:nth-of-type(8),
+				&:nth-of-type(9) {
+					width: 4%;
+				}
+			}
+		}
+	}
+	&.raceCar {
+
+		tr {
+
+			td {
+				&:nth-of-type(1),
+				&:nth-of-type(2),
+				&:nth-of-type(5),
+				&:nth-of-type(8) {
+					width: 5%;
+				}
+	
+				&:nth-of-type(4) {
+					width: 6%;
+				}
+		
+				&:nth-of-type(3),
+				&:nth-of-type(6) {
+					width: 32%;
+				}
+		
+				&:nth-of-type(7) {
+					width: 10%;
+				}
+			}
+		}
+	}
+	&.badminton {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1),
+				&:nth-of-type(8),
+				&:nth-of-type(9) {
+					width: 5%;
+				}
+		
+				&:nth-of-type(2) {
+					width: 65%;
+				}
+		
+				&:nth-of-type(3),
+				&:nth-of-type(4),
+				&:nth-of-type(5),
+				&:nth-of-type(6),
+				&:nth-of-type(7) {
+					width: 4%;
+				}
+			}
+		}
+	}
+}
+
 //右列即時注單資訊
 .bettingBoard {
 	width: 95%;

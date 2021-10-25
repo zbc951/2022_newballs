@@ -1149,6 +1149,9 @@ main .bg {
 .playBoard tr:hover td a.tbimg3, .playBoard tr:active td a.tbimg3, .playBoard tr.active td a.tbimg3 {
   color: #ce1427;
 }
+.playBoard tr.onTime {
+  background: #fffbcc;
+}
 .playBoard tr th {
   color: #ffffff;
   font-size: 13px;
@@ -1306,6 +1309,22 @@ main .bg {
 }
 .playBoard tr td p:last-child {
   padding: 0px;
+}
+.playBoard tr.liveBoard {
+  background: #39547f;
+}
+.playBoard tr.liveBoard:hover, .playBoard tr.liveBoard:active, .playBoard tr.liveBoard.active {
+  box-shadow: none;
+  border-color: transparent transparent #dedede transparent;
+}
+.playBoard tr.liveBoard:hover .box, .playBoard tr.liveBoard:active .box, .playBoard tr.liveBoard.active .box {
+  border: none;
+}
+.playBoard tr.liveBoard:hover td, .playBoard tr.liveBoard:active td, .playBoard tr.liveBoard.active td {
+  color: #1b1b1b;
+}
+.playBoard tr.liveBoard:hover td .pitcher, .playBoard tr.liveBoard:active td .pitcher, .playBoard tr.liveBoard.active td .pitcher {
+  color: #ce1427;
 }
 .playBoard.newP tr td button {
   display: block;
@@ -2208,6 +2227,281 @@ main .bg {
 }
 .playBoard.tType12_result tr td:nth-of-type(9), .playBoard.tType12_result tr td:nth-of-type(10) {
   min-width: 30px;
+}
+
+.scoreBoard {
+  width: calc(100% - 10px);
+  height: auto;
+  border-collapse: collapse;
+  margin: 0px auto;
+  background: #fffbcc;
+}
+.scoreBoard.live th {
+  padding: 8px 0px 6px;
+  background: #39547f;
+  color: #ffffff;
+}
+.scoreBoard tr {
+  text-align: center;
+}
+.scoreBoard tr:hover, .scoreBoard tr:active, .scoreBoard tr.active {
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+.scoreBoard tr:hover:nth-of-type(1), .scoreBoard tr:active:nth-of-type(1), .scoreBoard tr.active:nth-of-type(1) {
+  border-top: solid 1px #ffdfcc;
+}
+.scoreBoard tr:hover td, .scoreBoard tr:active td, .scoreBoard tr.active td {
+  border-color: #e8b746;
+  color: #1b1b1b;
+}
+.scoreBoard tr:hover td .pitcher, .scoreBoard tr:active td .pitcher, .scoreBoard tr.active td .pitcher {
+  color: #ce1427;
+}
+.scoreBoard tr:nth-of-type(odd) {
+  background: #fffbcc;
+  border-top-color: #ffdfcc;
+}
+.scoreBoard tr th {
+  color: #1b1b1b;
+  font-size: 13px;
+  padding: 4px 0px 3px;
+  vertical-align: middle;
+  background: #ffe29f;
+  border-style: solid;
+  border-width: 0px 1px 1px 0px;
+  border-color: transparent #fba978 #e8b746 transparent;
+  position: static;
+}
+.scoreBoard tr th.tLeft {
+  text-align: left;
+  padding: 0px 10px;
+}
+.scoreBoard tr td {
+  font-size: 13px;
+  padding: 8px 3px;
+  vertical-align: middle;
+  word-break: break-all;
+  color: #1b1b1b;
+  line-height: 18px;
+  border-style: solid;
+  border-width: 0px 1px 1px 0px;
+  border-color: #e8b746;
+  position: relative;
+}
+.scoreBoard tr td::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #ffffff;
+  width: 100%;
+  height: 1px;
+}
+.scoreBoard tr td.tLeft {
+  text-align: left;
+  padding: 0px 10px;
+}
+.scoreBoard tr td .mainTeam {
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  margin-right: 5px;
+  line-height: 0px;
+}
+.scoreBoard tr td .mainTeam::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-53%, -53%);
+  width: 18px;
+  height: 18px;
+  background: #b71719;
+  border-radius: 3px;
+  z-index: -1;
+}
+.scoreBoard tr td .customTeam {
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  margin-right: 5px;
+  line-height: 0px;
+}
+.scoreBoard tr td .customTeam::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-53%, -57%);
+  width: 18px;
+  height: 18px;
+  background: #1e62c5;
+  border-radius: 3px;
+  z-index: -1;
+}
+.scoreBoard.soccer tr td:nth-of-type(1) {
+  width: 50%;
+}
+.scoreBoard.soccer tr td:nth-of-type(2), .scoreBoard.soccer tr td:nth-of-type(4) {
+  width: 15%;
+}
+.scoreBoard.soccer tr td:nth-of-type(2) .yellowCard, .scoreBoard.soccer tr td:nth-of-type(4) .yellowCard {
+  padding-left: 6px;
+}
+.scoreBoard.soccer tr td:nth-of-type(3), .scoreBoard.soccer tr td:nth-of-type(5) {
+  width: 10%;
+}
+.scoreBoard.baseball tr td:nth-of-type(1) {
+  width: 44%;
+}
+.scoreBoard.baseball tr td:nth-of-type(2), .scoreBoard.baseball tr td:nth-of-type(3), .scoreBoard.baseball tr td:nth-of-type(4), .scoreBoard.baseball tr td:nth-of-type(5), .scoreBoard.baseball tr td:nth-of-type(6), .scoreBoard.baseball tr td:nth-of-type(7), .scoreBoard.baseball tr td:nth-of-type(8), .scoreBoard.baseball tr td:nth-of-type(9), .scoreBoard.baseball tr td:nth-of-type(10) {
+  width: 4%;
+}
+.scoreBoard.baseball tr td:nth-of-type(11), .scoreBoard.baseball tr td:nth-of-type(12), .scoreBoard.baseball tr td:nth-of-type(13), .scoreBoard.baseball tr td:nth-of-type(14) {
+  width: 5%;
+}
+.scoreBoard.basketball tr td:nth-of-type(1) {
+  width: 74%;
+}
+.scoreBoard.basketball tr td:nth-of-type(2), .scoreBoard.basketball tr td:nth-of-type(3), .scoreBoard.basketball tr td:nth-of-type(4), .scoreBoard.basketball tr td:nth-of-type(5) {
+  width: 4%;
+}
+.scoreBoard.basketball tr td:nth-of-type(6), .scoreBoard.basketball tr td:nth-of-type(7) {
+  width: 5%;
+}
+.scoreBoard.race tr td:nth-of-type(1), .scoreBoard.race tr td:nth-of-type(2), .scoreBoard.race tr td:nth-of-type(6) {
+  width: 5%;
+}
+.scoreBoard.race tr td:nth-of-type(4), .scoreBoard.race tr td:nth-of-type(5), .scoreBoard.race tr td:nth-of-type(7) {
+  width: 10%;
+}
+.scoreBoard.race tr td:nth-of-type(3) {
+  width: 55%;
+}
+.scoreBoard.esp.lol tr td:nth-of-type(1) {
+  width: 32%;
+}
+.scoreBoard.esp.lol tr td:nth-of-type(2), .scoreBoard.esp.lol tr td:nth-of-type(3), .scoreBoard.esp.lol tr td:nth-of-type(4), .scoreBoard.esp.lol tr td:nth-of-type(5), .scoreBoard.esp.lol tr td:nth-of-type(6), .scoreBoard.esp.lol tr td:nth-of-type(7), .scoreBoard.esp.lol tr td:nth-of-type(8) {
+  width: 4%;
+}
+.scoreBoard.esp.lol tr td:nth-of-type(9), .scoreBoard.esp.lol tr td:nth-of-type(10), .scoreBoard.esp.lol tr td:nth-of-type(11), .scoreBoard.esp.lol tr td:nth-of-type(12), .scoreBoard.esp.lol tr td:nth-of-type(13), .scoreBoard.esp.lol tr td:nth-of-type(14), .scoreBoard.esp.lol tr td:nth-of-type(15), .scoreBoard.esp.lol tr td:nth-of-type(16) {
+  width: 5%;
+}
+.scoreBoard.esp.dota tr td:nth-of-type(1) {
+  width: 37%;
+}
+.scoreBoard.esp.dota tr td:nth-of-type(2), .scoreBoard.esp.dota tr td:nth-of-type(3), .scoreBoard.esp.dota tr td:nth-of-type(4), .scoreBoard.esp.dota tr td:nth-of-type(5), .scoreBoard.esp.dota tr td:nth-of-type(6), .scoreBoard.esp.dota tr td:nth-of-type(7), .scoreBoard.esp.dota tr td:nth-of-type(8) {
+  width: 4%;
+}
+.scoreBoard.esp.dota tr td:nth-of-type(9), .scoreBoard.esp.dota tr td:nth-of-type(10), .scoreBoard.esp.dota tr td:nth-of-type(11), .scoreBoard.esp.dota tr td:nth-of-type(12), .scoreBoard.esp.dota tr td:nth-of-type(13), .scoreBoard.esp.dota tr td:nth-of-type(14), .scoreBoard.esp.dota tr td:nth-of-type(15) {
+  width: 5%;
+}
+.scoreBoard.esp.cs tr td:nth-of-type(1) {
+  width: 51%;
+}
+.scoreBoard.esp.cs tr td:nth-of-type(2), .scoreBoard.esp.cs tr td:nth-of-type(3), .scoreBoard.esp.cs tr td:nth-of-type(4), .scoreBoard.esp.cs tr td:nth-of-type(5), .scoreBoard.esp.cs tr td:nth-of-type(6), .scoreBoard.esp.cs tr td:nth-of-type(7), .scoreBoard.esp.cs tr td:nth-of-type(8) {
+  width: 4%;
+}
+.scoreBoard.esp.cs tr td:nth-of-type(9), .scoreBoard.esp.cs tr td:nth-of-type(10), .scoreBoard.esp.cs tr td:nth-of-type(11) {
+  width: 5%;
+}
+.scoreBoard.esp.cs tr td:nth-of-type(12) {
+  width: 6%;
+}
+.scoreBoard.stock tr td:nth-of-type(1), .scoreBoard.stock tr td:nth-of-type(2) {
+  width: 30%;
+}
+.scoreBoard.stock tr td:nth-of-type(3), .scoreBoard.stock tr td:nth-of-type(4) {
+  width: 20%;
+}
+.scoreBoard.lottery tr td p:nth-of-type(2) {
+  padding-top: 5px;
+}
+.scoreBoard.lottery.bingo tr td:nth-of-type(1) {
+  width: 30%;
+}
+.scoreBoard.lottery.bingo tr td:nth-of-type(2), .scoreBoard.lottery.bingo tr td:nth-of-type(3), .scoreBoard.lottery.bingo tr td:nth-of-type(4), .scoreBoard.lottery.bingo tr td:nth-of-type(5), .scoreBoard.lottery.bingo tr td:nth-of-type(6), .scoreBoard.lottery.bingo tr td:nth-of-type(7), .scoreBoard.lottery.bingo tr td:nth-of-type(8), .scoreBoard.lottery.bingo tr td:nth-of-type(9), .scoreBoard.lottery.bingo tr td:nth-of-type(10) {
+  width: 4%;
+  border: none;
+}
+.scoreBoard.lottery.bingo tr td:nth-of-type(11) {
+  width: 4%;
+}
+.scoreBoard.lottery.bingo tr td:nth-of-type(12), .scoreBoard.lottery.bingo tr td:nth-of-type(13), .scoreBoard.lottery.bingo tr td:nth-of-type(14) {
+  width: 10%;
+}
+.scoreBoard.lottery.lotto tr td:nth-of-type(1) {
+  width: 30%;
+}
+.scoreBoard.lottery.lotto tr td:nth-of-type(2) {
+  width: 10%;
+  border: none;
+}
+.scoreBoard.lottery.lotto tr td:nth-of-type(3), .scoreBoard.lottery.lotto tr td:nth-of-type(4), .scoreBoard.lottery.lotto tr td:nth-of-type(5), .scoreBoard.lottery.lotto tr td:nth-of-type(6) {
+  width: 5%;
+  border: none;
+}
+.scoreBoard.lottery.lotto tr td:nth-of-type(7) {
+  width: 5%;
+}
+.scoreBoard.lottery.lotto tr td:nth-of-type(8) {
+  width: 35%;
+}
+.scoreBoard.tennis tr td:nth-of-type(1), .scoreBoard.tennis tr td:nth-of-type(9), .scoreBoard.tennis tr td:nth-of-type(10) {
+  width: 5%;
+}
+.scoreBoard.tennis tr td:nth-of-type(2) {
+  width: 61%;
+}
+.scoreBoard.tennis tr td:nth-of-type(3), .scoreBoard.tennis tr td:nth-of-type(4), .scoreBoard.tennis tr td:nth-of-type(5), .scoreBoard.tennis tr td:nth-of-type(6), .scoreBoard.tennis tr td:nth-of-type(7), .scoreBoard.tennis tr td:nth-of-type(8) {
+  width: 4%;
+}
+.scoreBoard.snooker tr td p:nth-of-type(2) {
+  padding-top: 5px;
+}
+.scoreBoard.snooker tr td.tLeft {
+  text-align: left;
+  padding: 8px 10px;
+}
+.scoreBoard.snooker tr td:nth-of-type(1), .scoreBoard.snooker tr td:nth-of-type(3) {
+  width: 5%;
+}
+.scoreBoard.snooker tr td:nth-of-type(2) {
+  width: 90%;
+}
+.scoreBoard.vball tr td:nth-of-type(1), .scoreBoard.vball tr td:nth-of-type(10), .scoreBoard.vball tr td:nth-of-type(11) {
+  width: 5%;
+}
+.scoreBoard.vball tr td:nth-of-type(2) {
+  width: 57%;
+}
+.scoreBoard.vball tr td:nth-of-type(3), .scoreBoard.vball tr td:nth-of-type(4), .scoreBoard.vball tr td:nth-of-type(5), .scoreBoard.vball tr td:nth-of-type(6), .scoreBoard.vball tr td:nth-of-type(7), .scoreBoard.vball tr td:nth-of-type(8), .scoreBoard.vball tr td:nth-of-type(9) {
+  width: 4%;
+}
+.scoreBoard.raceCar tr td:nth-of-type(1), .scoreBoard.raceCar tr td:nth-of-type(2), .scoreBoard.raceCar tr td:nth-of-type(5), .scoreBoard.raceCar tr td:nth-of-type(8) {
+  width: 5%;
+}
+.scoreBoard.raceCar tr td:nth-of-type(4) {
+  width: 6%;
+}
+.scoreBoard.raceCar tr td:nth-of-type(3), .scoreBoard.raceCar tr td:nth-of-type(6) {
+  width: 32%;
+}
+.scoreBoard.raceCar tr td:nth-of-type(7) {
+  width: 10%;
+}
+.scoreBoard.badminton tr td:nth-of-type(1), .scoreBoard.badminton tr td:nth-of-type(8), .scoreBoard.badminton tr td:nth-of-type(9) {
+  width: 5%;
+}
+.scoreBoard.badminton tr td:nth-of-type(2) {
+  width: 65%;
+}
+.scoreBoard.badminton tr td:nth-of-type(3), .scoreBoard.badminton tr td:nth-of-type(4), .scoreBoard.badminton tr td:nth-of-type(5), .scoreBoard.badminton tr td:nth-of-type(6), .scoreBoard.badminton tr td:nth-of-type(7) {
+  width: 4%;
 }
 
 .bettingBoard {
