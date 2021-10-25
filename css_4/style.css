@@ -1100,15 +1100,10 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #ffffff;
   box-shadow: 0px 0px 5px 0px #00000049;
 }
 .playBoard:last-child {
   margin-bottom: 30px;
-}
-.playBoard.index_page tr:nth-of-type(2):hover, .playBoard.result_page tr:nth-of-type(2):hover {
-  border-color: transparent transparent #f0f0f0 transparent;
-  box-shadow: none;
 }
 .playBoard.index_page tr th.tLeft:nth-of-type(1), .playBoard.result_page tr th.tLeft:nth-of-type(1) {
   background: #ffffff;
@@ -1116,28 +1111,21 @@ main .bg {
 }
 .playBoard tr {
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent transparent #dedede transparent;
+  background: #ffffff;
+  border-bottom: solid 1px #dedede;
 }
 .playBoard tr:nth-of-type(1) {
   border-top-color: #f2f2f2;
-  border-bottom-color: #f0f0f0;
-}
-.playBoard tr:nth-of-type(1):hover {
-  border-color: transparent;
-  box-shadow: none;
 }
 .playBoard tr:nth-of-type(odd) {
   background: #f5f5f5;
 }
 .playBoard tr:hover, .playBoard tr:active, .playBoard tr.active {
-  border: solid 1px #d31c1c;
   background: #ffffff;
-  box-shadow: 0px 0px 5px 2px #d31c1c49;
+  box-shadow: 0px 0px 0px 1px #d31c1c inset, 0px 0px 5px 2px #d31c1c49 inset;
 }
 .playBoard tr:hover td, .playBoard tr:active td, .playBoard tr.active td {
-  border-top: solid 1px #d31c1c;
+  box-shadow: 0px 1px 0px 0px #d31c1c inset;
   color: #ce1427;
 }
 .playBoard tr:hover td.allScore, .playBoard tr:active td.allScore, .playBoard tr.active td.allScore {
@@ -1162,6 +1150,7 @@ main .bg {
   position: sticky;
   top: -1px;
   z-index: 2;
+  pointer-events: none;
 }
 .playBoard tr th.tLeft {
   text-align: left;
@@ -1312,19 +1301,7 @@ main .bg {
 }
 .playBoard tr.liveBoard {
   background: #39547f;
-}
-.playBoard tr.liveBoard:hover, .playBoard tr.liveBoard:active, .playBoard tr.liveBoard.active {
-  box-shadow: none;
-  border-color: transparent transparent #dedede transparent;
-}
-.playBoard tr.liveBoard:hover .box, .playBoard tr.liveBoard:active .box, .playBoard tr.liveBoard.active .box {
-  border: none;
-}
-.playBoard tr.liveBoard:hover td, .playBoard tr.liveBoard:active td, .playBoard tr.liveBoard.active td {
-  color: #1b1b1b;
-}
-.playBoard tr.liveBoard:hover td .pitcher, .playBoard tr.liveBoard:active td .pitcher, .playBoard tr.liveBoard.active td .pitcher {
-  color: #ce1427;
+  pointer-events: none;
 }
 .playBoard.newP tr td button {
   display: block;
@@ -2234,7 +2211,6 @@ main .bg {
   height: auto;
   border-collapse: collapse;
   margin: 0px auto;
-  background: #fffbcc;
 }
 .scoreBoard.live th {
   padding: 8px 0px 6px;
@@ -2243,25 +2219,14 @@ main .bg {
 }
 .scoreBoard tr {
   text-align: center;
-}
-.scoreBoard tr:hover, .scoreBoard tr:active, .scoreBoard tr.active {
-  box-shadow: none;
-  border: none;
-  background: none;
-}
-.scoreBoard tr:hover:nth-of-type(1), .scoreBoard tr:active:nth-of-type(1), .scoreBoard tr.active:nth-of-type(1) {
-  border-top: solid 1px #ffdfcc;
-}
-.scoreBoard tr:hover td, .scoreBoard tr:active td, .scoreBoard tr.active td {
-  border-color: #e8b746;
-  color: #1b1b1b;
-}
-.scoreBoard tr:hover td .pitcher, .scoreBoard tr:active td .pitcher, .scoreBoard tr.active td .pitcher {
-  color: #ce1427;
+  background: #fffbcc;
+  border-bottom: solid 1px #e8b746;
 }
 .scoreBoard tr:nth-of-type(odd) {
   background: #fffbcc;
-  border-top-color: #ffdfcc;
+}
+.scoreBoard tr:nth-of-type(1) {
+  border-top: solid 1px #ffdfcc;
 }
 .scoreBoard tr th {
   color: #1b1b1b;
@@ -2269,11 +2234,8 @@ main .bg {
   padding: 7px 0px 3px;
   vertical-align: middle;
   background: #ffe29f;
-  border-style: solid;
-  border-width: 0px 1px 1px 0px;
-  border-color: transparent #fba978 #e8b746 transparent;
+  border-right: solid 1px #fba978;
   position: static;
-  pointer-events: none;
 }
 .scoreBoard tr th::before {
   display: none;
@@ -2289,19 +2251,8 @@ main .bg {
   word-break: break-all;
   color: #1b1b1b;
   line-height: 18px;
-  border-style: solid;
-  border-width: 0px 1px 1px 0px;
-  border-color: #e8b746;
+  border-right: solid 1px #e8b746;
   position: relative;
-}
-.scoreBoard tr td::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  background: #ffffff;
-  width: 100%;
-  height: 1px;
 }
 .scoreBoard tr td.tLeft {
   text-align: left;

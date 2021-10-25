@@ -1097,34 +1097,33 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 10px 10px;
-  background: #303030;
 }
 .playBoard:last-child {
   margin-bottom: 30px;
 }
 .playBoard tr {
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent transparent #868282 transparent;
-}
-.playBoard tr.onTime {
-  background: #ffffff;
-}
-.playBoard tr:nth-of-type(1) {
-  border-top-color: #33bc19;
-  border-bottom: none;
+  border-bottom: solid 1px #868282;
+  background: #303030;
 }
 .playBoard tr:nth-of-type(odd) {
   background: #2c2c2c;
 }
+.playBoard tr:nth-of-type(1) {
+  border-top: solid 1px #16e329;
+}
 .playBoard tr:hover, .playBoard tr:active, .playBoard tr.active {
-  border: solid 1px #43b71b;
   background: #363636;
-  box-shadow: 0px 0px 5px 2px #3e6f14 inset;
+  box-shadow: 0px 0px 0px 1px #43b71b inset, 0px 0px 5px 2px #3e6f14 inset;
 }
 .playBoard tr:hover td, .playBoard tr:active td, .playBoard tr.active td {
-  border-top: solid 1px #43b71b;
+  box-shadow: 0px 1px 0px 0px #43b71b inset;
+}
+.playBoard tr.onTime {
+  background: #253c5d;
+}
+.playBoard tr.liveBoard {
+  pointer-events: none;
 }
 .playBoard tr th {
   color: #cacaca;
@@ -1136,6 +1135,10 @@ main .bg {
   position: sticky;
   top: -1px;
   z-index: 2;
+  pointer-events: none;
+}
+.playBoard tr th:nth-of-type(1).tLeft {
+  color: #44be1d;
 }
 .playBoard tr th.tLeft {
   text-align: left;
@@ -1144,9 +1147,6 @@ main .bg {
 .playBoard tr th .date {
   float: right;
   margin-right: 10px;
-}
-.playBoard tr th:nth-of-type(1).tLeft {
-  color: #44be1d;
 }
 .playBoard tr td {
   font-size: 12px;
@@ -2186,7 +2186,6 @@ main .bg {
   height: auto;
   border-collapse: collapse;
   margin: 0px auto;
-  background: #fffbcc;
 }
 .scoreBoard.live th {
   padding: 8px 0px 6px;
@@ -2195,25 +2194,14 @@ main .bg {
 }
 .scoreBoard tr {
   text-align: center;
-}
-.scoreBoard tr:hover, .scoreBoard tr:active, .scoreBoard tr.active {
-  box-shadow: none;
-  border: none;
-  background: none;
-}
-.scoreBoard tr:hover:nth-of-type(1), .scoreBoard tr:active:nth-of-type(1), .scoreBoard tr.active:nth-of-type(1) {
-  border-top: solid 1px #ffdfcc;
-}
-.scoreBoard tr:hover td, .scoreBoard tr:active td, .scoreBoard tr.active td {
-  border-color: #e8b746;
-  color: #1b1b1b;
-}
-.scoreBoard tr:hover td .pitcher, .scoreBoard tr:active td .pitcher, .scoreBoard tr.active td .pitcher {
-  color: #ce1427;
+  background: #fffbcc;
+  border-bottom: solid 1px #e8b746;
 }
 .scoreBoard tr:nth-of-type(odd) {
   background: #fffbcc;
-  border-top-color: #ffdfcc;
+}
+.scoreBoard tr:nth-of-type(1) {
+  border-top: solid 1px #ffdfcc;
 }
 .scoreBoard tr th {
   color: #1b1b1b;
@@ -2221,14 +2209,11 @@ main .bg {
   padding: 7px 0px 3px;
   vertical-align: middle;
   background: #ffe29f;
-  border-style: solid;
-  border-width: 0px 1px 1px 0px;
-  border-color: transparent #fba978 #e8b746 transparent;
+  border-right: solid 1px #fba978;
   position: static;
-  pointer-events: none;
 }
-.scoreBoard tr th::before {
-  display: none;
+.scoreBoard tr th:nth-of-type(1).tLeft {
+  color: #1b1b1b;
 }
 .scoreBoard tr th.tLeft {
   text-align: left;
@@ -2241,9 +2226,7 @@ main .bg {
   word-break: break-all;
   color: #1b1b1b;
   line-height: 18px;
-  border-style: solid;
-  border-width: 0px 1px 1px 0px;
-  border-color: #e8b746;
+  border-right: solid 1px #e8b746;
   position: relative;
 }
 .scoreBoard tr td::before {

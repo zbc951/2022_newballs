@@ -5,7 +5,6 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #303030;
 
 	&:last-child {
 		margin-bottom: 30px;
@@ -14,31 +13,32 @@
 	//內容
     tr {
 		text-align: center;
-		border-style: solid;
-		border-width: 1px;
-		border-color: transparent transparent #868282 transparent;
-
-		&.onTime {
-			background: #ffffff;
-		}
-
-		&:nth-of-type(1) {
-			border-top-color: #33bc19;
-			border-bottom: none;
-		}
+		border-bottom: solid 1px #868282;
+		background: #303030;
 
 		&:nth-of-type(odd) {
 			background: #2c2c2c;
 		}
 
+		&:nth-of-type(1) {
+			border-top:  solid 1px #16e329;
+		}
+
 		&:hover,&:active,&.active {
-			border: solid 1px #43b71b;
 			background: #363636;
-			box-shadow: 0px 0px 5px 2px #3e6f14 inset;
+			box-shadow: 0px 0px 0px 1px #43b71b inset,0px 0px 5px 2px #3e6f14 inset;
 
 			td {
-				border-top: solid 1px #43b71b;
+				box-shadow: 0px 1px 0px 0px #43b71b inset;
 			}
+		}
+
+		&.onTime {
+			background: #253c5d;
+		}
+
+		&.liveBoard {
+			pointer-events: none;
 		}
 
       	th {
@@ -50,6 +50,14 @@
 			position: sticky;
 			top: -1px;
 			z-index: 2;
+			pointer-events: none;
+
+			&:nth-of-type(1) {
+
+				&.tLeft {
+					color: #44be1d;
+				}
+			}
 
 			//字靠左
 			&.tLeft {
@@ -60,13 +68,6 @@
 			.date {
 				float: right;
 				margin-right: 10px;
-			}
-		}
-
-		th:nth-of-type(1) {
-
-			&.tLeft {
-				color: #44be1d;
 			}
 		}
 		  
@@ -2062,7 +2063,6 @@
 	height: auto;
 	border-collapse: collapse;
 	margin: 0px auto;
-	background: #fffbcc;
   
 	&.live {
   
@@ -2076,29 +2076,15 @@
 	//內容
 	tr {
 		text-align: center;
-	
-		&:hover,&:active,&.active {
-			box-shadow: none;
-			border: none;
-			background: none;
-
-			&:nth-of-type(1) {
-				border-top: solid 1px #ffdfcc;
-			}
-	
-			td {
-				border-color: #e8b746;
-				color: #1b1b1b;
-	
-				.pitcher {
-					color: #ce1427;
-				}
-			}
-		}
+		background: #fffbcc;
+		border-bottom: solid 1px #e8b746;
 	
 		&:nth-of-type(odd) {
 			background: #fffbcc;
-			border-top-color: #ffdfcc;
+		}
+
+		&:nth-of-type(1) {
+			border-top: solid 1px #ffdfcc;
 		}
   
 		th {
@@ -2107,14 +2093,14 @@
 			padding: 7px 0px 3px;
 			vertical-align: middle;
 			background: #ffe29f;
-			border-style: solid;
-			border-width: 0px 1px 1px 0px;
-			border-color: transparent #fba978 #e8b746 transparent;
+			border-right: solid 1px #fba978;
 			position: static;
-			pointer-events: none;
 
-			&::before {
-				display: none;
+			&:nth-of-type(1) {
+
+				&.tLeft {
+					color: #1b1b1b;
+				}
 			}
 	
 			//字靠左
@@ -2131,9 +2117,7 @@
 			word-break: break-all;
 			color: #1b1b1b;
 			line-height: 18px;
-			border-style: solid;
-			border-width: 0px 1px 1px 0px;
-			border-color: #e8b746;
+			border-right: solid 1px #e8b746;
 			position: relative;
 
 			&::before {

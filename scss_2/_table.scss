@@ -5,23 +5,14 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #ffffff;
 
 	&:last-child {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 
 	&.index_page,&.result_page {
 
 		tr {
-
-			&:nth-of-type(2) {
-
-				&:hover {
-					border-color: transparent transparent #356bf7 transparent;
-					box-shadow: none;
-				}
-			}
 
 			th {
 
@@ -38,22 +29,24 @@
 	//內容
     tr {
 		text-align: center;
-		border-style: solid;
-		border-width: 1px;
-		border-color: transparent transparent #dedede transparent;
+		background: #ffffff;
+		border-bottom: solid 1px #dedede;
 
 		&:nth-of-type(1) {
 			border-top-color: #f2f2f2;
 			border-bottom-color: #f0f0f0;
-
-			&:hover {
-				border-color: transparent;
-				box-shadow: none;
-			}
 		}
 
 		&:nth-of-type(odd) {
 			background: #fbfbfb;
+		}
+
+		&.onTime {
+			background: #000000;
+		}
+
+		&.liveBoard {
+			pointer-events: none;
 		}
 
 		&:hover,&:active,&.active {
@@ -89,6 +82,7 @@
 			top: -1px;
 			z-index: 2;
 			border-bottom: solid 1px #356bf7;
+			pointer-events: none;
 
 			//字靠左
 			&.tLeft {
@@ -2115,7 +2109,6 @@
 	height: auto;
 	border-collapse: collapse;
 	margin: 0px auto;
-	background: #fffbcc;
   
 	&.live {
   
@@ -2129,29 +2122,15 @@
 	//內容
 	tr {
 		text-align: center;
-	
-		&:hover,&:active,&.active {
-			box-shadow: none;
-			border: none;
-			background: none;
-
-			&:nth-of-type(1) {
-				border-top: solid 1px #ffdfcc;
-			}
-	
-			td {
-				border-color: #e8b746;
-				color: #1b1b1b;
-	
-				.pitcher {
-					color: #ce1427;
-				}
-			}
-		}
+		background: #fffbcc;
+		border-bottom: solid 1px #e8b746;
 	
 		&:nth-of-type(odd) {
 			background: #fffbcc;
-			border-top-color: #ffdfcc;
+		}
+
+		&:nth-of-type(1) {
+			border-top: solid 1px #ffdfcc;
 		}
   
 		th {
@@ -2160,11 +2139,8 @@
 			padding: 7px 0px 3px;
 			vertical-align: middle;
 			background: #ffe29f;
-			border-style: solid;
-			border-width: 0px 1px 1px 0px;
-			border-color: transparent #fba978 #e8b746 transparent;
+			border-right: solid 1px #fba978;
 			position: static;
-			pointer-events: none;
 
 			&::before {
 				display: none;
@@ -2184,9 +2160,7 @@
 			word-break: break-all;
 			color: #1b1b1b;
 			line-height: 18px;
-			border-style: solid;
-			border-width: 0px 1px 1px 0px;
-			border-color: #e8b746;
+			border-right: solid 1px #e8b746;
 			position: relative;
 
 			&::before {
