@@ -247,6 +247,7 @@ $(function(){
         $('.tableballBtn a').attr('href','./html/balls/tableball.html');
         $('.filter,.unLogin').css('display','none')
         $('.headerlist li:nth-of-type(1) a').attr('href','./html/balls/soccer.html');
+        $('.headerlist li:nth-of-type(2) a').attr('href','./html/balls/live.html');
         $('.headerlist li:nth-of-type(3) a').attr('href','./html/balls/result.html');
         $('.headerlist li:nth-of-type(4) a').attr('href','./html/balls/teach.html');
         $('.headerlist li:nth-of-type(6) a').attr('href','./html/myself/mine.html');
@@ -495,6 +496,30 @@ $(function(){
             $('.tableball').siblings().css('display','none');
             $('.tableball').css('display','table');
         }
+    })
+})
+
+    //直播頁面
+
+$(function(){
+    $('.liveShowBar button:nth-of-type(1)').click(function(){
+        $('.liveShowBox').attr('class','liveShowBox one');
+        $('.liveBettingBox').attr('class','liveBettingBox one');
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+    $('.liveShowBar button:nth-of-type(2)').click(function(){
+        $('.liveShowBox').attr('class','liveShowBox two');
+        $('.liveBettingBox').attr('class','liveBettingBox two');
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+})
+
+$(function(){
+    $('.videoContainer').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
     })
 })
 
@@ -821,12 +846,16 @@ $(document).ready(function () {
 // middle自動高度
 $(document).ready(function () {
     var middleNav = $(".middle");
+    var liveNav = $(".middle.live");
     var wH = window.innerHeight;
-    middleNav.css("height", (String(wH - 110) + "px"));
+    middleNav.css("height", (String(wH - 180) + "px"));
+    liveNav.css("height", (String(wH - 93) + "px"));
     $(window).resize(function () {
         var middleNav = $(".middle");
+        var liveNav = $(".middle.live");
         var wH = window.innerHeight;
-        middleNav.css("height", (String(wH - 110) + "px"));
+        middleNav.css("height", (String(wH - 180) + "px"));
+        liveNav.css("height", (String(wH - 93) + "px"));
     });
 });
 

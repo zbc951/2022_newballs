@@ -1020,7 +1020,7 @@ main .bg {
   background: #505050;
 }
 .playBoard:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .playBoard tr {
   text-align: center;
@@ -1038,7 +1038,7 @@ main .bg {
   border-bottom: solid 1px #ababab;
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;
+  top: -1px;
   z-index: 2;
 }
 .playBoard tr th.tLeft {
@@ -4745,6 +4745,7 @@ main .bg {
   position: relative;
   text-align: center;
   scrollbar-width: thin;
+  top: 70px;
 }
 .middle::-webkit-scrollbar {
   width: 5px;
@@ -4760,7 +4761,6 @@ main .bg {
 }
 .middle .mainBox {
   display: none;
-  margin-top: 70px;
 }
 .middle .mainBox.display {
   display: block;
@@ -4782,6 +4782,8 @@ main .bg {
   float: left;
   width: 100%;
   height: auto;
+  position: absolute;
+  top: -70px;
 }
 .middle .inner.display {
   display: block;

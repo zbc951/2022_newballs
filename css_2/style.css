@@ -1151,7 +1151,7 @@ main .bg {
   background: #ffffff;
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;
+  top: -1px;
   z-index: 2;
   border-bottom: solid 1px #356bf7;
 }
@@ -4832,6 +4832,7 @@ main .bg {
   position: relative;
   text-align: center;
   scrollbar-width: thin;
+  top: 70px;
 }
 .middle::-webkit-scrollbar {
   width: 5px;
@@ -4847,7 +4848,6 @@ main .bg {
 }
 .middle .mainBox {
   display: none;
-  margin-top: 70px;
 }
 .middle .mainBox.display {
   display: block;
@@ -4869,6 +4869,8 @@ main .bg {
   float: left;
   width: 100%;
   height: auto;
+  position: absolute;
+  top: -70px;
 }
 .middle .inner.display {
   display: block;

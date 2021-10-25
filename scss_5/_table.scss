@@ -8,6 +8,10 @@
 	background: #ffffff;
 	position: relative;
 
+	&:last-child {
+		margin-bottom: 30px;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -113,7 +117,7 @@
 			padding: 8px 0px 7px;
 			vertical-align: middle;
 			position: sticky;
-			top: 80px;
+			top: -1px;
 			z-index: 2;
 
 			//字靠左

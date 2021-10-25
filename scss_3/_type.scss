@@ -7,6 +7,7 @@
     position: relative;
     text-align: center;
     scrollbar-width: thin;
+    top: 70px;
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -25,7 +26,6 @@
 
     .mainBox {
         display: none;
-        margin-top: 70px;
 
         &.display {
             display: block;
@@ -54,6 +54,8 @@
         float: left;
         width: 100%;
         height: auto;
+        position: absolute;
+        top: -70px;
 
         &.display {
             display: block;

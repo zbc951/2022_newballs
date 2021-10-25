@@ -1104,7 +1104,7 @@ main .bg {
   box-shadow: 0px 0px 5px 0px #00000049;
 }
 .playBoard:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .playBoard.index_page tr:nth-of-type(2):hover, .playBoard.result_page tr:nth-of-type(2):hover {
   border-color: transparent transparent #f0f0f0 transparent;
@@ -1160,7 +1160,7 @@ main .bg {
   background: #39547f;
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;
+  top: -1px;
   z-index: 2;
 }
 .playBoard tr th.tLeft {
@@ -4913,6 +4913,7 @@ main .bg {
   position: relative;
   text-align: center;
   scrollbar-width: thin;
+  top: 70px;
 }
 .middle::-webkit-scrollbar {
   width: 5px;
@@ -4928,7 +4929,6 @@ main .bg {
 }
 .middle .mainBox {
   display: none;
-  margin-top: 70px;
 }
 .middle .mainBox.display {
   display: block;
@@ -4950,6 +4950,8 @@ main .bg {
   float: left;
   width: 100%;
   height: auto;
+  position: absolute;
+  top: -70px;
 }
 .middle .inner.display {
   display: block;
