@@ -9,6 +9,10 @@
     scrollbar-width: thin;
     top: 70px;
 
+    &.live {
+        top: 0px;
+    }
+
     &::-webkit-scrollbar {
         width: 5px;
         background-color: transparent;
@@ -727,6 +731,222 @@
         &:hover,&:active,&.active {
             background: linear-gradient(to bottom,#32496d 0%, #507abe 100%);
         }
+    }
+}
+
+//直播頁
+.liveExpansion {
+    width: calc(100% - 10px);
+    height: auto;
+    background: #303030;
+    margin: 0px 0px 10px 10px;
+
+    .liveShowBar {
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 0px 15px;
+        background: #39547f;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+
+        p {
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        div {
+            width: auto;
+            height: auto;
+
+            button {
+                width: 20px;
+                height: 20px;
+                background: url(../images/liveSelect2.png) no-repeat;
+                background-size: 300%;
+                margin-left: 8px;
+
+                &:nth-of-type(2) {
+                    background-position-x: 50%;
+                }
+
+                &:nth-of-type(3) {
+                    background-position-x: 100%;
+                }
+
+                &:hover,&:active,&.active {
+                    background-position-y: 100%;
+                }
+            }
+        }
+    }
+
+    .liveShowBox {
+        width: 100%;
+        height: auto;
+        font-size: 0px;
+    
+        &.one {
+
+            .videoContainer {
+
+                &:nth-of-type(1) {
+                    width: 100%;
+                }
+            
+                video {
+                    max-height: 640px;
+                }
+            }
+        }
+
+        &.two {
+
+            .videoContainer {
+
+                &:nth-of-type(1),&:nth-of-type(2) {
+                    width: 50%;
+                }
+            }
+        }
+
+        .videoContainer {
+            display: inline-block;
+            width: 0%;
+            position: relative;
+            transition: 0.2s all;
+
+            &:hover,&:active {
+
+                &::before {
+                    opacity: 1;
+                }
+
+                .close {
+                    opacity: 1;
+                    user-select: initial;
+                }
+            }
+
+            &.active {
+
+                &::before {
+                    opacity: 1;
+                    border-color: #ff0000;
+                }
+            }
+
+            &::before {
+                opacity: 0;
+                transition: 0.3s all;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: solid 3px #ffffff;
+                box-sizing: border-box;
+            }
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+
+            .close {
+                opacity: 0;
+                user-select: none;
+                transition: 0.3s all;
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                border: solid 1px #ffffff;
+                background: #00000080;
+                top: 20px;
+                right: 20px;
+                border-radius: 8px;
+                cursor: pointer;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 48%;
+                    top: 22%;
+                    transform: rotate(45deg);
+                    width: 2px;
+                    height: 25px;
+                    border-radius: 30px;
+                    background: #ffffff;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 48%;
+                    top: 22%;
+                    transform: rotate(-45deg);
+                    width: 2px;
+                    height: 25px;
+                    border-radius: 30px;
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+}
+.liveBettingBox {
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+    }
+
+    &.one,&.four {
+        height: 150px;
+    }
+
+    &.two {
+        height: auto;
+    }
+
+    .playBoard {
+
+        tr {
+
+            th {
+                position: relative;
+            }
+
+            th,td {
+
+                &.tLeft {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    .scoreBoard {
+        width: calc(100% - 10px);
+        margin: 0px 0px 20px 10px;
     }
 }
 

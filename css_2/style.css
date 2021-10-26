@@ -1119,7 +1119,7 @@ main .bg {
   background: #fbfbfb;
 }
 .playBoard tr.onTime {
-  background: #000000;
+  background: #ffecc8;
 }
 .playBoard tr.liveBoard {
   pointer-events: none;
@@ -2206,18 +2206,13 @@ main .bg {
   border-collapse: collapse;
   margin: 0px auto;
 }
-.scoreBoard.live th {
-  padding: 8px 0px 6px;
-  background: #39547f;
-  color: #ffffff;
-}
 .scoreBoard tr {
   text-align: center;
-  background: #fffbcc;
+  background: #ffe8a8;
   border-bottom: solid 1px #e8b746;
 }
 .scoreBoard tr:nth-of-type(odd) {
-  background: #fffbcc;
+  background: #ffe8a8;
 }
 .scoreBoard tr:nth-of-type(1) {
   border-top: solid 1px #ffdfcc;
@@ -2227,9 +2222,13 @@ main .bg {
   font-size: 13px;
   padding: 7px 0px 3px;
   vertical-align: middle;
-  background: #ffe29f;
+  background: #ffd08a;
   border-right: solid 1px #fba978;
+  border-bottom-color: #fba978;
   position: static;
+}
+.scoreBoard tr th:nth-of-type(1).tLeft {
+  color: #1b1b1b;
 }
 .scoreBoard tr th::before {
   display: none;
@@ -2247,15 +2246,6 @@ main .bg {
   line-height: 18px;
   border-right: solid 1px #e8b746;
   position: relative;
-}
-.scoreBoard tr td::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  background: #ffffff;
-  width: 100%;
-  height: 1px;
 }
 .scoreBoard tr td.tLeft {
   text-align: left;
@@ -4814,6 +4804,9 @@ main .bg {
   scrollbar-width: thin;
   top: 70px;
 }
+.middle.live {
+  top: 0px;
+}
 .middle::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
@@ -5397,6 +5390,170 @@ main .bg {
 .chleague button:hover, .chleague button:active, .chleague button.active {
   background: linear-gradient(to right, #ffab00 0%, #ff4802 100%);
   color: #454545;
+}
+
+.liveExpansion {
+  width: calc(100% - 10px);
+  height: auto;
+  background: #303030;
+  margin: 0px 0px 10px 10px;
+}
+.liveExpansion .liveShowBar {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+.liveExpansion .liveShowBar p {
+  color: #1b1b1b;
+  font-size: 16px;
+}
+.liveExpansion .liveShowBar div {
+  width: auto;
+  height: auto;
+}
+.liveExpansion .liveShowBar div button {
+  width: 20px;
+  height: 20px;
+  background: url(../images/liveSelect3.png) no-repeat;
+  background-size: 300%;
+  margin-left: 8px;
+}
+.liveExpansion .liveShowBar div button:nth-of-type(2) {
+  background-position-x: 50%;
+}
+.liveExpansion .liveShowBar div button:nth-of-type(3) {
+  background-position-x: 100%;
+}
+.liveExpansion .liveShowBar div button:hover, .liveExpansion .liveShowBar div button:active, .liveExpansion .liveShowBar div button.active {
+  background-position-y: 100%;
+}
+.liveExpansion .liveShowBox {
+  width: 100%;
+  height: auto;
+  font-size: 0px;
+}
+.liveExpansion .liveShowBox.one .videoContainer:nth-of-type(1) {
+  width: 100%;
+}
+.liveExpansion .liveShowBox.one .videoContainer video {
+  max-height: 640px;
+}
+.liveExpansion .liveShowBox.two .videoContainer:nth-of-type(1), .liveExpansion .liveShowBox.two .videoContainer:nth-of-type(2) {
+  width: 50%;
+}
+.liveExpansion .liveShowBox .videoContainer {
+  display: inline-block;
+  width: 0%;
+  position: relative;
+  transition: 0.2s all;
+}
+.liveExpansion .liveShowBox .videoContainer:hover::before, .liveExpansion .liveShowBox .videoContainer:active::before {
+  opacity: 1;
+}
+.liveExpansion .liveShowBox .videoContainer:hover .close, .liveExpansion .liveShowBox .videoContainer:active .close {
+  opacity: 1;
+  -webkit-user-select: initial;
+          user-select: initial;
+}
+.liveExpansion .liveShowBox .videoContainer.active::before {
+  opacity: 1;
+  border-color: #ff0000;
+}
+.liveExpansion .liveShowBox .videoContainer::before {
+  opacity: 0;
+  transition: 0.3s all;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid 3px #ffffff;
+  box-sizing: border-box;
+}
+.liveExpansion .liveShowBox .videoContainer video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.liveExpansion .liveShowBox .videoContainer .close {
+  opacity: 0;
+  -webkit-user-select: none;
+          user-select: none;
+  transition: 0.3s all;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: solid 1px #ffffff;
+  background: #00000080;
+  top: 20px;
+  right: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.liveExpansion .liveShowBox .videoContainer .close::before {
+  position: absolute;
+  content: "";
+  left: 48%;
+  top: 22%;
+  transform: rotate(45deg);
+  width: 2px;
+  height: 25px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.liveExpansion .liveShowBox .videoContainer .close::after {
+  position: absolute;
+  content: "";
+  left: 48%;
+  top: 22%;
+  transform: rotate(-45deg);
+  width: 2px;
+  height: 25px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+
+.liveBettingBox {
+  width: 100%;
+  height: 150px;
+  overflow: auto;
+}
+.liveBettingBox::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.liveBettingBox::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.liveBettingBox::-webkit-scrollbar-thumb {
+  background: #b9becf;
+  border-radius: 10px;
+}
+.liveBettingBox.one, .liveBettingBox.four {
+  height: 150px;
+}
+.liveBettingBox.two {
+  height: auto;
+}
+.liveBettingBox .playBoard tr th {
+  position: relative;
+}
+.liveBettingBox .playBoard tr th.tLeft, .liveBettingBox .playBoard tr td.tLeft {
+  padding-left: 10px;
+}
+.liveBettingBox .scoreBoard {
+  width: calc(100% - 10px);
+  margin: 0px 0px 20px 10px;
 }
 
 .filter {

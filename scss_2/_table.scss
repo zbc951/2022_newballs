@@ -42,7 +42,7 @@
 		}
 
 		&.onTime {
-			background: #000000;
+			background: #ffecc8;
 		}
 
 		&.liveBoard {
@@ -2110,23 +2110,14 @@
 	border-collapse: collapse;
 	margin: 0px auto;
   
-	&.live {
-  
-	  th {
-			padding: 8px 0px 6px;
-			background: #39547f;
-			color: #ffffff;
-	  	}
-	}
-  
 	//內容
 	tr {
 		text-align: center;
-		background: #fffbcc;
+		background: #ffe8a8;
 		border-bottom: solid 1px #e8b746;
 	
 		&:nth-of-type(odd) {
-			background: #fffbcc;
+			background: #ffe8a8;
 		}
 
 		&:nth-of-type(1) {
@@ -2138,9 +2129,17 @@
 			font-size: 13px;
 			padding: 7px 0px 3px;
 			vertical-align: middle;
-			background: #ffe29f;
+			background: #ffd08a;
 			border-right: solid 1px #fba978;
+			border-bottom-color: #fba978;
 			position: static;
+
+			&:nth-of-type(1) {
+
+				&.tLeft {
+					color: #1b1b1b;
+				}
+			}
 
 			&::before {
 				display: none;
@@ -2162,16 +2161,6 @@
 			line-height: 18px;
 			border-right: solid 1px #e8b746;
 			position: relative;
-
-			&::before {
-				content: "";
-				position: absolute;
-				left: 0px;
-				bottom: 0px;
-				background: #ffffff;
-				width: 100%;
-				height: 1px;
-			}
 	
 			//字靠左
 			&.tLeft {

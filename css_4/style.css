@@ -4866,6 +4866,9 @@ main .bg {
   scrollbar-width: thin;
   top: 70px;
 }
+.middle.live {
+  top: 0px;
+}
 .middle::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
@@ -5464,6 +5467,170 @@ main .bg {
 }
 .chleague button:hover, .chleague button:active, .chleague button.active {
   background: linear-gradient(to bottom, #32496d 0%, #507abe 100%);
+}
+
+.liveExpansion {
+  width: calc(100% - 10px);
+  height: auto;
+  background: #303030;
+  margin: 0px 0px 10px 10px;
+}
+.liveExpansion .liveShowBar {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  background: #39547f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+.liveExpansion .liveShowBar p {
+  color: #ffffff;
+  font-size: 16px;
+}
+.liveExpansion .liveShowBar div {
+  width: auto;
+  height: auto;
+}
+.liveExpansion .liveShowBar div button {
+  width: 20px;
+  height: 20px;
+  background: url(../images/liveSelect2.png) no-repeat;
+  background-size: 300%;
+  margin-left: 8px;
+}
+.liveExpansion .liveShowBar div button:nth-of-type(2) {
+  background-position-x: 50%;
+}
+.liveExpansion .liveShowBar div button:nth-of-type(3) {
+  background-position-x: 100%;
+}
+.liveExpansion .liveShowBar div button:hover, .liveExpansion .liveShowBar div button:active, .liveExpansion .liveShowBar div button.active {
+  background-position-y: 100%;
+}
+.liveExpansion .liveShowBox {
+  width: 100%;
+  height: auto;
+  font-size: 0px;
+}
+.liveExpansion .liveShowBox.one .videoContainer:nth-of-type(1) {
+  width: 100%;
+}
+.liveExpansion .liveShowBox.one .videoContainer video {
+  max-height: 640px;
+}
+.liveExpansion .liveShowBox.two .videoContainer:nth-of-type(1), .liveExpansion .liveShowBox.two .videoContainer:nth-of-type(2) {
+  width: 50%;
+}
+.liveExpansion .liveShowBox .videoContainer {
+  display: inline-block;
+  width: 0%;
+  position: relative;
+  transition: 0.2s all;
+}
+.liveExpansion .liveShowBox .videoContainer:hover::before, .liveExpansion .liveShowBox .videoContainer:active::before {
+  opacity: 1;
+}
+.liveExpansion .liveShowBox .videoContainer:hover .close, .liveExpansion .liveShowBox .videoContainer:active .close {
+  opacity: 1;
+  -webkit-user-select: initial;
+          user-select: initial;
+}
+.liveExpansion .liveShowBox .videoContainer.active::before {
+  opacity: 1;
+  border-color: #ff0000;
+}
+.liveExpansion .liveShowBox .videoContainer::before {
+  opacity: 0;
+  transition: 0.3s all;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid 3px #ffffff;
+  box-sizing: border-box;
+}
+.liveExpansion .liveShowBox .videoContainer video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.liveExpansion .liveShowBox .videoContainer .close {
+  opacity: 0;
+  -webkit-user-select: none;
+          user-select: none;
+  transition: 0.3s all;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: solid 1px #ffffff;
+  background: #00000080;
+  top: 20px;
+  right: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.liveExpansion .liveShowBox .videoContainer .close::before {
+  position: absolute;
+  content: "";
+  left: 48%;
+  top: 22%;
+  transform: rotate(45deg);
+  width: 2px;
+  height: 25px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.liveExpansion .liveShowBox .videoContainer .close::after {
+  position: absolute;
+  content: "";
+  left: 48%;
+  top: 22%;
+  transform: rotate(-45deg);
+  width: 2px;
+  height: 25px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+
+.liveBettingBox {
+  width: 100%;
+  height: 150px;
+  overflow: auto;
+}
+.liveBettingBox::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.liveBettingBox::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.liveBettingBox::-webkit-scrollbar-thumb {
+  background: #b9becf;
+  border-radius: 10px;
+}
+.liveBettingBox.one, .liveBettingBox.four {
+  height: 150px;
+}
+.liveBettingBox.two {
+  height: auto;
+}
+.liveBettingBox .playBoard tr th {
+  position: relative;
+}
+.liveBettingBox .playBoard tr th.tLeft, .liveBettingBox .playBoard tr td.tLeft {
+  padding-left: 10px;
+}
+.liveBettingBox .scoreBoard {
+  width: calc(100% - 10px);
+  margin: 0px 0px 20px 10px;
 }
 
 .filter {
