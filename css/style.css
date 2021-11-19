@@ -486,7 +486,7 @@ main .bg {
   width: 79px;
   height: 81px;
   margin: 0px auto 20px;
-  background: url("../images/avatar_big.png");
+  background: url("../images/forCss/avatar_big.png");
 }
 .left.mine .minewindow .avater p {
   color: #ffffff;
@@ -517,7 +517,7 @@ main .bg {
   position: absolute;
   width: 23px;
   height: 9px;
-  background: url("../images/vip.png") no-repeat;
+  background: url("../images/forCss/vip.png") no-repeat;
   top: 5px;
   left: 5px;
 }
@@ -867,7 +867,7 @@ main .bg {
 .right .liveWindow .liveShow {
   width: 100%;
   height: 195px;
-  background: url("../images/live.png") no-repeat;
+  background: url("../images/forCss/live.png") no-repeat;
   background-size: cover;
 }
 .right .room {
@@ -1258,7 +1258,7 @@ main .bg {
 .playBoard tr td a.tbimg2 {
   width: 20px;
   height: 20px;
-  background: url("../images/heart.png") no-repeat;
+  background: url("../images/forCss/heart.png") no-repeat;
   background-size: 200%;
 }
 .playBoard tr td a.tbimg2:hover, .playBoard tr td a.tbimg2:active, .playBoard tr td a.tbimg2.active {
@@ -2670,7 +2670,7 @@ main .bg {
   display: inline-block;
   width: 33px;
   height: 30px;
-  background: url("../images/topfix_ic.png");
+  background: url("../images/forCss/topfix_ic.png");
   background-size: 200%;
   position: relative;
   overflow: hidden;
@@ -2830,7 +2830,7 @@ main .bg {
 .teachBoard tr td .team .img {
   width: 30px;
   height: 30px;
-  background: url(../images/teamimg.png) no-repeat;
+  background: url(../images/forCss/teamimg.png) no-repeat;
   background-size: 200%;
   position: absolute;
   top: 50%;
@@ -3009,7 +3009,7 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../images/avatar_big.png") no-repeat;
+  background: url("../images/forCss/avatar_big.png") no-repeat;
   background-size: 100%;
 }
 .minetable.infor tr td .sticker::before {
@@ -3017,7 +3017,7 @@ main .bg {
   width: 30px;
   height: 30px;
   position: absolute;
-  background: url("../images/edit.png") no-repeat;
+  background: url("../images/forCss/edit.png") no-repeat;
   right: 0px;
   bottom: 0px;
   cursor: pointer;
@@ -3122,7 +3122,7 @@ main .bg {
   position: absolute;
   width: 14px;
   height: 14px;
-  background: url("../images/reset2.png") no-repeat;
+  background: url("../images/forCss/reset2.png") no-repeat;
   background-size: 100%;
   left: -18px;
   top: 3px;
@@ -3187,7 +3187,7 @@ main .bg {
   float: left;
   width: 34px;
   height: 32px;
-  background: url("../images/wallet_ic2.png") no-repeat;
+  background: url("../images/forCss/wallet_ic2.png") no-repeat;
   background-size: 200%;
   margin: 20px 0px 20px 40px;
 }
@@ -3228,7 +3228,7 @@ main .bg {
   float: left;
   width: 30px;
   height: 28px;
-  background: url(../images/wallet_ic2.png) no-repeat;
+  background: url(../images/forCss/wallet_ic2.png) no-repeat;
   background-size: 200%;
   margin: -6px 10px 0px 0px;
 }
@@ -3401,13 +3401,13 @@ main .bg {
   width: 42px;
   height: 29px;
   margin: 0px auto 10px;
-  background: url("../images/add_card2.png") no-repeat;
+  background: url("../images/forCss/add_card2.png") no-repeat;
   background-size: 100%;
 }
 .minetable.creditcard tr td .creditcardBtn .box .bankIc {
   width: 40px;
   height: 40px;
-  background: url("../images/bank_ic2.png") no-repeat;
+  background: url("../images/forCss/bank_ic2.png") no-repeat;
   background-size: 300%;
   position: absolute;
   top: 22%;
@@ -3443,7 +3443,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url("../images/infor2.png") no-repeat;
+  background: url("../images/forCss/infor2.png") no-repeat;
   top: 0px;
   left: -18px;
 }
@@ -3593,7 +3593,7 @@ main .bg {
 .minetable.bettingRecord tr th .arrow {
   width: 9px;
   height: 16px;
-  background: url("../images/arrow_w.png") no-repeat;
+  background: url("../images/forCss/arrow_w.png") no-repeat;
   background-size: 100%;
   display: block;
   position: absolute;
@@ -3763,7 +3763,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url(../images/forCss/infor2.png) no-repeat;
   top: -1px;
   left: -18px;
 }
@@ -3809,7 +3809,7 @@ main .bg {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("../images/contact_ic2.png") no-repeat;
+  background: url("../images/forCss/contact_ic2.png") no-repeat;
   background-size: 500%;
   margin-left: 30px;
   margin: 0px 0px 6px 30px;
@@ -3830,7 +3830,7 @@ main .bg {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: url("../images/joinus_ic2.png") no-repeat;
+  background: url("../images/forCss/joinus_ic2.png") no-repeat;
   background-size: 500%;
   margin-left: 25px;
   transform: translateY(5px);
@@ -3939,7 +3939,7 @@ main .bg {
 .minetable.callus tr td .box .officalimg div {
   width: 80px;
   height: 50px;
-  background: url("../images/about_offical.png") no-repeat;
+  background: url("../images/forCss/about_offical.png") no-repeat;
   background-size: 400%;
   margin: 0px auto 5px;
 }
@@ -3965,7 +3965,7 @@ main .bg {
 .minetable.callus tr td .box .partnerimg div {
   width: 80px;
   height: 50px;
-  background: url("../images/about_partner.png") no-repeat;
+  background: url("../images/forCss/about_partner.png") no-repeat;
   background-size: 700%;
   margin: 0px auto 5px;
 }
@@ -4012,7 +4012,7 @@ main .bg {
 .minetable.callus tr td .bigBox .join_ic {
   width: 50px;
   height: 50px;
-  background: url("../images/joinus_ic2.png") no-repeat;
+  background: url("../images/forCss/joinus_ic2.png") no-repeat;
   background-size: 500%;
   margin: 15px auto;
 }
@@ -4129,7 +4129,7 @@ main .bg {
   display: block;
   width: 24px;
   height: 19px;
-  background: url(../images/uploadimg2.png);
+  background: url(../images/forCss/uploadimg2.png);
   background-size: 100%;
   margin: 0px auto 5px;
 }
@@ -4149,7 +4149,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url(../images/forCss/infor2.png) no-repeat;
   top: 0px;
   left: -18px;
 }
@@ -4226,7 +4226,7 @@ main .bg {
   display: inline-block;
   width: 82px;
   height: 65px;
-  background: url("../images/version_check.png") no-repeat;
+  background: url("../images/forCss/version_check.png") no-repeat;
 }
 .minetable.download tr td .codeBox div {
   display: inline-block;
@@ -4237,7 +4237,7 @@ main .bg {
   vertical-align: top;
 }
 .minetable.download tr td .codeBox div .qrcode {
-  background: url("../images/download_app_qr.png") no-repeat;
+  background: url("../images/forCss/download_app_qr.png") no-repeat;
   background-size: 100%;
   width: 110px;
   height: 110px;
@@ -4272,7 +4272,7 @@ main .bg {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("../images/download_app_browser2.png") no-repeat;
+  background: url("../images/forCss/download_app_browser2.png") no-repeat;
   background-size: 200%;
 }
 .minetable.download tr td .bowserBox .bowser.ie {
@@ -4346,7 +4346,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url(../images/forCss/infor2.png) no-repeat;
   top: 0px;
   left: -18px;
 }
@@ -4446,7 +4446,7 @@ main .bg {
   display: inline-block;
   width: 32px;
   height: 20px;
-  background: url(../images/arrow_trans2.png) no-repeat;
+  background: url(../images/forCss/arrow_trans2.png) no-repeat;
   margin: 0px 10px -5px 10px;
 }
 .minetable.transpoint tr td p {
@@ -4464,7 +4464,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url(../images/forCss/infor2.png) no-repeat;
   top: 0px;
   left: -18px;
 }
@@ -4510,7 +4510,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url(../images/forCss/infor2.png) no-repeat;
   top: 2px;
   left: -18px;
 }
@@ -4540,7 +4540,7 @@ main .bg {
   position: absolute;
   width: 30px;
   height: 29px;
-  background: url(../images/box_check2.png);
+  background: url(../images/forCss/box_check2.png);
   right: -1px;
   bottom: -1px;
 }
@@ -4548,7 +4548,7 @@ main .bg {
   display: block;
   width: 50px;
   height: 50px;
-  background: url("../images/save_icon.png") no-repeat;
+  background: url("../images/forCss/save_icon.png") no-repeat;
   margin: -5px auto 0px;
   background-size: 1400%;
 }
@@ -4758,7 +4758,7 @@ main .bg {
   display: inline-block;
   width: 25px;
   height: 22px;
-  background: url("../images/change2.png") no-repeat;
+  background: url("../images/forCss/change2.png") no-repeat;
   margin: 0px 10px -5px 0px;
 }
 .minetable.tbank, .minetable.tnum, .minetable.tnetcard {
@@ -4821,7 +4821,7 @@ main .bg {
   width: 13px;
   height: 13px;
   position: absolute;
-  background: url(../images/infor2.png) no-repeat;
+  background: url(../images/forCss/infor2.png) no-repeat;
   top: 0px;
   left: -18px;
 }
@@ -4900,70 +4900,70 @@ main .bg {
 .middle .inner .topimg {
   width: 1260px;
   height: 130px;
-  background: url("../images/inn_soccer.png") no-repeat top center;
+  background: url("../images/forCss/inn_soccer.png") no-repeat top center;
   background-size: cover;
   position: fixed;
   margin-left: 10px;
   z-index: 6;
 }
 .middle .inner .topimg.baseball {
-  background: url("../images/inn_baseball.png") no-repeat top center;
+  background: url("../images/forCss/inn_baseball.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.basketball {
-  background: url("../images/inn_basketball.png") no-repeat top center;
+  background: url("../images/forCss/inn_basketball.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.race {
-  background: url("../images/inn_basketball.png") no-repeat top center;
+  background: url("../images/forCss/inn_basketball.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.esp {
-  background: url("../images/inn_esp.png") no-repeat top center;
+  background: url("../images/forCss/inn_esp.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.stock {
-  background: url("../images/inn_stock.png") no-repeat top center;
+  background: url("../images/forCss/inn_stock.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.lotto {
-  background: url("../images/inn_lotto.png") no-repeat top center;
+  background: url("../images/forCss/inn_lotto.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.iceball {
-  background: url("../images/inn_iceball.png") no-repeat top center;
+  background: url("../images/forCss/inn_iceball.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.tennis {
-  background: url("../images/inn_tennis.png") no-repeat top center;
+  background: url("../images/forCss/inn_tennis.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.snooker {
-  background: url("../images/inn_snooker.png") no-repeat top center;
+  background: url("../images/forCss/inn_snooker.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.vball {
-  background: url("../images/inn_vball.png") no-repeat top center;
+  background: url("../images/forCss/inn_vball.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.racecar {
-  background: url("../images/inn_racecar.png") no-repeat top center;
+  background: url("../images/forCss/inn_racecar.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.badminton {
-  background: url("../images/inn_badminton.png") no-repeat top center;
+  background: url("../images/forCss/inn_badminton.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.beachball {
-  background: url("../images/inn_beachball.png") no-repeat top center;
+  background: url("../images/forCss/inn_beachball.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.football {
-  background: url("../images/inn_football.png") no-repeat top center;
+  background: url("../images/forCss/inn_football.png") no-repeat top center;
   background-size: cover;
 }
 .middle .inner .topimg.tableball {
-  background: url("../images/inn_tableball.png") no-repeat top center;
+  background: url("../images/forCss/inn_tableball.png") no-repeat top center;
   background-size: cover;
 }
 
@@ -5445,7 +5445,7 @@ main .bg {
 .liveExpansion .liveShowBar div button {
   width: 20px;
   height: 20px;
-  background: url(../images/liveSelect2.png) no-repeat;
+  background: url(../images/forCss/liveSelect2.png) no-repeat;
   background-size: 300%;
   margin-left: 8px;
 }
@@ -6023,7 +6023,7 @@ main .bg {
   left: 0px;
   width: 18px;
   height: 18px;
-  background: url("../images/cubeArrow.png") no-repeat;
+  background: url("../images/forCss/cubeArrow.png") no-repeat;
 }
 
 .norbetting {
@@ -6342,7 +6342,7 @@ main .bg {
   width: 8px;
   height: 11px;
   position: absolute;
-  background: url("../images/arrow_w.png");
+  background: url("../images/forCss/arrow_w.png");
   right: 40px;
   top: 20px;
   transform: rotate(90deg);
@@ -6397,7 +6397,7 @@ main .bg {
   position: absolute;
   right: 100px;
   top: 10px;
-  background: url("../images/calculator2.png") no-repeat;
+  background: url("../images/forCss/calculator2.png") no-repeat;
 }
 .bettingbar .bettingbox {
   width: calc(100% + 2px);
@@ -7453,7 +7453,7 @@ main .bg {
 .fixside .search .searchbut .fixsideimg {
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_ic2.png");
+  background: url("../images/forCss/fixside_ic2.png");
   background-size: 500%;
   float: left;
   margin: 7px 15px 3px 14px;
@@ -7559,7 +7559,7 @@ main .bg {
   display: block;
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_team.png");
+  background: url("../images/forCss/fixside_team.png");
   float: left;
   margin: 10px 5px 0px 15px;
   background-size: 300%;
@@ -7640,7 +7640,7 @@ main .bg {
 .fixside .fun a .fixsideimg {
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_ic2.png");
+  background: url("../images/forCss/fixside_ic2.png");
   background-size: 500%;
   float: left;
   margin: 8px 15px 3px 17px;
@@ -7707,7 +7707,7 @@ main .bg {
   text-align: left;
   line-height: 34px;
   float: left;
-  background: url("../images/discounttitle_bg.png") no-repeat;
+  background: url("../images/forCss/discounttitle_bg.png") no-repeat;
   background-size: 100%;
   padding-left: 45px;
   color: #fff;
@@ -7744,20 +7744,20 @@ main .bg {
 .discount .window .img.bg1 {
   width: 383px;
   height: 180px;
-  background: url("../images/disimg_1.png") no-repeat;
+  background: url("../images/forCss/disimg_1.png") no-repeat;
   background-size: 100%;
 }
 .discount .window .img.bg2 {
   width: 423px;
   height: 180px;
-  background: url("../images/disimg_2.png") no-repeat;
+  background: url("../images/forCss/disimg_2.png") no-repeat;
   background-size: 100%;
   margin-right: 200px;
 }
 .discount .window .img.bg3 {
   width: 483px;
   height: 180px;
-  background: url("../images/disimg_3.png") no-repeat;
+  background: url("../images/forCss/disimg_3.png") no-repeat;
   background-size: 100%;
   margin-right: 155px;
 }
@@ -7942,7 +7942,7 @@ main .bg {
   position: absolute;
   width: 6px;
   height: 10px;
-  background: url("../images/arrow_w.png") no-repeat;
+  background: url("../images/forCss/arrow_w.png") no-repeat;
   right: 20px;
   top: 18px;
   transform: rotate(-90deg);
@@ -7955,7 +7955,7 @@ main .bg {
 .myself .helpbar.open::before {
   width: 6px;
   height: 10px;
-  background: url("../images/arrow_w.png") no-repeat;
+  background: url("../images/forCss/arrow_w.png") no-repeat;
   background-size: 100%;
   transform: rotate(90deg);
 }
@@ -8065,7 +8065,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url("../images/infor2.png") no-repeat;
+  background: url("../images/forCss/infor2.png") no-repeat;
   top: -2px;
   left: -18px;
 }
@@ -8136,13 +8136,13 @@ main .bg {
   margin: 0px 15px;
 }
 .myself .onlineCilent .chatwindow .chat span.gm {
-  background: url("../images/avatar_s.png") no-repeat;
+  background: url("../images/forCss/avatar_s.png") no-repeat;
   background-size: 100%;
   float: left;
 }
 .myself .onlineCilent .chatwindow .chat span.user {
   height: 41px;
-  background: url("../images/avatar_big.png") no-repeat;
+  background: url("../images/forCss/avatar_big.png") no-repeat;
   background-size: 100%;
   float: right;
 }
@@ -8204,7 +8204,7 @@ main .bg {
 .myself .onlineCilent .onlineroom .chatStyle button {
   width: 16px;
   height: 16px;
-  background: url("../images/windowface2.png") no-repeat;
+  background: url("../images/forCss/windowface2.png") no-repeat;
   background-size: 200%;
   float: left;
   margin-right: 10px;
@@ -8279,7 +8279,7 @@ main .bg {
   display: block;
   width: 200px;
   height: 88px;
-  background: url("../images/about_link.png") no-repeat;
+  background: url("../images/forCss/about_link.png") no-repeat;
 }
 .myself .linkBox div a span.mlb {
   background-position-x: 0px;
@@ -8428,7 +8428,7 @@ main .bg {
 .minetopfix .fixbar .timeSearch button.date {
   width: 19px;
   height: 19px;
-  background: url("../images/date_icon2.png") no-repeat;
+  background: url("../images/forCss/date_icon2.png") no-repeat;
   float: left;
   margin: 13px 0px 0px 0px;
   border: none;

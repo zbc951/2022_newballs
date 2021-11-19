@@ -153,7 +153,7 @@
             position: absolute;
             width: 6px;
             height: 10px;
-            background: url('../images/arrow_bl.png') no-repeat;
+            background: url('../images/forCss_4/arrow_bl.png') no-repeat;
             right: 20px;
             top: 18px;
             transform: rotate(90deg);
@@ -180,7 +180,7 @@
             &::before {
                 width: 6px;
                 height: 10px;
-                background: url('../images/arrow_w.png') no-repeat;
+                background: url('../images/forCss_4/arrow_w.png') no-repeat;
                 background-size: 100%;
                 transform: rotate(90deg);
             }
@@ -319,7 +319,7 @@
                 width: 15px;
                 height: 15px;
                 position: absolute;
-                background: url('../images/infor4.png') no-repeat;
+                background: url('../images/forCss_4/infor4.png') no-repeat;
                 top: -1px;
                 left: -18px;
             }
@@ -403,14 +403,14 @@
                     margin: 0px 15px;
 
                     &.gm {
-                        background: url('../images/avatar_s2.png') no-repeat;
+                        background: url('../images/forCss_4/avatar_s2.png') no-repeat;
                         background-size: 100%;
                         float: left;
                     }
 
                     &.user {
                         height: 41px;
-                        background: url('../images/avatar_big.png') no-repeat;
+                        background: url('../images/forCss_4/avatar_big.png') no-repeat;
                         background-size: 100%;
                         float: right;
                     }
@@ -483,7 +483,7 @@
                 button {
                     width: 16px;
                     height: 16px;
-                    background: url('../images/windowface3.png') no-repeat;
+                    background: url('../images/forCss_4/windowface3.png') no-repeat;
                     background-size: 200%;
                     float: left;
                     margin-right: 10px;
@@ -573,7 +573,7 @@
                     display: block;
                     width: 200px;
                     height: 88px;
-                    background: url('../images/about_link.png') no-repeat;
+                    background: url('../images/forCss_4/about_link.png') no-repeat;
                     &.mlb {
                         background-position-x: 0px;
                     }
@@ -761,7 +761,7 @@
                 &.date {
                     width: 19px;
                     height: 19px;
-                    background: url('../images/date_icon4.png') no-repeat;
+                    background: url('../images/forCss_4/date_icon4.png') no-repeat;
                     float: left;
                     margin: 13px 0px 0px 0px;
                     border-color: transparent;

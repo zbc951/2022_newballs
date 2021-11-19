@@ -470,7 +470,7 @@ main .bg {
   width: 79px;
   height: 81px;
   margin: 0px auto 20px;
-  background: url("../images/avatar_big.png");
+  background: url("../images/forCss_3/avatar_big.png");
 }
 .left.mine .minewindow .avater p.joinday {
   color: #304880;
@@ -497,7 +497,7 @@ main .bg {
   position: absolute;
   width: 23px;
   height: 9px;
-  background: url("../images/vip.png") no-repeat;
+  background: url("../images/forCss_3/vip.png") no-repeat;
   top: 5px;
   left: 5px;
 }
@@ -803,7 +803,7 @@ main .bg {
 .right .liveWindow .liveShow {
   width: 100%;
   height: 195px;
-  background: url("../images/live.png") no-repeat;
+  background: url("../images/forCss_3/live.png") no-repeat;
   background-size: cover;
 }
 .right .room {
@@ -1169,7 +1169,7 @@ main .bg {
 .playBoard tr td a.tbimg2 {
   width: 20px;
   height: 20px;
-  background: url("../images/heart.png") no-repeat;
+  background: url("../images/forCss_3/heart.png") no-repeat;
   background-size: 200%;
 }
 .playBoard tr td a.tbimg2:hover, .playBoard tr td a.tbimg2:active, .playBoard tr td a.tbimg2.active {
@@ -2606,7 +2606,7 @@ main .bg {
   display: inline-block;
   width: 33px;
   height: 30px;
-  background: url("../images/topfix_ic.png");
+  background: url("../images/forCss_3/topfix_ic.png");
   background-size: 200%;
   position: relative;
   overflow: hidden;
@@ -2766,7 +2766,7 @@ main .bg {
 .teachBoard tr td .team .img {
   width: 30px;
   height: 30px;
-  background: url(../images/teamimg.png) no-repeat;
+  background: url(../images/forCss_3/teamimg.png) no-repeat;
   background-size: 200%;
   position: absolute;
   top: 50%;
@@ -2938,7 +2938,7 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../images/avatar_big.png") no-repeat;
+  background: url("../images/forCss_3/avatar_big.png") no-repeat;
   background-size: 100%;
 }
 .minetable.infor tr td .sticker::before {
@@ -2946,7 +2946,7 @@ main .bg {
   width: 30px;
   height: 30px;
   position: absolute;
-  background: url("../images/edit.png") no-repeat;
+  background: url("../images/forCss_3/edit.png") no-repeat;
   right: 0px;
   bottom: 0px;
   cursor: pointer;
@@ -3042,7 +3042,7 @@ main .bg {
   position: absolute;
   width: 14px;
   height: 14px;
-  background: url("../images/reset2.png") no-repeat;
+  background: url("../images/forCss_3/reset2.png") no-repeat;
   background-size: 100%;
   left: -18px;
   top: 3px;
@@ -3103,7 +3103,7 @@ main .bg {
   float: left;
   width: 34px;
   height: 32px;
-  background: url("../images/wallet_ic.png") no-repeat;
+  background: url("../images/forCss_3/wallet_ic.png") no-repeat;
   background-size: 200%;
   margin: 20px 0px 20px 40px;
 }
@@ -3144,7 +3144,7 @@ main .bg {
   float: left;
   width: 30px;
   height: 28px;
-  background: url(../images/wallet_ic.png) no-repeat;
+  background: url(../images/forCss_3/wallet_ic.png) no-repeat;
   background-size: 200%;
   margin: -6px 10px 0px 0px;
 }
@@ -3327,13 +3327,13 @@ main .bg {
   width: 42px;
   height: 29px;
   margin: 0px auto 10px;
-  background: url("../images/add_card.png") no-repeat;
+  background: url("../images/forCss_3/add_card.png") no-repeat;
   background-size: 200%;
 }
 .minetable.creditcard tr td .creditcardBtn .box .bankIc {
   width: 40px;
   height: 40px;
-  background: url("../images/bank_ic.png") no-repeat;
+  background: url("../images/forCss_3/bank_ic.png") no-repeat;
   background-size: 300%;
   position: absolute;
   top: 24%;
@@ -3369,7 +3369,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url("../images/infor.png") no-repeat;
+  background: url("../images/forCss_3/infor.png") no-repeat;
   top: -2px;
   left: -18px;
 }
@@ -3513,7 +3513,7 @@ main .bg {
 .minetable.bettingRecord tr th .arrow {
   width: 9px;
   height: 16px;
-  background: url("../images/arrow_w.png") no-repeat;
+  background: url("../images/forCss_3/arrow_w.png") no-repeat;
   background-size: 100%;
   display: block;
   position: absolute;
@@ -3678,7 +3678,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
+  background: url(../images/forCss_3/infor.png) no-repeat;
   top: -1px;
   left: -18px;
 }
@@ -3725,7 +3725,7 @@ main .bg {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("../images/contact_ic.png") no-repeat;
+  background: url("../images/forCss_3/contact_ic.png") no-repeat;
   background-size: 500%;
   margin-left: 30px;
   margin: 0px 0px 6px 30px;
@@ -3746,7 +3746,7 @@ main .bg {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: url("../images/joinus_ic.png") no-repeat;
+  background: url("../images/forCss_3/joinus_ic.png") no-repeat;
   background-size: 500%;
   margin-left: 25px;
   transform: translateY(5px);
@@ -3851,7 +3851,7 @@ main .bg {
 .minetable.callus tr td .box .officalimg div {
   width: 80px;
   height: 50px;
-  background: url("../images/about_offical.png") no-repeat;
+  background: url("../images/forCss_3/about_offical.png") no-repeat;
   background-size: 400%;
   margin: 0px auto 5px;
 }
@@ -3877,7 +3877,7 @@ main .bg {
 .minetable.callus tr td .box .partnerimg div {
   width: 80px;
   height: 50px;
-  background: url("../images/about_partner.png") no-repeat;
+  background: url("../images/forCss_3/about_partner.png") no-repeat;
   background-size: 700%;
   margin: 0px auto 5px;
 }
@@ -3925,7 +3925,7 @@ main .bg {
 .minetable.callus tr td .bigBox .join_ic {
   width: 50px;
   height: 50px;
-  background: url("../images/joinus_ic.png") no-repeat;
+  background: url("../images/forCss_3/joinus_ic.png") no-repeat;
   background-size: 500%;
   margin: 15px auto;
 }
@@ -4032,7 +4032,7 @@ main .bg {
   display: block;
   width: 24px;
   height: 19px;
-  background: url(../images/uploadimg.png);
+  background: url(../images/forCss_3/uploadimg.png);
   margin: 0px auto 5px;
 }
 .minetable.problem tr td .imgPage {
@@ -4051,7 +4051,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
+  background: url(../images/forCss_3/infor.png) no-repeat;
   top: -2px;
   left: -18px;
 }
@@ -4126,7 +4126,7 @@ main .bg {
   display: inline-block;
   width: 82px;
   height: 65px;
-  background: url("../images/version_check.png") no-repeat;
+  background: url("../images/forCss_3/version_check.png") no-repeat;
 }
 .minetable.download tr td .codeBox div {
   display: inline-block;
@@ -4137,7 +4137,7 @@ main .bg {
   vertical-align: top;
 }
 .minetable.download tr td .codeBox div .qrcode {
-  background: url("../images/download_app_qr.png") no-repeat;
+  background: url("../images/forCss_3/download_app_qr.png") no-repeat;
   background-size: 100%;
   width: 110px;
   height: 110px;
@@ -4172,7 +4172,7 @@ main .bg {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("../images/download_app_browser.png") no-repeat;
+  background: url("../images/forCss_3/download_app_browser.png") no-repeat;
   background-size: 200%;
 }
 .minetable.download tr td .bowserBox .bowser.ie {
@@ -4245,7 +4245,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
+  background: url(../images/forCss_3/infor.png) no-repeat;
   top: -2px;
   left: -18px;
 }
@@ -4338,7 +4338,7 @@ main .bg {
   display: inline-block;
   width: 24px;
   height: 15px;
-  background: url(../images/arrow_trans.png);
+  background: url(../images/forCss_3/arrow_trans.png);
   margin: 0px 10px -3px 10px;
 }
 .minetable.transpoint tr td p {
@@ -4356,7 +4356,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
+  background: url(../images/forCss_3/infor.png) no-repeat;
   top: -2px;
   left: -18px;
 }
@@ -4399,7 +4399,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
+  background: url(../images/forCss_3/infor.png) no-repeat;
   top: 1px;
   left: -18px;
 }
@@ -4430,7 +4430,7 @@ main .bg {
   position: absolute;
   width: 29px;
   height: 29px;
-  background: url(../images/box_check.png);
+  background: url(../images/forCss_3/box_check.png);
   right: -1px;
   bottom: -1px;
 }
@@ -4438,7 +4438,7 @@ main .bg {
   display: block;
   width: 50px;
   height: 50px;
-  background: url("../images/save_icon.png") no-repeat;
+  background: url("../images/forCss_3/save_icon.png") no-repeat;
   margin: -5px auto 0px;
   background-size: 1400%;
 }
@@ -4634,7 +4634,7 @@ main .bg {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background: url("../images/change.png") no-repeat;
+  background: url("../images/forCss_3/change.png") no-repeat;
   margin: 0px 10px -5px 0px;
 }
 .minetable.tbank, .minetable.tnum, .minetable.tnetcard {
@@ -4696,7 +4696,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url(../images/infor.png) no-repeat;
+  background: url(../images/forCss_3/infor.png) no-repeat;
   top: -2px;
   left: -18px;
 }
@@ -7248,7 +7248,7 @@ main .bg {
 .fixside .search .searchbut .fixsideimg {
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_ic.png");
+  background: url("../images/forCss_3/fixside_ic.png");
   background-size: 900%;
   float: left;
   margin: 7px 15px 3px 14px;
@@ -7305,7 +7305,7 @@ main .bg {
   width: 6px;
   height: 8px;
   position: absolute;
-  background: url("../images/arrow_b.png");
+  background: url("../images/forCss_3/arrow_b.png");
   right: 40px;
   top: 21px;
 }
@@ -7343,7 +7343,7 @@ main .bg {
   display: block;
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_team.png");
+  background: url("../images/forCss_3/fixside_team.png");
   float: left;
   margin: 10px 5px 0px 15px;
   background-size: 300%;
@@ -7426,7 +7426,7 @@ main .bg {
 .fixside .fun a .fixsideimg {
   width: 30px;
   height: 30px;
-  background: url("../images/fixside_ic.png");
+  background: url("../images/forCss_3/fixside_ic.png");
   background-size: 900%;
   float: left;
   margin: 13px 15px 3px 17px;
@@ -7493,7 +7493,7 @@ main .bg {
   text-align: left;
   line-height: 34px;
   float: left;
-  background: url("../images/discounttitle_bg.png") no-repeat;
+  background: url("../images/forCss_2/discounttitle_bg.png") no-repeat;
   background-size: 100%;
   padding-left: 45px;
   color: #fff;
@@ -7530,20 +7530,20 @@ main .bg {
 .discount .window .img.bg1 {
   width: 383px;
   height: 180px;
-  background: url("../images/disimg_1.png") no-repeat;
+  background: url("../images/forCss_2/disimg_1.png") no-repeat;
   background-size: 100%;
 }
 .discount .window .img.bg2 {
   width: 423px;
   height: 180px;
-  background: url("../images/disimg_2.png") no-repeat;
+  background: url("../images/forCss_2/disimg_2.png") no-repeat;
   background-size: 100%;
   margin-right: 200px;
 }
 .discount .window .img.bg3 {
   width: 483px;
   height: 180px;
-  background: url("../images/disimg_3.png") no-repeat;
+  background: url("../images/forCss_2/disimg_3.png") no-repeat;
   background-size: 100%;
   margin-right: 155px;
 }
@@ -7724,7 +7724,7 @@ main .bg {
   position: absolute;
   width: 6px;
   height: 8px;
-  background: url("../images/arrow_b.png") no-repeat;
+  background: url("../images/forCss_3/arrow_b.png") no-repeat;
   right: 20px;
   top: 18px;
   transform: rotate(90deg);
@@ -7735,7 +7735,7 @@ main .bg {
 .myself .helpbar.open::before {
   width: 6px;
   height: 8px;
-  background: url("../images/arrow_b.png") no-repeat;
+  background: url("../images/forCss_3/arrow_b.png") no-repeat;
   background-size: 100%;
   transform: rotate(-90deg);
 }
@@ -7845,7 +7845,7 @@ main .bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  background: url("../images/infor.png") no-repeat;
+  background: url("../images/forCss_3/infor.png") no-repeat;
   top: -2px;
   left: -18px;
 }
@@ -7916,13 +7916,13 @@ main .bg {
   margin: 0px 15px;
 }
 .myself .onlineCilent .chatwindow .chat span.gm {
-  background: url("../images/avatar_s.png") no-repeat;
+  background: url("../images/forCss_3/avatar_s.png") no-repeat;
   background-size: 100%;
   float: left;
 }
 .myself .onlineCilent .chatwindow .chat span.user {
   height: 41px;
-  background: url("../images/avatar_big.png") no-repeat;
+  background: url("../images/forCss_3/avatar_big.png") no-repeat;
   background-size: 100%;
   float: right;
 }
@@ -7982,7 +7982,7 @@ main .bg {
 .myself .onlineCilent .onlineroom .chatStyle button {
   width: 16px;
   height: 16px;
-  background: url("../images/windowface.png") no-repeat;
+  background: url("../images/forCss_3/windowface.png") no-repeat;
   background-size: 200%;
   float: left;
   margin-right: 10px;
@@ -8052,7 +8052,7 @@ main .bg {
   display: block;
   width: 200px;
   height: 88px;
-  background: url("../images/about_link.png") no-repeat;
+  background: url("../images/forCss_3/about_link.png") no-repeat;
 }
 .myself .linkBox div a span.mlb {
   background-position-x: 0px;
@@ -8194,7 +8194,7 @@ main .bg {
 .minetopfix .fixbar .timeSearch button.date {
   width: 19px;
   height: 19px;
-  background: url("../images/date_icon.png") no-repeat;
+  background: url("../images/forCss_3/date_icon.png") no-repeat;
   float: left;
   margin: 13px 0px 0px 0px;
   border: none;
