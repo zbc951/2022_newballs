@@ -3,11 +3,11 @@ header {
     width: 100%;
     min-width: 1480px;
     height: 110px;
-    background: #ffffff;
+    background: #181818;
     position: relative;
     z-index: 10;
     overflow: hidden;
-    box-shadow: 0px 2px 6px 0px #00000050;
+    border-bottom: solid 1px #ff4719;
 
     &.mine {
         min-width: 1200px;
@@ -17,14 +17,14 @@ header {
     .top {
         width: 100%;
         height: 25px;
-        background: #efefef;
+        background: #252525;
 
         //盤口對照表+設定
         .conversionBtn,.controlBtn {
             float: left;
             width: auto;
             height: 100%;
-            color: #595959;
+            color: #fb770a;
             background: transparent;
             margin-left: 15px;
             font-size: 13px;
@@ -42,13 +42,13 @@ header {
                 position: absolute;
                 left: -23px;
                 top: 4px;
-                color: #de1e30;
+                color: #ffc13c;
             }
 
             marquee {
                 line-height: 25px;
                 font-size: 12px;
-                color: #de1e30;
+                color: #8f702d;
                 overflow: visible;
             }
         }
@@ -57,7 +57,7 @@ header {
         span {
             float: right;
             font-size: 12px;
-            color: #595959;
+            color: #8e7352;
             line-height: 25px;
             margin-right: 15px;
         }
@@ -121,6 +121,15 @@ header {
                         background: #ffffff;
                     }
                 }
+
+                &:nth-of-type(6) {
+                    background: #181818;
+
+                    &:hover,&:active,&.active {
+                        border-color: #ffc13c;
+                        background: #181818;
+                    }
+                }
             }
         }
     }
@@ -139,7 +148,7 @@ header {
             font-weight: bolder;
             text-align: center;
             line-height: 85px;
-            color: #de1e30;
+            color: #ffc13c;
         }
 
         //上列表
@@ -157,13 +166,14 @@ header {
                     padding: 0px 10px;
                     height: 76px;
                     line-height: 85px;
-                    color: #393939;
+                    color: #ffc13c;
                     border-bottom: solid 5px transparent;
                     font-size: 14px;
 
                     &:hover,&:active,&.active {
-                        border-color: #de1e30;
-                        color: #de1e30;
+                        border-color: #ff4719;
+                        color: #ff4719;
+                        font-weight: bold;
                     }
 
                     .fa-user {
@@ -198,13 +208,13 @@ header {
                     font-size: 14px;
                     padding-left: 5px;
                     border-radius: 3px;
-                    border: solid 1px #cccccc;
-                    background: #ffffff;
+                    border: none;
+                    background: #eaeaea;
                     box-shadow: none;
-                    color: #8d8d8d;
+                    color: #141516;
 
                     &::placeholder {
-                        color: #8d8d8d;
+                        color: #141516;
                     }
                 }
 
@@ -213,7 +223,7 @@ header {
                     left: 0px;
                     bottom: -28px;
                     font-size: 14px;
-                    color: #de1e30;
+                    color: #0bca17;
                 }
 
                 .remember {
@@ -221,13 +231,13 @@ header {
                     left: 18px;
                     bottom: -28px;
                     font-size: 14px;
-                    color: #333333;
+                    color: #ffb03f;
 
                     .cube {
                         left: -18px;
                         top: -1px;
                         background: transparent;
-                        border-color: #ababab;
+                        border-color: #ffb03f;
 
                         &.active {
 
@@ -240,7 +250,7 @@ header {
             }
 
             .loginBtn {
-                background: #de1e30;
+                background: linear-gradient(to right,#ff4b33 0%,#d8001f 98%);
                 padding: 5px 14px;
                 border-radius: 3px;
                 border: solid 1px transparent;
@@ -251,16 +261,16 @@ header {
                 box-shadow: none;
 
                 &:hover,&:active,&.active {
-                    background: #bc0617;
+                    background: #7c0013;
                     color: #ffffff;
                 }
             }
 
             .signupBtn {
-                background: #ffffff; 
+                background: #18eb18; 
                 border-radius: 3px;
-                border: solid 1px #de1e30;
-                color: #de1e30;
+                border: none;
+                color: #000000;
                 padding: 5px 14px;
                 font-size: 14px;
                 font-weight: bold;
@@ -268,7 +278,7 @@ header {
 
                 &:hover,&:active,&.active {
                     border-color: transparent;
-                    background: #de1e30;
+                    background: #079607;
                     color: #ffffff;
                 }
             }
@@ -282,7 +292,7 @@ header {
                 .fa-globe {
                     float: left;
                     margin: 3px 0px 0px 0px;
-                    color: #393939;
+                    color: #ffc13c;
                 }
 
                 //下箭頭
@@ -294,7 +304,7 @@ header {
                     height: 0px;
                     border-style: solid;
                     border-width: 6px 5px 0px 5px;
-                    border-color: #de1e30 transparent;
+                    border-color: #ffd973 transparent;
                     top: 8px;
                     right: 10px;
                 }
@@ -302,10 +312,10 @@ header {
                 select {
                     width: 110px;
                     padding: 3px 0px 3px 5px;
-                    background: #ffffff;
-                    border: solid 1px #dddddd;
+                    background: #101010;
+                    border: solid 1px #a88335;
                     border-radius: 3px;
-                    color: #595959;
+                    color: #ffffff;
                     font-size: 12px;
                     appearance:none;   
                     -moz-appearance:none;   
@@ -330,7 +340,7 @@ header {
             //字體
             p {
                 display: inline-block;
-                color: #666666;
+                color: #ffc13c;
                 font-size: 13px;
                 margin: 10px 5px 0px 0px;
 
@@ -338,17 +348,17 @@ header {
                 &.quota {
                     padding: 7px 7px 5px;
                     border-radius: 3px;
-                    background: #ffffff;
-                    color: #666666;
-                    border: solid 1px #dddddd;
+                    background: #eaeaea;
+                    color: #141516;
+                    border: none;
                     
                     span {
-                        color: #de1e30;
+                        color: #ff4719;
                     }
                 }
 
                 span {
-                    color: #666666;
+                    color: #fb770a;
                     padding-left: 8px;
                 }
             }
@@ -357,14 +367,14 @@ header {
             button {
                 border-radius: 3px;
                 padding: 4px 15px;
-                background: #de1e30;
+                background: linear-gradient(to right,#ff4b33 0%,#d8001f 98%);
                 color: #ffffff;
                 font-size: 14px;
                 box-shadow: none;
                 border: solid 1px transparent;
 
                 &:hover,&:active,&.active {
-                    background: #bb0a1b;
+                    background: #7c0013;
                     color: #ffffff;
                 }
             }
@@ -378,7 +388,7 @@ header {
                 .fa-globe {
                     float: left;
                     margin: 3px 3px 0px 0px;
-                    color: #393939;
+                    color: #ffc13c;
                 }
 
                 //下箭頭
@@ -390,7 +400,7 @@ header {
                     height: 0px;
                     border-style: solid;
                     border-width: 6px 5px 0px 5px;
-                    border-color: #de1e30 transparent;
+                    border-color: #ffd973 transparent;
                     top: 8px;
                     right:10px;
                 }
@@ -398,10 +408,10 @@ header {
                 select {
                     width: 110px;
                     padding: 3px 0px 3px 5px;
-                    background: #ffffff;
-                    border: solid 1px #dddddd;
+                    background: #101010;
+                    border: solid 1px #a88335;
                     border-radius: 3px;
-                    color: #666666;
+                    color: #ffffff;
                     font-size: 12px;
                     appearance:none;   
                     -moz-appearance:none;

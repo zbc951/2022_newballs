@@ -8,7 +8,7 @@
     z-index: 6;
     scrollbar-width: thin;
     border-width: 1px 0px;
-    background: #ffffff;
+    background: #1b1b1b;
     margin-top: 15px;
 
     &::-webkit-scrollbar {
@@ -17,12 +17,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #ffffff;
+        background: #1b1b1b;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #999999;
+        background: linear-gradient(to bottom,#ff4b33 0%,#d8001f 98%);
         border-radius: 10px;
     }
     
@@ -48,14 +48,15 @@
                     height: 81px;
                     margin: 0px auto 20px;
                     background: url('../images/forCss_5/avatar_big.png');
+                    filter: drop-shadow(0px 0px 1px #ffc13c);
                 }
 
                 //字樣
                 p {
-                    color: #1b1b1b;
+                    color: #ffc13c;
 
                     &.joinday {
-                        color: #454545;
+                        color: #8e7352;
                         font-size: 15px;
                         padding-top: 5px;
                     }
@@ -64,10 +65,10 @@
                         display: inline-block;
                         width: 36px;
                         height: 17px;
-                        background: linear-gradient(to right,#cd0e21 0%,#9d0514 100%);
+                        background: linear-gradient(to right,#4ffc21 0%,#09d217 99%);
                         position: relative;
                         text-align: right;
-                        color: #ffffff;
+                        color: #000000;
                         font-weight: bold;
                         border-radius: 5px;
                         margin: -3px 0px 0px 5px;
@@ -103,17 +104,17 @@
                     font-size: 16px;
                     text-align: center;
                     background: transparent;
-                    color: #333333;
+                    color: #ffc13c;
                     padding-top: 10px;
 
                     &:hover,&:active,&.active {
-                        background: #df1e31;
-                        color: #ffffff;
+                        background: linear-gradient(to left,#e48b0c 0%,#ffc62a 99%);
+                        color: #000000;
 
                         &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
                             
                             i {
-                                color: #ffffff;
+                                color: #000000;
                             }
                         }
                     }
@@ -121,19 +122,19 @@
                     &:nth-of-type(1) {
                         
                         i {
-                            color: #f9a622;
+                            color: #ffc13c;
                         }
                     }
                     &:nth-of-type(2) {
                         
                         i {
-                            color: #3fa23d;
+                            color: #ffc13c;
                         }
                     }
                     &:nth-of-type(3) {
                         
                         i {
-                            color: #4980e4;
+                            color: #ffc13c;
                         }
                     }
 
@@ -154,15 +155,19 @@
                 margin: 0px auto;
 
                 &:nth-of-type(1),&:nth-of-type(5),&:nth-of-type(9) {
-                    border-bottom: solid 1px #ebebeb;
+                    border-bottom: solid 1px #b5833b;
                 }
 
                 &:hover,&:active,&.active {
 
                     a {
-                        background: #f1f1f1;
-                        color: #df1e31;
-                        font-weight: bold;
+                        background: #292929;
+                        color: #ff4719;
+
+                        i,svg {
+                            color: #ff4719;
+                            fill: #ff4719;
+                        }
                     }
                 }
 
@@ -180,14 +185,14 @@
                         position: initial;
                         margin-left: 10px;
                         transform: translateY(0px);
-                        background: #308e44;
-                        color: #ffffff;
+                        background: linear-gradient(to right,#4ffc21 0%,#09d217 99%);
+                        color: #000000;
                     }
 
                     i {
                         font-size: 22px;
                         top: 10px;
-                        color: #df1e31;
+                        color: #ffc13c;
 
                         &.fa-clipboard,&.fa-mobile-alt {
                             left: 21px;
@@ -213,12 +218,16 @@
             &:hover {
 
                 a {
-                    background: #f1f1f1;
-                    color: #de1e30;
-                    font-weight: bold;
+                    background: #292929;
+                    color: #ff4719;
 
                     .total {
-                        color: #de1e30;
+                        color: #ff4719;
+                    }
+
+                    i,svg {
+                        color: #ff4719;
+                        fill: #ff4719;
                     }
                 }
             }
@@ -230,12 +239,16 @@
                 }
 
                 a {
-                    background: #f1f1f1;
-                    color: #de1e30;
-                    font-weight: bold;
+                    background: #292929;
+                    color: #ff4719;
 
                     .total {
-                        color: #de1e30;
+                        color: #ff4719;
+                    }
+
+                    i,svg {
+                        color: #ff4719;
+                        fill: #ff4719;
                     }
                 }
             }
@@ -253,9 +266,8 @@
 
             a {
                 display: block;
-                color: #1b1b1b;
+                color: #ffc13c;
                 width: 94%;
-                background: #ffffff;
                 height: 45px;
                 line-height: 45px;
                 font-size: 14px;
@@ -270,7 +282,7 @@
                     top: 12px;
                     left: 18px;
                     font-size: 18px;
-                    color: #de1e30;
+                    color: #ffc13c;
 
                     &::before {
                         margin: 0px auto;
@@ -303,7 +315,7 @@
                     position: absolute;
                     left: 18px;
                     top: 12px;
-                    fill: #de1e30;
+                    fill: #ffc13c;
                 }
 
                 //字後小框
@@ -312,7 +324,7 @@
                     right: 10px;
                     top: 0px;
                     font-size: 13px;
-                    color: #1b1b1b;
+                    color: #fb770a;
                 }
 
                 //LIVE小框
@@ -326,8 +338,8 @@
                     transform: translateY(-50%);
                     right: 42px;
                     font-size: 12px;
-                    background: #15ae56;
-                    color: #ffffff;
+                    background: linear-gradient(to right,#4ffc21 0%,#09d217 99%);
+                    color: #000000;
                     padding: 0px 4px;
                     border-radius: 3px;
                 }
@@ -338,11 +350,11 @@
                 width: calc(100% - 50px);
                 margin: 0px auto;
                 height: 30px;
-                background: #f5f6f7;
+                background: #292929;
                 line-height: 30px;
                 padding-left: 30px;
                 font-size: 12px;
-                color: #424242;
+                color: #d78f3a;
                 cursor: pointer;
                 overflow: hidden;
 
@@ -357,7 +369,8 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: #dedede;
+                    background: #3c3c3c;
+                    color: #ffc13c;
                 }
 
                 span {

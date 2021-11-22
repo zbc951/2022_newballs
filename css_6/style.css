@@ -82,11 +82,11 @@ header {
   width: 100%;
   min-width: 1480px;
   height: 110px;
-  background: #ffffff;
+  background: #181818;
   position: relative;
   z-index: 10;
   overflow: hidden;
-  box-shadow: 0px 2px 6px 0px #00000050;
+  border-bottom: solid 1px #ff4719;
 }
 header.mine {
   min-width: 1200px;
@@ -94,13 +94,13 @@ header.mine {
 header .top {
   width: 100%;
   height: 25px;
-  background: #efefef;
+  background: #252525;
 }
 header .top .conversionBtn, header .top .controlBtn {
   float: left;
   width: auto;
   height: 100%;
-  color: #595959;
+  color: #fb770a;
   background: transparent;
   margin-left: 15px;
   font-size: 13px;
@@ -116,18 +116,18 @@ header .top .marqueeBox .fa-volume-up {
   position: absolute;
   left: -23px;
   top: 4px;
-  color: #de1e30;
+  color: #ffc13c;
 }
 header .top .marqueeBox marquee {
   line-height: 25px;
   font-size: 12px;
-  color: #de1e30;
+  color: #8f702d;
   overflow: visible;
 }
 header .top span {
   float: right;
   font-size: 12px;
-  color: #595959;
+  color: #8e7352;
   line-height: 25px;
   margin-right: 15px;
 }
@@ -181,6 +181,13 @@ header .top .threeCircle button:nth-of-type(5):hover, header .top .threeCircle b
   border-color: #de1e30;
   background: #ffffff;
 }
+header .top .threeCircle button:nth-of-type(6) {
+  background: #181818;
+}
+header .top .threeCircle button:nth-of-type(6):hover, header .top .threeCircle button:nth-of-type(6):active, header .top .threeCircle button:nth-of-type(6).active {
+  border-color: #ffc13c;
+  background: #181818;
+}
 header article {
   width: 100%;
   height: 85px;
@@ -193,7 +200,7 @@ header article .logo {
   font-weight: bolder;
   text-align: center;
   line-height: 85px;
-  color: #de1e30;
+  color: #ffc13c;
 }
 header article ul {
   float: left;
@@ -209,13 +216,14 @@ header article ul li a {
   padding: 0px 10px;
   height: 76px;
   line-height: 85px;
-  color: #393939;
+  color: #ffc13c;
   border-bottom: solid 5px transparent;
   font-size: 14px;
 }
 header article ul li a:hover, header article ul li a:active, header article ul li a.active {
-  border-color: #de1e30;
-  color: #de1e30;
+  border-color: #ff4719;
+  color: #ff4719;
+  font-weight: bold;
 }
 header article ul li a .fa-user {
   margin-right: 8px;
@@ -244,39 +252,39 @@ header article .logged .inputBox input {
   font-size: 14px;
   padding-left: 5px;
   border-radius: 3px;
-  border: solid 1px #cccccc;
-  background: #ffffff;
+  border: none;
+  background: #eaeaea;
   box-shadow: none;
-  color: #8d8d8d;
+  color: #141516;
 }
 header article .logged .inputBox input::placeholder {
-  color: #8d8d8d;
+  color: #141516;
 }
 header article .logged .inputBox .forget {
   position: absolute;
   left: 0px;
   bottom: -28px;
   font-size: 14px;
-  color: #de1e30;
+  color: #0bca17;
 }
 header article .logged .inputBox .remember {
   position: absolute;
   left: 18px;
   bottom: -28px;
   font-size: 14px;
-  color: #333333;
+  color: #ffb03f;
 }
 header article .logged .inputBox .remember .cube {
   left: -18px;
   top: -1px;
   background: transparent;
-  border-color: #ababab;
+  border-color: #ffb03f;
 }
 header article .logged .inputBox .remember .cube.active::before {
   background: url("../images/forCss_5/cubeArrow3.png") no-repeat;
 }
 header article .logged .loginBtn {
-  background: #de1e30;
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
   padding: 5px 14px;
   border-radius: 3px;
   border: solid 1px transparent;
@@ -287,14 +295,14 @@ header article .logged .loginBtn {
   box-shadow: none;
 }
 header article .logged .loginBtn:hover, header article .logged .loginBtn:active, header article .logged .loginBtn.active {
-  background: #bc0617;
+  background: #7c0013;
   color: #ffffff;
 }
 header article .logged .signupBtn {
-  background: #ffffff;
+  background: #18eb18;
   border-radius: 3px;
-  border: solid 1px #de1e30;
-  color: #de1e30;
+  border: none;
+  color: #000000;
   padding: 5px 14px;
   font-size: 14px;
   font-weight: bold;
@@ -302,7 +310,7 @@ header article .logged .signupBtn {
 }
 header article .logged .signupBtn:hover, header article .logged .signupBtn:active, header article .logged .signupBtn.active {
   border-color: transparent;
-  background: #de1e30;
+  background: #079607;
   color: #ffffff;
 }
 header article .logged .selectBox {
@@ -314,7 +322,7 @@ header article .logged .selectBox {
 header article .logged .selectBox .fa-globe {
   float: left;
   margin: 3px 0px 0px 0px;
-  color: #393939;
+  color: #ffc13c;
 }
 header article .logged .selectBox::after {
   content: "";
@@ -324,17 +332,17 @@ header article .logged .selectBox::after {
   height: 0px;
   border-style: solid;
   border-width: 6px 5px 0px 5px;
-  border-color: #de1e30 transparent;
+  border-color: #ffd973 transparent;
   top: 8px;
   right: 10px;
 }
 header article .logged .selectBox select {
   width: 110px;
   padding: 3px 0px 3px 5px;
-  background: #ffffff;
-  border: solid 1px #dddddd;
+  background: #101010;
+  border: solid 1px #a88335;
   border-radius: 3px;
-  color: #595959;
+  color: #ffffff;
   font-size: 12px;
   appearance: none;
   -moz-appearance: none;
@@ -353,35 +361,35 @@ header article .loggedIn.display {
 }
 header article .loggedIn p {
   display: inline-block;
-  color: #666666;
+  color: #ffc13c;
   font-size: 13px;
   margin: 10px 5px 0px 0px;
 }
 header article .loggedIn p.quota {
   padding: 7px 7px 5px;
   border-radius: 3px;
-  background: #ffffff;
-  color: #666666;
-  border: solid 1px #dddddd;
+  background: #eaeaea;
+  color: #141516;
+  border: none;
 }
 header article .loggedIn p.quota span {
-  color: #de1e30;
+  color: #ff4719;
 }
 header article .loggedIn p span {
-  color: #666666;
+  color: #fb770a;
   padding-left: 8px;
 }
 header article .loggedIn button {
   border-radius: 3px;
   padding: 4px 15px;
-  background: #de1e30;
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
   color: #ffffff;
   font-size: 14px;
   box-shadow: none;
   border: solid 1px transparent;
 }
 header article .loggedIn button:hover, header article .loggedIn button:active, header article .loggedIn button.active {
-  background: #bb0a1b;
+  background: #7c0013;
   color: #ffffff;
 }
 header article .loggedIn .selectBox {
@@ -393,7 +401,7 @@ header article .loggedIn .selectBox {
 header article .loggedIn .selectBox .fa-globe {
   float: left;
   margin: 3px 3px 0px 0px;
-  color: #393939;
+  color: #ffc13c;
 }
 header article .loggedIn .selectBox::after {
   content: "";
@@ -403,17 +411,17 @@ header article .loggedIn .selectBox::after {
   height: 0px;
   border-style: solid;
   border-width: 6px 5px 0px 5px;
-  border-color: #de1e30 transparent;
+  border-color: #ffd973 transparent;
   top: 8px;
   right: 10px;
 }
 header article .loggedIn .selectBox select {
   width: 110px;
   padding: 3px 0px 3px 5px;
-  background: #ffffff;
-  border: solid 1px #dddddd;
+  background: #101010;
+  border: solid 1px #a88335;
   border-radius: 3px;
-  color: #666666;
+  color: #ffffff;
   font-size: 12px;
   appearance: none;
   -moz-appearance: none;
@@ -444,7 +452,7 @@ main .bg {
   height: 1000px;
   position: absolute;
   top: 0px;
-  background: #f0f0f0;
+  background: #101010;
   z-index: -999;
 }
 
@@ -458,7 +466,7 @@ main .bg {
   z-index: 6;
   scrollbar-width: thin;
   border-width: 1px 0px;
-  background: #ffffff;
+  background: #1b1b1b;
   margin-top: 15px;
 }
 .left::-webkit-scrollbar {
@@ -466,11 +474,11 @@ main .bg {
   background-color: transparent;
 }
 .left::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #1b1b1b;
   border-radius: 10px;
 }
 .left::-webkit-scrollbar-thumb {
-  background: #999999;
+  background: linear-gradient(to bottom, #ff4b33 0%, #d8001f 98%);
   border-radius: 10px;
 }
 .left.mine {
@@ -491,12 +499,13 @@ main .bg {
   height: 81px;
   margin: 0px auto 20px;
   background: url("../images/forCss_5/avatar_big.png");
+  filter: drop-shadow(0px 0px 1px #ffc13c);
 }
 .left.mine .minewindow .avater p {
-  color: #1b1b1b;
+  color: #ffc13c;
 }
 .left.mine .minewindow .avater p.joinday {
-  color: #454545;
+  color: #8e7352;
   font-size: 15px;
   padding-top: 5px;
 }
@@ -504,10 +513,10 @@ main .bg {
   display: inline-block;
   width: 36px;
   height: 17px;
-  background: linear-gradient(to right, #cd0e21 0%, #9d0514 100%);
+  background: linear-gradient(to right, #4ffc21 0%, #09d217 99%);
   position: relative;
   text-align: right;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   border-radius: 5px;
   margin: -3px 0px 0px 5px;
@@ -538,24 +547,24 @@ main .bg {
   font-size: 16px;
   text-align: center;
   background: transparent;
-  color: #333333;
+  color: #ffc13c;
   padding-top: 10px;
 }
 .left.mine .minewindow .threebut a:hover, .left.mine .minewindow .threebut a:active, .left.mine .minewindow .threebut a.active {
-  background: #df1e31;
-  color: #ffffff;
+  background: linear-gradient(to left, #e48b0c 0%, #ffc62a 99%);
+  color: #000000;
 }
 .left.mine .minewindow .threebut a:hover:nth-of-type(1) i, .left.mine .minewindow .threebut a:hover:nth-of-type(2) i, .left.mine .minewindow .threebut a:hover:nth-of-type(3) i, .left.mine .minewindow .threebut a:active:nth-of-type(1) i, .left.mine .minewindow .threebut a:active:nth-of-type(2) i, .left.mine .minewindow .threebut a:active:nth-of-type(3) i, .left.mine .minewindow .threebut a.active:nth-of-type(1) i, .left.mine .minewindow .threebut a.active:nth-of-type(2) i, .left.mine .minewindow .threebut a.active:nth-of-type(3) i {
-  color: #ffffff;
+  color: #000000;
 }
 .left.mine .minewindow .threebut a:nth-of-type(1) i {
-  color: #f9a622;
+  color: #ffc13c;
 }
 .left.mine .minewindow .threebut a:nth-of-type(2) i {
-  color: #3fa23d;
+  color: #ffc13c;
 }
 .left.mine .minewindow .threebut a:nth-of-type(3) i {
-  color: #4980e4;
+  color: #ffc13c;
 }
 .left.mine .minewindow .threebut a i {
   display: block;
@@ -567,12 +576,15 @@ main .bg {
   margin: 0px auto;
 }
 .left.mine ul li:nth-of-type(1), .left.mine ul li:nth-of-type(5), .left.mine ul li:nth-of-type(9) {
-  border-bottom: solid 1px #ebebeb;
+  border-bottom: solid 1px #b5833b;
 }
 .left.mine ul li:hover a, .left.mine ul li:active a, .left.mine ul li.active a {
-  background: #f1f1f1;
-  color: #df1e31;
-  font-weight: bold;
+  background: #292929;
+  color: #ff4719;
+}
+.left.mine ul li:hover a i, .left.mine ul li:hover a svg, .left.mine ul li:active a i, .left.mine ul li:active a svg, .left.mine ul li.active a i, .left.mine ul li.active a svg {
+  color: #ff4719;
+  fill: #ff4719;
 }
 .left.mine ul li a {
   border: solid 1px transparent;
@@ -588,13 +600,13 @@ main .bg {
   position: initial;
   margin-left: 10px;
   transform: translateY(0px);
-  background: #308e44;
-  color: #ffffff;
+  background: linear-gradient(to right, #4ffc21 0%, #09d217 99%);
+  color: #000000;
 }
 .left.mine ul li a i {
   font-size: 22px;
   top: 10px;
-  color: #df1e31;
+  color: #ffc13c;
 }
 .left.mine ul li a i.fa-clipboard, .left.mine ul li a i.fa-mobile-alt {
   left: 21px;
@@ -605,23 +617,29 @@ main .bg {
   font-size: 20px;
 }
 .left ul li:hover a {
-  background: #f1f1f1;
-  color: #de1e30;
-  font-weight: bold;
+  background: #292929;
+  color: #ff4719;
 }
 .left ul li:hover a .total {
-  color: #de1e30;
+  color: #ff4719;
+}
+.left ul li:hover a i, .left ul li:hover a svg {
+  color: #ff4719;
+  fill: #ff4719;
 }
 .left ul li:active .smallList, .left ul li.active .smallList {
   display: block;
 }
 .left ul li:active a, .left ul li.active a {
-  background: #f1f1f1;
-  color: #de1e30;
-  font-weight: bold;
+  background: #292929;
+  color: #ff4719;
 }
 .left ul li:active a .total, .left ul li.active a .total {
-  color: #de1e30;
+  color: #ff4719;
+}
+.left ul li:active a i, .left ul li:active a svg, .left ul li.active a i, .left ul li.active a svg {
+  color: #ff4719;
+  fill: #ff4719;
 }
 .left ul li.onLive .live {
   display: block;
@@ -631,9 +649,8 @@ main .bg {
 }
 .left ul li a {
   display: block;
-  color: #1b1b1b;
+  color: #ffc13c;
   width: 94%;
-  background: #ffffff;
   height: 45px;
   line-height: 45px;
   font-size: 14px;
@@ -647,7 +664,7 @@ main .bg {
   top: 12px;
   left: 18px;
   font-size: 18px;
-  color: #de1e30;
+  color: #ffc13c;
 }
 .left ul li a i::before {
   margin: 0px auto;
@@ -673,14 +690,14 @@ main .bg {
   position: absolute;
   left: 18px;
   top: 12px;
-  fill: #de1e30;
+  fill: #ffc13c;
 }
 .left ul li a .total {
   position: absolute;
   right: 10px;
   top: 0px;
   font-size: 13px;
-  color: #1b1b1b;
+  color: #fb770a;
 }
 .left ul li a .live {
   display: none;
@@ -692,8 +709,8 @@ main .bg {
   transform: translateY(-50%);
   right: 42px;
   font-size: 12px;
-  background: #15ae56;
-  color: #ffffff;
+  background: linear-gradient(to right, #4ffc21 0%, #09d217 99%);
+  color: #000000;
   padding: 0px 4px;
   border-radius: 3px;
 }
@@ -702,11 +719,11 @@ main .bg {
   width: calc(100% - 50px);
   margin: 0px auto;
   height: 30px;
-  background: #f5f6f7;
+  background: #292929;
   line-height: 30px;
   padding-left: 30px;
   font-size: 12px;
-  color: #424242;
+  color: #d78f3a;
   cursor: pointer;
   overflow: hidden;
 }
@@ -719,7 +736,8 @@ main .bg {
   border-radius: 0px 0px 5px 5px;
 }
 .left ul li .smallList:hover, .left ul li .smallList:active, .left ul li .smallList.active {
-  background: #dedede;
+  background: #3c3c3c;
+  color: #ffc13c;
 }
 .left ul li .smallList span {
   float: right;
@@ -9462,7 +9480,7 @@ main .bg {
 html {
   width: 100%;
   height: 100%;
-  background: #f0f0f0;
+  background: #101010;
 }
 html body {
   width: 100%;
@@ -9475,10 +9493,10 @@ html body::-webkit-scrollbar {
   background-color: transparent;
 }
 html body::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #1b1b1b;
   border-radius: 10px;
 }
 html body::-webkit-scrollbar-thumb {
-  background: #999999;
+  background: linear-gradient(to bottom, #ff4b33 0%, #d8001f 98%);
   border-radius: 10px;
 }
