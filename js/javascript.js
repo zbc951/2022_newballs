@@ -128,6 +128,14 @@ $(function(){
     })
 });
 
+//直播頁按鈕
+$(function(){
+    $('.livelist .innerList button').click(function(){
+        $(this).toggleClass('active');
+        $(this).closest('li').addClass('active');
+    })
+})
+
     //首頁
 
 //首頁時間列
