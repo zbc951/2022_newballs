@@ -754,24 +754,24 @@ main .bg {
   z-index: 6;
   scrollbar-width: thin;
   margin-top: 15px;
-  background: #ffffff;
+  background: #252525;
 }
 .right::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .right::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #1b1b1b;
   border-radius: 10px;
 }
 .right::-webkit-scrollbar-thumb {
-  background: #999999;
+  background: linear-gradient(to bottom, #ff4b33 0%, #d8001f 98%);
   border-radius: 10px;
 }
 .right .statusWindow {
   width: 100%;
   height: 120px;
-  background: #ffffff;
+  background: #252525;
   position: relative;
   margin-bottom: 10px;
 }
@@ -782,11 +782,11 @@ main .bg {
   height: 10px;
   bottom: -10px;
   left: 0px;
-  background: #f0f0f0;
+  background: #101010;
 }
 .right .statusWindow p {
-  background: #ffffff;
-  color: #393939;
+  background: #252525;
+  color: #ffc13c;
   padding: 7px 15px;
   font-size: 12px;
   position: relative;
@@ -796,7 +796,7 @@ main .bg {
   position: absolute;
   width: 94%;
   height: 1px;
-  background: #ebebeb;
+  background: #b5833b;
   bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
@@ -809,7 +809,7 @@ main .bg {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  background: #de1e30;
+  background: #ff4719;
 }
 .right .statusWindow ul {
   position: absolute;
@@ -823,9 +823,9 @@ main .bg {
   padding: 5px 15px;
   font-size: 14px;
   position: relative;
-  color: #454545;
+  color: #fb770a;
   margin-bottom: 3px;
-  border-bottom: solid 1px #ededed;
+  border-bottom: solid 1px #b5833b;
 }
 .right .statusWindow ul li:last-child {
   margin: 0px;
@@ -833,20 +833,20 @@ main .bg {
 .right .statusWindow ul li span {
   float: right;
   font-size: 12px;
-  color: #08b30c;
+  color: #0ad317;
 }
 .right .statusWindow ul li span.onWait {
-  color: #666666;
+  color: #ababab;
 }
 .right .statusWindow ul li span.fail {
-  color: #f42a2a;
+  color: #ff361b;
 }
 .right .statusWindow ul li button {
   float: right;
   width: 15px;
   height: 15px;
   background: transparent;
-  border: solid 1px #8d8d8d;
+  border: solid 1px #ababab;
   border-radius: 15px;
   margin-left: 15px;
   position: relative;
@@ -858,7 +858,7 @@ main .bg {
   position: absolute;
   width: 1px;
   height: 7px;
-  background: #8d8d8d;
+  background: #ababab;
   transform: rotate(45deg);
   top: 3px;
   right: 6px;
@@ -868,7 +868,7 @@ main .bg {
   position: absolute;
   width: 1px;
   height: 7px;
-  background: #8d8d8d;
+  background: #ababab;
   transform: rotate(-45deg);
   top: 3px;
   left: 6px;
@@ -876,13 +876,13 @@ main .bg {
 .right .liveWindow {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #252525;
   text-align: center;
   position: relative;
 }
 .right .liveWindow .title {
-  background: #ffffff;
-  color: #393939;
+  background: #252525;
+  color: #ffc13c;
   padding: 7px 15px;
   font-size: 12px;
   text-align: left;
@@ -893,7 +893,7 @@ main .bg {
   position: absolute;
   width: 94%;
   height: 1px;
-  background: #ebebeb;
+  background: #b5833b;
   bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
@@ -906,7 +906,7 @@ main .bg {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  background: #de1e30;
+  background: #ff4719;
 }
 .right .liveWindow .teamWindow {
   width: 100%;
@@ -929,7 +929,7 @@ main .bg {
 }
 .right .liveWindow .teamWindow .leftTeam p, .right .liveWindow .teamWindow .rightTeam p {
   font-size: 12px;
-  color: #5a5a5a;
+  color: #ababab;
   line-height: 20px;
 }
 .right .liveWindow .teamWindow .score {
@@ -943,10 +943,10 @@ main .bg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #8d8d8d;
+  color: #ffffff;
 }
 .right .liveWindow .teamWindow .score p span {
-  color: #de1e30;
+  color: #ff4719;
   font-size: 12px;
 }
 .right .liveWindow .liveShow {
@@ -972,17 +972,19 @@ main .bg {
   background: #ababab;
 }
 .right .room .twobut button {
-  width: 49.5%;
+  width: 48.5%;
   height: 100%;
-  background: #f4f4f4;
-  color: #7f7f7f;
+  background: #252525;
+  color: #ffc13c;
   font-size: 14px;
   float: left;
   border-radius: 3px 3px 0px 0px;
+  border: solid 1px #775017;
+  border-bottom: none;
 }
 .right .room .twobut button:hover, .right .room .twobut button:active, .right .room .twobut button.active {
-  background: #e6e6e6;
-  color: #393939;
+  background: #181818;
+  color: #ff4719;
 }
 .right .room .twobut button:last-child {
   float: right;
@@ -994,8 +996,8 @@ main .bg {
 .right .room .onebut button {
   width: 100%;
   height: 100%;
-  background: #ffffff;
-  color: #333333;
+  background: #181818;
+  color: #ff4719;
   font-size: 12px;
   text-align: left;
   padding-left: 15px;
@@ -1006,7 +1008,7 @@ main .bg {
   position: absolute;
   width: 96%;
   height: 1px;
-  background: #ebebeb;
+  background: #b5833b;
   bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
@@ -1019,7 +1021,7 @@ main .bg {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  background: #de1e30;
+  background: #ff4719;
 }
 .right .room .livelist {
   display: none;
@@ -1029,17 +1031,20 @@ main .bg {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
+  box-sizing: border-box;
+  border: solid 1px #775017;
+  border-width: 0px 1px;
 }
 .right .room .livelist::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .right .room .livelist::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #181818;
   border-radius: 10px;
 }
 .right .room .livelist::-webkit-scrollbar-thumb {
-  background: #999999;
+  background: linear-gradient(to bottom, #ff4b33 0%, #d8001f 98%);
   border-radius: 10px;
 }
 .right .room .livelist.open {
@@ -1054,42 +1059,41 @@ main .bg {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background: #ffffff;
-  border-bottom: solid 1px #ebebeb;
+  background: #252525;
+  border-bottom: solid 1px #b5833b;
 }
 .right .room .livelist ul li:nth-of-type(1) {
   margin-top: 5px;
 }
 .right .room .livelist ul li:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 .right .room .livelist ul li:hover::before, .right .room .livelist ul li:active::before {
   transform: rotate(90deg);
+  border-color: transparent #ff4719;
 }
 .right .room .livelist ul li:hover .gameName, .right .room .livelist ul li:active .gameName {
-  color: #de1e30;
-  background: #f1f1f1;
+  color: #ff4719;
+  background: #3c3c3c;
 }
 .right .room .livelist ul li:hover .games, .right .room .livelist ul li:active .games {
-  color: #de1e30;
+  color: #ff4719;
 }
 .right .room .livelist ul li.active {
   height: auto;
-  border-color: #ffffff;
-  background: #ffffff;
-}
-.right .room .livelist ul li.active:hover .gameName {
-  background: none;
+  background: #3c3c3c;
 }
 .right .room .livelist ul li.active::before {
   transform: rotate(90deg);
+  border-color: transparent #ff4719;
 }
 .right .room .livelist ul li.active .gameName {
-  color: #de1e30;
-  box-shadow: 0px 0px 0px 1px #df1e31 inset;
+  color: #ff4719;
+  background: #3c3c3c;
+  border-bottom: solid 1px #b5833b;
 }
 .right .room .livelist ul li.active .games {
-  color: #de1e30;
+  color: #ff4719;
 }
 .right .room .livelist ul li::before {
   content: "";
@@ -1098,7 +1102,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 7px 0px 7px 8px;
-  border-color: transparent #de1e30;
+  border-color: transparent #ffd973;
   right: 25px;
   top: 8px;
   transition: 0.3s all;
@@ -1107,7 +1111,7 @@ main .bg {
   display: block;
   width: 100%;
   height: 30px;
-  color: #1b1b1b;
+  color: #ffc13c;
   font-size: 13px;
   box-sizing: border-box;
   padding-left: 25px;
@@ -1116,7 +1120,7 @@ main .bg {
 .right .room .livelist ul li .games {
   font-size: 13px;
   font-weight: bold;
-  color: #1b1b1b;
+  color: #fb770a;
   position: absolute;
   right: 60px;
   top: 0px;
@@ -1124,7 +1128,7 @@ main .bg {
 .right .room .livelist ul li .innerList {
   width: 96%;
   height: 70px;
-  background: #f1f1f1;
+  background: #181818;
   position: relative;
   cursor: default;
   border-radius: 5px;
@@ -1141,17 +1145,17 @@ main .bg {
   top: 50%;
   transform: translateY(-50%);
   font-size: 12px;
-  color: #1b1b1b;
+  color: #ababab;
 }
 .right .room .livelist ul li .innerList p span {
   font-weight: bold;
-  color: #de1e30;
+  color: #ffc13c;
 }
 .right .room .livelist ul li .innerList p span .situation {
   font-weight: normal;
   float: right;
   margin-right: 20px;
-  color: #595959;
+  color: #8e7352;
 }
 .right .room .livelist ul li .innerList p span .situation.onLive {
   position: relative;
@@ -1174,15 +1178,13 @@ main .bg {
   bottom: 0px;
   width: 70px;
   height: 30px;
-  background: #ffffff;
+  background: #ffbd38;
   border-radius: 3px;
-  box-shadow: 1px 2px 8px 0px #00000049;
-  color: #ce1427;
+  color: #000000;
 }
 .right .room .livelist ul li .innerList p button:hover, .right .room .livelist ul li .innerList p button:active, .right .room .livelist ul li .innerList p button.active {
-  background: #de1e30;
+  background: #ff4719;
   color: #ffffff;
-  box-shadow: none;
 }
 .right .room .bettingStatus {
   display: none;
@@ -1192,18 +1194,21 @@ main .bg {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  background: #e6e6e6;
+  background: #181818;
+  border: solid 1px #775017;
+  box-sizing: border-box;
+  border-width: 0px 1px;
 }
 .right .room .bettingStatus::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .right .room .bettingStatus::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #181818;
   border-radius: 10px;
 }
 .right .room .bettingStatus::-webkit-scrollbar-thumb {
-  background: #999999;
+  background: linear-gradient(to bottom, #ff4b33 0%, #d8001f 98%);
   border-radius: 10px;
 }
 .right .room .bettingStatus.open {
@@ -2647,7 +2652,7 @@ main .bg {
   border-collapse: inherit;
 }
 .bettingBoard:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .bettingBoard.fail {
   position: relative;
@@ -2663,38 +2668,41 @@ main .bg {
   display: block;
 }
 .bettingBoard tr:nth-of-type(1) td:nth-of-type(1) {
-  color: #a9a9a9;
+  color: #fb770a;
 }
 .bettingBoard tr:nth-of-type(2) td:nth-of-type(1) {
-  color: #333333;
+  color: #ababab;
+}
+.bettingBoard tr:nth-last-of-type(2) td {
+  border-bottom: none;
 }
 .bettingBoard tr td {
   width: 50%;
   height: auto;
   padding: 7px;
-  color: #757575;
+  color: #ababab;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
-  border-color: #e6e6e6;
+  border-color: #181818;
   vertical-align: middle;
-  background: #ffffff;
+  background: #292929;
   font-size: 12px;
 }
 .bettingBoard tr td.waiting {
-  color: #212121;
+  color: #8f702d;
 }
 .bettingBoard tr td.sus {
-  color: #08b30c;
+  color: #0ad317;
 }
 .bettingBoard tr td.listName {
   padding: 15px 6px;
 }
 .bettingBoard tr td.listName .vs {
-  color: #df1e31;
+  color: #ffffff;
   margin: 0px 5px;
 }
 .bettingBoard tr td.listName .odds {
-  color: #f29613;
+  color: #ffc13c;
   margin-left: 5px;
 }
 .bettingBoard tr td:nth-of-type(odd) {
@@ -2714,8 +2722,8 @@ main .bg {
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 10px 0px;
-  color: #757575;
-  background: #efefef;
+  color: #1b1b1b;
+  background: #bfbfbf;
   box-shadow: 1px 2px 5px 0px #00000035;
 }
 
@@ -2723,35 +2731,35 @@ main .bg {
   width: 96%;
   height: auto;
   margin: 2% auto 0px;
-  border: solid 1px #e3e3e3;
+  border: solid 1px #252525;
 }
 .conversionBoard tr {
   text-align: center;
 }
 .conversionBoard tr:nth-of-type(1) {
-  background: #f8f8f8;
+  background: #353535;
 }
 .conversionBoard tr:nth-of-type(1) td:nth-of-type(2) {
-  color: #1f6ee5;
+  color: #ff4719;
 }
 .conversionBoard tr:nth-of-type(2) {
-  background: #f2f2f2;
+  background: #3c3c3c;
 }
 .conversionBoard tr:nth-of-type(2) td:nth-of-type(1) {
-  color: #308e44;
+  color: #0bca17;
 }
 .conversionBoard tr td {
   vertical-align: middle;
-  border: solid 1px #e3e3e3;
+  border: solid 1px #252525;
   height: 45px;
   width: 7%;
   font-size: 13px;
   line-height: 15px;
-  color: #1b1b1b;
+  color: #b27a2b;
 }
 .conversionBoard tr td.title {
   width: 9%;
-  background: #ffffff;
+  background: #2f2f2f;
 }
 
 .bettingRemind {
@@ -5195,11 +5203,11 @@ main .bg {
   background-color: transparent;
 }
 .middle::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #101010;
   border-radius: 10px;
 }
 .middle::-webkit-scrollbar-thumb {
-  background: #999999;
+  background: linear-gradient(to bottom, #ff4b33 0%, #d8001f 98%);
   border-radius: 10px;
 }
 .middle .mainBox {
@@ -5304,18 +5312,17 @@ main .bg {
 .hideboard {
   width: 1260px;
   height: 80px;
-  background: #f0f0f0;
+  background: #101010;
   position: absolute;
   z-index: 5;
   left: 280px;
   top: 0px;
-  box-shadow: -5px 0px 0px 0px #f0f0f0;
 }
 
 .topfix {
   width: calc(100% - 660px);
   height: 50px;
-  background: #ffffff;
+  background: #252525;
   position: absolute;
   top: 15px;
   left: 280px;
@@ -5337,7 +5344,7 @@ main .bg {
   display: block;
 }
 .topfix .nor i {
-  color: #de1e30;
+  color: #ffc13c;
   font-size: 18px;
   margin: 0px 6px 0px 12px;
   transform: translateY(2px);
@@ -5347,11 +5354,11 @@ main .bg {
   height: 18px;
   margin: 0px 6px 0px 12px;
   transform: translateY(4px);
-  fill: #de1e30;
+  fill: #ffc13c;
 }
 .topfix .nor .gameName {
   display: inline-block;
-  color: #333333;
+  color: #ff4719;
   font-size: 13px;
 }
 .topfix .nor .reWeb {
@@ -5368,24 +5375,24 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 8px 6px 0px 6px;
-  border-color: #a4a4a4 transparent;
+  border-color: #ffd973 transparent;
   right: 10px;
   top: 22px;
   pointer-events: none;
 }
 .topfix .nor .reWeb select {
-  background: #ffffff;
-  color: #666666;
+  background: #101010;
+  color: #ffffff;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding: 5px 30px 4px 5px;
-  border: solid 1px #cccccc;
+  border: solid 1px #a88335;
   font-size: 12px;
 }
 .topfix .nor .reWeb .clock {
   position: absolute;
-  background: #5c6d79;
+  background: #3c3c3c;
   top: 50%;
   right: -40px;
   width: 30px;
@@ -5394,7 +5401,7 @@ main .bg {
   line-height: 24px;
   text-align: center;
   border-radius: 3px;
-  color: #fafafa;
+  color: #ffc13c;
 }
 .topfix .nor .reWeb .reBtn {
   position: absolute;
@@ -5403,10 +5410,10 @@ main .bg {
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  border: solid 1px #de1e30;
+  border: solid 1px #a88335;
   border-radius: 20px;
   cursor: pointer;
-  background: #ffffff;
+  background: #101010;
 }
 .topfix .nor .reWeb .reBtn i {
   font-size: 14px;
@@ -5415,14 +5422,14 @@ main .bg {
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0px;
-  color: #de1e30;
+  color: #ffc13c;
 }
 .topfix .nor .reWeb .reBtn:hover, .topfix .nor .reWeb .reBtn:active, .topfix .nor .reWeb .reBtn.active {
-  background: #de1e30;
-  border-color: #de1e30;
+  background: #ffbd38;
+  border-color: #ffbd38;
 }
 .topfix .nor .reWeb .reBtn:hover i, .topfix .nor .reWeb .reBtn:active i, .topfix .nor .reWeb .reBtn.active i {
-  color: #ffffff;
+  color: #000000;
 }
 .topfix .nor .kind, .topfix .nor .sort, .topfix .nor .chooseLeague {
   float: right;
@@ -5439,28 +5446,28 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 8px 6px 0px 6px;
-  border-color: #df1e31 transparent;
+  border-color: #ffd973 transparent;
   right: 10px;
   top: 20px;
   pointer-events: none;
 }
 .topfix .nor .kind select, .topfix .nor .sort select, .topfix .nor .chooseLeague select {
-  background: #ffffff;
-  color: #666666;
+  background: #101010;
+  color: #ffffff;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding: 5px 30px 3px 5px;
-  border: solid 1px #cccccc;
+  border: solid 1px #a88335;
 }
 .topfix .nor .kind select span, .topfix .nor .sort select span, .topfix .nor .chooseLeague select span {
   display: none;
 }
 .topfix .nor .chooseLeague span {
-  background: #ffffff;
-  color: #666666;
+  background: #101010;
+  color: #ffffff;
   padding: 7px 30px 4px 5px;
-  border: solid 1px #cccccc;
+  border: solid 1px #a88335;
   cursor: pointer;
 }
 .topfix .nor .timeSelect {
@@ -5478,7 +5485,7 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 10px 13px 10px 0px;
-  border-color: transparent #8f8f8f;
+  border-color: transparent #ffd973;
   cursor: pointer;
   transform: translateY(4px);
   transform-origin: 10px 32px;
@@ -5492,13 +5499,13 @@ main .bg {
 .topfix .nor .timeSelect .date {
   display: inline-block;
   margin: 0px 10px;
-  color: #333333;
+  color: #ffffff;
   cursor: pointer;
   position: relative;
 }
 .topfix .nor .timeSelect .date .total {
   display: inline-block;
-  background: #5c6d79;
+  background: #3c3c3c;
   border-radius: 3px;
   margin-left: 10px;
   line-height: 22px;
@@ -5506,14 +5513,14 @@ main .bg {
   text-align: center;
 }
 .topfix .nor .timeSelect .date .total span {
-  color: #ffffff;
+  color: #ffc13c;
 }
 .topfix .nor .timeSelect .date .arrow {
   display: inline-block;
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-color: #616161 transparent;
+  border-color: #b27a2b transparent;
   border-width: 8px 6px 0px 6px;
   margin-left: 10px;
 }
@@ -5524,10 +5531,11 @@ main .bg {
   top: 50px;
   width: 143px;
   height: auto;
-  background: #ffffff;
+  background: #1b1b1b;
   line-height: 30px;
   border-radius: 0px 0px 3px 3px;
-  box-shadow: 0px 0px 5px 0px #00000017;
+  border: solid 1px #a88335;
+  border-top: none;
 }
 .topfix .nor .timeSelect .date .moreTimeList.display {
   display: block;
@@ -5535,36 +5543,40 @@ main .bg {
 .topfix .nor .timeSelect .date .moreTimeList li {
   text-align: center;
   font-size: 14px;
-  color: #666666;
+  color: #d78f3a;
   width: 96%;
   height: auto;
   margin: 5px auto;
   border-radius: 3px;
 }
 .topfix .nor .timeSelect .date .moreTimeList li:hover, .topfix .nor .timeSelect .date .moreTimeList li:active, .topfix .nor .timeSelect .date .moreTimeList li.active {
-  background: #dedede;
+  background: #3c3c3c;
+  color: #ffc13c;
+}
+.topfix .nor .timeSelect .date .moreTimeList li:hover .total, .topfix .nor .timeSelect .date .moreTimeList li:active .total, .topfix .nor .timeSelect .date .moreTimeList li.active .total {
+  background: #1b1b1b;
 }
 .topfix .nor .timeSelect .date .moreTimeList li .total {
-  background: #5c6d79;
+  background: #3c3c3c;
 }
 .topfix .nor .timeSelect .date .moreTimeList li .total span {
-  color: #ffffff;
+  color: #ffc13c;
 }
 .topfix .nor .timeSelect .smallBtn {
-  background: #f5f5f5;
-  color: #1b1b1b;
+  background: #101010;
+  color: #ffc13c;
   padding: 5px 10px 6px;
   border-radius: 3px;
   margin: 0px 3px;
-  box-shadow: 0px 2px 3px #00000049;
+  border: solid 1px #a88335;
 }
 .topfix .nor .timeSelect .smallBtn:nth-of-type(1) {
   margin-left: 10px;
 }
 .topfix .nor .timeSelect .smallBtn:hover, .topfix .nor .timeSelect .smallBtn:active, .topfix .nor .timeSelect .smallBtn.active {
-  background: #de1e30;
-  color: #ffffff;
-  box-shadow: none;
+  background: #ffbd38;
+  color: #000000;
+  border-color: transparent;
 }
 .topfix .inn {
   display: none;
@@ -5587,8 +5599,8 @@ main .bg {
   display: none;
 }
 .topfix .inn li:hover button, .topfix .inn li:active button, .topfix .inn li.active button {
-  color: #df1e31;
-  background: #ffffff;
+  color: #ff4719;
+  font-weight: bold;
 }
 .topfix .inn li:hover button::before, .topfix .inn li:active button::before, .topfix .inn li.active button::before {
   content: "";
@@ -5597,14 +5609,14 @@ main .bg {
   left: 0px;
   width: 100%;
   height: 2px;
-  background: #df1e31;
+  background: #ff4719;
 }
 .topfix .inn li button {
   width: 80px;
   height: 48px;
   background: transparent;
   position: relative;
-  color: #333333;
+  color: #b27a2b;
   padding: 0px 8px;
   margin-right: 1px;
   border-radius: 3px;
@@ -5616,7 +5628,7 @@ main .bg {
   transform: translateY(-50%);
   width: 1px;
   height: 30px;
-  background: #dfdfdf;
+  background: #a88335;
   right: -1px;
 }
 .topfix .inn .back {
@@ -5624,11 +5636,10 @@ main .bg {
   top: 50%;
   transform: translateY(-50%);
   padding: 6px 8px 8px 21px;
-  background: #f5f5f5;
-  color: #333333;
+  background: #ffbd38;
+  color: #000000;
   border-radius: 3px;
   left: 15px;
-  box-shadow: 1px 2px 5px 0px #00000049;
 }
 .topfix .inn .back::before {
   content: "";
@@ -5639,13 +5650,12 @@ main .bg {
   transform: translateY(-50%);
   left: 6px;
   border-style: solid;
-  border-color: transparent #df1e31;
+  border-color: transparent #000000;
   border-width: 6px 10px 6px 0px;
 }
 .topfix .inn .back:hover, .topfix .inn .back:active, .topfix .inn .back.active {
   color: #ffffff;
-  background: #df1e31;
-  box-shadow: none;
+  background: #ff4719;
 }
 .topfix .inn .back:hover::before, .topfix .inn .back:active::before, .topfix .inn .back.active::before {
   border-color: transparent #ffffff;
@@ -5658,7 +5668,7 @@ main .bg {
   font-size: 15px;
   height: 48px;
   line-height: 50px;
-  color: #333333;
+  color: #b27a2b;
   cursor: pointer;
   padding: 0px 10px;
   text-align: center;
@@ -5666,14 +5676,14 @@ main .bg {
   position: relative;
 }
 .topfix .teach li:hover, .topfix .teach li:active, .topfix .teach li.active {
-  color: #df1e31;
+  color: #ff4719;
 }
 .topfix .teach li:hover::before, .topfix .teach li:active::before, .topfix .teach li.active::before {
   content: "";
   position: absolute;
   bottom: -2px;
   left: 0px;
-  background: #df1e31;
+  background: #ff4719;
   width: 100%;
   height: 2px;
 }
@@ -5686,7 +5696,7 @@ main .bg {
 .topfix .teach .line {
   width: 1px;
   height: 15px;
-  background: #dfdfdf;
+  background: #a88335;
   float: left;
   margin-top: 16px;
 }
@@ -5707,21 +5717,23 @@ main .bg {
   top: 60px;
   left: 280px;
   z-index: 5;
-  background: #f5f5f5;
+  background: #1b1b1b;
   scrollbar-width: thin;
   text-align: center;
-  box-shadow: 0px 0px 5px 0px #00000049;
+  border: solid 1px #a88335;
+  border-top: none;
+  box-sizing: border-box;
 }
 .chleague::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
 .chleague::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #1b1b1b;
   border-radius: 10px;
 }
 .chleague::-webkit-scrollbar-thumb {
-  background: #999999;
+  background: linear-gradient(to bottom, #ff4b33 0%, #d8001f 98%);
   border-radius: 10px;
 }
 .chleague.display {
@@ -5757,7 +5769,7 @@ main .bg {
   position: relative;
   padding: 6px 5px;
   font-size: 13px;
-  color: #595959;
+  color: #b27a2b;
 }
 .chleague ul li p .cube {
   left: -20px;
@@ -5962,12 +5974,13 @@ main .bg {
   width: 800px;
   height: 375px;
   border-radius: 3px;
-  background: #ededed;
+  background: #181818;
   position: fixed;
   z-index: 20;
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
+  border: solid 1px #ffc13c;
 }
 .conversionBox.display {
   display: block;
@@ -5977,8 +5990,8 @@ main .bg {
   height: 40px;
   line-height: 42px;
   text-align: center;
-  background: #ffffff;
-  color: #df1e31;
+  background: linear-gradient(to right, #fec026 0%, #ffae00 100%);
+  color: #ffc13c;
   border-radius: 3px 3px 0px 0px;
   font-size: 14px;
   font-weight: bold;
@@ -5986,21 +5999,20 @@ main .bg {
 .conversionBox .innerBox {
   width: 94%;
   height: 285px;
-  background: #ffffff;
+  background: #252525;
   border-radius: 5px;
   overflow: hidden;
   margin: 3% auto;
-  border: solid 1px #d0d0d0;
 }
 .conversionBox .innerBox p {
-  color: #333333;
+  color: #ffc13c;
   padding: 12px 14px;
   font-size: 14px;
 }
 .conversionBox .innerBox .baseline {
   width: 96%;
   height: 1px;
-  background: #e3e3e3;
+  background: #a88335;
   margin: 0px auto;
 }
 .conversionBox button {
@@ -6008,11 +6020,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #ffffff;
-  border: solid 3px #de1e30;
+  background: #3c3c3c;
+  border: solid 3px #ffc13c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #ffffff;
+  box-shadow: 0px 0px 0px 5px #3c3c3c;
 }
 .conversionBox button::before {
   content: "";
@@ -6021,7 +6033,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(45deg);
 }
 .conversionBox button::after {
@@ -6031,7 +6043,7 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(-45deg);
 }
 
@@ -7790,25 +7802,27 @@ main .bg {
 .fixside .search {
   width: 200px;
   height: 55px;
-  background: #f2f2f2;
+  background: #1b1b1b;
   position: absolute;
   top: 0px;
   left: 65px;
   transition: 0.5s left;
-  box-shadow: -1px 0px 5px 0px #00000035;
   z-index: 2;
+  border: solid 1px #a88335;
+  border-bottom: none;
 }
 .fixside .search.open {
   left: -135px;
 }
 .fixside .search.open .searchbut:hover, .fixside .search.open .searchbut:active, .fixside .search.open .searchbut.active {
-  background: #de1e30;
+  background: #ffbd38;
+  border-color: transparent;
 }
 .fixside .search.open .searchbut:hover .fixsideimg, .fixside .search.open .searchbut:active .fixsideimg, .fixside .search.open .searchbut.active .fixsideimg {
   background-position-y: 100%;
 }
 .fixside .search.open .searchbut:hover span, .fixside .search.open .searchbut:active span, .fixside .search.open .searchbut.active span {
-  color: #ffffff;
+  color: #000000;
 }
 .fixside .search .searchbut {
   width: 55px;
@@ -7819,26 +7833,27 @@ main .bg {
   top: 0px;
   left: -60px;
   text-align: center;
-  background: #ffffff;
-  box-shadow: 0px 0px 5px 0px #00000050;
+  background: #1b1b1b;
+  border: solid 1px #a88335;
 }
 .fixside .search .searchbut:hover, .fixside .search .searchbut:active, .fixside .search .searchbut.active {
-  background: #de1e30;
+  background: #ffbd38;
+  border-color: transparent;
 }
 .fixside .search .searchbut:hover span, .fixside .search .searchbut:active span, .fixside .search .searchbut.active span {
-  color: #ffffff;
+  color: #000000;
 }
 .fixside .search .searchbut:hover .fixsideimg, .fixside .search .searchbut:active .fixsideimg, .fixside .search .searchbut.active .fixsideimg {
   background-position-y: 100%;
 }
 .fixside .search .searchbut span {
   font-size: 13px;
-  color: #393939;
+  color: #ffc13c;
 }
 .fixside .search .searchbut .fixsideimg {
   width: 30px;
   height: 29px;
-  background: url("../images/forCss_5/fixside_ic5.png") no-repeat;
+  background: url("../images/forCss_6/fixside_ic5.png") no-repeat;
   background-size: 500%;
   float: left;
   margin: 5px 5px 1px 11px;
@@ -7849,39 +7864,39 @@ main .bg {
   height: 26px;
   font-size: 16px;
   padding-left: 10px;
-  border: solid 1px #dddddd;
-  border-top: none;
+  border: solid 1px #a88335;
   border-radius: 3px;
   float: left;
   margin: 15px 0px 0px 10px;
-  background: #ffffff;
-  color: #595959;
+  background: #101010;
+  color: #ffffff;
 }
 .fixside .search input::placeholder {
   font-weight: bold;
-  color: #595959;
+  color: #ffffff;
   font-size: 14px;
 }
 .fixside .search button {
   width: 50px;
   height: 28px;
-  background: #de1e30;
-  color: #ffffff;
+  background: #ffbd38;
+  color: #000000;
   float: left;
   border-radius: 5px;
   font-size: 16px;
   margin: 16px 0px 16px 15px;
 }
 .fixside .search button:hover, .fixside .search button:active, .fixside .search button.active {
-  background: linear-gradient(to top, #d31c1c 0%, #bb092f 98%);
+  background: #ff4719;
+  color: #ffffff;
 }
 .fixside .search .searchbox {
   width: 200px;
   height: auto;
   float: left;
-  margin: -5px 0px 0px 0px;
+  margin: -5px 0px 0px -1px;
   overflow: hidden;
-  box-shadow: -1px 3px 8px 0px #00000050;
+  border: solid 1px #a88335;
 }
 .fixside .search .searchbox li {
   width: 100%;
@@ -7890,10 +7905,10 @@ main .bg {
   padding-left: 20px;
   position: relative;
   font-size: 14px;
-  background: #ffffff;
+  background: #252525;
   cursor: pointer;
   box-sizing: border-box;
-  color: #333333;
+  color: #ffc13c;
 }
 .fixside .search .searchbox li::before {
   content: "";
@@ -7901,32 +7916,37 @@ main .bg {
   height: 0px;
   position: absolute;
   border-style: solid;
-  border-color: #a4a4a4 transparent;
+  border-color: #ffd973 transparent;
   border-width: 10px 8px 0px 8px;
   right: 20px;
   top: 21px;
   transform: rotate(-90deg);
   transition: 0.3s all;
 }
+.fixside .search .searchbox li:hover, .fixside .search .searchbox li:active, .fixside .search .searchbox li.active {
+  color: #ff4719;
+}
 .fixside .search .searchbox li:hover::before, .fixside .search .searchbox li:active::before, .fixside .search .searchbox li.active::before {
   transform: rotate(0deg);
-  border-color: #bb092f transparent;
+  border-color: #ff4719 transparent;
 }
 .fixside .search .searchbox div {
-  background: #ffffff;
+  background: #0c0c0c;
   width: 100%;
   height: 0px;
   overflow: hidden;
 }
 .fixside .search .searchbox div.open {
   height: auto;
+  border: solid 1px #a88335;
+  border-width: 1px 0px;
 }
 .fixside .search .searchbox div a {
   display: block;
   width: 90%;
   height: auto;
-  background: #f5f6f7;
-  color: #666666;
+  background: #292929;
+  color: #d78f3a;
   font-size: 14px;
   margin: 0px auto;
   box-sizing: border-box;
@@ -7934,19 +7954,24 @@ main .bg {
 }
 .fixside .search .searchbox div a:nth-of-type(1) {
   border-radius: 3px 3px 0px 0px;
+  margin-top: 10px;
 }
 .fixside .search .searchbox div a:last-child {
   border-radius: 0px 0px 3px 3px;
   margin-bottom: 10px;
 }
 .fixside .search .searchbox div a:hover, .fixside .search .searchbox div a:active, .fixside .search .searchbox div a.active {
-  background: #e3e3e3;
+  background: #3c3c3c;
+  color: #ffc13c;
+}
+.fixside .search .searchbox div a:hover .num, .fixside .search .searchbox div a:active .num, .fixside .search .searchbox div a.active .num {
+  color: #ffc13c;
 }
 .fixside .search .searchbox div a .team {
   display: none;
   width: 30px;
   height: 30px;
-  background: url("../images/forCss_5/fixside_team.png");
+  background: url("../images/forCss_6/fixside_team.png");
   float: left;
   margin: 10px 5px 0px 15px;
   background-size: 300%;
@@ -7958,7 +7983,8 @@ main .bg {
   background-position-x: -60px;
 }
 .fixside .search .searchbox div a .num {
-  color: #555555;
+  color: #d78f3a;
+  padding-left: 5px;
 }
 .fixside .fun {
   width: 55px;
@@ -7971,30 +7997,31 @@ main .bg {
   display: block;
   width: 100%;
   height: 55px;
-  background: #ffffff;
+  background: #1b1b1b;
   border-radius: 8px;
   text-align: center;
   margin-top: 10px;
   cursor: pointer;
-  box-shadow: 0px 0px 5px 0px #00000050;
+  border: solid 1px #a88335;
 }
 .fixside .fun a:hover, .fixside .fun a:active, .fixside .fun a.active {
-  background: #de1e30;
+  background: #ffbd38;
+  border-color: transparent;
 }
 .fixside .fun a:hover span, .fixside .fun a:active span, .fixside .fun a.active span {
-  color: #ffffff;
+  color: #000000;
 }
 .fixside .fun a:hover .fixsideimg, .fixside .fun a:active .fixsideimg, .fixside .fun a.active .fixsideimg {
   background-position-y: 100%;
 }
 .fixside .fun a span {
   font-size: 12px;
-  color: #393939;
+  color: #ffc13c;
 }
 .fixside .fun a .fixsideimg {
   width: 30px;
-  height: 30px;
-  background: url("../images/forCss_5/fixside_ic5.png") no-repeat;
+  height: 29px;
+  background: url("../images/forCss_6/fixside_ic5.png") no-repeat;
   background-size: 500%;
   float: left;
   margin: 5px 5px 1px 13px;

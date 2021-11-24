@@ -833,6 +833,12 @@ $(function(){
         $('.threeCircle button:nth-of-type(6)').addClass('active');
         $('.threeCircle button:nth-of-type(6)').siblings().removeClass('active');
     })
+    $('.threeCircle button:nth-of-type(7)').click(function(){
+        $('.indexStyle').attr('href','./css_7/style.css');
+        $('.elseStyle').attr('href','../../css_7/style.css');
+        $('.threeCircle button:nth-of-type(7)').addClass('active');
+        $('.threeCircle button:nth-of-type(7)').siblings().removeClass('active');
+    })
 })
 
 //left自動高度

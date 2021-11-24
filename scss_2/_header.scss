@@ -129,6 +129,15 @@ header {
                         background: #181818;
                     }
                 }
+
+                &:nth-of-type(7) {
+                    background: #feb300;
+
+                    &:hover,&:active,&.active {
+                        border-color: #212832;
+                        background: #feb300;
+                    }
+                }
             }
         }
     }
