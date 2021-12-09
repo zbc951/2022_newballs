@@ -4,7 +4,7 @@
     height: auto;
     border-collapse: collapse;
 	border-radius: 3px;
-	margin: 0px 0px 15px 20px;
+	margin: 2px 0px 15px 20px;
 	position: relative;
 
 	&:last-child {
@@ -14,14 +14,14 @@
 	&::before {
 		content: "";
 		position: absolute;
-		width: calc(100% + 20px);
-		height: calc(100% + 5px);
+		width: calc(100% + 18px);
+		height: calc(100% + 7px);
 		left: -10px;
-		top: 0px;
+		top: -2px;
 		border-radius: 5px;
-		background: #ffffff;
+		background: #212832;
 		z-index: -1;
-		box-shadow: 0px 0px 5px 0px #00000049;
+		border: solid 1px #feb300;
 	}
 
 	&.index_page,&.result_page {
@@ -31,8 +31,8 @@
 			&:nth-of-type(2) {
 
 				th {
-					background: #f7f7f7;
-					color: #666666;
+					background: #feb300;
+					color: #212832;
 				}
 			}
 		}
@@ -41,8 +41,8 @@
 	//內容
     tr {
 		text-align: center;
-		background: #ffffff;
-		border-bottom: solid 1px #ebebeb;
+		background: #212832;
+		border-bottom: solid 1px #5c6d79;
 
 		&:nth-of-type(1) {
 
@@ -60,7 +60,7 @@
 							transform: translateY(-50%);
 							width: 1px;
 							height: 12px;
-							background: #de1e30;
+							background: #feb300;
 						}
 					}
 				}
@@ -68,17 +68,17 @@
 		}
 
 		&:last-child {
-			border: none;
+			border-color: transparent;
 		}
 
 		//滾球背景色
 		&.onTime {
-			background: #fff7e4;
+			background: #2f3f58;
 
 			td {
 
 				button {
-					background: #ece3cb;
+					background: #5c6d79;
 				}
 			}
 		}
@@ -88,25 +88,14 @@
 		}
 
 		&:hover,&:active,&.active {
-			background: #d5dcef;
-
-			td {
-				color: #000000;
-
-				button {
-					background: #ffffff;
-
-					&.disable {
-						background: #efefef;
-					}
-				}
-			}
+			box-shadow: 0px 1px 0px 1px #feb300 inset;
+			border-color: #feb300;
 		}
 
       	th {
-			color: #333333;
-			background: #ffffff;
+			color: #feb300;
 			font-size: 13px;
+			background: #212832;
 			padding: 8px 0px 7px;
 			vertical-align: middle;
 			position: sticky;
@@ -131,7 +120,7 @@
 			padding: 8px 0px;
 			vertical-align: middle;
 			word-break: break-all;
-			color: #1b1b1b;
+			color: #febd00;
 			line-height: 18px;
 
 			&:nth-of-type(1) {
@@ -151,22 +140,22 @@
 			}
 
 			&.allScore {
-				color: #de1e30;
+				color: #ffffff;
 			}
 
 			//遊戲種類著名顏色
 			.gameStyle {
-				color: #0a9746;
+				color: #00c613;
 			}
 
 			//已進行時間
 			.gameTime {
-				color: #8d8d8d;
+				color: #c5c5c5;
 			}
 
 			//行內按鈕
 			button {
-				color: #f28220;
+				color: #feb300;
 				border-radius: 3px;
 				position: relative;
 				word-break: break-all;
@@ -174,14 +163,14 @@
 				font-size: 13px;
 				margin: 0px 1px;
 				font-weight: bold;
+				background: #313d4f;
 
 				&:hover,&:active,&.active {
-					background: #de1e30;
-					color: #ffffff;
-					box-shadow: none;
+					background: #feb300;
+					color: #212832;
 
 					span {
-						color: #ffffff;
+						color: #212832;
 					}
 				}
 
@@ -195,7 +184,7 @@
 					top: 0px;
 					border-style: solid;
 					border-width: 0px 15px 15px 0px;
-					border-color: transparent #0ad01c transparent transparent;
+					border-color: transparent #00c613 transparent transparent;
 					animation: btnFlashing 1.5s linear 0s infinite;
 				}
 
@@ -214,7 +203,7 @@
 				}
 
 				span {
-					color: #828282;
+					color: #ffcc41;
 					font-size: 12px;
 				}
 
@@ -233,7 +222,7 @@
 				}
 
 				&.disable {
-					background: #dbdbdb;
+					background: #2a323d;
 					pointer-events: none;
 					color: transparent;
 					user-select: none;
@@ -248,7 +237,7 @@
 						font-size: 18px;
 
 						&.fa-lock {
-							color: #bfbfbf;
+							color: #5b6068;
 							font-size: 12px;
 						}
 					}
@@ -283,7 +272,7 @@
 				&.tbimg3 {
 					width: auto;
 					height: auto;
-					color: #0046d4;
+					color: #fedd00;
 					font-size: 13px;
 				}
 			}
@@ -292,12 +281,12 @@
 
 			//已完賽顏色
 			&.overGame {
-				color: #666666;
+				color: #ee6400;
 			}
 			span {
 
 				&.overGame {
-					color: #666666;
+					color: #ee6400;
 				}
 			}
 
@@ -945,7 +934,7 @@
 					padding-bottom: 8px;
 
 					&.first {
-						color: #de1e30;
+						color: #ffffff;
 					}
 
 					&:last-child {
@@ -2124,28 +2113,20 @@
 	//內容
 	tr {
 		text-align: center;
-		background: #fffbcc;
-		border-bottom: solid 1px #e8b746;
-	
-		&:nth-of-type(odd) {
-			background: #fffbcc;
-		}
+		background: #2f3f58;
+		border-bottom: solid 1px #727272;
 
 		&:nth-of-type(1) {
-			border-top: solid 1px #ffdfcc;
-		}
-		
-		&:last-child {
-			border-bottom: solid 1px #e8b746;
+			border-top: solid 1px #727272;
 		}
   
 		th {
-			color: #1b1b1b;
+			color: #e2e2e2;
 			font-size: 13px;
 			padding: 7px 0px 3px;
 			vertical-align: middle;
-			background: #ffe29f;
-			border-right: solid 1px #fba978;
+			background: #3c5260;
+			border-right: solid 1px #727272;
 			position: static;
 
 			&::before {
@@ -2164,20 +2145,10 @@
 			padding: 8px 3px;
 			vertical-align: middle;
 			word-break: break-all;
-			color: #1b1b1b;
+			color: #e2e2e2;
 			line-height: 18px;
-			border-right: solid 1px #e8b746;
+			border-right: solid 1px #727272;
 			position: relative;
-
-			&::before {
-				content: "";
-				position: absolute;
-				left: 0px;
-				bottom: 0px;
-				background: #ffffff;
-				width: 100%;
-				height: 1px;
-			}
 	
 			//字靠左
 			&.tLeft {
@@ -2201,7 +2172,7 @@
 					transform: translate(-53%, -53%);
 					width: 18px;
 					height: 18px;
-					background: #b71719;
+					background: #bb1616;
 					border-radius: 3px;
 					z-index: -1;
 				}
@@ -2223,7 +2194,7 @@
 					transform: translate(-53%, -57%);
 					width: 18px;
 					height: 18px;
-					background: #1e62c5;
+					background: #1c64c6;
 					border-radius: 3px;
 					z-index: -1;
 				}
@@ -2846,45 +2817,50 @@
 	width: 96%;
 	height: auto;
 	margin: 2% auto 0px;
-	border: solid 1px #252525;
 	
 	tr {
 		text-align: center;
+		background: #ffffff;
 
 		&:nth-of-type(1) {
-			background: #353535;
 
 			td {
+				border-top: solid 1px #feb300;
 
 				&:nth-of-type(2) {
-					color: #ff4719;
+					color: #1f6ee5;
 				}
 			}
 		}
 
 		&:nth-of-type(2) {
-			background: #3c3c3c;
 
 			td {
+				border-bottom: solid 1px #feb300;
 
 				&:nth-of-type(1) {
-					color: #0bca17;
+					color: #308e44;
 				}
 			}
 		}
 
 		td {
 			vertical-align: middle;
-			border: solid 1px #252525;
+			border: solid 1px #2f3f58;
 			height: 45px;
 			width: 7%;
 			font-size: 13px;
 			line-height: 15px;
-			color: #b27a2b;
+			color: #1b1b1b;
 
 			&.title {
 				width: 9%;
-				background: #2f2f2f;
+				background: #feb300;
+				border-bottom: solid 1px #feb300;
+			}
+
+			&:last-child {
+				border-right-color: #feb300;
 			}
 		}
 	}
@@ -2895,36 +2871,37 @@
 	width: 100%;
 	height: auto;
 	border-collapse: collapse;
-	background: #f2f2f2;
+	background: #2f3f58;
 
 	tr {
 
 		th {
 			padding: 7px 15px;
-			color: #333333;
+			color: #ffcc41;
 			font-size: 13px;
-			border-bottom: solid 1px #dadada;
+			border-bottom: solid 1px #787b80;
 			text-align: left;
 		}
 
 		td {
 			width: 50%;
 			vertical-align: middle;
-			color: #333333;
+			color: #feb300;
 			padding: 15px;
 			font-size: 13px;
+			text-align: left;
 
 			.remind {
 				float: right;
 
 				.odds {
 					margin-left: 5px;
-					color: #0955f0;
+					color: #ffffff;
 				}
 			}
 
 			.leagendName {
-				color: #666666;
+				color: #ffffff;
 			}
 
 			&:last-child {
@@ -3042,30 +3019,32 @@
     height: auto;
     border-collapse: collapse;
 	border-radius: 3px;
-	margin: 202px 0px 20px 20px;
+	margin: 204px 0px 20px 20px;
 	position: relative;
 
 	&::before {
 		content: "";
 		position: absolute;
-		width: calc(100% + 20px);
-		height: calc(100% + 10px);
+		width: calc(100% + 18px);
+		height: calc(100% + 12px);
 		left: -10px;
-		top: 0px;
+		top: -2px;
 		border-radius: 5px;
-		background: #ffffff;
+		background: #212832;
 		z-index: -1;
+		border: solid 1px #feb300;
 	}
 
 	tr {
+		background: #2f3f58;
 
 		th {
 			width: 100%;
 			padding: 8px;
-			color: #333333;
+			color: #ffbe00;
 			font-size: 14px;
 			text-align: left;
-			background: #ffffff;
+			background: #212832;
 		}
 
 		td {
@@ -3073,7 +3052,6 @@
 			justify-content: space-around;
 			padding: 8px 5px 0px; 
 			flex-wrap: wrap;
-			background: #f5f5f5;
 
 			&.two {
 		
@@ -3081,14 +3059,12 @@
 					width: 49.5%;
 				}
 			}
-
 			&.three {
 		
 				button {
 					width: 32.5%;
 				}
 			}
-
 			&.four {
 				
 				button {
@@ -3099,7 +3075,6 @@
 					}
 				}
 			}
-
 			&.eight {
 
 				button {
@@ -3112,33 +3087,31 @@
 				border: none;
 				height: auto;
 				padding: 8px;
-				background: #ffffff;
+				background: #5c6d79;
 				font-size: 14px;
-				color: #df1e31;
+				color: #feb300;
 				margin-bottom: 8px;
-				box-shadow: 0px 1px 5px 1px #00000049;
 
 				&:hover,&:active,&.active {
-					background: #df1e31;
-					color: #ffffff;
-					box-shadow: none;
+					background: #feb300;
+					color: #212832;
 
 					span {
-						color: #ffffff;
+						color: #2f3f58;
 					}
 				}
 
 				&.title {
 					background: transparent;
 					pointer-events: none;
-					color: #666666;
+					color: #ffffff;
 					box-shadow: none;
 				}
 
 				.name {
 					font-size: 13px;
 					padding-right: 20px;
-					color: #666666;
+					color: #ffcc41;
 				}
 			}
 		}
@@ -3151,39 +3124,43 @@
     height: auto;
     border-collapse: collapse;
 	border-radius: 3px;
-	margin: 0px 0px 15px 20px;
-	background: #ffffff;
+	margin: 2px 0px 15px 20px;
+	background: #212832;
 	position: relative;
+
+	&:last-child {
+		margin-bottom: 40px;
+	}
 
 	&::before {
 		content: "";
 		position: absolute;
-		width: calc(100% + 20px);
-		height: calc(100% + 5px);
+		width: calc(100% + 18px);
+		height: calc(100% + 7px);
 		left: -10px;
-		top: 0px;
+		top: -2px;
 		border-radius: 5px;
-		background: #ffffff;
+		background: #212832;
 		z-index: -1;
-		box-shadow: 0px 0px 5px 0px #00000049;
+		border: solid 1px #feb300;
 	}
 
 	//內容
     tr {
 		text-align: center;
-		border-bottom: solid 1px #ebebeb;
+		border-bottom: solid 1px #5c6d79;
 		
 		&.noBorder {
 			border: none;
 		}
 
       	th {
-			color: #333333;
+			color: #feb300;
 			font-size: 13px;
 			padding: 8px 0px 6px;
 			vertical-align: middle;
 			position: sticky;
-			top: 80px;
+			top: -1px;
 			z-index: 2;
 			
 			&::before {
@@ -3194,7 +3171,7 @@
 				transform: translateY(-50%);
 				width: 1px;
 				height: 12px;
-				background: #de1e30;
+				background: #feb300;
 			}
 
 			//字靠左
@@ -3229,13 +3206,13 @@
 				position: relative;
 
 				p {
-					color: #333333;
+					color: #feb300;
 					font-size: 14px;
 					line-height: 24px;
 
 					.odd {
 						font-weight: bold;
-						color: #356bf7;
+						color: #ffffff;
 						padding-left: 5px;
 					}
 				}
@@ -3265,7 +3242,7 @@
 				height: 88px;
 				line-height: 88px;
 				vertical-align: top;
-				color: #8d8d8d;
+				color: #9ec2f5;
 				position: relative;
 
 				span {
@@ -3279,10 +3256,9 @@
 					left: 50%;
 					transform: translateX(-50%);
 					bottom: -24px;
-					border: solid 1px #ebebeb;
 					border-radius: 30px;
-					background: #ffffff;
-					color: #333333;
+					background: #5c6d79;
+					color: #ffffff;
 				}
 			}
 
@@ -3292,7 +3268,7 @@
 				height: auto;
 				display: inline-block;
 				padding: 20px 0px;
-				color: #666666;
+				color: #feb300;
 
 				&.lside {
 					text-align: right;
@@ -3307,7 +3283,7 @@
 					line-height: 20px;
 				}
 			}
-
+ 
 			//中間
 			.box {
 				display: inline-block;
@@ -3347,17 +3323,17 @@
 					}
 
 					p {
-						color: #666666;
+						color: #202632;
 						font-size: 14px;
 						line-height: 24px;
 
 						&.win {
 							font-weight: bold;
-							color: #df1e31;
+							color: #cc1527;
 						}
 
 						&.lose {
-							color: #454545;
+							color: #1e55a8;
 						}
 					}
 				}
@@ -3366,7 +3342,7 @@
 				.midBox {
 					width: 80px;
 					height: 80px;
-					background: #ffffff;
+					background: #2f3f58;
 					border-radius: 90px;
 					position: absolute;
 					left: 50%;
@@ -3376,14 +3352,14 @@
 					box-shadow: 0px 0px 10px 2px #00000017;
 
 					p {
-						color: #1b1b1b;
+						color: #ffffff;
 						font-weight: bold;
 						font-size: 18px;
 						line-height: 24px;
 						margin-top: 15px;
 
 						&.score {
-							color: #df1e31;
+							color: #feb300;
 							margin-top: 6px;
 							font-size: 24px;
 
