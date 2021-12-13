@@ -3359,7 +3359,7 @@ main .bg {
 }
 .minetable.totalMoney tr td .box .half p {
   font-size: 14px;
-  color: #ffffff;
+  color: #feb300;
   text-align: left;
   width: 50%;
   margin: 0px auto;
@@ -3370,12 +3370,15 @@ main .bg {
   color: #ffffff;
 }
 .minetable.totalMoney tr td .box .half p.dollar span {
-  color: #feb300;
+  color: #ffffff;
   font-size: 18px;
   padding-left: 10px;
 }
+.minetable.totalMoney tr td .box .half p.locked {
+  color: #ffffff;
+}
 .minetable.totalMoney tr td .box .half p.locked span {
-  color: #feb300;
+  color: #ffffff;
   font-size: 18px;
   padding-left: 10px;
 }
@@ -3446,7 +3449,7 @@ main .bg {
   background-position-x: 100%;
 }
 .minetable.totalMoney tr td .separateBox.big .half p {
-  color: #ffffff;
+  color: #feb300;
   font-size: 14px;
   text-align: left;
 }
@@ -3457,10 +3460,10 @@ main .bg {
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span {
   font-size: 18px;
   padding-left: 10px;
-  color: #feb300;
+  color: #ffffff;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span.locked {
-  color: #feb300;
+  color: #ffffff;
 }
 .minetable.totalMoney tr td .separateBox.big .half p button {
   background: linear-gradient(to top, #ffffff 5%, #ebf0f2 26%, #ffffff 82%);
@@ -3858,7 +3861,7 @@ main .bg {
   border: none;
 }
 .minetable.bettingRecord tr th {
-  color: #feb300;
+  color: #ffffff;
   background: #2e3f57;
 }
 .minetable.bettingRecord tr th::before {
@@ -3887,7 +3890,7 @@ main .bg {
 }
 .minetable.bettingRecord tr td {
   padding: 10px;
-  color: #feb300;
+  color: #ffffff;
   font-size: 14px;
   border-right: solid 1px #e0e0e0;
 }
@@ -3911,7 +3914,7 @@ main .bg {
   line-height: 20px;
 }
 .minetable.bettingRecord tr td .teamName {
-  color: #feb300;
+  color: #ffffff;
 }
 .minetable.bettingRecord tr td .separate {
   display: inline-block;
@@ -3919,7 +3922,7 @@ main .bg {
   transform: translateY(-1px);
 }
 .minetable.bettingRecord tr td .odd {
-  color: #ffffff;
+  color: #feb300;
 }
 .minetable.bettingRecord tr td .vs {
   color: #9ec2f5;
@@ -5986,7 +5989,7 @@ main .bg {
   text-align: center;
 }
 .signupWindow .signupbar span {
-  font-size: 14px;
+  font-size: 15px;
   color: #212832;
   line-height: 54px;
   font-weight: bold;
@@ -6024,10 +6027,12 @@ main .bg {
 }
 .signupWindow .signupbox {
   width: 100%;
-  height: 265px;
-  background: #212832;
+  height: 305px;
+  background: #2e3f57;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
+  border: solid 1px #feb300;
+  box-sizing: border-box;
 }
 .signupWindow .signupbox div {
   width: 48%;
@@ -6063,15 +6068,14 @@ main .bg {
   width: 180px;
   height: 36px;
   margin-right: 10px;
-  background: #ffffff;
+  background: #bfbfbf;
   color: #212832;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
 }
 .signupWindow .signupbox div button:hover, .signupWindow .signupbox div button:active, .signupWindow .signupbox div button.active {
-  background: #feb300;
-  color: #ffffff;
+  background: #ffffff;
 }
 .signupWindow .signupbox div button:last-child {
   margin: 0px;
@@ -7452,7 +7456,7 @@ main .bg {
   text-align: center;
 }
 .unLogin .topBar span {
-  font-size: 14px;
+  font-size: 15px;
   color: #212832;
   line-height: 54px;
   font-weight: bold;
@@ -7490,11 +7494,14 @@ main .bg {
 }
 .unLogin .remindBox {
   width: 100%;
-  height: 110px;
-  background: #212832;
+  height: 140px;
+  background: #2e3f57;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
+  border: solid 1px #feb300;
+  border-top: none;
+  box-sizing: border-box;
 }
 .unLogin .remindBox p {
   font-size: 16px;
@@ -7509,7 +7516,7 @@ main .bg {
   background: linear-gradient(to bottom, #feb300 0%, #c98000 100%);
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   box-shadow: 1px 2px 8px 0px #00000049;
 }
@@ -9089,10 +9096,13 @@ main .bg {
 }
 .changePasswordWindow .box {
   width: 100%;
-  height: 160px;
-  background: #212832;
+  height: 200px;
+  background: #2e3f57;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
+  box-sizing: border-box;
+  border: solid 1px #feb300;
+  border-top: none;
 }
 .changePasswordWindow .box div {
   width: 95%;
@@ -9127,10 +9137,10 @@ main .bg {
   width: 152px;
   height: 36px;
   margin-right: 10px;
-  background: #ffffff;
+  background: #bfbfbf;
   color: #212832;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   box-shadow: 0px 2px 3px 0px #00000049;
 }
@@ -9140,11 +9150,9 @@ main .bg {
 }
 .changePasswordWindow .box div button:last-child:hover, .changePasswordWindow .box div button:last-child:active, .changePasswordWindow .box div button:last-child.active {
   background: #feb300;
-  color: #212832;
 }
 .changePasswordWindow .box div button:hover, .changePasswordWindow .box div button:active, .changePasswordWindow .box div button.active {
-  background: #feb300;
-  color: #ffffff;
+  background: #ffffff;
 }
 
 .cardremind {
@@ -9170,7 +9178,7 @@ main .bg {
   text-align: center;
 }
 .cardremind .topbar span {
-  font-size: 14px;
+  font-size: 15px;
   color: #212832;
   line-height: 50px;
   padding-left: 20px;
@@ -9209,11 +9217,14 @@ main .bg {
 }
 .cardremind .box {
   width: 100%;
-  height: 105px;
-  background: #212832;
+  height: 145px;
+  background: #2e3f57;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
+  box-sizing: border-box;
+  border: solid 1px #feb300;
+  border-top: none;
 }
 .cardremind .box p {
   font-size: 14px;
@@ -9228,7 +9239,7 @@ main .bg {
   height: 36px;
   background: linear-gradient(to bottom, #feb300 0%, #c98000 100%);
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   color: #212832;
   box-shadow: 0px 2px 5px 0px #00000049;
@@ -9259,7 +9270,7 @@ main .bg {
   text-align: center;
 }
 .cardAdd .topbar span {
-  font-size: 14px;
+  font-size: 15px;
   color: #212832;
   line-height: 42px;
   font-weight: bold;
@@ -9297,10 +9308,13 @@ main .bg {
 }
 .cardAdd .box {
   width: 100%;
-  height: 315px;
-  background: #212832;
+  height: 355px;
+  background: #2e3f57;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
+  box-sizing: border-box;
+  border: solid 1px #feb300;
+  border-top: none;
 }
 .cardAdd .box .inputBox {
   width: 50%;
@@ -9346,7 +9360,7 @@ main .bg {
   border-color: transparent;
   color: #212832;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   position: absolute;
   left: 50%;

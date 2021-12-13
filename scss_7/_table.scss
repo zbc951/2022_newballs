@@ -3612,7 +3612,7 @@
 
 						p {
 							font-size: 14px;
-							color: #ffffff;
+							color: #feb300;
 							text-align: left;
 							width: 50%;
 							margin: 0px auto;
@@ -3623,16 +3623,17 @@
 								color: #ffffff;
 
 								span {
-									color: #feb300;
+									color: #ffffff;
 									font-size: 18px;
 									padding-left: 10px;
 								}
 							}
 
 							&.locked {
+								color: #ffffff;
 
 								span {
-									color: #feb300;
+									color: #ffffff;
 									font-size: 18px;
 									padding-left: 10px;
 								}
@@ -3715,7 +3716,7 @@
 							}
 
 							p {
-								color: #ffffff;
+								color: #feb300;
 								font-size: 14px;
 								text-align: left;
 
@@ -3726,10 +3727,10 @@
 									span {
 										font-size: 18px;
 										padding-left: 10px;
-										color: #feb300;
+										color: #ffffff;
 
 										&.locked {
-											color: #feb300;
+											color: #ffffff;
 										}
 									}
 								}
@@ -4270,7 +4271,7 @@
 			}
 
 			th {
-				color: #feb300;
+				color: #ffffff;
 				background: #2e3f57;
 
 				&::before {
@@ -4304,7 +4305,7 @@
 
 			td {
 				padding: 10px;
-				color: #feb300;
+				color: #ffffff;
 				font-size: 14px;
 				border-right: solid 1px #e0e0e0;
 
@@ -4334,7 +4335,7 @@
 				}
 
 				.teamName {
-					color: #feb300;
+					color: #ffffff;
 				}
 
 				.separate {
@@ -4344,7 +4345,7 @@
 				}
 
 				.odd {
-					color: #ffffff;
+					color: #feb300;
 				}
 
 				.vs {

@@ -1175,10 +1175,13 @@
     //主內容
     .box {
         width: 100%;
-        height: 160px;
-        background: #212832;
+        height: 200px;
+        background: #2e3f57;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
+        box-sizing: border-box;
+        border: solid 1px #feb300;
+        border-top: none;
 
         div {
             width: 95%;
@@ -1216,10 +1219,10 @@
                 width: 152px;
                 height: 36px;
                 margin-right: 10px;
-                background: #ffffff;
+                background: #bfbfbf;
                 color: #212832;
                 border-radius: 5px;
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: bold;
                 box-shadow: 0px 2px 3px 0px #00000049;
 
@@ -1229,13 +1232,11 @@
 
                     &:hover,&:active,&.active {
                         background: #feb300;
-                        color: #212832;
                     }
                 }
 
                 &:hover,&:active,&.active {
-                    background: #feb300;
-                    color: #ffffff;
+                    background: #ffffff;
                 }
             }
         }
@@ -1268,7 +1269,7 @@
         text-align: center;
 
         span {
-            font-size: 14px;
+            font-size: 15px;
             color: #212832;
             line-height: 50px;
             padding-left: 20px;
@@ -1314,11 +1315,14 @@
     //主內容
     .box {
         width: 100%;
-        height: 105px;
-        background: #212832;
+        height: 145px;
+        background: #2e3f57;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
         text-align: center;
+        box-sizing: border-box;
+        border: solid 1px #feb300;
+        border-top: none;
 
         p {
             font-size: 14px;
@@ -1335,7 +1339,7 @@
             height: 36px;
             background: linear-gradient(to bottom, #feb300 0%, #c98000 100%);
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             color: #212832;
             box-shadow: 0px 2px 5px 0px #00000049;
@@ -1372,7 +1376,7 @@
         text-align: center;
 
         span {
-            font-size: 14px;
+            font-size: 15px;
             color: #212832;
             line-height: 42px;
             font-weight: bold;
@@ -1415,10 +1419,13 @@
     //主內容
     .box {
         width: 100%;
-        height: 315px;
-        background: #212832;
+        height: 355px;
+        background: #2e3f57;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
+        box-sizing: border-box;
+        border: solid 1px #feb300;
+        border-top: none;
 
         .inputBox {
             width: 50%;
@@ -1470,7 +1477,7 @@
             border-color: transparent;
             color: #212832;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             position: absolute;
             left: 50%;
