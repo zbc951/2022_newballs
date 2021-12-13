@@ -120,7 +120,7 @@
 			padding: 8px 0px;
 			vertical-align: middle;
 			word-break: break-all;
-			color: #febd00;
+			color: #ffffff;
 			line-height: 18px;
 
 			&:nth-of-type(1) {
@@ -203,7 +203,7 @@
 				}
 
 				span {
-					color: #ffcc41;
+					color: #afafaf;
 					font-size: 12px;
 				}
 
@@ -272,7 +272,7 @@
 				&.tbimg3 {
 					width: auto;
 					height: auto;
-					color: #fedd00;
+					color: #15ae56;
 					font-size: 13px;
 				}
 			}
@@ -2868,10 +2868,13 @@
 
 //投注窗小窗
 .bettingRemind {
-	width: 100%;
+	width: 96%;
 	height: auto;
 	border-collapse: collapse;
 	background: #2f3f58;
+	margin: 15px auto;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 1px #feb300;
 
 	tr {
 
