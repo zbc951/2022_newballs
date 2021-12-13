@@ -17,12 +17,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #212832;
+        background: #3c5260;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #feb300;
+        background: linear-gradient(to bottom,#feb300 0%,#c98000 100%);
         border-radius: 10px;
     }
     
@@ -48,15 +48,14 @@
                     height: 81px;
                     margin: 0px auto 20px;
                     background: url('../images/forCss_7/avatar_big.png');
-                    filter: drop-shadow(0px 0px 1px #ffc13c);
                 }
 
                 //字樣
                 p {
-                    color: #ffc13c;
+                    color: #feb300;
 
                     &.joinday {
-                        color: #8e7352;
+                        color: #ffcf5e;
                         font-size: 15px;
                         padding-top: 5px;
                     }
@@ -65,10 +64,10 @@
                         display: inline-block;
                         width: 36px;
                         height: 17px;
-                        background: linear-gradient(to right,#4ffc21 0%,#09d217 99%);
+                        background: #feb300;
                         position: relative;
                         text-align: right;
-                        color: #000000;
+                        color: #212832;
                         font-weight: bold;
                         border-radius: 5px;
                         margin: -3px 0px 0px 5px;
@@ -104,17 +103,17 @@
                     font-size: 16px;
                     text-align: center;
                     background: transparent;
-                    color: #ffc13c;
+                    color: #feb300;
                     padding-top: 10px;
 
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to left,#e48b0c 0%,#ffc62a 99%);
-                        color: #000000;
+                        background: #feb300;
+                        color: #2e3f57;
 
                         &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
                             
                             i {
-                                color: #000000;
+                                color: #2e3f57;
                             }
                         }
                     }
@@ -122,19 +121,19 @@
                     &:nth-of-type(1) {
                         
                         i {
-                            color: #ffc13c;
+                            color: #feb300;
                         }
                     }
                     &:nth-of-type(2) {
                         
                         i {
-                            color: #ffc13c;
+                            color: #feb300;
                         }
                     }
                     &:nth-of-type(3) {
                         
                         i {
-                            color: #ffc13c;
+                            color: #feb300;
                         }
                     }
 
@@ -155,18 +154,19 @@
                 margin: 0px auto;
 
                 &:nth-of-type(1),&:nth-of-type(5),&:nth-of-type(9) {
-                    border-bottom: solid 1px #b5833b;
+                    border-bottom: solid 1px #212832;
                 }
 
                 &:hover,&:active,&.active {
+                    padding: 0px ;
 
                     a {
-                        background: #292929;
-                        color: #ff4719;
+                        background: #feb300;
+                        color: #212832 ;
 
                         i,svg {
-                            color: #ff4719;
-                            fill: #ff4719;
+                            color: #212832 ;
+                            fill: #212832 ;
                         }
                     }
                 }
@@ -185,14 +185,14 @@
                         position: initial;
                         margin-left: 10px;
                         transform: translateY(0px);
-                        background: linear-gradient(to right,#4ffc21 0%,#09d217 99%);
-                        color: #000000;
+                        background: #212832;
+                        color: #ffcf5e;
                     }
 
                     i {
                         font-size: 22px;
                         top: 10px;
-                        color: #ffc13c;
+                        color: #feb300;
 
                         &.fa-clipboard,&.fa-mobile-alt {
                             left: 21px;
