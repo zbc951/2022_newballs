@@ -72,8 +72,8 @@
                 color: #ffffff;
 
                 .remind {
-                    background: #1f54ab;
-                    color: #ffffff;
+                    background: #feb300;
+                    color: #212832;
                 }
             }
         }
@@ -146,41 +146,6 @@
 
         &.display {
             display: block;
-        }
-
-        .bettingRecord {
-            box-shadow: 0px 0px 0px 1px #c8c8c8, 0px 2px 5px 0px #00000049;
-
-            tr {
-                background: #ffffff;
-                border-bottom: solid 1px #c8c8c8;
-
-                th {
-                    background: #ffffff;
-                    color: #39547f;
-
-                    .line {
-                        background: #c8c8c8;
-                    }
-
-                    .arrow {
-                        background-position-y: 100%;
-                    }
-                }
-
-                td {
-                    border-right: solid 1px #c8c8c8;
-                    color: #1b1b1b;
-
-                    .teamName,.vs {
-                        color: #1b1b1b;
-                    }
-
-                    .odd {
-                        color: #ce1427;
-                    }
-                }
-            }
         }
     }
 
@@ -533,7 +498,6 @@
         .onlineroom {
             width: 100%;
             height: 25%;
-            text-align: right;
             overflow-x: hidden;
             overflow-y: auto;
             scrollbar-width: thin;
@@ -575,16 +539,18 @@
             }
 
             textarea {
-                width: 100%;
-                height: 80px;
-                padding: 0px 15px;
+                width: 97%;
+                height: 82px;
+                padding: 10px 15px;
                 border-color: transparent;
+                border-radius: 5px;
                 outline: none;
                 resize: none;
                 box-sizing: border-box;
                 font-size: 15px;
-                background: transparent;
+                background: #212832;
                 color: #ffffff;
+                margin: 0px auto;
 
                 &::placeholder {
                     color: #9b9b9b;
@@ -596,12 +562,13 @@
             .send {
                 width: 90px;
                 height: 36px;
-                margin: 0px 20px 20px 0px;
+                margin: 10px 30px 10px 0px;
                 background: linear-gradient(to top,#feb300 0%,#ffc63d 100%);
                 color: #2e3f57;
                 border-radius: 5px;
                 border-color: transparent;
                 font-size: 15px;
+                float: right;
                 border: none;
                 box-shadow: 0px 2px 5px 0px #00000049;
                 &:hover,&:active,&.active {
@@ -713,6 +680,7 @@
         z-index: 2;
         color: #ffffff;
         box-sizing: border-box;
+        box-shadow: 0px 2px 5px 0px #00000080;
 
         .editbut,.cancelbut,.delbut {
             display: none;
