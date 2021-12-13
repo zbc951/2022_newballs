@@ -5388,6 +5388,7 @@ main .bg {
   -webkit-appearance: none;
   padding: 5px 30px 3px 5px;
   border: solid 1px #feb300;
+  font-size: 13px;
 }
 .topfix .nor .kind select span, .topfix .nor .sort select span, .topfix .nor .chooseLeague select span {
   display: none;
