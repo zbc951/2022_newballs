@@ -778,7 +778,7 @@
 
         //日期搜尋列
         .timeSearch {
-            width: 380px;
+            width: 400px;
             height: 45px;
             margin: 0px 0px 0px 20px;
             float: left;
@@ -786,7 +786,7 @@
             //交易紀錄用
             &.deal {
                 float: right;
-                width: 335px;
+                width: 375px;
 
                 .timesearchbut {
                     margin-right: 0px;
@@ -848,7 +848,7 @@
                     border: 1px solid #cccccc;
                     outline: none;
                     border-radius: 5px;
-                    width: 95px;
+                    width: 115px;
                     height: 24px;
                     font-family: "my_font";
                     background: #ffffff;             

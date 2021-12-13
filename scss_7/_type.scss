@@ -950,12 +950,13 @@
     width: 800px;
     height: 375px;
     border-radius: 3px;
-    background: #212832;
+    background: #2e3f57;
     position: fixed;
     z-index: 20;
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
+    border: solid 1px #feb300;
 
     &.display {
         display: block;
@@ -969,14 +970,14 @@
         background: #feb300;
         color: #212832;
         border-radius: 3px 3px 0px 0px;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: bold;
     }
 
     .innerBox {
         width: 94%;
         height: 285px;
-        background: #2f3f58;
+        background: #212832;
         border-radius: 5px;
         overflow: hidden;
         margin: 3% auto;
@@ -1177,12 +1178,13 @@
     width: 600px;
     height: 430px;
     border-radius: 3px;
-    background: #212832;
+    background: #2e3f57;
     position: fixed;
     z-index: 20;
     left: 50%;
     top: 15%;
     transform: translateX(-50%); 
+    border: solid 1px #feb300;
 
     h1 {
         width: 100%;
@@ -1192,7 +1194,7 @@
         background: #feb300; 
         color: #182029;
         border-radius: 3px 3px 0px 0px;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: bold;
     }
 
@@ -1200,7 +1202,7 @@
         width: 96%;
         height: 90px;
         margin: 2% auto 0px;
-        background: #2f3f58;
+        background: #212832;
         border-radius: 3px; 
         overflow: hidden;
 
@@ -1342,7 +1344,7 @@
         width: calc(96% - 15px);
         height: 50px;
         margin: 2% auto 0px;
-        background: #2f3f58;
+        background: #212832;
         border-radius: 3px;
         line-height: 50px;
         color: #feb300;

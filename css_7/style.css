@@ -5892,12 +5892,13 @@ main .bg {
   width: 800px;
   height: 375px;
   border-radius: 3px;
-  background: #212832;
+  background: #2e3f57;
   position: fixed;
   z-index: 20;
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
+  border: solid 1px #feb300;
 }
 .conversionBox.display {
   display: block;
@@ -5910,13 +5911,13 @@ main .bg {
   background: #feb300;
   color: #212832;
   border-radius: 3px 3px 0px 0px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
 }
 .conversionBox .innerBox {
   width: 94%;
   height: 285px;
-  background: #2f3f58;
+  background: #212832;
   border-radius: 5px;
   overflow: hidden;
   margin: 3% auto;
@@ -6091,12 +6092,13 @@ main .bg {
   width: 600px;
   height: 430px;
   border-radius: 3px;
-  background: #212832;
+  background: #2e3f57;
   position: fixed;
   z-index: 20;
   left: 50%;
   top: 15%;
   transform: translateX(-50%);
+  border: solid 1px #feb300;
 }
 .controlBox h1 {
   width: 100%;
@@ -6106,14 +6108,14 @@ main .bg {
   background: #feb300;
   color: #182029;
   border-radius: 3px 3px 0px 0px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
 }
 .controlBox .innerBox1 {
   width: 96%;
   height: 90px;
   margin: 2% auto 0px;
-  background: #2f3f58;
+  background: #212832;
   border-radius: 3px;
   overflow: hidden;
 }
@@ -6225,7 +6227,7 @@ main .bg {
   width: calc(96% - 15px);
   height: 50px;
   margin: 2% auto 0px;
-  background: #2f3f58;
+  background: #212832;
   border-radius: 3px;
   line-height: 50px;
   color: #feb300;
@@ -8774,14 +8776,14 @@ main .bg {
   margin: 10px 0px 0px;
 }
 .minetopfix .fixbar .timeSearch {
-  width: 380px;
+  width: 400px;
   height: 45px;
   margin: 0px 0px 0px 20px;
   float: left;
 }
 .minetopfix .fixbar .timeSearch.deal {
   float: right;
-  width: 335px;
+  width: 375px;
 }
 .minetopfix .fixbar .timeSearch.deal .timesearchbut {
   margin-right: 0px;
@@ -8833,7 +8835,7 @@ main .bg {
   border: 1px solid #cccccc;
   outline: none;
   border-radius: 5px;
-  width: 95px;
+  width: 115px;
   height: 24px;
   font-family: "my_font";
   background: #ffffff;

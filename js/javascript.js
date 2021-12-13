@@ -258,7 +258,10 @@ $(function(){
         $('.headerlist li:nth-of-type(2) a').attr('href','./html/balls/live.html');
         $('.headerlist li:nth-of-type(3) a').attr('href','./html/balls/result.html');
         $('.headerlist li:nth-of-type(4) a').attr('href','./html/balls/teach.html');
-        $('.headerlist li:nth-of-type(6) a').attr('href','./html/myself/mine.html');
+        $('.headerlist li:nth-of-type(6) a').attr('href','./html/myself/betting_now.html');
+        $('.headerlist li:nth-of-type(7) a').attr('href','./html/myself/betting_record.html');
+        $('.headerlist li:nth-of-type(8) a').attr('href','./html/myself/help.html');
+        $('.headerlist li:nth-of-type(9) a').attr('href','./html/myself/mine.html');
     })
 
     $('.logoutBtn').click(function(){
@@ -1137,6 +1140,27 @@ $(function(){
             $('.chleague').css('width',(String(wWD - 660) + 'px'));
         } else {
             $('.chleague').css('width',(String(870) + 'px'));
+        }
+    })
+})
+
+//myself上層選項增減
+$(function(){
+    var wwd = window.innerWidth;
+
+    if(wwd >= 1480){
+        $('.headerlist li:nth-of-type(6),.headerlist li:nth-of-type(7),.headerlist li:nth-of-type(8)').css('display','block');
+    }else {
+        $('.headerlist li:nth-of-type(6),.headerlist li:nth-of-type(7),.headerlist li:nth-of-type(8)').css('display','none');
+    }
+
+    $(window).resize(function(){
+        var wwd = window.innerWidth;
+
+        if(wwd >= 1480){
+            $('.headerlist li:nth-of-type(6),.headerlist li:nth-of-type(7),.headerlist li:nth-of-type(8)').css('display','block');
+        }else {
+            $('.headerlist li:nth-of-type(6),.headerlist li:nth-of-type(7),.headerlist li:nth-of-type(8)').css('display','none');
         }
     })
 })
