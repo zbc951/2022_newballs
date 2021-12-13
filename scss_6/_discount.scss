@@ -14,12 +14,12 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: #1b1b1b;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #b9becf;
+        background: linear-gradient(to bottom,#ff4b33 0%,#d8001f 98%);
         border-radius: 10px;
     }
 

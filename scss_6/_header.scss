@@ -48,7 +48,7 @@ header {
             marquee {
                 line-height: 25px;
                 font-size: 12px;
-                color: #8f702d;
+                color: #fb770a;
                 overflow: visible;
             }
         }
@@ -57,7 +57,7 @@ header {
         span {
             float: right;
             font-size: 12px;
-            color: #8e7352;
+            color: #fb770a;
             line-height: 25px;
             margin-right: 15px;
         }
@@ -245,8 +245,6 @@ header {
                     .cube {
                         left: -18px;
                         top: -1px;
-                        background: transparent;
-                        border-color: #ffb03f;
 
                         &.active {
 
@@ -280,7 +278,7 @@ header {
                 border-radius: 3px;
                 border: none;
                 color: #000000;
-                padding: 5px 14px;
+                padding: 6px 14px;
                 font-size: 14px;
                 font-weight: bold;
                 box-shadow: none;
