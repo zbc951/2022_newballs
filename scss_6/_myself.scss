@@ -371,7 +371,7 @@
         width: 1150px;
         height: 100%;
         margin: 0px 0px 0px 10px;
-        background: #ffffff;
+        background: #252525;
         border-radius: 5px;
         overflow: hidden;
 
@@ -379,7 +379,7 @@
         .chatwindow {
             width: 100%;
             height: 75%;
-            background: #ffffff;
+            background: #252525;
             overflow-x: hidden;
             overflow-y: auto;
             scrollbar-width: thin;
@@ -404,7 +404,7 @@
                 width: 100%;
                 height: 50px;
                 line-height: 50px;
-                color: #999999;
+                color: #fb770a;
                 float: left;
             }
             
@@ -437,34 +437,32 @@
                 
                 .gmchat {
                     float: left;
-                    background: #f5f5f5;
+                    background: #3c3c3c;
                     border-radius: 0px 8px 8px 8px;
                     font-size: 14px;
                     padding: 12px;
                     text-align: left;
-                    color: #333333;
-                    box-shadow: 0px 2px 5px 0px #00000035;
+                    color: #ffffff;
 
                     a {
                         display: block;
                         width: 60%;
                         padding: 5px 10px 4px;
-                        color: #df1e31;
+                        color: #ffc13c;
                         &:hover,&:active,&.active {
-                            background: #df1e31;
-                            color: #ffffff;
+                            background: #ffc13c;
+                            color: #000000;
                         }
                     }
                 }
 
                 .userchat {
                     float: right;
-                    background: #f5f5f5;
-                    color: #333333;
+                    background: #3c3c3c;
+                    color: #ffffff;
                     border-radius: 8px 0px 8px 8px;
                     font-size: 14px;
                     padding: 12px;
-                    box-shadow: 0px 2px 5px 0px #00000035;
                 }
             }
         }
@@ -477,7 +475,7 @@
             overflow-x: hidden;
             overflow-y: auto;
             scrollbar-width: thin;
-            box-shadow: 0px -2px 5px 0px #00000014;
+            border-top: solid 1px #a88335;
 
             &::-webkit-scrollbar {
                 width: 5px;
@@ -524,10 +522,10 @@
                 box-sizing: border-box;
                 font-size: 15px;
                 background: transparent;
-                color: #1b1b1b;
+                color: #ffffff;
 
                 &::placeholder {
-                    color: #9b9b9b;
+                    color: #ababab;
                     font-size: 14px;
                     font-weight: bold;
                 }
@@ -537,15 +535,14 @@
                 width: 90px;
                 height: 36px;
                 margin: 0px 20px 20px 0px;
-                background: linear-gradient(to bottom,#cd0e21 0%,#9d0514 100%);
+                background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
                 color: #ffffff;
                 border-radius: 5px;
                 border-color: transparent;
                 font-size: 15px;
                 border: none;
-                box-shadow: 0px 2px 5px 0px #00000049;
                 &:hover,&:active,&.active {
-                    background: #970513;
+                    background: #7c0013;
                 }
             }
         }
@@ -683,7 +680,7 @@
             display: none;
             float: right;
             position: relative;
-            background: #e3e3e3;
+            background: #1b1b1b;
             margin: 7px 20px 0px 0px;
             padding: 8px 12px;
             border-radius: 20px;
@@ -698,7 +695,7 @@
 
                 span {
                     &:last-child {
-                        color: #1b1b1b;
+                        color: #ababab;
                     }
                 }
 
@@ -710,7 +707,7 @@
             &.rside {
                 span {
                     &:nth-of-type(1) {
-                        color: #1b1b1b;
+                        color: #ababab;
                     }
                 }
                 
@@ -724,7 +721,7 @@
                 margin-right: 20px;
                 font-size: 14px;
                 position: relative;
-                color: #ce1427;
+                color: #ffffff;
 
                 &:last-child {
                     margin: 0px;
@@ -734,13 +731,11 @@
             .innbut {
                 width: 44%;
                 height: 80%;
-                background: #ffffff;
+                background: #3c3c3c;
                 position: absolute;
                 left: 3%;
                 top: 10%;
                 border-radius: 20px;
-                box-sizing: border-box;
-                border: solid 1px #d31c1c;
             }
         }
 
