@@ -2804,14 +2804,14 @@
     .topBar {
         width: 100%;
         height: 50px;
-        background: #ffffff;
+        background: linear-gradient(to right, #fec026 0%, #ffae00 100%);
         border-radius: 3px 3px 0px 0px;
         position: relative;
         text-align: center;
 
         span {
-            font-size: 14px;
-            color: #de1e30;
+            font-size: 15px;
+            color: #181818;
             line-height: 54px;
             font-weight: bold;
         }
@@ -2822,11 +2822,11 @@
             width: 40px;
             height: 40px;
             border-radius: 40px;
-            background: #ffffff;
-            border: solid 3px #de1e30;
+            background: #3c3c3c;
+            border: solid 3px #ffc13c;
             right: -50px;
             top: -50px;
-            box-shadow: 0px 0px 0px 5px #ffffff;
+            box-shadow: 0px 0px 0px 5px #3c3c3c;
 
             &::before {
                 content: "";
@@ -2835,7 +2835,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #de1e30;
+                background: #ffc13c;
                 transform: rotate(45deg);
             }
             &::after {
@@ -2845,7 +2845,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #de1e30;
+                background: #ffc13c;
                 transform: rotate(-45deg);
             }
         }
@@ -2854,15 +2854,17 @@
     //主內容
     .remindBox {
         width: 100%;
-        height: 110px;
-        background: #ededed;
+        height: 150px;
+        background: #181818;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
         text-align: center;
+        box-sizing: border-box;
+        border: solid 1px #ffc13c;
 
         p {
             font-size: 16px;
-            color: #1b1b1b;
+            color: #ffc13c;
             margin-top: 10px;
         }
 
@@ -2871,15 +2873,14 @@
             height: 36px;
             margin-top: 30px;
             color: #ffffff;
-            background: linear-gradient(to bottom,#cd0e21 0%,#9d0514 100%);
+            background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
             border: none;
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
             box-shadow: 1px 2px 8px 0px #00000049;
             &:hover,&:active,&.active {
-                background: #970513;
-                color: #ffffff;
+                background: #7c0013;
                 box-shadow: none;
             }
         }
@@ -2893,7 +2894,7 @@
     display: inline-block;
     width: 5px;
     height: 5px;
-    background: #de1e30;
+    background: #ffc13c;
     border-radius: 50px;
     transform: translateY(-2px);
     margin-right: 3px;
@@ -2906,7 +2907,7 @@
         top: 0px;
         width: 5px;
         height: 5px;
-        background: #de1e30;
+        background: #ffc13c;
         border-radius: 50px;
         animation: liveRemind 0.8s ease-in 0s infinite;
     }
@@ -2918,7 +2919,7 @@
     width: 10px;
     height: 10px;
     border-radius: 10px;
-    background: #df1e31;
+    background: #fb770a;
 }
 
 //足球
@@ -2931,14 +2932,14 @@
         display: inline-block;
         width: 10px;
         height: 15px;
-        background: #e80000;
+        background: #d8001f;
         margin: 0px 4px -3px 0px;
     }
 
     &.yellowCard {
 
         span {
-            background: #ffc426;
+            background: #ffc13c;
         }
     }
 }
@@ -2947,7 +2948,7 @@
 
 //選手狀況
 .playerStatus {
-    color: #0955f0;
+    color: #d78f3a;
 }
 
 //投手名稱
@@ -2970,7 +2971,7 @@
         span {
 
             &.first {
-                background: #de1e30;
+                background: #ffc13c;
             }
         }
     }
@@ -2980,7 +2981,7 @@
         span {
 
             &.second {
-                background: #de1e30;
+                background: #ffc13c;
             }
         }
     }
@@ -2990,7 +2991,7 @@
         span {
 
             &.third {
-                background: #de1e30;
+                background: #ffc13c;
             }
         }
     }
@@ -3002,7 +3003,7 @@
         height: 10px;
         transform: rotate(45deg);
         background: transparent;
-        border: solid 1px #1b1b1b;
+        border: solid 1px #ffffff;
 
         &.first {
             bottom: 0px;
@@ -3030,27 +3031,25 @@
         span {
             
             &:nth-of-type(1) {
-                background: #097c25;
+                background: #0ad317;
             }
         }
     }
-
     &.b2 {
         
         span {
             
             &:nth-of-type(1),&:nth-of-type(2) {
-                background: #097c25;
+                background: #0ad317;
             }
         }
     }
-
     &.b3 {
         
         span {
             
             &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
-                background: #097c25;
+                background: #0ad317;
             }
         }
     }
@@ -3060,17 +3059,16 @@
         span {
             
             &:nth-of-type(1) {
-                background: #f39800;
+                background: #fb770a;
             }
         }
     }
-
     &.s2 {
         
         span {
             
             &:nth-of-type(1),&:nth-of-type(2) {
-                background: #f39800;
+                background: #fb770a;
             }
         }
     }
@@ -3080,17 +3078,16 @@
         span {
             
             &:nth-of-type(1) {
-                background: #c84a4a;
+                background: #d8001f;
             }
         }
     }
-
     &.o2 {
         
         span {
             
             &:nth-of-type(1),&:nth-of-type(2) {
-                background: #c84a4a;
+                background: #d8001f;
             }
         }
     }

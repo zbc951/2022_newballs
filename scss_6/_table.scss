@@ -19,7 +19,7 @@
 		left: -10px;
 		top: 0px;
 		border-radius: 5px;
-		background: #ffffff;
+		background: #252525;
 		z-index: -1;
 		box-shadow: 0px 0px 5px 0px #00000049;
 	}
@@ -31,8 +31,8 @@
 			&:nth-of-type(2) {
 
 				th {
-					background: #f7f7f7;
-					color: #666666;
+					background: #1b1b1b;
+					color: #ff4719;
 				}
 			}
 		}
@@ -41,8 +41,8 @@
 	//內容
     tr {
 		text-align: center;
-		background: #ffffff;
-		border-bottom: solid 1px #ebebeb;
+		background: #252525;
+		border-bottom: solid 1px #4e4e4e;
 
 		&:nth-of-type(1) {
 
@@ -60,7 +60,7 @@
 							transform: translateY(-50%);
 							width: 1px;
 							height: 12px;
-							background: #de1e30;
+							background: #ffc13c;
 						}
 					}
 				}
@@ -68,19 +68,12 @@
 		}
 
 		&:last-child {
-			border: none;
+			border-color: transparent;
 		}
 
 		//滾球背景色
 		&.onTime {
-			background: #fff7e4;
-
-			td {
-
-				button {
-					background: #ece3cb;
-				}
-			}
+			background: #3c3c3c;
 		}
 
 		&.liveBoard {
@@ -88,24 +81,13 @@
 		}
 
 		&:hover,&:active,&.active {
-			background: #d5dcef;
-
-			td {
-				color: #000000;
-
-				button {
-					background: #ffffff;
-
-					&.disable {
-						background: #efefef;
-					}
-				}
-			}
+			box-shadow: 0px 1px 0px 1px #ffc13c inset;
+			border-color: #ffc13c;
 		}
 
       	th {
-			color: #333333;
-			background: #ffffff;
+			color: #ffc13c;
+			background: #252525;
 			font-size: 13px;
 			padding: 8px 0px 7px;
 			vertical-align: middle;
@@ -131,7 +113,7 @@
 			padding: 8px 0px;
 			vertical-align: middle;
 			word-break: break-all;
-			color: #1b1b1b;
+			color: #ffffff;
 			line-height: 18px;
 
 			&:nth-of-type(1) {
@@ -151,22 +133,22 @@
 			}
 
 			&.allScore {
-				color: #de1e30;
+				color: #ff4719;
 			}
 
 			//遊戲種類著名顏色
 			.gameStyle {
-				color: #0a9746;
+				color: #0ad317;
 			}
 
 			//已進行時間
 			.gameTime {
-				color: #8d8d8d;
+				color: #ababab;
 			}
 
 			//行內按鈕
 			button {
-				color: #f28220;
+				color: #ffc13c;
 				border-radius: 3px;
 				position: relative;
 				word-break: break-all;
@@ -174,14 +156,16 @@
 				font-size: 13px;
 				margin: 0px 1px;
 				font-weight: bold;
+				background: #101010;
+				border: solid 1px #a88335;
 
 				&:hover,&:active,&.active {
-					background: #de1e30;
-					color: #ffffff;
-					box-shadow: none;
+					background: #ffc13c;
+					border-color: transparent;
+					color: #000000;
 
 					span {
-						color: #ffffff;
+						color: #000000;
 					}
 				}
 
@@ -195,7 +179,7 @@
 					top: 0px;
 					border-style: solid;
 					border-width: 0px 15px 15px 0px;
-					border-color: transparent #0ad01c transparent transparent;
+					border-color: transparent #0ad317 transparent transparent;
 					animation: btnFlashing 1.5s linear 0s infinite;
 				}
 
@@ -209,12 +193,12 @@
 					bottom: 0px;
 					border-style: solid;
 					border-width: 15px 15px 0px 0px;
-					border-color: transparent #eb1414 transparent transparent;
+					border-color: transparent #d8001f transparent transparent;
 					animation: btnFlashing 1.5s linear 0s infinite;
 				}
 
 				span {
-					color: #828282;
+					color: #d78f3a;
 					font-size: 12px;
 				}
 
@@ -233,7 +217,7 @@
 				}
 
 				&.disable {
-					background: #dbdbdb;
+					background: #131313;
 					pointer-events: none;
 					color: transparent;
 					user-select: none;
@@ -248,7 +232,7 @@
 						font-size: 18px;
 
 						&.fa-lock {
-							color: #bfbfbf;
+							color: #404040;
 							font-size: 12px;
 						}
 					}
@@ -283,7 +267,7 @@
 				&.tbimg3 {
 					width: auto;
 					height: auto;
-					color: #0046d4;
+					color: #0ad317;
 					font-size: 13px;
 				}
 			}
@@ -945,7 +929,7 @@
 					padding-bottom: 8px;
 
 					&.first {
-						color: #de1e30;
+						color: #ff4719;
 					}
 
 					&:last-child {
@@ -2120,36 +2104,35 @@
 	height: auto;
 	border-collapse: collapse;
 	margin: 0px auto;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 1px #ffc13c;
   
 	//內容
 	tr {
 		text-align: center;
-		background: #fffbcc;
-		border-bottom: solid 1px #e8b746;
-	
-		&:nth-of-type(odd) {
-			background: #fffbcc;
-		}
-
-		&:nth-of-type(1) {
-			border-top: solid 1px #ffdfcc;
-		}
+		background: #252525;
+		border-bottom: solid 1px #a88335;
 		
 		&:last-child {
-			border-bottom: solid 1px #e8b746;
+			border: none;
 		}
   
 		th {
-			color: #1b1b1b;
+			color: #ffc13c;
 			font-size: 13px;
 			padding: 7px 0px 3px;
 			vertical-align: middle;
-			background: #ffe29f;
-			border-right: solid 1px #fba978;
+			background: #1b1b1b;
+			border-right: solid 1px #a88335;
 			position: static;
 
 			&::before {
 				display: none;
+			}
+
+			&:last-child {
+				border: none;
 			}
 	
 			//字靠左
@@ -2164,19 +2147,13 @@
 			padding: 8px 3px;
 			vertical-align: middle;
 			word-break: break-all;
-			color: #1b1b1b;
+			color: #ffffff;
 			line-height: 18px;
-			border-right: solid 1px #e8b746;
+			border-right: solid 1px #a88335;
 			position: relative;
 
-			&::before {
-				content: "";
-				position: absolute;
-				left: 0px;
-				bottom: 0px;
-				background: #ffffff;
-				width: 100%;
-				height: 1px;
+			&:last-child {
+				border: none;
 			}
 	
 			//字靠左
@@ -2201,7 +2178,7 @@
 					transform: translate(-53%, -53%);
 					width: 18px;
 					height: 18px;
-					background: #b71719;
+					background: #d8001f;
 					border-radius: 3px;
 					z-index: -1;
 				}
@@ -2223,7 +2200,7 @@
 					transform: translate(-53%, -57%);
 					width: 18px;
 					height: 18px;
-					background: #1e62c5;
+					background: #0ad317;
 					border-radius: 3px;
 					z-index: -1;
 				}
@@ -2837,8 +2814,8 @@
 				transform: translate(-50%,-50%);
 				text-align: center;
 				padding: 10px 0px;
-				color: #1b1b1b;
-				background: #bfbfbf;
+				color: #ffc13c;
+				background: #5f5f5f;
 				box-shadow: 1px 2px 5px 0px #00000035;
 			}
 		}
@@ -3062,7 +3039,7 @@
 		left: -10px;
 		top: 0px;
 		border-radius: 5px;
-		background: #ffffff;
+		background: #252525;
 		z-index: -1;
 	}
 
@@ -3071,10 +3048,10 @@
 		th {
 			width: 100%;
 			padding: 8px;
-			color: #333333;
+			color: #ffc13c;
 			font-size: 14px;
 			text-align: left;
-			background: #ffffff;
+			background: #252525;
 		}
 
 		td {
@@ -3082,7 +3059,7 @@
 			justify-content: space-around;
 			padding: 8px 5px 0px; 
 			flex-wrap: wrap;
-			background: #f5f5f5;
+			background: #1b1b1b;
 
 			&.two {
 		
@@ -3121,33 +3098,33 @@
 				border: none;
 				height: auto;
 				padding: 8px;
-				background: #ffffff;
+				background: #101010;
 				font-size: 14px;
-				color: #df1e31;
+				color: #ffc13c;
 				margin-bottom: 8px;
-				box-shadow: 0px 1px 5px 1px #00000049;
+				border: solid 1px #a88335;
 
 				&:hover,&:active,&.active {
-					background: #df1e31;
-					color: #ffffff;
-					box-shadow: none;
+					background: #ffc13c;
+					color: #000000;
 
 					span {
-						color: #ffffff;
+						color: #000000;
 					}
 				}
 
 				&.title {
 					background: transparent;
 					pointer-events: none;
-					color: #666666;
+					color: #ffffff;
 					box-shadow: none;
+					border: none;
 				}
 
 				.name {
 					font-size: 13px;
 					padding-right: 20px;
-					color: #666666;
+					color: #d78f3a;
 				}
 			}
 		}
@@ -3161,7 +3138,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 15px 20px;
-	background: #ffffff;
+	background: #252525;
 	position: relative;
 
 	&::before {
@@ -3172,7 +3149,7 @@
 		left: -10px;
 		top: 0px;
 		border-radius: 5px;
-		background: #ffffff;
+		background: #252525;
 		z-index: -1;
 		box-shadow: 0px 0px 5px 0px #00000049;
 	}
@@ -3180,19 +3157,19 @@
 	//內容
     tr {
 		text-align: center;
-		border-bottom: solid 1px #ebebeb;
+		border-bottom: solid 1px #a88335;
 		
 		&.noBorder {
 			border: none;
 		}
 
       	th {
-			color: #333333;
+			color: #ffc13c;
 			font-size: 13px;
 			padding: 8px 0px 6px;
 			vertical-align: middle;
 			position: sticky;
-			top: 80px;
+			top: -1px;
 			z-index: 2;
 			
 			&::before {
@@ -3203,7 +3180,7 @@
 				transform: translateY(-50%);
 				width: 1px;
 				height: 12px;
-				background: #de1e30;
+				background: #ffc13c;
 			}
 
 			//字靠左
@@ -3238,13 +3215,13 @@
 				position: relative;
 
 				p {
-					color: #333333;
+					color: #ffffff;
 					font-size: 14px;
 					line-height: 24px;
 
 					.odd {
 						font-weight: bold;
-						color: #356bf7;
+						color: #ffc13c;
 						padding-left: 5px;
 					}
 				}
@@ -3274,7 +3251,7 @@
 				height: 88px;
 				line-height: 88px;
 				vertical-align: top;
-				color: #8d8d8d;
+				color: #fb770a;
 				position: relative;
 
 				span {
@@ -3288,10 +3265,10 @@
 					left: 50%;
 					transform: translateX(-50%);
 					bottom: -24px;
-					border: solid 1px #ebebeb;
+					border: solid 1px #a88335;
 					border-radius: 30px;
-					background: #ffffff;
-					color: #333333;
+					background: #1b1b1b;
+					color: #ffffff;
 				}
 			}
 
@@ -3301,7 +3278,7 @@
 				height: auto;
 				display: inline-block;
 				padding: 20px 0px;
-				color: #666666;
+				color: #ff4719;
 
 				&.lside {
 					text-align: right;
@@ -3328,7 +3305,7 @@
 
 				&::before {
 					content: "";
-					background: #f5f5f5;
+					background: #3c3c3c;
 					width: 90%;
 					height: 70px;
 					border-radius: 80px;
@@ -3356,17 +3333,17 @@
 					}
 
 					p {
-						color: #666666;
+						color: #d78f3a;
 						font-size: 14px;
 						line-height: 24px;
 
 						&.win {
 							font-weight: bold;
-							color: #df1e31;
+							color: #d8001f;
 						}
 
 						&.lose {
-							color: #454545;
+							color: #ababab;
 						}
 					}
 				}
@@ -3375,7 +3352,7 @@
 				.midBox {
 					width: 80px;
 					height: 80px;
-					background: #ffffff;
+					background: #505050;
 					border-radius: 90px;
 					position: absolute;
 					left: 50%;
@@ -3385,14 +3362,14 @@
 					box-shadow: 0px 0px 10px 2px #00000017;
 
 					p {
-						color: #1b1b1b;
+						color: #ffffff;
 						font-weight: bold;
 						font-size: 18px;
 						line-height: 24px;
 						margin-top: 15px;
 
 						&.score {
-							color: #df1e31;
+							color: #ffc13c;
 							margin-top: 6px;
 							font-size: 24px;
 
@@ -3413,19 +3390,19 @@
     border-collapse: collapse;
 	border-radius: 5px;
 	margin: 0px 0px 14px 10px;
-	background: #ffffff;
+	background: #252525;
 	overflow: hidden;
 
 	tr {
 		text-align: center;
 
 		th {
-			color: #1b1b1b;
+			color: #ffc13c;
 			font-size: 13px;
 			padding: 8px 0px 7px;
 			vertical-align: middle;
 			position: relative;
-			background: #ffffff;
+			background: #252525;
 
 			&::before {
 				content: "";
@@ -3433,7 +3410,7 @@
 				left: 50%;
 				transform: translateX(-50%);
 				bottom: 0px;
-				background: #ebebeb;
+				background: #a88335;
 				width: 98%;
 				height: 1px;
 			}
@@ -3500,12 +3477,12 @@
 				.mainWindow {
 					width: 98%;
 					height: 100%;
-					border: solid 1px #cccccc;
+					border: solid 1px #ffc13c;
 					border-radius: 5px;
 					box-sizing: border-box;
 					margin: 25px 0px 15px;
 					font-size: 0px;
-					background: #fafafa;
+					background: #1b1b1b;
 
 					div {
 						display: inline-block;
@@ -3516,7 +3493,7 @@
 						box-sizing: border-box;
 
 						p {
-							color: #666666;
+							color: #ffffff;
 							font-size: 14px;
 							position: relative;
 
@@ -3530,20 +3507,20 @@
 
 								&:nth-of-type(2) {
 									width: 60%;
-									color: #333333;
+									color: #ffc13c;
 									font-size: 13px;
 								}
 							}
 
 							button {
 								padding: 5px 8px;
-								color: #666666;
+								color: #000000;
 								border-radius: 3px; 
-								background: #ffffff;
+								background: #ffc13c;
                     			box-shadow: 0px 2px 3px 0px #00000049;
 
 								&:hover,&:active,&.active {
-									background: #df1e31;
+									background: #ff4719;
 									color: #ffffff;
 									box-shadow: none;
 								}
@@ -3558,11 +3535,11 @@
 					height: auto;
 					text-align: right;
 					padding-bottom: 15px;
-					color: #666666;
+					color: #ffffff;
 					font-size: 13px;
 
 					a {
-						color: #308e44;
+						color: #0ad317;
 						padding-left: 5px;
 					}
 				}
@@ -3589,7 +3566,7 @@
 			&:nth-of-type(2) {
 
 				th {
-					color: #666666;
+					color: #ff4719;
 					z-index: 2;
 
 					&::before {
@@ -3601,7 +3578,7 @@
 						&::after {
 							content: "";
 							position: absolute;
-							background: #f7f7f7;
+							background: #1b1b1b;
 							top: 0px;
 							right: 0px;
 							width: 96%;
@@ -3614,7 +3591,7 @@
 						&::after {
 							content: "";
 							position: absolute;
-							background: #f7f7f7;
+							background: #1b1b1b;
 							top: 0px;
 							right: 0px;
 							width: 100%;
@@ -3627,7 +3604,7 @@
 						&::after {
 							content: "";
 							position: absolute;
-							background: #f7f7f7;
+							background: #1b1b1b;
 							top: 0px;
 							left: 0px;
 							width: 96%;
@@ -3652,7 +3629,7 @@
 				width: 33.3%;
 				padding: 10px 0px;
 				font-size: 14px;
-				color: #333333;
+				color: #ffffff;
 				z-index: 2;
 
 				&:nth-of-type(1) {
@@ -3660,7 +3637,7 @@
 					&::before {
 						content: "";
 						position: absolute;
-						background: #f1f1f1;
+						background: #a88335;
 						bottom: 0px;
 						right: 0px;
 						width: 96%;
@@ -3673,7 +3650,7 @@
 					&::before {
 						content: "";
 						position: absolute;
-						background: #f1f1f1;
+						background: #a88335;
 						bottom: 0px;
 						right: 0px;
 						width: 100%;
@@ -3686,7 +3663,7 @@
 					&::before {
 						content: "";
 						position: absolute;
-						background: #f1f1f1;
+						background: #a88335;
 						bottom: 0px;
 						left: 0px;
 						width: 96%;
@@ -3707,7 +3684,7 @@
 			th { 
 				
 				button {
-					color: #1b1b1b;
+					color: #ffc13c;
 					background: transparent;
 					border: none;
 					float: right;
@@ -3741,11 +3718,11 @@
 				.box {
 					width: 90%;
 					margin: 0px auto;
-					border: solid 1px #e3e3e3;
+					border: solid 1px #ffc13c;
 					border-radius: 3px;
 					font-size: 0px;
 					position: relative;
-					background: #fafafa;
+					background: #1b1b1b;
 
 					.half {
 						display: inline-block;
@@ -3756,7 +3733,7 @@
 
 						p {
 							font-size: 14px;
-							color: #333333;
+							color: #ffffff;
 							text-align: left;
 							width: 50%;
 							margin: 0px auto;
@@ -3764,27 +3741,28 @@
 							position: relative;
 
 							&.dollar {
-								color: #666666;
+								color: #d78f3a;
 
 								span {
-									color: #0955f0;
+									color: #ffc13c;
 									font-size: 18px;
 									padding-left: 10px;
 								}
 							}
 
 							&.locked {
+								color: #d78f3a;
 
 								span {
-									color: #ea1c1c;
+									color: #d8001f;
 									font-size: 18px;
 									padding-left: 10px;
 								}
 							}
 
 							button {
-								background: #ffffff;
-                				color: #666666;
+								background: #ffc13c;
+                				color: #000000;
 								border-radius: 3px;
 								padding: 5px 8px;
 								position: absolute;
@@ -3793,7 +3771,7 @@
 								top: 5px;
 								
 								&:hover,&:active,&.active {
-									background: #df1e31;
+									background: #ff4719;
 									color: #ffffff;
 									box-shadow: none;
 								}
@@ -3821,7 +3799,7 @@
 						transform: translateY(-50%);
 						width: 1px;
 						height: 25px;
-						background: #ebebeb;
+						background: #a88335;
 					}
 				}
 
@@ -3831,8 +3809,8 @@
 					&.big {
 						float: left;
 						width: 60%;
-						border: solid 1px #e3e3e3;
-						background: #fafafa;
+						border: solid 1px #ffc13c;
+						background: #1b1b1b;
 						border-radius: 3px;
 						font-size: 0px;
 						position: relative;
@@ -3861,28 +3839,28 @@
 							}
 
 							p {
-								color: #333333;
+								color: #ffffff;
 								font-size: 14px;
 								text-align: left;
 
 								&.dollar {
 									padding-top: 15px;
-									color: #666666;
+									color: #d78f3a;
 
 									span {
 										font-size: 18px;
 										padding-left: 10px;
-										color: #0955f0;
+										color: #ffc13c;
 
 										&.locked {
-											color: #ea1c1c;
+											color: #d8001f;
 										}
 									}
 								}
 
 								button {
-									background: #ffffff;
-                					color: #666666;
+									background: #ffc13c;
+                					color: #000000;
 									box-shadow: 0px 1px 5px 1px #00000049;
 									font-size: 12px;
 									padding: 3px 5px;
@@ -3891,7 +3869,7 @@
 									margin: -4px 40px 0px 0px;
 
 									&:hover,&:active,&.active {
-										background: #df1e31;
+										background: #ff4719;
 										color: #ffffff;
 										box-shadow: none;
 									}
@@ -3906,31 +3884,31 @@
 							transform: translateY(-50%);
 							width: 1px;
 							height: 40px;
-							background: #e3e3e3;
+							background: #a88335;
 						}
 					}
 
 					&.small {
 						float: right;
 						width: 30%;
-						border: solid 1px #e3e3e3;
+						border: solid 1px #ffc13c;
 						border-radius: 3px;
 						font-size: 0px;
 						position: relative;
 						box-sizing: border-box;
 						margin-right: 20px;
 						padding: 20px;
-						background: #fafafa;
+						background: #1b1b1b;
 
 						p {
 							font-size: 16px;
 							text-align: left;
 							font-weight: bold;
-							color: #333333;
+							color: #ffc13c;
 
 							&.remind {
 								font-size: 13px;
-								color: #666666;
+								color: #ffffff;
 								padding-top: 20px;
 							}
 						}
@@ -3938,7 +3916,7 @@
 						.turnBtn {
 							width: 50px;
 							height: 25px;
-							background: #e8e8e8;
+							background: #101010;
 							position: absolute;
 							right: 30px;
 							top: 50%;
@@ -3947,9 +3925,10 @@
 							transition: 0.3s all;
 							cursor: pointer;
 							box-shadow: 0px 2px 8px 0px #00000049 inset;
+							border: solid 1px #a88335;
 
 							&.turn {
-								background: #f81e34;
+								background: #ffc13c;
 
 								div {
 									left: 50%;
@@ -3986,7 +3965,7 @@
 					float: right;
 					padding-bottom: 4px;
 					font-size: 13px;
-					color: #454545;
+					color: #ffc13c;
 				}
 			}
 
@@ -3996,17 +3975,18 @@
 					width: 25%;
 					height: 145px;
 					border-radius: 5px;
-					background: linear-gradient(to top,#d3d3d3 0%,#f0f0f0 100%);
-					color: #666666;
+					background: #3c3c3c;
+					color: #ababab;
 					font-size: 17px;
 					margin: 20px 30px;
 					transition: 0.25s all;
 					position: relative;
 					box-shadow: 1px 2px 3px 0px #00000049;
+					border: solid 1px transparent;
 
 					&:hover,&:active,&.active {
-						background: linear-gradient(to top, #cd0e21 0%, #9d0514 100%);
-						color: #ffffff;
+						background: linear-gradient(to left, #e48b0c 0%, #ffc62a 99%);
+						color: #1b1b1b;
 						box-shadow: none;
 
 						div {
@@ -4020,24 +4000,35 @@
 						color: #1b1b1b;
 
 						&:hover {
-							background: #ffffff;
-							border: solid 1px #df1e31;
+							background: #fb770a;
+							border-color: #ffc13c;
+							box-shadow: 0px 0px 10px 2px #ffc13c80;
+							color: #ffffff;
+
+							.bankIc {
+								background-position-y: 100%;
+							}
 						}
 
 						&:active,&.active {
-							background: #ffffff;
-							box-shadow: none;
-							border: solid 1px #df1e31;
+							background: #fb770a;
+							border-color: #ffc13c;
+							box-shadow: 0px 0px 10px 2px #ffc13c80;
+							color: #ffffff;
+
+							.bankIc {
+								background-position-y: 100%;
+							}
 
 							&::before {
 								content: "";
 								position: absolute;
 								width: 30px;
 								height: 30px;
-								border: solid 2px #fefafa;
+								border: solid 2px #1b1b1b;
 								border-radius: 30px;
-								background: #df1e31;
-								box-shadow: 0px 0px 0px 3px #df1e31,1px 2px 8px 0px #00000049;
+								background: #ffffff;
+								box-shadow: 0px 0px 0px 3px #ffffff,1px 2px 8px 0px #00000049;
 								top: -8px;
 								right: -8px;
 								
@@ -4048,7 +4039,7 @@
 								position: absolute;
 								width: 8px;
 								height: 14px;
-								border: solid 5px #ffffff;
+								border: solid 5px #1b1b1b;
 								border-width: 0px 4px 4px 0px;
 								transform: rotate(45deg);
 								top: -2px;
@@ -4107,7 +4098,7 @@
 
 				.remind {
 					float: right;
-					color: #666666;
+					color: #ffffff;
 					margin: 0px 20px 20px 0px;
 					font-size: 14px;
 					position: relative;
@@ -4123,7 +4114,7 @@
 					}
 
 					a {
-						color: #308e44;
+						color: #0ad317;
 					}
 				}
 			}
@@ -4142,9 +4133,9 @@
 					display: inline-block;
 					width: 23%;
 					height: 100px;
-					border: solid 1px #e3e3e3;
+					border: solid 1px #a88335;
 					border-radius: 3px;
-					background: #fafafa;
+					background: #101010;
 					margin: 0px 10px 20px 0px;
 					padding: 20px;
 					box-sizing: border-box;
@@ -4158,16 +4149,16 @@
 						text-align: left;
 						line-height: 28px;
 						font-size: 15px;
-						color: #333333;
+						color: #ffffff;
 
 						&.dollar {
 							font-size: 13px;
-							color: #666666;
+							color: #d78f3a;
 
 							span {
 								font-size: 15px;
 								font-weight: bold;
-								color: #df1e31;
+								color: #ffc13c;
 							}
 						}
 
@@ -4176,12 +4167,12 @@
 							border-radius: 3px;
 							position: absolute;
 							right: 10px;
-							background: #ffffff;
-                			color: #666666;
+							background: #ffc13c;
+                			color: #000000;
 							box-shadow: 0px 1px 5px 0px #00000049;
 
 							&:hover,&:active,&.active {
-								background: #df1e31;
+								background: #ff4719;
 								color: #ffffff;
 								box-shadow: none;
 							}
@@ -4208,7 +4199,7 @@
 			left: 10px;
 			top: 0px;
 			border-radius: 3px;
-			border: solid 1px #e0e0e0;
+			border: solid 1px #ffc13c;
 			z-index: -1;
 		}
 
@@ -4221,14 +4212,14 @@
 			&.fail {
 
 				td {
-					color: #a3a3a3;
+					color: #ababab;
 
 					&::before {
-						background: #fafafa;
+						background: #252525;
 					}
 
 					&.dealCode,&.depositMoney {
-						color: #a3a3a3;
+						color: #ababab;
 					}
 				}
 			}
@@ -4282,15 +4273,15 @@
 				td {
 
 					&::before {
-						background: #f3f6fe;
+						background: #4b4b4b;
 					}
 				}
 			}
 			
 			td {
-				border-right: solid 1px #e0e0e0;
+				border-right: solid 1px #a88335;
 				padding: 10px;
-				color: #666666;
+				color: #ffffff;
 				font-size: 14px;
 
 				&::before {
@@ -4298,7 +4289,7 @@
 					position: absolute;
 					width: 100%;
 					height: 100%;
-					background: #ffffff;
+					background: #1b1b1b;
 					left: 0px;
 					top: 1px;
 					z-index: -1;
@@ -4309,7 +4300,7 @@
 					position: absolute;
 					width: 100%;
 					height: 1px;
-					background: #e0e0e0;
+					background: #a88335;
 					left: 0px;
 					bottom: -1px;
 					z-index: -1;
@@ -4355,11 +4346,11 @@
 				}
 
 				&.dealCode {
-					color: #666666;
+					color: #fb770a;
 				}
 
 				&.depositMoney {
-					color: #df1e31;
+					color: #ffc13c;
 				}
 
 				.time {
@@ -4375,16 +4366,13 @@
 		width: 1120px;
 		margin: 0px auto 10px;
 		cursor: pointer;
-		border: solid 1px #cecece;
-		box-shadow: 0px 2px 5px 0px #00000049;
+		box-shadow: 0px 0px 0px 1px #a88335;
 
 		&.display {
 			display: table;
 		}
 
 		&.open {
-			border: none;
-			box-shadow: 0px 2px 5px 0px #00000049,0px 0px 0px 1px #696969;
 
 			.arrow {
 				transform: translateY(-50%) rotate(-90deg);
@@ -4397,14 +4385,15 @@
 		}
 		
 		tr {
-			border-bottom: solid 1px #e6e6e6;
-			background: #fafafa;
+			border-bottom: solid 1px #a88335;
+			background: #252525;
 
 			&:nth-of-type(odd) {
-				background: #f6f6f6;
+				background: #292929;
 			}
 
 			&:last-child {
+				border: none;
 
 				td {
 
@@ -4421,14 +4410,14 @@
 			&.totalInfo {
 
 				td {
-					color: #df1e31;
+					color: #ff4719;
 				}
 			}
 
 			th {
-				color: #1b1b1b;
+				color: #ffc13c;
 				border-radius: 5px 5px 0px 0px;
-				background: #ffffff;
+				background: #252525;
 
 				&::before {
 					display: none;
@@ -4442,13 +4431,13 @@
 					float: left;
 					width: 1px;
 					height: 14px;
-					background: #df1e31;
+					background: #a88335;
 					margin: 0px 10px;
 				}
 
 				.arrow {
-					width: 9px;
-					height: 16px;
+					width: 8px;
+					height: 11px;
 					background: url('../images/forCss_6/arrow_bl2.png') no-repeat;
 					background-size: 100%;
 					display: block;
@@ -4461,13 +4450,13 @@
 
 			td {
 				padding: 10px;
-				color: #1b1b1b;
+				color: #ffffff;
 				font-size: 14px;
-				border-right: solid 1px #e0e0e0;
+				border-right: solid 1px #a88335;
 
 				&:nth-of-type(1),&:nth-of-type(3),&:nth-of-type(5) {
 					width: 10%;
-					color: #333333;
+					color: #ffc13c;
 				}
 
 				&:nth-of-type(2) {
@@ -4483,7 +4472,7 @@
 				}
 
 				&.yellow {
-					color: #df1e31;
+					color: #ff4719;
 				}
 
 				&.highSeparate {
@@ -4491,7 +4480,7 @@
 				}
 
 				.teamName {
-					color: #1b1b1b;
+					color: #ffffff;
 				}
 
 				.separate {
@@ -4501,11 +4490,11 @@
 				}
 
 				.odd {
-					color: #0955f0;
+					color: #ff4719;
 				}
 
 				.vs {
-					color: #1b1b1b;
+					color: #ffffff;
 					font-size: 12px;
 					padding: 0px 8px;
 				}
@@ -4516,10 +4505,10 @@
 	&.totalInfo {
 		width: 1070px;
 		margin: 0px auto;
-		background: linear-gradient(to top,#f2f2f2 0%,#ffffff 100%);
+		background: #252525;
 		border-style: solid;
 		border-width: 1px 0px;
-		border-color: #de1e30;
+		border-color: #ffc13c;
 		overflow: visible;
 		
 		tr {
@@ -4528,10 +4517,11 @@
 			td {
 				padding: 10px 0px;
 				font-size: 15px;
-				color: #df1e31;
+				color: #ff4719;
 
 				&:nth-of-type(1),&:nth-of-type(3),&:nth-of-type(5) {
 					width: 10%;
+					color: #ffffff;
 				}
 
 				&:nth-of-type(2) {
@@ -4551,7 +4541,7 @@
 					float: right;
 					width: 1px;
 					height: 16px;
-					background: #cdcdcd;
+					background: #a88335;
 				}
 			}
 		}
@@ -5098,9 +5088,9 @@
 			height: 100%;
 			left: 10px;
 			top: 0px;
-			background: #ffffff;
+			background: #252525;
 			border-radius: 3px;
-			border: solid 1px #e0e0e0;
+			border: solid 1px #ffc13c;
 			box-shadow: 0px 2px 5px 0px #0000001a;
 		}
 
@@ -5112,7 +5102,7 @@
 			left: 50%;
 			top: 0px;
 			transform: translateX(-50%);
-			background: #e0e0e0;
+			background: #a88335;
 			z-index: 3;
 		}
 
@@ -5130,7 +5120,7 @@
 
 			th {
 				width: 50%;
-				color: #df1e31;
+				color: #ff4719;
 				background: none;
 
 				&::before {
@@ -5140,7 +5130,7 @@
 
 			td {
 				padding: 10px;
-				color: #666666;
+				color: #ffffff;
 				z-index: 2;
 				
 				&:nth-of-type(odd) {
@@ -5150,7 +5140,7 @@
 						position: absolute;
 						width: 98%;
 						height: 100%;
-						background: #fafafa;
+						background: #292929;
 						right: 0px;
 						top: 1px;
 						z-index: -1;
@@ -5164,7 +5154,7 @@
 						position: absolute;
 						width: 98%;
 						height: 100%;
-						background: #fafafa;
+						background: #292929;
 						left: 0px;
 						top: 1px;
 						z-index: -1;

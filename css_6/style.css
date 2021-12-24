@@ -1241,18 +1241,18 @@ main .bg {
   left: -10px;
   top: 0px;
   border-radius: 5px;
-  background: #ffffff;
+  background: #252525;
   z-index: -1;
   box-shadow: 0px 0px 5px 0px #00000049;
 }
 .playBoard.index_page tr:nth-of-type(2) th, .playBoard.result_page tr:nth-of-type(2) th {
-  background: #f7f7f7;
-  color: #666666;
+  background: #1b1b1b;
+  color: #ff4719;
 }
 .playBoard tr {
   text-align: center;
-  background: #ffffff;
-  border-bottom: solid 1px #ebebeb;
+  background: #252525;
+  border-bottom: solid 1px #4e4e4e;
 }
 .playBoard tr:nth-of-type(1) th.tLeft:nth-of-type(1)::before {
   content: "";
@@ -1262,35 +1262,24 @@ main .bg {
   transform: translateY(-50%);
   width: 1px;
   height: 12px;
-  background: #de1e30;
+  background: #ffc13c;
 }
 .playBoard tr:last-child {
-  border: none;
+  border-color: transparent;
 }
 .playBoard tr.onTime {
-  background: #fff7e4;
-}
-.playBoard tr.onTime td button {
-  background: #ece3cb;
+  background: #3c3c3c;
 }
 .playBoard tr.liveBoard {
   pointer-events: none;
 }
 .playBoard tr:hover, .playBoard tr:active, .playBoard tr.active {
-  background: #d5dcef;
-}
-.playBoard tr:hover td, .playBoard tr:active td, .playBoard tr.active td {
-  color: #000000;
-}
-.playBoard tr:hover td button, .playBoard tr:active td button, .playBoard tr.active td button {
-  background: #ffffff;
-}
-.playBoard tr:hover td button.disable, .playBoard tr:active td button.disable, .playBoard tr.active td button.disable {
-  background: #efefef;
+  box-shadow: 0px 1px 0px 1px #ffc13c inset;
+  border-color: #ffc13c;
 }
 .playBoard tr th {
-  color: #333333;
-  background: #ffffff;
+  color: #ffc13c;
+  background: #252525;
   font-size: 13px;
   padding: 8px 0px 7px;
   vertical-align: middle;
@@ -1313,7 +1302,7 @@ main .bg {
   padding: 8px 0px;
   vertical-align: middle;
   word-break: break-all;
-  color: #1b1b1b;
+  color: #ffffff;
   line-height: 18px;
 }
 .playBoard tr td:nth-of-type(1) p:nth-of-type(1) {
@@ -1324,16 +1313,16 @@ main .bg {
   padding: 0px 10px;
 }
 .playBoard tr td.allScore {
-  color: #de1e30;
+  color: #ff4719;
 }
 .playBoard tr td .gameStyle {
-  color: #0a9746;
+  color: #0ad317;
 }
 .playBoard tr td .gameTime {
-  color: #8d8d8d;
+  color: #ababab;
 }
 .playBoard tr td button {
-  color: #f28220;
+  color: #ffc13c;
   border-radius: 3px;
   position: relative;
   word-break: break-all;
@@ -1341,14 +1330,16 @@ main .bg {
   font-size: 13px;
   margin: 0px 1px;
   font-weight: bold;
+  background: #101010;
+  border: solid 1px #a88335;
 }
 .playBoard tr td button:hover, .playBoard tr td button:active, .playBoard tr td button.active {
-  background: #de1e30;
-  color: #ffffff;
-  box-shadow: none;
+  background: #ffc13c;
+  border-color: transparent;
+  color: #000000;
 }
 .playBoard tr td button:hover span, .playBoard tr td button:active span, .playBoard tr td button.active span {
-  color: #ffffff;
+  color: #000000;
 }
 .playBoard tr td button::before {
   display: none;
@@ -1360,7 +1351,7 @@ main .bg {
   top: 0px;
   border-style: solid;
   border-width: 0px 15px 15px 0px;
-  border-color: transparent #0ad01c transparent transparent;
+  border-color: transparent #0ad317 transparent transparent;
   animation: btnFlashing 1.5s linear 0s infinite;
 }
 .playBoard tr td button::after {
@@ -1373,11 +1364,11 @@ main .bg {
   bottom: 0px;
   border-style: solid;
   border-width: 15px 15px 0px 0px;
-  border-color: transparent #eb1414 transparent transparent;
+  border-color: transparent #d8001f transparent transparent;
   animation: btnFlashing 1.5s linear 0s infinite;
 }
 .playBoard tr td button span {
-  color: #828282;
+  color: #d78f3a;
   font-size: 12px;
 }
 .playBoard tr td button.up::before {
@@ -1387,7 +1378,7 @@ main .bg {
   display: block;
 }
 .playBoard tr td button.disable {
-  background: #dbdbdb;
+  background: #131313;
   pointer-events: none;
   color: transparent;
   -webkit-user-select: none;
@@ -1403,7 +1394,7 @@ main .bg {
   font-size: 18px;
 }
 .playBoard tr td button.disable span.fa-lock {
-  color: #bfbfbf;
+  color: #404040;
   font-size: 12px;
 }
 .playBoard tr td a {
@@ -1428,7 +1419,7 @@ main .bg {
 .playBoard tr td a.tbimg3 {
   width: auto;
   height: auto;
-  color: #0046d4;
+  color: #0ad317;
   font-size: 13px;
 }
 .playBoard tr td.overGame {
@@ -1768,7 +1759,7 @@ main .bg {
   padding-bottom: 8px;
 }
 .playBoard.tType4_result tr td p.first {
-  color: #de1e30;
+  color: #ff4719;
 }
 .playBoard.tType4_result tr td p:last-child {
   padding: 0px;
@@ -2348,32 +2339,32 @@ main .bg {
   height: auto;
   border-collapse: collapse;
   margin: 0px auto;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 1px #ffc13c;
 }
 .scoreBoard tr {
   text-align: center;
-  background: #fffbcc;
-  border-bottom: solid 1px #e8b746;
-}
-.scoreBoard tr:nth-of-type(odd) {
-  background: #fffbcc;
-}
-.scoreBoard tr:nth-of-type(1) {
-  border-top: solid 1px #ffdfcc;
+  background: #252525;
+  border-bottom: solid 1px #a88335;
 }
 .scoreBoard tr:last-child {
-  border-bottom: solid 1px #e8b746;
+  border: none;
 }
 .scoreBoard tr th {
-  color: #1b1b1b;
+  color: #ffc13c;
   font-size: 13px;
   padding: 7px 0px 3px;
   vertical-align: middle;
-  background: #ffe29f;
-  border-right: solid 1px #fba978;
+  background: #1b1b1b;
+  border-right: solid 1px #a88335;
   position: static;
 }
 .scoreBoard tr th::before {
   display: none;
+}
+.scoreBoard tr th:last-child {
+  border: none;
 }
 .scoreBoard tr th.tLeft {
   text-align: left;
@@ -2384,19 +2375,13 @@ main .bg {
   padding: 8px 3px;
   vertical-align: middle;
   word-break: break-all;
-  color: #1b1b1b;
+  color: #ffffff;
   line-height: 18px;
-  border-right: solid 1px #e8b746;
+  border-right: solid 1px #a88335;
   position: relative;
 }
-.scoreBoard tr td::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  background: #ffffff;
-  width: 100%;
-  height: 1px;
+.scoreBoard tr td:last-child {
+  border: none;
 }
 .scoreBoard tr td.tLeft {
   text-align: left;
@@ -2418,7 +2403,7 @@ main .bg {
   transform: translate(-53%, -53%);
   width: 18px;
   height: 18px;
-  background: #b71719;
+  background: #d8001f;
   border-radius: 3px;
   z-index: -1;
 }
@@ -2438,7 +2423,7 @@ main .bg {
   transform: translate(-53%, -57%);
   width: 18px;
   height: 18px;
-  background: #1e62c5;
+  background: #0ad317;
   border-radius: 3px;
   z-index: -1;
 }
@@ -2729,8 +2714,8 @@ main .bg {
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 10px 0px;
-  color: #1b1b1b;
-  background: #bfbfbf;
+  color: #ffc13c;
+  background: #5f5f5f;
   box-shadow: 1px 2px 5px 0px #00000035;
 }
 
@@ -2906,23 +2891,23 @@ main .bg {
   left: -10px;
   top: 0px;
   border-radius: 5px;
-  background: #ffffff;
+  background: #252525;
   z-index: -1;
 }
 .innerBoard tr th {
   width: 100%;
   padding: 8px;
-  color: #333333;
+  color: #ffc13c;
   font-size: 14px;
   text-align: left;
-  background: #ffffff;
+  background: #252525;
 }
 .innerBoard tr td {
   display: flex;
   justify-content: space-around;
   padding: 8px 5px 0px;
   flex-wrap: wrap;
-  background: #f5f5f5;
+  background: #1b1b1b;
 }
 .innerBoard tr td.two button {
   width: 49.5%;
@@ -2944,30 +2929,30 @@ main .bg {
   border: none;
   height: auto;
   padding: 8px;
-  background: #ffffff;
+  background: #101010;
   font-size: 14px;
-  color: #df1e31;
+  color: #ffc13c;
   margin-bottom: 8px;
-  box-shadow: 0px 1px 5px 1px #00000049;
+  border: solid 1px #a88335;
 }
 .innerBoard tr td button:hover, .innerBoard tr td button:active, .innerBoard tr td button.active {
-  background: #df1e31;
-  color: #ffffff;
-  box-shadow: none;
+  background: #ffc13c;
+  color: #000000;
 }
 .innerBoard tr td button:hover span, .innerBoard tr td button:active span, .innerBoard tr td button.active span {
-  color: #ffffff;
+  color: #000000;
 }
 .innerBoard tr td button.title {
   background: transparent;
   pointer-events: none;
-  color: #666666;
+  color: #ffffff;
   box-shadow: none;
+  border: none;
 }
 .innerBoard tr td button .name {
   font-size: 13px;
   padding-right: 20px;
-  color: #666666;
+  color: #d78f3a;
 }
 
 .teachBoard {
@@ -2976,7 +2961,7 @@ main .bg {
   border-collapse: collapse;
   border-radius: 3px;
   margin: 0px 0px 15px 20px;
-  background: #ffffff;
+  background: #252525;
   position: relative;
 }
 .teachBoard::before {
@@ -2987,25 +2972,25 @@ main .bg {
   left: -10px;
   top: 0px;
   border-radius: 5px;
-  background: #ffffff;
+  background: #252525;
   z-index: -1;
   box-shadow: 0px 0px 5px 0px #00000049;
 }
 .teachBoard tr {
   text-align: center;
-  border-bottom: solid 1px #ebebeb;
+  border-bottom: solid 1px #a88335;
 }
 .teachBoard tr.noBorder {
   border: none;
 }
 .teachBoard tr th {
-  color: #333333;
+  color: #ffc13c;
   font-size: 13px;
   padding: 8px 0px 6px;
   vertical-align: middle;
   position: -webkit-sticky;
   position: sticky;
-  top: 80px;
+  top: -1px;
   z-index: 2;
 }
 .teachBoard tr th::before {
@@ -3016,7 +3001,7 @@ main .bg {
   transform: translateY(-50%);
   width: 1px;
   height: 12px;
-  background: #de1e30;
+  background: #ffc13c;
 }
 .teachBoard tr th.tLeft {
   text-align: left;
@@ -3044,13 +3029,13 @@ main .bg {
   position: relative;
 }
 .teachBoard tr td .team p {
-  color: #333333;
+  color: #ffffff;
   font-size: 14px;
   line-height: 24px;
 }
 .teachBoard tr td .team p .odd {
   font-weight: bold;
-  color: #356bf7;
+  color: #ffc13c;
   padding-left: 5px;
 }
 .teachBoard tr td .team .img {
@@ -3075,7 +3060,7 @@ main .bg {
   height: 88px;
   line-height: 88px;
   vertical-align: top;
-  color: #8d8d8d;
+  color: #fb770a;
   position: relative;
 }
 .teachBoard tr td .vs span {
@@ -3089,17 +3074,17 @@ main .bg {
   left: 50%;
   transform: translateX(-50%);
   bottom: -24px;
-  border: solid 1px #ebebeb;
+  border: solid 1px #a88335;
   border-radius: 30px;
-  background: #ffffff;
-  color: #333333;
+  background: #1b1b1b;
+  color: #ffffff;
 }
 .teachBoard tr td .explain {
   width: 220px;
   height: auto;
   display: inline-block;
   padding: 20px 0px;
-  color: #666666;
+  color: #ff4719;
 }
 .teachBoard tr td .explain.lside {
   text-align: right;
@@ -3121,7 +3106,7 @@ main .bg {
 }
 .teachBoard tr td .box::before {
   content: "";
-  background: #f5f5f5;
+  background: #3c3c3c;
   width: 90%;
   height: 70px;
   border-radius: 80px;
@@ -3145,21 +3130,21 @@ main .bg {
   float: right;
 }
 .teachBoard tr td .box .textBox p {
-  color: #666666;
+  color: #d78f3a;
   font-size: 14px;
   line-height: 24px;
 }
 .teachBoard tr td .box .textBox p.win {
   font-weight: bold;
-  color: #df1e31;
+  color: #d8001f;
 }
 .teachBoard tr td .box .textBox p.lose {
-  color: #454545;
+  color: #ababab;
 }
 .teachBoard tr td .box .midBox {
   width: 80px;
   height: 80px;
-  background: #ffffff;
+  background: #505050;
   border-radius: 90px;
   position: absolute;
   left: 50%;
@@ -3169,14 +3154,14 @@ main .bg {
   box-shadow: 0px 0px 10px 2px #00000017;
 }
 .teachBoard tr td .box .midBox p {
-  color: #1b1b1b;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   margin-top: 15px;
 }
 .teachBoard tr td .box .midBox p.score {
-  color: #df1e31;
+  color: #ffc13c;
   margin-top: 6px;
   font-size: 24px;
 }
@@ -3189,19 +3174,19 @@ main .bg {
   border-collapse: collapse;
   border-radius: 5px;
   margin: 0px 0px 14px 10px;
-  background: #ffffff;
+  background: #252525;
   overflow: hidden;
 }
 .minetable tr {
   text-align: center;
 }
 .minetable tr th {
-  color: #1b1b1b;
+  color: #ffc13c;
   font-size: 13px;
   padding: 8px 0px 7px;
   vertical-align: middle;
   position: relative;
-  background: #ffffff;
+  background: #252525;
 }
 .minetable tr th::before {
   content: "";
@@ -3209,7 +3194,7 @@ main .bg {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0px;
-  background: #ebebeb;
+  background: #a88335;
   width: 98%;
   height: 1px;
 }
@@ -3257,12 +3242,12 @@ main .bg {
 .minetable.infor tr td .mainWindow {
   width: 98%;
   height: 100%;
-  border: solid 1px #cccccc;
+  border: solid 1px #ffc13c;
   border-radius: 5px;
   box-sizing: border-box;
   margin: 25px 0px 15px;
   font-size: 0px;
-  background: #fafafa;
+  background: #1b1b1b;
 }
 .minetable.infor tr td .mainWindow div {
   display: inline-block;
@@ -3273,7 +3258,7 @@ main .bg {
   box-sizing: border-box;
 }
 .minetable.infor tr td .mainWindow div p {
-  color: #666666;
+  color: #ffffff;
   font-size: 14px;
   position: relative;
 }
@@ -3286,18 +3271,18 @@ main .bg {
 }
 .minetable.infor tr td .mainWindow div p span:nth-of-type(2) {
   width: 60%;
-  color: #333333;
+  color: #ffc13c;
   font-size: 13px;
 }
 .minetable.infor tr td .mainWindow div p button {
   padding: 5px 8px;
-  color: #666666;
+  color: #000000;
   border-radius: 3px;
-  background: #ffffff;
+  background: #ffc13c;
   box-shadow: 0px 2px 3px 0px #00000049;
 }
 .minetable.infor tr td .mainWindow div p button:hover, .minetable.infor tr td .mainWindow div p button:active, .minetable.infor tr td .mainWindow div p button.active {
-  background: #df1e31;
+  background: #ff4719;
   color: #ffffff;
   box-shadow: none;
 }
@@ -3306,11 +3291,11 @@ main .bg {
   height: auto;
   text-align: right;
   padding-bottom: 15px;
-  color: #666666;
+  color: #ffffff;
   font-size: 13px;
 }
 .minetable.infor tr td .remind a {
-  color: #308e44;
+  color: #0ad317;
   padding-left: 5px;
 }
 .minetable.bettingLimit {
@@ -3321,7 +3306,7 @@ main .bg {
   display: none;
 }
 .minetable.bettingLimit tr:nth-of-type(2) th {
-  color: #666666;
+  color: #ff4719;
   z-index: 2;
 }
 .minetable.bettingLimit tr:nth-of-type(2) th::before {
@@ -3330,7 +3315,7 @@ main .bg {
 .minetable.bettingLimit tr:nth-of-type(2) th:nth-of-type(1)::after {
   content: "";
   position: absolute;
-  background: #f7f7f7;
+  background: #1b1b1b;
   top: 0px;
   right: 0px;
   width: 96%;
@@ -3340,7 +3325,7 @@ main .bg {
 .minetable.bettingLimit tr:nth-of-type(2) th:nth-of-type(2)::after {
   content: "";
   position: absolute;
-  background: #f7f7f7;
+  background: #1b1b1b;
   top: 0px;
   right: 0px;
   width: 100%;
@@ -3350,7 +3335,7 @@ main .bg {
 .minetable.bettingLimit tr:nth-of-type(2) th:nth-of-type(3)::after {
   content: "";
   position: absolute;
-  background: #f7f7f7;
+  background: #1b1b1b;
   top: 0px;
   left: 0px;
   width: 96%;
@@ -3364,13 +3349,13 @@ main .bg {
   width: 33.3%;
   padding: 10px 0px;
   font-size: 14px;
-  color: #333333;
+  color: #ffffff;
   z-index: 2;
 }
 .minetable.bettingLimit tr td:nth-of-type(1)::before {
   content: "";
   position: absolute;
-  background: #f1f1f1;
+  background: #a88335;
   bottom: 0px;
   right: 0px;
   width: 96%;
@@ -3380,7 +3365,7 @@ main .bg {
 .minetable.bettingLimit tr td:nth-of-type(2)::before {
   content: "";
   position: absolute;
-  background: #f1f1f1;
+  background: #a88335;
   bottom: 0px;
   right: 0px;
   width: 100%;
@@ -3390,7 +3375,7 @@ main .bg {
 .minetable.bettingLimit tr td:nth-of-type(3)::before {
   content: "";
   position: absolute;
-  background: #f1f1f1;
+  background: #a88335;
   bottom: 0px;
   left: 0px;
   width: 96%;
@@ -3401,7 +3386,7 @@ main .bg {
   width: 1150px;
 }
 .minetable.totalMoney tr th button {
-  color: #1b1b1b;
+  color: #ffc13c;
   background: transparent;
   border: none;
   float: right;
@@ -3428,11 +3413,11 @@ main .bg {
 .minetable.totalMoney tr td .box {
   width: 90%;
   margin: 0px auto;
-  border: solid 1px #e3e3e3;
+  border: solid 1px #ffc13c;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
-  background: #fafafa;
+  background: #1b1b1b;
 }
 .minetable.totalMoney tr td .box .half {
   display: inline-block;
@@ -3443,7 +3428,7 @@ main .bg {
 }
 .minetable.totalMoney tr td .box .half p {
   font-size: 14px;
-  color: #333333;
+  color: #ffffff;
   text-align: left;
   width: 50%;
   margin: 0px auto;
@@ -3451,21 +3436,24 @@ main .bg {
   position: relative;
 }
 .minetable.totalMoney tr td .box .half p.dollar {
-  color: #666666;
+  color: #d78f3a;
 }
 .minetable.totalMoney tr td .box .half p.dollar span {
-  color: #0955f0;
+  color: #ffc13c;
   font-size: 18px;
   padding-left: 10px;
 }
+.minetable.totalMoney tr td .box .half p.locked {
+  color: #d78f3a;
+}
 .minetable.totalMoney tr td .box .half p.locked span {
-  color: #ea1c1c;
+  color: #d8001f;
   font-size: 18px;
   padding-left: 10px;
 }
 .minetable.totalMoney tr td .box .half p button {
-  background: #ffffff;
-  color: #666666;
+  background: #ffc13c;
+  color: #000000;
   border-radius: 3px;
   padding: 5px 8px;
   position: absolute;
@@ -3474,7 +3462,7 @@ main .bg {
   top: 5px;
 }
 .minetable.totalMoney tr td .box .half p button:hover, .minetable.totalMoney tr td .box .half p button:active, .minetable.totalMoney tr td .box .half p button.active {
-  background: #df1e31;
+  background: #ff4719;
   color: #ffffff;
   box-shadow: none;
 }
@@ -3496,7 +3484,7 @@ main .bg {
   transform: translateY(-50%);
   width: 1px;
   height: 25px;
-  background: #ebebeb;
+  background: #a88335;
 }
 .minetable.totalMoney tr td .separateBox {
   height: 89px;
@@ -3504,8 +3492,8 @@ main .bg {
 .minetable.totalMoney tr td .separateBox.big {
   float: left;
   width: 60%;
-  border: solid 1px #e3e3e3;
-  background: #fafafa;
+  border: solid 1px #ffc13c;
+  background: #1b1b1b;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
@@ -3532,25 +3520,25 @@ main .bg {
   background-position-x: 100%;
 }
 .minetable.totalMoney tr td .separateBox.big .half p {
-  color: #333333;
+  color: #ffffff;
   font-size: 14px;
   text-align: left;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar {
   padding-top: 15px;
-  color: #666666;
+  color: #d78f3a;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span {
   font-size: 18px;
   padding-left: 10px;
-  color: #0955f0;
+  color: #ffc13c;
 }
 .minetable.totalMoney tr td .separateBox.big .half p.dollar span.locked {
-  color: #ea1c1c;
+  color: #d8001f;
 }
 .minetable.totalMoney tr td .separateBox.big .half p button {
-  background: #ffffff;
-  color: #666666;
+  background: #ffc13c;
+  color: #000000;
   box-shadow: 0px 1px 5px 1px #00000049;
   font-size: 12px;
   padding: 3px 5px;
@@ -3559,7 +3547,7 @@ main .bg {
   margin: -4px 40px 0px 0px;
 }
 .minetable.totalMoney tr td .separateBox.big .half p button:hover, .minetable.totalMoney tr td .separateBox.big .half p button:active, .minetable.totalMoney tr td .separateBox.big .half p button.active {
-  background: #df1e31;
+  background: #ff4719;
   color: #ffffff;
   box-shadow: none;
 }
@@ -3570,35 +3558,35 @@ main .bg {
   transform: translateY(-50%);
   width: 1px;
   height: 40px;
-  background: #e3e3e3;
+  background: #a88335;
 }
 .minetable.totalMoney tr td .separateBox.small {
   float: right;
   width: 30%;
-  border: solid 1px #e3e3e3;
+  border: solid 1px #ffc13c;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
   box-sizing: border-box;
   margin-right: 20px;
   padding: 20px;
-  background: #fafafa;
+  background: #1b1b1b;
 }
 .minetable.totalMoney tr td .separateBox.small p {
   font-size: 16px;
   text-align: left;
   font-weight: bold;
-  color: #333333;
+  color: #ffc13c;
 }
 .minetable.totalMoney tr td .separateBox.small p.remind {
   font-size: 13px;
-  color: #666666;
+  color: #ffffff;
   padding-top: 20px;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn {
   width: 50px;
   height: 25px;
-  background: #e8e8e8;
+  background: #101010;
   position: absolute;
   right: 30px;
   top: 50%;
@@ -3607,9 +3595,10 @@ main .bg {
   transition: 0.3s all;
   cursor: pointer;
   box-shadow: 0px 2px 8px 0px #00000049 inset;
+  border: solid 1px #a88335;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn.turn {
-  background: #f81e34;
+  background: #ffc13c;
 }
 .minetable.totalMoney tr td .separateBox.small .turnBtn.turn div {
   left: 50%;
@@ -3633,23 +3622,24 @@ main .bg {
   float: right;
   padding-bottom: 4px;
   font-size: 13px;
-  color: #454545;
+  color: #ffc13c;
 }
 .minetable.creditcard tr td .creditcardBtn {
   width: 25%;
   height: 145px;
   border-radius: 5px;
-  background: linear-gradient(to top, #d3d3d3 0%, #f0f0f0 100%);
-  color: #666666;
+  background: #3c3c3c;
+  color: #ababab;
   font-size: 17px;
   margin: 20px 30px;
   transition: 0.25s all;
   position: relative;
   box-shadow: 1px 2px 3px 0px #00000049;
+  border: solid 1px transparent;
 }
 .minetable.creditcard tr td .creditcardBtn:hover, .minetable.creditcard tr td .creditcardBtn:active, .minetable.creditcard tr td .creditcardBtn.active {
-  background: linear-gradient(to top, #cd0e21 0%, #9d0514 100%);
-  color: #ffffff;
+  background: linear-gradient(to left, #e48b0c 0%, #ffc62a 99%);
+  color: #1b1b1b;
   box-shadow: none;
 }
 .minetable.creditcard tr td .creditcardBtn:hover div, .minetable.creditcard tr td .creditcardBtn:active div, .minetable.creditcard tr td .creditcardBtn.active div {
@@ -3661,23 +3651,32 @@ main .bg {
   color: #1b1b1b;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:hover, .minetable.creditcard tr td .creditcardBtn.c2:hover, .minetable.creditcard tr td .creditcardBtn.c3:hover {
-  background: #ffffff;
-  border: solid 1px #df1e31;
+  background: #fb770a;
+  border-color: #ffc13c;
+  box-shadow: 0px 0px 10px 2px #ffc13c80;
+  color: #ffffff;
+}
+.minetable.creditcard tr td .creditcardBtn.c1:hover .bankIc, .minetable.creditcard tr td .creditcardBtn.c2:hover .bankIc, .minetable.creditcard tr td .creditcardBtn.c3:hover .bankIc {
+  background-position-y: 100%;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:active, .minetable.creditcard tr td .creditcardBtn.c1.active, .minetable.creditcard tr td .creditcardBtn.c2:active, .minetable.creditcard tr td .creditcardBtn.c2.active, .minetable.creditcard tr td .creditcardBtn.c3:active, .minetable.creditcard tr td .creditcardBtn.c3.active {
-  background: #ffffff;
-  box-shadow: none;
-  border: solid 1px #df1e31;
+  background: #fb770a;
+  border-color: #ffc13c;
+  box-shadow: 0px 0px 10px 2px #ffc13c80;
+  color: #ffffff;
+}
+.minetable.creditcard tr td .creditcardBtn.c1:active .bankIc, .minetable.creditcard tr td .creditcardBtn.c1.active .bankIc, .minetable.creditcard tr td .creditcardBtn.c2:active .bankIc, .minetable.creditcard tr td .creditcardBtn.c2.active .bankIc, .minetable.creditcard tr td .creditcardBtn.c3:active .bankIc, .minetable.creditcard tr td .creditcardBtn.c3.active .bankIc {
+  background-position-y: 100%;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:active::before, .minetable.creditcard tr td .creditcardBtn.c1.active::before, .minetable.creditcard tr td .creditcardBtn.c2:active::before, .minetable.creditcard tr td .creditcardBtn.c2.active::before, .minetable.creditcard tr td .creditcardBtn.c3:active::before, .minetable.creditcard tr td .creditcardBtn.c3.active::before {
   content: "";
   position: absolute;
   width: 30px;
   height: 30px;
-  border: solid 2px #fefafa;
+  border: solid 2px #1b1b1b;
   border-radius: 30px;
-  background: #df1e31;
-  box-shadow: 0px 0px 0px 3px #df1e31, 1px 2px 8px 0px #00000049;
+  background: #ffffff;
+  box-shadow: 0px 0px 0px 3px #ffffff, 1px 2px 8px 0px #00000049;
   top: -8px;
   right: -8px;
 }
@@ -3686,7 +3685,7 @@ main .bg {
   position: absolute;
   width: 8px;
   height: 14px;
-  border: solid 5px #ffffff;
+  border: solid 5px #1b1b1b;
   border-width: 0px 4px 4px 0px;
   transform: rotate(45deg);
   top: -2px;
@@ -3731,7 +3730,7 @@ main .bg {
 }
 .minetable.creditcard tr td .remind {
   float: right;
-  color: #666666;
+  color: #ffffff;
   margin: 0px 20px 20px 0px;
   font-size: 14px;
   position: relative;
@@ -3746,7 +3745,7 @@ main .bg {
   left: -18px;
 }
 .minetable.creditcard tr td .remind a {
-  color: #308e44;
+  color: #0ad317;
 }
 .minetable.moneyDetail {
   width: 1150px;
@@ -3758,9 +3757,9 @@ main .bg {
   display: inline-block;
   width: 23%;
   height: 100px;
-  border: solid 1px #e3e3e3;
+  border: solid 1px #a88335;
   border-radius: 3px;
-  background: #fafafa;
+  background: #101010;
   margin: 0px 10px 20px 0px;
   padding: 20px;
   box-sizing: border-box;
@@ -3773,28 +3772,28 @@ main .bg {
   text-align: left;
   line-height: 28px;
   font-size: 15px;
-  color: #333333;
+  color: #ffffff;
 }
 .minetable.moneyDetail tr td div p.dollar {
   font-size: 13px;
-  color: #666666;
+  color: #d78f3a;
 }
 .minetable.moneyDetail tr td div p.dollar span {
   font-size: 15px;
   font-weight: bold;
-  color: #df1e31;
+  color: #ffc13c;
 }
 .minetable.moneyDetail tr td div p .charge {
   padding: 5px 8px;
   border-radius: 3px;
   position: absolute;
   right: 10px;
-  background: #ffffff;
-  color: #666666;
+  background: #ffc13c;
+  color: #000000;
   box-shadow: 0px 1px 5px 0px #00000049;
 }
 .minetable.moneyDetail tr td div p .charge:hover, .minetable.moneyDetail tr td div p .charge:active, .minetable.moneyDetail tr td div p .charge.active {
-  background: #df1e31;
+  background: #ff4719;
   color: #ffffff;
   box-shadow: none;
 }
@@ -3813,20 +3812,20 @@ main .bg {
   left: 10px;
   top: 0px;
   border-radius: 3px;
-  border: solid 1px #e0e0e0;
+  border: solid 1px #ffc13c;
   z-index: -1;
 }
 .minetable.dealRecord.display {
   display: table;
 }
 .minetable.dealRecord tr.fail td {
-  color: #a3a3a3;
+  color: #ababab;
 }
 .minetable.dealRecord tr.fail td::before {
-  background: #fafafa;
+  background: #252525;
 }
 .minetable.dealRecord tr.fail td.dealCode, .minetable.dealRecord tr.fail td.depositMoney {
-  color: #a3a3a3;
+  color: #ababab;
 }
 .minetable.dealRecord tr:nth-of-type(1) td:nth-of-type(1)::before {
   border-radius: 3px 0px 0px 0px;
@@ -3844,12 +3843,12 @@ main .bg {
   display: none;
 }
 .minetable.dealRecord tr:hover td::before, .minetable.dealRecord tr:active td::before, .minetable.dealRecord tr.active td::before {
-  background: #f3f6fe;
+  background: #4b4b4b;
 }
 .minetable.dealRecord tr td {
-  border-right: solid 1px #e0e0e0;
+  border-right: solid 1px #a88335;
   padding: 10px;
-  color: #666666;
+  color: #ffffff;
   font-size: 14px;
 }
 .minetable.dealRecord tr td::before {
@@ -3857,7 +3856,7 @@ main .bg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #1b1b1b;
   left: 0px;
   top: 1px;
   z-index: -1;
@@ -3867,7 +3866,7 @@ main .bg {
   position: absolute;
   width: 100%;
   height: 1px;
-  background: #e0e0e0;
+  background: #a88335;
   left: 0px;
   bottom: -1px;
   z-index: -1;
@@ -3903,10 +3902,10 @@ main .bg {
   width: 94%;
 }
 .minetable.dealRecord tr td.dealCode {
-  color: #666666;
+  color: #fb770a;
 }
 .minetable.dealRecord tr td.depositMoney {
-  color: #df1e31;
+  color: #ffc13c;
 }
 .minetable.dealRecord tr td .time {
   padding-left: 8px;
@@ -3916,15 +3915,10 @@ main .bg {
   width: 1120px;
   margin: 0px auto 10px;
   cursor: pointer;
-  border: solid 1px #cecece;
-  box-shadow: 0px 2px 5px 0px #00000049;
+  box-shadow: 0px 0px 0px 1px #a88335;
 }
 .minetable.bettingRecord.display {
   display: table;
-}
-.minetable.bettingRecord.open {
-  border: none;
-  box-shadow: 0px 2px 5px 0px #00000049, 0px 0px 0px 1px #696969;
 }
 .minetable.bettingRecord.open .arrow {
   transform: translateY(-50%) rotate(-90deg);
@@ -3934,11 +3928,14 @@ main .bg {
   margin: 0px 0px 10px 10px;
 }
 .minetable.bettingRecord tr {
-  border-bottom: solid 1px #e6e6e6;
-  background: #fafafa;
+  border-bottom: solid 1px #a88335;
+  background: #252525;
 }
 .minetable.bettingRecord tr:nth-of-type(odd) {
-  background: #f6f6f6;
+  background: #292929;
+}
+.minetable.bettingRecord tr:last-child {
+  border: none;
 }
 .minetable.bettingRecord tr:last-child td:nth-of-type(1) {
   border-radius: 0px 0px 0px 5px;
@@ -3947,12 +3944,12 @@ main .bg {
   border-radius: 0px 0px 5px 0px;
 }
 .minetable.bettingRecord tr.totalInfo td {
-  color: #df1e31;
+  color: #ff4719;
 }
 .minetable.bettingRecord tr th {
-  color: #1b1b1b;
+  color: #ffc13c;
   border-radius: 5px 5px 0px 0px;
-  background: #ffffff;
+  background: #252525;
 }
 .minetable.bettingRecord tr th::before {
   display: none;
@@ -3964,12 +3961,12 @@ main .bg {
   float: left;
   width: 1px;
   height: 14px;
-  background: #df1e31;
+  background: #a88335;
   margin: 0px 10px;
 }
 .minetable.bettingRecord tr th .arrow {
-  width: 9px;
-  height: 16px;
+  width: 8px;
+  height: 11px;
   background: url("../images/forCss_6/arrow_bl2.png") no-repeat;
   background-size: 100%;
   display: block;
@@ -3980,13 +3977,13 @@ main .bg {
 }
 .minetable.bettingRecord tr td {
   padding: 10px;
-  color: #1b1b1b;
+  color: #ffffff;
   font-size: 14px;
-  border-right: solid 1px #e0e0e0;
+  border-right: solid 1px #a88335;
 }
 .minetable.bettingRecord tr td:nth-of-type(1), .minetable.bettingRecord tr td:nth-of-type(3), .minetable.bettingRecord tr td:nth-of-type(5) {
   width: 10%;
-  color: #333333;
+  color: #ffc13c;
 }
 .minetable.bettingRecord tr td:nth-of-type(2) {
   width: 40%;
@@ -3998,13 +3995,13 @@ main .bg {
   border: none;
 }
 .minetable.bettingRecord tr td.yellow {
-  color: #df1e31;
+  color: #ff4719;
 }
 .minetable.bettingRecord tr td.highSeparate {
   line-height: 20px;
 }
 .minetable.bettingRecord tr td .teamName {
-  color: #1b1b1b;
+  color: #ffffff;
 }
 .minetable.bettingRecord tr td .separate {
   display: inline-block;
@@ -4012,20 +4009,20 @@ main .bg {
   transform: translateY(-1px);
 }
 .minetable.bettingRecord tr td .odd {
-  color: #0955f0;
+  color: #ff4719;
 }
 .minetable.bettingRecord tr td .vs {
-  color: #1b1b1b;
+  color: #ffffff;
   font-size: 12px;
   padding: 0px 8px;
 }
 .minetable.totalInfo {
   width: 1070px;
   margin: 0px auto;
-  background: linear-gradient(to top, #f2f2f2 0%, #ffffff 100%);
+  background: #252525;
   border-style: solid;
   border-width: 1px 0px;
-  border-color: #de1e30;
+  border-color: #ffc13c;
   overflow: visible;
 }
 .minetable.totalInfo tr {
@@ -4034,10 +4031,11 @@ main .bg {
 .minetable.totalInfo tr td {
   padding: 10px 0px;
   font-size: 15px;
-  color: #df1e31;
+  color: #ff4719;
 }
 .minetable.totalInfo tr td:nth-of-type(1), .minetable.totalInfo tr td:nth-of-type(3), .minetable.totalInfo tr td:nth-of-type(5) {
   width: 10%;
+  color: #ffffff;
 }
 .minetable.totalInfo tr td:nth-of-type(2) {
   width: 30%;
@@ -4053,7 +4051,7 @@ main .bg {
   float: right;
   width: 1px;
   height: 16px;
-  background: #cdcdcd;
+  background: #a88335;
 }
 .minetable.callus {
   width: 1150px;
@@ -4497,9 +4495,9 @@ main .bg {
   height: 100%;
   left: 10px;
   top: 0px;
-  background: #ffffff;
+  background: #252525;
   border-radius: 3px;
-  border: solid 1px #e0e0e0;
+  border: solid 1px #ffc13c;
   box-shadow: 0px 2px 5px 0px #0000001a;
 }
 .minetable.innerActive::after {
@@ -4510,7 +4508,7 @@ main .bg {
   left: 50%;
   top: 0px;
   transform: translateX(-50%);
-  background: #e0e0e0;
+  background: #a88335;
   z-index: 3;
 }
 .minetable.innerActive tr:nth-of-type(odd) td::before {
@@ -4518,7 +4516,7 @@ main .bg {
 }
 .minetable.innerActive tr th {
   width: 50%;
-  color: #df1e31;
+  color: #ff4719;
   background: none;
 }
 .minetable.innerActive tr th::before {
@@ -4526,7 +4524,7 @@ main .bg {
 }
 .minetable.innerActive tr td {
   padding: 10px;
-  color: #666666;
+  color: #ffffff;
   z-index: 2;
 }
 .minetable.innerActive tr td:nth-of-type(odd)::before {
@@ -4534,7 +4532,7 @@ main .bg {
   position: absolute;
   width: 98%;
   height: 100%;
-  background: #fafafa;
+  background: #292929;
   right: 0px;
   top: 1px;
   z-index: -1;
@@ -4544,7 +4542,7 @@ main .bg {
   position: absolute;
   width: 98%;
   height: 100%;
-  background: #fafafa;
+  background: #292929;
   left: 0px;
   top: 1px;
   z-index: -1;
@@ -7575,14 +7573,14 @@ main .bg {
 .unLogin .topBar {
   width: 100%;
   height: 50px;
-  background: #ffffff;
+  background: linear-gradient(to right, #fec026 0%, #ffae00 100%);
   border-radius: 3px 3px 0px 0px;
   position: relative;
   text-align: center;
 }
 .unLogin .topBar span {
-  font-size: 14px;
-  color: #de1e30;
+  font-size: 15px;
+  color: #181818;
   line-height: 54px;
   font-weight: bold;
 }
@@ -7591,11 +7589,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #ffffff;
-  border: solid 3px #de1e30;
+  background: #3c3c3c;
+  border: solid 3px #ffc13c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #ffffff;
+  box-shadow: 0px 0px 0px 5px #3c3c3c;
 }
 .unLogin .topBar button::before {
   content: "";
@@ -7604,7 +7602,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(45deg);
 }
 .unLogin .topBar button::after {
@@ -7614,20 +7612,22 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(-45deg);
 }
 .unLogin .remindBox {
   width: 100%;
-  height: 110px;
-  background: #ededed;
+  height: 150px;
+  background: #181818;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
+  box-sizing: border-box;
+  border: solid 1px #ffc13c;
 }
 .unLogin .remindBox p {
   font-size: 16px;
-  color: #1b1b1b;
+  color: #ffc13c;
   margin-top: 10px;
 }
 .unLogin .remindBox button {
@@ -7635,7 +7635,7 @@ main .bg {
   height: 36px;
   margin-top: 30px;
   color: #ffffff;
-  background: linear-gradient(to bottom, #cd0e21 0%, #9d0514 100%);
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -7643,8 +7643,7 @@ main .bg {
   box-shadow: 1px 2px 8px 0px #00000049;
 }
 .unLogin .remindBox button:hover, .unLogin .remindBox button:active, .unLogin .remindBox button.active {
-  background: #970513;
-  color: #ffffff;
+  background: #7c0013;
   box-shadow: none;
 }
 
@@ -7652,7 +7651,7 @@ main .bg {
   display: inline-block;
   width: 5px;
   height: 5px;
-  background: #de1e30;
+  background: #ffc13c;
   border-radius: 50px;
   transform: translateY(-2px);
   margin-right: 3px;
@@ -7665,7 +7664,7 @@ main .bg {
   top: 0px;
   width: 5px;
   height: 5px;
-  background: #de1e30;
+  background: #ffc13c;
   border-radius: 50px;
   animation: liveRemind 0.8s ease-in 0s infinite;
 }
@@ -7675,7 +7674,7 @@ main .bg {
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  background: #df1e31;
+  background: #fb770a;
 }
 
 .redCard, .yellowCard {
@@ -7685,15 +7684,15 @@ main .bg {
   display: inline-block;
   width: 10px;
   height: 15px;
-  background: #e80000;
+  background: #d8001f;
   margin: 0px 4px -3px 0px;
 }
 .redCard.yellowCard span, .yellowCard.yellowCard span {
-  background: #ffc426;
+  background: #ffc13c;
 }
 
 .playerStatus {
-  color: #0955f0;
+  color: #d78f3a;
 }
 
 .pitcher {
@@ -7710,13 +7709,13 @@ main .bg {
   padding: 0px;
 }
 .baseBag.one span.first {
-  background: #de1e30;
+  background: #ffc13c;
 }
 .baseBag.two span.second {
-  background: #de1e30;
+  background: #ffc13c;
 }
 .baseBag.three span.third {
-  background: #de1e30;
+  background: #ffc13c;
 }
 .baseBag span {
   display: block;
@@ -7725,7 +7724,7 @@ main .bg {
   height: 10px;
   transform: rotate(45deg);
   background: transparent;
-  border: solid 1px #1b1b1b;
+  border: solid 1px #ffffff;
 }
 .baseBag span.first {
   bottom: 0px;
@@ -7742,25 +7741,25 @@ main .bg {
 }
 
 .totalPitch.b1 span:nth-of-type(1) {
-  background: #097c25;
+  background: #0ad317;
 }
 .totalPitch.b2 span:nth-of-type(1), .totalPitch.b2 span:nth-of-type(2) {
-  background: #097c25;
+  background: #0ad317;
 }
 .totalPitch.b3 span:nth-of-type(1), .totalPitch.b3 span:nth-of-type(2), .totalPitch.b3 span:nth-of-type(3) {
-  background: #097c25;
+  background: #0ad317;
 }
 .totalPitch.s1 span:nth-of-type(1) {
-  background: #f39800;
+  background: #fb770a;
 }
 .totalPitch.s2 span:nth-of-type(1), .totalPitch.s2 span:nth-of-type(2) {
-  background: #f39800;
+  background: #fb770a;
 }
 .totalPitch.o1 span:nth-of-type(1) {
-  background: #c84a4a;
+  background: #d8001f;
 }
 .totalPitch.o2 span:nth-of-type(1), .totalPitch.o2 span:nth-of-type(2) {
-  background: #c84a4a;
+  background: #d8001f;
 }
 .totalPitch span {
   float: right;
@@ -8262,7 +8261,7 @@ main .bg {
   height: 100%;
   left: 10px;
   top: 0px;
-  background: #ffffff;
+  background: #252525;
   z-index: -1;
 }
 .myself .mineMainBox {
@@ -8278,32 +8277,32 @@ main .bg {
 .myself .recordbar {
   width: 1150px;
   height: 35px;
-  background: linear-gradient(to top, #f2f2f2 0%, #ffffff 100%);
+  background: #252525;
   border-radius: 3px;
   box-shadow: 0px 2px 5px 0px #00000049;
-  border: solid 1px transparent;
+  border: solid 1px #a88335;
   margin: 0px 0px 15px 10px;
   position: relative;
   box-sizing: border-box;
   z-index: 1;
 }
 .myself .recordbar:hover, .myself .recordbar:active, .myself .recordbar.active {
-  border-color: #df1e31;
+  border-color: #ffc13c;
 }
 .myself .recordbar:hover div, .myself .recordbar:active div, .myself .recordbar.active div {
-  color: #df1e31;
+  color: #ffffff;
 }
 .myself .recordbar.open {
-  border-color: #df1e31;
+  border-color: #ffc13c;
 }
 .myself .recordbar.open div {
-  color: #df1e31;
+  color: #ffffff;
 }
 .myself .recordbar div {
   float: left;
   width: 25%;
   text-align: center;
-  color: #333333;
+  color: #ffc13c;
   font-size: 15px;
   line-height: 37px;
   cursor: pointer;
@@ -8311,7 +8310,7 @@ main .bg {
 .myself .recordbar div .line {
   width: 1px;
   height: 15px;
-  background: #cdcdcd;
+  background: #a88335;
   margin: 10px 0px 0px 0px;
   float: right;
 }
@@ -8319,21 +8318,20 @@ main .bg {
   position: absolute;
   width: 20px;
   height: 18px;
-  background: #308e44;
+  background: #ffc13c;
   left: 35px;
   top: 48%;
   transform: translateY(-50%);
   line-height: 20px;
-  color: #ffffff;
+  color: #000000;
   border-radius: 5px;
-  padding-left: 2px;
 }
 .myself .recordbox {
   display: none;
   width: 1150px;
   height: auto;
   margin: 0px 0px 15px 10px;
-  background: #dadada;
+  background: #666666;
   padding-top: 20px;
   border-radius: 0px 0px 3px 3px;
   box-sizing: border-box;
@@ -8343,7 +8341,7 @@ main .bg {
   box-sizing: border-box;
   border-style: solid;
   border-width: 0px 1px;
-  border-color: #df1e31;
+  border-color: #ffc13c;
 }
 .myself .recordbox.display {
   display: block;
@@ -8351,36 +8349,35 @@ main .bg {
 .myself .helpbar {
   width: 1150px;
   height: 45px;
-  background: linear-gradient(to top, #f3f3f3 10%, #ffffff 71%);
+  background: #252525;
   border-radius: 3px;
   position: relative;
   z-index: 1;
   box-sizing: border-box;
   margin: 0px 0px 15px 10px;
   cursor: pointer;
-  border: solid 1px transparent;
+  border: solid 1px #a88335;
   box-shadow: 0px 2px 5px 0px #00000049;
 }
 .myself .helpbar::before {
   content: "";
   position: absolute;
-  width: 6px;
-  height: 10px;
+  width: 8px;
+  height: 11px;
   background: url("../images/forCss_6/arrow_bl2.png") no-repeat;
+  background-size: 100%;
   right: 20px;
   top: 18px;
   transform: rotate(90deg);
 }
 .myself .helpbar:hover {
-  background: #ffffff;
-  border-color: #df1e31;
+  border-color: #ffc13c;
 }
 .myself .helpbar:hover p, .myself .helpbar:hover span {
-  color: #df1e31;
+  color: #ffffff;
 }
 .myself .helpbar.open {
-  background: #ffffff;
-  border-color: #df1e31;
+  border-color: #ffc13c;
   border-bottom: none;
 }
 .myself .helpbar.open::before {
@@ -8390,15 +8387,18 @@ main .bg {
   background-size: 100%;
   transform: rotate(-90deg);
 }
+.myself .helpbar.open p, .myself .helpbar.open span {
+  color: #ffffff;
+}
 .myself .helpbar.edit {
-  background: #ffffff;
-  border: solid 1px transparent;
+  background: #3c3c3c;
+  border: solid 1px #a88335;
 }
 .myself .helpbar.edit label {
   display: block;
 }
 .myself .helpbar.edit p, .myself .helpbar.edit span {
-  color: #333333;
+  color: #d78f3a;
 }
 .myself .helpbar.feeback {
   pointer-events: none;
@@ -8407,27 +8407,29 @@ main .bg {
   display: none;
 }
 .myself .helpbar.feeback.helpbar {
-  border-color: #df1e31;
   border-bottom: none;
 }
+.myself .helpbar.feeback.helpbar p, .myself .helpbar.feeback.helpbar span {
+  color: #ffffff;
+}
 .myself .helpbar.feeback.helpbar.open {
-  background: #df1e31;
+  background: #ffc13c;
 }
 .myself .helpbar.feeback.helpbar.open p, .myself .helpbar.feeback.helpbar.open span {
-  color: #ffffff;
+  color: #000000;
 }
 .myself .helpbar p {
   float: left;
   line-height: 45px;
   padding-left: 15px;
   font-size: 15px;
-  color: #333333;
+  color: #ffc13c;
 }
 .myself .helpbar span {
   float: right;
   line-height: 45px;
   padding-right: 50px;
-  color: #666666;
+  color: #d78f3a;
   font-size: 15px;
 }
 .myself .helpbar label {
@@ -8438,7 +8440,7 @@ main .bg {
   margin: 13px 0px 0px 20px;
   position: relative;
   z-index: 1;
-  background: #b2b2b2;
+  background: #9c9c9c;
   border-radius: 30px;
   box-shadow: 0px 2px 5px 0px #00000049 inset;
 }
@@ -8450,7 +8452,7 @@ main .bg {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(to top, #df1e31 23%, #f4717e 76%);
+  background: #1b1b1b;
   border-radius: 30px;
 }
 .myself .helpbar label input {
@@ -8461,12 +8463,12 @@ main .bg {
   width: 1150px;
   height: auto;
   margin: -20px 0px 15px 10px;
-  background: #ffffff;
+  background: #666666;
   padding-top: 20px;
   border-radius: 0px 0px 3px 3px;
   text-align: left;
   box-shadow: 0px 2px 5px 0px #00000049;
-  border: solid 1px #df1e31;
+  border: solid 1px #ffc13c;
   box-sizing: border-box;
 }
 .myself .helpbox.display {
@@ -8483,7 +8485,7 @@ main .bg {
   width: 97%;
   font-size: 14px;
   line-height: 24px;
-  color: #1b1b1b;
+  color: #ffffff;
   padding: 0px 15px 15px 15px;
 }
 .myself .helpbox .innerbox {
@@ -8496,10 +8498,10 @@ main .bg {
 .myself .helpbox .innerbox p {
   padding: 5px 15px;
   font-size: 16px;
-  color: #df1e31;
+  color: #ffffff;
 }
 .myself .helpbox .remind {
-  color: #666666;
+  color: #ffffff;
   font-size: 14px;
   margin: 0px 20px 20px 0px;
   float: right;
@@ -8762,7 +8764,7 @@ main .bg {
 .minetopfix {
   width: 1150px;
   height: 125px;
-  background: #ffffff;
+  background: #252525;
   border-radius: 0px 0px 5px 5px;
   position: absolute;
   text-align: center;
@@ -8776,18 +8778,18 @@ main .bg {
   width: 100%;
   height: 45px;
   border-radius: 0px 0px 5px 5px;
-  background: #fafafa;
+  background: #3c3c3c;
   bottom: 0px;
   z-index: 2;
-  color: #333333;
+  color: #ffffff;
   box-sizing: border-box;
 }
 .minetopfix .fixbar .editbut, .minetopfix .fixbar .cancelbut, .minetopfix .fixbar .delbut {
   display: none;
   float: right;
   padding: 4px 6px;
-  background: #ffffff;
-  color: #666666;
+  background: #ffc13c;
+  color: #000000;
   border-radius: 3px;
   box-shadow: 0px 2px 5px 0px #00000049;
   font-size: 15px;
@@ -8797,7 +8799,7 @@ main .bg {
   display: block;
 }
 .minetopfix .fixbar .editbut:hover, .minetopfix .fixbar .editbut:active, .minetopfix .fixbar .editbut.active, .minetopfix .fixbar .cancelbut:hover, .minetopfix .fixbar .cancelbut:active, .minetopfix .fixbar .cancelbut.active, .minetopfix .fixbar .delbut:hover, .minetopfix .fixbar .delbut:active, .minetopfix .fixbar .delbut.active {
-  background: #df1e31;
+  background: #ff4719;
   color: #ffffff;
   box-shadow: none;
 }
@@ -8878,15 +8880,15 @@ main .bg {
   border-color: transparent;
 }
 .minetopfix .fixbar .timeSearch button.timesearchbut {
-  margin: 8px 24px 0px 0px;
-  background: #ffffff;
-  color: #666666;
+  margin: 10px 24px 0px 0px;
+  background: #ffc13c;
+  color: #000000;
   padding: 5px 8px;
   border-radius: 3px;
   box-shadow: 0px 2px 5px 0px #00000049;
 }
 .minetopfix .fixbar .timeSearch button.timesearchbut:hover, .minetopfix .fixbar .timeSearch button.timesearchbut:active, .minetopfix .fixbar .timeSearch button.timesearchbut.active {
-  background: #df1e31;
+  background: #ff4719;
   color: #ffffff;
   box-shadow: none;
 }
@@ -8909,48 +8911,48 @@ main .bg {
   height: 0px;
   border-style: solid;
   border-width: 6px 5px 0px 5px;
-  border-color: #df1e31 transparent;
+  border-color: #ffd973 transparent;
   top: 21px;
   right: 5px;
 }
 .minetopfix .fixbar .timeSearch label select {
   margin: 11px 0px 0px 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #a88335;
   outline: none;
   border-radius: 5px;
   width: 95px;
   height: 24px;
   font-family: "my_font";
-  background: #ffffff;
-  color: #666666;
+  background: #101010;
+  color: #ffffff;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   padding-left: 5px;
 }
 .minetopfix .fixbar .smallTimeBtn {
-  margin: 8px 12px 0px 0px;
-  background: #ffffff;
-  color: #666666;
+  margin: 10px 12px 0px 0px;
+  background: #ffc13c;
+  color: #000000;
   padding: 5px 8px;
   border-radius: 3px;
   float: right;
   box-shadow: 0px 2px 5px 0px #00000049;
 }
 .minetopfix .fixbar .smallTimeBtn:hover, .minetopfix .fixbar .smallTimeBtn:active, .minetopfix .fixbar .smallTimeBtn.active {
-  background: #df1e31;
+  background: #ff4719;
   color: #ffffff;
   box-shadow: none;
 }
 .minetopfix .fixbar .changePassword {
   float: right;
   padding: 3px 5px;
-  color: #666666;
-  background: #ffffff;
+  color: #000000;
+  background: #ffc13c;
   box-shadow: 0px 2px 5px 0px #00000049;
   border-radius: 5px;
   font-size: 15px;
-  margin: 8px 10px 0px 0px;
+  margin: 10px 10px 0px 0px;
   /*for IE 9*/
   /*for IE*/
 }
@@ -8965,7 +8967,7 @@ main .bg {
   }
 }
 .minetopfix .fixbar .changePassword:hover, .minetopfix .fixbar .changePassword:active, .minetopfix .fixbar .changePassword.active {
-  background: #df1e31;
+  background: #ff4719;
   color: #ffffff;
   box-shadow: none;
 }
@@ -8979,7 +8981,7 @@ main .bg {
   height: 38px;
   line-height: 40px;
   padding: 0px 10px;
-  color: #333333;
+  color: #d78f3a;
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 3px;
@@ -8990,21 +8992,20 @@ main .bg {
   margin-left: 8px;
 }
 .minetopfix .fixbar ul li:hover, .minetopfix .fixbar ul li:active, .minetopfix .fixbar ul li.active {
-  color: #df1e31;
-  background: #f1f1f1;
+  color: #ff4719;
 }
 .minetopfix .fixbar ul li:hover::before, .minetopfix .fixbar ul li:active::before, .minetopfix .fixbar ul li.active::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #df1e31;
+  background: #ff4719;
   bottom: -2px;
   left: 0px;
 }
 .minetopfix .fixbar ul li.only {
   width: auto;
-  color: #df1e31;
+  color: #ffc13c;
   padding-left: 15px;
   pointer-events: none;
 }
@@ -9018,12 +9019,12 @@ main .bg {
   padding-left: 20px;
 }
 .minetopfix .fixbar p span {
-  color: #df1e31;
+  color: #ffc13c;
 }
 .minetopfix .floatName {
   width: 100%;
   height: 35px;
-  background: linear-gradient(to top, #f3f3f3 10%, #ffffff 71%);
+  background: linear-gradient(to top, #3c3c3c 0%, #4b4b4b 100%);
   box-shadow: 0px 2px 5px 0px #00000049;
   position: absolute;
   bottom: -50px;
@@ -9032,21 +9033,21 @@ main .bg {
   float: left;
   width: 25%;
   text-align: center;
-  color: #df1e31;
+  color: #ffffff;
   font-size: 15px;
   padding-top: 12px;
 }
 .minetopfix .floatName.betting div .line {
   width: 1px;
   height: 10px;
-  background: #cdcdcd;
+  background: #a88335;
   margin: -5px 0px 0px 0px;
   float: right;
 }
 .minetopfix .floatName.deal div {
   float: left;
   text-align: center;
-  color: #df1e31;
+  color: #ffffff;
   font-size: 15px;
   padding-top: 12px;
 }
@@ -9074,7 +9075,7 @@ main .bg {
 .minetopfix .floatName.deal div .line {
   width: 1px;
   height: 10px;
-  background: #cdcdcd;
+  background: #a88335;
   margin: -5px 0px 0px 0px;
   float: right;
 }
@@ -9083,7 +9084,7 @@ main .bg {
 }
 .minetopfix .leftword {
   font-weight: bold;
-  color: #1b1b1b;
+  color: #ffc13c;
   float: left;
   margin: 30px 0px 0px 20px;
 }
@@ -9097,27 +9098,27 @@ main .bg {
   display: inline-block;
   margin: 20px 10px 0px;
   font-size: 15px;
-  color: #737373;
+  color: #fb770a;
 }
 .minetopfix .midword p span {
   display: block;
   padding-top: 13px;
   font-size: 17px;
   font-weight: bold;
-  color: #777777;
+  color: #ff4719;
 }
 .minetopfix .midword .topline {
   display: inline-block;
   width: 1px;
   height: 45px;
-  background: #ffffff;
+  background: #a88335;
   margin: 0px 10px 0px 10px;
 }
 
 .mineHideBoard {
   width: 1155px;
   height: 140px;
-  background: #f0f0f0;
+  background: #101010;
   position: absolute;
   z-index: 5;
   left: 270px;
@@ -9146,14 +9147,14 @@ main .bg {
 .changePasswordWindow .topbar {
   width: 100%;
   height: 50px;
-  background: #ffffff;
+  background: linear-gradient(to right, #fec026 0%, #ffae00 100%);
   border-radius: 3px 3px 0px 0px;
   position: relative;
   text-align: center;
 }
 .changePasswordWindow .topbar span {
-  font-size: 14px;
-  color: #df1e31;
+  font-size: 15px;
+  color: #181818;
   line-height: 50px;
   padding-left: 20px;
   font-weight: bold;
@@ -9163,11 +9164,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #ffffff;
-  border: solid 3px #de1e30;
+  background: #3c3c3c;
+  border: solid 3px #ffc13c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #ffffff;
+  box-shadow: 0px 0px 0px 5px #3c3c3c;
 }
 .changePasswordWindow .topbar button::before {
   content: "";
@@ -9176,7 +9177,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(45deg);
 }
 .changePasswordWindow .topbar button::after {
@@ -9186,15 +9187,18 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(-45deg);
 }
 .changePasswordWindow .box {
   width: 100%;
-  height: 160px;
-  background: #ededed;
+  height: 200px;
+  background: #181818;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
+  box-sizing: border-box;
+  border: solid 1px #ffc13c;
+  border-top: none;
 }
 .changePasswordWindow .box div {
   width: 95%;
@@ -9215,21 +9219,21 @@ main .bg {
   font-size: 17px;
   padding: 3px 0px 3px 10px;
   float: right;
-  border: solid 1px #cccccc;
+  border: solid 1px #a88335;
   border-radius: 5px;
-  background: #ffffff;
-  color: #666666;
+  background: #101010;
+  color: #ffffff;
 }
 .changePasswordWindow .box div span {
   line-height: 40px;
-  color: #333333;
+  color: #ffc13c;
   padding-left: 15px;
 }
 .changePasswordWindow .box div button {
   width: 152px;
   height: 36px;
   margin-right: 10px;
-  background: #ffffff;
+  background: #afafaf;
   color: #1b1b1b;
   border-radius: 5px;
   font-size: 16px;
@@ -9238,15 +9242,15 @@ main .bg {
 }
 .changePasswordWindow .box div button:last-child {
   margin: 0px;
-  background: linear-gradient(to bottom, #cd0e21 0%, #9d0514 100%);
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
   color: #ffffff;
 }
 .changePasswordWindow .box div button:last-child:hover, .changePasswordWindow .box div button:last-child:active, .changePasswordWindow .box div button:last-child.active {
-  background: #970513;
+  background: #7c0013;
+  box-shadow: none;
 }
 .changePasswordWindow .box div button:hover, .changePasswordWindow .box div button:active, .changePasswordWindow .box div button.active {
-  background: #df1e31;
-  color: #ffffff;
+  background: #ffffff;
   box-shadow: none;
 }
 
@@ -9267,14 +9271,14 @@ main .bg {
 .cardremind .topbar {
   width: 100%;
   height: 50px;
-  background: #ffffff;
+  background: linear-gradient(to right, #fec026 0%, #ffae00 100%);
   border-radius: 3px 3px 0px 0px;
   position: relative;
   text-align: center;
 }
 .cardremind .topbar span {
-  font-size: 14px;
-  color: #de1e30;
+  font-size: 15px;
+  color: #181818;
   line-height: 50px;
   padding-left: 20px;
   font-weight: bold;
@@ -9284,11 +9288,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #ffffff;
-  border: solid 3px #de1e30;
+  background: #3c3c3c;
+  border: solid 3px #ffc13c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #ffffff;
+  box-shadow: 0px 0px 0px 5px #3c3c3c;
 }
 .cardremind .topbar button::before {
   content: "";
@@ -9297,7 +9301,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(45deg);
 }
 .cardremind .topbar button::after {
@@ -9307,29 +9311,32 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(-45deg);
 }
 .cardremind .box {
   width: 100%;
-  height: 105px;
-  background: #ededed;
+  height: 145px;
+  background: #181818;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
   text-align: center;
+  box-sizing: border-box;
+  border: solid 1px #ffc13c;
+  border-top: none;
 }
 .cardremind .box p {
   font-size: 14px;
   padding-bottom: 20px;
-  color: #333333;
+  color: #ffc13c;
 }
 .cardremind .box p.remind {
-  color: #308e44;
+  color: #ffffff;
 }
 .cardremind .box button {
   width: 160px;
   height: 36px;
-  background: linear-gradient(to bottom, #cd0e21 0%, #9d0514 100%);
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
@@ -9337,8 +9344,7 @@ main .bg {
   box-shadow: 0px 2px 5px 0px #00000049;
 }
 .cardremind .box button:hover, .cardremind .box button:active, .cardremind .box button.active {
-  background: #970513;
-  color: #ffffff;
+  background: #7c0013;
   box-shadow: none;
 }
 
@@ -9358,14 +9364,14 @@ main .bg {
 .cardAdd .topbar {
   width: 100%;
   height: 40px;
-  background: #ffffff;
+  background: linear-gradient(to right, #fec026 0%, #ffae00 100%);
   border-radius: 3px 3px 0px 0px;
   position: relative;
   text-align: center;
 }
 .cardAdd .topbar span {
-  font-size: 14px;
-  color: #df1e31;
+  font-size: 15px;
+  color: #181818;
   line-height: 42px;
   font-weight: bold;
 }
@@ -9374,11 +9380,11 @@ main .bg {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: #ffffff;
-  border: solid 3px #de1e30;
+  background: #3c3c3c;
+  border: solid 3px #ffc13c;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #ffffff;
+  box-shadow: 0px 0px 0px 5px #3c3c3c;
 }
 .cardAdd .topbar button::before {
   content: "";
@@ -9387,7 +9393,7 @@ main .bg {
   height: 18px;
   right: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(45deg);
 }
 .cardAdd .topbar button::after {
@@ -9397,15 +9403,18 @@ main .bg {
   height: 18px;
   left: 16px;
   top: 8px;
-  background: #de1e30;
+  background: #ffc13c;
   transform: rotate(-45deg);
 }
 .cardAdd .box {
   width: 100%;
-  height: 315px;
-  background: #ededed;
+  height: 355px;
+  background: #181818;
   border-radius: 0px 0px 3px 3px;
   padding: 20px 0px;
+  box-sizing: border-box;
+  border: solid 1px #ffc13c;
+  border-top: none;
 }
 .cardAdd .box .inputBox {
   width: 50%;
@@ -9418,15 +9427,15 @@ main .bg {
   padding-right: 30px;
 }
 .cardAdd .box .inputBox input, .cardAdd .box .inputBox select {
-  background: #ffffff;
-  color: #666666;
+  background: #101010;
+  color: #ffffff;
   width: 245px;
   height: 36px;
   box-sizing: border-box;
   padding: 3px 0px 3px 10px;
   float: right;
   outline: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #a88335;
   border-radius: 3px;
   font-size: 15px;
   margin: 7px 0px 0px 0px;
@@ -9440,14 +9449,14 @@ main .bg {
 }
 .cardAdd .box .inputBox span {
   line-height: 50px;
-  color: #333333;
+  color: #ffc13c;
   padding-left: 30px;
   font-weight: bold;
 }
 .cardAdd .box button {
   width: 220px;
   height: 36px;
-  background: linear-gradient(to bottom, #cd0e21 0%, #9d0514 100%);
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
   border-color: transparent;
   color: #ffffff;
   border-radius: 5px;
@@ -9460,7 +9469,7 @@ main .bg {
   box-shadow: 0px 2px 5px 0px #00000049;
 }
 .cardAdd .box button:hover, .cardAdd .box button:active, .cardAdd .box button.active {
-  background: #970513;
+  background: #7c0013;
   color: #ffffff;
   box-shadow: none;
 }
