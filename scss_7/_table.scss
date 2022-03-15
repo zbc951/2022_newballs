@@ -78,7 +78,7 @@
 			td {
 
 				button {
-					background: #5c6d79;
+					background: #fffccf;
 				}
 			}
 		}
@@ -155,7 +155,7 @@
 
 			//行內按鈕
 			button {
-				color: #feb300;
+				color: #be4008;
 				border-radius: 3px;
 				position: relative;
 				word-break: break-all;
@@ -163,14 +163,14 @@
 				font-size: 13px;
 				margin: 0px 1px;
 				font-weight: bold;
-				background: #313d4f;
+				background: #efe993;
 
 				&:hover,&:active,&.active {
-					background: #feb300;
-					color: #212832;
+					background: #ffec14;
+					color: #000000;
 
 					span {
-						color: #212832;
+						color: #99941f;
 					}
 				}
 
@@ -203,7 +203,7 @@
 				}
 
 				span {
-					color: #afafaf;
+					color: #637590;
 					font-size: 12px;
 				}
 
@@ -222,7 +222,7 @@
 				}
 
 				&.disable {
-					background: #2a323d;
+					background: #93927f;
 					pointer-events: none;
 					color: transparent;
 					user-select: none;

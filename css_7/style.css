@@ -1284,7 +1284,7 @@ main .bg {
   background: #2f3f58;
 }
 .playBoard tr.onTime td button {
-  background: #5c6d79;
+  background: #fffccf;
 }
 .playBoard tr.liveBoard {
   pointer-events: none;
@@ -1338,7 +1338,7 @@ main .bg {
   color: #c5c5c5;
 }
 .playBoard tr td button {
-  color: #feb300;
+  color: #be4008;
   border-radius: 3px;
   position: relative;
   word-break: break-all;
@@ -1346,14 +1346,14 @@ main .bg {
   font-size: 13px;
   margin: 0px 1px;
   font-weight: bold;
-  background: #313d4f;
+  background: #efe993;
 }
 .playBoard tr td button:hover, .playBoard tr td button:active, .playBoard tr td button.active {
-  background: #feb300;
-  color: #212832;
+  background: #ffec14;
+  color: #000000;
 }
 .playBoard tr td button:hover span, .playBoard tr td button:active span, .playBoard tr td button.active span {
-  color: #212832;
+  color: #99941f;
 }
 .playBoard tr td button::before {
   display: none;
@@ -1382,7 +1382,7 @@ main .bg {
   animation: btnFlashing 1.5s linear 0s infinite;
 }
 .playBoard tr td button span {
-  color: #afafaf;
+  color: #637590;
   font-size: 12px;
 }
 .playBoard tr td button.up::before {
@@ -1392,7 +1392,7 @@ main .bg {
   display: block;
 }
 .playBoard tr td button.disable {
-  background: #2a323d;
+  background: #93927f;
   pointer-events: none;
   color: transparent;
   -webkit-user-select: none;
